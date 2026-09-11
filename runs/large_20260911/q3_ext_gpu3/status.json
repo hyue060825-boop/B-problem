@@ -1,0 +1,8 @@
+{
+  "stage": "COMPLETE",
+  "elapsed_s": 3041.946986543946,
+  "updates": 512,
+  "best_selected": true,
+  "checkpoint": "runs/large_20260911/q3_ext_gpu3/latest.pt",
+  "note": "研究训练；best缺失时保留确定性策略，latest不自动部署"
+}
