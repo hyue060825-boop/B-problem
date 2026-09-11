@@ -1,0 +1,47 @@
+{
+  "source_commit": "4d75bee81beaace2092f3812ede68d16d3dee353",
+  "source_branch": "origin/hy_branch/b45c0d2",
+  "source_files": [
+    "runs/large_20260911/q3_ext_gpu0/validation_0512.json",
+    "runs/large_20260911/q3_ext_gpu0/config.json",
+    "runs/large_20260911/q3_ext_gpu0/provenance.json",
+    "runs/large_20260911/q3_ext_gpu0/status.json",
+    "runs/large_20260911/q3_ext_gpu1/validation_0512.json",
+    "runs/large_20260911/q3_ext_gpu1/config.json",
+    "runs/large_20260911/q3_ext_gpu1/provenance.json",
+    "runs/large_20260911/q3_ext_gpu1/status.json",
+    "runs/large_20260911/q3_ext_gpu2/validation_0512.json",
+    "runs/large_20260911/q3_ext_gpu2/config.json",
+    "runs/large_20260911/q3_ext_gpu2/provenance.json",
+    "runs/large_20260911/q3_ext_gpu2/status.json",
+    "runs/large_20260911/q3_ext_gpu3/validation_0512.json",
+    "runs/large_20260911/q3_ext_gpu3/config.json",
+    "runs/large_20260911/q3_ext_gpu3/provenance.json",
+    "runs/large_20260911/q3_ext_gpu3/status.json"
+  ],
+  "scope": "非官方 LOCAL-RESEARCH/research-v1-20260911 研究分布；4 个独立配置的最终留出验证",
+  "episodes": 256,
+  "unique_seeds": 256,
+  "baseline": {
+    "completion_rate": 1,
+    "mean_virtual_s": 3743.904727691406,
+    "median_virtual_s": 3840.709705,
+    "mean_path_length_m": 15131.359577163681,
+    "mean_measures": 105.97265625,
+    "mean_clear_failures": 7.09765625
+  },
+  "student": {
+    "completion_rate": 1,
+    "mean_virtual_s": 3353.05789509375,
+    "median_virtual_s": 3470.399395,
+    "mean_path_length_m": 13136.988694401785,
+    "mean_measures": 109.3046875,
+    "mean_clear_failures": 3.41015625
+  },
+  "paired": {
+    "mean_delta_s": -390.84683259765626,
+    "approximate_95ci_halfwidth_s": 45.292984227642705,
+    "relative_mean_reduction_pct": 10.439550710433359
+  },
+  "interpretation": "用于研究分布上的候选筛选，不代表官方演练或正式测试成绩。"
+}
