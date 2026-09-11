@@ -1,0 +1,12 @@
+\section{问题二：下一最佳检测点模型}
+
+\subsection{候选点生成}
+在当前可行域质心、最大方差方向、已有测向线侧方以及地图覆盖点附近生成候选集合 $\mathcal C_t$，并剔除不满足位置约束或明显重复的候选点。
+
+\subsection{单位时间信息效用}
+对候选点 $s\in\mathcal C_t$ 进行蒙特卡洛观测展开，定义
+\begin{equation}
+  \label{eq:utility}
+  U(s)=\frac{\mathbb E[D(\Omega_t)-D(\Omega_{t+1})]+\lambda\mathbb E[H(b_t)-H(b_{t+1})]}{\lVert s-s_t\rVert/5+5+\tau_{\mathrm{switch}}}.
+\end{equation}
+选择 $U(s)$ 最大的候选点作为下一检测点。\placeholder{填写候选点数量、采样次数、最优坐标和消融比较。}

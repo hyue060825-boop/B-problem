@@ -1,0 +1,18 @@
+\section{问题三：多干扰源联合搜索与清除}
+
+\subsection{部分可观测决策过程}
+令隐状态包含干扰源数量、频道、位置、接收半径与清除状态，策略仅能使用机器人位置、历史动作和观测。优化目标写为
+\begin{equation}
+  \min_{\pi}\;\mathbb E_{\pi}[T],\qquad
+  \Pr_{\pi}(\text{全部干扰源清除})\geq 1-\varepsilon .
+\end{equation}
+
+\subsection{粒子信念更新}
+对每个频道维护粒子集合
+\begin{equation}
+  \mathcal P_c=\{(p^{(k)},R^{(k)},w^{(k)})\}_{k=1}^{K}.
+\end{equation}
+依据方向、近距离、无信号以及清除结果更新权重，并在有效样本数过低时进行重采样。
+
+\subsection{策略求解}
+解析模块生成测量、清除、频道切换、覆盖扫描和终止等候选动作；规划器从当前信念采样可能世界，使用有限步展开估计期望剩余时间。\placeholder{填写正式评测的成功率、平均耗时、方差及基线对照。}

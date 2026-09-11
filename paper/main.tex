@@ -1,0 +1,39 @@
+%! TEX program = xelatex
+% 排版底版：latexstudio/CUMCMThesis，2026/08/26 v2.9。
+% cumcm2026base.cls 为上游类文件，仅改类名；cumcm2026.sty 为上游2026配套样式。
+\PassOptionsToPackage{quiet}{xeCJK}
+\documentclass[withoutpreface,bwprint]{cumcm2026base}
+\usepackage{cumcm2026}
+\usepackage[super,numbers,sort&compress]{natbib}
+\BeforeBeginEnvironment{tabular}{\zihao{-5}}
+% 居中伸缩列采用2026样式提供的Y列。
+\newcommand{\placeholder}[1]{\textcolor{gray}{【#1】}}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+\makeatletter
+\renewcommand{\mcm@cap@keywordsname}{关键词}
+\makeatother
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black}
+\graphicspath{{figures/}}
+\title{基于信念空间规划的多干扰源主动定位与清除模型}
+\tihao{B}
+\yearinput{2026}
+\monthinput{9}
+\dayinput{10}
+\begin{document}
+\maketitle
+\input{sections/00_abstract}
+\input{sections/01_background}
+\input{sections/02_assumptions}
+\input{sections/03_symbols}
+\input{sections/04_problem1}
+\input{sections/05_problem2}
+\input{sections/06_problem3}
+\input{sections/07_problem4}
+\input{sections/08_validation}
+\input{sections/09_evaluation}
+\input{sections/10_ai_statement}
+\input{sections/11_references}
+\input{sections/12_appendix}
+\end{document}

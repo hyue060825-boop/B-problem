@@ -1,0 +1,15 @@
+\section{问题一：多次测向下的几何定位模型}
+
+\subsection{测向可行域}
+设第 $j$ 个检测点为 $S_j=(x_j,y_j)$，观测方向为 $\hat\theta_j$，允许角度误差为 $\delta$。真实位置 $p$ 应满足
+\begin{equation}
+  \label{eq:wedge}
+  \angle\bigl(p-S_j,\,\hat\theta_j\bigr)\leq \delta .
+\end{equation}
+将每个角扇区写成两个有向半平面，与地图边界依次求交，得到
+\begin{equation}
+  \Omega_k=\Omega_0\cap\bigcap_{j=1}^{k}W(S_j,\hat\theta_j,\delta).
+\end{equation}
+
+\subsection{定位精度与清除判定}
+以可行域直径 $D(\Omega_k)$、面积 $A(\Omega_k)$ 和最小包围圆半径 $r_{\min}(\Omega_k)$ 评价定位质量。清除前应检查最小包围圆是否落入题目规定的有效清除范围。\placeholder{插入几何示意图及问题一数值结果表。}
