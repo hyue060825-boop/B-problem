@@ -102,6 +102,15 @@ class Controller:
         for i in nearest:
             cs=tuple(c for c,s in self.channels.items() if s.status=='UNKNOWN' or (s.status in ('FOUND','LOCALIZING') and s.localizations<3))
             if cs:out.append(Action('COVER',tuple(self.stations[i]),station=i,channels=cs,cost=math.dist(self.position,self.stations[i])/5+6*len(cs)))
+        # Q4 cannot certify absence from no-signal. If every station was visited
+        # while unknown channels remain, revisit the nearest station to obtain
+        # another observable measurement instead of dead-ending.
+        if not out:
+            remaining=tuple(c for c,s in self.channels.items() if s.status=='UNKNOWN')
+            if remaining and self.stations:
+                i=min(range(len(self.stations)),key=lambda j: math.dist(self.position,self.stations[j]))
+                out.append(Action('COVER',tuple(self.stations[i]),station=i,channels=remaining,
+                                  cost=math.dist(self.position,self.stations[i])/5+6*len(remaining)))
         for c,s in self.channels.items():
             if c not in self.discovered or s.status=='CLEARED':continue
             cert=s.cert or s.region.certificate()
