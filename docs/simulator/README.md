@@ -1,10 +1,12 @@
 # 本地模拟器
 
-提供公开物理规则、四个 HTTP 接口、会话计时、确定性夹具、回放、CPU 内核对比和调试网页。当前可用于规则验证与客户端联调；完整求解器、随机研究场景生成、训练器和 GPU 后端尚未实现。
+提供公开物理规则、四个 HTTP 接口、会话计时、确定性夹具、回放、CPU 内核对比和调试网页。[research.py](../../src/bsim/research.py) 已提供自建研究场景，供 [solution/](../../src/solution/) 中的模型、控制器与 BC/DAgger/PPO 训练使用。当前 Q4 结束和权重部署仍待完善，见[接收记录](../notes/接收记录-c457828.md)。
 
 先按[仓库说明](../../README.md)完成可编辑安装。以下命令在仓库根目录、已激活的环境中执行。
 
-已有测试的结果与适用范围见[整合验证记录](../../results/validation/integration-20260911-4f12388/README.md)。下方 `.local/` 输出用于临时调试；需要留存的验证或策略实验按[结果说明](../../results/README.md)归档。
+已有测试的结果与适用范围见[整合验证记录](../../results/validation/integration-c457828/README.md)。下方 `.local/` 输出用于临时调试；需要留存的验证或策略实验按[结果说明](../../results/README.md)归档。
+
+研究训练从[实验入口](../../experiments/README.md)启动，进程内调用 `make_research_session` 创建场景；通用 `bsim` CLI 的 `--profile compatible_research` 仍禁用。物理模拟与场景采样在 CPU 执行，学习网络可使用 PyTorch/CUDA，尚无 CUDA 物理内核。
 
 ## 验证与回放
 
@@ -54,6 +56,6 @@ python -m bsim smoke-client --url http://127.0.0.1:20260 --output .local/client-
 
 网络失败会复用原始字节与 ID 重试。失败耗尽或响应格式异常时保留 pending，使用 `retry_pending()` 恢复；确认响应合法前不更新客户端时钟。当前运行器只提供基础循环，后续求解器需补运行预算、异常恢复和持久化日志。
 
-源码使用仓库内的夹具与测试，当前面向完整源码仓库运行。`fixture_conformance` 可用；`strict_official`、`compatible_research` 和 CUDA 后端尚不可用，对应命令退出码为 2。
+源码使用仓库内的夹具与测试，当前面向完整源码仓库运行。通用 CLI 的 `fixture_conformance` 可用；`strict_official`、`compatible_research` 及 `benchmark --device cuda` 仍返回退出码 2。研究训练使用上文的独立入口，不能把 CLI 的阻断理解为整个仓库尚无研究训练能力。
 
 详细依据见[规则矩阵](rules_matrix.md)、[兼容范围](compatibility.md)、[官方信息缺口](official_gaps.md)。历史交付记录见[原始导入](../../results/validation/import-b192804/README.md)。
