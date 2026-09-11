@@ -1,0 +1,26 @@
+{
+  "staged_mapped_files": 6,
+  "mapped_blobs_match": true,
+  "root_legacy_directories_absent": true,
+  "whitespace_check": "PASS",
+  "changes": [
+    "README.md",
+    "docs/model/实现索引.md",
+    "docs/notes/接收记录-9e10994.md",
+    "docs/simulator/README.md",
+    "docs/simulator/local_deployment.md",
+    "experiments/README.md",
+    "handoff/README.md",
+    "results/README.md",
+    "results/validation/integration-9e10994/README.md",
+    "results/validation/integration-9e10994/commands.json",
+    "results/validation/integration-9e10994/document-links.json",
+    "results/validation/integration-9e10994/environment.json",
+    "results/validation/integration-9e10994/evaluate-3000-help.txt",
+    "results/validation/integration-9e10994/paper-evidence-check.json",
+    "results/validation/integration-9e10994/preservation.json",
+    "results/validation/integration-9e10994/record-check.json",
+    "results/validation/integration-9e10994/资产映射.csv",
+    "scripts/evaluate_3000.py"
+  ]
+}

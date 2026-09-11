@@ -1,10 +1,10 @@
 # 本地模拟器
 
-提供公开物理规则、四个 HTTP 接口、会话计时、确定性夹具、回放、CPU 内核对比和调试网页。[research.py](../../src/bsim/research.py) 已提供自建研究场景，供 [solution/](../../src/solution/) 中的模型、控制器与 BC/DAgger/PPO 训练使用。已接收大规模训练资产及权重部署入口；Q4 结束逻辑和部署的端到端验证仍待完善，见[接收记录](../notes/接收记录-4d75bee.md)。
+提供公开物理规则、四个 HTTP 接口、会话计时、确定性夹具、回放、CPU 内核对比和调试网页。[research.py](../../src/bsim/research.py) 已提供自建研究场景，供 [solution/](../../src/solution/) 中的模型、控制器与 BC/DAgger/PPO 训练使用。已接收大规模训练资产、Q3 批量评估及权重部署入口；Q4 结束逻辑和部署的端到端验证仍待完善，见[接收记录](../notes/接收记录-9e10994.md)。
 
 先按[仓库说明](../../README.md)完成可编辑安装。以下命令在仓库根目录、已激活的环境中执行。
 
-已有测试的结果与适用范围见[本次整合验证](../../results/validation/integration-4d75bee/README.md)和[前批验证](../../results/validation/integration-c457828/README.md)。下方 `.local/` 输出用于临时调试；需要留存的验证或策略实验按[结果说明](../../results/README.md)归档。
+已有回归见[4d75bee 整合验证](../../results/validation/integration-4d75bee/README.md)；本次新增入口与记录核对见[9e10994 接收验证](../../results/validation/integration-9e10994/README.md)。下方 `.local/` 输出用于临时调试；需要留存的验证或策略实验按[结果说明](../../results/README.md)归档。
 
 研究训练从[实验入口](../../experiments/README.md)启动，进程内调用 `make_research_session` 创建场景；通用 `bsim` CLI 的 `--profile compatible_research` 仍禁用。物理模拟与场景采样在 CPU 执行，学习网络可使用 PyTorch/CUDA，尚无 CUDA 物理内核。
 

@@ -1,0 +1,30 @@
+{
+  "source_commit": "4d75bee81beaace2092f3812ede68d16d3dee353",
+  "copied_files_checked": [
+    "results/validation/q3-large-4d75bee/q3_ext_gpu0_validation_0512.json",
+    "results/validation/q3-large-4d75bee/q3_ext_gpu0_config.json",
+    "results/validation/q3-large-4d75bee/q3_ext_gpu0_provenance.json",
+    "results/validation/q3-large-4d75bee/q3_ext_gpu0_status.json",
+    "results/validation/q3-large-4d75bee/q3_ext_gpu1_validation_0512.json",
+    "results/validation/q3-large-4d75bee/q3_ext_gpu1_config.json",
+    "results/validation/q3-large-4d75bee/q3_ext_gpu1_provenance.json",
+    "results/validation/q3-large-4d75bee/q3_ext_gpu1_status.json",
+    "results/validation/q3-large-4d75bee/q3_ext_gpu2_validation_0512.json",
+    "results/validation/q3-large-4d75bee/q3_ext_gpu2_config.json",
+    "results/validation/q3-large-4d75bee/q3_ext_gpu2_provenance.json",
+    "results/validation/q3-large-4d75bee/q3_ext_gpu2_status.json",
+    "results/validation/q3-large-4d75bee/q3_ext_gpu3_validation_0512.json",
+    "results/validation/q3-large-4d75bee/q3_ext_gpu3_config.json",
+    "results/validation/q3-large-4d75bee/q3_ext_gpu3_provenance.json",
+    "results/validation/q3-large-4d75bee/q3_ext_gpu3_status.json"
+  ],
+  "rows": 256,
+  "unique_seeds": 256,
+  "means": {
+    "baseline": 3743.904727691406,
+    "student": 3353.05789509375
+  },
+  "mean_paired_delta_s": -390.84683259765626,
+  "summary_checked": true,
+  "scope": "复核论文手新增的原始副本及均值/配对差；这些种子在训练期间被周期性用于选模，不视为独立盲测"
+}

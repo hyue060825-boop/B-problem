@@ -1,0 +1,100 @@
+{
+  "source_commit": "9e1099487b57282ad938c9fc692c835ebed39016",
+  "source_directory": "results/validation/q3-3000-9e10994",
+  "records": 3000,
+  "unique_seeds": 3000,
+  "seed_start": 1200000,
+  "seed_end_exclusive": 1203000,
+  "all_rows_consistent": true,
+  "aggregate_checks": {
+    "completed_episodes": {
+      "recorded": 3000,
+      "recomputed": 3000,
+      "absolute_difference": 0
+    },
+    "completion_rate": {
+      "recorded": 1.0,
+      "recomputed": 1.0,
+      "absolute_difference": 0.0
+    },
+    "samples_with_cleared_source": {
+      "recorded": 3000,
+      "recomputed": 3000,
+      "absolute_difference": 0
+    },
+    "mean_of_sample_per_source_times_s": {
+      "recorded": 261.64995040830274,
+      "recomputed": 261.64995040830274,
+      "absolute_difference": 0.0
+    },
+    "total_virtual_time_s": {
+      "recorded": 9999085.947457965,
+      "recomputed": 9999085.947458,
+      "absolute_difference": 3.5390257835388184e-08
+    },
+    "total_cleared_sources": {
+      "recorded": 39024,
+      "recomputed": 39024,
+      "absolute_difference": 0
+    },
+    "source_weighted_mean_time_s": {
+      "recorded": 256.2291396950073,
+      "recomputed": 256.2291396950082,
+      "absolute_difference": 9.094947017729282e-13
+    },
+    "median_sample_per_source_time_s": {
+      "recorded": 264.3481861971154,
+      "recomputed": 264.3481861971154,
+      "absolute_difference": 0.0
+    },
+    "p05_sample_per_source_time_s": {
+      "recorded": 166.06071502666666,
+      "recomputed": 166.06071502666666,
+      "absolute_difference": 0.0
+    },
+    "p95_sample_per_source_time_s": {
+      "recorded": 350.25404723571427,
+      "recomputed": 350.25404723571427,
+      "absolute_difference": 0.0
+    },
+    "min_sample_per_source_time_s": {
+      "recorded": 67.4133315625,
+      "recomputed": 67.4133315625,
+      "absolute_difference": 0.0
+    },
+    "max_sample_per_source_time_s": {
+      "recorded": 430.5445478,
+      "recomputed": 430.5445478,
+      "absolute_difference": 0.0
+    }
+  },
+  "source_counts": {
+    "10": 437,
+    "11": 437,
+    "12": 391,
+    "13": 438,
+    "14": 429,
+    "15": 433,
+    "16": 435
+  },
+  "distribution_counts": {
+    "area": 750,
+    "edge": 750,
+    "cluster": 750,
+    "outward": 750
+  },
+  "error_field_counts": {
+    "smooth": 1500,
+    "extreme": 750,
+    "zero": 750
+  },
+  "macro_steps_range": [
+    18,
+    51
+  ],
+  "checkpoint_path_from_record": "runs/large_20260911/q3_ext_gpu2/best.pt",
+  "checkpoint_current_path": "results/training/import-4d75bee/large_20260911/q3_ext_gpu2/best.pt",
+  "checkpoint_sha256": "1ee362020626e2eeb80fce5a396192e42aff9896488133a4ffa6695ca08d2ecd",
+  "scope": "复算交付 JSON，核对所指归档权重文件的存在与哈希；未复跑策略、加载权重或核对全部训练种子，路径对应不证明交付评估实际使用了该权重",
+  "figure_review": "已查看原始直方图；均值 261.65、中位数 264.35、横轴按单局每源时间计，标注与记录一致；未重绘"
+}

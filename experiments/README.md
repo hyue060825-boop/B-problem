@@ -1,6 +1,6 @@
 # 实验入口
 
-配置放 `q1/`–`q4/`，运行输出放 `results/`。当前接收至 hy 的 `4d75bee`，训练参数和算法按原状态保留；[已知问题](../docs/notes/接收记录-4d75bee.md)由 hy 后续修复。
+配置放 `q1/`–`q4/`，运行输出放 `results/`。当前接收至 hy 的 `9e10994`，训练参数和算法按原状态保留；[接收状态与已知问题](../docs/notes/接收记录-9e10994.md)持续记录，算法修复由 hy 后续交付。
 
 | 配置 | 用途 | 输出 |
 | --- | --- | --- |
@@ -23,6 +23,8 @@ python scripts/start_training.py --config experiments/q3/large_20260911/g0.json
 
 当前 Q4 结束与筛选问题未修复，配置的 `max_macros=1000` 仍未传入采样，实际为 400。多路场景种子有重叠，回合数与独立场景数需分别记录。`train_bc.py`、`train_dagger.py`、`train_ppo.py` 的返回状态，以及 `export_model.py` 的导出功能仍待完善。
 
-`evaluate_checkpoint.py` 已提供指定 checkpoint、种子与局数的配对评估入口；`run_policy.py` 已提供本机 HTTP 部署入口，改用必填参数 `--checkpoint`，原 `--policy` 参数已移除。两者用法和当前限制见[本机部署与评估](../docs/simulator/local_deployment.md)。
+`evaluate_checkpoint.py` 用于教师与模型配对评估；`evaluate_3000.py` 用于指定权重的 Q3 单策略批量评估，可设置种子、局数和进程数。后者新增结果放 `results/rehearsal/`，已交付的 3000 局原件保留在[论文引用目录](../results/validation/q3-3000-9e10994/README.md)，不要从该目录的原始脚本副本启动新实验。
+
+`run_policy.py` 已提供本机 HTTP 部署入口，改用必填参数 `--checkpoint`，原 `--policy` 参数已移除。三个入口的用法和当前限制见[本机部署与评估](../docs/simulator/local_deployment.md)。
 
 Q1/Q2 人工输入在 [tests/fixtures/solution/](../tests/fixtures/solution/)，命令见根 README。新运行注明源码版本、配置、种子、环境与原始输出；选模验证与独立测试分开记录。

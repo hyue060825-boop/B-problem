@@ -1,0 +1,10 @@
+usage: evaluate_3000.py [-h] --checkpoint CHECKPOINT [--episodes EPISODES]
+                        [--seed SEED] [--workers WORKERS] [--output OUTPUT]
+
+options:
+  -h, --help            show this help message and exit
+  --checkpoint CHECKPOINT
+  --episodes EPISODES
+  --seed SEED
+  --workers WORKERS
+  --output OUTPUT
