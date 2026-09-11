@@ -1,0 +1,2515 @@
+{
+  "status": "OK",
+  "best": {
+    "position": [
+      735.8998438559609,
+      262.91584212536304
+    ],
+    "guaranteed_receive": true,
+    "receive_bound_m": 816.855592138727,
+    "receive_bound_kind": "certified_upper_bound",
+    "posterior_radius_m": 99.21606469092922,
+    "posterior_kind": "sampled_estimate",
+    "remaining_time_s": 164.89601063278772,
+    "remaining_kind": "sampled_estimate",
+    "posterior_area_m2": 3421.862548201047,
+    "movement_m": 781.4558978136363,
+    "J_s": 375.7952225409796,
+    "evaluation_s": 0.010022684931755066
+  },
+  "candidates": [
+    {
+      "position": [
+        534.0921606599145,
+        -216.83780793844392
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 995.8683666663393,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 147.20856596139262,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 201.80720997440798,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 5684.215235689513,
+      "movement_m": 576.4313237758037,
+      "J_s": 395.697757710265,
+      "evaluation_s": 0.010905399918556213
+    },
+    {
+      "position": [
+        534.0921606599145,
+        -43.3675615876889
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 968.2161680089147,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 347.8575964053041,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 197.89119332509227,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 12704.62612530529,
+      "movement_m": 535.849961721038,
+      "J_s": 483.9899838719519,
+      "evaluation_s": 0.009929288178682327
+    },
+    {
+      "position": [
+        534.0921606599145,
+        130.10268476306624
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 978.3021998687454,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 204.7569709604855,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 199.07460464586606,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 7694.21443245071,
+      "movement_m": 549.710055084436,
+      "J_s": 416.39510114299605,
+      "evaluation_s": 0.009793543256819248
+    },
+    {
+      "position": [
+        567.7267745259222,
+        -216.83780793844392
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 963.2878316010516,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 141.33980644867796,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 195.15752373647297,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 5352.410176751577,
+      "movement_m": 607.7271801270343,
+      "J_s": 392.3728629862188,
+      "evaluation_s": 0.009771071840077639
+    },
+    {
+      "position": [
+        567.7267745259222,
+        -43.3675615876889
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 934.6722370851937,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 336.20159025592994,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 191.00985950509872,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 11966.634606852394,
+      "movement_m": 569.3807477529157,
+      "J_s": 477.98680418364677,
+      "evaluation_s": 0.009782423730939627
+    },
+    {
+      "position": [
+        567.7267745259222,
+        130.10268476306624
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 945.1163087430035,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 196.66561442459,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 192.39030091929718,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 7238.138747892043,
+      "movement_m": 582.4434728762656,
+      "J_s": 412.2118027068453,
+      "evaluation_s": 0.01024427404627204
+    },
+    {
+      "position": [
+        601.36138839193,
+        -390.30805428919894
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 990.3791053254604,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 90.88614930042098,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 199.953138033692,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3601.732960971896,
+      "movement_m": 716.9211230614494,
+      "J_s": 393.78043729619236,
+      "evaluation_s": 0.01019691675901413
+    },
+    {
+      "position": [
+        601.36138839193,
+        -216.83780793844392
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 930.7822859264461,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 135.4635675359306,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 188.5788456625856,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 5027.718248214382,
+      "movement_m": 639.2606310420024,
+      "J_s": 389.16275563895135,
+      "evaluation_s": 0.009604944381862879
+    },
+    {
+      "position": [
+        601.36138839193,
+        -43.3675615876889
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 901.1350664920576,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 324.5112990842217,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 184.26245668540662,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 11229.497923429826,
+      "movement_m": 602.9231002762555,
+      "J_s": 472.1027262827686,
+      "evaluation_s": 0.009667422622442245
+    },
+    {
+      "position": [
+        601.36138839193,
+        216.8378079384437
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 930.7822859264461,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 135.46356753593014,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 188.57884566256723,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 5027.718248214333,
+      "movement_m": 639.2606310420024,
+      "J_s": 389.16275563893277,
+      "evaluation_s": 0.010275098960846663
+    },
+    {
+      "position": [
+        601.36138839193,
+        390.3080542891988
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 990.3791053254604,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 90.88614930042033,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 199.95313803369203,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3601.732960971834,
+      "movement_m": 716.9211230614493,
+      "J_s": 393.7804372961921,
+      "evaluation_s": 0.01038702204823494
+    },
+    {
+      "position": [
+        634.9960022579377,
+        -216.83780793844392
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 898.3598697504781,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 129.70462881974245,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 182.0179387908462,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 4740.419860958614,
+      "movement_m": 670.998180202534,
+      "J_s": 386.0698892412242,
+      "evaluation_s": 0.009594406001269817
+    },
+    {
+      "position": [
+        634.9960022579377,
+        -43.3675615876889
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 867.6054401888455,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 312.9278618417122,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 177.64146350507332,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 10496.567222314845,
+      "movement_m": 636.4751906253887,
+      "J_s": 466.4004325510071,
+      "evaluation_s": 0.009813285898417234
+    },
+    {
+      "position": [
+        634.9960022579377,
+        130.10268476306624
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 878.8468843430237,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 181.0285625568037,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 179.03862597373524,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 6356.307842189565,
+      "movement_m": 648.1871886007317,
+      "J_s": 404.19034497228347,
+      "evaluation_s": 0.010026923846453428
+    },
+    {
+      "position": [
+        634.9960022579377,
+        390.3080542891988
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 959.9716475234541,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 87.29300891294596,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 193.27733326881986,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3400.716781355133,
+      "movement_m": 745.3591752481369,
+      "J_s": 390.99567277492025,
+      "evaluation_s": 0.01039592083543539
+    },
+    {
+      "position": [
+        668.6306161239454,
+        -390.30805428919894
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 929.7864971768308,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 83.69569100208719,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 187.1441712086716,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3207.3976425811493,
+      "movement_m": 774.2139743386882,
+      "J_s": 388.8348115774528,
+      "evaluation_s": 0.010200375691056252
+    },
+    {
+      "position": [
+        668.6306161239454,
+        -216.83780793844392
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 866.0299197265426,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 123.99185381048919,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 175.49436650104877,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 4436.347911543582,
+      "movement_m": 702.912182117963,
+      "J_s": 383.07272982988593,
+      "evaluation_s": 0.009568511042743921
+    },
+    {
+      "position": [
+        668.6306161239454,
+        43.36756158768867
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 834.0842680021884,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 301.10901840538867,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 170.76154323494944,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 9798.781794315553,
+      "movement_m": 670.0355559344212,
+      "J_s": 460.32316362452804,
+      "evaluation_s": 0.009878146927803755
+    },
+    {
+      "position": [
+        668.6306161239454,
+        216.8378079384437
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 866.0299197265426,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 123.99185381048918,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 175.49436650102473,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 4436.3479115435375,
+      "movement_m": 702.9121821179629,
+      "J_s": 383.0727298298619,
+      "evaluation_s": 0.010050608310848475
+    },
+    {
+      "position": [
+        668.6306161239454,
+        390.3080542891988
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 929.7864971768308,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 83.69569100208761,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 187.14417120867168,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3207.397642581189,
+      "movement_m": 774.2139743386882,
+      "J_s": 388.83481157745314,
+      "evaluation_s": 0.010544885881245136
+    },
+    {
+      "position": [
+        702.2652299899531,
+        -477.0431774645765
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 943.1539482649697,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 71.03938330039345,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 190.47255181534427,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2828.3165003586328,
+      "movement_m": 848.9679890421907,
+      "J_s": 400.78584127397914,
+      "evaluation_s": 0.010522402822971344
+    },
+    {
+      "position": [
+        702.2652299899531,
+        -303.5729311138214
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 863.1062132136523,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 94.36857723024552,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 173.8321356062017,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3383.680063056875,
+      "movement_m": 765.0705704429355,
+      "J_s": 379.03053830991155,
+      "evaluation_s": 0.01017359085381031
+    },
+    {
+      "position": [
+        702.2652299899531,
+        -43.3675615876889
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 800.5726118922902,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 289.3487388842634,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 164.03850436089573,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 9059.88425448834,
+      "movement_m": 703.6030121104541,
+      "J_s": 454.4334762251182,
+      "evaluation_s": 0.009646381251513958
+    },
+    {
+      "position": [
+        702.2652299899531,
+        130.10268476306624
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 812.7417506109819,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 165.66207627755088,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 165.71452451831252,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 5519.166351746761,
+      "movement_m": 714.215066933903,
+      "J_s": 396.3885760438685,
+      "evaluation_s": 0.010087497066706419
+    },
+    {
+      "position": [
+        702.2652299899531,
+        303.57293111382126
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 863.1062132136523,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 94.36857723024573,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 173.83213560630446,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3383.6800630568496,
+      "movement_m": 765.0705704429354,
+      "J_s": 379.0305383100144,
+      "evaluation_s": 0.010252943728119135
+    },
+    {
+      "position": [
+        702.2652299899531,
+        563.7783006399537
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 992.1702637775635,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 64.96078854938193,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 200.73874181724966,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2724.594704828256,
+      "movement_m": 900.5678350492626,
+      "J_s": 418.33270310179313,
+      "evaluation_s": 0.010233889799565077
+    },
+    {
+      "position": [
+        735.8998438559609,
+        -477.0431774645765
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 914.8890016886907,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 68.21790834323853,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 185.0716897667258,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2672.1355024717004,
+      "movement_m": 876.9941695089694,
+      "J_s": 399.57947784013896,
+      "evaluation_s": 0.010510214138776064
+    },
+    {
+      "position": [
+        735.8998438559609,
+        -303.5729311138214
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 832.1267034359242,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 90.15266339216421,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 167.57404567660788,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3162.060745950715,
+      "movement_m": 796.0559683164649,
+      "J_s": 376.86157103598293,
+      "evaluation_s": 0.010388918220996857
+    },
+    {
+      "position": [
+        735.8998438559609,
+        -43.3675615876889
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 767.0717190688049,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 277.60714820616363,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 157.4620534892198,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 8335.763963965956,
+      "movement_m": 737.1765905027706,
+      "J_s": 448.7009456928557,
+      "evaluation_s": 0.00962058361619711
+    },
+    {
+      "position": [
+        735.8998438559609,
+        130.10268476306624
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 779.7638542977812,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 157.93589469892632,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 159.0755157873962,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 5118.830863848197,
+      "movement_m": 747.3120424359461,
+      "J_s": 392.5058716240486,
+      "evaluation_s": 0.010232013184577227
+    },
+    {
+      "position": [
+        735.8998438559609,
+        303.57293111382126
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 832.1267034359242,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 90.15266339216443,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 167.57404567660794,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3162.0607459507733,
+      "movement_m": 796.0559683164648,
+      "J_s": 376.8615710359831,
+      "evaluation_s": 0.010210131760686636
+    },
+    {
+      "position": [
+        735.8998438559609,
+        563.7783006399537
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 965.3415704337858,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 62.52500743529797,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 195.59582660324102,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2588.71224660301,
+      "movement_m": 927.0353566394874,
+      "J_s": 417.2654016487875,
+      "evaluation_s": 0.01020068395882845
+    },
+    {
+      "position": [
+        769.5344577219687,
+        -477.0431774645765
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 901.2041249723208,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 65.34760801829553,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 185.19990944963624,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2523.6739021591357,
+      "movement_m": 905.4023828038801,
+      "J_s": 403.95419001956003,
+      "evaluation_s": 0.009717850014567375
+    },
+    {
+      "position": [
+        769.5344577219687,
+        -216.83780793844392
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 794.714699263216,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 107.58623262450766,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 163.87663621964685,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3544.633071784746,
+      "movement_m": 799.501042258854,
+      "J_s": 382.5699609836715,
+      "evaluation_s": 0.009435760788619518
+    },
+    {
+      "position": [
+        769.5344577219687,
+        -43.3675615876889
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 765.7695397786254,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 265.8482892618168,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 157.81053629097852,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 7679.648846713471,
+      "movement_m": 770.7554910732108,
+      "J_s": 449.88577913652904,
+      "evaluation_s": 0.009535090066492558
+    },
+    {
+      "position": [
+        769.5344577219687,
+        130.10268476306624
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 775.5412555413463,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 150.41396340032594,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 160.02619451726534,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 4730.676951994507,
+      "movement_m": 780.4549892235952,
+      "J_s": 396.32417406214734,
+      "evaluation_s": 0.010777820833027363
+    },
+    {
+      "position": [
+        769.5344577219687,
+        390.3080542891988
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 858.442642891919,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 73.29656456248493,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 176.6490824058584,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2665.4856877294114,
+      "movement_m": 862.8578439490856,
+      "J_s": 390.86893347691796,
+      "evaluation_s": 0.01098554814234376
+    },
+    {
+      "position": [
+        769.5344577219687,
+        563.7783006399537
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 949.9789164941952,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 60.17613079027833,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 194.9649332397176,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2457.6685747370216,
+      "movement_m": 953.9545345004228,
+      "J_s": 420.8439055349413,
+      "evaluation_s": 0.011138614267110825
+    },
+    {
+      "position": [
+        803.1690715879763,
+        -477.0431774645765
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 929.9085317520071,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 62.67703816035581,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 190.9466795982326,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2378.9729939248373,
+      "movement_m": 934.1577761390157,
+      "J_s": 414.11675390621366,
+      "evaluation_s": 0.009578709956258535
+    },
+    {
+      "position": [
+        803.1690715879763,
+        -216.83780793844392
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 827.1229991863793,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 102.1701442455455,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 170.37684476500087,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3275.59574067772,
+      "movement_m": 831.9249921159006,
+      "J_s": 392.8469153109537,
+      "evaluation_s": 0.009333485271781683
+    },
+    {
+      "position": [
+        803.1690715879763,
+        -43.3675615876889
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 799.3522318795483,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 254.04050712211526,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 164.63036662547722,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 7060.932695947846,
+      "movement_m": 804.3390472639966,
+      "J_s": 457.51842963933416,
+      "evaluation_s": 0.009274976793676615
+    },
+    {
+      "position": [
+        803.1690715879763,
+        130.10268476306624
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 808.7182708488137,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 142.99438177898168,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 166.6590825326571,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 4355.414088625158,
+      "movement_m": 813.6382894985029,
+      "J_s": 405.88393132184854,
+      "evaluation_s": 0.010257045738399029
+    },
+    {
+      "position": [
+        803.1690715879763,
+        390.3080542891988
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 888.5295570172724,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 70.02929396486351,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 182.67428079571346,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2496.8487610805287,
+      "movement_m": 892.9842858631455,
+      "J_s": 401.2857849507743,
+      "evaluation_s": 0.01092289574444294
+    },
+    {
+      "position": [
+        803.1690715879763,
+        563.7783006399537
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 977.2517302832125,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 57.7791854163385,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 200.4171438477444,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2333.4677487382287,
+      "movement_m": 981.2881991688099,
+      "J_s": 430.56437638967566,
+      "evaluation_s": 0.011131186969578266
+    },
+    {
+      "position": [
+        836.8036854539841,
+        -303.5729311138214
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 885.4994128760455,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 77.75223105824004,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 182.06645876873486,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2539.2099859279456,
+      "movement_m": 890.1668003775513,
+      "J_s": 403.97593437336513,
+      "evaluation_s": 0.009635024704039097
+    },
+    {
+      "position": [
+        836.8036854539841,
+        -130.10268476306635
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 841.9315997529573,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 135.58843602475002,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 173.31532027425945,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3993.6734959954497,
+      "movement_m": 846.8571996339928,
+      "J_s": 415.480978213433,
+      "evaluation_s": 0.009291594848036766
+    },
+    {
+      "position": [
+        836.8036854539841,
+        43.36756158768867
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 832.9391140225639,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 242.25750917225398,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 171.1014721944609,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 6462.204928235604,
+      "movement_m": 837.9266992926244,
+      "J_s": 464.81556663911283,
+      "evaluation_s": 0.010083112865686417
+    },
+    {
+      "position": [
+        836.8036854539841,
+        303.57293111382126
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 885.4994128760455,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 77.7522310582396,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 182.0664587687348,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2539.209985927925,
+      "movement_m": 890.1668003775513,
+      "J_s": 403.9759343733649,
+      "evaluation_s": 0.010741853155195713
+    },
+    {
+      "position": [
+        836.8036854539841,
+        477.0431774645764
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 958.9334984674654,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 59.95582821603349,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 196.74711804343042,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2242.144350813153,
+      "movement_m": 963.2292567996831,
+      "J_s": 424.3708835113838,
+      "evaluation_s": 0.011114609893411398
+    },
+    {
+      "position": [
+        870.4382993199919,
+        -390.30805428919894
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 949.417980822408,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 63.65294401384288,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 194.83876436159832,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2181.388246640876,
+      "movement_m": 953.9408839996847,
+      "J_s": 422.4534131684567,
+      "evaluation_s": 0.009747129399329424
+    },
+    {
+      "position": [
+        870.4382993199919,
+        -130.10268476306635
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 875.1771079160395,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 128.23619909855313,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 179.95810255974806,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3645.79281008862,
+      "movement_m": 880.1076874483244,
+      "J_s": 425.0977395986895,
+      "evaluation_s": 0.009411804378032684
+    },
+    {
+      "position": [
+        870.4382993199919,
+        43.36756158768867
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 866.5296989869436,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 230.45105502482258,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 177.9739710114081,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 5882.358437064272,
+      "movement_m": 871.5179736076254,
+      "J_s": 472.50309324534453,
+      "evaluation_s": 0.010296445805579424
+    },
+    {
+      "position": [
+        870.4382993199919,
+        216.8378079384437
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 892.2119615868525,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 91.71517783607713,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 183.37395847269931,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2769.813816069899,
+      "movement_m": 897.0403936694429,
+      "J_s": 413.6396261246265,
+      "evaluation_s": 0.010044912807643414
+    },
+    {
+      "position": [
+        870.4382993199919,
+        477.0431774645764
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 988.2507809461937,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 57.39841347271842,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 202.60816399037452,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2110.038323839987,
+      "movement_m": 992.5890519689299,
+      "J_s": 434.8251811205197,
+      "evaluation_s": 0.010947916191071272
+    },
+    {
+      "position": [
+        904.0729131859996,
+        -303.5729311138214
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 948.9700141833097,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 70.05227659311036,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 194.74670190176582,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2170.7512701126066,
+      "movement_m": 953.6793784399749,
+      "J_s": 425.508715886316,
+      "evaluation_s": 0.009563073981553316
+    },
+    {
+      "position": [
+        904.0729131859996,
+        -43.3675615876889
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 900.1235722299152,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 241.75235464832667,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 184.30627603502995,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 5321.3969676945735,
+      "movement_m": 905.1124669093239,
+      "J_s": 491.20494674105805,
+      "evaluation_s": 0.009507902897894382
+    },
+    {
+      "position": [
+        904.0729131859996,
+        130.10268476306624
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 908.4512624669654,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 120.95235278109995,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 186.5435929473674,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3312.162645978982,
+      "movement_m": 913.3863043308553,
+      "J_s": 434.6970302040884,
+      "evaluation_s": 0.010245651938021183
+    },
+    {
+      "position": [
+        904.0729131859996,
+        303.57293111382126
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 948.9700141833097,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 70.05227659311058,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 194.7467019017658,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2170.751270112582,
+      "movement_m": 953.6793784399749,
+      "J_s": 425.50871588631605,
+      "evaluation_s": 0.010731065180152655
+    },
+    {
+      "position": [
+        937.7075270520073,
+        -216.83780793844392
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 957.6023240435303,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 81.6989490855572,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 196.4576368939575,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2307.488153260053,
+      "movement_m": 962.4520981542616,
+      "J_s": 434.79753106758847,
+      "evaluation_s": 0.009678271133452654
+    },
+    {
+      "position": [
+        937.7075270520073,
+        -43.3675615876889
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 933.7203788293979,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 257.50225158055514,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 190.99684083317248,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 4785.202498010343,
+      "movement_m": 938.7098335950534,
+      "J_s": 512.4899333424607,
+      "evaluation_s": 0.009307454340159893
+    },
+    {
+      "position": [
+        937.7075270520073,
+        130.10268476306624
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 941.7510269891902,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 113.82586241179878,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 193.1531632342898,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2993.140711405968,
+      "movement_m": 946.69008385667,
+      "J_s": 444.4041112115232,
+      "evaluation_s": 0.010068482719361782
+    },
+    {
+      "position": [
+        971.342140918015,
+        -216.83780793844392
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 990.3918850994147,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 76.87909528954104,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 203.00776128955653,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2093.3743639817594,
+      "movement_m": 995.2508174700197,
+      "J_s": 445.497472428331,
+      "evaluation_s": 0.009181418921798468
+    },
+    {
+      "position": [
+        971.342140918015,
+        -43.3675615876889
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 967.3198131427456,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 273.19364371299065,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 198.11451347445285,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 4272.10207420242,
+      "movement_m": 972.3097758025757,
+      "J_s": 534.1732904914634,
+      "evaluation_s": 0.00917647685855627
+    },
+    {
+      "position": [
+        971.342140918015,
+        216.8378079384437
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 990.3918850994147,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 76.87909528954147,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 203.00776128955656,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2093.374363981728,
+      "movement_m": 995.2508174700197,
+      "J_s": 445.4974724283312,
+      "evaluation_s": 0.01073634997010231
+    },
+    {
+      "position": [
+        752.7171507889648,
+        -2.0128947599673458e-13
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 747.7182376459908,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 373.8591242563913,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 133.7718237167343,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 9846.731688184582,
+      "movement_m": 752.7171507889648,
+      "J_s": 476.2448160027229,
+      "evaluation_s": 0.009495314210653305
+    },
+    {
+      "position": [
+        720.1336186062697,
+        -344.23002010227964
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 863.2835538948124,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 84.83054668667272,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 173.7707841518173,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3069.439318640716,
+      "movement_m": 798.1771328386802,
+      "J_s": 380.8214840628897,
+      "evaluation_s": 0.010233406908810139
+    },
+    {
+      "position": [
+        720.1336186062697,
+        -303.5729311138214
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 846.6231183309363,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 92.0597795753918,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 170.58191804421838,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3263.644062989759,
+      "movement_m": 781.5042886331446,
+      "J_s": 377.9126655585432,
+      "evaluation_s": 0.010224380996078253
+    },
+    {
+      "position": [
+        720.1336186062697,
+        -262.9158421253632
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 831.6182491561681,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 101.37976899051208,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 167.91773111813907,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3536.4071618959306,
+      "movement_m": 766.6271379800282,
+      "J_s": 376.9330432094008,
+      "evaluation_s": 0.010107514914125204
+    },
+    {
+      "position": [
+        735.8998438559609,
+        -344.23002010227964
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 849.071634494992,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 82.9550190665386,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 171.19273049239658,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2979.194680052072,
+      "movement_m": 812.430235113664,
+      "J_s": 380.15628704839867,
+      "evaluation_s": 0.01004380313679576
+    },
+    {
+      "position": [
+        735.8998438559609,
+        -262.9158421253632
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 816.8555921387272,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 99.21606469092966,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 164.8960106328255,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3421.862548201095,
+      "movement_m": 781.4558978136364,
+      "J_s": 375.7952225410176,
+      "evaluation_s": 0.010113428812474012
+    },
+    {
+      "position": [
+        751.666069105652,
+        -344.23002010227964
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 834.9155252479052,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 81.26622893950852,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 169.3908074119036,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2886.662611893692,
+      "movement_m": 826.7382815524867,
+      "J_s": 380.3715781921552,
+      "evaluation_s": 0.010241698008030653
+    },
+    {
+      "position": [
+        751.666069105652,
+        -303.5729311138214
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 817.6772861998347,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 88.079958593406,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 166.16486939026774,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3058.07199561152,
+      "movement_m": 810.6530724975881,
+      "J_s": 377.33546318648837,
+      "evaluation_s": 0.010198713280260563
+    },
+    {
+      "position": [
+        751.666069105652,
+        -262.9158421253632
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 802.1311315516301,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 97.01409031066378,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 163.28602363076888,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3308.1227507964227,
+      "movement_m": 796.320676288913,
+      "J_s": 376.05720404388336,
+      "evaluation_s": 0.010125732980668545
+    },
+    {
+      "position": [
+        720.1336186062697,
+        262.91584212536304
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 831.6182491561681,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 101.37976899051206,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 167.91773111811548,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3536.4071618958933,
+      "movement_m": 766.6271379800281,
+      "J_s": 376.93304320937716,
+      "evaluation_s": 0.01035538874566555
+    },
+    {
+      "position": [
+        720.1336186062697,
+        303.57293111382126
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 846.6231183309363,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 92.05977957539159,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 170.58191804421836,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3263.6440629897425,
+      "movement_m": 781.5042886331445,
+      "J_s": 377.91266555854304,
+      "evaluation_s": 0.010235803201794624
+    },
+    {
+      "position": [
+        720.1336186062697,
+        344.23002010227947
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 863.2835538948124,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 84.8305466866725,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 173.77078415181728,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3069.4393186406683,
+      "movement_m": 798.1771328386801,
+      "J_s": 380.82148406288957,
+      "evaluation_s": 0.010270127095282078
+    },
+    {
+      "position": [
+        735.8998438559609,
+        262.91584212536304
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 816.855592138727,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 99.21606469092922,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 164.89601063278772,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3421.862548201047,
+      "movement_m": 781.4558978136363,
+      "J_s": 375.7952225409796,
+      "evaluation_s": 0.010022684931755066
+    },
+    {
+      "position": [
+        735.8998438559609,
+        344.23002010227947
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 849.071634494992,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 82.9550190665386,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 171.19273049239658,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2979.19468005201,
+      "movement_m": 812.430235113664,
+      "J_s": 380.15628704839867,
+      "evaluation_s": 0.01051165722310543
+    },
+    {
+      "position": [
+        751.666069105652,
+        262.91584212536304
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 802.13113155163,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 97.01409031066378,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 163.28602363076885,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3308.12275079638,
+      "movement_m": 796.3206762889129,
+      "J_s": 376.0572040438833,
+      "evaluation_s": 0.010438886936753988
+    },
+    {
+      "position": [
+        751.666069105652,
+        303.57293111382126
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 817.6772861998347,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 88.079958593406,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 166.1648693902678,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3058.0719956114945,
+      "movement_m": 810.653072497588,
+      "J_s": 377.33546318648837,
+      "evaluation_s": 0.010485012084245682
+    },
+    {
+      "position": [
+        751.666069105652,
+        344.23002010227947
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 834.9155252479052,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 81.26622893950895,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 169.3908074119036,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2886.6626118936733,
+      "movement_m": 826.7382815524866,
+      "J_s": 380.3715781921554,
+      "evaluation_s": 0.010578107088804245
+    },
+    {
+      "position": [
+        686.499004740262,
+        -344.23002010227964
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 893.7765721582352,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 88.66359077194399,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 180.45647247458933,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3271.965123676788,
+      "movement_m": 767.9682221609082,
+      "J_s": 383.381912292743,
+      "evaluation_s": 0.010080583859235048
+    },
+    {
+      "position": [
+        686.499004740262,
+        -303.5729311138214
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 877.6951469650874,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 96.44549769391404,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 176.7941148477346,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3491.889086961963,
+      "movement_m": 750.6246785274296,
+      "J_s": 380.14179940017755,
+      "evaluation_s": 0.010057952255010605
+    },
+    {
+      "position": [
+        686.499004740262,
+        -262.9158421253632
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 863.2305479089803,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 106.32006541795806,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 174.36193050530946,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3788.791454951646,
+      "movement_m": 735.1228628942642,
+      "J_s": 379.54653579314135,
+      "evaluation_s": 0.010100871790200472
+    },
+    {
+      "position": [
+        702.2652299899531,
+        -344.23002010227964
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 879.4544474962131,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 86.88407948696243,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 177.76991940006496,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3175.567371735548,
+      "movement_m": 782.093830683031,
+      "J_s": 382.6307252801524,
+      "evaluation_s": 0.010464070830494165
+    },
+    {
+      "position": [
+        702.2652299899531,
+        -262.9158421253632
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 848.3929178895722,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 103.92831090051897,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 171.30952884037168,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3669.8931609314122,
+      "movement_m": 749.8674504826374,
+      "J_s": 378.2471743871587,
+      "evaluation_s": 0.010220239870250225
+    },
+    {
+      "position": [
+        718.0314552396443,
+        -344.23002010227964
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 865.182545605297,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 85.06849969031025,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 174.0958200602443,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3081.884931396115,
+      "movement_m": 796.2810291933226,
+      "J_s": 380.88627574406394,
+      "evaluation_s": 0.01026773639023304
+    },
+    {
+      "position": [
+        718.0314552396443,
+        -303.5729311138214
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 848.5593952618773,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 92.39446312643365,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 170.94777092904525,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3279.113792167588,
+      "movement_m": 779.5676335114217,
+      "J_s": 378.0585291945464,
+      "evaluation_s": 0.010194201022386551
+    },
+    {
+      "position": [
+        718.0314552396443,
+        -262.9158421253632
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 833.5893804052298,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 101.68230261968107,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 168.30881159333734,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3552.0624405808103,
+      "movement_m": 764.6528040581884,
+      "J_s": 377.08052371481557,
+      "evaluation_s": 0.010146241169422865
+    },
+    {
+      "position": [
+        686.499004740262,
+        262.91584212536304
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 863.2305479089802,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 106.32006541795828,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 174.3619305052141,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3788.7914549516854,
+      "movement_m": 735.1228628942641,
+      "J_s": 379.5465357930461,
+      "evaluation_s": 0.01026907516643405
+    },
+    {
+      "position": [
+        686.499004740262,
+        303.57293111382126
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 877.6951469650874,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 96.44549769391404,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 176.79411484778163,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3491.8890869619213,
+      "movement_m": 750.6246785274296,
+      "J_s": 380.1417994002246,
+      "evaluation_s": 0.010365822818130255
+    },
+    {
+      "position": [
+        686.499004740262,
+        344.23002010227947
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 893.7765721582352,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 88.66359077194376,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 180.45647247458933,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3271.9651236767277,
+      "movement_m": 767.9682221609081,
+      "J_s": 383.38191229274287,
+      "evaluation_s": 0.010590005666017532
+    },
+    {
+      "position": [
+        702.2652299899531,
+        262.91584212536304
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 848.3929178895722,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 103.92831090051853,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 171.3095288403475,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3669.8931609313713,
+      "movement_m": 749.8674504826374,
+      "J_s": 378.24717438713424,
+      "evaluation_s": 0.010325678158551455
+    },
+    {
+      "position": [
+        702.2652299899531,
+        344.23002010227947
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 879.4544474962131,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 86.88407948696265,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 177.76991940006502,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3175.5673717354803,
+      "movement_m": 782.0938306830309,
+      "J_s": 382.63072528015255,
+      "evaluation_s": 0.010298698209226131
+    },
+    {
+      "position": [
+        718.0314552396443,
+        262.91584212536304
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 833.5893804052297,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 101.68230261968085,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 168.30881159332858,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3552.0624405807703,
+      "movement_m": 764.6528040581883,
+      "J_s": 377.08052371480665,
+      "evaluation_s": 0.01021209405735135
+    },
+    {
+      "position": [
+        718.0314552396443,
+        303.57293111382126
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 848.5593952618773,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 92.39446312643365,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 170.9477709290453,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3279.1137921675568,
+      "movement_m": 779.5676335114216,
+      "J_s": 378.05852919454645,
+      "evaluation_s": 0.010203429032117128
+    },
+    {
+      "position": [
+        718.0314552396443,
+        344.23002010227947
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 865.182545605297,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 85.06849969031003,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 174.0958200602443,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3081.884931396062,
+      "movement_m": 796.2810291933225,
+      "J_s": 380.8862757440638,
+      "evaluation_s": 0.01014407491311431
+    },
+    {
+      "position": [
+        753.7682324722775,
+        -257.49489692690213
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 798.2265558884498,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 98.06186596304768,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 163.32394145262427,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3331.1566702579503,
+      "movement_m": 796.5363583840837,
+      "J_s": 376.66214611096484,
+      "evaluation_s": 0.009992429986596107
+    },
+    {
+      "position": [
+        753.7682324722775,
+        -216.83780793844392
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 784.6850577368031,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 110.04249109437242,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 160.8759903487459,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3672.650765914576,
+      "movement_m": 784.3374167001922,
+      "J_s": 377.7647192359706,
+      "evaluation_s": 0.01004057377576828
+    },
+    {
+      "position": [
+        753.7682324722775,
+        -176.1807189499857
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 773.0469862274313,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 126.56817771855678,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 158.80477771472198,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 4146.826509930788,
+      "movement_m": 774.0841000912726,
+      "J_s": 381.90568659225494,
+      "evaluation_s": 0.009992341045290232
+    },
+    {
+      "position": [
+        769.5344577219687,
+        -257.49489692690213
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 806.7611829888192,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 95.83036319738153,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 166.29137506610914,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3217.5137258707778,
+      "movement_m": 811.4720596328874,
+      "J_s": 381.5009685913774,
+      "evaluation_s": 0.009488246869295835
+    },
+    {
+      "position": [
+        769.5344577219687,
+        -176.1807189499857
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 784.5924405973838,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 123.60345926363874,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 161.85230802533113,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3992.8035210501084,
+      "movement_m": 789.4446955621263,
+      "J_s": 386.5429767695757,
+      "evaluation_s": 0.009439757093787193
+    },
+    {
+      "position": [
+        785.3006829716599,
+        -257.49489692690213
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 821.717627465074,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 93.55145706036524,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 169.27681439458783,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3104.6532212409215,
+      "movement_m": 826.4386151549015,
+      "J_s": 386.34026595575074,
+      "evaluation_s": 0.009317205287516117
+    },
+    {
+      "position": [
+        785.3006829716599,
+        -216.83780793844392
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 809.8936387787811,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 104.96441904607184,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 166.93918184499208,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3416.2871876861136,
+      "movement_m": 814.6875460121536,
+      "J_s": 387.3589005704587,
+      "evaluation_s": 0.009297509677708149
+    },
+    {
+      "position": [
+        785.3006829716599,
+        -176.1807189499857
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 799.9634683858196,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 120.6228561336219,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 164.9016498245269,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3845.5085079128776,
+      "movement_m": 804.8209791037317,
+      "J_s": 391.17727371208423,
+      "evaluation_s": 0.009296305943280458
+    },
+    {
+      "position": [
+        652.8643908742542,
+        176.18071894998548
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 870.8248058342836,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 145.57895182248927,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 176.9122163215879,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 5151.73575439297,
+      "movement_m": 676.2185730970015,
+      "J_s": 389.94540685223285,
+      "evaluation_s": 0.01018541818484664
+    },
+    {
+      "position": [
+        652.8643908742542,
+        216.8378079384437
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 881.1724231819862,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 126.77063760233158,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 178.5539283012784,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 4581.096546873659,
+      "movement_m": 687.9320808213267,
+      "J_s": 384.52566326670956,
+      "evaluation_s": 0.010481216944754124
+    },
+    {
+      "position": [
+        652.8643908742542,
+        257.4948969269019
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 893.2523910220111,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 112.65063261113184,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 180.5263264272535,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 4101.516772234716,
+      "movement_m": 701.8087594316609,
+      "J_s": 382.2133946191516,
+      "evaluation_s": 0.010368992108851671
+    },
+    {
+      "position": [
+        668.6306161239454,
+        176.18071894998548
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 855.4991671190957,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 142.614652525664,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 173.85601151965537,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 4988.3047622951335,
+      "movement_m": 691.4524904489249,
+      "J_s": 388.4538358722724,
+      "evaluation_s": 0.010149675887078047
+    },
+    {
+      "position": [
+        668.6306161239454,
+        257.4948969269019
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 878.318175009312,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 110.35634059889328,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 177.46778397036343,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3976.4983255959346,
+      "movement_m": 716.4987946686879,
+      "J_s": 380.9457132035476,
+      "evaluation_s": 0.010432200971990824
+    },
+    {
+      "position": [
+        684.3968413736366,
+        176.18071894998548
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 840.1898328020061,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 139.6795008091693,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 170.7088506695921,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 4827.181230300669,
+      "movement_m": 706.7097581128652,
+      "J_s": 386.8905526967498,
+      "evaluation_s": 0.009971912950277328
+    },
+    {
+      "position": [
+        684.3968413736366,
+        216.8378079384437
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 850.9100728419887,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 121.38889378287374,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 172.42869223653662,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 4287.159020933344,
+      "movement_m": 717.9259512190376,
+      "J_s": 381.708329371781,
+      "evaluation_s": 0.009973693173378706
+    },
+    {
+      "position": [
+        684.3968413736366,
+        257.4948969269019
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 863.4135433001297,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 108.05731371814018,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 174.45881334987615,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3853.2054796505654,
+      "movement_m": 731.2336551510786,
+      "J_s": 379.73420123916196,
+      "evaluation_s": 0.01042188424617052
+    },
+    {
+      "position": [
+        652.8643908742542,
+        -257.49489692690213
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 893.2523910220111,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 112.65063261113251,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 180.52632642726758,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 4101.516772234767,
+      "movement_m": 701.808759431661,
+      "J_s": 382.213394619166,
+      "evaluation_s": 0.010142391081899405
+    },
+    {
+      "position": [
+        652.8643908742542,
+        -216.83780793844392
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 881.1724231819862,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 126.77063760233224,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 178.55392830128437,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 4581.096546873587,
+      "movement_m": 687.9320808213267,
+      "J_s": 384.52566326671587,
+      "evaluation_s": 0.009656921029090881
+    },
+    {
+      "position": [
+        652.8643908742542,
+        -176.1807189499857
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 870.8248058342836,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 145.57895182248973,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 176.91221632159235,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 5151.735754393035,
+      "movement_m": 676.2185730970016,
+      "J_s": 389.9454068522375,
+      "evaluation_s": 0.009657204616814852
+    },
+    {
+      "position": [
+        668.6306161239454,
+        -257.49489692690213
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 878.3181750093121,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 110.35634059889328,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 177.4677839703582,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3976.498325595973,
+      "movement_m": 716.498794668688,
+      "J_s": 380.9457132035424,
+      "evaluation_s": 0.010153814684599638
+    },
+    {
+      "position": [
+        668.6306161239454,
+        -176.1807189499857
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 855.4991671190957,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 142.6146525256638,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 173.85601151970056,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 4988.304762295183,
+      "movement_m": 691.452490448925,
+      "J_s": 388.4538358723174,
+      "evaluation_s": 0.009500758722424507
+    },
+    {
+      "position": [
+        684.3968413736366,
+        -257.49489692690213
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 863.4135433001298,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 108.05731371814062,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 174.45881334992035,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3853.2054796506204,
+      "movement_m": 731.2336551510787,
+      "J_s": 379.7342012392064,
+      "evaluation_s": 0.010023906826972961
+    },
+    {
+      "position": [
+        684.3968413736366,
+        -216.83780793844392
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 850.9100728419887,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 121.3888937828733,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 172.42869223652264,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 4287.159020933415,
+      "movement_m": 717.9259512190376,
+      "J_s": 381.7083293717668,
+      "evaluation_s": 0.009884746745228767
+    },
+    {
+      "position": [
+        684.3968413736366,
+        -176.1807189499857
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 840.1898328020061,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 139.67950080916953,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 170.70885066957743,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 4827.181230300617,
+      "movement_m": 706.7097581128652,
+      "J_s": 386.89055269673526,
+      "evaluation_s": 0.009461016859859228
+    },
+    {
+      "position": [
+        619.2297770082465,
+        -257.49489692690213
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 925.2043285566002,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 117.73391862218264,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 187.03541406136853,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 4420.725937591843,
+      "movement_m": 670.6333861932901,
+      "J_s": 385.0290506111179,
+      "evaluation_s": 0.011381600983440876
+    },
+    {
+      "position": [
+        619.2297770082465,
+        -216.83780793844392
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 913.5469637023282,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 132.35001704914583,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 185.12353150839812,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 4875.160222231566,
+      "movement_m": 656.097669318549,
+      "J_s": 387.51807389668085,
+      "evaluation_s": 0.009674380999058485
+    },
+    {
+      "position": [
+        619.2297770082465,
+        -176.1807189499857
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 903.5701732403784,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 152.2310688172777,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 183.56715801351848,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 5510.203905068538,
+      "movement_m": 643.8052209041307,
+      "J_s": 393.44373660298345,
+      "evaluation_s": 0.009836469311267138
+    },
+    {
+      "position": [
+        634.9960022579377,
+        -257.49489692690213
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 910.2117612227511,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 115.44384751847512,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 183.96919144952,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 4274.463368633448,
+      "movement_m": 685.2178812808074,
+      "J_s": 383.734691464919,
+      "evaluation_s": 0.009591459296643734
+    },
+    {
+      "position": [
+        634.9960022579377,
+        -176.1807189499857
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 888.2125076005179,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 149.190480768456,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 180.48150288598356,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 5341.715479460401,
+      "movement_m": 658.9837392631905,
+      "J_s": 391.87349112284966,
+      "evaluation_s": 0.009571202099323273
+    },
+    {
+      "position": [
+        650.7622275076288,
+        -257.49489692690213
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 895.2457755688229,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 113.00689164558744,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 180.95091063372695,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 4123.21971942902,
+      "movement_m": 699.8536266206576,
+      "J_s": 382.4250817806522,
+      "evaluation_s": 0.0100719197653234
+    },
+    {
+      "position": [
+        650.7622275076288,
+        -216.83780793844392
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 883.1930728802715,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 127.08665427859833,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 178.96173055672688,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 4599.988377494259,
+      "movement_m": 685.9373963433109,
+      "J_s": 384.6925369646882,
+      "evaluation_s": 0.009616673924028873
+    },
+    {
+      "position": [
+        650.7622275076288,
+        -176.1807189499857
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 872.8694100858393,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 146.02240067352056,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 177.3679502498032,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 5174.12019527358,
+      "movement_m": 674.1892334355576,
+      "J_s": 390.216997273675,
+      "evaluation_s": 0.00965730706229806
+    }
+  ],
+  "elapsed_s": 1.3080304791219532,
+  "coarse_grid_spacing_m": [
+    33.63461386600774,
+    86.73512317537752
+  ],
+  "high_quality_tolerance_s": 10.0,
+  "scenario_count": 13,
+  "error_scenarios_deg": [
+    -1,
+    0,
+    1
+  ],
+  "lambda_radius_s_per_m": 0.5,
+  "lambda_remaining": 1.0,
+  "receive_polygon": [
+    [
+      777.9939114129909,
+      -634.2924669460384
+    ],
+    [
+      808.1903855863172,
+      -595.5992611582885
+    ],
+    [
+      836.4519011637748,
+      -555.4709922708998
+    ],
+    [
+      862.7103736789217,
+      -514.0043327984428
+    ],
+    [
+      886.9025441714983,
+      -471.2991795556367
+    ],
+    [
+      908.9701315838043,
+      -427.4584129971734
+    ],
+    [
+      928.8599731648709,
+      -382.5876493696897
+    ],
+    [
+      946.5241525441853,
+      -336.7949862729781
+    ],
+    [
+      961.9201151664228,
+      -290.1907422434039
+    ],
+    [
+      975.0107708090995,
+      -242.8871909868831
+    ],
+    [
+      985.7645829361663,
+      -194.99829090169436
+    ],
+    [
+      994.1556446722865,
+      -146.6394105427152
+    ],
+    [
+      1000.1637412147676,
+      -97.92705068846719
+    ],
+    [
+      1003.7743985327913,
+      -48.97856368053975
+    ],
+    [
+      1004.9767547840228,
+      -1.1344588548898847e-13
+    ],
+    [
+      1003.7743985327913,
+      48.97856368053945
+    ],
+    [
+      1000.1637412147676,
+      97.92705068846705
+    ],
+    [
+      994.1556446722866,
+      146.63941054271436
+    ],
+    [
+      985.7645829361664,
+      194.99829090169365
+    ],
+    [
+      975.0107708090995,
+      242.88719098688256
+    ],
+    [
+      961.9201151664228,
+      290.1907422434035
+    ],
+    [
+      946.5241525441853,
+      336.79498627297795
+    ],
+    [
+      928.8599731648711,
+      382.5876493696889
+    ],
+    [
+      908.9701315838045,
+      427.45841299717273
+    ],
+    [
+      886.9025441714986,
+      471.2991795556362
+    ],
+    [
+      862.7103736789218,
+      514.0043327984423
+    ],
+    [
+      836.4519011637748,
+      555.4709922708996
+    ],
+    [
+      808.1903855863171,
+      595.5992611582884
+    ],
+    [
+      777.9939114129912,
+      634.2924669460377
+    ],
+    [
+      764.0016177906579,
+      650.5134238153313
+    ],
+    [
+      758.852156501733,
+      645.1047754831328
+    ],
+    [
+      726.793469683721,
+      607.9398481168901
+    ],
+    [
+      696.5969955103952,
+      569.2466423291409
+    ],
+    [
+      668.3354799329373,
+      529.1183734417519
+    ],
+    [
+      642.0770074177906,
+      487.6517139692948
+    ],
+    [
+      617.8848369252138,
+      444.9465607264889
+    ],
+    [
+      595.8172495129078,
+      401.1057941680251
+    ],
+    [
+      575.9274079318411,
+      356.23503054054146
+    ],
+    [
+      558.263228552527,
+      310.4423674438307
+    ],
+    [
+      542.8672659302895,
+      263.838123414256
+    ],
+    [
+      529.7766102876127,
+      216.53457215773517
+    ],
+    [
+      519.0227981605458,
+      168.64567207254643
+    ],
+    [
+      510.63173642442564,
+      120.28679171356681
+    ],
+    [
+      504.62363988194477,
+      71.57443185931967
+    ],
+    [
+      501.0129825639209,
+      22.625944851391804
+    ],
+    [
+      500.4575467939067,
+      -2.891330665044807e-13
+    ],
+    [
+      501.0129825639209,
+      -22.6259448513917
+    ],
+    [
+      504.62363988194465,
+      -71.57443185931959
+    ],
+    [
+      510.63173642442564,
+      -120.28679171356673
+    ],
+    [
+      519.0227981605458,
+      -168.6456720725463
+    ],
+    [
+      529.7766102876127,
+      -216.53457215773506
+    ],
+    [
+      542.8672659302894,
+      -263.83812341425585
+    ],
+    [
+      558.2632285525269,
+      -310.44236744383056
+    ],
+    [
+      575.927407931841,
+      -356.23503054054135
+    ],
+    [
+      595.8172495129077,
+      -401.105794168025
+    ],
+    [
+      617.8848369252137,
+      -444.94656072648877
+    ],
+    [
+      642.0770074177905,
+      -487.6517139692947
+    ],
+    [
+      668.3354799329372,
+      -529.1183734417519
+    ],
+    [
+      696.5969955103951,
+      -569.2466423291409
+    ],
+    [
+      726.7934696837209,
+      -607.9398481168901
+    ],
+    [
+      758.8521565017328,
+      -645.1047754831329
+    ],
+    [
+      764.0016177906579,
+      -650.5134238153315
+    ]
+  ],
+  "comparisons": {
+    "on_bearing": {
+      "position": [
+        750.0,
+        0.0
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 750.2545248441749,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 375.15551377801387,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 134.03110162099028,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 9918.456669205449,
+      "movement_m": 750.0,
+      "J_s": 476.6088585099972,
+      "evaluation_s": 0.010923090856522322
+    },
+    "fixed_flank": {
+      "position": [
+        750.0,
+        450.0
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 888.3572059453495,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 69.1978526712086,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 179.62317783534056,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2647.9519801818524,
+      "movement_m": 874.642784226795,
+      "J_s": 394.15066101630384,
+      "evaluation_s": 0.012007470708340406
+    }
+  }
+}

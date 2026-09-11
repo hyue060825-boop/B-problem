@@ -1,0 +1,8 @@
+{
+  "source_hashes": {
+    "solution/geometry/core.py": "ba77a502eb2ada24151ad2057ffc2b6606ccab8c92641173211e227bc7286caf"
+  },
+  "input_sha256": {
+    "fixtures/q1_crossing.json": "182ef5b316704fc7e2c769f16c1f2ce127016527425ae7f1ef2dccb1e3e96532"
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "label": "LOCAL-replay",
+  "profile": "fixture_conformance",
+  "fixture_sha256": "3da8e5bd494e8ea002bbbd3bd0ed0e2944256f5ab0c010048f07115622f9d8da",
+  "trace_sha256": "cbc8fc37a57fe548833954ecc0e7ab85b8659c35e437e8ceaff773aafcdddd40",
+  "status": "PASS",
+  "mismatches": [],
+  "records": [
+    {
+      "path": "/enter",
+      "request": {
+        "arena_id": "default",
+        "robot_id": "LOCAL-TEAM",
+        "request_id": "enter-1"
+      },
+      "status": 200,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 0,
+        "max_virtual_duration_s": 360000,
+        "max_real_duration_s": 1200,
+        "remaining_real_duration_s": 1200
+      }
+    },
+    {
+      "path": "/measure",
+      "request": {
+        "arena_id": "default",
+        "robot_id": "LOCAL-TEAM",
+        "request_id": "measure-1",
+        "position": {
+          "x": 300,
+          "y": 400
+        },
+        "channel": 1
+      },
+      "status": 200,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 105,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "request": {
+        "arena_id": "default",
+        "robot_id": "LOCAL-TEAM",
+        "request_id": "measure-2",
+        "position": {
+          "x": 300,
+          "y": 400
+        },
+        "channel": 2
+      },
+      "status": 200,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 111,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/clear",
+      "request": {
+        "arena_id": "default",
+        "robot_id": "LOCAL-TEAM",
+        "request_id": "clear-1",
+        "position": {
+          "x": 300,
+          "y": 0
+        },
+        "channel": 3
+      },
+      "status": 200,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 194,
+        "clear_result": "no_target_in_range"
+      }
+    },
+    {
+      "path": "/measure",
+      "request": {
+        "arena_id": "default",
+        "robot_id": "LOCAL-TEAM",
+        "request_id": "measure-3",
+        "position": {
+          "x": 300,
+          "y": 0
+        },
+        "channel": 2
+      },
+      "status": 200,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 199,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/exit",
+      "request": {
+        "arena_id": "default",
+        "robot_id": "LOCAL-TEAM",
+        "request_id": "exit-1"
+      },
+      "status": 200,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 199,
+        "exit_reason": "user_exit"
+      }
+    }
+  ],
+  "evaluation": {
+    "label": "LOCAL-evaluation",
+    "N": 1,
+    "C": 0,
+    "cleared_fraction": 0.0,
+    "virtual_time_s": 199.0,
+    "time_per_clear_s": null,
+    "all_cleared": false,
+    "ended": true,
+    "reason": "user_exit"
+  }
+}

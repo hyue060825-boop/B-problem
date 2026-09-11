@@ -1,0 +1,22 @@
+{
+  "label": "人工对称交会，无官方唯一输入",
+  "units": "m,deg",
+  "observations": [
+    {
+      "position": [
+        0,
+        0
+      ],
+      "svd_deg": 45.0,
+      "epsilon_deg": 1.0
+    },
+    {
+      "position": [
+        1000,
+        0
+      ],
+      "svd_deg": 135.0,
+      "epsilon_deg": 1.0
+    }
+  ]
+}
