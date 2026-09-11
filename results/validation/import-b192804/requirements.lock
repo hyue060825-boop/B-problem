@@ -1,0 +1,2 @@
+# Runtime and tests: Python standard library only, Python >=3.9.
+# No third-party runtime dependencies. CUDA backend intentionally not installed.

@@ -8,6 +8,8 @@ __pycache__/
 .venv/
 venv/
 *.egg-info/
+/build/
+/dist/
 
 # 凭据；允许提交不含真实值的环境变量示例
 .env

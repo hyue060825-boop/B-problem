@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cumcm-b-workspace"
+version = "0.2.1"
+description = "国赛 B 题本地模拟与建模工作区"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+bsim = ["web/*.html", "web/*.css", "web/*.js"]

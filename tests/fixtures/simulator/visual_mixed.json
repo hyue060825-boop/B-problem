@@ -1,0 +1,108 @@
+{
+  "profile": "fixture_conformance",
+  "scenario": {
+    "label": "LOCAL-visual-mixed-10",
+    "problem": 4,
+    "scope": "official_constraints",
+    "sources": [
+      {
+        "channel": 1,
+        "x": 420,
+        "y": 280,
+        "radius": 1100,
+        "kind": "omni",
+        "heading": null
+      },
+      {
+        "channel": 2,
+        "x": -760,
+        "y": 640,
+        "radius": 1250,
+        "kind": "directional",
+        "heading": 35
+      },
+      {
+        "channel": 3,
+        "x": 1080,
+        "y": -620,
+        "radius": 1000,
+        "kind": "omni",
+        "heading": null
+      },
+      {
+        "channel": 4,
+        "x": -360,
+        "y": -1140,
+        "radius": 1350,
+        "kind": "directional",
+        "heading": 260
+      },
+      {
+        "channel": 5,
+        "x": 180,
+        "y": 1480,
+        "radius": 1100,
+        "kind": "omni",
+        "heading": null
+      },
+      {
+        "channel": 6,
+        "x": -1380,
+        "y": -220,
+        "radius": 1500,
+        "kind": "directional",
+        "heading": 160
+      },
+      {
+        "channel": 7,
+        "x": 1380,
+        "y": 520,
+        "radius": 1250,
+        "kind": "directional",
+        "heading": 90
+      },
+      {
+        "channel": 8,
+        "x": -840,
+        "y": -920,
+        "radius": 1000,
+        "kind": "omni",
+        "heading": null
+      },
+      {
+        "channel": 9,
+        "x": 640,
+        "y": -1360,
+        "radius": 1400,
+        "kind": "directional",
+        "heading": 310
+      },
+      {
+        "channel": 10,
+        "x": -420,
+        "y": 140,
+        "radius": 1200,
+        "kind": "omni",
+        "heading": null
+      }
+    ]
+  },
+  "noise": {
+    "label": "TEST_INPUT",
+    "kind": "constant",
+    "value": 0
+  },
+  "numerics": {
+    "label": "TEST_INPUT",
+    "angle_rounding": "half_up",
+    "time_rounding": "half_up",
+    "directional_overlap": "blocked",
+    "boundary_epsilon": 0
+  },
+  "clock": {
+    "elapsed": 0,
+    "epoch_ms": 1760000000000
+  },
+  "robot_id": "LOCAL-TEAM",
+  "notes": "Explicit hand-authored LOCAL display fixture. Ten mixed sources satisfy public constraints, but are not an official random sample. Fixed zero error is TEST_INPUT."
+}
