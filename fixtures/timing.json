@@ -1,0 +1,14 @@
+{
+  "profile": "fixture_conformance",
+  "scenario": {
+    "label": "LOCAL-official-timing-example",
+    "problem": 3,
+    "scope": "test_fixture",
+    "sources": [{"channel": 7, "x": 0, "y": 0, "radius": 1000, "kind": "omni", "heading": null}]
+  },
+  "noise": {"label": "TEST_INPUT", "kind": "constant", "value": 0},
+  "numerics": {"label": "TEST_INPUT", "angle_rounding": "half_up", "time_rounding": "half_up", "directional_overlap": "blocked", "boundary_epsilon": 0},
+  "clock": {"elapsed": 0, "epoch_ms": 1760000000000},
+  "robot_id": "LOCAL-TEAM",
+  "notes": "One source and zero error are explicit TEST inputs. Only cumulative times in timing.trace.json are official expectations (attachment 2 section 10)."
+}

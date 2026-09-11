@@ -1,0 +1,24 @@
+{
+  "label": "LOCAL-CPU-fixture-benchmark",
+  "device": "cpu",
+  "platform": "macOS-26.4-arm64-arm-64bit",
+  "python": "3.9.6",
+  "cpu_count": 10,
+  "num_envs": 64,
+  "steps": 128,
+  "results": [
+    {
+      "kernel": "ReferenceKernel",
+      "elapsed_s": 0.133172083,
+      "transitions": 8192,
+      "transitions_per_s": 61514.39412417992
+    },
+    {
+      "kernel": "FastKernel",
+      "elapsed_s": 0.06809345800000002,
+      "transitions": 8192,
+      "transitions_per_s": 120305.24283257868
+    }
+  ],
+  "qualification": "single-process CPU physical transitions; excludes HTTP, belief update, training, GPU and interprocess transfer"
+}
