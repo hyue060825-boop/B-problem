@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE",
+  "problem": 3,
+  "checkpoint": "runs/large_20260911/q3_ext_gpu2/best.pt",
+  "episodes": 3000,
+  "seed_start": 1200000,
+  "seed_end_exclusive": 1203000,
+  "completed_episodes": 3000,
+  "completion_rate": 1.0,
+  "samples_with_cleared_source": 3000,
+  "mean_of_sample_per_source_times_s": 261.64995040830274,
+  "total_virtual_time_s": 9999085.947457965,
+  "total_cleared_sources": 39024,
+  "source_weighted_mean_time_s": 256.2291396950073,
+  "median_sample_per_source_time_s": 264.3481861971154,
+  "p05_sample_per_source_time_s": 166.06071502666666,
+  "p95_sample_per_source_time_s": 350.25404723571427,
+  "min_sample_per_source_time_s": 67.4133315625,
+  "max_sample_per_source_time_s": 430.5445478,
+  "elapsed_wall_s": 48.372056029736996,
+  "distribution": "LOCAL-RESEARCH research-v1-20260911; four seeded distributions and three error fields"
+}
