@@ -1,0 +1,9 @@
+{
+  "label": "LOCAL-kernel-comparison",
+  "status": "PASS",
+  "steps": 10000,
+  "boundary_cases": 48,
+  "test_seed": 20260911,
+  "mismatches": [],
+  "qualification": "TEST inputs; shared angle/error/time policies do not resolve G02-G06"
+}

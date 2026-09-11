@@ -1,0 +1,11 @@
+{
+  "label": "LOCAL-trace-official-timing",
+  "steps": [
+    {"path": "/enter", "request": {"arena_id": "default", "robot_id": "LOCAL-TEAM", "request_id": "enter-1"}, "expected": {"virtual_time_s": 0}},
+    {"path": "/measure", "request": {"arena_id": "default", "robot_id": "LOCAL-TEAM", "request_id": "measure-1", "position": {"x": 300, "y": 400}, "channel": 1}, "expected": {"virtual_time_s": 105}},
+    {"path": "/measure", "request": {"arena_id": "default", "robot_id": "LOCAL-TEAM", "request_id": "measure-2", "position": {"x": 300, "y": 400}, "channel": 2}, "expected": {"virtual_time_s": 111}},
+    {"path": "/clear", "request": {"arena_id": "default", "robot_id": "LOCAL-TEAM", "request_id": "clear-1", "position": {"x": 300, "y": 0}, "channel": 3}, "expected": {"virtual_time_s": 194, "clear_result": "no_target_in_range"}},
+    {"path": "/measure", "request": {"arena_id": "default", "robot_id": "LOCAL-TEAM", "request_id": "measure-3", "position": {"x": 300, "y": 0}, "channel": 2}, "expected": {"virtual_time_s": 199}},
+    {"path": "/exit", "request": {"arena_id": "default", "robot_id": "LOCAL-TEAM", "request_id": "exit-1"}, "expected": {"virtual_time_s": 199, "exit_reason": "user_exit"}}
+  ]
+}

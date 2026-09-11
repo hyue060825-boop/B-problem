@@ -1,0 +1,34 @@
+test_profile_block_and_replay_cli (tests.test_cli.CLI) ... ok
+test_separate_server_and_socket_lifecycle (tests.test_cli.CLI) ... ok
+test_client_lost_response_and_pending (tests.test_clock_client.ClockClient) ... ok
+test_lifecycle_and_late_enter (tests.test_clock_client.ClockClient) ... ok
+test_noninteger_movement_microseconds (tests.test_clock_client.ClockClient) ... ok
+test_registered_action_finishes_and_virtual_crossing (tests.test_clock_client.ClockClient) ... ok
+test_response_leakage_and_history (tests.test_clock_client.ClockClient) ... ok
+test_batch_reference_and_fast_session (tests.test_equivalence.Equivalence) ... ok
+test_generated_properties_and_boundaries (tests.test_equivalence.Equivalence) ... ok
+test_replay_and_observable_audit (tests.test_equivalence.Equivalence) ... ok
+test_http_reference_exact_and_closed (tests.test_http.Http) ... ok
+test_incomplete_body_past_deadline_does_not_execute (tests.test_http.Http) ... ok
+test_wire_errors_and_retries (tests.test_http.Http) ... ok
+test_all_cardinal_halfplane_boundaries (tests.test_physics.Physics) ... ok
+test_atomic_failure_and_missing_profiles (tests.test_physics.Physics) ... ok
+test_direction_and_clear (tests.test_physics.Physics) ... ok
+test_error_endpoints_quantization_and_return (tests.test_physics.Physics) ... ok
+test_fixture_rounding_variants_and_field_order (tests.test_physics.Physics) ... ok
+test_omni_thresholds (tests.test_physics.Physics) ... ok
+test_scenario_constraints (tests.test_physics.Physics) ... ok
+test_concurrent_actions (tests.test_protocol.Protocol) ... ok
+test_headers_paths_identifiers_size_depth (tests.test_protocol.Protocol) ... ok
+test_idempotence_and_rejections (tests.test_protocol.Protocol) ... ok
+test_json_invalids (tests.test_protocol.Protocol) ... ok
+test_official_timing_example (tests.test_protocol.Protocol) ... ok
+test_state_and_capacity (tests.test_protocol.Protocol) ... ok
+test_auth_and_separate_truth (tests.test_web.WebDashboard) ... ok
+test_conflicts_unknown_fixture_and_port_busy (tests.test_web.WebDashboard) ... ok
+test_manual_actions_external_client_export_and_abort (tests.test_web.WebDashboard) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 6.158s
+
+OK
