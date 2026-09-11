@@ -1,0 +1,14 @@
+usage: run_policy.py [-h] --problem {3,4} --checkpoint CHECKPOINT
+                     [--base-url BASE_URL] --robot-id ROBOT_ID
+                     [--device DEVICE] [--max-macros MAX_MACROS]
+
+Run a trained policy on a loopback endpoint
+
+options:
+  -h, --help            show this help message and exit
+  --problem {3,4}
+  --checkpoint CHECKPOINT
+  --base-url BASE_URL
+  --robot-id ROBOT_ID
+  --device DEVICE
+  --max-macros MAX_MACROS

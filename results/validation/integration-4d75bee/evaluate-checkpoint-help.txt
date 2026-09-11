@@ -1,0 +1,11 @@
+usage: evaluate_checkpoint.py [-h] --problem PROBLEM --checkpoint CHECKPOINT
+                              [--seed SEED] [--episodes EPISODES]
+                              [--output OUTPUT]
+
+options:
+  -h, --help            show this help message and exit
+  --problem PROBLEM
+  --checkpoint CHECKPOINT
+  --seed SEED
+  --episodes EPISODES
+  --output OUTPUT

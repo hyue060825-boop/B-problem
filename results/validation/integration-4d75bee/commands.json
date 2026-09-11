@@ -1,0 +1,49 @@
+{
+  "cwd": "/home/lenovo/projects/competition/B-problem",
+  "checks": [
+    {
+      "check": "Python syntax",
+      "file": "scripts/run_policy.py",
+      "result": "PASS"
+    },
+    {
+      "check": "Python syntax",
+      "file": "scripts/evaluate_checkpoint.py",
+      "result": "PASS"
+    },
+    {
+      "check": "run-policy-help",
+      "command": [
+        "/home/lenovo/projects/competition/.local/B-problem-archive/整合-c457828/.venv/bin/python",
+        "scripts/run_policy.py",
+        "--help"
+      ],
+      "exit_code": 0,
+      "duration_s": 2.1775849369987554,
+      "output": "run-policy-help.txt"
+    },
+    {
+      "check": "evaluate-checkpoint-help",
+      "command": [
+        "/home/lenovo/projects/competition/.local/B-problem-archive/整合-c457828/.venv/bin/python",
+        "scripts/evaluate_checkpoint.py",
+        "--help"
+      ],
+      "exit_code": 0,
+      "duration_s": 1.2217418440013716,
+      "output": "evaluate-checkpoint-help.txt"
+    },
+    {
+      "check": "run-policy-local-syntax",
+      "command": [
+        "bash",
+        "-n",
+        "scripts/run_policy_local.sh"
+      ],
+      "exit_code": 0,
+      "duration_s": 0.0019471170016913675,
+      "output": "run-policy-local-syntax.txt"
+    }
+  ],
+  "scope": "语法、帮助与依赖导入检查；未加载权重、执行配对评估或连接部署端口"
+}

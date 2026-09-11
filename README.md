@@ -6,22 +6,23 @@
 
 1. 阅读[题面与附件](problem/README.md)和[题目阅读](docs/notes/题目阅读.md)，后续建模、实验、写作时回查题意。
 2. 先看[总体方案](docs/model/总体方案.md)与[实现索引](docs/model/实现索引.md)，区分候选推导、已实现算法和待验证结论。
-3. 本次接收状态与遗留问题见[接收记录](docs/notes/接收记录-c457828.md)；论文手从 [handoff/](handoff/README.md) 取用材料，在 [paper/](paper/README.md) 组织正文。
+3. 本次接收状态与遗留问题见[接收记录](docs/notes/接收记录-4d75bee.md)；论文手从 [handoff/](handoff/README.md) 取用材料，在 [paper/](paper/README.md) 组织正文。
 4. 协作流程见 [GitHub 速查](github-guidance.md)，项目约定见 [AGENTS.md](AGENTS.md)，共享技能见[使用说明](.agents/skills/README.md)。
 
 ## 当前进展
 
-已接收 hy 分支截至 `c457828` 的资产，包含 `ef52a6b` 引入的内容；源码、配置与历史结果已按下列目录整理。
+已接收 hy 分支截至 `4d75bee` 的资产，包含此前 `c457828` 和 `ef52a6b` 引入的内容；源码、配置与历史结果已按下列目录整理。
 
 | 内容 | 状态与入口 |
 | --- | --- |
 | Q1/Q2 | 已有几何求解、选点算法、人工算例和图件；Q2 部分夹具、图件与参数说明仍待完善，见[实现索引](docs/model/实现索引.md) |
-| Q3/Q4 | 已有覆盖、定位与清除控制器；按 c457828 现状接收，Q4 结束逻辑尚待 hy 修复 |
-| 研究训练 | 已有 BC/DAgger/PPO 代码和小规模历史权重；已接收大规模配置，对应新权重和结果尚未交付，见[实验说明](experiments/README.md) |
+| Q3/Q4 | 已有覆盖、定位与清除控制器；本轮未改算法，Q4 结束逻辑尚待 hy 修复 |
+| 研究训练 | 已接收大规模日志、逐局结果和 38 份新权重；Q3 主训练及续训已交付 COMPLETE，Q4 retry 为中途快照，见[训练归档](results/training/import-4d75bee/README.md) |
+| 部署与评估 | 已有 checkpoint 部署和配对评估入口；部署尚待端到端验证，用法见[本机部署](docs/simulator/local_deployment.md) |
 | 本地模拟器 | `src/bsim/` 保留物理规则、HTTP 服务、客户端、回放和网页；用法与兼容范围见[模拟器说明](docs/simulator/README.md) |
-| 验证与论文 | 工程验证、策略质量和官方成绩分别记录；[本次整合验证](results/validation/integration-c457828/README.md)与[交付索引](handoff/README.md)提供证据入口 |
+| 验证与论文 | 工程验证、策略质量和官方成绩分别记录；[本次整合验证](results/validation/integration-4d75bee/README.md)与[交付索引](handoff/README.md)提供证据入口 |
 
-自建模拟器用于批量研究训练和可重复实验；随后用官方演练验证、迭代，再进行正式测试。当前研究结果不代表官方成绩；权重部署入口仍待完成。
+自建模拟器用于批量研究训练和可重复实验；随后用官方演练验证、迭代，再进行正式测试。Q3 新交付的 32 局评估记录中，教师和模型均完成全部任务，模型平均虚拟时间下降约 8.82%；尚未在本机复跑，不代表官方成绩。
 
 ## 目录
 
@@ -36,7 +37,7 @@ B-problem/
 ├── src/
 │   ├── bsim/                   # 模拟器、客户端、研究场景与调试网页
 │   └── solution/               # geometry、planning、coverage、control、rl、evaluation
-├── scripts/                    # 覆盖验证、训练及待完善的部署入口
+├── scripts/                    # 覆盖验证、训练、checkpoint 评估与本机部署入口
 ├── tests/
 │   ├── simulator/              # 物理、协议、计时、客户端与网页回归
 │   ├── solution/               # 几何、选点、覆盖与学习组件测试
@@ -60,7 +61,7 @@ B-problem/
 └── .agents/skills/             # 共享绘图与写作技能
 ```
 
-日常实现和配置使用新目录；`results/**/import-*` 保存原始交付记录，旧报告中的路径按[来源映射](results/validation/integration-c457828/资产映射.csv)查找。历史 provenance 不改写，新运行另存输出。
+日常实现和配置使用新目录；`results/**/import-*` 保存原始交付记录，旧路径按[前批映射](results/validation/integration-c457828/资产映射.csv)或[本批映射](results/validation/integration-4d75bee/资产映射.csv)查找。历史 provenance 不改写，新运行另存输出。
 
 ## 运行环境与入口
 

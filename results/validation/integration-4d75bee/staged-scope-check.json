@@ -1,0 +1,21 @@
+{
+  "source_commit": "4d75bee81beaace2092f3812ede68d16d3dee353",
+  "staged_mapped_files": 2909,
+  "staged_training_blobs_identical": 2905,
+  "protected_directory_changes": [],
+  "legacy_root_directories_absent": true,
+  "whitespace_check": {
+    "command": [
+      "git",
+      "diff",
+      "--cached",
+      "--check",
+      "--",
+      ".",
+      ":(exclude)results/validation/integration-4d75bee/pytest-sandbox-attempt.txt"
+    ],
+    "exit_code": 0,
+    "exception": "原始受限运行的 pytest 堆栈输出保留其行尾空格；其余暂存差异检查通过"
+  },
+  "staged_changed_files_before_this_record": 2936
+}

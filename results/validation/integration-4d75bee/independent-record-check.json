@@ -1,0 +1,23 @@
+{
+  "source": "results/training/import-4d75bee/large_20260911/q3_ext_gpu1/independent_test_32.json",
+  "source_commit": "4d75bee81beaace2092f3812ede68d16d3dee353",
+  "rows": 32,
+  "seed_start": 900000,
+  "seed_end": 900031,
+  "completed": {
+    "baseline": 32,
+    "student": 32
+  },
+  "mean_virtual_s": {
+    "baseline": 3671.73628703125,
+    "student": 3347.8805800625
+  },
+  "mean_paired_delta_s": -323.85570696875004,
+  "relative_time_reduction": 0.08820233307948179,
+  "approximate_95ci_s": [
+    -475.559684607539,
+    -172.15172932996106
+  ],
+  "summary_consistent": true,
+  "scope": "仅复算交付 JSON，未复跑策略、核对全部训练种子或确认所用 checkpoint"
+}

@@ -1,10 +1,10 @@
 # 本地模拟器
 
-提供公开物理规则、四个 HTTP 接口、会话计时、确定性夹具、回放、CPU 内核对比和调试网页。[research.py](../../src/bsim/research.py) 已提供自建研究场景，供 [solution/](../../src/solution/) 中的模型、控制器与 BC/DAgger/PPO 训练使用。当前 Q4 结束和权重部署仍待完善，见[接收记录](../notes/接收记录-c457828.md)。
+提供公开物理规则、四个 HTTP 接口、会话计时、确定性夹具、回放、CPU 内核对比和调试网页。[research.py](../../src/bsim/research.py) 已提供自建研究场景，供 [solution/](../../src/solution/) 中的模型、控制器与 BC/DAgger/PPO 训练使用。已接收大规模训练资产及权重部署入口；Q4 结束逻辑和部署的端到端验证仍待完善，见[接收记录](../notes/接收记录-4d75bee.md)。
 
 先按[仓库说明](../../README.md)完成可编辑安装。以下命令在仓库根目录、已激活的环境中执行。
 
-已有测试的结果与适用范围见[整合验证记录](../../results/validation/integration-c457828/README.md)。下方 `.local/` 输出用于临时调试；需要留存的验证或策略实验按[结果说明](../../results/README.md)归档。
+已有测试的结果与适用范围见[本次整合验证](../../results/validation/integration-4d75bee/README.md)和[前批验证](../../results/validation/integration-c457828/README.md)。下方 `.local/` 输出用于临时调试；需要留存的验证或策略实验按[结果说明](../../results/README.md)归档。
 
 研究训练从[实验入口](../../experiments/README.md)启动，进程内调用 `make_research_session` 创建场景；通用 `bsim` CLI 的 `--profile compatible_research` 仍禁用。物理模拟与场景采样在 CPU 执行，学习网络可使用 PyTorch/CUDA，尚无 CUDA 物理内核。
 
@@ -51,6 +51,8 @@ python -m bsim smoke-client --url http://127.0.0.1:20260 --output .local/client-
 示例执行六步计时动作后退出，不具有搜索能力。问题 4 展示夹具为 `tests/fixtures/simulator/visual_mixed.json`，包含手工指定的 10 个混合源。
 
 ## 接入策略
+
+已有 checkpoint 可通过 `scripts/run_policy.py` 加载，按公开观测选择宏动作，再经 `RobotClient` 发送请求；用法见[本机部署与评估](local_deployment.md)。该入口尚未完成端到端验证，剩余现实时间更新、完整请求/响应落盘及异常结束处理仍需完善。
 
 实现 `bsim.strategy.Policy.choose(public_history)`，返回 `(path, position, channel)`，由 `RobotClient` 串行发送动作。只向策略提供公开请求/响应历史；管理端的场景、误差、真实源数和评价对象单独使用。
 

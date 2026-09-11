@@ -1,0 +1,106 @@
+{
+  "source_commit": "4d75bee81beaace2092f3812ede68d16d3dee353",
+  "runs": [
+    {
+      "run": "q3_ext_gpu0",
+      "matches_current_source": true,
+      "different_files": []
+    },
+    {
+      "run": "q3_ext_gpu1",
+      "matches_current_source": true,
+      "different_files": []
+    },
+    {
+      "run": "q3_ext_gpu2",
+      "matches_current_source": true,
+      "different_files": []
+    },
+    {
+      "run": "q3_ext_gpu3",
+      "matches_current_source": true,
+      "different_files": []
+    },
+    {
+      "run": "q3_gpu0",
+      "matches_current_source": false,
+      "different_files": [
+        "solution/rl/training.py",
+        "solution/control/controller.py"
+      ]
+    },
+    {
+      "run": "q3_gpu1",
+      "matches_current_source": false,
+      "different_files": [
+        "solution/rl/training.py",
+        "solution/control/controller.py"
+      ]
+    },
+    {
+      "run": "q3_gpu2",
+      "matches_current_source": false,
+      "different_files": [
+        "solution/rl/training.py",
+        "solution/control/controller.py"
+      ]
+    },
+    {
+      "run": "q3_gpu3",
+      "matches_current_source": false,
+      "different_files": [
+        "solution/rl/training.py",
+        "solution/control/controller.py"
+      ]
+    },
+    {
+      "run": "q4_gpu4",
+      "matches_current_source": false,
+      "different_files": [
+        "solution/rl/training.py"
+      ]
+    },
+    {
+      "run": "q4_gpu4_retry",
+      "matches_current_source": true,
+      "different_files": []
+    },
+    {
+      "run": "q4_gpu5",
+      "matches_current_source": false,
+      "different_files": [
+        "solution/rl/training.py"
+      ]
+    },
+    {
+      "run": "q4_gpu5_retry",
+      "matches_current_source": true,
+      "different_files": []
+    },
+    {
+      "run": "q4_gpu6",
+      "matches_current_source": false,
+      "different_files": [
+        "solution/rl/training.py"
+      ]
+    },
+    {
+      "run": "q4_gpu6_retry",
+      "matches_current_source": true,
+      "different_files": []
+    },
+    {
+      "run": "q4_gpu7",
+      "matches_current_source": false,
+      "different_files": [
+        "solution/rl/training.py"
+      ]
+    },
+    {
+      "run": "q4_gpu7_retry",
+      "matches_current_source": true,
+      "different_files": []
+    }
+  ],
+  "scope": "接收前针对 4d75bee 的独立 provenance 核对；本轮原始字节核对确认交付内容未变，不包含 checkpoint 内部 metadata"
+}

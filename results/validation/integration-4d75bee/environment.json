@@ -1,0 +1,14 @@
+{
+  "python": "3.13.13 | packaged by conda-forge | (main, Apr  8 2026, 02:00:33) [GCC 14.3.0]",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "packages": {
+    "numpy": "2.5.1",
+    "torch": "2.8.0+cpu",
+    "pytest": "9.1.1",
+    "scipy": "1.18.1",
+    "shapely": "2.1.2",
+    "matplotlib": "3.11.0"
+  },
+  "bsim": "/home/lenovo/projects/competition/B-problem/src/bsim/__init__.py",
+  "solution": "/home/lenovo/projects/competition/B-problem/src/solution/__init__.py"
+}

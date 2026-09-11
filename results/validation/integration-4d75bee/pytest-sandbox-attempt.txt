@@ -1,0 +1,281 @@
+.F.........FFFF.....................FFF....................                 [100%]
+=================================== FAILURES ===================================
+________________ CLI.test_separate_server_and_socket_lifecycle _________________
+
+self = <tests.simulator.test_cli.CLI testMethod=test_separate_server_and_socket_lifecycle>
+
+    def test_separate_server_and_socket_lifecycle(self):
+        # Bind ephemeral port locally; never contacts default official port 2026.
+>       with socket.socket() as sock:
+             ^^^^^^^^^^^^^^^
+
+tests/simulator/test_cli.py:38: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <socket.socket fd=-1, family=0, type=0, proto=0>
+family = <AddressFamily.AF_INET: 2>, type = <SocketKind.SOCK_STREAM: 1>
+proto = 0, fileno = None
+
+    def __init__(self, family=-1, type=-1, proto=-1, fileno=None):
+        # For user code address family and type values are IntEnum members, but
+        # for the underlying _socket.socket they're just integers. The
+        # constructor of _socket.socket converts the given argument to an
+        # integer automatically.
+        if fileno is None:
+            if family == -1:
+                family = AF_INET
+            if type == -1:
+                type = SOCK_STREAM
+            if proto == -1:
+                proto = 0
+>       _socket.socket.__init__(self, family, type, proto, fileno)
+E       PermissionError: [Errno 1] Operation not permitted
+
+../../../miniforge3/lib/python3.13/socket.py:233: PermissionError
+_______________ Http.test_deep_json_returns_public_400_over_http _______________
+
+self = <tests.simulator.test_http.Http testMethod=test_deep_json_returns_public_400_over_http>
+
+    def setUp(self):
+>       self.s=make();self.server=LocalServer(('127.0.0.1',0),self.s)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/simulator/test_http.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/bsim/http_server.py:19: in __init__
+    super().__init__(address, Handler)
+../../../miniforge3/lib/python3.13/socketserver.py:453: in __init__
+    self.socket = socket.socket(self.address_family,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <socket.socket fd=-1, family=0, type=0, proto=0>
+family = <AddressFamily.AF_INET: 2>, type = <SocketKind.SOCK_STREAM: 1>
+proto = 0, fileno = None
+
+    def __init__(self, family=-1, type=-1, proto=-1, fileno=None):
+        # For user code address family and type values are IntEnum members, but
+        # for the underlying _socket.socket they're just integers. The
+        # constructor of _socket.socket converts the given argument to an
+        # integer automatically.
+        if fileno is None:
+            if family == -1:
+                family = AF_INET
+            if type == -1:
+                type = SOCK_STREAM
+            if proto == -1:
+                proto = 0
+>       _socket.socket.__init__(self, family, type, proto, fileno)
+E       PermissionError: [Errno 1] Operation not permitted
+
+../../../miniforge3/lib/python3.13/socket.py:233: PermissionError
+__________________ Http.test_http_reference_exact_and_closed ___________________
+
+self = <tests.simulator.test_http.Http testMethod=test_http_reference_exact_and_closed>
+
+    def setUp(self):
+>       self.s=make();self.server=LocalServer(('127.0.0.1',0),self.s)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/simulator/test_http.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/bsim/http_server.py:19: in __init__
+    super().__init__(address, Handler)
+../../../miniforge3/lib/python3.13/socketserver.py:453: in __init__
+    self.socket = socket.socket(self.address_family,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <socket.socket fd=-1, family=0, type=0, proto=0>
+family = <AddressFamily.AF_INET: 2>, type = <SocketKind.SOCK_STREAM: 1>
+proto = 0, fileno = None
+
+    def __init__(self, family=-1, type=-1, proto=-1, fileno=None):
+        # For user code address family and type values are IntEnum members, but
+        # for the underlying _socket.socket they're just integers. The
+        # constructor of _socket.socket converts the given argument to an
+        # integer automatically.
+        if fileno is None:
+            if family == -1:
+                family = AF_INET
+            if type == -1:
+                type = SOCK_STREAM
+            if proto == -1:
+                proto = 0
+>       _socket.socket.__init__(self, family, type, proto, fileno)
+E       PermissionError: [Errno 1] Operation not permitted
+
+../../../miniforge3/lib/python3.13/socket.py:233: PermissionError
+___________ Http.test_incomplete_body_past_deadline_does_not_execute ___________
+
+self = <tests.simulator.test_http.Http testMethod=test_incomplete_body_past_deadline_does_not_execute>
+
+    def setUp(self):
+>       self.s=make();self.server=LocalServer(('127.0.0.1',0),self.s)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/simulator/test_http.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/bsim/http_server.py:19: in __init__
+    super().__init__(address, Handler)
+../../../miniforge3/lib/python3.13/socketserver.py:453: in __init__
+    self.socket = socket.socket(self.address_family,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <socket.socket fd=-1, family=0, type=0, proto=0>
+family = <AddressFamily.AF_INET: 2>, type = <SocketKind.SOCK_STREAM: 1>
+proto = 0, fileno = None
+
+    def __init__(self, family=-1, type=-1, proto=-1, fileno=None):
+        # For user code address family and type values are IntEnum members, but
+        # for the underlying _socket.socket they're just integers. The
+        # constructor of _socket.socket converts the given argument to an
+        # integer automatically.
+        if fileno is None:
+            if family == -1:
+                family = AF_INET
+            if type == -1:
+                type = SOCK_STREAM
+            if proto == -1:
+                proto = 0
+>       _socket.socket.__init__(self, family, type, proto, fileno)
+E       PermissionError: [Errno 1] Operation not permitted
+
+../../../miniforge3/lib/python3.13/socket.py:233: PermissionError
+______________________ Http.test_wire_errors_and_retries _______________________
+
+self = <tests.simulator.test_http.Http testMethod=test_wire_errors_and_retries>
+
+    def setUp(self):
+>       self.s=make();self.server=LocalServer(('127.0.0.1',0),self.s)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/simulator/test_http.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/bsim/http_server.py:19: in __init__
+    super().__init__(address, Handler)
+../../../miniforge3/lib/python3.13/socketserver.py:453: in __init__
+    self.socket = socket.socket(self.address_family,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <socket.socket fd=-1, family=0, type=0, proto=0>
+family = <AddressFamily.AF_INET: 2>, type = <SocketKind.SOCK_STREAM: 1>
+proto = 0, fileno = None
+
+    def __init__(self, family=-1, type=-1, proto=-1, fileno=None):
+        # For user code address family and type values are IntEnum members, but
+        # for the underlying _socket.socket they're just integers. The
+        # constructor of _socket.socket converts the given argument to an
+        # integer automatically.
+        if fileno is None:
+            if family == -1:
+                family = AF_INET
+            if type == -1:
+                type = SOCK_STREAM
+            if proto == -1:
+                proto = 0
+>       _socket.socket.__init__(self, family, type, proto, fileno)
+E       PermissionError: [Errno 1] Operation not permitted
+
+../../../miniforge3/lib/python3.13/socket.py:233: PermissionError
+__________________ WebDashboard.test_auth_and_separate_truth ___________________
+
+self = <tests.simulator.test_web.WebDashboard testMethod=test_auth_and_separate_truth>
+
+    def setUp(self):
+>       with socket.socket() as sock:
+             ^^^^^^^^^^^^^^^
+
+tests/simulator/test_web.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <socket.socket fd=-1, family=0, type=0, proto=0>
+family = <AddressFamily.AF_INET: 2>, type = <SocketKind.SOCK_STREAM: 1>
+proto = 0, fileno = None
+
+    def __init__(self, family=-1, type=-1, proto=-1, fileno=None):
+        # For user code address family and type values are IntEnum members, but
+        # for the underlying _socket.socket they're just integers. The
+        # constructor of _socket.socket converts the given argument to an
+        # integer automatically.
+        if fileno is None:
+            if family == -1:
+                family = AF_INET
+            if type == -1:
+                type = SOCK_STREAM
+            if proto == -1:
+                proto = 0
+>       _socket.socket.__init__(self, family, type, proto, fileno)
+E       PermissionError: [Errno 1] Operation not permitted
+
+../../../miniforge3/lib/python3.13/socket.py:233: PermissionError
+__________ WebDashboard.test_conflicts_unknown_fixture_and_port_busy ___________
+
+self = <tests.simulator.test_web.WebDashboard testMethod=test_conflicts_unknown_fixture_and_port_busy>
+
+    def setUp(self):
+>       with socket.socket() as sock:
+             ^^^^^^^^^^^^^^^
+
+tests/simulator/test_web.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <socket.socket fd=-1, family=0, type=0, proto=0>
+family = <AddressFamily.AF_INET: 2>, type = <SocketKind.SOCK_STREAM: 1>
+proto = 0, fileno = None
+
+    def __init__(self, family=-1, type=-1, proto=-1, fileno=None):
+        # For user code address family and type values are IntEnum members, but
+        # for the underlying _socket.socket they're just integers. The
+        # constructor of _socket.socket converts the given argument to an
+        # integer automatically.
+        if fileno is None:
+            if family == -1:
+                family = AF_INET
+            if type == -1:
+                type = SOCK_STREAM
+            if proto == -1:
+                proto = 0
+>       _socket.socket.__init__(self, family, type, proto, fileno)
+E       PermissionError: [Errno 1] Operation not permitted
+
+../../../miniforge3/lib/python3.13/socket.py:233: PermissionError
+______ WebDashboard.test_manual_actions_external_client_export_and_abort _______
+
+self = <tests.simulator.test_web.WebDashboard testMethod=test_manual_actions_external_client_export_and_abort>
+
+    def setUp(self):
+>       with socket.socket() as sock:
+             ^^^^^^^^^^^^^^^
+
+tests/simulator/test_web.py:14: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <socket.socket fd=-1, family=0, type=0, proto=0>
+family = <AddressFamily.AF_INET: 2>, type = <SocketKind.SOCK_STREAM: 1>
+proto = 0, fileno = None
+
+    def __init__(self, family=-1, type=-1, proto=-1, fileno=None):
+        # For user code address family and type values are IntEnum members, but
+        # for the underlying _socket.socket they're just integers. The
+        # constructor of _socket.socket converts the given argument to an
+        # integer automatically.
+        if fileno is None:
+            if family == -1:
+                family = AF_INET
+            if type == -1:
+                type = SOCK_STREAM
+            if proto == -1:
+                proto = 0
+>       _socket.socket.__init__(self, family, type, proto, fileno)
+E       PermissionError: [Errno 1] Operation not permitted
+
+../../../miniforge3/lib/python3.13/socket.py:233: PermissionError
+=========================== short test summary info ============================
+FAILED tests/simulator/test_cli.py::CLI::test_separate_server_and_socket_lifecycle
+FAILED tests/simulator/test_http.py::Http::test_deep_json_returns_public_400_over_http
+FAILED tests/simulator/test_http.py::Http::test_http_reference_exact_and_closed
+FAILED tests/simulator/test_http.py::Http::test_incomplete_body_past_deadline_does_not_execute
+FAILED tests/simulator/test_http.py::Http::test_wire_errors_and_retries - Per...
+FAILED tests/simulator/test_web.py::WebDashboard::test_auth_and_separate_truth
+FAILED tests/simulator/test_web.py::WebDashboard::test_conflicts_unknown_fixture_and_port_busy
+FAILED tests/simulator/test_web.py::WebDashboard::test_manual_actions_external_client_export_and_abort
+8 failed, 51 passed, 69 subtests passed in 3.47s

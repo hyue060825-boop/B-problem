@@ -1,0 +1,14 @@
+{
+  "source_commit": "4d75bee81beaace2092f3812ede68d16d3dee353",
+  "checked_files": {
+    "scripts/run_policy.py": [
+      "sys.path.insert(0, str(ROOT))",
+      "sys.path.insert(0, str(ROOT / 'src'))"
+    ],
+    "scripts/evaluate_checkpoint.py": [
+      "sys.path.insert(0, str(Path(__file__).resolve().parents[1]))",
+      "sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'src'))"
+    ]
+  },
+  "result": "两个 Python 入口仅改变 src 导入路径；Shell 入口字节及权限一致；main 原有 src、tests 与日常配置未变"
+}

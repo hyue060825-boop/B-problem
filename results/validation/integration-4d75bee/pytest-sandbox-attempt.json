@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/home/lenovo/projects/competition/.local/B-problem-archive/整合-c457828/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q"
+  ],
+  "cwd": "/home/lenovo/projects/competition/B-problem",
+  "environment_overrides": {
+    "MPLCONFIGDIR": "/tmp/b-problem-4d75bee-mpl",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "exit_code": 1,
+  "duration_s": 4.06644519999827,
+  "main_base": "d6c7eb0f2fe0e1059db5c6a1b94d816e18dfc5f0",
+  "hy_target": "4d75bee81beaace2092f3812ede68d16d3dee353",
+  "source_state": "uncommitted merge; incoming Python entry points adapted to src layout; src and tests unchanged from main base"
+}
