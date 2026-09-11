@@ -1,0 +1,8 @@
+{
+  "source_hashes": {
+    "solution/geometry/core.py": "ba77a502eb2ada24151ad2057ffc2b6606ccab8c92641173211e227bc7286caf"
+  },
+  "input_sha256": {
+    "fixtures/q1_triangle.json": "ad0db024bbf8a81d1ab9b1c2ea8dede8482b5a7b7914570038de01cebd72e53d"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "profile": "fixture_conformance",
+  "label": "unit_fixture",
+  "problem": 3,
+  "physics": {
+    "angle_rounding": "python_round_then_mod",
+    "time_rounding": "nearest_microsecond_per_action",
+    "coincident_directional": "blocked",
+    "halfplane_tolerance_m": 1e-10,
+    "error_field": {
+      "kind": "constant",
+      "value_deg": 0
+    }
+  },
+  "sources": [
+    {
+      "channel": 1,
+      "position": [
+        900,
+        30
+      ],
+      "radius": 1200
+    }
+  ]
+}

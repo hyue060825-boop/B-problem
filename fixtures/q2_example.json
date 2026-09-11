@@ -1,0 +1,11 @@
+{
+  "label": "人工Q2首次全向观测实例",
+  "position": [
+    0,
+    0
+  ],
+  "svd_deg": 0.0,
+  "channel": 1,
+  "current_channel": 1,
+  "epsilon_impl_deg": 1.01
+}
