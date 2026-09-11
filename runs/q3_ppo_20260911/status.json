@@ -1,0 +1,8 @@
+{
+  "stage": "COMPLETE",
+  "elapsed_s": 144.93743156688288,
+  "updates": 64,
+  "best_selected": true,
+  "checkpoint": "runs/q3_ppo_20260911/latest.pt",
+  "note": "研究训练；best缺失时保留确定性策略，latest不自动部署"
+}

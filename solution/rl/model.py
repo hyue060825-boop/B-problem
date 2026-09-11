@@ -8,8 +8,8 @@ class CandidatePolicy(nn.Module):
         super().__init__()
         self.global_encoder = nn.Sequential(nn.Linear(global_dim, hidden), nn.LayerNorm(hidden), nn.Tanh())
         self.channel_encoder = nn.Sequential(nn.Linear(channel_dim, hidden), nn.LayerNorm(hidden), nn.Tanh())
-        layer = nn.TransformerEncoderLayer(hidden, heads, batch_first=True, norm_first=True)
-        self.channels = nn.TransformerEncoder(layer, 2)
+        layer = nn.TransformerEncoderLayer(hidden, heads, batch_first=True, norm_first=True, dim_feedforward=256, dropout=0.0)
+        self.channels = nn.TransformerEncoder(layer, 2, enable_nested_tensor=False)
         self.action_encoder = nn.Sequential(nn.Linear(candidate_dim, hidden), nn.LayerNorm(hidden), nn.Tanh())
         self.actor = nn.Sequential(nn.Linear(hidden * 3, hidden), nn.Tanh(), nn.Linear(hidden, 1))
         self.critic = nn.Sequential(nn.Linear(hidden * 2, hidden), nn.Tanh(), nn.Linear(hidden, 1))
@@ -26,4 +26,6 @@ class CandidatePolicy(nn.Module):
 
 
 def masked_distribution(logits, mask):
+    if not mask.bool().any(dim=-1).all():
+        raise ValueError('all actions masked')
     return torch.distributions.Categorical(logits=logits.masked_fill(~mask.bool(), torch.finfo(logits.dtype).min))
