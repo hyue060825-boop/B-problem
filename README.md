@@ -4,7 +4,7 @@
 
 ## 从这里开始
 
-1. 阅读 [题面与附件](problem/README.md)，以原始材料为准。
+1. 阅读 [题面与附件](problem/README.md)，结合 [题目阅读](docs/notes/题目阅读.md) 统一理解；后续建模、编程、实验和论文写作时回查，确保与题意一致。
 2. 开工与提交参考 [GitHub 协作速查](github-guidance.md)。使用 Codex 时从本仓库目录启动，项目约定见 [AGENTS.md](AGENTS.md)。
 3. 建模与实验侧将可用于写作的材料放入 [handoff/](handoff/README.md)；论文手从该索引取用材料，在 [paper/](paper/README.md) 内组织论文。
 
