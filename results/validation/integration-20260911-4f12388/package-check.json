@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "wheel": "cumcm_b_workspace-0.2.1-py3-none-any.whl",
+  "web_assets": [
+    "bsim/web/index.html",
+    "bsim/web/style.css",
+    "bsim/web/app.js"
+  ],
+  "sha256": "129fb180287708a1aa49e5aafae1732b9a6665571888f74d22f2e9a190fcbbe2",
+  "scope": "验证源码构建及网页资源包含关系；示例夹具仍依赖完整仓库"
+}

@@ -1,0 +1,14 @@
+{
+  "base": "17efc6aed13c0da95b15b21f2065306c3ff35a56",
+  "unchanged": [
+    "problem",
+    "paper",
+    ".agents/skills",
+    "docs/notes/题目阅读.md",
+    "AGENTS.md",
+    "github-guidance.md",
+    "handoff",
+    "results/formal"
+  ],
+  "status": "PASS"
+}

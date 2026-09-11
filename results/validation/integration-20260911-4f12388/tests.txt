@@ -1,0 +1,44 @@
+test_profile_block_and_replay_cli (tests.simulator.test_cli.CLI.test_profile_block_and_replay_cli) ... ok
+test_separate_server_and_socket_lifecycle (tests.simulator.test_cli.CLI.test_separate_server_and_socket_lifecycle) ... ok
+test_source_audit_uses_project_materials_from_another_directory (tests.simulator.test_cli.CLI.test_source_audit_uses_project_materials_from_another_directory) ... ok
+test_client_lost_response_and_pending (tests.simulator.test_clock_client.ClockClient.test_client_lost_response_and_pending) ... ok
+test_lifecycle_and_late_enter (tests.simulator.test_clock_client.ClockClient.test_lifecycle_and_late_enter) ... ok
+test_noninteger_movement_microseconds (tests.simulator.test_clock_client.ClockClient.test_noninteger_movement_microseconds) ... ok
+test_registered_action_finishes_and_virtual_crossing (tests.simulator.test_clock_client.ClockClient.test_registered_action_finishes_and_virtual_crossing) ... ok
+test_response_leakage_and_history (tests.simulator.test_clock_client.ClockClient.test_response_leakage_and_history) ... ok
+test_batch_reference_and_fast_session (tests.simulator.test_equivalence.Equivalence.test_batch_reference_and_fast_session) ... ok
+test_generated_properties_and_boundaries (tests.simulator.test_equivalence.Equivalence.test_generated_properties_and_boundaries) ... ok
+test_replay_and_observable_audit (tests.simulator.test_equivalence.Equivalence.test_replay_and_observable_audit) ... ok
+test_deep_json_returns_public_400_over_http (tests.simulator.test_http.Http.test_deep_json_returns_public_400_over_http) ... ok
+test_http_reference_exact_and_closed (tests.simulator.test_http.Http.test_http_reference_exact_and_closed) ... ok
+test_incomplete_body_past_deadline_does_not_execute (tests.simulator.test_http.Http.test_incomplete_body_past_deadline_does_not_execute) ... ok
+test_wire_errors_and_retries (tests.simulator.test_http.Http.test_wire_errors_and_retries) ... ok
+test_all_cardinal_halfplane_boundaries (tests.simulator.test_physics.Physics.test_all_cardinal_halfplane_boundaries) ... ok
+test_atomic_failure_and_missing_profiles (tests.simulator.test_physics.Physics.test_atomic_failure_and_missing_profiles) ... ok
+test_direction_and_clear (tests.simulator.test_physics.Physics.test_direction_and_clear) ... ok
+test_error_endpoints_quantization_and_return (tests.simulator.test_physics.Physics.test_error_endpoints_quantization_and_return) ... ok
+test_fixture_rounding_variants_and_field_order (tests.simulator.test_physics.Physics.test_fixture_rounding_variants_and_field_order) ... ok
+test_omni_thresholds (tests.simulator.test_physics.Physics.test_omni_thresholds) ... ok
+test_scenario_constraints (tests.simulator.test_physics.Physics.test_scenario_constraints) ... ok
+test_concurrent_actions (tests.simulator.test_protocol.Protocol.test_concurrent_actions) ... ok
+test_headers_paths_identifiers_size_depth (tests.simulator.test_protocol.Protocol.test_headers_paths_identifiers_size_depth) ... ok
+test_idempotence_and_rejections (tests.simulator.test_protocol.Protocol.test_idempotence_and_rejections) ... ok
+test_json_invalids (tests.simulator.test_protocol.Protocol.test_json_invalids) ... ok
+test_official_timing_example (tests.simulator.test_protocol.Protocol.test_official_timing_example) ... ok
+test_state_and_capacity (tests.simulator.test_protocol.Protocol.test_state_and_capacity) ... ok
+test_deep_json_is_rejected_without_recursion_error (tests.simulator.test_validation.Validation.test_deep_json_is_rejected_without_recursion_error) ... ok
+test_malformed_response_keeps_pending_and_retry_does_not_double_execute (tests.simulator.test_validation.Validation.test_malformed_response_keeps_pending_and_retry_does_not_double_execute) ... ok
+test_required_response_fields_and_numeric_ranges (tests.simulator.test_validation.Validation.test_required_response_fields_and_numeric_ranges) ... ok
+test_result_enums_and_http_acceptance (tests.simulator.test_validation.Validation.test_result_enums_and_http_acceptance) ... ok
+test_source_audit_detects_changes_missing_and_invalid_manifests (tests.simulator.test_validation.Validation.test_source_audit_detects_changes_missing_and_invalid_manifests) ... ok
+test_trace_marks_partial_or_unconfirmed_records_incomplete (tests.simulator.test_validation.Validation.test_trace_marks_partial_or_unconfirmed_records_incomplete) ... ok
+test_trace_recovers_lost_response_and_deduplicates_replays (tests.simulator.test_validation.Validation.test_trace_recovers_lost_response_and_deduplicates_replays) ... ok
+test_trace_rejects_malformed_responses_and_invalid_order (tests.simulator.test_validation.Validation.test_trace_rejects_malformed_responses_and_invalid_order) ... ok
+test_auth_and_separate_truth (tests.simulator.test_web.WebDashboard.test_auth_and_separate_truth) ... ok
+test_conflicts_unknown_fixture_and_port_busy (tests.simulator.test_web.WebDashboard.test_conflicts_unknown_fixture_and_port_busy) ... ok
+test_manual_actions_external_client_export_and_abort (tests.simulator.test_web.WebDashboard.test_manual_actions_external_client_export_and_abort) ... ok
+
+----------------------------------------------------------------------
+Ran 39 tests in 6.090s
+
+OK

@@ -1,0 +1,9 @@
+{
+  "label": "LOCAL-observable-invariants",
+  "status": "PASS",
+  "records": 6,
+  "checked_transitions": 4,
+  "errors": [],
+  "unverified": [],
+  "qualification": "仅核对公开响应与可观测状态；微秒计时允许 2 微秒差异，不证明隐藏场景一致或全部清除。"
+}

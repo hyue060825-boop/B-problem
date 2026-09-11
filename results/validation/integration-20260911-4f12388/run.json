@@ -1,0 +1,125 @@
+{
+  "python": "3.13.13",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "checks": [
+    {
+      "check": "tests",
+      "command": [
+        "python",
+        "-m",
+        "bsim",
+        "validate-fixtures",
+        "--profile",
+        "fixture_conformance"
+      ],
+      "exit_code": 0
+    },
+    {
+      "check": "sources",
+      "command": [
+        "python",
+        "-m",
+        "bsim",
+        "audit-rules"
+      ],
+      "exit_code": 0
+    },
+    {
+      "check": "replay",
+      "command": [
+        "python",
+        "-m",
+        "bsim",
+        "replay",
+        "--fixture",
+        "tests/fixtures/simulator/timing.json",
+        "--trace",
+        "tests/fixtures/simulator/timing.trace.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "check": "trace-audit",
+      "command": [
+        "python",
+        "-m",
+        "bsim",
+        "audit-trace",
+        "--trace",
+        ".local/integration-validation/replay.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "check": "kernel-comparison",
+      "command": [
+        "python",
+        "-m",
+        "bsim",
+        "compare-kernels",
+        "--profile",
+        "fixture_conformance",
+        "--steps",
+        "10000"
+      ],
+      "exit_code": 0
+    },
+    {
+      "check": "trace-comparison",
+      "command": [
+        "python",
+        "-m",
+        "bsim",
+        "compare-traces",
+        "--left",
+        ".local/integration-validation/replay.json",
+        "--right",
+        "results/validation/import-b192804/docs/timing_replay.json",
+        "--include-real-time"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "input_sha256": {
+    "pyproject.toml": "f9db1020603f7f2c90d73117838ad8bcc079a144fca8422e8bb397f9bb18f2d5",
+    "src/bsim/__init__.py": "6c2c7cbbc1912c08c24e177b3d385f4634d3e44036aaa513b53fe799ebe86813",
+    "src/bsim/__main__.py": "de80e0eaa11c0852527fd3c4787355cd39f9199875746da7bbd0044c970446f4",
+    "src/bsim/client.py": "5d1b32ae60d2eef8e272062d5aca783a202c2de787fd18bb5720708a7a17828c",
+    "src/bsim/clocks.py": "d1760109982198d84774b81b5f2120b80fac004ea68458720279ba1dc1a17c17",
+    "src/bsim/env.py": "656080e77f84c5a132615f14159b9e04c8e05e199ca655c23a5088eb7e481ae0",
+    "src/bsim/evaluation.py": "6a58238f6f7be5dafd449f0ece59137fc0ca878897dc7ae5a057a9a2e6812afd",
+    "src/bsim/fast.py": "024fbe85c2f80cffd53ed9c07a52c323657785a0f2b24f21f2dd1eced4550f88",
+    "src/bsim/http_server.py": "b5ae05ff747941780fc4d8a60d227356ee6d2489d80f7ee731e41af7cf352c10",
+    "src/bsim/noise.py": "0b149c9b1b0470e6c3d37d3b73f42757076cad8440bf91cbcf9c0b112d0fcb88",
+    "src/bsim/paths.py": "3b637fe8127bc41689e9bda83a856992bf71c9ad1fa7465ae08a6c17bfa570c3",
+    "src/bsim/profiles.py": "d00bfb79e124d1b4dced21f2b595eb5375d6287b6fbf6895443582be3cf49bff",
+    "src/bsim/protocol.py": "005b796f969ca5ffe912bdd70909e269f208e02a81c45fb5be3a9f6a2b482bf6",
+    "src/bsim/reference.py": "eca0ad350a6a22a9ccdd655ae1ed284cc98cec107fd1125aad5a488a8818b86f",
+    "src/bsim/scenarios.py": "42fe0fd36bfac2f914fc20400a5bb7b37a3e2345a922dc1df6566234180a4d5a",
+    "src/bsim/session.py": "c5a160a87da0e0c28b0b81cb88ddac55ae14496fe74210160996dccb4a54d547",
+    "src/bsim/source_audit.py": "820107b794c678c0b3f4042e5c60c98c2bf61f258c4cd8143c02006a0d6f8bbe",
+    "src/bsim/strategy.py": "22340e37c64253379f297848f17cf41cbe9c551e30fe8dd1d93b52dd8706e071",
+    "src/bsim/validation.py": "e2054e298a38bf2e0bc6047740a932ef7336946a982b991adc3712bc4316c718",
+    "src/bsim/web/app.js": "9a2c299e9ea2cd72e750ef9e57142df31a2b0bbdff85dee8a899f5aa93ee2b3a",
+    "src/bsim/web/index.html": "8f6bb8fcc040cb4806094be9476b77eea7bac7c3d4e820dfe551130163282502",
+    "src/bsim/web/style.css": "8fcdb8f9d1af4c0a13639b1c884640451d234d2e39e5dd7650546af370fa99e8",
+    "src/bsim/web_dashboard.py": "64d75dc646c89c46c83f1e4e633cd1d322ad03b90f3bb8ca2bdd4305652e758c",
+    "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests/fixtures/simulator/timing.json": "3da8e5bd494e8ea002bbbd3bd0ed0e2944256f5ab0c010048f07115622f9d8da",
+    "tests/fixtures/simulator/timing.trace.json": "cbc8fc37a57fe548833954ecc0e7ab85b8659c35e437e8ceaff773aafcdddd40",
+    "tests/fixtures/simulator/visual_mixed.json": "70637e79c969ab787d2d9a23c1c03278f5f6cc3a20f11a543b302c3bd754aaf2",
+    "tests/simulator/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests/simulator/support.py": "4b96f017d7ee9fe6f10a846cff70c2c87515b49a77789c80b02f014277221471",
+    "tests/simulator/test_cli.py": "f4270c16e46b7ad229d960683cc2427d57b20d3af2c3f52e8eb24b6f3f90d5d4",
+    "tests/simulator/test_clock_client.py": "6b317c7ebc4c8bfac63b0ac8fffd6fe71473ab85981f09d8fd8c3d1ad9f71ef4",
+    "tests/simulator/test_equivalence.py": "4250bc5d2c14c4d8670646b4a3fe2dd71a1c3f434cf18004938503d0767f7b5f",
+    "tests/simulator/test_http.py": "58bc7c0b399667ff06493a424e15722bff917195266b7fbf3968373d525cd33a",
+    "tests/simulator/test_physics.py": "23c5527df09fef168743171464b766113e431809839e1e38bc003e9603630725",
+    "tests/simulator/test_protocol.py": "43951e1753aa8fecadeb40d5435fc0f61f79c5abe4b899a7eeead95fe05e2888",
+    "tests/simulator/test_validation.py": "e0d1a110b0f55aa9c6e04bc778dc62df4791b1927bf6162dd418b2ca446f3198",
+    "tests/simulator/test_web.py": "89486a2cfab434b431f817ea1e80a4cf732007626499a7f885bbc9f9cc1b50c5"
+  },
+  "code_commit": "4f12388560937378ab1b18f89d036f73740410e6",
+  "source_branch_commit": "b19280495fd788c3eaf40c7256fb31feb0d7bbe0",
+  "working_directory": "仓库根目录（可编辑安装）"
+}
