@@ -34,21 +34,48 @@
     K_1\cap W(q,z,\epsilon)\cap\{x:5<\|x-q\|\leq1500\}, & z=\mathrm{direction}.
   \end{cases}
 \end{equation}
-以所有可行结果中的最坏最小包围圆半径衡量定位风险：
+理想模型以所有可行结果中的最坏最小包围圆半径衡量定位风险：
 \begin{equation}
   R_{\mathrm{post}}^{\mathrm{worst}}(q)=
   \sup_{z:K_2(q,z)\neq\varnothing}
   \operatorname{rad}_{\mathrm{MEC}}\!\left(K_2(q,z)\right).
 \end{equation}
-最终在保证接收区域内最小化
+连续枚举全部 $z$ 的代价较高。程序在每个候选点采用误差情景集 $\{-1^\circ,0^\circ,1^\circ\}$ 计算后验，并将所得最大值明确记为采样估计 $\widehat R_{\mathrm{post}}(q)$。它用于候选排序，不作为连续最坏上界。最终在保证接收区域内最小化
 \begin{equation}
   J(q)=\frac{\|q-s_{\mathrm{now}}\|}{5}+5
   +\mathbf 1_{\{c\neq c_{\mathrm{cur}}\}}
-  +\lambda_1R_{\mathrm{post}}^{\mathrm{worst}}(q)
+  +\lambda_1\widehat R_{\mathrm{post}}(q)
   +\lambda_2T_{\mathrm{remain}}^{\mathrm{est}}(q).
   \label{eq:q2-objective}
 \end{equation}
 初版令 $\lambda_2=0$，使模型只比较可核算的移动、检测、切换成本和最坏定位半径；$\lambda_1$ 的单位为秒每米，通过演练实验选择。
 
 \subsection{粗到细搜索}
-先在 $\mathcal C_{\mathrm{recv}}$ 中生成 $32$ 至 $128$ 个规则网格和侧翼候选点，计算式\eqref{eq:q2-objective}后保留前 $k$ 个，再在其邻域局部细化。若第二次返回 \texttt{near}，由距离不超过 $5\,\mathrm{m}$ 可直接原地清除。\placeholder{填写问题二实例的候选点数量、参数、最优坐标和相较基线的定位半径或时间改善，并插入 $J(q)$ 热力图。}
+先在 $\mathcal C_{\mathrm{recv}}$ 中生成不超过 $64$ 个规则网格和侧翼候选点，计算式\eqref{eq:q2-objective}后保留前 $8$ 个，再在其 $3\times3$ 邻域局部细化；每个入选点均重新核验式\eqref{eq:guaranteed-reception}。若第二次返回 \texttt{near}，由距离不超过 $5\,\mathrm{m}$ 可直接原地清除。
+
+\subsection{选点算例}
+以 $s_1=(0,0)$、$\theta_1=0^\circ$ 的人工首次观测为例，取 $\lambda_1=0.5\,\mathrm{s/m}$、$\lambda_2=1$。最优已评估点为 $(735.90,262.92)\,\mathrm{m}$，其保证接收距离上界为 $816.86\,\mathrm{m}<1000\,\mathrm{m}$。与沿首次示向线移动的基线相比，采样后验半径由 $375.16\,\mathrm{m}$ 降至 $99.22\,\mathrm{m}$，目标值由 $476.61\,\mathrm{s}$ 降至 $375.80\,\mathrm{s}$。固定侧翼点得到更小的采样后验半径，但因移动与后续时间较大，其综合目标值为 $394.15\,\mathrm{s}$。结果见\cref{tab:q2-fixture,fig:q2-candidates}。
+
+\begin{table}[H]
+  \centering
+  \caption{问题二人工夹具的候选点比较}
+  \label{tab:q2-fixture}
+  \begin{tabularx}{\textwidth}{LLLLL}
+    \toprule
+    候选方案 & 坐标/m & 接收距离上界/m & 采样后验半径/m & $J$/s \\
+    \midrule
+    本文最优已评估点 & $(735.90,262.92)$ & $816.86$ & $99.22$ & $375.80$ \\
+    沿示向线点 & $(750.00,0.00)$ & $750.25$ & $375.16$ & $476.61$ \\
+    固定侧翼点 & $(750.00,450.00)$ & $888.36$ & $69.20$ & $394.15$ \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.88\textwidth]{q2_candidates.png}
+  \caption{保证接收区域内的候选点评价；红星为综合目标最小点}
+  \label{fig:q2-candidates}
+\end{figure}
+
+该结果只说明有限候选搜索在显式夹具上的行为；由于后验角度采用有限情景采样，不能据此宣称连续全局最优。完整输入、结果和源码哈希保存在支撑材料的 \texttt{artifacts/q2/} 目录。

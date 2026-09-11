@@ -44,6 +44,13 @@
 \end{equation}
 因此，定位区域直径不超过 $40\,\mathrm{m}$ 不能单独推出存在半径 $20\,\mathrm{m}$ 的覆盖圆，必须执行式\eqref{eq:diameter-circle-test}或直接计算最小包围圆。
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.58\textwidth]{q1_counterexample.png}
+  \caption{由三次合法示向观测构造的直径圆反例}
+  \label{fig:q1-counterexample}
+\end{figure}
+
 \subsection{最小包围圆与安全清除区域}
 在线任务还包含目标圆边界、正观测距离和负观测等约束。对频道 $c$ 维护物理可行域 $K_c$，并取其凸包 $H_c=\operatorname{conv}(K_c)$。虽然负观测可能使 $K_c$ 非凸，但任意位置 $q$ 的最坏距离满足
 \begin{equation}
@@ -62,4 +69,23 @@
   Q_c=\left\{q:\sup_{x\in K_c}\|q-x\|\leq20-\eta\right\}.
   \label{eq:safe-clear-set}
 \end{equation}
-机器人可在 $Q_c$ 中选择更靠近后续路线的点，而不必固定前往最小包围圆圆心。\placeholder{根据问题一给定观测计算交会区域顶点、直径、直径圆判定和最小包围圆，并插入几何示意图与结果表。}
+机器人可在 $Q_c$ 中选择更靠近后续路线的点，而不必固定前往最小包围圆圆心。
+
+\subsection{数值算例与交叉核验}
+题目未给出唯一的数值观测序列，故选取两个可复现的人工夹具检验算法，结果见\cref{tab:q1-fixtures}。对称交会算例得到四边形区域，直径圆恰与最小包围圆重合；\cref{fig:q1-counterexample}中的三扇形算例交于边长 $40\,\mathrm{m}$ 的等边三角形，直径圆判定为失败，而最小包围圆半径为 $23.0940\,\mathrm{m}$。两例的旋转卡壳结果均与 $O(h^2)$ 枚举一致，最小包围圆还通过独立凸优化复核。
+
+\begin{table}[H]
+  \centering
+  \caption{问题一人工夹具的计算结果}
+  \label{tab:q1-fixtures}
+  \begin{tabularx}{0.93\textwidth}{LLLLL}
+    \toprule
+    算例 & 区域类型 & 直径/m & 直径圆覆盖 & 最小包围圆半径/m \\
+    \midrule
+    两次对称交会 & 四边形 & $34.9208$ & 是 & $17.4604$ \\
+    三扇形反例 & 等边三角形 & $40.0000$ & 否 & $23.0940$ \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+全部输入、双精度输出与源码哈希保存在支撑材料的 \texttt{artifacts/q1/} 目录。上述算例用于验证几何结论，不作为官方场景成绩。

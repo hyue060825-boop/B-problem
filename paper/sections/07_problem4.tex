@@ -32,6 +32,15 @@
 
 若源恰与网格顶点重合，则保留该顶点的六个非重合邻点。这些邻点距源均为 $s<1000\,\mathrm{m}$，方向每隔 $60^\circ$ 分布，故总有一个邻点与发射方向夹角不超过 $30^\circ$。生成网格时，把仅与目标圆边界或顶点相接的三角形也纳入集合，以覆盖圆边界上的退化位置。
 
+在未优化网格平移和旋转时，边长 $995\,\mathrm{m}$ 的基准构造包含 $46$ 个与目标圆相交的闭三角形、$41$ 个不同检测点，如\cref{fig:q4-grid}所示。这两个数值由显式几何枚举得到，表示连续覆盖基线的规模，不代表路线已经最短。
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.68\textwidth]{q4_grid.pdf}
+  \caption{边长 $995\,\mathrm{m}$ 的定向源三角网格覆盖基线}
+  \label{fig:q4-grid}
+\end{figure}
+
 \subsection{正观测定位与清除兜底}
 一旦得到方向值，无论源为全向或定向，均可更新
 \begin{equation}
