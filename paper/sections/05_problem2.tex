@@ -1,12 +1,54 @@
-\section{问题二：下一最佳检测点模型}
+\section{问题二：保证接收约束下的主动选点}
 
-\subsection{候选点生成}
-在当前可行域质心、最大方差方向、已有测向线侧方以及地图覆盖点附近生成候选集合 $\mathcal C_t$，并剔除不满足位置约束或明显重复的候选点。
-
-\subsection{单位时间信息效用}
-对候选点 $s\in\mathcal C_t$ 进行蒙特卡洛观测展开，定义
+\subsection{第一次观测后的物理可行域}
+设第一次检测点为 $s_1$，返回示向度 $\theta_1$。由于问题二考虑全向源，且返回结果为方向值，源位置必定位于
 \begin{equation}
-  \label{eq:utility}
-  U(s)=\frac{\mathbb E[D(\Omega_t)-D(\Omega_{t+1})]+\lambda\mathbb E[H(b_t)-H(b_{t+1})]}{\lVert s-s_t\rVert/5+5+\tau_{\mathrm{switch}}}.
+  K_1=D_{1800}\cap W(s_1,\theta_1,\epsilon)
+  \cap\{x:5<\|x-s_1\|\leq1500\}.
+  \label{eq:first-feasible-set}
 \end{equation}
-选择 $U(s)$ 最大的候选点作为下一检测点。\placeholder{填写候选点数量、采样次数、最优坐标和消融比较。}
+其中 $D_{1800}$ 为目标圆。真实接收半径 $R\in[1000,1500]$ 未知，故不能把源放在示向线上的某个固定距离处，也不能假定第二次检测在距离 $1500\,\mathrm{m}$ 内必有信号。
+
+\subsection{保证接收区域}
+为排除第二次检测返回无信号的风险，定义
+\begin{equation}
+  \mathcal C_{\mathrm{recv}}=
+  \left\{q:\sup_{x\in K_1}\|q-x\|\leq1000-\eta_r\right\},
+  \label{eq:guaranteed-reception}
+\end{equation}
+其中 $\eta_r>0$ 为距离计算的保护量。若 $q\in\mathcal C_{\mathrm{recv}}$，则无论真实源位于 $K_1$ 的何处、真实接收半径在给定区间中取何值，第二次检测必返回方向值或近距离标志。
+
+除接收可靠性外，还需要改善两条观测射线的交会角。对候选点 $q$ 和可能源位置 $x$，定义
+\begin{equation}
+  \beta(q,x)=\arccos
+  \frac{(s_1-x)^{\mathsf T}(q-x)}{\|s_1-x\|\,\|q-x\|}.
+\end{equation}
+当 $\beta$ 接近 $0^\circ$ 或 $180^\circ$ 时，角度误差会被显著放大；侧翼候选点通常可形成更接近 $90^\circ$ 的交会角。
+
+\subsection{最坏后验代价}
+对候选位置 $q$ 和所有可行第二观测 $z$，令
+\begin{equation}
+  K_2(q,z)=
+  \begin{cases}
+    K_1\cap B(q,5), & z=\mathrm{near},\\
+    K_1\cap W(q,z,\epsilon)\cap\{x:5<\|x-q\|\leq1500\}, & z=\mathrm{direction}.
+  \end{cases}
+\end{equation}
+以所有可行结果中的最坏最小包围圆半径衡量定位风险：
+\begin{equation}
+  R_{\mathrm{post}}^{\mathrm{worst}}(q)=
+  \sup_{z:K_2(q,z)\neq\varnothing}
+  \operatorname{rad}_{\mathrm{MEC}}\!\left(K_2(q,z)\right).
+\end{equation}
+最终在保证接收区域内最小化
+\begin{equation}
+  J(q)=\frac{\|q-s_{\mathrm{now}}\|}{5}+5
+  +\mathbf 1_{\{c\neq c_{\mathrm{cur}}\}}
+  +\lambda_1R_{\mathrm{post}}^{\mathrm{worst}}(q)
+  +\lambda_2T_{\mathrm{remain}}^{\mathrm{est}}(q).
+  \label{eq:q2-objective}
+\end{equation}
+初版令 $\lambda_2=0$，使模型只比较可核算的移动、检测、切换成本和最坏定位半径；$\lambda_1$ 的单位为秒每米，通过演练实验选择。
+
+\subsection{粗到细搜索}
+先在 $\mathcal C_{\mathrm{recv}}$ 中生成 $32$ 至 $128$ 个规则网格和侧翼候选点，计算式\eqref{eq:q2-objective}后保留前 $k$ 个，再在其邻域局部细化。若第二次返回 \texttt{near}，由距离不超过 $5\,\mathrm{m}$ 可直接原地清除。\placeholder{填写问题二实例的候选点数量、参数、最优坐标和相较基线的定位半径或时间改善，并插入 $J(q)$ 热力图。}

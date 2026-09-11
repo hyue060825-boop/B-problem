@@ -1,18 +1,59 @@
-\section{问题三：多干扰源联合搜索与清除}
+\section{问题三：全向多源的完备搜索与清除}
 
-\subsection{部分可观测决策过程}
-令隐状态包含干扰源数量、频道、位置、接收半径与清除状态，策略仅能使用机器人位置、历史动作和观测。优化目标写为
+\subsection{目标函数与状态表示}
+设总移动距离、检测次数、频道切换次数、失败及成功清除次数分别为 $L,M,S,F,C$，则累计虚拟时间可核算为
 \begin{equation}
-  \min_{\pi}\;\mathbb E_{\pi}[T],\qquad
-  \Pr_{\pi}(\text{全部干扰源清除})\geq 1-\varepsilon .
+  T=\frac{L}{5}+5M+S+3F+5C.
+  \label{eq:virtual-time}
 \end{equation}
-
-\subsection{粒子信念更新}
-对每个频道维护粒子集合
+优化目标是在清除全部存在源的约束下最小化 $T$。由于源数只知道在 $10$ 至 $16$ 之间，清除 $10$ 个源后不能直接退出。对每个频道维护
 \begin{equation}
-  \mathcal P_c=\{(p^{(k)},R^{(k)},w^{(k)})\}_{k=1}^{K}.
+  \mathrm{UNKNOWN},\ \mathrm{FOUND},\ \mathrm{LOCALIZING},\
+  \mathrm{CLEARABLE},\ \mathrm{CLEARED},\ \mathrm{ABSENT\_CERTIFIED}
 \end{equation}
-依据方向、近距离、无信号以及清除结果更新权重，并在有效样本数过低时进行重采样。
+六类状态，并记录方向观测、负观测、清除失败、可行域及覆盖完成度。
 
-\subsection{策略求解}
-解析模块生成测量、清除、频道切换、覆盖扫描和终止等候选动作；规划器从当前信念采样可能世界，使用有限步展开估计期望剩余时间。\placeholder{填写正式评测的成功率、平均耗时、方差及基线对照。}
+\subsection{无信号观测与全向覆盖}
+对未清除的全向源，接收半径满足 $R_c\geq1000\,\mathrm{m}$。若在位置 $q$ 检测频道 $c$ 返回无信号，则有
+\begin{equation}
+  K_c\leftarrow K_c\setminus B(q,1000).
+  \label{eq:omni-negative-update}
+\end{equation}
+只能排除半径 $1000\,\mathrm{m}$ 的圆盘，不能使用未知接收半径的上界 $1500\,\mathrm{m}$。若某频道在检测点集合 $P_c$ 上均返回无信号，且
+\begin{equation}
+  D_{1800}\subseteq\bigcup_{q\in P_c}B(q,1000),
+  \label{eq:absence-certificate}
+\end{equation}
+则可确定该频道不存在未清除源，并将其标记为 $\mathrm{ABSENT\_CERTIFIED}$。
+
+\subsection{中心加正六边形覆盖骨架}
+取中心点 $p_0=(0,0)$，并在半径 $a$ 的圆周上设置六个顶点
+\begin{equation}
+  p_k=a
+  \begin{bmatrix}\cos(k\pi/3)\\ \sin(k\pi/3)\end{bmatrix},
+  \qquad k=0,\ldots,5.
+\end{equation}
+中心检测覆盖 $r\leq1000\,\mathrm{m}$ 的区域。对 $1000\leq r\leq1800$，任一点与最近外圈顶点的方位差不超过 $30^\circ$，距离平方不超过
+\begin{equation}
+  f(r)=r^2+a^2-2ra\cos30^\circ.
+\end{equation}
+$f(r)$ 为凸函数，只需检查区间端点。外边界覆盖条件为
+\begin{equation}
+  1800^2+a^2-3600a\cos30^\circ\leq1000^2,
+\end{equation}
+其较小正根约为 $a_{\min}=1122.96\,\mathrm{m}$。取
+\begin{equation}
+  a=1135\,\mathrm{m}
+\end{equation}
+时，$r=1800\,\mathrm{m}$ 处的最坏距离约为 $994.81\,\mathrm{m}$，保留约 $5.19\,\mathrm{m}$ 的覆盖裕量。由中心依次访问六个外圈顶点且不返回中心，骨架路程为 $6a=6810\,\mathrm{m}$；相较 $a=1200\,\mathrm{m}$ 的方案减少 $390\,\mathrm{m}$，即节省 $78\,\mathrm{s}$ 移动时间。该布局是有解析保证的强基线，不宣称为全局最优。
+
+\subsection{搜索、定位和清除的交织调度}
+在相邻覆盖站采用相反的频道扫描顺序，减少站点之间多余的切换；已经发现、清除或完成不存在证明的频道不再参加全图存在性扫描。正观测到达后，优先利用后续覆盖站顺路形成较大交会角，再按问题二生成专门的主动测量点。
+
+若检测返回 \texttt{near}，则距离不超过 $5\,\mathrm{m}<20\,\mathrm{m}$，立即原地清除。当 $Q_c$ 非空时前往其中的近路线点执行保证清除；若可行域已较小但尚无单点清除证书，则用少量半径 $20\,\mathrm{m}$ 圆覆盖 $K_c$。失败清除只耗时 $3\,\mathrm{s}$，并给出
+\begin{equation}
+  K_c\leftarrow K_c\setminus B(q,20)
+\end{equation}
+这一确定性信息，故可与额外检测的移动及 $5\,\mathrm{s}$ 检测成本直接比较。
+
+当多个频道均已得到安全清除区域时，先用最近插入和 2-opt 更新在线路线；清除点基本稳定后，再采用 Held--Karp 状态压缩动态规划求开放式访问顺序，其复杂度为 $O(m^2 2^m)$，在 $m\leq16$ 时可行\cite{heldkarp1962}。退出前逐频道审计，只有全部频道处于 $\mathrm{CLEARED}$ 或 $\mathrm{ABSENT\_CERTIFIED}$ 才调用退出接口。\placeholder{填写问题三三次正式测试的案例编码、清除数、平均定位清除时间和程序运行时间，并与覆盖基线比较。}

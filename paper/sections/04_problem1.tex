@@ -1,15 +1,65 @@
-\section{问题一：多次测向下的几何定位模型}
+\section{问题一：有界误差下的鲁棒交会定位}
 
-\subsection{测向可行域}
-设第 $j$ 个检测点为 $S_j=(x_j,y_j)$，观测方向为 $\hat\theta_j$，允许角度误差为 $\delta$。真实位置 $p$ 应满足
+\subsection{一次观测的前向角域}
+设第 $i$ 个检测点为 $s_i=(x_i,y_i)$，返回示向度 $\theta_i$，误差界为 $\epsilon=1^\circ$。定义角域两条边界的单位向量
 \begin{equation}
-  \label{eq:wedge}
-  \angle\bigl(p-S_j,\,\hat\theta_j\bigr)\leq \delta .
+  u_i^-=
+  \begin{bmatrix}\cos(\theta_i-\epsilon)\\ \sin(\theta_i-\epsilon)\end{bmatrix},
+  \qquad
+  u_i^+=
+  \begin{bmatrix}\cos(\theta_i+\epsilon)\\ \sin(\theta_i+\epsilon)\end{bmatrix}.
 \end{equation}
-将每个角扇区写成两个有向半平面，与地图边界依次求交，得到
+记二维向量叉积为 $[a,b]=a_xb_y-a_yb_x$，则源位置 $x$ 满足
 \begin{equation}
-  \Omega_k=\Omega_0\cap\bigcap_{j=1}^{k}W(S_j,\hat\theta_j,\delta).
+  [u_i^-,x-s_i]\geq0,
+  \qquad
+  [u_i^+,x-s_i]\leq0.
+  \label{eq:wedge-halfplanes}
 \end{equation}
+两个半平面共同构成朝向 $\theta_i$ 的 $2\epsilon$ 前向角域 $W_i$。若将其误写成两条无限直线之间的条带，会保留检测点背后的伪解。
 
-\subsection{定位精度与清除判定}
-以可行域直径 $D(\Omega_k)$、面积 $A(\Omega_k)$ 和最小包围圆半径 $r_{\min}(\Omega_k)$ 评价定位质量。清除前应检查最小包围圆是否落入题目规定的有效清除范围。\placeholder{插入几何示意图及问题一数值结果表。}
+\subsection{交会区域及退化处理}
+仅按问题一的交会定义，多次观测给出的定位区域为
+\begin{equation}
+  P=\bigcap_{i=1}^{n}W_i.
+  \label{eq:q1-intersection}
+\end{equation}
+将每个 $W_i$ 转化为两个线性半平面后，可用半平面交在 $O(n\log n)$ 时间内得到凸多边形；在线新增观测时采用增量多边形裁剪。程序分别标记空集、无界区域、单点、线段和一般多边形。若输入满足误差界而交集为空，应首先回查角度环绕、度与弧度、半平面方向及数值裕量，不能直接判定目标不存在。
+
+设有序凸多边形顶点为 $V=\{v_1,\ldots,v_h\}$，其直径为
+\begin{equation}
+  D(P)=\max_{i,j}\|v_i-v_j\|.
+\end{equation}
+采用旋转卡壳算法可在 $O(h)$ 时间内求得最远点对，并保留 $O(h^2)$ 枚举结果用于交叉核验\cite{toussaint1983}。
+
+\subsection{直径圆覆盖判定}
+设最远点对为 $a,b$，中点 $m=(a+b)/2$。以 $a,b$ 为直径端点的圆覆盖 $P$ 当且仅当
+\begin{equation}
+  \max_{v\in V}\|v-m\|\leq \frac{\|a-b\|}{2}.
+  \label{eq:diameter-circle-test}
+\end{equation}
+该条件一般并不成立。例如边长为 $40\,\mathrm{m}$ 的等边三角形直径为 $40\,\mathrm{m}$，但最小包围圆半径为
+\begin{equation}
+  R_{\mathrm{MEC}}=\frac{40}{\sqrt3}\approx23.094\,\mathrm{m}>20\,\mathrm{m}.
+\end{equation}
+因此，定位区域直径不超过 $40\,\mathrm{m}$ 不能单独推出存在半径 $20\,\mathrm{m}$ 的覆盖圆，必须执行式\eqref{eq:diameter-circle-test}或直接计算最小包围圆。
+
+\subsection{最小包围圆与安全清除区域}
+在线任务还包含目标圆边界、正观测距离和负观测等约束。对频道 $c$ 维护物理可行域 $K_c$，并取其凸包 $H_c=\operatorname{conv}(K_c)$。虽然负观测可能使 $K_c$ 非凸，但任意位置 $q$ 的最坏距离满足
+\begin{equation}
+  \sup_{x\in K_c}\|q-x\|=\sup_{x\in H_c}\|q-x\|.
+\end{equation}
+于是求解
+\begin{equation}
+  q_c^\star=\arg\min_q\max_{x\in H_c}\|q-x\|,
+  \qquad
+  R_c^\star=\max_{x\in H_c}\|q_c^\star-x\|,
+\end{equation}
+即可得到最小包围圆。随机增量算法的期望复杂度为 $O(h)$\cite{welzl1991}。若 $R_c^\star\leq20-\eta$，则在 $q_c^\star$ 清除具有确定性成功保证，其中 $\eta$ 为实现使用的数值保护量。
+
+更一般地，全部安全清除位置组成
+\begin{equation}
+  Q_c=\left\{q:\sup_{x\in K_c}\|q-x\|\leq20-\eta\right\}.
+  \label{eq:safe-clear-set}
+\end{equation}
+机器人可在 $Q_c$ 中选择更靠近后续路线的点，而不必固定前往最小包围圆圆心。\placeholder{根据问题一给定观测计算交会区域顶点、直径、直径圆判定和最小包围圆，并插入几何示意图与结果表。}
