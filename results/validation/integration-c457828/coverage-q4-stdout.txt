@@ -1,0 +1,10 @@
+{
+  "problem": 4,
+  "grid_summary": {
+    "spacing_m": 995.0,
+    "triangle_count": 42,
+    "vertex_count": 31,
+    "diameter_checks": true
+  },
+  "certified": true
+}

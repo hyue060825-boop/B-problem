@@ -1,0 +1,11 @@
+{
+  "q1_result_identical": true,
+  "q1_diameter_m": 40.00000000000036,
+  "q1_mec_radius_m": 23.09401076758523,
+  "q2_status": "OK",
+  "q2_best_position": [
+    735.8998438559609,
+    262.91584212536304
+  ],
+  "q2_score_difference": 9.890754881780595e-12
+}

@@ -1,0 +1,30 @@
+{
+  "label": "人工三扇形交反例",
+  "units": "m,deg",
+  "observations": [
+    {
+      "position": [
+        -1000.0,
+        0.0
+      ],
+      "svd_deg": 1.0,
+      "epsilon_deg": 1.0
+    },
+    {
+      "position": [
+        540.0,
+        -866.0254037844386
+      ],
+      "svd_deg": 121.00000000000001,
+      "epsilon_deg": 1.0
+    },
+    {
+      "position": [
+        520.0,
+        900.6664199358162
+      ],
+      "svd_deg": 241.0,
+      "epsilon_deg": 1.0
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 """正式研究实训前必须通过：闭环、CUDA梯度、BC/PPO、断点、CPU/GPU一致性。"""
 import sys,os,json,time,random
 from pathlib import Path
-sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+sys.path.insert(0,str(Path(__file__).resolve().parents[1] / 'src'))
 os.environ.setdefault('OMP_NUM_THREADS','1');os.environ.setdefault('OPENBLAS_NUM_THREADS','1');os.environ.setdefault('MKL_NUM_THREADS','1')
 import numpy as np
 import torch
@@ -14,7 +14,7 @@ from solution.rl.model import CandidatePolicy
 from solution.rl.environment import TrainingEnv
 
 def main():
-    output=Path('runs/smoke_20260911');output.mkdir(parents=True,exist_ok=True)
+    output=Path('results/training/smoke_20260911');output.mkdir(parents=True,exist_ok=True)
     torch.set_num_threads(1);torch.manual_seed(2026);random.seed(2026);np.random.seed(2026)
     started=time.perf_counter();report={'status':'RUNNING','torch':torch.__version__,'cuda':torch.cuda.is_available(),'problems':{},'provenance':provenance()}
     if not report['cuda']:raise RuntimeError('CUDA unavailable')

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import argparse,json,sys,time,traceback
 from pathlib import Path
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'src'))
 from solution.rl.training import run_training
 p=argparse.ArgumentParser();p.add_argument('--config',required=True);a=p.parse_args()
 def main():

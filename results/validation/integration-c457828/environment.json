@@ -1,0 +1,11 @@
+{
+  "python": "3.13.13",
+  "numpy": "2.5.1",
+  "scipy": "1.18.1",
+  "shapely": "2.1.2",
+  "torch": "2.8.0+cpu",
+  "pytest": "9.1.1",
+  "bsim": "/home/lenovo/projects/competition/B-problem/src/bsim/__init__.py",
+  "solution": "/home/lenovo/projects/competition/B-problem/src/solution/__init__.py",
+  "installation": "editable; src layout; reuses local audit dependencies"
+}

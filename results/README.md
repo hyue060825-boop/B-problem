@@ -1,11 +1,12 @@
 # 实验结果
 
 - `validation/`：模拟器、接口和工程整合验证；历史导入与新验证分别归档。
+- `training/`：研究训练的配置、日志、权重和逐局记录；历史交付与新实验分目录保存。
 - `rehearsal/`：演练及本地策略评估，每次运行使用独立目录。
 - `formal/`：正式测试，每次运行独立归档；保留原始日志及其文件名，不覆盖或删除。
 - `figures/`、`tables/`：生成的图表，关联对应运行和生成脚本。
 
-已有记录：[原始导入验证](validation/import-b192804/README.md)、[整合验证](validation/integration-20260911-4f12388/README.md)。这些记录用于核对模拟器与工程行为；策略效果实验、官方演练和正式测试结果仍待补充。
+已有记录：[早期模拟器导入](validation/import-b192804/README.md)、[早期整合验证](validation/integration-20260911-4f12388/README.md)、[hy 报告和算例](validation/import-c457828/README.md)、[历史研究训练](training/import-c457828/README.md)、[本次接收验证](validation/integration-c457828/README.md)。当前已有自建分布研究结果，质量与复现问题见接收记录；尚未交付官方演练或正式成绩。
 
 运行目录可用 `q3-20260911-143000-baseline` 等唯一名称。每次重要运行记录：
 

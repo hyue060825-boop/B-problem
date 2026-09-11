@@ -1,0 +1,1521 @@
+{
+  "coverage": {
+    "triangle_count": 42,
+    "vertex_count": 31,
+    "diameter_checks": true,
+    "continuous_domain_covered": true,
+    "guards": 13,
+    "all_guards_valid": true,
+    "verified": true,
+    "omni": {
+      "radius_m": 1800.0,
+      "station_radius_m": 1135.0,
+      "max_distance_m": 994.8091274896826,
+      "margin_m": 5.170872510317395,
+      "certified": true
+    }
+  },
+  "teacher_by_N": [
+    {
+      "N": 10,
+      "metrics": {
+        "problem": 4,
+        "seed": 0,
+        "profile": {
+          "version": "research-v1-20260911",
+          "seed": 0,
+          "problem": 4,
+          "distribution": "area",
+          "field": "smooth",
+          "noise_seed": 917,
+          "quantization": "half_up",
+          "overlap": "invisible",
+          "assumption": "非官方分布；常规10–16源；Q4两类并存"
+        },
+        "N": 10,
+        "C": 9,
+        "completion": false,
+        "cleared_fraction": 0.9,
+        "virtual_time_s": 31572.187861,
+        "time_per_clear_s": 3508.020873444444,
+        "elapsed_s": 0.41647336200185237,
+        "path_length_m": 39675.939301821294,
+        "measures": 3996,
+        "switches": 3609,
+        "clear_failures": 1,
+        "probe_macros": 5,
+        "macro_steps": 400,
+        "decision_max_s": 0.0,
+        "decision_p95_s": 0.0,
+        "error": "macro_budget"
+      },
+      "first_all_cleared": null,
+      "exit_allowed": false,
+      "states": {
+        "CLEARED": 9,
+        "UNKNOWN": 10,
+        "LOCALIZING": 1
+      },
+      "visited": 31,
+      "stations": 31,
+      "stagnant_macros": 355,
+      "tail": [
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 15
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 20
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 20
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 3
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 6
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 9
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 11
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 12
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 13
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 14
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 15
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 16
+        }
+      ]
+    },
+    {
+      "N": 11,
+      "metrics": {
+        "problem": 4,
+        "seed": 0,
+        "profile": {
+          "version": "research-v1-20260911",
+          "seed": 0,
+          "problem": 4,
+          "distribution": "area",
+          "field": "smooth",
+          "noise_seed": 917,
+          "quantization": "half_up",
+          "overlap": "invisible",
+          "assumption": "非官方分布；常规10–16源；Q4两类并存"
+        },
+        "N": 11,
+        "C": 7,
+        "completion": false,
+        "cleared_fraction": 0.6363636363636364,
+        "virtual_time_s": 29144.156031,
+        "time_per_clear_s": 4163.4508615714285,
+        "elapsed_s": 0.46419343200250296,
+        "path_length_m": 39065.780152611864,
+        "measures": 3612,
+        "switches": 3233,
+        "clear_failures": 1,
+        "probe_macros": 4,
+        "macro_steps": 400,
+        "decision_max_s": 0.0,
+        "decision_p95_s": 0.0,
+        "error": "macro_budget"
+      },
+      "first_all_cleared": null,
+      "exit_allowed": false,
+      "states": {
+        "CLEARED": 7,
+        "LOCALIZING": 4,
+        "UNKNOWN": 9
+      },
+      "visited": 31,
+      "stations": 31,
+      "stagnant_macros": 348,
+      "tail": [
+        {
+          "path": "/measure",
+          "position": [
+            497.5,
+            -2585.085830296549
+          ],
+          "channel": 11
+        },
+        {
+          "path": "/measure",
+          "position": [
+            497.5,
+            -2585.085830296549
+          ],
+          "channel": 10
+        },
+        {
+          "path": "/measure",
+          "position": [
+            497.5,
+            -2585.085830296549
+          ],
+          "channel": 3
+        },
+        {
+          "path": "/measure",
+          "position": [
+            497.5,
+            -2585.085830296549
+          ],
+          "channel": 3
+        },
+        {
+          "path": "/measure",
+          "position": [
+            497.5,
+            -2585.085830296549
+          ],
+          "channel": 20
+        },
+        {
+          "path": "/measure",
+          "position": [
+            497.5,
+            -2585.085830296549
+          ],
+          "channel": 19
+        },
+        {
+          "path": "/measure",
+          "position": [
+            497.5,
+            -2585.085830296549
+          ],
+          "channel": 15
+        },
+        {
+          "path": "/measure",
+          "position": [
+            497.5,
+            -2585.085830296549
+          ],
+          "channel": 14
+        },
+        {
+          "path": "/measure",
+          "position": [
+            497.5,
+            -2585.085830296549
+          ],
+          "channel": 12
+        },
+        {
+          "path": "/measure",
+          "position": [
+            497.5,
+            -2585.085830296549
+          ],
+          "channel": 11
+        },
+        {
+          "path": "/measure",
+          "position": [
+            497.5,
+            -2585.085830296549
+          ],
+          "channel": 10
+        },
+        {
+          "path": "/measure",
+          "position": [
+            497.5,
+            -2585.085830296549
+          ],
+          "channel": 6
+        }
+      ]
+    },
+    {
+      "N": 12,
+      "metrics": {
+        "problem": 4,
+        "seed": 0,
+        "profile": {
+          "version": "research-v1-20260911",
+          "seed": 0,
+          "problem": 4,
+          "distribution": "area",
+          "field": "smooth",
+          "noise_seed": 917,
+          "quantization": "half_up",
+          "overlap": "invisible",
+          "assumption": "非官方分布；常规10–16源；Q4两类并存"
+        },
+        "N": 12,
+        "C": 11,
+        "completion": false,
+        "cleared_fraction": 0.9166666666666666,
+        "virtual_time_s": 26612.482436,
+        "time_per_clear_s": 2419.316585090909,
+        "elapsed_s": 0.3915968330002215,
+        "path_length_m": 36662.41217705157,
+        "measures": 3268,
+        "switches": 2882,
+        "clear_failures": 1,
+        "probe_macros": 7,
+        "macro_steps": 400,
+        "decision_max_s": 0.0,
+        "decision_p95_s": 0.0,
+        "error": "macro_budget"
+      },
+      "first_all_cleared": null,
+      "exit_allowed": false,
+      "states": {
+        "CLEARED": 11,
+        "LOCALIZING": 1,
+        "UNKNOWN": 8
+      },
+      "visited": 31,
+      "stations": 31,
+      "stagnant_macros": 358,
+      "tail": [
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            -1723.3905535310328
+          ],
+          "channel": 12
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            -1723.3905535310328
+          ],
+          "channel": 14
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            -1723.3905535310328
+          ],
+          "channel": 17
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            -1723.3905535310328
+          ],
+          "channel": 20
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            -1723.3905535310328
+          ],
+          "channel": 20
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            -1723.3905535310328
+          ],
+          "channel": 9
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            -1723.3905535310328
+          ],
+          "channel": 10
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            -1723.3905535310328
+          ],
+          "channel": 11
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            -1723.3905535310328
+          ],
+          "channel": 12
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            -1723.3905535310328
+          ],
+          "channel": 14
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            -1723.3905535310328
+          ],
+          "channel": 17
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            -1723.3905535310328
+          ],
+          "channel": 18
+        }
+      ]
+    },
+    {
+      "N": 13,
+      "metrics": {
+        "problem": 4,
+        "seed": 0,
+        "profile": {
+          "version": "research-v1-20260911",
+          "seed": 0,
+          "problem": 4,
+          "distribution": "area",
+          "field": "smooth",
+          "noise_seed": 917,
+          "quantization": "half_up",
+          "overlap": "invisible",
+          "assumption": "非官方分布；常规10–16源；Q4两类并存"
+        },
+        "N": 13,
+        "C": 11,
+        "completion": false,
+        "cleared_fraction": 0.8461538461538461,
+        "virtual_time_s": 25373.465259,
+        "time_per_clear_s": 2306.678659909091,
+        "elapsed_s": 0.35724565999771585,
+        "path_length_m": 42602.32629670235,
+        "measures": 2858,
+        "switches": 2481,
+        "clear_failures": 9,
+        "probe_macros": 6,
+        "macro_steps": 400,
+        "decision_max_s": 0.0,
+        "decision_p95_s": 0.0,
+        "error": "macro_budget"
+      },
+      "first_all_cleared": null,
+      "exit_allowed": false,
+      "states": {
+        "CLEARED": 11,
+        "UNKNOWN": 7,
+        "LOCALIZING": 2
+      },
+      "visited": 31,
+      "stations": 31,
+      "stagnant_macros": 344,
+      "tail": [
+        {
+          "path": "/measure",
+          "position": [
+            497.5,
+            2585.085830296549
+          ],
+          "channel": 8
+        },
+        {
+          "path": "/measure",
+          "position": [
+            497.5,
+            2585.085830296549
+          ],
+          "channel": 9
+        },
+        {
+          "path": "/measure",
+          "position": [
+            497.5,
+            2585.085830296549
+          ],
+          "channel": 13
+        },
+        {
+          "path": "/measure",
+          "position": [
+            497.5,
+            2585.085830296549
+          ],
+          "channel": 17
+        },
+        {
+          "path": "/measure",
+          "position": [
+            497.5,
+            2585.085830296549
+          ],
+          "channel": 20
+        },
+        {
+          "path": "/measure",
+          "position": [
+            497.5,
+            2585.085830296549
+          ],
+          "channel": 20
+        },
+        {
+          "path": "/measure",
+          "position": [
+            497.5,
+            2585.085830296549
+          ],
+          "channel": 5
+        },
+        {
+          "path": "/measure",
+          "position": [
+            497.5,
+            2585.085830296549
+          ],
+          "channel": 8
+        },
+        {
+          "path": "/measure",
+          "position": [
+            497.5,
+            2585.085830296549
+          ],
+          "channel": 9
+        },
+        {
+          "path": "/measure",
+          "position": [
+            497.5,
+            2585.085830296549
+          ],
+          "channel": 13
+        },
+        {
+          "path": "/measure",
+          "position": [
+            497.5,
+            2585.085830296549
+          ],
+          "channel": 17
+        },
+        {
+          "path": "/measure",
+          "position": [
+            497.5,
+            2585.085830296549
+          ],
+          "channel": 19
+        }
+      ]
+    },
+    {
+      "N": 14,
+      "metrics": {
+        "problem": 4,
+        "seed": 0,
+        "profile": {
+          "version": "research-v1-20260911",
+          "seed": 0,
+          "problem": 4,
+          "distribution": "area",
+          "field": "smooth",
+          "noise_seed": 917,
+          "quantization": "half_up",
+          "overlap": "invisible",
+          "assumption": "非官方分布；常规10–16源；Q4两类并存"
+        },
+        "N": 14,
+        "C": 14,
+        "completion": false,
+        "cleared_fraction": 1.0,
+        "virtual_time_s": 22014.004926,
+        "time_per_clear_s": 1572.4289232857143,
+        "elapsed_s": 0.2841959700017469,
+        "path_length_m": 37690.024633252084,
+        "measures": 2462,
+        "switches": 2087,
+        "clear_failures": 3,
+        "probe_macros": 7,
+        "macro_steps": 400,
+        "decision_max_s": 0.0,
+        "decision_p95_s": 0.0,
+        "error": "macro_budget"
+      },
+      "first_all_cleared": {
+        "macro_steps": 43,
+        "virtual_time_s": 7580.461578,
+        "records": 337
+      },
+      "exit_allowed": false,
+      "states": {
+        "CLEARED": 14,
+        "UNKNOWN": 6
+      },
+      "visited": 31,
+      "stations": 31,
+      "stagnant_macros": 351,
+      "tail": [
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 18
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 2
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 7
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 9
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 11
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 19
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 19
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 2
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 7
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 9
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 11
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 18
+        }
+      ]
+    },
+    {
+      "N": 15,
+      "metrics": {
+        "problem": 4,
+        "seed": 0,
+        "profile": {
+          "version": "research-v1-20260911",
+          "seed": 0,
+          "problem": 4,
+          "distribution": "area",
+          "field": "smooth",
+          "noise_seed": 917,
+          "quantization": "half_up",
+          "overlap": "invisible",
+          "assumption": "非官方分布；常规10–16源；Q4两类并存"
+        },
+        "N": 15,
+        "C": 12,
+        "completion": false,
+        "cleared_fraction": 0.8,
+        "virtual_time_s": 19789.777313,
+        "time_per_clear_s": 1649.1481094166666,
+        "elapsed_s": 0.31995505099985166,
+        "path_length_m": 36153.886550044816,
+        "measures": 2146,
+        "switches": 1766,
+        "clear_failures": 1,
+        "probe_macros": 5,
+        "macro_steps": 400,
+        "decision_max_s": 0.0,
+        "decision_p95_s": 0.0,
+        "error": "macro_budget"
+      },
+      "first_all_cleared": null,
+      "exit_allowed": false,
+      "states": {
+        "CLEARED": 12,
+        "UNKNOWN": 5,
+        "LOCALIZING": 3
+      },
+      "visited": 31,
+      "stations": 31,
+      "stagnant_macros": 350,
+      "tail": [
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 9
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 17
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 17
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 2
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 7
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 9
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 18
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 18
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 2
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 7
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 9
+        },
+        {
+          "path": "/measure",
+          "position": [
+            1990.0,
+            1723.3905535310328
+          ],
+          "channel": 17
+        }
+      ]
+    },
+    {
+      "N": 16,
+      "metrics": {
+        "problem": 4,
+        "seed": 0,
+        "profile": {
+          "version": "research-v1-20260911",
+          "seed": 0,
+          "problem": 4,
+          "distribution": "area",
+          "field": "smooth",
+          "noise_seed": 917,
+          "quantization": "half_up",
+          "overlap": "invisible",
+          "assumption": "非官方分布；常规10–16源；Q4两类并存"
+        },
+        "N": 16,
+        "C": 16,
+        "completion": true,
+        "cleared_fraction": 1.0,
+        "virtual_time_s": 10850.734923,
+        "time_per_clear_s": 678.1709326875,
+        "elapsed_s": 0.11006636100137257,
+        "path_length_m": 44538.67461683001,
+        "measures": 303,
+        "switches": 273,
+        "clear_failures": 25,
+        "probe_macros": 5,
+        "macro_steps": 54,
+        "decision_max_s": 0.0,
+        "decision_p95_s": 0.0,
+        "error": null
+      },
+      "first_all_cleared": {
+        "macro_steps": 53,
+        "virtual_time_s": 10850.734923,
+        "records": 344
+      },
+      "exit_allowed": true,
+      "states": {
+        "CLEARED": 16,
+        "ABSENT_CERTIFIED": 4
+      },
+      "visited": 31,
+      "stations": 31,
+      "stagnant_macros": 2,
+      "tail": [
+        {
+          "path": "/clear",
+          "position": [
+            -1484.05024963601,
+            -774.9459078552572
+          ],
+          "channel": 4
+        },
+        {
+          "path": "/clear",
+          "position": [
+            -1484.05024963601,
+            -798.3043686527424
+          ],
+          "channel": 4
+        },
+        {
+          "path": "/clear",
+          "position": [
+            -1484.05024963601,
+            -821.6628294502273
+          ],
+          "channel": 4
+        },
+        {
+          "path": "/clear",
+          "position": [
+            -1484.05024963601,
+            -845.0212902477122
+          ],
+          "channel": 4
+        },
+        {
+          "path": "/clear",
+          "position": [
+            -1484.05024963601,
+            -471.2859174879528
+          ],
+          "channel": 4
+        },
+        {
+          "path": "/clear",
+          "position": [
+            -1467.2467334555372,
+            -471.2859174879528
+          ],
+          "channel": 4
+        },
+        {
+          "path": "/clear",
+          "position": [
+            -1467.2467334555372,
+            -447.92745669046786
+          ],
+          "channel": 4
+        },
+        {
+          "path": "/clear",
+          "position": [
+            -1484.05024963601,
+            -447.92745669046786
+          ],
+          "channel": 4
+        },
+        {
+          "path": "/clear",
+          "position": [
+            -1484.05024963601,
+            -424.5689958929829
+          ],
+          "channel": 4
+        },
+        {
+          "path": "/clear",
+          "position": [
+            -1467.2467334555372,
+            -424.5689958929829
+          ],
+          "channel": 4
+        },
+        {
+          "path": "/clear",
+          "position": [
+            -1467.2467334555372,
+            -401.2105350954979
+          ],
+          "channel": 4
+        },
+        {
+          "path": "/exit",
+          "position": null,
+          "channel": null
+        }
+      ]
+    }
+  ],
+  "checkpoints": [
+    {
+      "problem": 3,
+      "source_mismatches": [
+        "solution/rl/training.py",
+        "solution/control/controller.py"
+      ],
+      "features": "normalized-public-v2",
+      "profile": "research-v1-20260911"
+    },
+    {
+      "problem": 4,
+      "source_mismatches": [
+        "solution/rl/training.py",
+        "solution/control/controller.py"
+      ],
+      "features": "normalized-public-v2",
+      "profile": "research-v1-20260911"
+    }
+  ],
+  "q3_paired": {
+    "baseline": {
+      "episodes": 8,
+      "completion_rate": 1.0,
+      "mean_virtual_s": 3560.214142875,
+      "median_virtual_s": 3720.7658825,
+      "p95_virtual_s": 4347.8070901,
+      "macro_steps": 216,
+      "failures": []
+    },
+    "student": {
+      "episodes": 8,
+      "completion_rate": 1.0,
+      "mean_virtual_s": 3472.4220052499995,
+      "median_virtual_s": 3542.681737,
+      "p95_virtual_s": 4309.9283336,
+      "macro_steps": 213,
+      "failures": []
+    },
+    "eligible": true,
+    "mean_paired_delta_s": -87.79213762499995,
+    "approximate_95ci_halfwidth_s": 78.95798739142226,
+    "selection_pass": true
+  },
+  "q4_paired": {
+    "baseline": {
+      "episodes": 8,
+      "completion_rate": 0.125,
+      "mean_virtual_s": 25680.170780625,
+      "median_virtual_s": 26880.412938,
+      "p95_virtual_s": 31340.2892435,
+      "macro_steps": 2855,
+      "failures": [
+        {
+          "problem": 4,
+          "seed": 141011,
+          "profile": {
+            "version": "research-v1-20260911",
+            "seed": 141011,
+            "problem": 4,
+            "distribution": "outward",
+            "field": "zero",
+            "noise_seed": 141928,
+            "quantization": "half_up",
+            "overlap": "invisible",
+            "assumption": "非官方分布；常规10–16源；Q4两类并存"
+          },
+          "N": 13,
+          "C": 11,
+          "completion": false,
+          "cleared_fraction": 0.8461538461538461,
+          "virtual_time_s": 25348.726148,
+          "time_per_clear_s": 2304.429649818182,
+          "elapsed_s": 0.3981146779988194,
+          "path_length_m": 40953.63073691123,
+          "measures": 2913,
+          "switches": 2535,
+          "clear_failures": 1,
+          "probe_macros": 10,
+          "macro_steps": 400,
+          "decision_max_s": 0.009846073000517208,
+          "decision_p95_s": 0.00041262145095970475,
+          "error": "macro_budget"
+        },
+        {
+          "problem": 4,
+          "seed": 141012,
+          "profile": {
+            "version": "research-v1-20260911",
+            "seed": 141012,
+            "problem": 4,
+            "distribution": "area",
+            "field": "smooth",
+            "noise_seed": 141929,
+            "quantization": "half_up",
+            "overlap": "invisible",
+            "assumption": "非官方分布；常规10–16源；Q4两类并存"
+          },
+          "N": 12,
+          "C": 6,
+          "completion": false,
+          "cleared_fraction": 0.5,
+          "virtual_time_s": 26513.092448,
+          "time_per_clear_s": 4418.848741333333,
+          "elapsed_s": 0.4706978969988995,
+          "path_length_m": 37375.462222660666,
+          "measures": 3231,
+          "switches": 2853,
+          "clear_failures": 0,
+          "probe_macros": 2,
+          "macro_steps": 400,
+          "decision_max_s": 0.012416491001204122,
+          "decision_p95_s": 0.0005579185002716249,
+          "error": "macro_budget"
+        },
+        {
+          "problem": 4,
+          "seed": 141013,
+          "profile": {
+            "version": "research-v1-20260911",
+            "seed": 141013,
+            "problem": 4,
+            "distribution": "edge",
+            "field": "extreme",
+            "noise_seed": 141930,
+            "quantization": "half_up",
+            "overlap": "invisible",
+            "assumption": "非官方分布；常规10–16源；Q4两类并存"
+          },
+          "N": 15,
+          "C": 15,
+          "completion": false,
+          "cleared_fraction": 1.0,
+          "virtual_time_s": 20698.471672,
+          "time_per_clear_s": 1379.8981114666667,
+          "elapsed_s": 0.2863934569977573,
+          "path_length_m": 41227.35835955039,
+          "measures": 2116,
+          "switches": 1741,
+          "clear_failures": 19,
+          "probe_macros": 11,
+          "macro_steps": 400,
+          "decision_max_s": 0.004171188000327675,
+          "decision_p95_s": 0.00031343285227194404,
+          "error": "macro_budget"
+        },
+        {
+          "problem": 4,
+          "seed": 141014,
+          "profile": {
+            "version": "research-v1-20260911",
+            "seed": 141014,
+            "problem": 4,
+            "distribution": "cluster",
+            "field": "smooth",
+            "noise_seed": 141931,
+            "quantization": "half_up",
+            "overlap": "invisible",
+            "assumption": "非官方分布；常规10–16源；Q4两类并存"
+          },
+          "N": 10,
+          "C": 9,
+          "completion": false,
+          "cleared_fraction": 0.9,
+          "virtual_time_s": 30808.855533,
+          "time_per_clear_s": 3423.2061703333334,
+          "elapsed_s": 0.43064339099873905,
+          "path_length_m": 38419.27766387169,
+          "measures": 3908,
+          "switches": 3522,
+          "clear_failures": 6,
+          "probe_macros": 6,
+          "macro_steps": 400,
+          "decision_max_s": 0.011597994998737704,
+          "decision_p95_s": 0.0004156173987212241,
+          "error": "macro_budget"
+        },
+        {
+          "problem": 4,
+          "seed": 141015,
+          "profile": {
+            "version": "research-v1-20260911",
+            "seed": 141015,
+            "problem": 4,
+            "distribution": "outward",
+            "field": "zero",
+            "noise_seed": 141932,
+            "quantization": "half_up",
+            "overlap": "invisible",
+            "assumption": "非官方分布；常规10–16源；Q4两类并存"
+          },
+          "N": 10,
+          "C": 9,
+          "completion": false,
+          "cleared_fraction": 0.9,
+          "virtual_time_s": 31386.088679,
+          "time_per_clear_s": 3487.343186555556,
+          "elapsed_s": 0.3971047230006661,
+          "path_length_m": 38965.443387343425,
+          "measures": 3987,
+          "switches": 3607,
+          "clear_failures": 2,
+          "probe_macros": 8,
+          "macro_steps": 400,
+          "decision_max_s": 0.007564966002973961,
+          "decision_p95_s": 0.0003593555506085975,
+          "error": "macro_budget"
+        },
+        {
+          "problem": 4,
+          "seed": 141016,
+          "profile": {
+            "version": "research-v1-20260911",
+            "seed": 141016,
+            "problem": 4,
+            "distribution": "area",
+            "field": "smooth",
+            "noise_seed": 141933,
+            "quantization": "half_up",
+            "overlap": "invisible",
+            "assumption": "非官方分布；常规10–16源；Q4两类并存"
+          },
+          "N": 10,
+          "C": 10,
+          "completion": false,
+          "cleared_fraction": 1.0,
+          "virtual_time_s": 31255.233149,
+          "time_per_clear_s": 3125.5233149,
+          "elapsed_s": 0.41289162400062196,
+          "path_length_m": 37611.16572781443,
+          "measures": 4009,
+          "switches": 3620,
+          "clear_failures": 6,
+          "probe_macros": 10,
+          "macro_steps": 400,
+          "decision_max_s": 0.0023593389996676706,
+          "decision_p95_s": 0.0003957952505516002,
+          "error": "macro_budget"
+        },
+        {
+          "problem": 4,
+          "seed": 141018,
+          "profile": {
+            "version": "research-v1-20260911",
+            "seed": 141018,
+            "problem": 4,
+            "distribution": "cluster",
+            "field": "smooth",
+            "noise_seed": 141935,
+            "quantization": "half_up",
+            "overlap": "invisible",
+            "assumption": "非官方分布；常规10–16源；Q4两类并存"
+          },
+          "N": 11,
+          "C": 10,
+          "completion": false,
+          "cleared_fraction": 0.9090909090909091,
+          "virtual_time_s": 27247.733428,
+          "time_per_clear_s": 2724.7733428,
+          "elapsed_s": 0.39517029699709383,
+          "path_length_m": 33153.66714203461,
+          "measures": 3491,
+          "switches": 3106,
+          "clear_failures": 2,
+          "probe_macros": 5,
+          "macro_steps": 400,
+          "decision_max_s": 0.011424167998484336,
+          "decision_p95_s": 0.0003582604995244758,
+          "error": "macro_budget"
+        }
+      ]
+    },
+    "student": {
+      "episodes": 8,
+      "completion_rate": 0.125,
+      "mean_virtual_s": 25175.66974325,
+      "median_virtual_s": 26622.890257,
+      "p95_virtual_s": 30298.4006846,
+      "macro_steps": 2865,
+      "failures": [
+        {
+          "problem": 4,
+          "seed": 141011,
+          "profile": {
+            "version": "research-v1-20260911",
+            "seed": 141011,
+            "problem": 4,
+            "distribution": "outward",
+            "field": "zero",
+            "noise_seed": 141928,
+            "quantization": "half_up",
+            "overlap": "invisible",
+            "assumption": "非官方分布；常规10–16源；Q4两类并存"
+          },
+          "N": 13,
+          "C": 11,
+          "completion": false,
+          "cleared_fraction": 0.8461538461538461,
+          "virtual_time_s": 25097.252217,
+          "time_per_clear_s": 2281.5683833636363,
+          "elapsed_s": 0.890927358999761,
+          "path_length_m": 44446.26109083214,
+          "measures": 2753,
+          "switches": 2388,
+          "clear_failures": 0,
+          "probe_macros": 6,
+          "macro_steps": 400,
+          "decision_max_s": 0.006497948001197074,
+          "decision_p95_s": 0.0022207978998267184,
+          "error": "macro_budget"
+        },
+        {
+          "problem": 4,
+          "seed": 141012,
+          "profile": {
+            "version": "research-v1-20260911",
+            "seed": 141012,
+            "problem": 4,
+            "distribution": "area",
+            "field": "smooth",
+            "noise_seed": 141929,
+            "quantization": "half_up",
+            "overlap": "invisible",
+            "assumption": "非官方分布；常规10–16源；Q4两类并存"
+          },
+          "N": 12,
+          "C": 5,
+          "completion": false,
+          "cleared_fraction": 0.4166666666666667,
+          "virtual_time_s": 26180.1276,
+          "time_per_clear_s": 5236.02552,
+          "elapsed_s": 0.9889922889997251,
+          "path_length_m": 36405.63799527909,
+          "measures": 3208,
+          "switches": 2834,
+          "clear_failures": 0,
+          "probe_macros": 2,
+          "macro_steps": 400,
+          "decision_max_s": 0.054838934000144945,
+          "decision_p95_s": 0.002093075901575497,
+          "error": "macro_budget"
+        },
+        {
+          "problem": 4,
+          "seed": 141013,
+          "profile": {
+            "version": "research-v1-20260911",
+            "seed": 141013,
+            "problem": 4,
+            "distribution": "edge",
+            "field": "extreme",
+            "noise_seed": 141930,
+            "quantization": "half_up",
+            "overlap": "invisible",
+            "assumption": "非官方分布；常规10–16源；Q4两类并存"
+          },
+          "N": 15,
+          "C": 15,
+          "completion": false,
+          "cleared_fraction": 1.0,
+          "virtual_time_s": 20475.341152,
+          "time_per_clear_s": 1365.0227434666667,
+          "elapsed_s": 0.7407097600007546,
+          "path_length_m": 42871.70574153352,
+          "measures": 2025,
+          "switches": 1665,
+          "clear_failures": 12,
+          "probe_macros": 6,
+          "macro_steps": 400,
+          "decision_max_s": 0.00436123100007535,
+          "decision_p95_s": 0.0019587478473113095,
+          "error": "macro_budget"
+        },
+        {
+          "problem": 4,
+          "seed": 141014,
+          "profile": {
+            "version": "research-v1-20260911",
+            "seed": 141014,
+            "problem": 4,
+            "distribution": "cluster",
+            "field": "smooth",
+            "noise_seed": 141931,
+            "quantization": "half_up",
+            "overlap": "invisible",
+            "assumption": "非官方分布；常规10–16源；Q4两类并存"
+          },
+          "N": 10,
+          "C": 9,
+          "completion": false,
+          "cleared_fraction": 0.9,
+          "virtual_time_s": 29802.997096,
+          "time_per_clear_s": 3311.4441217777776,
+          "elapsed_s": 0.8495965340007388,
+          "path_length_m": 35694.985477976275,
+          "measures": 3832,
+          "switches": 3456,
+          "clear_failures": 1,
+          "probe_macros": 1,
+          "macro_steps": 400,
+          "decision_max_s": 0.014419742001337,
+          "decision_p95_s": 0.001758299896755488,
+          "error": "macro_budget"
+        },
+        {
+          "problem": 4,
+          "seed": 141015,
+          "profile": {
+            "version": "research-v1-20260911",
+            "seed": 141015,
+            "problem": 4,
+            "distribution": "outward",
+            "field": "zero",
+            "noise_seed": 141932,
+            "quantization": "half_up",
+            "overlap": "invisible",
+            "assumption": "非官方分布；常规10–16源；Q4两类并存"
+          },
+          "N": 10,
+          "C": 9,
+          "completion": false,
+          "cleared_fraction": 0.9,
+          "virtual_time_s": 30151.519376,
+          "time_per_clear_s": 3350.1688195555557,
+          "elapsed_s": 0.8540468430001056,
+          "path_length_m": 35392.596873819304,
+          "measures": 3900,
+          "switches": 3528,
+          "clear_failures": 0,
+          "probe_macros": 2,
+          "macro_steps": 400,
+          "decision_max_s": 0.008832385999994585,
+          "decision_p95_s": 0.0018664446995899184,
+          "error": "macro_budget"
+        },
+        {
+          "problem": 4,
+          "seed": 141016,
+          "profile": {
+            "version": "research-v1-20260911",
+            "seed": 141016,
+            "problem": 4,
+            "distribution": "area",
+            "field": "smooth",
+            "noise_seed": 141933,
+            "quantization": "half_up",
+            "overlap": "invisible",
+            "assumption": "非官方分布；常规10–16源；Q4两类并存"
+          },
+          "N": 10,
+          "C": 10,
+          "completion": false,
+          "cleared_fraction": 1.0,
+          "virtual_time_s": 30377.49062,
+          "time_per_clear_s": 3037.749062,
+          "elapsed_s": 0.8910364729999856,
+          "path_length_m": 36357.45309940313,
+          "measures": 3905,
+          "switches": 3528,
+          "clear_failures": 1,
+          "probe_macros": 4,
+          "macro_steps": 400,
+          "decision_max_s": 0.006458510000811657,
+          "decision_p95_s": 0.0020819926003241536,
+          "error": "macro_budget"
+        },
+        {
+          "problem": 4,
+          "seed": 141018,
+          "profile": {
+            "version": "research-v1-20260911",
+            "seed": 141018,
+            "problem": 4,
+            "distribution": "cluster",
+            "field": "smooth",
+            "noise_seed": 141935,
+            "quantization": "half_up",
+            "overlap": "invisible",
+            "assumption": "非官方分布；常规10–16源；Q4两类并存"
+          },
+          "N": 11,
+          "C": 9,
+          "completion": false,
+          "cleared_fraction": 0.8181818181818182,
+          "virtual_time_s": 27065.652914,
+          "time_per_clear_s": 3007.294768222222,
+          "elapsed_s": 1.1951523659990926,
+          "path_length_m": 34298.26456504437,
+          "measures": 3423,
+          "switches": 3046,
+          "clear_failures": 0,
+          "probe_macros": 0,
+          "macro_steps": 400,
+          "decision_max_s": 0.022413295999285765,
+          "decision_p95_s": 0.003029187250103857,
+          "error": "macro_budget"
+        }
+      ]
+    },
+    "eligible": true,
+    "mean_paired_delta_s": -504.50103737500035,
+    "approximate_95ci_halfwidth_s": 324.22371382777203,
+    "selection_pass": true
+  }
+}

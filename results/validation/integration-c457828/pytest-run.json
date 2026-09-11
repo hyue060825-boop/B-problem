@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/home/lenovo/projects/competition/.local/B-problem-archive/整合-c457828/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "-o",
+    "cache_dir=/tmp/b-problem-integration-pytest"
+  ],
+  "exit_code": 0,
+  "elapsed_s": 9.623592796000594
+}

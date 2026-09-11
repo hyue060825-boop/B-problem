@@ -1,0 +1,5 @@
+usage: start_training.py [-h] --config CONFIG
+
+options:
+  -h, --help       show this help message and exit
+  --config CONFIG

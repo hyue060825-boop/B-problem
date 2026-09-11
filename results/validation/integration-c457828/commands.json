@@ -1,0 +1,57 @@
+{
+  "q1": {
+    "args": [
+      "-m",
+      "solution.cli",
+      "solve-q1",
+      "--input",
+      "tests/fixtures/solution/q1_triangle.json",
+      "--output",
+      "results/validation/integration-c457828/q1"
+    ],
+    "exit_code": 0
+  },
+  "q2": {
+    "args": [
+      "-m",
+      "solution.cli",
+      "solve-q2",
+      "--input",
+      "tests/fixtures/solution/q2_example.json",
+      "--output",
+      "results/validation/integration-c457828/q2"
+    ],
+    "exit_code": 0
+  },
+  "coverage-q3": {
+    "args": [
+      "scripts/validate_coverage.py",
+      "--problem",
+      "3"
+    ],
+    "exit_code": 0
+  },
+  "coverage-q4": {
+    "args": [
+      "scripts/validate_coverage.py",
+      "--problem",
+      "4"
+    ],
+    "exit_code": 0
+  },
+  "audit-rules": {
+    "args": [
+      "-m",
+      "bsim",
+      "audit-rules"
+    ],
+    "exit_code": 0
+  },
+  "training-help": {
+    "args": [
+      "scripts/start_training.py",
+      "--help"
+    ],
+    "exit_code": 0
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "source_files": [
+    {
+      "source": "solution/evaluation/artifacts.py",
+      "destination": "src/solution/evaluation/artifacts.py",
+      "only_expected_path_changes": true
+    },
+    {
+      "source": "solution/planning/q2.py",
+      "destination": "src/solution/planning/q2.py",
+      "only_expected_path_changes": true
+    },
+    {
+      "source": "solution/rl/training.py",
+      "destination": "src/solution/rl/training.py",
+      "only_expected_path_changes": true
+    },
+    {
+      "source": "scripts/start_training.py",
+      "destination": "scripts/start_training.py",
+      "only_expected_path_changes": true
+    },
+    {
+      "source": "scripts/train_bc.py",
+      "destination": "scripts/train_bc.py",
+      "only_expected_path_changes": true
+    },
+    {
+      "source": "scripts/train_dagger.py",
+      "destination": "scripts/train_dagger.py",
+      "only_expected_path_changes": true
+    },
+    {
+      "source": "scripts/train_ppo.py",
+      "destination": "scripts/train_ppo.py",
+      "only_expected_path_changes": true
+    },
+    {
+      "source": "scripts/validate_coverage.py",
+      "destination": "scripts/validate_coverage.py",
+      "only_expected_path_changes": true
+    },
+    {
+      "source": "scripts/smoke_training.py",
+      "destination": "scripts/smoke_training.py",
+      "only_expected_path_changes": true
+    }
+  ],
+  "configs": [
+    {
+      "path": "experiments/q3/large_20260911/g3.json",
+      "changed_keys": [
+        "output"
+      ]
+    },
+    {
+      "path": "experiments/q3/large_20260911/q3ext2.json",
+      "changed_keys": [
+        "output",
+        "resume"
+      ]
+    },
+    {
+      "path": "experiments/q3/large_20260911/g0.json",
+      "changed_keys": [
+        "output"
+      ]
+    },
+    {
+      "path": "experiments/q3/large_20260911/q3ext0.json",
+      "changed_keys": [
+        "output",
+        "resume"
+      ]
+    },
+    {
+      "path": "experiments/q3/large_20260911/q3ext1.json",
+      "changed_keys": [
+        "output",
+        "resume"
+      ]
+    },
+    {
+      "path": "experiments/q3/large_20260911/q3ext3.json",
+      "changed_keys": [
+        "output",
+        "resume"
+      ]
+    },
+    {
+      "path": "experiments/q3/large_20260911/g2.json",
+      "changed_keys": [
+        "output"
+      ]
+    },
+    {
+      "path": "experiments/q3/large_20260911/g1.json",
+      "changed_keys": [
+        "output"
+      ]
+    },
+    {
+      "path": "experiments/q4/large_20260911/g6.json",
+      "changed_keys": [
+        "output"
+      ]
+    },
+    {
+      "path": "experiments/q4/large_20260911/g5.json",
+      "changed_keys": [
+        "output"
+      ]
+    },
+    {
+      "path": "experiments/q4/large_20260911/g7.json",
+      "changed_keys": [
+        "output"
+      ]
+    },
+    {
+      "path": "experiments/q4/large_20260911/g4.json",
+      "changed_keys": [
+        "output"
+      ]
+    }
+  ]
+}
