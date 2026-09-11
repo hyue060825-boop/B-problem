@@ -1,0 +1,50 @@
+# Python 与本地虚拟环境
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+*.egg-info/
+
+# 凭据；允许提交不含真实值的环境变量示例
+.env
+.env.*
+!.env.example
+*.secret
+/secrets/
+/credentials/
+
+# 本地工具、工作目录与系统临时文件
+/.local/
+/.worktrees/
+/.codex/
+/simulator_local/
+/tmp/
+/temp/
+/.idea/
+.vscode/*.local.json
+*.code-workspace
+.DS_Store
+Thumbs.db
+~$*
+*.swp
+*.swo
+
+# 可重建的缓存与调试输出；实验日志、图表和正式结果正常跟踪
+/results/cache/
+/results/debug/
+
+# 论文编译中间文件；保留正文、参考文献、PDF 和支撑材料
+/paper/**/*.aux
+/paper/**/*.bbl
+/paper/**/*.bcf
+/paper/**/*.blg
+/paper/**/*.fdb_latexmk
+/paper/**/*.fls
+/paper/**/*.out
+/paper/**/*.run.xml
+/paper/**/*.synctex.gz
+/paper/**/*.toc
