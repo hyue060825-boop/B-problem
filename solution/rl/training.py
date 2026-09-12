@@ -6,8 +6,9 @@ from concurrent.futures import ProcessPoolExecutor
 import multiprocessing as mp
 import numpy as np
 import torch
-from solution.rl.model import CandidatePolicy,masked_distribution
-from solution.rl.environment import TrainingEnv,model_state,FEATURE_VERSION
+from solution.rl.model import CandidatePolicy,StructuralCandidatePolicy,masked_distribution,MODEL_VERSION
+from solution.rl.environment import TrainingEnv,model_state,structural_model_state,FEATURE_VERSION
+from solution.rl.structural_features import FEATURE_VERSION as STRUCTURAL_FEATURE_VERSION
 from bsim.research import PROFILE_VERSION
 
 @dataclass(frozen=True)
@@ -30,25 +31,27 @@ def provenance():
     return dict(files={str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in paths},
                 python=platform.python_version(),torch=torch.__version__,numpy=np.__version__,profile=PROFILE_VERSION,features=FEATURE_VERSION)
 
-def init_worker():
+def init_worker(structural=False):
     torch.set_num_threads(1)
     global worker_model
-    worker_model=CandidatePolicy().eval()
+    worker_model=(StructuralCandidatePolicy() if structural else CandidatePolicy()).eval()
+    worker_structural=bool(structural)
 
 def rollout(job):
-    problem,seed,weights,behavior,max_macros=job
+    problem,seed,weights,behavior,max_macros,structural=job
     random.seed(seed);np.random.seed(seed);torch.manual_seed(seed)
-    if 'worker_model' not in globals():init_worker()
+    if 'worker_model' not in globals():init_worker(structural)
     if weights is not None:worker_model.load_state_dict(weights)
     env=TrainingEnv(problem,seed,max_macros=max_macros);steps=[]
     while not env.done:
         started=time.perf_counter()
-        state,actions=env.observe()
+        state,actions=env.observe(structural=structural)
         teacher=env.controller.teacher_index(actions)
         if weights is None:
             chosen=teacher;logp=0.;value=0.
         else:
-            tensors={k:torch.from_numpy(v).unsqueeze(0) for k,v in model_state(state).items()}
+            state_view=structural_model_state(state) if structural else model_state(state)
+            tensors={k:torch.from_numpy(v).unsqueeze(0) for k,v in state_view.items()}
             with torch.no_grad():
                 logits,val=worker_model(tensors)
                 dist=masked_distribution(logits,torch.ones_like(logits,dtype=torch.bool))
@@ -56,13 +59,13 @@ def rollout(job):
                 logp=float(dist.log_prob(torch.tensor([chosen])));value=float(val)
         env.decision_times.append(time.perf_counter()-started)
         reward,done=env.step(actions[chosen])
-        steps.append(dict(state=model_state(state),action=chosen,teacher=teacher,old_logp=logp,value=value,reward=reward,done=done))
+        steps.append(dict(state=structural_model_state(state) if structural else model_state(state),action=chosen,teacher=teacher,old_logp=logp,value=value,reward=reward,done=done))
     # 宏动作奖励是该宏动作所有底层-DeltaT/100之和；失败包括限额耗尽，罚1000。
     return steps,env.metrics()
 
-def collect(pool,problem,seeds,model=None,behavior='sample',max_macros=400):
+def collect(pool,problem,seeds,model=None,behavior='sample',max_macros=400,structural=False):
     weights=None if model is None else {k:v.detach().cpu() for k,v in model.state_dict().items()}
-    jobs=[(problem,int(seed),weights,behavior,max_macros) for seed in seeds]
+    jobs=[(problem,int(seed),weights,behavior,max_macros,structural) for seed in seeds]
     results=list(pool.map(rollout,jobs)) if pool else [rollout(j) for j in jobs]
     return results
 
@@ -72,12 +75,17 @@ def summarize(results):
                 mean_virtual_s=float(times.mean()),median_virtual_s=float(np.median(times)),p95_virtual_s=float(np.percentile(times,95)),
                 macro_steps=sum(len(s) for s,_ in results),failures=[m for m in ms if not m['completion']])
 
-def collate(rows,device):
+def collate(rows,device,structural=False):
+    if structural:
+        from solution.rl.structural_training import structural_collate
+        return structural_collate(rows,device)
     max_a=max(len(r['state']['candidates']) for r in rows)
     state={key:torch.from_numpy(np.stack([r['state'][key] for r in rows])).to(device) for key in ('global','channels')}
-    c=np.zeros((len(rows),max_a,11),np.float32);mask=np.zeros((len(rows),max_a),bool)
+    candidate_dim=max(14,max(int(r['state']['candidates'].shape[-1]) for r in rows))
+    c=np.zeros((len(rows),max_a,candidate_dim),np.float32);mask=np.zeros((len(rows),max_a),bool)
     for i,r in enumerate(rows):
-        n=len(r['state']['candidates']);c[i,:n]=r['state']['candidates'];mask[i,:n]=True
+        n=len(r['state']['candidates']); width=r['state']['candidates'].shape[-1]
+        c[i,:n,:width]=r['state']['candidates'];mask[i,:n]=True
     state['candidates']=torch.from_numpy(c).to(device)
     return state,torch.from_numpy(mask).to(device)
 
@@ -135,10 +143,11 @@ def ppo_update(model,opt,episodes,device,epochs=3,batch_size=128,entropy=.01):
     avg=np.mean(stats,axis=0)
     return dict(zip(('loss','policy_loss','value_loss','entropy','gradient_norm','approx_kl'),map(float,avg)))
 
-def save_checkpoint(path,model,opt,config,stage,update,metrics,extra=None):
+def save_checkpoint(path,model,opt,config,stage,update,metrics,extra=None,feature_version=None,model_version=None):
     p=Path(path);p.parent.mkdir(parents=True,exist_ok=True)
     data=dict(model={k:v.detach().cpu() for k,v in model.state_dict().items()},optimizer=opt.state_dict(),
-              config=config,stage=stage,update=update,metrics=metrics,features=FEATURE_VERSION,profile=PROFILE_VERSION,
+                config=config,stage=stage,update=update,metrics=metrics,
+                features=feature_version or FEATURE_VERSION,model_version=model_version or MODEL_VERSION,profile=PROFILE_VERSION,
               rng=dict(python=random.getstate(),numpy=np.random.get_state(),torch=torch.get_rng_state(),
                        cuda=torch.cuda.get_rng_state_all() if torch.cuda.is_available() else []),extra=extra or {},provenance=provenance())
     tmp=p.with_suffix('.tmp');torch.save(data,tmp);tmp.replace(p)
@@ -154,7 +163,8 @@ def verify_checkpoint_code(data):
 
 def load_checkpoint(path,model,opt=None,restore_rng=False,allow_code_mismatch=False):
     data=torch.load(path,map_location='cpu',weights_only=False)
-    if data['features']!=FEATURE_VERSION or data['profile']!=PROFILE_VERSION:raise ValueError('checkpoint version mismatch')
+    expected_features = STRUCTURAL_FEATURE_VERSION if isinstance(model, StructuralCandidatePolicy) else FEATURE_VERSION
+    if data['features']!=expected_features or data.get('model_version')!=MODEL_VERSION or data['profile']!=PROFILE_VERSION:raise ValueError('checkpoint version mismatch')
     if not allow_code_mismatch:verify_checkpoint_code(data)
     model.load_state_dict(data['model'])
     if opt is not None:opt.load_state_dict(data['optimizer'])
@@ -163,8 +173,8 @@ def load_checkpoint(path,model,opt=None,restore_rng=False,allow_code_mismatch=Fa
         if data['rng']['cuda'] and torch.cuda.is_available():torch.cuda.set_rng_state_all(data['rng']['cuda'])
     return data
 
-def paired_evaluation(pool,problem,seeds,model,max_macros=400):
-    teacher=collect(pool,problem,seeds,max_macros=max_macros);student=collect(pool,problem,seeds,model,'greedy',max_macros)
+def paired_evaluation(pool,problem,seeds,model,max_macros=400,structural=False):
+    teacher=collect(pool,problem,seeds,max_macros=max_macros,structural=structural);student=collect(pool,problem,seeds,model,'greedy',max_macros,structural=structural)
     a=summarize(teacher);b=summarize(student)
     differences=np.array([s[1]['virtual_time_s']-t[1]['virtual_time_s'] for t,s in zip(teacher,student)])
     eligible=a['completion_rate']==1.0 and b['completion_rate']==1.0

@@ -5,8 +5,9 @@ from bsim.protocol import encode
 from bsim.client import public_response
 from bsim.research import make_research_session
 from solution.control.controller import Controller,STATES,KINDS
+from solution.rl.structural_features import structural_features
 
-FEATURE_VERSION='normalized-public-v2'
+FEATURE_VERSION='normalized-public-v3'
 
 def features(controller,actions):
     ctrl=controller
@@ -29,11 +30,15 @@ def features(controller,actions):
         candidates.append([KINDS.index(a.kind)/4,a.position[0]/2000,a.position[1]/2000,c/20,
                            a.cost/1000,len(a.channels)/20,float(c==ctrl.current_channel),float(a.kind=='CLEAR'),
                            float(a.kind=='COVER'),(s.cert['radius_upper_m']/1500 if s and s.cert else 0),
-                           (s.localizations/3 if s else 0)])
+                           (s.localizations/6 if s else 0), float(a.kind=='PROBE_STEP'),
+                           float(a.route_rank/max(1,len(ctrl.stations))), float(a.route_detour_m/4000)])
     return dict(global_=np.asarray(global_row,dtype=np.float32),channels=np.asarray(rows,dtype=np.float32),
                 candidates=np.asarray(candidates,dtype=np.float32))
 
 def model_state(state):return {'global':state['global_'],'channels':state['channels'],'candidates':state['candidates']}
+
+def structural_model_state(state):
+    return {k:v for k,v in state.items() if k in ('global','channels','stations','candidates','candidate_channel_index','candidate_channel_valid','candidate_station_index','candidate_station_valid','candidate_channel_mask')}
 
 class TrainingEnv:
     def __init__(self,problem,seed,max_macros=400,**scenario_args):
@@ -53,11 +58,11 @@ class TrainingEnv:
         if path=='/measure':self.measure_count+=1;self.switches+=int(old.channel!=channel)
         if path=='/clear' and response['clear_result']=='no_target_in_range':self.failures+=1
         return response
-    def observe(self):
+    def observe(self, structural=False):
         self.controller.remaining_real_s=max(0.,1200-(time.perf_counter()-self.started))
         actions=self.controller.legal_actions()
         if not actions:raise RuntimeError('控制器无合法动作且未退出')
-        return features(self.controller,actions),actions
+        return (structural_features(self.controller, actions) if structural else features(self.controller,actions)),actions
     def step(self,action):
         prev=self.session.state.virtual_us/1e6
         if action.kind=='PROBE_CLEAR':self.probes+=1
@@ -81,5 +86,9 @@ class TrainingEnv:
         return dict(problem=self.controller.problem,seed=self.profile['seed'],profile=self.profile,N=n,C=c,
                     completion=self.success,cleared_fraction=c/n,virtual_time_s=t,time_per_clear_s=t/c if c else None,
                     elapsed_s=time.perf_counter()-self.started,path_length_m=self.path_length,measures=self.measure_count,
-                    switches=self.switches,clear_failures=self.failures,probe_macros=self.probes,macro_steps=self.controller.steps,
+                    switches=self.switches,clear_failures=self.failures,macro_steps=self.controller.steps,
+                    **{**self.controller.diagnostics, 'probe_macros': self.probes,
+                       'q4_belief_effective_hypotheses': int(sum(len(b.hypotheses) for b in self.controller.q4_beliefs.values())),
+                       'q4_belief_reception_probability_at_selected': 0.0,
+                       'q4_belief_entropy_or_dispersion': float(sum((b.summary_at(self.controller.position).entropy + b.summary_at(self.controller.position).dispersion) for b in self.controller.q4_beliefs.values()))},
                     decision_max_s=float(max(d)),decision_p95_s=float(np.percentile(d,95)),error=self.error)

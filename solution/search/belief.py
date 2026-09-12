@@ -22,6 +22,7 @@ from bsim.reference import ReferenceKernel, State
 from bsim.research import FixedField
 from bsim.scenarios import Scenario, Source
 from solution.control.controller import Action, Controller
+from solution.planning.probe import ProbePlan
 from solution.geometry.core import FeasibleRegion, wrap_to_180, circle_polygon
 
 BELIEF_VERSION='q3-public-conditional-v1'
@@ -39,7 +40,10 @@ def action_id(action):
 
 
 def decode_action(data):
-    return Action(**{**data,'position':tuple(data['position']),'channels':tuple(data['channels'])})
+    plan=data.get('plan')
+    if plan is not None:
+        plan=ProbePlan(**{**plan,'points':tuple(tuple(p) for p in plan['points'])})
+    return Action(**{**data,'position':tuple(data['position']),'channels':tuple(data['channels']),'plan':plan})
 
 
 def public_snapshot(macros,remaining_real_s=1200.):

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "world_size": 8,
+  "search_resumed_without_duplicate_roots": true,
+  "sft_optimizer_restore": true,
+  "ppo_optimizer_restore": true,
+  "all_ranks_contributed": true,
+  "automatic_final_evaluation": true
+}

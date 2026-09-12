@@ -1,0 +1,6 @@
+{
+  "checkpoint": "/data5/hy/B-problem/runs/q3_gpu8_smoke_20260912/sft_gpu/checkpoint_0001.pt",
+  "mean_validation_delta_s": 0.0,
+  "used_test": false,
+  "note": "lowest validation mean among complete SFT snapshots; baseline remains frozen for robust deployment selection"
+}

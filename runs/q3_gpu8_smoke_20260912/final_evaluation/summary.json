@@ -1,0 +1,32 @@
+{
+  "baseline": {
+    "episodes": 32,
+    "completed": 32,
+    "completion_rate": 1.0,
+    "mean_virtual_s": 3301.9980019375,
+    "mean_per_source_s": 254.04087431260993,
+    "p95_virtual_s": 4038.8625959,
+    "errors": []
+  },
+  "candidate": {
+    "episodes": 32,
+    "completed": 32,
+    "completion_rate": 1.0,
+    "mean_virtual_s": 3299.6582663125,
+    "mean_per_source_s": 253.86716358552658,
+    "p95_virtual_s": 4038.8625959,
+    "errors": []
+  },
+  "mean_delta_s": -2.339735625000003,
+  "paired_ci95_s": [
+    -6.058761738708151,
+    1.3792904887081447
+  ],
+  "faster": 2,
+  "slower": 1,
+  "checkpoint": "/data5/hy/B-problem/runs/q3_gpu8_smoke_20260912/ppo/latest.pt",
+  "recommended_checkpoint": "/data5/hy/B-problem/runs/q3_gpu8_smoke_20260912/baseline.pt",
+  "validation_selected": false,
+  "selection_used_test": false,
+  "profile": "LOCAL-RESEARCH; not official simulator results"
+}

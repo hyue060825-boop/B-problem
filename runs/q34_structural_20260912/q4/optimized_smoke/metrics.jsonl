@@ -1,0 +1,4 @@
+{"stage": "INIT", "elapsed_s": 0.002490175887942314, "world_size": 4, "physical_gpus": "4,5,6,7"}
+{"stage": "INIT", "elapsed_s": 0.0026440932415425777, "world_size": 4, "physical_gpus": "4,5,6,7"}
+{"stage": "BASELINE", "elapsed_s": 512.4380823802203, "completion_rate": 1.0, "episodes": 8, "macros": 1254, "sample_s": 512.4281758652069, "mean_virtual_s": 12282.459676625}
+{"stage": "BC", "elapsed_s": 513.4942711391486, "loss": 1.39116786663922, "gradient_norm": 0.858862042427063, "optimizer_steps": 26, "local_transitions": 285, "state_sha256": "6e625cf06bee5ea1f3101c0af4e1bf23c55038ed121075f0c0cecfd08596540a", "parameter_and_optimizer_sync": true}

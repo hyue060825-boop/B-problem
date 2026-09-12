@@ -37,7 +37,7 @@ def audit_sync(model,optimizer):
     return digest
 
 
-def synchronized_update(model,optimizer,episodes,device,kind,epochs,batch_size,entropy=.01):
+def synchronized_update(model,optimizer,episodes,device,kind,epochs,batch_size,entropy=.01,structural=False):
     if kind=='PPO':
         rows=advantages(episodes,normalize=False)
         a=np.array([r['advantage'] for r in rows],dtype=np.float64)
@@ -58,7 +58,11 @@ def synchronized_update(model,optimizer,episodes,device,kind,epochs,batch_size,e
             n=torch.tensor(local_n,device=device,dtype=torch.float64);dist.all_reduce(n)
             # Empty ranks still perform forward/backward/Adam.step. The dummy
             # transition contributes zero loss and never changes the objective.
-            state,mask=collate(batch or rows[:1],device)
+            try:
+                state,mask=collate(batch or rows[:1],device,structural=structural)
+            except TypeError:
+                # Backward-compatible test/diagnostic collate overrides.
+                state,mask=collate(batch or rows[:1],device)
             logits,value=model(state,mask)
             weight=torch.ones(len(batch) or 1,device=device) if batch else torch.zeros(1,device=device)
             used=batch or rows[:1]

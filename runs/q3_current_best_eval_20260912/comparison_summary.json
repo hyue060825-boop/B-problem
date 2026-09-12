@@ -1,0 +1,28 @@
+{
+  "status": "COMPLETE",
+  "episodes": 3000,
+  "seed_start": 430000000,
+  "seed_end_exclusive": 430003000,
+  "current_best_mean_virtual_s": 3289.212643307333,
+  "previous_candidate_mean_virtual_s": 3314.424791079333,
+  "current_best_mean_per_source_s": 258.682679919808,
+  "previous_candidate_mean_per_source_s": 260.61786511650195,
+  "paired_mean_delta_virtual_s": -25.212147772,
+  "paired_ci95_virtual_s": [
+    -30.634322721199517,
+    -19.789972822800486
+  ],
+  "paired_mean_delta_per_source_s": -1.935185196693954,
+  "paired_ci95_per_source_s": [
+    -2.3344098374827498,
+    -1.535960555905158
+  ],
+  "faster_episodes": 1677,
+  "tied_episodes": 313,
+  "slower_episodes": 1010,
+  "completion_rate": 1.0,
+  "current_best_sha256": "7b31765cc09b7bfd2667f87e21c3748ab8f8b40d330afc86d2fc634704e25db8",
+  "previous_sha256": "a924b6013f4c81f0f46c22ad33de823ed4484729d25e517bbf23aaca5a24de14",
+  "metric": "per episode virtual_time_s / cleared sources, then mean over 3000",
+  "distribution": "LOCAL-RESEARCH research-v1-20260911"
+}

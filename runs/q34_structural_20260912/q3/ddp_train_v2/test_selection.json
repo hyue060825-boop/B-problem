@@ -1,0 +1,4 @@
+{
+  "checkpoint": "runs/q34_structural_20260912/q3/ddp_train_v2/latest.pt",
+  "selection_uses_test": false
+}

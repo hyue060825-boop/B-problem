@@ -1,0 +1,7 @@
+{
+  "kind": "COMPLETE",
+  "stage": "sft_gpu",
+  "run_id": "q3_gpu8_smoke_20260912",
+  "elapsed_s": 4.184736107010394,
+  "global_update": 688
+}

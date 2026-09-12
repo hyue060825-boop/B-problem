@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE",
+  "problem": 3,
+  "checkpoint": "runs/q3_joint_20260912/ppo_candidate.pt",
+  "episodes": 3000,
+  "seed_start": 430000000,
+  "seed_end_exclusive": 430003000,
+  "completed_episodes": 3000,
+  "completion_rate": 1.0,
+  "samples_with_cleared_source": 3000,
+  "mean_of_sample_per_source_times_s": 260.61786511650195,
+  "total_virtual_time_s": 9943274.373237962,
+  "total_cleared_sources": 38961,
+  "source_weighted_mean_time_s": 255.2109641240718,
+  "median_sample_per_source_time_s": 261.5415203333333,
+  "p05_sample_per_source_time_s": 165.90692171928572,
+  "p95_sample_per_source_time_s": 348.9229889806818,
+  "min_sample_per_source_time_s": 69.1906498125,
+  "max_sample_per_source_time_s": 417.39732549999997,
+  "elapsed_wall_s": 22.545734827872366,
+  "distribution": "LOCAL-RESEARCH research-v1-20260911; four seeded distributions and three error fields"
+}

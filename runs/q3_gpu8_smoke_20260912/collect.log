@@ -1,0 +1,3 @@
+{"stage": "PUBLIC_ROOTS", "episodes": 16, "roots": 64, "elapsed_s": 2.3172986558638513}
+{"stage": "HYPOTHESES", "roots": 32, "total": 64, "elapsed_s": 3.684306832961738}
+{"stage": "HYPOTHESES", "roots": 64, "total": 64, "elapsed_s": 4.525228813756257}

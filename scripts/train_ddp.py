@@ -18,7 +18,8 @@ from torch.nn.parallel import DistributedDataParallel as DDP
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from solution.rl.distributed import synchronized_update, audit_sync
-from solution.rl.model import CandidatePolicy
+from solution.rl.model import StructuralCandidatePolicy
+from solution.rl.structural_features import FEATURE_VERSION as STRUCTURAL_FEATURE_VERSION
 from solution.rl.training import (collect, init_worker, atomic_json, save_checkpoint,
                                   paired_evaluation, provenance, require_authorized_research)
 
@@ -53,7 +54,8 @@ def main():
         n=counts[stage]
         return range(start+rank*n//world,start+(rank+1)*n//world) if shard else range(start,start+n)
     random.seed(base+rank);np.random.seed(base+rank);torch.manual_seed(base+rank)
-    model=DDP(CandidatePolicy().to(device),device_ids=[local])
+    structural=True
+    model=DDP(StructuralCandidatePolicy().to(device),device_ids=[local])
     opt=torch.optim.Adam(model.parameters(),lr=cfg.get('lr',3e-4))
     started=time.perf_counter();best=float('inf');recent=[]
     initial_provenance=provenance()
@@ -73,7 +75,7 @@ def main():
     dist.barrier()
     def campaign(pool,stage,iteration=0,policy=None,behavior='sample',require_complete=False):
         t=time.perf_counter()
-        result=collect(pool,cfg['problem'],seeds(stage,iteration),policy,behavior,budget)
+        result=collect(pool,cfg['problem'],seeds(stage,iteration),policy,behavior,budget,structural=structural)
         metrics=[m for _,m in result];gathered=[None]*world
         dist.all_gather_object(gathered,metrics)
         all_metrics=[m for group in gathered for m in group]
@@ -90,29 +92,30 @@ def main():
         nonlocal best
         dist.barrier()
         if rank==0:
-            val=paired_evaluation(pool,cfg['problem'],seeds(stage,shard=False),model.module,budget)
+            val=paired_evaluation(pool,cfg['problem'],seeds(stage,shard=False),model.module,budget,structural=structural)
             atomic_json(out/f'{stage.lower()}_{update:04d}.json',val)
             event(stage,update=update,completion_rate=val['student']['completion_rate'],
                   paired_delta_s=val['mean_paired_delta_s'],selection_pass=val['selection_pass'])
             if stage=='VALIDATION' and val['selection_pass'] and val['mean_paired_delta_s']<best:
                 best=val['mean_paired_delta_s']
-                save_checkpoint(out/'best.pt',model.module,opt,cfg,'DDP_PPO',update-1,val,{'best_delta':best})
+                save_checkpoint(out/'best.pt',model.module,opt,cfg,'DDP_PPO',update-1,val,{'best_delta':best},feature_version=STRUCTURAL_FEATURE_VERSION)
         dist.barrier()
-    with ProcessPoolExecutor(cfg.get('workers_per_rank',2),mp_context=mp.get_context('spawn'),initializer=init_worker) as pool:
+    with ProcessPoolExecutor(cfg.get('workers_per_rank',2),mp_context=mp.get_context('spawn'),initializer=init_worker,
+                             initargs=(structural,)) as pool:
         base_episodes,metrics=campaign(pool,'BC',require_complete=True)
         event('BASELINE',**metrics)
-        stats=synchronized_update(model,opt,base_episodes,device,'BC',cfg.get('bc_epochs',6),cfg.get('batch_size',128))
+        stats=synchronized_update(model,opt,base_episodes,device,'BC',cfg.get('bc_epochs',6),cfg.get('batch_size',128),structural=structural)
         event('BC',**stats)
         for iteration in range(cfg.get('dagger_rounds',2)):
             eps,metrics=campaign(pool,'DAGGER',iteration,model.module,'greedy',require_complete=True)
-            stats=synchronized_update(model,opt,base_episodes+eps,device,'BC',cfg.get('dagger_epochs',3),cfg.get('batch_size',128))
+            stats=synchronized_update(model,opt,base_episodes+eps,device,'BC',cfg.get('dagger_epochs',3),cfg.get('batch_size',128),structural=structural)
             event('DAGGER',round=iteration+1,**metrics,**stats)
         validate(pool,0)
         for idx in range(updates):
             t=time.perf_counter()
             episodes,metrics=campaign(pool,'PPO',idx,model.module)
             update_start=time.perf_counter()
-            stats=synchronized_update(model,opt,episodes,device,'PPO',cfg.get('ppo_epochs',4),cfg.get('batch_size',128))
+            stats=synchronized_update(model,opt,episodes,device,'PPO',cfg.get('ppo_epochs',4),cfg.get('batch_size',128),structural=structural)
             update_s=time.perf_counter()-update_start
             elapsed=torch.tensor(time.perf_counter()-t,device=device);dist.all_reduce(elapsed,op=dist.ReduceOp.MAX)
             recent.append(float(elapsed));eta=float(np.mean(recent[-10:]))*(updates-idx-1)
@@ -120,7 +123,7 @@ def main():
                   macros_per_s=metrics['macros']/float(elapsed),**metrics,**stats)
             if rank==0:
                 if provenance()!=initial_provenance:raise RuntimeError('source changed during training; preserve checkpoint and stop')
-                save_checkpoint(out/'latest.pt',model.module,opt,cfg,'DDP_PPO',idx,stats,{'best_delta':best})
+                save_checkpoint(out/'latest.pt',model.module,opt,cfg,'DDP_PPO',idx,stats,{'best_delta':best},feature_version=STRUCTURAL_FEATURE_VERSION)
             dist.barrier()
             if (idx+1)%cfg.get('eval_every',20)==0 or idx+1==updates:validate(pool,idx+1)
         # Held-out test is evaluated only once after model selection is frozen.

@@ -1,0 +1,9 @@
+{
+  "authorized": true, "profile": "compatible_research", "problem": 4,
+  "seed": 630000000, "output": "runs/q34_structural_20260912/q4/structural_train_short",
+  "bc_episodes": 4, "dagger_episodes": 4, "dagger_rounds": 0,
+  "episodes_per_update": 4, "ppo_updates": 4, "eval_episodes": 4,
+  "test_episodes": 4, "eval_every": 2, "max_macros": 320,
+  "workers_per_rank": 1, "lr": 0.0001, "bc_epochs": 2, "dagger_epochs": 1,
+  "ppo_epochs": 1, "batch_size": 32
+}

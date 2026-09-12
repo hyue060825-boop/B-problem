@@ -1,0 +1,10 @@
+{
+  "stage": "BC",
+  "elapsed_s": 270.8694705259986,
+  "loss": 1.5762364694050381,
+  "gradient_norm": 1.1157885321549006,
+  "optimizer_steps": 14,
+  "local_transitions": 200,
+  "state_sha256": "cb282a0eafb7be7912f890e1a34e337b68bfe0b3dbb7bc16811f4a27faad9b86",
+  "parameter_and_optimizer_sync": true
+}

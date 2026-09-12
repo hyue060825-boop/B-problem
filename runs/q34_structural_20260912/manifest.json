@@ -1,0 +1,32 @@
+{
+  "run_id": "q34_structural_20260912",
+  "created_date": "2026-09-12",
+  "distribution": "LOCAL-RESEARCH research-v1-20260911",
+  "official_results": false,
+  "source_head_before_changes": "9bf8830f17b5863d4d8334691c18788ebd1a6e56",
+  "frozen_source": "runs/q3_gpu8_extended_source_20260912",
+  "baselines": {
+    "q3": {
+      "path": "runs/q34_structural_20260912/baselines/q3_best_v2.pt",
+      "sha256": "8cc3a1621334640e6010d8d8fc2cc91a7d47a879573bd54b55fa45a990a56e71",
+      "feature_version": "normalized-public-v2"
+    },
+    "q4": {
+      "path": "runs/q34_structural_20260912/baselines/q4_best_v2.pt",
+      "sha256": "2329eb4d12088ebccfdc459939aeb8d5ee67f9696b4b41b1385c3c158d4c0e4a",
+      "feature_version": "normalized-public-v2"
+    }
+  },
+  "seeds": {
+    "q3_train": [500000000, 509999999],
+    "q3_validation": [510000000, 510999999],
+    "q3_development": [511000000, 511999999],
+    "q3_final_frozen": [519000000, 519002999],
+    "q4_train": [600000000, 609999999],
+    "q4_validation": [610000000, 610999999],
+    "q4_development": [611000000, 611999999],
+    "q4_final_frozen": [619000000, 619002999]
+  },
+  "selection_policy": "validation only; development is diagnostic; final_frozen runs once after checkpoint selection",
+  "safety_policy": "certified state alone authorizes CLEAR, ABSENT_CERTIFIED, and EXIT"
+}

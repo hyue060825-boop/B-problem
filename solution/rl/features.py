@@ -50,5 +50,5 @@ def public_state(global_state, channel_states, candidates):
             float(a.get("switch_cost_s", 0.0)), float(a.get("certified_clear", False)),
             float(a.get("coverage_gain", 0.0)), float(a.get("localization_gain", 0.0)),
             float(a.get("probe_failure_cost_s", 0.0)),
-        ] for a in candidates], dtype=np.float32) if candidates else np.zeros((0, 11), dtype=np.float32),
+        ] for a in candidates], dtype=np.float32) if candidates else np.zeros((0, 14), dtype=np.float32),
     }

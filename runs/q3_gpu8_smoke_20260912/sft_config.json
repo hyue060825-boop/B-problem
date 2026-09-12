@@ -1,0 +1,16 @@
+{
+  "run_id": "q3_gpu8_smoke_20260912",
+  "output": "/data5/hy/B-problem/runs/q3_gpu8_smoke_20260912",
+  "world_size": 8,
+  "rng_seed": 190903,
+  "workers_per_rank": 2,
+  "sft_epochs": 2,
+  "sft_eval_every": 1,
+  "sft_lr": 1e-05,
+  "ppo_lr": 1e-05,
+  "per_rank_batch_size": 2,
+  "grad_accum_steps": 2,
+  "stability_kl": 0.5,
+  "max_macros": 400,
+  "audit_every": 1
+}

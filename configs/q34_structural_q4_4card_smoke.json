@@ -1,0 +1,9 @@
+{
+  "authorized": true, "profile": "compatible_research", "problem": 4,
+  "seed": 610000000, "output": "runs/q34_structural_20260912/q4/ddp_structural_smoke_v2",
+  "bc_episodes": 4, "dagger_episodes": 4, "dagger_rounds": 0,
+  "episodes_per_update": 4, "ppo_updates": 1, "eval_episodes": 4,
+  "test_episodes": 4, "eval_every": 1, "max_macros": 160,
+  "workers_per_rank": 1, "lr": 0.0003, "bc_epochs": 1, "dagger_epochs": 1,
+  "ppo_epochs": 1, "batch_size": 16
+}
