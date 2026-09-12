@@ -1,0 +1,16 @@
+﻿id,problem,kind,path,record_scope,version,purpose,limitation,sha256
+D01,Q1,人工几何算例,results/validation/import-c457828/artifacts/q1,2 个算例,c457828,直径、覆盖圆和最小包围圆,固定输入与程序输出；非官方数据,目录内逐文件见 files.csv
+D02,Q2,候选点评价,results/validation/import-c457828/artifacts/q2/example/result.json,1 个首次观测算例,c457828,保证接收区域、候选评分与基线比较,有限情景后验估计；实际第二次观测待补,83a5a3281ea5e507281943f9783e8770483466be804f475808f5298733d29013
+D03,Q3,旧选模验证,results/validation/q3-large-4d75bee,256 对,4d75bee,四路最终模型与教师比较,反复用于选模；不是独立盲测，也不是单个 DDP 模型,目录内逐文件见 files.csv
+D04,Q3,旧配对评估,results/training/import-4d75bee/large_20260911/q3_ext_gpu1/independent_test_32.json,32 对,4d75bee,GPU1 续训权重的交付比较,权重不同于 GPU2 旧 3000 局；使用前结合原 provenance,f737ab8046140f047d71d9c89f81a8bcb96b4fab0850c02653b735f2879866c3
+D05,Q3,旧单策略评估,results/validation/q3-3000-9e10994/samples.json,3000 局,9e10994,GPU2 续训权重稳定性,无配对基线；不推导相对收益,4467985c18fd139a9163b4fb64acbb8e71c96d35e6d48225259a9b912ee7038d
+D06,Q4,旧失败诊断,results/training/import-3ddb2d9/runs/q4_3000_test_20260911/samples.json,3000 局,ffea626 / 3ddb2d9 接收,旧控制器退出问题,不代表修复后表现,f56f394d5461830516b494b2dab38932ef0e758b8d95f72cc62405a3aeba6618
+D07,Q3,搜索标签统计,results/training/import-3ddb2d9/runs/q3_joint_20260912/labels_round1/summary.json,首轮 2699 条；二轮聚合 5318 条,3ddb2d9,SFT / DAgger 样本规模与筛选统计,仅摘要和清单；完整标签文件未全部交付,48898b53410b364ceedaaa04baddc0a65b4d78f3498e720a46ea3febc48c70a0
+D08,Q3,联合微调后评估,results/training/import-3ddb2d9/runs/q3_joint_20260912/final_test,512 个场景 × 4 组,3ddb2d9,规则、对照、蒸馏、PPO 候选比较,冻结变体后评估；与最新 3000 场景批次分别引用,目录内逐文件见 files.csv
+D09,Q4,修复后教师配对,results/training/import-3ddb2d9/runs/q4_repaired_20260912/test_samples.csv,3000 对,3ddb2d9,修复后训练模型与规则教师比较,不是预算微调与训练前模型的比较,577172763a40ba79248d85a3a69d45e48fbbe7878b2e92bdb47e64fe1d96d45f
+D10,Q3/Q4,最新四模型配对,results/training/import-3ddb2d9/runs/q34_3000_test_20260912/samples.csv,每题 3000 对；共 12000 行,3ddb2d9,当前主要性能依据,自建研究分布；不同空间和误差类型固定配对,64cefc1168e7ca2ea0b563c0d010567dd6ac8488609af9bd8fde5a1aa8fe088a
+D11,Q3,训练验证过程,results/training/import-3ddb2d9/runs/q3_joint_20260912/ppo,4 个验证轮次,3ddb2d9,第 16 / 32 / 48 / 64 轮验证变化,固定验证集；不能称独立测试,目录内逐文件见 files.csv
+D12,Q4,预算训练验证,results/training/import-3ddb2d9/runs/q4_budget_20260912/train,每 100 轮验证至 3800,3ddb2d9,预算训练模型选择与过程,第 3500 轮 best；训练时间非官方单局时间,目录内逐文件见 files.csv
+D13,Q1-Q4,本机整合验证,results/validation/integration-3ddb2d9,回归、8 局评估、2 次自建 HTTP 闭环,main 4e2cf9f,运行入口与资产一致性,工程验证；不是完整策略性能测评,目录内逐文件见 files.csv
+D14,Q3/Q4,官方演练,results/rehearsal,未归档,当前工作区,待形成官方演练证据,不能从空目录推断队伍实际已用测试次数,目录内逐文件见 files.csv
+D15,Q3/Q4,正式测试,results/formal,未归档,当前工作区,待形成正式成绩及原始日志,保留原文件名；不覆盖原始记录,目录内逐文件见 files.csv

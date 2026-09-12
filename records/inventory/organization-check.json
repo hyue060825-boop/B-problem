@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "baseline": "4e2cf9f9170f7c92b3d1bb15ffb701b00fcdfa44",
+  "moves": {
+    "docs/notes/接收记录-3ddb2d9.md": "records/acceptance/接收记录-3ddb2d9.md",
+    "docs/notes/接收记录-4d75bee.md": "records/acceptance/接收记录-4d75bee.md",
+    "docs/notes/接收记录-9e10994.md": "records/acceptance/接收记录-9e10994.md",
+    "docs/notes/接收记录-c457828.md": "records/acceptance/接收记录-c457828.md"
+  },
+  "protected_unchanged": {
+    "paper/": 32,
+    "problem/": 5,
+    "src/": 49,
+    "tests/": 27
+  },
+  "original_result_files_unchanged": 3598,
+  "updated_result_navigation": [
+    "results/README.md",
+    "results/training/import-3ddb2d9/README.md",
+    "results/training/import-4d75bee/README.md",
+    "results/training/import-c457828/README.md",
+    "results/validation/import-c457828/README.md",
+    "results/validation/integration-3ddb2d9/README.md",
+    "results/validation/integration-4d75bee/README.md",
+    "results/validation/integration-9e10994/README.md",
+    "results/validation/integration-c457828/README.md"
+  ],
+  "active_documents_link_checked": 51,
+  "missing_links": [],
+  "source_and_output_hashes": {
+    "handoff/figures/provenance.json": {
+      "inputs_verified": 74,
+      "outputs_verified": 36
+    },
+    "handoff/tables/provenance.json": {
+      "inputs_verified": 59,
+      "outputs_verified": 9
+    }
+  },
+  "figure_spec": {
+    "files": 9,
+    "errors": 0,
+    "warnings": 0
+  },
+  "svg_parse_passed": 9,
+  "pdf_render_and_embedded_fonts_passed": 9,
+  "visual_review": "9 张 PNG 及 9 份 PDF 栅格化结果已查看；已修正裁切、标注与符号。图件为 RENDERED。",
+  "inventory_files_verified": 3829,
+  "dataset_groups": 15,
+  "tables_only": {
+    "figures_unchanged": 38,
+    "tables_reproduced_identically": 8,
+    "stdout": "{\"paired_records\": 12000, \"table_files\": 8, \"figures_rendered\": 0}"
+  },
+  "script_syntax_passed": 2,
+  "git_diff_check": "git diff --cached --check: PASS",
+  "scope": "本次只整理、复算和绘图；未重训、未重跑完整策略评估或官方测试；未重新执行原有全量回归。",
+  "serialization": {
+    "generated_csv_line_endings": "LF",
+    "svg_trailing_whitespace": "removed",
+    "png_exports_unchanged": 9,
+    "changed_index_matches_worktree": "PASS",
+    "regenerated_diagram_pdf_rasters_unchanged": 2
+  }
+}

@@ -36,7 +36,7 @@ git push origin HEAD:hy_branch/b45c0d2
 ## 验收与 main 维护
 
 1. 验收负责人 fetch 后固定 hy 的提交，核对原始记录与 main 上队友的更新。
-2. 整合源码、配置和结果，保留原始训练记录；只做已授权的改动，补相称的验证和交付索引。
+2. 整合源码、配置和结果，保留原始训练记录；只做已授权的改动，补相称的验证和交付索引；接收记录写入 `records/acceptance/`，版本入口更新 `records/versions.md`。
 3. 审阅后提交到 `main`。需要队友看差异时使用 PR；少量文档或论文手独立维护的文件可直接提交，提交前先同步。
 4. 整合推送后 hy 在开发分支执行 `git fetch origin`、`git merge origin/main`，接续新的目录和接口。`hy_branch/b45c0d2` 保留使用。
 

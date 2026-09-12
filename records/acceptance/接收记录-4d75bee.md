@@ -13,7 +13,7 @@
 | --- | --- |
 | 大规模训练完整快照 | [results/training/import-4d75bee/](../../results/training/import-4d75bee/README.md)，包含 12 份原配置和原 README，共 2905 个原始文件 |
 | 权重部署、配对评估与启动包装 | `scripts/run_policy.py`、`scripts/evaluate_checkpoint.py`、`scripts/run_policy_local.sh` |
-| 部署与评估用法 | [docs/simulator/local_deployment.md](../simulator/local_deployment.md) |
+| 部署与评估用法 | [docs/simulator/local_deployment.md](../../docs/simulator/local_deployment.md) |
 | 接收证据 | [results/validation/integration-4d75bee/](../../results/validation/integration-4d75bee/README.md) |
 
 ## 训练与结果状态

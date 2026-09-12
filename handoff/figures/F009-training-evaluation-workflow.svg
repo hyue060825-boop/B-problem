@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180mm" height="113.936mm" viewBox="0 0 940 595">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#738296"/></marker></defs>
+<rect width="940" height="595" fill="white"/>
+<text x="470" y="35" text-anchor="middle" font-family="WenQuanYi Zen Hei,Noto Sans CJK SC,sans-serif" font-size="26" font-weight="bold" fill="#243449">训练、选模与配对评估分别留证</text>
+<rect x="305" y="68" width="330" height="100" rx="8" fill="#2563a6" fill-opacity=".055" stroke="#2563a6" stroke-width="1.5" />
+<text x="470.0" y="100" text-anchor="middle" font-family="WenQuanYi Zen Hei,Noto Sans CJK SC,sans-serif" font-size="23" font-weight="bold" fill="#2563a6">自建研究场景</text>
+<text x="470.0" y="133" text-anchor="middle" font-family="WenQuanYi Zen Hei,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="normal" fill="#243449">固定种子、公开观测与几何约束</text>
+<rect x="30" y="225" width="420" height="130" rx="8" fill="#17847c" fill-opacity=".055" stroke="#17847c" stroke-width="1.5" />
+<text x="240.0" y="257" text-anchor="middle" font-family="WenQuanYi Zen Hei,Noto Sans CJK SC,sans-serif" font-size="23" font-weight="bold" fill="#17847c">Q3：搜索辅助联合微调</text>
+<text x="240.0" y="290" text-anchor="middle" font-family="WenQuanYi Zen Hei,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="normal" fill="#243449">公开历史生成搜索标签</text>
+<text x="240.0" y="318" text-anchor="middle" font-family="WenQuanYi Zen Hei,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="normal" fill="#243449">SFT → DAgger → PPO</text>
+<rect x="490" y="225" width="420" height="130" rx="8" fill="#17847c" fill-opacity=".055" stroke="#17847c" stroke-width="1.5" />
+<text x="700.0" y="257" text-anchor="middle" font-family="WenQuanYi Zen Hei,Noto Sans CJK SC,sans-serif" font-size="23" font-weight="bold" fill="#17847c">Q4：修复后训练与预算微调</text>
+<text x="700.0" y="290" text-anchor="middle" font-family="WenQuanYi Zen Hei,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="normal" fill="#243449">BC → DAgger → PPO</text>
+<text x="700.0" y="318" text-anchor="middle" font-family="WenQuanYi Zen Hei,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="normal" fill="#243449">接续 best 进行预算训练</text>
+<polyline points="385,168 385,192 240,192 240,225" fill="none" stroke="#738296" stroke-width="1.8" marker-end="url(#arrow)"/>
+<polyline points="555,168 555,192 700,192 700,225" fill="none" stroke="#738296" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="30" y="430" width="255" height="120" rx="8" fill="#c76824" fill-opacity=".055" stroke="#c76824" stroke-width="1.5" />
+<text x="157.5" y="462" text-anchor="middle" font-family="WenQuanYi Zen Hei,Noto Sans CJK SC,sans-serif" font-size="23" font-weight="bold" fill="#c76824">验证与冻结</text>
+<text x="157.5" y="495" text-anchor="middle" font-family="WenQuanYi Zen Hei,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="normal" fill="#243449">固定验证集选模</text>
+<text x="157.5" y="523" text-anchor="middle" font-family="WenQuanYi Zen Hei,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="normal" fill="#243449">保留对照和候选</text>
+<rect x="342" y="430" width="255" height="120" rx="8" fill="#2563a6" fill-opacity=".055" stroke="#2563a6" stroke-width="1.5" />
+<text x="469.5" y="462" text-anchor="middle" font-family="WenQuanYi Zen Hei,Noto Sans CJK SC,sans-serif" font-size="23" font-weight="bold" fill="#2563a6">训练后配对评估</text>
+<text x="469.5" y="495" text-anchor="middle" font-family="WenQuanYi Zen Hei,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="normal" fill="#243449">每题 3000 个场景</text>
+<text x="469.5" y="523" text-anchor="middle" font-family="WenQuanYi Zen Hei,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="normal" fill="#243449">T、T/C、完成率</text>
+<rect x="655" y="430" width="255" height="120" rx="8" fill="#738296" fill-opacity=".055" stroke="#738296" stroke-width="1.5" stroke-dasharray="7 5"/>
+<text x="782.5" y="462" text-anchor="middle" font-family="WenQuanYi Zen Hei,Noto Sans CJK SC,sans-serif" font-size="23" font-weight="bold" fill="#738296">官方演练与正式测试</text>
+<text x="782.5" y="495" text-anchor="middle" font-family="WenQuanYi Zen Hei,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="normal" fill="#243449">待补运行证据</text>
+<text x="782.5" y="523" text-anchor="middle" font-family="WenQuanYi Zen Hei,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="normal" fill="#243449">另存官方原始结果</text>
+<polyline points="240,355 240,390 158,390 158,430" fill="none" stroke="#738296" stroke-width="1.8" marker-end="url(#arrow)"/>
+<polyline points="700,355 700,390 158,390" fill="none" stroke="#738296" stroke-width="1.8" marker-end="url(#arrow)"/>
+<polyline points="285,490 342,490" fill="none" stroke="#738296" stroke-width="1.8" marker-end="url(#arrow)"/>
+<polyline points="597,490 655,490" fill="none" stroke="#738296" stroke-width="1.8" marker-end="url(#arrow)"/>
+</svg>

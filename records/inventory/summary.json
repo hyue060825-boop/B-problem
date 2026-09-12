@@ -1,0 +1,61 @@
+{
+  "source_git_commit": "4e2cf9f9170f7c92b3d1bb15ffb701b00fcdfa44",
+  "scope": "当前工作区中受跟踪及未忽略的新文件；排除 paper 与清单自身，含尚未提交的整理成果",
+  "files": 3829,
+  "bytes": 615995664,
+  "parts": {
+    ".agents": {
+      "files": 11,
+      "bytes": 13520478
+    },
+    "root": {
+      "files": 5,
+      "bytes": 13494
+    },
+    "docs": {
+      "files": 15,
+      "bytes": 587535
+    },
+    "experiments": {
+      "files": 21,
+      "bytes": 11972
+    },
+    "handoff": {
+      "files": 56,
+      "bytes": 3713680
+    },
+    "problem": {
+      "files": 5,
+      "bytes": 606467
+    },
+    "records": {
+      "files": 7,
+      "bytes": 20244
+    },
+    "results": {
+      "files": 3607,
+      "bytes": 597099434
+    },
+    "scripts": {
+      "files": 26,
+      "bytes": 132284
+    },
+    "src": {
+      "files": 49,
+      "bytes": 219751
+    },
+    "tests": {
+      "files": 27,
+      "bytes": 70325
+    }
+  },
+  "checkpoints": 58,
+  "checkpoint_bytes": 244854985,
+  "figure_files": 49,
+  "latest_checkpoint_roles": {
+    "results/training/import-3ddb2d9/runs/q3_joint_20260912/baseline.pt": "最新 Q3 对照；原稳健推荐",
+    "results/training/import-3ddb2d9/runs/q3_joint_20260912/ppo_candidate.pt": "最新 Q3 候选；未替代原推荐",
+    "results/training/import-3ddb2d9/runs/q4_repaired_20260912/train/best.pt": "最新 Q4 配对对照；修复后训练 best",
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/best.pt": "最新 Q4 预算训练 best"
+  }
+}

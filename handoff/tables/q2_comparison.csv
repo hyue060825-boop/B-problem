@@ -1,0 +1,4 @@
+﻿name,x_m,y_m,receive_bound_m,sampled_posterior_radius_m,estimated_remaining_s,score_J_s,source
+best_evaluated,735.8998438559609,262.91584212536304,816.855592138727,99.21606469092922,164.89601063278772,375.7952225409796,results/validation/import-c457828/artifacts/q2/example/result.json
+on_bearing,750.0,0.0,750.2545248441749,375.15551377801387,134.03110162099028,476.6088585099972,results/validation/import-c457828/artifacts/q2/example/result.json
+fixed_flank,750.0,450.0,888.3572059453495,69.1978526712086,179.62317783534056,394.15066101630384,results/validation/import-c457828/artifacts/q2/example/result.json

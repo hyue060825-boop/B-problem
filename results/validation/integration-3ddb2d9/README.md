@@ -14,4 +14,4 @@
 
 使用 Python 3.13.13、PyTorch 2.8.0+cpu；OpenMP、OpenBLAS、MKL 线程数均为 1。命令及权重来源见各 JSON；入口运行方式见[部署说明](../../../docs/simulator/local_deployment.md)。HTTP 原始 stdout/stderr 保存在对应目录的 `client.log`；原始交付与本机少量场景的墙钟耗时可能不同。
 
-本次未执行完整训练、真实多卡/CUDA 验证、12000 局重新测评或官方模拟器测试。接收边界见[接收记录](../../../docs/notes/接收记录-3ddb2d9.md)。
+本次未执行完整训练、真实多卡/CUDA 验证、12000 局重新测评或官方模拟器测试。接收边界见[接收记录](../../../records/acceptance/接收记录-3ddb2d9.md)。

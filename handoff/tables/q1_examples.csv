@@ -1,0 +1,3 @@
+﻿case,kind,diameter_m,diameter_circle_covers,mec_radius_m,source
+crossing,polygon,34.92076949174776,True,17.460384745873927,results/validation/import-c457828/artifacts/q1/crossing/result.json
+triangle,polygon,40.00000000000036,False,23.09401076758523,results/validation/import-c457828/artifacts/q1/triangle/result.json

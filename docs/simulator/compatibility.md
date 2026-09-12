@@ -19,7 +19,7 @@
 | `env.py` | 管理端多个独立会话批量执行，输出公开响应 | 内部可见，输出不可见 |
 | `evaluation.py` | 管理端评分、重放、差异和可观测不变量核对 | 评分可见；轨迹核对不需要 |
 
-通用 HTTP 运行器使用 `Policy.choose(public_history)`，返回四种动作之一。已有 `solution.control.Controller` 与研究训练环境在进程内展开覆盖、定位和清除宏动作；新接收的 `scripts/run_policy.py` 加载权重、选择宏动作并通过 `RobotClient` 发送请求，用法见[本机部署](local_deployment.md)。入口尚待端到端验证，剩余现实时间更新、完整日志留存及异常结束处理仍需完善。`smoke-client` 仅重放附件计时动作，不具有搜索能力。
+通用 HTTP 运行器使用 `Policy.choose(public_history)`，返回四种动作之一。已有 `solution.control.Controller` 与研究训练环境在进程内展开覆盖、定位和清除宏动作；新接收的 `scripts/run_policy.py` 加载权重、选择宏动作并通过 `RobotClient` 发送请求，用法见[本机部署](local_deployment.md)。当前已通过 Q3/Q4 各一次自建 HTTP 闭环，部署入口按单调时钟更新现实预算；完整日志持久化、异常恢复和退出余量仍待完善。研究训练环境的 ManualClock 不执行真实墙钟截止，训练完成率与部署时限分别验证。`smoke-client` 仅重放附件计时动作，不具有搜索能力。
 
 HTTP适配器和进程内批量接口共用同一会话事务。管理端负责创建/reset会话、注入时间及读取评价，官方HTTP没有reset、truth、score、seed或第五个接口。`BatchEnv`只返回status、公开response和连接断开事实，不把奖励、总源数、类型等加入actor输入。
 
@@ -42,7 +42,7 @@ Python同一进程中的对象私有命名不是安全隔离。部署策略应�
 
 ## 内核对比的解释
 
-参考与快速内核的物理转移分别实现；快速内核仅加速远离距离阈值的比较，距离临界点回退参考。角度、误差和移动微秒策略共享，逐步一致不能作为这些未知官方机制的证据。物理批量执行使用 CPU 独立会话，尚无 CUDA 物理内核；`src/solution/` 已包含几何、状态维护与训练代码，网络训练可使用 PyTorch/CUDA，其效果和现有限制见[接收记录](../notes/接收记录-4d75bee.md)。
+参考与快速内核的物理转移分别实现；快速内核仅加速远离距离阈值的比较，距离临界点回退参考。角度、误差和移动微秒策略共享，逐步一致不能作为这些未知官方机制的证据。通用物理批量环境使用 CPU 独立会话；`src/solution/search/gpu/` 另有 Q3 专用 GPU 搜索内核与回退，不代表通用 `bsim benchmark --device cuda` 已可用。网络训练支持 PyTorch/CUDA 和同步 DDP，能力与限制见[当前接收记录](../../records/acceptance/接收记录-3ddb2d9.md)。
 
 `audit-trace`用于无官方隐藏真值的请求/响应轨迹，检查完整响应字段、接受状态、重复ID、动作顺序及可核算的移动/检测/清除代价。缺少enter、结束或动作确认时返回INCOMPLETE；发现错误为FAIL；完整且检查通过才为PASS。微秒差采用2微秒容差，不能确定官方舍入算法，也不能验证隐藏场景相等或固定误差场分布。`compare-traces`适用于已知同一确定性夹具，两条轨迹含请求ID时也必须一致。
 

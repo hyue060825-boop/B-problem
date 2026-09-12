@@ -5,9 +5,10 @@
 ## 从这里开始
 
 1. 阅读[题面与附件](problem/README.md)和[题目阅读](docs/notes/题目阅读.md)，后续建模、实验、写作时回查题意。
-2. 先看[总体方案](docs/model/总体方案.md)与[实现索引](docs/model/实现索引.md)，区分候选推导、已实现算法和待验证结论。
-3. 本次接收状态与遗留问题见[接收记录](docs/notes/接收记录-3ddb2d9.md)；论文手从 [handoff/](handoff/README.md) 取用材料，在 [paper/](paper/README.md) 组织正文。
-4. 协作流程见 [GitHub 速查](github-guidance.md)，项目约定见 [AGENTS.md](AGENTS.md)，共享技能见[使用说明](.agents/skills/README.md)。
+2. 从[实现索引](docs/model/实现索引.md)查看当前算法；[总体方案](docs/model/总体方案.md)保留完整候选推导，说明导航见 [docs/](docs/README.md)。
+3. 按 [Q1](handoff/q1/README.md)、[Q2](handoff/q2/README.md)、[Q3](handoff/q3/README.md)、[Q4](handoff/q4/README.md) 阅读当前方法、代码与实验；[handoff/](handoff/README.md) 集中提供中文图表和写作依据。
+4. [records/](records/README.md) 保存接收、版本与资产清点，当前边界见[接收记录](records/acceptance/接收记录-3ddb2d9.md)。
+5. 协作流程见 [GitHub 速查](github-guidance.md)，项目约定见 [AGENTS.md](AGENTS.md)，共享技能见[使用说明](.agents/skills/README.md)。
 
 ## 当前进展
 
@@ -33,12 +34,12 @@ B-problem/
 │   └── 附件/
 ├── docs/
 │   ├── model/                  # 总体方案、实现与推导索引
-│   ├── notes/                  # 题目阅读、接收记录；extracted/ 为题面提取材料
+│   ├── notes/                  # 题目阅读；extracted/ 为题面提取材料
 │   └── simulator/              # 本地模拟器说明与兼容范围
 ├── src/
 │   ├── bsim/                   # 模拟器、客户端、研究场景与调试网页
 │   └── solution/               # geometry、planning、coverage、control、rl、evaluation、search
-├── scripts/                    # 覆盖验证、训练、checkpoint 评估与本机部署入口
+├── scripts/                    # 训练、评估、部署、图表生成与资产清点
 ├── tests/
 │   ├── simulator/              # 物理、协议、计时、客户端与网页回归
 │   ├── solution/               # 几何、选点、覆盖与学习组件测试
@@ -55,7 +56,14 @@ B-problem/
 │   ├── formal/                 # 正式原始结果，不覆盖或删除
 │   ├── figures/                # 后续生成的图
 │   └── tables/                 # 后续生成的表
-├── handoff/                    # 提供给论文手的材料与状态索引
+├── records/                    # 版本、接收和整理记录
+│   ├── acceptance/
+│   └── inventory/               # 数据批次、文件、权重与图件清单
+├── handoff/                    # 提供给论文手的当前方法与实验依据
+│   ├── q1/、q2/、q3/、q4/       # 每题模型、实现、结果和图表入口
+│   ├── shared/                  # 共同约定、训练过程与统计口径
+│   ├── figures/                 # 中文 PDF / SVG / PNG 及设计规格
+│   └── tables/                  # 整理 CSV、网格和来源校验
 ├── paper/                      # 论文手维护，main.tex 为入口
 │   ├── sections/
 │   └── figures/
@@ -88,3 +96,12 @@ python -m pytest -q
 ```
 
 启动调试网页：`python -m bsim web --port 8765 --robot-port 20260`，打开终端打印的完整链接。训练配置和已知入口限制见[实验说明](experiments/README.md)；结果留存见[结果说明](results/README.md)。
+
+## 整理数据与重绘图表
+
+```bash
+python scripts/build_handoff_assets.py
+python scripts/inventory_assets.py
+```
+
+前一命令复算已归档数据，生成 [handoff 图表](handoff/figures/README.md)，不执行训练；需要中文字体，流程图导出还使用 `rsvg-convert`。只复算表格可加 `--tables-only`。后一命令更新 `paper/` 之外的资产清单。原始实验数据继续按既有批次保留。

@@ -16,4 +16,4 @@ Q4 GPU7 retry 的状态写第 157 次更新，但逐更新回合文件仅有 156
 
 原始配置、provenance、日志、失败与逐局记录、权重保持原字节；内部 `runs/` 路径和原 README 的“尚未上传”是交付原文，不作为当前使用说明。原始文件来源及校验值见[资产映射](../../validation/integration-4d75bee/资产映射.csv)。
 
-日常训练配置放 [experiments/](../../../experiments/README.md)，部署或评估显式指定这里的权重。续训另建配置，从所需 `latest.pt` 读取，输出到新目录，不覆盖归档。前批交付仍保存在 [import-c457828/](../import-c457828/README.md)；遗留问题见[本批接收记录](../../../docs/notes/接收记录-4d75bee.md)。
+日常训练配置放 [experiments/](../../../experiments/README.md)，部署或评估显式指定这里的权重。续训另建配置，从所需 `latest.pt` 读取，输出到新目录，不覆盖归档。前批交付仍保存在 [import-c457828/](../import-c457828/README.md)；遗留问题见[本批接收记录](../../../records/acceptance/接收记录-4d75bee.md)。

@@ -1,6 +1,6 @@
 # 4d75bee 接收与目录整合验证
 
-hy 来源为 `4d75bee81beaace2092f3812ede68d16d3dee353`，main 基点为 `d6c7eb0f2fe0e1059db5c6a1b94d816e18dfc5f0`。按现状接收训练资产及部署、评估入口；本轮不修复算法问题，交付状态见[接收记录](../../../docs/notes/接收记录-4d75bee.md)。
+hy 来源为 `4d75bee81beaace2092f3812ede68d16d3dee353`，main 基点为 `d6c7eb0f2fe0e1059db5c6a1b94d816e18dfc5f0`。按现状接收训练资产及部署、评估入口；本轮不修复算法问题，交付状态见[接收记录](../../../records/acceptance/接收记录-4d75bee.md)。
 
 | 检查 | 结果与证据 |
 | --- | --- |

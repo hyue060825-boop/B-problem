@@ -9,4 +9,4 @@
 
 原文中的 `runs/`、`configs/` 和训练机绝对路径反映交付时的环境，部分链接指向未交付的中间资产或此前批次。这里的脚本、配置和源码压缩包供追溯，不从归档目录启动新运行。当前用法见[本机部署](../../../docs/simulator/local_deployment.md)与[实验入口](../../../experiments/README.md)；活动配置已适配新路径，原始权重及 provenance 未改写。
 
-本机检查与交付结果分开记录：[接收记录](../../../docs/notes/接收记录-3ddb2d9.md)、[内容映射及验证](../../validation/integration-3ddb2d9/README.md)。所有性能数据均为 LOCAL-RESEARCH 自建模拟器结果，尚非官方成绩。
+本机检查与交付结果分开记录：[接收记录](../../../records/acceptance/接收记录-3ddb2d9.md)、[内容映射及验证](../../validation/integration-3ddb2d9/README.md)。所有性能数据均为 LOCAL-RESEARCH 自建模拟器结果，尚非官方成绩。

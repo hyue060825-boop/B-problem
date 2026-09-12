@@ -1,6 +1,6 @@
 # 本地模拟器
 
-提供公开物理规则、四个 HTTP 接口、会话计时、确定性夹具、回放、CPU 内核对比和调试网页。[research.py](../../src/bsim/research.py) 已提供自建研究场景，供 [solution/](../../src/solution/) 中的模型、控制器与 BC/DAgger/PPO 训练使用。已接收同步训练与 Q4 控制修复、Q3 搜索和最新 Q3/Q4 评估；本机已验证 Q3/Q4 的自建 HTTP 部署，见[接收记录](../notes/接收记录-3ddb2d9.md)。
+提供公开物理规则、四个 HTTP 接口、会话计时、确定性夹具、回放、CPU 内核对比和调试网页。[research.py](../../src/bsim/research.py) 已提供自建研究场景，供 [solution/](../../src/solution/) 中的模型、控制器与 BC/DAgger/PPO 训练使用。已接收同步训练与 Q4 控制修复、Q3 搜索和最新 Q3/Q4 评估；本机已验证 Q3/Q4 的自建 HTTP 部署，见[接收记录](../../records/acceptance/接收记录-3ddb2d9.md)。
 
 先按[仓库说明](../../README.md)完成可编辑安装。以下命令在仓库根目录、已激活的环境中执行。
 

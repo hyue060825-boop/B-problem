@@ -16,6 +16,6 @@ CUDA_VISIBLE_DEVICES=4,5,6,7 scripts/run_torchrun.sh \
 
 BC、DAgger 完成率必须达到 100% 才继续；验证集教师和学生均须 100% 完成且学生平均虚拟耗时更低，才可入选 best。训练、验证、测试随机种子分别隔离，详见输出的 `seed_manifest.json`。最终先按验证集冻结模型，再做一次独立 3000 局教师/学生配对测试。旧权重与修复后的控制器组合只能显式作为诊断测评，不能沿用旧报告。运行中禁止修改训练源码，检测到源码摘要变化会停训。
 
-回归命令：`CUDA_VISIBLE_DEVICES='' scripts/run_python.sh -m pytest -q`。`tests/test_ddp_updates.py` 用不等长分片验证各卡 Adam 状态一致，并在双精度下与单进程全局批次更新对照，避免 softmax 公共偏置的单精度舍入被 Adam 放大而干扰算法等价检查。实际 CUDA smoke 使用正常单精度并进行跨卡精确状态摘要检查。
+回归命令：`CUDA_VISIBLE_DEVICES='' scripts/run_python.sh -m pytest -q`。`tests/solution/test_ddp_updates.py` 用不等长分片验证各卡 Adam 状态一致，并在双精度下与单进程全局批次更新对照，避免 softmax 公共偏置的单精度舍入被 Adam 放大而干扰算法等价检查。实际 CUDA smoke 使用正常单精度并进行跨卡精确状态摘要检查。
 
 多卡同步训练和此前 `large_20260911` 的独立多路训练是两种不同实验；模型选择应在同步训练完成后用统一独立测试集评估。

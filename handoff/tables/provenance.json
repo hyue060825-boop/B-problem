@@ -1,0 +1,259 @@
+{
+  "source_git_commit": "4e2cf9f9170f7c92b3d1bb15ffb701b00fcdfa44",
+  "generation_scope": "对绑定数据重新汇总与绘图；源码可能含未提交整理，实际输入和生成脚本以 SHA-256 为准",
+  "command": "python scripts/build_handoff_assets.py --tables-only",
+  "environment": {
+    "python": "3.13.13",
+    "numpy": "2.5.1",
+    "matplotlib": "3.11.0"
+  },
+  "inputs": {
+    "results/training/import-3ddb2d9/runs/q34_3000_test_20260912/q3_baseline_samples.json": {
+      "bytes": 2511232,
+      "sha256": "94f73ead21d68b1fed83f8142f885530968331d3be6a60c7897eff9a7a0fccd9"
+    },
+    "results/training/import-3ddb2d9/runs/q34_3000_test_20260912/q3_candidate_samples.json": {
+      "bytes": 2511200,
+      "sha256": "e6bce027a7dce17dabea147ad17002cf1b49e783f6ee48333b95c5f0e390171e"
+    },
+    "results/training/import-3ddb2d9/runs/q34_3000_test_20260912/q4_baseline_samples.json": {
+      "bytes": 2513679,
+      "sha256": "c43f568d92ab3cc0cf9daf395fa173ecec5910823ea14bea332df9a531faf427"
+    },
+    "results/training/import-3ddb2d9/runs/q34_3000_test_20260912/q4_best_samples.json": {
+      "bytes": 2512755,
+      "sha256": "24a4a29645c9a0f1d5a5fe9d69964c8242bcb3d55c3c27d86e534f5444fa20da"
+    },
+    "results/training/import-3ddb2d9/runs/q34_3000_test_20260912/manifest.json": {
+      "bytes": 110160,
+      "sha256": "b83c83d98a9eaf3928ac6daf1da2a49e61a3e71e5f34a861fb1e525a7871d2ee"
+    },
+    "results/training/import-3ddb2d9/runs/q3_joint_20260912/ppo_candidate.pt": {
+      "bytes": 4341986,
+      "sha256": "a924b6013f4c81f0f46c22ad33de823ed4484729d25e517bbf23aaca5a24de14"
+    },
+    "results/training/import-3ddb2d9/runs/q3_joint_20260912/baseline.pt": {
+      "bytes": 4406525,
+      "sha256": "cf63f3c88ca534cae14a2a8dabbdedbf198f53f06aeaebe5d1aff14cbacab1c9"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/best.pt": {
+      "bytes": 4292445,
+      "sha256": "2329eb4d12088ebccfdc459939aeb8d5ee67f9696b4b41b1385c3c158d4c0e4a"
+    },
+    "results/training/import-3ddb2d9/runs/q4_repaired_20260912/train/best.pt": {
+      "bytes": 4494045,
+      "sha256": "da10d37282278f544c0d2c8f28713098915761187f1c3e850c2c4b2a6b2554b6"
+    },
+    "results/validation/import-c457828/artifacts/q1/crossing/result.json": {
+      "bytes": 771,
+      "sha256": "a43146fd0b47ce83ca3f41433fe5c8d3b95a0beedfe84172db366bc0b9cbb77e"
+    },
+    "results/validation/import-c457828/artifacts/q1/triangle/result.json": {
+      "bytes": 646,
+      "sha256": "0714dab56d57e19aa9a454d219eafec8933142076f5651b1590db529cd8f92db"
+    },
+    "results/validation/import-c457828/artifacts/q2/example/result.json": {
+      "bytes": 79204,
+      "sha256": "83a5a3281ea5e507281943f9783e8770483466be804f475808f5298733d29013"
+    },
+    "results/validation/import-c457828/artifacts/q2/example/input.json": {
+      "bytes": 170,
+      "sha256": "6c4ced683c1c305dab5095eb463a3b264edf3e504c57ce9cd881b95f3425c1a1"
+    },
+    "src/solution/coverage/certificates.py": {
+      "bytes": 3627,
+      "sha256": "547051708528139de87c1b336c5b1d835f334561d17f5e74078c0ce12a76d3e1"
+    },
+    "src/solution/geometry/core.py": {
+      "bytes": 12574,
+      "sha256": "ba77a502eb2ada24151ad2057ffc2b6606ccab8c92641173211e227bc7286caf"
+    },
+    "src/solution/planning/q2.py": {
+      "bytes": 7983,
+      "sha256": "d0568dbe68e82997900eebe4633837f515e4682d507a9449284e95785ac44504"
+    },
+    "results/training/import-3ddb2d9/runs/q3_joint_20260912/ppo/validation_0016.json": {
+      "bytes": 257076,
+      "sha256": "6e716159b9f7b5f4c6501082c0c758b5144f355ffcd0f70748a24793b4f47176"
+    },
+    "results/training/import-3ddb2d9/runs/q3_joint_20260912/ppo/validation_0032.json": {
+      "bytes": 255396,
+      "sha256": "3928a6d1f0b89ce9c0c896c63158369f7441d3b5b0dcfef858568de94f5a825f"
+    },
+    "results/training/import-3ddb2d9/runs/q3_joint_20260912/ppo/validation_0048.json": {
+      "bytes": 255009,
+      "sha256": "e8281f2117654490670e64cd3ae43669a281b144e0eb07be7b793bc872700eab"
+    },
+    "results/training/import-3ddb2d9/runs/q3_joint_20260912/ppo/validation_0064.json": {
+      "bytes": 253988,
+      "sha256": "93ba2d995015bf0b9d795b01eb3b6703dacd9052b7f9b9d183d319a2c8ac6047"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_000100.json": {
+      "bytes": 230302,
+      "sha256": "7689bed5261bd41e0b71d42d74b45b2b28af167bafea7c829ba17da80bed70f8"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_000200.json": {
+      "bytes": 230360,
+      "sha256": "b17213978a7445b502ad7178e55a7e98d22d3a1b7265c66be41630c35431ef68"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_000300.json": {
+      "bytes": 230440,
+      "sha256": "86ade668589a1c1b490da4a302b08e478caeb4ca303bd57271b9bfcdb624c625"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_000400.json": {
+      "bytes": 230391,
+      "sha256": "91fbf22aa36de422afb00e7c0ee3aebbad3fe4a3832d6a10ab449705f61bdfb7"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_000500.json": {
+      "bytes": 230359,
+      "sha256": "99f3532c7a3f9add4586916ae15cc179ccda6b21094b94bfb6209d3e95a73ea0"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_000600.json": {
+      "bytes": 230371,
+      "sha256": "08af417c31e3e1677cb201c8fe94402b9e34b0645925d859b643f3e35aef29d9"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_000700.json": {
+      "bytes": 230250,
+      "sha256": "926a5baee981a5f53e48b2776513ad93dc930220f34fb80ed509167e89fbc613"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_000800.json": {
+      "bytes": 230282,
+      "sha256": "5db13ad799cdc5163df6a7a85f81eb3be82f0c37a0944b08ee16c6c053a340de"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_000900.json": {
+      "bytes": 230341,
+      "sha256": "1fbec86c8003a7981c72b215a6dd7e93c89815cfaacc2a16f9091076e4fe6111"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_001000.json": {
+      "bytes": 230278,
+      "sha256": "99760a3f568f23b59865c581f972db43641a0166e992724e654fa34f5e94eb80"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_001100.json": {
+      "bytes": 230355,
+      "sha256": "3b0355e112ca95d842f91e784762b4f5a022f2d236712e9dc54f2d43a469b006"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_001200.json": {
+      "bytes": 230330,
+      "sha256": "6561d1c4b9e5a77fb08d641168bca2bcf40b27c82b7a744d51fdeb7ab10098fe"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_001300.json": {
+      "bytes": 230291,
+      "sha256": "453572abac9d26603d7fb1866c94057ef08ae853883cc74167b449d6297235bd"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_001400.json": {
+      "bytes": 230312,
+      "sha256": "0ff7c9136c82bf775316f723bdca973fc800302071f3c79a12adeaf4d1f4f7d9"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_001500.json": {
+      "bytes": 230355,
+      "sha256": "bad3046d614169fe699828ba137fd6a8d72de0d9c4772d4b8064735344160a36"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_001600.json": {
+      "bytes": 230274,
+      "sha256": "f5c7e28e2f649cc0dd8e86af1b1e9870173f8a5d1070e268984d16e2ffa24c87"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_001700.json": {
+      "bytes": 230333,
+      "sha256": "0a6e648c702df798b06c3b84eebb6816bb87bd171730c96535a6f552f08212e1"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_001800.json": {
+      "bytes": 230342,
+      "sha256": "6ac8fa60ebaf7ac97b7cc88c2265d9705d3b633a9ca9b1953413da35bb2fa55b"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_001900.json": {
+      "bytes": 230295,
+      "sha256": "2ab0c48a6600af5461cc99957801bfef92b7f7648fec3f5cefa273adbf3b176c"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_002000.json": {
+      "bytes": 230282,
+      "sha256": "40de2455d1ad43ad88da68e342fca7e37adc966918fc6e8c713d5093cd2877bb"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_002100.json": {
+      "bytes": 230361,
+      "sha256": "d32f68f4972c6ad93693389876cf7e99be6e16dd7258a0ac8ee6092beb115a1a"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_002200.json": {
+      "bytes": 230300,
+      "sha256": "704716c85fa25fb01203cabc77ad99a70ece41e2125fedff2143e1c3110bb21b"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_002300.json": {
+      "bytes": 230403,
+      "sha256": "fb93ef7d8f94fa42c8c4397fd533f962cd5c3c893d3428ef88c11ccf317353ca"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_002400.json": {
+      "bytes": 230254,
+      "sha256": "8b85f780c2d26dc58ab18ad1ab545b21808ecac4ebb41c0aec429085b34f48dc"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_002500.json": {
+      "bytes": 230282,
+      "sha256": "638d507bae696a14e2a2f32b79b8b6663b939229ef7c6bdf8623d0bb200543e2"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_002600.json": {
+      "bytes": 230407,
+      "sha256": "a4b8952ac054713a3c3767a2696f9abc73009e0d243a52f16f586b1a03215b7a"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_002700.json": {
+      "bytes": 230318,
+      "sha256": "fb7bca059d7cf68b8efb4991158cc62b40a2d6005deb4be6181aa1c8e627833f"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_002800.json": {
+      "bytes": 230338,
+      "sha256": "ddada50f0573db4c79105f758eb744f0024c103069fbcec4ed477338459d1986"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_002900.json": {
+      "bytes": 230309,
+      "sha256": "8a1dee31af434c016a0c6933b9cad309f9e8b7087845ede778c63b12570e9fac"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_003000.json": {
+      "bytes": 230412,
+      "sha256": "8738f2846cbd93a9d44116d78bf7462d791e1768e74b2919e616dc11d1d2e589"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_003100.json": {
+      "bytes": 230335,
+      "sha256": "62c27110e8eded52924b9d8d0ec703f5327014054c813cad8565532b61adfed8"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_003200.json": {
+      "bytes": 230368,
+      "sha256": "50c90b300968b5766dd3184dad5633c253704488e1769520bee43f6190c16703"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_003300.json": {
+      "bytes": 230350,
+      "sha256": "f33b122290c623fe6a43911facaee974a4c7d9bd8b085e5bff0d5e57355408dd"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_003400.json": {
+      "bytes": 230319,
+      "sha256": "4cb7fa7eb2906565da0cc59bf8532119ad57a73926c9c9b9ceabb3da5bf6f01d"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_003500.json": {
+      "bytes": 230357,
+      "sha256": "d81fce089a545d1d927670b1f5a31ca05f1d017f59a5991b84aab03d50023c12"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_003600.json": {
+      "bytes": 230319,
+      "sha256": "693941313bfab964bcc1a41c52f238fb6f2deffabcb3fbfb66554245eef72e36"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_003700.json": {
+      "bytes": 230360,
+      "sha256": "9985f583075d7ec2d4bf178565451e2734b84da90da3f6c5932a057bd319fe65"
+    },
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/validation_003800.json": {
+      "bytes": 230328,
+      "sha256": "04955d15990f2314a603f6b845f90f45ac589a6284ad31dcd0eeb6177d527e52"
+    },
+    "scripts/build_handoff_assets.py": {
+      "bytes": 36414,
+      "sha256": "3390d04d26192daf05f91135d1af78126d3bd931c0855457e9e62e4ff0076526"
+    }
+  },
+  "outputs": {
+    "handoff/tables/q1_examples.csv": "9c7090a6f8487372987ada6e140188fada7573420c1c5d6d82ea0c00163e03ea",
+    "handoff/tables/q2_candidates.csv": "2cd35e96c93ec07d4a292191a568dfc4aaa10759c41f680f73a6b785c4521ba3",
+    "handoff/tables/q2_comparison.csv": "3fa61c521a2ac5c383bd62e90119bd436102457094eed7f791e43b349faec521",
+    "handoff/tables/q34_paired.csv": "5379f03867e11335ace56b70a184cb71200db733e76bd91fc271fc2bc3dadb5b",
+    "handoff/tables/q34_strata.csv": "01973565899ddd469fc84445a939eeff8a5edc696e45c945b73cc7fa64e85288",
+    "handoff/tables/q34_summary.csv": "d3e3f7a4853d1e685971f83af78ecbcfa305d06a6edf94d72afe67086a010895",
+    "handoff/tables/q3_coverage_parameters.csv": "69bee31861f55d6b18879ea5a3a7d2f1807b670e636955b331d6e5e15efa5aee",
+    "handoff/tables/q4_grid.json": "ca94168dbeb3aa87600e130305c525d751c00014db73ea5ed7b1028325d82223",
+    "handoff/tables/training_validation.csv": "dd372b5b8cffaf17c1fe12a8d8195e5cb8978106e0cc63a26913e38c84c5db71"
+  }
+}
