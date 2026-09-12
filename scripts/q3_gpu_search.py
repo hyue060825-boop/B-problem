@@ -51,10 +51,13 @@ def label(task,results):
     record={k:v for k,v in task.items() if k not in ('worlds','state')}
     record.update(accepted=False,target=task['probabilities'],weight=0.,branches=[],backend_version=BACKEND_VERSION)
     if task['reason']:return record
+    if any(r['reason'] in ('search_timeout','expansion_budget') for r in results):
+        record['reason']='incomplete_search';return record
     for i in task['selected']:
         rr=[r for r in results if r['branch_id'][1]==ids[i]]
         if len(rr)!=cfg['worlds']:raise RuntimeError('partial root cannot be committed')
-        rr=sorted(rr,key=lambda r:r['branch_id'][2]);values=np.array([r['cost_s'] for r in rr])
+        rr=sorted(rr,key=lambda r:r['branch_id'][2]);values=np.array([r['cost_s'] for r in rr],dtype=float)
+        if not np.isfinite(values).all():raise ValueError('nonfinite completed branch cost')
         by[i]=values;branches.append(dict(index=i,candidate_id=ids[i],costs_s=values.tolist(),successes=sum(r['completion'] for r in rr),
                                          effective=len(rr),completion=[r['completion'] for r in rr],mean_s=float(values.mean()),std_s=float(values.std())))
     record['branches']=branches
