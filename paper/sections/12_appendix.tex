@@ -1,7 +1,6 @@
 \clearpage
 \begin{appendices}
 \section{支撑材料文件列表}
-\placeholder{以下为清单示例，提交前按实际文件逐项核对。}
 \begin{table}[H]
   \centering
   \caption{支撑材料文件列表}
@@ -9,16 +8,41 @@
     \toprule
     文件或目录 & 功能说明 \\
     \midrule
-    src/bsim/ & 本地模拟器、客户端、策略接口及评价程序 \\
-    tests/ & 规则、协议、计时、回放和边界测试 \\
-    results/ & 验证、演练、正式测试原始记录及生成图表 \\
-    README.md 与 pyproject.toml & 环境、依赖、运行和复现步骤 \\
-    AI工具使用详情.pdf & AI工具使用过程、采纳和人工核验记录 \\
+    \texttt{src/bsim/} & 本地模拟器、协议客户端、计时与回放工具 \\
+    \texttt{src/solution/} & 几何、覆盖、主动选点、控制器和学习策略实现 \\
+    \texttt{scripts/} & 训练、配对评估、覆盖核验和模型导出入口 \\
+    \texttt{tests/} & 规则、协议、计时、几何边界和策略接口测试 \\
+    \texttt{handoff/tables/} & 论文表格的原始数据、计算口径和来源记录 \\
+    \texttt{handoff/figures/} & 论文插图的 PDF、PNG 与可编辑 SVG 文件 \\
+    \texttt{runs/} & 训练配置、检查点、逐局记录和独立评估汇总 \\
+    \texttt{results/} & 演练与正式测试记录的固定归档位置 \\
+    \texttt{README.md}、\texttt{pyproject.toml} & 环境、依赖、命令和复现说明 \\
+    《AI工具使用详情》 & AI工具用途、采纳内容与人工核验记录 \\
     \bottomrule
   \end{tabularx}
 \end{table}
-\section{完整源程序}
-\placeholder{按2026格式规范，在此附入建模使用的全部完整、可运行源程序；不能仅提供文件路径或核心片段。支撑材料中同时保留可运行文件。}
-% 上传程序后取消下面的注释，按实际路径插入；每份程序分别列出。
-% \lstinputlisting[language=Python,caption={问题一完整程序}]{code/problem1.py}
+\section{核心程序与复现入口}
+完整可运行源码随支撑材料一并提交。为便于核验，\cref{tab:reproduce-entry}列出本文各结论对应的程序入口；正式提交包中保留配置文件、随机种子、冻结检查点和逐局原始记录，使表图能够从同一版本重新生成。
+
+\begin{table}[H]
+  \centering
+  \caption{模型实现与结果复现入口}
+  \label{tab:reproduce-entry}
+  \begin{tabularx}{\textwidth}{LL}
+    \toprule
+    程序入口 & 对应内容 \\
+    \midrule
+    \path{src/solution/geometry/core.py} & 角域求交、最远点对与最小包围圆 \\
+    \path{src/solution/planning/q2.py} & 问题二保证接收约束与粗到细选点 \\
+    \path{src/solution/coverage/certificates.py} & 全向七站与定向三角网格覆盖证书 \\
+    \path{src/solution/control/controller.py} & 频道状态、合法候选、回退与退出控制 \\
+    \path{src/solution/search/teacher.py} & 相容场景搜索、配对代价与标签筛选 \\
+    \path{src/solution/rl/} & 候选评分、数据聚合、PPO 与分布式训练 \\
+    \path{scripts/evaluate_3000.py} & 冻结策略的独立大样本评估 \\
+    \path{scripts/validate_coverage.py} & 连续域覆盖条件和几何参数复核 \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+正式测试完成后，将原始响应、逐步动作、虚拟时间分解、程序运行时间和退出证书保存到 \path{results/formal/}，再由同一复算脚本生成问题三、四的正式结果表。
 \end{appendices}
