@@ -16,7 +16,7 @@
 
 | 内容 | 状态与入口 |
 | --- | --- |
-| Q1/Q2 | 已有几何求解、选点算法、人工算例和图件；Q2 部分夹具、图件与参数说明仍待完善，见[实现索引](docs/model/实现索引.md) |
+| Q1/Q2 | 已有几何求解及选点算法；LIT-Q2-01新增Q2一致夹具、120场景实际补测和参数检查，见[实现索引](docs/model/实现索引.md) |
 | Q3/Q4 | 已有覆盖、定位与清除控制器；已接收 Q4 不存在认证和退出修复，新增 Q3 搜索教师与 GPU 搜索 |
 | 研究训练 | 已接收同步 DDP、Q3 联合微调及 Q4 预算训练，本批含 10 份权重；见[最新交付](results/training/import-3ddb2d9/README.md)，旧批次单独保留 |
 | Q3/Q4 配对评估 | 四组各 3000 局记录均完成；Q3 候选、Q4 best 相对本批对照平均每局少 14.32 s、308.35 s，见[最新报告](results/training/import-3ddb2d9/runs/q34_3000_test_20260912/report.md) |
@@ -24,7 +24,7 @@
 | 本地模拟器 | `src/bsim/` 保留物理规则、HTTP 服务、客户端、回放和网页；用法与兼容范围见[模拟器说明](docs/simulator/README.md) |
 | 验证与论文 | 工程验证、策略质量和官方成绩分别记录；[本次整合验证](results/validation/integration-3ddb2d9/README.md)与[交付索引](handoff/README.md)提供证据入口 |
 
-自建模拟器用于批量研究训练和可重复实验；随后用官方演练验证、迭代，再进行正式测试。Q3 的 32 局配对测试、四路选模验证和 3000 局单策略评估使用的权重及统计口径不同，按[交付索引](handoff/README.md)分别引用；本轮复核交付记录并做少量场景运行验证，未重跑完整测评，不代表官方成绩。
+自建模拟器用于批量研究训练和可重复实验；随后用官方演练验证、迭代，再进行正式测试。Q3 的 32 局配对测试、四路选模验证和 3000 局单策略评估使用的权重及统计口径不同，按[交付索引](handoff/README.md)分别引用；本轮复核交付记录并做少量场景运行验证，未重跑完整Q3/Q4测评；Q2另增LIT-Q2-01本地实验，均不代表官方成绩。
 
 ## 目录
 
@@ -35,6 +35,7 @@ B-problem/
 ├── docs/
 │   ├── model/                  # 总体方案、实现与推导索引
 │   ├── notes/                  # 题目阅读；extracted/ 为题面提取材料
+│   ├── references/             # 两篇ICRA文献及本题适用边界
 │   └── simulator/              # 本地模拟器说明与兼容范围
 ├── src/
 │   ├── bsim/                   # 模拟器、客户端、研究场景与调试网页
@@ -46,7 +47,7 @@ B-problem/
 │   └── fixtures/               # simulator/ 与 solution/ 固定输入
 ├── experiments/
 │   ├── q1/                     # 后续按实验需要补充
-│   ├── q2/
+│   ├── q2/                     # lit_q2_01.json：实际补测与参数实验
 │   ├── q3/                     # large_20260911/、joint_20260912.json
 │   └── q4/                     # large_20260911/、repaired_20260912.json、budget_20260912.json
 ├── results/
@@ -58,7 +59,8 @@ B-problem/
 │   └── tables/                 # 后续生成的表
 ├── records/                    # 版本、接收和整理记录
 │   ├── acceptance/
-│   └── inventory/               # 数据批次、文件、权重与图件清单
+│   ├── improvements/           # 方法改进与验证记录
+│   └── inventory/              # 数据批次、文件、权重与图件清单
 ├── handoff/                    # 提供给论文手的当前方法与实验依据
 │   ├── q1/、q2/、q3/、q4/       # 每题模型、实现、结果和图表入口
 │   ├── shared/                  # 共同约定、训练过程与统计口径
@@ -90,7 +92,7 @@ python -m bsim validate-fixtures --profile fixture_conformance
 
 ```bash
 python -m solution.cli solve-q1 --input tests/fixtures/solution/q1_triangle.json --output results/figures/q1-example
-python -m solution.cli solve-q2 --input tests/fixtures/solution/q2_example.json --output results/figures/q2-example
+python -m solution.cli solve-q2 --input tests/fixtures/solution/q2_example_lit.json --output results/validation/q2-example-new
 python scripts/validate_coverage.py --problem 4
 python -m pytest -q
 ```
@@ -101,7 +103,10 @@ python -m pytest -q
 
 ```bash
 python scripts/build_handoff_assets.py
+python scripts/build_q2_literature_assets.py
 python scripts/inventory_assets.py
 ```
 
-前一命令复算已归档数据，生成 [handoff 图表](handoff/figures/README.md)，不执行训练；需要中文字体，流程图导出还使用 `rsvg-convert`。只复算表格可加 `--tables-only`。后一命令更新 `paper/` 之外的资产清单。原始实验数据继续按既有批次保留。
+前两条命令分别生成F001—F009及原批表格、LIT-Q2-01的F010—F012及补充表格，不运行策略或训练。需要中文字体，原批流程图导出还使用 `rsvg-convert`；原批只复算表格可加 `--tables-only`。最后一条更新 `paper/` 之外的资产清单。各脚本只登记自身生成文件的来源；原始实验数据按既有批次保留。
+
+**文献启发补充 · LIT-Q2-01**：[独立交付说明](handoff/shared/文献启发与Q2改进说明.md)集中说明Q2新增方法与实验、Q3/Q4方案补充及写作边界；[实验入口](experiments/q2/README.md)提供复现命令，[文献来源](docs/references/README.md)提供引用信息。

@@ -1,5 +1,5 @@
 {
-  "source_git_commit": "4e2cf9f9170f7c92b3d1bb15ffb701b00fcdfa44",
+  "source_git_commit": "a2d1e99d8a700af3b6a7c918c375a84d8196d942",
   "generation_scope": "对绑定数据重新汇总与绘图；源码可能含未提交整理，实际输入和生成脚本以 SHA-256 为准",
   "command": "python scripts/build_handoff_assets.py --tables-only",
   "environment": {
@@ -241,8 +241,8 @@
       "sha256": "04955d15990f2314a603f6b845f90f45ac589a6284ad31dcd0eeb6177d527e52"
     },
     "scripts/build_handoff_assets.py": {
-      "bytes": 36414,
-      "sha256": "3390d04d26192daf05f91135d1af78126d3bd931c0855457e9e62e4ff0076526"
+      "bytes": 36796,
+      "sha256": "8fa04c25961636600246fcb05546438fee6698c0efe38339e855c52181ed3d5d"
     }
   },
   "outputs": {

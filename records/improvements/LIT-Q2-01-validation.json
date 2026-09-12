@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "batch": "LIT-Q2-01",
+  "base_commit": "a2d1e99d8a700af3b6a7c918c375a84d8196d942",
+  "q2_tests": {
+    "passed": 9,
+    "command": "python -m pytest tests/solution/test_q2.py tests/solution/test_q2_literature.py -q"
+  },
+  "data": {
+    "records": 620,
+    "physical_steps": 2316,
+    "independent_geos_radius": "PASS",
+    "independent_diameter_and_time": "PASS",
+    "source_and_output_hashes": "PASS",
+    "split_overlap": false
+  },
+  "figures": {
+    "count": 3,
+    "spec_errors": 0,
+    "spec_warnings": 0,
+    "svg_parse": "PASS",
+    "pdf_render": "PASS",
+    "visual_review": "已检查三张PNG和三份PDF实际栅格化输出；修正F010图例遮挡；状态RENDERED"
+  },
+  "protected_original_files_unchanged": {
+    "handoff": 43,
+    "paper": 32,
+    "problem": 5,
+    "results": 3607,
+    "src": 49,
+    "tests": 27
+  },
+  "scope": "src原实现、权重、paper与旧结果不变；未重训、未运行官方测试；Q3/Q4仅补文档",
+  "links": {
+    "documents": 21,
+    "missing": 0
+  },
+  "review": {
+    "changed_files": 82,
+    "staged_diff_check": "PASS",
+    "changed_index_blobs_match_worktree": "PASS"
+  },
+  "inventory": {
+    "files": 3889,
+    "checkpoints": 58,
+    "figure_files": 60,
+    "datasets": 16
+  },
+  "publication_cleanup": {
+    "output_ownership": "原批9图9表输出，新批3图4表输出，分别登记；来源和输出哈希通过",
+    "original_csv_svg_png_unchanged": true,
+    "new_batch_assets_unchanged": true,
+    "regenerated_pdf_rasters_unchanged": 2,
+    "tables_only_unchanged_figure_files": 50
+  }
+}

@@ -38,6 +38,7 @@ TABLE = ROOT / 'handoff/tables'
 BLUE, ORANGE, TEAL, INK, GRAY = '#2563a6', '#c76824', '#17847c', '#243449', '#738296'
 INPUTS: dict[str, dict] = {}
 FIGURES: list[dict] = []
+TABLE_OUTPUTS: set[Path] = set()
 
 
 def bind(path: str | Path) -> Path:
@@ -54,6 +55,8 @@ def read(path: str | Path):
 def write_json(path: Path, data):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2, allow_nan=False) + '\n',encoding='utf-8')
+    if path.parent == TABLE and path.name != 'provenance.json':
+        TABLE_OUTPUTS.add(path)
 
 
 def write_csv(name: str, rows: list[dict]):
@@ -63,6 +66,7 @@ def write_csv(name: str, rows: list[dict]):
         writer = csv.DictWriter(f, fieldnames=list(rows[0]), lineterminator='\n')
         writer.writeheader()
         writer.writerows(rows)
+    TABLE_OUTPUTS.add(TABLE / name)
 
 
 def mean_ci(values):
@@ -565,10 +569,16 @@ def main():
         environment=dict(python=platform.python_version(),numpy=np.__version__,matplotlib=matplotlib.__version__),
         inputs=INPUTS)
     for folder in ((TABLE,) if args.tables_only else (TABLE,FIG)):
+        # 仅登记本次调用实际生成的资产，避免收录其他批次的图表。
+        paths = TABLE_OUTPUTS if folder == TABLE else {
+            path
+            for item in FIGURES
+            for stem in (f'{item["id"]}-{item["slug"]}',)
+            for path in ([FIG/f'{stem}.{ext}' for ext in ('pdf','svg','png')]
+                         + [FIG/'specs'/f'{stem}.md'])
+        }
         outputs={p.relative_to(ROOT).as_posix():hashlib.sha256(p.read_bytes()).hexdigest()
-                 for p in sorted(folder.rglob('*')) if p.is_file()
-                 and (p.suffix.lower() in {'.pdf','.svg','.png','.csv','.json'} or p.parent.name=='specs')
-                 and p.name!='provenance.json'}
+                 for p in sorted(paths)}
         payload=dict(common,outputs=outputs)
         if folder==FIG:payload['figures']=sorted(FIGURES,key=lambda x:x['id'])
         write_json(folder/'provenance.json',payload)

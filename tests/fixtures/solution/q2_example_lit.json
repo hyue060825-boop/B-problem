@@ -1,0 +1,9 @@
+{
+  "label": "LIT-Q2-01：首次观测与固定零误差场一致",
+  "position": [0.0, 0.0],
+  "svd_deg": 1.91,
+  "channel": 1,
+  "current_channel": 1,
+  "epsilon_impl_deg": 1.01,
+  "posterior_fixture": "tests/fixtures/solution/q2_source_lit.json"
+}

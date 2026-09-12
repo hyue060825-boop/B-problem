@@ -1,0 +1,13 @@
+{
+  "profile": "fixture_conformance",
+  "robot_id": "LOCAL-Q2",
+  "clock": {},
+  "scenario": {
+    "label": "LOCAL-Q2-LIT-consistent",
+    "problem": 3,
+    "scope": "test_fixture",
+    "sources": [{"channel": 1, "x": 900.0, "y": 30.0, "radius": 1200.0, "kind": "omni", "heading": null}]
+  },
+  "noise": {"label": "TEST_INPUT", "kind": "constant", "value": 0.0},
+  "numerics": {"label": "TEST_INPUT", "angle_rounding": "half_up", "time_rounding": "half_up", "directional_overlap": "invisible", "boundary_epsilon": 0.0}
+}

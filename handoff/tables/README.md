@@ -18,3 +18,5 @@
 `mean_virtual_s` 是各局总虚拟耗时的均值；`mean_per_source_s` 是先算每局 T/C 再取均值；`weighted_per_source_s` 是所有局总时间除以总清除数。`mean_delta_virtual_s` 及区间单位为 s，`mean_delta_per_source_s` 及其区间单位为 s/源。所有差值都是新减旧，负值表示新模型耗时较少。
 
 复算：`python scripts/build_handoff_assets.py --tables-only`。该命令更新表格的来源文件，不更新已有图件及图件来源；数据改变后需执行完整命令重绘。原始数据批次与局限见[数据清单](../../records/inventory/datasets.csv)和[实验说明](../shared/训练与评估.md)。
+
+**文献启发补充 · LIT-Q2-01**：[4份新表与来源](LIT-Q2-01/README.md)包含实际补测、120场景配对及独立参数检查；由 `python scripts/build_q2_literature_assets.py` 生成，与上表旧Q2预测算例分别使用。

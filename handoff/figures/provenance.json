@@ -1,5 +1,5 @@
 {
-  "source_git_commit": "4e2cf9f9170f7c92b3d1bb15ffb701b00fcdfa44",
+  "source_git_commit": "a2d1e99d8a700af3b6a7c918c375a84d8196d942",
   "generation_scope": "对绑定数据重新汇总与绘图；源码可能含未提交整理，实际输入和生成脚本以 SHA-256 为准",
   "command": "python scripts/build_handoff_assets.py",
   "environment": {
@@ -301,12 +301,12 @@
       "sha256": "dd372b5b8cffaf17c1fe12a8d8195e5cb8978106e0cc63a26913e38c84c5db71"
     },
     "scripts/build_handoff_assets.py": {
-      "bytes": 36414,
-      "sha256": "3390d04d26192daf05f91135d1af78126d3bd931c0855457e9e62e4ff0076526"
+      "bytes": 36796,
+      "sha256": "8fa04c25961636600246fcb05546438fee6698c0efe38339e855c52181ed3d5d"
     }
   },
   "outputs": {
-    "handoff/figures/F001-controller-workflow.pdf": "1c987d51211b0413c9ace2a6819df3bb3a9152a5088fc2a86fda19e082212800",
+    "handoff/figures/F001-controller-workflow.pdf": "be9ff6af57516e4e5d697ef8d3ab1a805307d96c08ae74611f83589ef65099bc",
     "handoff/figures/F001-controller-workflow.png": "5a08a301f1972cbeb1975b79133be66013dd6acb4abb7b808a5890c25a14cfd9",
     "handoff/figures/F001-controller-workflow.svg": "48a4666aabc736f10700c9496020e19441d64903015f619f41934f378bbff6e9",
     "handoff/figures/F002-q1-diameter-circle.pdf": "121543b364ec536fb5734af3a34a3448725897649d214db7b3ca340d854c6d55",
@@ -330,7 +330,7 @@
     "handoff/figures/F008-q34-validation-progress.pdf": "a95fe6ed16563f63c8247fa208b7fa5748a62c5cf31dd75037701fc12c97f507",
     "handoff/figures/F008-q34-validation-progress.png": "a74072c486858678232e3bfe27abb18bd515f6005b0033eabb87df64a0884e74",
     "handoff/figures/F008-q34-validation-progress.svg": "1e2a145f3d13831ee7c833991d6710a6c3e59d63ee20faac28f37f6ff0352977",
-    "handoff/figures/F009-training-evaluation-workflow.pdf": "41e11fa3dfff5b92ebc70a9d892213363fd75463dd92fe3ba68ec20d3ccadef7",
+    "handoff/figures/F009-training-evaluation-workflow.pdf": "d514048da2430a93bbf6ba657c8701bf05bb5cb5ab78ba1dacd4e00305ca8cd1",
     "handoff/figures/F009-training-evaluation-workflow.png": "58a91fb1825a221b593cbc32adc6a0e20fb8cf1251c3e5adae09a5f6ffe36c0b",
     "handoff/figures/F009-training-evaluation-workflow.svg": "d11afe26fab654081c80a2ae40c0fac8ad134448a9371a946f4d9f2cc91a69da",
     "handoff/figures/specs/F001-controller-workflow.md": "350ee0f426baf492783c6f765cb1f15143e2a6b05044b8f9d8fd2af6c0bb937d",

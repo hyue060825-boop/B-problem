@@ -33,3 +33,13 @@
 本批使用用户提供的 `figure-design-skills/scientific-figure-spec`，按七节 FigureSpec 记录科学信息与设计边界，使用原生 SVG 绘制流程图、Matplotlib 绘制数值和几何图。规格结构已检查，导出图已查看；状态为 `RENDERED`，供论文手选择采用，不标为已获最终接受。
 
 当前没有有效数据支持 Q2 实际补测前后图、Q2 参数灵敏度图或官方场景轨迹，因此本批不生成这些图。未来补齐记录后另增图件，不覆盖对应的原始实验数据。
+
+## 文献启发补充 · LIT-Q2-01
+
+- **F010：实际补测后的区域比较**。[PDF](F010-q2-observed-posterior.pdf) · [SVG](F010-q2-observed-posterior.svg) · [PNG](F010-q2-observed-posterior.png) · [规格](specs/F010-q2-observed-posterior.md)。
+- **F011：120场景精度分布与配对耗时**。[PDF](F011-q2-paired-evaluation.pdf) · [SVG](F011-q2-paired-evaluation.svg) · [PNG](F011-q2-paired-evaluation.png) · [规格](specs/F011-q2-paired-evaluation.md)。
+- **F012：12场景参数敏感性**。[PDF](F012-q2-sensitivity.pdf) · [SVG](F012-q2-sensitivity.svg) · [PNG](F012-q2-sensitivity.png) · [规格](specs/F012-q2-sensitivity.md)。
+
+F010固定展示首个试运行场景，不按评估收益挑例；F011区分后验精度与总执行时间；F012采用独立小批等距径向网格，不用于重选120场景参数。完整图注与边界见[独立交付](../shared/文献启发与Q2改进说明.md)。
+
+重绘命令：`python scripts/build_q2_literature_assets.py`。新图来源与导出哈希见[本批provenance](../tables/LIT-Q2-01/provenance.json)，状态为RENDERED；原F001—F009及其来源记录保持原批次。

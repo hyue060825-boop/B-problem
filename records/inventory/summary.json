@@ -1,8 +1,8 @@
 {
-  "source_git_commit": "4e2cf9f9170f7c92b3d1bb15ffb701b00fcdfa44",
+  "source_git_commit": "a2d1e99d8a700af3b6a7c918c375a84d8196d942",
   "scope": "当前工作区中受跟踪及未忽略的新文件；排除 paper 与清单自身，含尚未提交的整理成果",
-  "files": 3829,
-  "bytes": 615995664,
+  "files": 3889,
+  "bytes": 620419526,
   "parts": {
     ".agents": {
       "files": 11,
@@ -10,48 +10,48 @@
     },
     "root": {
       "files": 5,
-      "bytes": 13494
+      "bytes": 14175
     },
     "docs": {
-      "files": 15,
-      "bytes": 587535
+      "files": 17,
+      "bytes": 595133
     },
     "experiments": {
-      "files": 21,
-      "bytes": 11972
+      "files": 22,
+      "bytes": 16670
     },
     "handoff": {
-      "files": 56,
-      "bytes": 3713680
+      "files": 75,
+      "bytes": 5429262
     },
     "problem": {
       "files": 5,
       "bytes": 606467
     },
     "records": {
-      "files": 7,
-      "bytes": 20244
+      "files": 9,
+      "bytes": 25095
     },
     "results": {
-      "files": 3607,
-      "bytes": 597099434
+      "files": 3637,
+      "bytes": 599755274
     },
     "scripts": {
-      "files": 26,
-      "bytes": 132284
+      "files": 29,
+      "bytes": 162744
     },
     "src": {
       "files": 49,
       "bytes": 219751
     },
     "tests": {
-      "files": 27,
-      "bytes": 70325
+      "files": 30,
+      "bytes": 74477
     }
   },
   "checkpoints": 58,
   "checkpoint_bytes": 244854985,
-  "figure_files": 49,
+  "figure_files": 60,
   "latest_checkpoint_roles": {
     "results/training/import-3ddb2d9/runs/q3_joint_20260912/baseline.pt": "最新 Q3 对照；原稳健推荐",
     "results/training/import-3ddb2d9/runs/q3_joint_20260912/ppo_candidate.pt": "最新 Q3 候选；未替代原推荐",

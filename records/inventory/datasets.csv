@@ -14,3 +14,4 @@ D12,Q4,预算训练验证,results/training/import-3ddb2d9/runs/q4_budget_2026091
 D13,Q1-Q4,本机整合验证,results/validation/integration-3ddb2d9,回归、8 局评估、2 次自建 HTTP 闭环,main 4e2cf9f,运行入口与资产一致性,工程验证；不是完整策略性能测评,目录内逐文件见 files.csv
 D14,Q3/Q4,官方演练,results/rehearsal,未归档,当前工作区,待形成官方演练证据,不能从空目录推断队伍实际已用测试次数,目录内逐文件见 files.csv
 D15,Q3/Q4,正式测试,results/formal,未归档,当前工作区,待形成正式成绩及原始日志,保留原文件名；不覆盖原始记录,目录内逐文件见 files.csv
+D16,Q2,实际补测与参数实验,results/validation/LIT-Q2-01,8×4试运行、120×4配对、12×9敏感性及一致单例,LIT-Q2-01 / a2d1e99基础,比较几何候选、实际后验与完整执行耗时,自建单源物理实验；非官方分布；敏感性为小批,目录内逐文件见 files.csv

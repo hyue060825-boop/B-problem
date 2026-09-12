@@ -1,0 +1,24 @@
+{
+  "methods": [
+    {
+      "method": "shape",
+      "episodes": 108,
+      "available": 108,
+      "guaranteed": 108,
+      "received": 108,
+      "contains_truth": 108,
+      "clear_ready": 33,
+      "completed": 108,
+      "mean_posterior_radius_m": 86.819960607541,
+      "mean_second_action_s": 151.25340057407408,
+      "mean_total_virtual_s": 258.80968423148147,
+      "mean_selection_s": 0.3352456469907376,
+      "mean_measures": 2.75,
+      "mean_clear_attempts": 1.0,
+      "mean_evaluated_candidates": 34.611111111111114,
+      "p95_total_virtual_s": 335.83814144999997
+    }
+  ],
+  "paired": [],
+  "elapsed_s": 36.62976433199992
+}

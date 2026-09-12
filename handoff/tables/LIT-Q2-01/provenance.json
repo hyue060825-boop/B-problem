@@ -1,0 +1,32 @@
+{
+  "batch": "LIT-Q2-01",
+  "inputs": {
+    "results/validation/LIT-Q2-01/pilot/records.json": "f73ab7f1f3e54031c4ecf708c380c89e7ce9ef06557234e3468bee82efbe5c46",
+    "results/validation/LIT-Q2-01/evaluation/records.json": "efcee77145332999b4e35ecf8f4f8a33e57847c9969f244e36d26a8581ba56de",
+    "results/validation/LIT-Q2-01/evaluation/summary.json": "41b86c5b699bb45115fab4d3066a90ab7bc3c72b643fec6fbe740e70fb978b2f",
+    "results/validation/LIT-Q2-01/sensitivity/records.json": "7c1cd75bae7eb8553d32e1c7e120440f8f4b6c3e3dd59306a53f0a6bb24421ed",
+    "results/validation/LIT-Q2-01/sensitivity/sensitivity.csv": "2c7a6505eb101966054c49d07a376397c93e227a970a7a8da0303e8fbc1b3948",
+    "scripts/build_q2_literature_assets.py": "1efc0320da98caf2cebc5c2477c4e03bb9cdb1a02d839e4065ed6c0b61e41fe2"
+  },
+  "outputs": {
+    "handoff/tables/LIT-Q2-01/summary.csv": "cc4db0377796280b59873fe2e0da4f35074adaeebdb2b7dd80c9b11d51f8246f",
+    "handoff/tables/LIT-Q2-01/paired.csv": "647db8a731ee894c1855dcd268557e652b92944223ff5d3b34d8fc6f34500f8d",
+    "handoff/tables/LIT-Q2-01/samples.csv": "e4f238de1ced0c7b39c31f26dcc4efa88662b5be193c093990ace7479cd58c07",
+    "handoff/tables/LIT-Q2-01/sensitivity.csv": "2c7a6505eb101966054c49d07a376397c93e227a970a7a8da0303e8fbc1b3948",
+    "handoff/figures/F010-q2-observed-posterior.pdf": "8b2e2c6e1e4c3b15274d62049e8a83916c8def326a090feaa02510be2efcc2d5",
+    "handoff/figures/F010-q2-observed-posterior.svg": "2011e8e46428a7ec4d191cb03e8ee8122305941e5734e9d387718f13f98e7849",
+    "handoff/figures/F010-q2-observed-posterior.png": "3393287666fe5b534a52726503ae2a309861ec0f7312428650afa7692a85d92c",
+    "handoff/figures/specs/F010-q2-observed-posterior.md": "631f9dfa6a0afc7ea1435fdcf3d8ac189afcfd735fa7374a5e1dd6d5943fede8",
+    "handoff/figures/F011-q2-paired-evaluation.pdf": "0b4d07267b8314755b1f552f6b71c8b741e989a17ca199c9e72baf3800ab7ef3",
+    "handoff/figures/F011-q2-paired-evaluation.svg": "5c20ffbd8cc0c7fb28fd6602919947631d870b5f580fb706263f4a3f44cc3ed7",
+    "handoff/figures/F011-q2-paired-evaluation.png": "22fedd581ca75e32b8b1b6c2b63fb7d41388ff991a0b420f048f062a4712b8fc",
+    "handoff/figures/specs/F011-q2-paired-evaluation.md": "d1ef960654372618a063090975ed908f021cc82d7abe84a9d98f5dafe08c29f1",
+    "handoff/figures/F012-q2-sensitivity.pdf": "122b5fd9d8b90411f145aa5b2d8d9492b2cbc246685b3d0f3a36b6e3f91f6863",
+    "handoff/figures/F012-q2-sensitivity.svg": "d77985875411cbae4fef693af75a04a817c6304e75be5e2174b514e52c9cbea9",
+    "handoff/figures/F012-q2-sensitivity.png": "432320a016020be877c13d46186b13f29dd155d38f6152a02beb9ec78af0d9a8",
+    "handoff/figures/specs/F012-q2-sensitivity.md": "fcc9ed8ca4dab72d79536fbdb1c3cec5347e929c3fe1db536795500cda76b9c0"
+  },
+  "command": "python scripts/build_q2_literature_assets.py",
+  "matplotlib": "3.11.0",
+  "numpy": "2.5.1"
+}

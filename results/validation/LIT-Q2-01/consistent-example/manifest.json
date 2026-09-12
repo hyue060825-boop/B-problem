@@ -1,0 +1,20 @@
+{
+  "batch": "LIT-Q2-01",
+  "command": "python -m solution.cli solve-q2 --input tests/fixtures/solution/q2_example_lit.json --output results/validation/LIT-Q2-01/consistent-example",
+  "inputs": {
+    "tests/fixtures/solution/q2_example_lit.json": "daba59228cd9ac93264b0b1bf8163475a93eb247370a2fb20c2cbc6b2fa207e7",
+    "tests/fixtures/solution/q2_source_lit.json": "9d9169b23138e03ce977c59d1f7bd17ff3527e3a3d5f41978d5d50ecfa61d669",
+    "src/solution/planning/q2.py": "d0568dbe68e82997900eebe4633837f515e4682d507a9449284e95785ac44504",
+    "src/solution/geometry/core.py": "ba77a502eb2ada24151ad2057ffc2b6606ccab8c92641173211e227bc7286caf",
+    "src/bsim/reference.py": "eca0ad350a6a22a9ccdd655ae1ed284cc98cec107fd1125aad5a488a8818b86f",
+    "src/bsim/noise.py": "0b149c9b1b0470e6c3d37d3b73f42757076cad8440bf91cbcf9c0b112d0fcb88"
+  },
+  "outputs": {
+    "results/validation/LIT-Q2-01/consistent-example/input.json": "efae80f3e7b2cf50eb9b98cd299ba66df84fbf4f102763abb3a6a9e92a114e8f",
+    "results/validation/LIT-Q2-01/consistent-example/provenance.json": "8ff9babdc9f6c2ee0e0c9ad4508e03a6e14a43895f21b8d940972954a22799e0",
+    "results/validation/LIT-Q2-01/consistent-example/q2.pdf": "e689c5b0b2f167369fe46203ba901d4379ca5b450302407316eab344fcd10499",
+    "results/validation/LIT-Q2-01/consistent-example/posterior.json": "84f7d4b2e0610bb95577b5c55fe1c0c2c3f54b9737e9df221f80cf7c410ccc3d",
+    "results/validation/LIT-Q2-01/consistent-example/q2.png": "a8c8cc0f9eecab2bdc8efddaa8e778accaa35ccb17903d806116b3a12bb66eb9",
+    "results/validation/LIT-Q2-01/consistent-example/result.json": "f4123db8c2356aab917d48b890948e9e6187bda6f61e4aee8bd8659f44c61ac9"
+  }
+}

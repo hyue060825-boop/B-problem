@@ -1,0 +1,4840 @@
+[
+  {
+    "metrics": {
+      "seed": 412000,
+      "group": "center",
+      "field": "zero",
+      "radius": 1000.0,
+      "method": "on_bearing",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 370.0011501118576,
+      "posterior_diameter_m": 740.0023002237152,
+      "posterior_area_m2": 4957.45835600112,
+      "clear_ready": false,
+      "second_action_s": 155.0,
+      "predicted_radius_m": 375.15824417559804,
+      "predicted_J_s": 476.61076978832983,
+      "selection_s": 0.0082767829999284,
+      "evaluated_candidates": 1,
+      "completed": true,
+      "total_virtual_s": 328.908771,
+      "measures": 3,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412000,
+      "group": "center",
+      "field": "zero",
+      "source": [
+        580.7302510768359,
+        427.99779851791726
+      ],
+      "start": [
+        0.0,
+        0.0
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        1223.0377369548764,
+        868.5253043763329
+      ],
+      [
+        1204.9020242077222,
+        893.6162444579384
+      ],
+      [
+        1191.6252080086658,
+        911.0662653236399
+      ],
+      [
+        3.9717847960235417,
+        3.036658897414643
+      ],
+      [
+        4.0764854581269985,
+        2.8948662145257216
+      ]
+    ],
+    "posterior": [
+      [
+        305.79624292861627,
+        217.15746524345826
+      ],
+      [
+        599.7762323767035,
+        441.9221389254856
+      ],
+      [
+        599.6715317145994,
+        442.0639316083754
+      ],
+      [
+        297.9517742441368,
+        227.80133257946207
+      ],
+      [
+        3.9717847960235417,
+        3.036658897414643
+      ],
+      [
+        4.0764854581269985,
+        2.8948662145257216
+      ]
+    ],
+    "selection": {
+      "position": [
+        603.7480171727268,
+        444.9587978229006
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 750.2855073248664,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 375.15824417559804,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 134.03164770053075,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 9918.309395489603,
+      "movement_m": 750.0000000000001,
+      "J_s": 476.61076978832983,
+      "evaluation_s": 0.00824814299994614
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          0.0,
+          0.0
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 36.39
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          603.7480171727268,
+          444.9587978229006
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 216.39
+        },
+        "delta_s": 155.0,
+        "virtual_s": 160.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          203.0928484182459,
+          356.5118753504476
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 10.72
+        },
+        "delta_s": 87.060325,
+        "virtual_s": 247.060325
+      },
+      {
+        "path": "/clear",
+        "position": [
+          580.5791330801949,
+          428.2488805336958
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 81.848446,
+        "virtual_s": 328.908771
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412000,
+      "group": "center",
+      "field": "zero",
+      "radius": 1000.0,
+      "method": "fixed_flank",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 15.446016697203472,
+      "posterior_diameter_m": 30.892033394406944,
+      "posterior_area_m2": 405.18732269219373,
+      "clear_ready": true,
+      "second_action_s": 179.928557,
+      "predicted_radius_m": 69.21237098955915,
+      "predicted_J_s": 393.6007397568669,
+      "selection_s": 0.008052513999928124,
+      "evaluated_candidates": 1,
+      "completed": true,
+      "total_virtual_s": 280.082477,
+      "measures": 2,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412000,
+      "group": "center",
+      "field": "zero",
+      "source": [
+        580.7302510768359,
+        427.99779851791726
+      ],
+      "start": [
+        0.0,
+        0.0
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        1223.0377369548764,
+        868.5253043763329
+      ],
+      [
+        1204.9020242077222,
+        893.6162444579384
+      ],
+      [
+        1191.6252080086658,
+        911.0662653236399
+      ],
+      [
+        3.9717847960235417,
+        3.036658897414643
+      ],
+      [
+        4.0764854581269985,
+        2.8948662145257216
+      ]
+    ],
+    "posterior": [
+      [
+        594.2553635835683,
+        422.0031850706578
+      ],
+      [
+        579.9497042791797,
+        443.405030104345
+      ],
+      [
+        567.6362881938552,
+        433.99071264170107
+      ],
+      [
+        580.9126329900482,
+        412.5280079756011
+      ]
+    ],
+    "selection": {
+      "position": [
+        336.77273847898647,
+        807.2076081265366
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 888.3836487671593,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 69.21237098955915,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 179.0659974167283,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2647.9590929517817,
+      "movement_m": 874.6427842267951,
+      "J_s": 393.6007397568669,
+      "evaluation_s": 0.008039220999989993
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          0.0,
+          0.0
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 36.39
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          336.77273847898647,
+          807.2076081265366
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 302.75
+        },
+        "delta_s": 179.928557,
+        "virtual_s": 184.928557
+      },
+      {
+        "path": "/clear",
+        "position": [
+          580.431168634614,
+          427.96651903997304
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 95.15392,
+        "virtual_s": 280.082477
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412000,
+      "group": "center",
+      "field": "zero",
+      "radius": 1000.0,
+      "method": "current",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 13.866634856408162,
+      "posterior_diameter_m": 27.733269712816224,
+      "posterior_area_m2": 220.09001174154213,
+      "clear_ready": true,
+      "second_action_s": 161.653118,
+      "predicted_radius_m": 103.2322400838316,
+      "predicted_J_s": 375.399310874864,
+      "selection_s": 1.1022803099999692,
+      "evaluated_candidates": 129,
+      "completed": true,
+      "total_virtual_s": 220.500555,
+      "measures": 2,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412000,
+      "group": "center",
+      "field": "zero",
+      "source": [
+        580.7302510768359,
+        427.99779851791726
+      ],
+      "start": [
+        0.0,
+        0.0
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        1223.0377369548764,
+        868.5253043763329
+      ],
+      [
+        1204.9020242077222,
+        893.6162444579384
+      ],
+      [
+        1191.6252080086658,
+        911.0662653236399
+      ],
+      [
+        3.9717847960235417,
+        3.036658897414643
+      ],
+      [
+        4.0764854581269985,
+        2.8948662145257216
+      ]
+    ],
+    "posterior": [
+      [
+        592.6230979482859,
+        420.8440515745512
+      ],
+      [
+        575.8491927425921,
+        440.269952308129
+      ],
+      [
+        568.6271103400171,
+        434.74825337356214
+      ],
+      [
+        585.9252018148973,
+        416.08762247757346
+      ]
+    ],
+    "selection": {
+      "position": [
+        743.6537688156412,
+        245.93506129567538
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 801.9213982083029,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 103.2322400838316,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 162.13007311763243,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3544.8792114061157,
+      "movement_m": 783.265588576579,
+      "J_s": 375.399310874864,
+      "evaluation_s": 0.007498165000015433
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          0.0,
+          0.0
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 36.39
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          743.6537688156412,
+          245.93506129567538
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 131.82
+        },
+        "delta_s": 161.653118,
+        "virtual_s": 166.653118
+      },
+      {
+        "path": "/clear",
+        "position": [
+          580.6251041441515,
+          427.79615247405667
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 53.847437,
+        "virtual_s": 220.500555
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412000,
+      "group": "center",
+      "field": "zero",
+      "radius": 1000.0,
+      "method": "shape",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 13.954306424334044,
+      "posterior_diameter_m": 27.908612848668056,
+      "posterior_area_m2": 204.25395930686955,
+      "clear_ready": true,
+      "second_action_s": 161.896535,
+      "predicted_radius_m": 108.13707032675909,
+      "predicted_J_s": 376.8514782492863,
+      "selection_s": 0.2725161860000753,
+      "evaluated_candidates": 31,
+      "completed": true,
+      "total_virtual_s": 217.018973,
+      "measures": 2,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412000,
+      "group": "center",
+      "field": "zero",
+      "source": [
+        580.7302510768359,
+        427.99779851791726
+      ],
+      "start": [
+        0.0,
+        0.0
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        1223.0377369548764,
+        868.5253043763329
+      ],
+      [
+        1204.9020242077222,
+        893.6162444579384
+      ],
+      [
+        1191.6252080086658,
+        911.0662653236399
+      ],
+      [
+        3.9717847960235417,
+        3.036658897414643
+      ],
+      [
+        4.0764854581269985,
+        2.8948662145257216
+      ]
+    ],
+    "posterior": [
+      [
+        590.293270402232,
+        419.189553011077
+      ],
+      [
+        577.5631673659175,
+        441.58038485707306
+      ],
+      [
+        571.5312167590671,
+        436.9686103877966
+      ],
+      [
+        583.3890736883305,
+        414.28662207765205
+      ]
+    ],
+    "selection": {
+      "position": [
+        472.64990281787027,
+        626.1111192614228
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 788.5724689372264,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 108.13707032675909,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 160.8864084783465,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3623.822390803539,
+      "movement_m": 784.4826730378013,
+      "J_s": 376.8514782492863,
+      "evaluation_s": 0.008673478999980944
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          0.0,
+          0.0
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 36.39
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          472.64990281787027,
+          626.1111192614228
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 298.61
+        },
+        "delta_s": 161.896535,
+        "virtual_s": 166.896535
+      },
+      {
+        "path": "/clear",
+        "position": [
+          580.4761205271241,
+          427.9335034673626
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 50.122438,
+        "virtual_s": 217.018973
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412001,
+      "group": "edge",
+      "field": "zero",
+      "radius": 1000.0,
+      "method": "on_bearing",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 130.76119893335778,
+      "posterior_diameter_m": 261.4971326420847,
+      "posterior_area_m2": 1251.3041284494775,
+      "clear_ready": false,
+      "second_action_s": 155.0,
+      "predicted_radius_m": 372.50055475686486,
+      "predicted_J_s": 474.7503871952641,
+      "selection_s": 0.008242402999940168,
+      "evaluated_candidates": 1,
+      "completed": true,
+      "total_virtual_s": 225.26158,
+      "measures": 3,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412001,
+      "group": "edge",
+      "field": "zero",
+      "source": [
+        -879.7848005227563,
+        -1550.4170724488768
+      ],
+      "start": [
+        -386.7498816441444,
+        -681.5571477392832
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        -389.14012165659517,
+        -685.9484498614707
+      ],
+      [
+        -389.29344106698056,
+        -685.8615001065695
+      ],
+      [
+        -903.8485123120176,
+        -1556.6201779934715
+      ],
+      [
+        -887.283556882892,
+        -1566.274521673566
+      ],
+      [
+        -872.6857941083517,
+        -1574.3090435288161
+      ]
+    ],
+    "posterior": [
+      [
+        -759.2557854425745,
+        -1338.263107345676
+      ],
+      [
+        -759.4090943090337,
+        -1338.1761389491833
+      ],
+      [
+        -892.4666055183624,
+        -1563.253750923438
+      ],
+      [
+        -887.283556882892,
+        -1566.274521673566
+      ],
+      [
+        -884.3084765735035,
+        -1567.9119881905992
+      ]
+    ],
+    "selection": {
+      "position": [
+        -756.8647809561994,
+        -1333.872225985392
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 745.0011038405859,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 372.50055475686486,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 133.5001098168317,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 4957.899100477494,
+      "movement_m": 749.9999999999999,
+      "J_s": 474.7503871952641,
+      "evaluation_s": 0.008212754999931349
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          -386.7498816441444,
+          -681.5571477392832
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 240.43
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          -756.8647809561994,
+          -1333.872225985392
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 240.42
+        },
+        "delta_s": 155.0,
+        "virtual_s": 160.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          -874.7643579400941,
+          -1423.055426500922
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 267.74
+        },
+        "delta_s": 34.566165,
+        "virtual_s": 194.566165
+      },
+      {
+        "path": "/clear",
+        "position": [
+          -880.0771593755327,
+          -1551.422605832574
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 30.695415,
+        "virtual_s": 225.26158
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412001,
+      "group": "edge",
+      "field": "zero",
+      "radius": 1000.0,
+      "method": "fixed_flank",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 25.443792483042966,
+      "posterior_diameter_m": 50.88758496608576,
+      "posterior_area_m2": 720.1406253379068,
+      "clear_ready": false,
+      "second_action_s": 179.928557,
+      "predicted_radius_m": 28.86124031067091,
+      "predicted_J_s": 373.4000389167012,
+      "selection_s": 0.00836131499977455,
+      "evaluated_candidates": 1,
+      "completed": true,
+      "total_virtual_s": 303.689629,
+      "measures": 3,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412001,
+      "group": "edge",
+      "field": "zero",
+      "source": [
+        -879.7848005227563,
+        -1550.4170724488768
+      ],
+      "start": [
+        -386.7498816441444,
+        -681.5571477392832
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        -389.14012165659517,
+        -685.9484498614707
+      ],
+      [
+        -389.29344106698056,
+        -685.8615001065695
+      ],
+      [
+        -903.8485123120176,
+        -1556.6201779934715
+      ],
+      [
+        -887.283556882892,
+        -1566.274521673566
+      ],
+      [
+        -872.6857941083517,
+        -1574.3090435288161
+      ]
+    ],
+    "posterior": [
+      [
+        -864.5369896549831,
+        -1559.3382203485178
+      ],
+      [
+        -855.1039569518099,
+        -1542.008038300181
+      ],
+      [
+        -894.5504773349508,
+        -1540.8855266489873
+      ],
+      [
+        -903.8485123120176,
+        -1556.6201779934715
+      ],
+      [
+        -898.7848950822063,
+        -1559.571342046415
+      ]
+    ],
+    "selection": {
+      "position": [
+        -365.475734008534,
+        -1555.941165572625
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 870.405599377121,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 28.86124031067091,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 179.04086191600678,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 723.6938485738626,
+      "movement_m": 874.6427842267949,
+      "J_s": 373.4000389167012,
+      "evaluation_s": 0.008349170999963462
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          -386.7498816441444,
+          -681.5571477392832
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 240.43
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          -365.475734008534,
+          -1555.941165572625
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 179.38
+        },
+        "delta_s": 179.928557,
+        "virtual_s": 184.928557
+      },
+      {
+        "path": "/measure",
+        "position": [
+          -879.800859537376,
+          -1579.3123517399226
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 89.97
+        },
+        "delta_s": 107.97117,
+        "virtual_s": 292.899727
+      },
+      {
+        "path": "/clear",
+        "position": [
+          -879.9457119944987,
+          -1550.3632020388955
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 10.789902,
+        "virtual_s": 303.689629
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412001,
+      "group": "edge",
+      "field": "zero",
+      "radius": 1000.0,
+      "method": "current",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 43.98313284996981,
+      "posterior_diameter_m": 87.96626569993963,
+      "posterior_area_m2": 1209.377487140639,
+      "clear_ready": false,
+      "second_action_s": 110.635151,
+      "predicted_radius_m": 62.20611925633122,
+      "predicted_J_s": 259.5193236315404,
+      "selection_s": 1.089094963999969,
+      "evaluated_candidates": 129,
+      "completed": true,
+      "total_virtual_s": 238.357742,
+      "measures": 3,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412001,
+      "group": "edge",
+      "field": "zero",
+      "source": [
+        -879.7848005227563,
+        -1550.4170724488768
+      ],
+      "start": [
+        -386.7498816441444,
+        -681.5571477392832
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        -389.14012165659517,
+        -685.9484498614707
+      ],
+      [
+        -389.29344106698056,
+        -685.8615001065695
+      ],
+      [
+        -903.8485123120176,
+        -1556.6201779934715
+      ],
+      [
+        -887.283556882892,
+        -1566.274521673566
+      ],
+      [
+        -872.6857941083517,
+        -1574.3090435288161
+      ]
+    ],
+    "posterior": [
+      [
+        -855.8998339353099,
+        -1543.4702078320959
+      ],
+      [
+        -833.9720007478031,
+        -1503.1848242208187
+      ],
+      [
+        -903.7123077640867,
+        -1556.3896850905612
+      ],
+      [
+        -903.8485123120176,
+        -1556.6201779934715
+      ],
+      [
+        -887.283556882892,
+        -1566.274521673566
+      ],
+      [
+        -885.1401012449905,
+        -1567.4542669149746
+      ]
+    ],
+    "selection": {
+      "position": [
+        -445.08331406567703,
+        -1206.5017531936633
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 577.1034729633008,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 62.20611925633122,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 117.78111301020729,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 1500.1476000745151,
+      "movement_m": 528.1757549658374,
+      "J_s": 259.5193236315404,
+      "evaluation_s": 0.008120563999909791
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          -386.7498816441444,
+          -681.5571477392832
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 240.43
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          -445.08331406567703,
+          -1206.5017531936633
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 218.35
+        },
+        "delta_s": 110.635151,
+        "virtual_s": 115.635151
+      },
+      {
+        "path": "/measure",
+        "position": [
+          -850.2963472611578,
+          -1553.4295574834673
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 174.17
+        },
+        "delta_s": 111.687676,
+        "virtual_s": 227.322827
+      },
+      {
+        "path": "/clear",
+        "position": [
+          -880.3398731434578,
+          -1550.620391257056
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 11.034915,
+        "virtual_s": 238.357742
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412001,
+      "group": "edge",
+      "field": "zero",
+      "radius": 1000.0,
+      "method": "shape",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 50.14632010471831,
+      "posterior_diameter_m": 100.29264020943656,
+      "posterior_area_m2": 1281.7199944352194,
+      "clear_ready": false,
+      "second_action_s": 111.537962,
+      "predicted_radius_m": 73.0054330820545,
+      "predicted_J_s": 258.5736426836231,
+      "selection_s": 0.26398209299986775,
+      "evaluated_candidates": 31,
+      "completed": true,
+      "total_virtual_s": 230.491564,
+      "measures": 3,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412001,
+      "group": "edge",
+      "field": "zero",
+      "source": [
+        -879.7848005227563,
+        -1550.4170724488768
+      ],
+      "start": [
+        -386.7498816441444,
+        -681.5571477392832
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        -389.14012165659517,
+        -685.9484498614707
+      ],
+      [
+        -389.29344106698056,
+        -685.8615001065695
+      ],
+      [
+        -903.8485123120176,
+        -1556.6201779934715
+      ],
+      [
+        -887.283556882892,
+        -1566.274521673566
+      ],
+      [
+        -872.6857941083517,
+        -1574.3090435288161
+      ]
+    ],
+    "posterior": [
+      [
+        -851.7006083442114,
+        -1535.755473213261
+      ],
+      [
+        -827.1624300590107,
+        -1490.6744149578365
+      ],
+      [
+        -901.5184408236519,
+        -1557.978184119363
+      ],
+      [
+        -887.283556882892,
+        -1566.274521673566
+      ],
+      [
+        -884.6238535155625,
+        -1567.7384065964366
+      ]
+    ],
+    "selection": {
+      "position": [
+        -506.6649662965033,
+        -1200.5742994987797
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 533.4073835433055,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 73.0054330820545,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 110.53296458001994,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 1656.0752123894372,
+      "movement_m": 532.6898078128796,
+      "J_s": 258.5736426836231,
+      "evaluation_s": 0.007478532000050109
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          -386.7498816441444,
+          -681.5571477392832
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 240.43
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          -506.6649662965033,
+          -1200.5742994987797
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 223.16
+        },
+        "delta_s": 111.537962,
+        "virtual_s": 116.537962
+      },
+      {
+        "path": "/measure",
+        "position": [
+          -843.8192947500602,
+          -1546.209690151781
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 186.67
+        },
+        "delta_s": 101.568497,
+        "virtual_s": 218.106459
+      },
+      {
+        "path": "/clear",
+        "position": [
+          -880.4609166796901,
+          -1550.7797927671727
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 12.385105,
+        "virtual_s": 230.491564
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412002,
+      "group": "rotated",
+      "field": "zero",
+      "radius": 1000.0,
+      "method": "on_bearing",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 370.0011039713972,
+      "posterior_diameter_m": 740.0022079427944,
+      "posterior_area_m2": 4953.080825147684,
+      "clear_ready": false,
+      "second_action_s": 155.0,
+      "predicted_radius_m": 375.1552310587656,
+      "predicted_J_s": 476.60866060653404,
+      "selection_s": 0.008344734000047538,
+      "evaluated_candidates": 1,
+      "completed": true,
+      "total_virtual_s": 330.375307,
+      "measures": 3,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412002,
+      "group": "rotated",
+      "field": "zero",
+      "source": [
+        -458.292461030063,
+        57.32335717521394
+      ],
+      "start": [
+        251.29266973804863,
+        236.19768089671584
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        246.4669224235541,
+        234.89017128009556
+      ],
+      [
+        246.42391327073133,
+        235.06110219560378
+      ],
+      [
+        -1209.4442836644512,
+        -104.80164199208697
+      ],
+      [
+        -1203.86378075525,
+        -128.30003499012025
+      ],
+      [
+        -1196.5405804629406,
+        -156.08472119068696
+      ]
+    ],
+    "posterior": [
+      [
+        -99.62933650029684,
+        141.1173063804898
+      ],
+      [
+        246.4669224235541,
+        234.89017128009556
+      ],
+      [
+        246.42391327073133,
+        235.06110219560378
+      ],
+      [
+        -124.48367048397607,
+        148.4751945425136
+      ],
+      [
+        -471.12720625028635,
+        54.16428454989474
+      ],
+      [
+        -471.08407239080316,
+        53.99338463465084
+      ]
+    ],
+    "selection": {
+      "position": [
+        -475.9516191184895,
+        52.85171195944082
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 750.2685414629702,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 375.1552310587656,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 134.03104507715128,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 9918.155367899582,
+      "movement_m": 750.0,
+      "J_s": 476.60866060653404,
+      "evaluation_s": 0.008334679999961736
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          251.29266973804863,
+          236.19768089671584
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 194.15
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          -475.9516191184895,
+          52.85171195944082
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 14.21
+        },
+        "delta_s": 155.0,
+        "virtual_s": 160.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          -153.22361938807768,
+          306.0186946916633
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 219.19
+        },
+        "delta_s": 87.035817,
+        "virtual_s": 247.035817
+      },
+      {
+        "path": "/clear",
+        "position": [
+          -456.45027496992293,
+          58.066102795976775
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 83.33949,
+        "virtual_s": 330.375307
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412002,
+      "group": "rotated",
+      "field": "zero",
+      "radius": 1000.0,
+      "method": "fixed_flank",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 15.427502189204837,
+      "posterior_diameter_m": 30.855004378409674,
+      "posterior_area_m2": 410.0476540363658,
+      "clear_ready": true,
+      "second_action_s": 179.928557,
+      "predicted_radius_m": 69.19292379136301,
+      "predicted_J_s": 393.99090005919993,
+      "selection_s": 0.009914308999896093,
+      "evaluated_candidates": 1,
+      "completed": true,
+      "total_virtual_s": 279.974414,
+      "measures": 2,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412002,
+      "group": "rotated",
+      "field": "zero",
+      "source": [
+        -458.292461030063,
+        57.32335717521394
+      ],
+      "start": [
+        251.29266973804863,
+        236.19768089671584
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        246.4669224235541,
+        234.89017128009556
+      ],
+      [
+        246.42391327073133,
+        235.06110219560378
+      ],
+      [
+        -1209.4442836644512,
+        -104.80164199208697
+      ],
+      [
+        -1203.86378075525,
+        -128.30003499012025
+      ],
+      [
+        -1196.5405804629406,
+        -156.08472119068696
+      ]
+    ],
+    "posterior": [
+      [
+        -448.1608011715909,
+        46.68463596819873
+      ],
+      [
+        -452.95986973687945,
+        71.7946112909209
+      ],
+      [
+        -468.87097483380927,
+        68.08026966804246
+      ],
+      [
+        -463.0733556130157,
+        42.644161918314765
+      ]
+    ],
+    "selection": {
+      "position": [
+        -365.9440377561245,
+        -383.49486135448205
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 888.3482286614768,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 69.19292379136301,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 179.4658813181594,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2647.949453169863,
+      "movement_m": 874.642784226795,
+      "J_s": 393.99090005919993,
+      "evaluation_s": 0.009899120999989464
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          251.29266973804863,
+          236.19768089671584
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 194.15
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          -365.9440377561245,
+          -383.49486135448205
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 101.83
+        },
+        "delta_s": 179.928557,
+        "virtual_s": 184.928557
+      },
+      {
+        "path": "/clear",
+        "position": [
+          -458.01661267494757,
+          57.21938660461783
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 95.045857,
+        "virtual_s": 279.974414
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412002,
+      "group": "rotated",
+      "field": "zero",
+      "radius": 1000.0,
+      "method": "current",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 13.992539885157687,
+      "posterior_diameter_m": 27.985079770315362,
+      "posterior_area_m2": 238.84926906449192,
+      "clear_ready": true,
+      "second_action_s": 163.483344,
+      "predicted_radius_m": 97.79631850549131,
+      "predicted_J_s": 374.8693492156992,
+      "selection_s": 1.0902647610000713,
+      "evaluated_candidates": 129,
+      "completed": true,
+      "total_virtual_s": 225.877257,
+      "measures": 2,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412002,
+      "group": "rotated",
+      "field": "zero",
+      "source": [
+        -458.292461030063,
+        57.32335717521394
+      ],
+      "start": [
+        251.29266973804863,
+        236.19768089671584
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        246.4669224235541,
+        234.89017128009556
+      ],
+      [
+        246.42391327073133,
+        235.06110219560378
+      ],
+      [
+        -1209.4442836644512,
+        -104.80164199208697
+      ],
+      [
+        -1203.86378075525,
+        -128.30003499012025
+      ],
+      [
+        -1196.5405804629406,
+        -156.08472119068696
+      ]
+    ],
+    "posterior": [
+      [
+        -451.6482047363911,
+        45.73974328328714
+      ],
+      [
+        -455.93310772712744,
+        71.10052866406222
+      ],
+      [
+        -465.38355025858493,
+        68.89438573210545
+      ],
+      [
+        -460.15294647333945,
+        43.435430603385086
+      ]
+    ],
+    "selection": {
+      "position": [
+        -410.08227644574924,
+        -200.27389842171146
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 805.0432102269269,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 97.79631850549131,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 162.48784585483048,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3342.8929762361267,
+      "movement_m": 792.4167205406153,
+      "J_s": 374.8693492156992,
+      "evaluation_s": 0.012249365000116086
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          251.29266973804863,
+          236.19768089671584
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 194.15
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          -410.08227644574924,
+          -200.27389842171146
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 100.6
+        },
+        "delta_s": 163.483344,
+        "virtual_s": 168.483344
+      },
+      {
+        "path": "/clear",
+        "position": [
+          -458.0430271002334,
+          57.267979633723655
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 57.393913,
+        "virtual_s": 225.877257
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412002,
+      "group": "rotated",
+      "field": "zero",
+      "radius": 1000.0,
+      "method": "shape",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 13.89098074533814,
+      "posterior_diameter_m": 27.781961490676256,
+      "posterior_area_m2": 205.41899489267917,
+      "clear_ready": true,
+      "second_action_s": 161.97927,
+      "predicted_radius_m": 107.95528768500719,
+      "predicted_J_s": 376.9110720662584,
+      "selection_s": 0.25131772100007765,
+      "evaluated_candidates": 31,
+      "completed": true,
+      "total_virtual_s": 216.940908,
+      "measures": 2,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412002,
+      "group": "rotated",
+      "field": "zero",
+      "source": [
+        -458.292461030063,
+        57.32335717521394
+      ],
+      "start": [
+        251.29266973804863,
+        236.19768089671584
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        246.4669224235541,
+        234.89017128009556
+      ],
+      [
+        246.42391327073133,
+        235.06110219560378
+      ],
+      [
+        -1209.4442836644512,
+        -104.80164199208697
+      ],
+      [
+        -1203.86378075525,
+        -128.30003499012025
+      ],
+      [
+        -1196.5405804629406,
+        -156.08472119068696
+      ]
+    ],
+    "posterior": [
+      [
+        -449.9227767454567,
+        46.207238443133654
+      ],
+      [
+        -458.91667749085315,
+        70.404034153426
+      ],
+      [
+        -466.23596860301154,
+        68.69539434102855
+      ],
+      [
+        -458.0380676447901,
+        44.00844531115812
+      ]
+    ],
+    "selection": {
+      "position": [
+        -532.8992675902632,
+        269.4435462459519
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 788.3489700246956,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 107.95528768500719,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 160.95415798292964,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3617.7505283961364,
+      "movement_m": 784.8963512041258,
+      "J_s": 376.9110720662584,
+      "evaluation_s": 0.009242118000202026
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          251.29266973804863,
+          236.19768089671584
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 194.15
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          -532.8992675902632,
+          269.4435462459519
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 289.38
+        },
+        "delta_s": 161.97927,
+        "virtual_s": 166.97927
+      },
+      {
+        "path": "/clear",
+        "position": [
+          -458.07937267423415,
+          57.4513163920811
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 49.961638,
+        "virtual_s": 216.940908
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412003,
+      "group": "wrap",
+      "field": "zero",
+      "radius": 1000.0,
+      "method": "on_bearing",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 370.00114531134676,
+      "posterior_diameter_m": 740.0022906226935,
+      "posterior_area_m2": 4951.498150194715,
+      "clear_ready": false,
+      "second_action_s": 155.0,
+      "predicted_radius_m": 375.1545969321363,
+      "predicted_J_s": 476.60821671788636,
+      "selection_s": 0.008980262000022776,
+      "evaluated_candidates": 1,
+      "completed": true,
+      "total_virtual_s": 325.961564,
+      "measures": 3,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412003,
+      "group": "wrap",
+      "field": "zero",
+      "source": [
+        705.423769921477,
+        0.42215748496296934
+      ],
+      "start": [
+        0.0,
+        0.0
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        1500.112955846651,
+        0.0
+      ],
+      [
+        1499.7788244120595,
+        27.22611194536796
+      ],
+      [
+        4.998886211215567,
+        0.09074697073726751
+      ],
+      [
+        4.998950461849301,
+        -0.0855116209153105
+      ],
+      [
+        1499.7981010540602,
+        -25.655388694851542
+      ]
+    ],
+    "posterior": [
+      [
+        745.0009360214019,
+        0.3080599956816274
+      ],
+      [
+        745.0010216889196,
+        0.4843185987538811
+      ],
+      [
+        387.55896060157755,
+        7.03551989550576
+      ],
+      [
+        4.998886211215567,
+        0.09074697073726751
+      ],
+      [
+        4.998950461849301,
+        -0.0855116209153105
+      ],
+      [
+        361.5391534990465,
+        -6.184450839582608
+      ]
+    ],
+    "selection": {
+      "position": [
+        749.9998971916232,
+        0.3926990637552772
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 750.2589364684059,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 375.1545969321363,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 134.0309182518182,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 9918.351361310055,
+      "movement_m": 750.0,
+      "J_s": 476.60821671788636,
+      "evaluation_s": 0.008970832999921186
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          0.0,
+          0.0
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 0.03
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          749.9998971916232,
+          0.3926990637552772
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 179.96
+        },
+        "delta_s": 155.0,
+        "virtual_s": 160.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          375.1162253539352,
+          166.69987830386106
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 333.28
+        },
+        "delta_s": 87.023374,
+        "virtual_s": 247.023374
+      },
+      {
+        "path": "/clear",
+        "position": [
+          705.4461331931032,
+          0.7072619086279107
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 78.93819,
+        "virtual_s": 325.961564
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412003,
+      "group": "wrap",
+      "field": "zero",
+      "radius": 1000.0,
+      "method": "fixed_flank",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 15.490377433330913,
+      "posterior_diameter_m": 30.980754866661826,
+      "posterior_area_m2": 398.4871674997242,
+      "clear_ready": true,
+      "second_action_s": 179.928557,
+      "predicted_radius_m": 69.19597811217625,
+      "predicted_J_s": 394.1010371063513,
+      "selection_s": 0.008884993000037866,
+      "evaluated_candidates": 1,
+      "completed": true,
+      "total_virtual_s": 280.341398,
+      "measures": 2,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412003,
+      "group": "wrap",
+      "field": "zero",
+      "source": [
+        705.423769921477,
+        0.42215748496296934
+      ],
+      "start": [
+        0.0,
+        0.0
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        1500.112955846651,
+        0.0
+      ],
+      [
+        1499.7788244120595,
+        27.22611194536796
+      ],
+      [
+        4.998886211215567,
+        0.09074697073726751
+      ],
+      [
+        4.998950461849301,
+        -0.0855116209153105
+      ],
+      [
+        1499.7981010540602,
+        -25.655388694851542
+      ]
+    ],
+    "posterior": [
+      [
+        714.4163331754397,
+        12.969098392763376
+      ],
+      [
+        698.8101748932334,
+        12.685793278734861
+      ],
+      [
+        695.9475468088352,
+        -11.904805648478613
+      ],
+      [
+        712.383567492262,
+        -12.18595848984422
+      ]
+    ],
+    "selection": {
+      "position": [
+        749.76427775337,
+        450.3926373787292
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 888.3537916976567,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 69.19597811217625,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 179.57449120490418,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2647.951024837517,
+      "movement_m": 874.6427842267951,
+      "J_s": 394.1010371063513,
+      "evaluation_s": 0.008870224000020244
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          0.0,
+          0.0
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 0.03
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          749.76427775337,
+          450.3926373787292
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 264.37
+        },
+        "delta_s": 179.928557,
+        "virtual_s": 184.928557
+      },
+      {
+        "path": "/clear",
+        "position": [
+          705.1819399921375,
+          0.5321463721423818
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 95.412841,
+        "virtual_s": 280.341398
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412003,
+      "group": "wrap",
+      "field": "zero",
+      "radius": 1000.0,
+      "method": "current",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 13.867957987022184,
+      "posterior_diameter_m": 27.735915974044318,
+      "posterior_area_m2": 233.69860649472056,
+      "clear_ready": true,
+      "second_action_s": 161.318652,
+      "predicted_radius_m": 99.1254311529495,
+      "predicted_J_s": 375.73193907040127,
+      "selection_s": 1.0762590799999998,
+      "evaluated_candidates": 129,
+      "completed": true,
+      "total_virtual_s": 224.245044,
+      "measures": 2,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412003,
+      "group": "wrap",
+      "field": "zero",
+      "source": [
+        705.423769921477,
+        0.42215748496296934
+      ],
+      "start": [
+        0.0,
+        0.0
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        1500.112955846651,
+        0.0
+      ],
+      [
+        1499.7788244120595,
+        27.22611194536796
+      ],
+      [
+        4.998886211215567,
+        0.09074697073726751
+      ],
+      [
+        4.998950461849301,
+        -0.0855116209153105
+      ],
+      [
+        1499.7981010540602,
+        -25.655388694851542
+      ]
+    ],
+    "posterior": [
+      [
+        711.3468839936208,
+        12.913377398862435
+      ],
+      [
+        702.3772011362836,
+        12.750546996995059
+      ],
+      [
+        699.0715654658983,
+        -11.95824478309823
+      ],
+      [
+        708.8917292699789,
+        -12.126227472422597
+      ]
+    ],
+    "selection": {
+      "position": [
+        735.8998438702549,
+        263.3238343558909
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 816.7310075437725,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 99.1254311529495,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 164.85057176635382,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3419.4923320693756,
+      "movement_m": 781.5932586378635,
+      "J_s": 375.73193907040127,
+      "evaluation_s": 0.007126691000166829
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          0.0,
+          0.0
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 0.03
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          735.8998438702549,
+          263.3238343558909
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 263.39
+        },
+        "delta_s": 161.318652,
+        "virtual_s": 166.318652
+      },
+      {
+        "path": "/clear",
+        "position": [
+          705.2092247297596,
+          0.4775663078821024
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 57.926392,
+        "virtual_s": 224.245044
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412003,
+      "group": "wrap",
+      "field": "zero",
+      "radius": 1000.0,
+      "method": "shape",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 14.139948164523803,
+      "posterior_diameter_m": 28.279896329047556,
+      "posterior_area_m2": 205.22402407156642,
+      "clear_ready": true,
+      "second_action_s": 162.035427,
+      "predicted_radius_m": 107.82900654712235,
+      "predicted_J_s": 376.96657440246145,
+      "selection_s": 0.25816716899998937,
+      "evaluated_candidates": 31,
+      "completed": true,
+      "total_virtual_s": 217.83311,
+      "measures": 2,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412003,
+      "group": "wrap",
+      "field": "zero",
+      "source": [
+        705.423769921477,
+        0.42215748496296934
+      ],
+      "start": [
+        0.0,
+        0.0
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        1500.112955846651,
+        0.0
+      ],
+      [
+        1499.7788244120595,
+        27.22611194536796
+      ],
+      [
+        4.998886211215567,
+        0.09074697073726751
+      ],
+      [
+        4.998950461849301,
+        -0.0855116209153105
+      ],
+      [
+        1499.7981010540602,
+        -25.655388694851542
+      ]
+    ],
+    "posterior": [
+      [
+        707.1351052000912,
+        12.836919218073364
+      ],
+      [
+        698.4584169646948,
+        12.679407670037769
+      ],
+      [
+        704.1209750931965,
+        -12.04461945317669
+      ],
+      [
+        711.943246279678,
+        -12.178426401486824
+      ]
+    ],
+    "selection": {
+      "position": [
+        752.6138483415825,
+        -223.77562224934707
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 788.1988150429756,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 107.82900654712235,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 161.016644064991,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3613.607045721936,
+      "movement_m": 785.1771353195462,
+      "J_s": 376.96657440246145,
+      "evaluation_s": 0.008533348000128171
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          0.0,
+          0.0
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 0.03
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          752.6138483415825,
+          -223.77562224934707
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 101.89
+        },
+        "delta_s": 162.035427,
+        "virtual_s": 167.035427
+      },
+      {
+        "path": "/clear",
+        "position": [
+          705.2008316221863,
+          0.25049063427547225
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 50.797683,
+        "virtual_s": 217.83311
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412004,
+      "group": "short_range",
+      "field": "zero",
+      "radius": 1000.0,
+      "method": "on_bearing",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 370.001104433926,
+      "posterior_diameter_m": 740.002208867852,
+      "posterior_area_m2": 4957.458358366207,
+      "clear_ready": false,
+      "second_action_s": 155.0,
+      "predicted_radius_m": 375.1545950669003,
+      "predicted_J_s": 476.6082154122209,
+      "selection_s": 0.010362227000086932,
+      "evaluated_candidates": 1,
+      "completed": true,
+      "total_virtual_s": 327.00922,
+      "measures": 3,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412004,
+      "group": "short_range",
+      "field": "zero",
+      "source": [
+        271.44747375926704,
+        61.65770197515954
+      ],
+      "start": [
+        245.12606922997406,
+        32.59165824267092
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        1271.386256820134,
+        1126.5950967250035
+      ],
+      [
+        1252.5403580108223,
+        1144.102041036801
+      ],
+      [
+        1232.1917833136959,
+        1162.0950487579425
+      ],
+      [
+        248.4160403887928,
+        36.356386036438245
+      ],
+      [
+        248.54667894130748,
+        36.238061641783865
+      ]
+    ],
+    "posterior": [
+      [
+        501.7279334187798,
+        306.1317653476947
+      ],
+      [
+        745.2385329446622,
+        584.7819543163246
+      ],
+      [
+        745.1078943921475,
+        584.9002787109789
+      ],
+      [
+        491.9266399146719,
+        315.0065750050645
+      ],
+      [
+        248.4160403887928,
+        36.356386036438245
+      ],
+      [
+        248.54667894130748,
+        36.238061641783865
+      ]
+    ],
+    "selection": {
+      "position": [
+        748.528504103481,
+        588.5466821100918
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 750.258553127384,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 375.1545950669003,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 134.03091787877077,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 9918.285551424196,
+      "movement_m": 749.9999999999999,
+      "J_s": 476.6082154122209,
+      "evaluation_s": 0.010350636999874041
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          245.12606922997406,
+          32.59165824267092
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 47.84
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          748.528504103481,
+          588.5466821100918
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 227.84
+        },
+        "delta_s": 155.0,
+        "virtual_s": 160.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          620.2496703746488,
+          198.81349604962628
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 201.47
+        },
+        "delta_s": 87.060323,
+        "virtual_s": 247.060323
+      },
+      {
+        "path": "/clear",
+        "position": [
+          271.60505419958116,
+          61.40767700676105
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 79.948897,
+        "virtual_s": 327.00922
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412004,
+      "group": "short_range",
+      "field": "zero",
+      "radius": 1000.0,
+      "method": "fixed_flank",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 28.815922833277597,
+      "posterior_diameter_m": 57.631845666555186,
+      "posterior_area_m2": 75.37356783411212,
+      "clear_ready": false,
+      "second_action_s": 179.928557,
+      "predicted_radius_m": 69.19612696578461,
+      "predicted_J_s": 394.10110949500864,
+      "selection_s": 0.010658044999900085,
+      "evaluated_candidates": 1,
+      "completed": true,
+      "total_virtual_s": 369.140136,
+      "measures": 3,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412004,
+      "group": "short_range",
+      "field": "zero",
+      "source": [
+        271.44747375926704,
+        61.65770197515954
+      ],
+      "start": [
+        245.12606922997406,
+        32.59165824267092
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        1271.386256820134,
+        1126.5950967250035
+      ],
+      [
+        1252.5403580108223,
+        1144.102041036801
+      ],
+      [
+        1232.1917833136959,
+        1162.0950487579425
+      ],
+      [
+        248.4160403887928,
+        36.356386036438245
+      ],
+      [
+        248.54667894130748,
+        36.238061641783865
+      ]
+    ],
+    "posterior": [
+      [
+        289.27075130054527,
+        79.6503227181669
+      ],
+      [
+        289.92191435089734,
+        83.8517297519354
+      ],
+      [
+        252.41356219137535,
+        40.93076681437825
+      ],
+      [
+        252.2764489463307,
+        40.214033096323384
+      ]
+    ],
+    "selection": {
+      "position": [
+        414.95548978302855,
+        890.5881430341959
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 888.3540628140222,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 69.19612696578461,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 179.57448916675733,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2647.951100973932,
+      "movement_m": 874.642784226795,
+      "J_s": 394.10110949500864,
+      "evaluation_s": 0.010644158000104653
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          245.12606922997406,
+          32.59165824267092
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 47.84
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          414.95548978302855,
+          890.5881430341959
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 260.18
+        },
+        "delta_s": 179.928557,
+        "virtual_s": 184.928557
+      },
+      {
+        "path": "/measure",
+        "position": [
+          300.65963437241334,
+          56.916277593068415
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 170.78
+        },
+        "delta_s": 173.294067,
+        "virtual_s": 358.222624
+      },
+      {
+        "path": "/clear",
+        "position": [
+          271.4510598494859,
+          61.63675465072116
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 10.917512,
+        "virtual_s": 369.140136
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412004,
+      "group": "short_range",
+      "field": "zero",
+      "radius": 1000.0,
+      "method": "current",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 36.014415337449286,
+      "posterior_diameter_m": 72.02883067489856,
+      "posterior_area_m2": 95.6961446860031,
+      "clear_ready": false,
+      "second_action_s": 164.020427,
+      "predicted_radius_m": 93.76260624905738,
+      "predicted_J_s": 375.4462399800076,
+      "selection_s": 0.9820448850000503,
+      "evaluated_candidates": 129,
+      "completed": true,
+      "total_virtual_s": 336.470265,
+      "measures": 3,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412004,
+      "group": "short_range",
+      "field": "zero",
+      "source": [
+        271.44747375926704,
+        61.65770197515954
+      ],
+      "start": [
+        245.12606922997406,
+        32.59165824267092
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        1271.386256820134,
+        1126.5950967250035
+      ],
+      [
+        1252.5403580108223,
+        1144.102041036801
+      ],
+      [
+        1232.1917833136959,
+        1162.0950487579425
+      ],
+      [
+        248.4160403887928,
+        36.356386036438245
+      ],
+      [
+        248.54667894130748,
+        36.238061641783865
+      ]
+    ],
+    "posterior": [
+      [
+        297.82405174275016,
+        88.76822498948805
+      ],
+      [
+        291.7270729579197,
+        85.9173802326311
+      ],
+      [
+        248.4160403887928,
+        36.356386036438245
+      ],
+      [
+        248.54667894130748,
+        36.238061641783865
+      ]
+    ],
+    "selection": {
+      "position": [
+        952.815869039788,
+        395.0313847200537
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 816.3562740394743,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 93.76260624905738,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 164.54450947788007,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3241.3052274486026,
+      "movement_m": 795.1021368879941,
+      "J_s": 375.4462399800076,
+      "evaluation_s": 0.007398620999993
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          245.12606922997406,
+          32.59165824267092
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 47.84
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          952.815869039788,
+          395.0313847200537
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 206.07
+        },
+        "delta_s": 164.020427,
+        "virtual_s": 169.020427
+      },
+      {
+        "path": "/measure",
+        "position": [
+          286.30411316874256,
+          35.61457138513051
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 119.7
+        },
+        "delta_s": 156.448786,
+        "virtual_s": 325.469213
+      },
+      {
+        "path": "/clear",
+        "position": [
+          271.45154956321,
+          61.685954722663936
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 11.001052,
+        "virtual_s": 336.470265
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412004,
+      "group": "short_range",
+      "field": "zero",
+      "radius": 1000.0,
+      "method": "shape",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 40.23836663795959,
+      "posterior_diameter_m": 80.47673327591914,
+      "posterior_area_m2": 115.3980190436539,
+      "clear_ready": false,
+      "second_action_s": 162.037872,
+      "predicted_radius_m": 107.81203859227239,
+      "predicted_J_s": 376.9652241469354,
+      "selection_s": 0.21346128100003625,
+      "evaluated_candidates": 31,
+      "completed": true,
+      "total_virtual_s": 331.396805,
+      "measures": 3,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412004,
+      "group": "short_range",
+      "field": "zero",
+      "source": [
+        271.44747375926704,
+        61.65770197515954
+      ],
+      "start": [
+        245.12606922997406,
+        32.59165824267092
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        1271.386256820134,
+        1126.5950967250035
+      ],
+      [
+        1252.5403580108223,
+        1144.102041036801
+      ],
+      [
+        1232.1917833136959,
+        1162.0950487579425
+      ],
+      [
+        248.4160403887928,
+        36.356386036438245
+      ],
+      [
+        248.54667894130748,
+        36.238061641783865
+      ]
+    ],
+    "posterior": [
+      [
+        303.603829255226,
+        94.92952457960854
+      ],
+      [
+        295.7274607896592,
+        90.4950406196219
+      ],
+      [
+        248.4160403887928,
+        36.356386036438245
+      ],
+      [
+        248.54667894130748,
+        36.238061641783865
+      ]
+    ],
+    "selection": {
+      "position": [
+        916.389138790091,
+        439.9345401554443
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 788.1923055150445,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 107.81203859227239,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 161.02133273069256,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3613.258089969488,
+      "movement_m": 785.1893606005332,
+      "J_s": 376.9652241469354,
+      "evaluation_s": 0.006853757000044425
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          245.12606922997406,
+          32.59165824267092
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 47.84
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          916.389138790091,
+          439.9345401554443
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 210.39
+        },
+        "delta_s": 162.037872,
+        "virtual_s": 167.037872
+      },
+      {
+        "path": "/measure",
+        "position": [
+          291.1864314034359,
+          39.76489603933109
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 132.04
+        },
+        "delta_s": 153.460657,
+        "virtual_s": 320.498529
+      },
+      {
+        "path": "/clear",
+        "position": [
+          271.44734455242894,
+          61.676308916951825
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 10.898276,
+        "virtual_s": 331.396805
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412005,
+      "group": "center",
+      "field": "positive",
+      "radius": 1000.0,
+      "method": "on_bearing",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 256.93408336434294,
+      "posterior_diameter_m": 513.8681667286858,
+      "posterior_area_m2": 1991.2002447160557,
+      "clear_ready": false,
+      "second_action_s": 155.0,
+      "predicted_radius_m": 375.1568979628145,
+      "predicted_J_s": 476.6098274393763,
+      "selection_s": 0.0110590740000589,
+      "evaluated_candidates": 1,
+      "completed": true,
+      "total_virtual_s": 251.166097,
+      "measures": 3,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412005,
+      "group": "center",
+      "field": "positive",
+      "source": [
+        61.93639764884912,
+        964.3803149854608
+      ],
+      "start": [
+        0.0,
+        0.0
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        96.27634540410284,
+        1496.913285512937
+      ],
+      [
+        73.60705397182403,
+        1498.3060040941455
+      ],
+      [
+        43.45395513572627,
+        1499.4166084880321
+      ],
+      [
+        0.14483550793422317,
+        4.997678920631993
+      ],
+      [
+        0.32089707961466307,
+        4.989335129420942
+      ]
+    ],
+    "posterior": [
+      [
+        62.08366762037837,
+        965.2824526208121
+      ],
+      [
+        81.4224914928888,
+        1265.964227459476
+      ],
+      [
+        35.38548769317206,
+        754.1653570171749
+      ],
+      [
+        35.56075742640814,
+        754.1466875826994
+      ]
+    ],
+    "selection": {
+      "position": [
+        34.937570070602106,
+        749.1858021863213
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 750.2791424121376,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 375.1568979628145,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 134.03137845796905,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 9918.25899345153,
+      "movement_m": 750.0000000000001,
+      "J_s": 476.6098274393763,
+      "evaluation_s": 0.011048443999925439
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          0.0,
+          0.0
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 87.33
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          34.937570070602106,
+          749.1858021863213
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 83.85
+        },
+        "delta_s": 155.0,
+        "virtual_s": 160.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          173.44654758019314,
+          997.6688479288555
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 197.62
+        },
+        "delta_s": 61.895891,
+        "virtual_s": 221.895891
+      },
+      {
+        "path": "/clear",
+        "position": [
+          57.81563970251301,
+          960.8508428404821
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 29.270206,
+        "virtual_s": 251.166097
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412005,
+      "group": "center",
+      "field": "positive",
+      "radius": 1000.0,
+      "method": "fixed_flank",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 24.869630233481058,
+      "posterior_diameter_m": 49.73926046696203,
+      "posterior_area_m2": 669.0548074157812,
+      "clear_ready": false,
+      "second_action_s": 179.928557,
+      "predicted_radius_m": 69.19066460366712,
+      "predicted_J_s": 393.8943215318944,
+      "selection_s": 0.009451267000031294,
+      "evaluated_candidates": 1,
+      "completed": true,
+      "total_virtual_s": 301.182417,
+      "measures": 3,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412005,
+      "group": "center",
+      "field": "positive",
+      "source": [
+        61.93639764884912,
+        964.3803149854608
+      ],
+      "start": [
+        0.0,
+        0.0
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        96.27634540410284,
+        1496.913285512937
+      ],
+      [
+        73.60705397182403,
+        1498.3060040941455
+      ],
+      [
+        43.45395513572627,
+        1499.4166084880321
+      ],
+      [
+        0.14483550793422317,
+        4.997678920631993
+      ],
+      [
+        0.32089707961466307,
+        4.989335129420942
+      ]
+    ],
+    "posterior": [
+      [
+        62.02390560000349,
+        964.3532673470474
+      ],
+      [
+        63.34100005212053,
+        984.8315704798273
+      ],
+      [
+        28.081972060583045,
+        968.992931213785
+      ],
+      [
+        27.54029302244664,
+        950.3018237681042
+      ]
+    ],
+    "selection": {
+      "position": [
+        -414.5739112411907,
+        770.1483442286826
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 888.3441138401649,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 69.19066460366712,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 179.37043238470181,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2647.9482819884342,
+      "movement_m": 874.642784226795,
+      "J_s": 393.8943215318944,
+      "evaluation_s": 0.009437127000182954
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          0.0,
+          0.0
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 87.33
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          -414.5739112411907,
+          770.1483442286826
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 23.18
+        },
+        "delta_s": 179.928557,
+        "virtual_s": 184.928557
+      },
+      {
+        "path": "/measure",
+        "position": [
+          57.24927794243332,
+          939.9885132762698
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 80.12
+        },
+        "delta_s": 105.292134,
+        "virtual_s": 290.220691
+      },
+      {
+        "path": "/clear",
+        "position": [
+          61.845562056954606,
+          969.4406541916359
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 10.961726,
+        "virtual_s": 301.182417
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412005,
+      "group": "center",
+      "field": "positive",
+      "radius": 1000.0,
+      "method": "current",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 28.73547233912521,
+      "posterior_diameter_m": 57.47094467825042,
+      "posterior_area_m2": 551.3602229250341,
+      "clear_ready": false,
+      "second_action_s": 163.297966,
+      "predicted_radius_m": 98.61926330595956,
+      "predicted_J_s": 374.92500796152456,
+      "selection_s": 0.9779231110001092,
+      "evaluated_candidates": 129,
+      "completed": true,
+      "total_virtual_s": 253.890957,
+      "measures": 3,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412005,
+      "group": "center",
+      "field": "positive",
+      "source": [
+        61.93639764884912,
+        964.3803149854608
+      ],
+      "start": [
+        0.0,
+        0.0
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        96.27634540410284,
+        1496.913285512937
+      ],
+      [
+        73.60705397182403,
+        1498.3060040941455
+      ],
+      [
+        43.45395513572627,
+        1499.4166084880321
+      ],
+      [
+        0.14483550793422317,
+        4.997678920631993
+      ],
+      [
+        0.32089707961466307,
+        4.989335129420942
+      ]
+    ],
+    "posterior": [
+      [
+        62.0274456950205,
+        964.4083090631224
+      ],
+      [
+        28.902087554432843,
+        997.291731304244
+      ],
+      [
+        28.39821117103353,
+        979.9050374165511
+      ],
+      [
+        61.07974512215952,
+        949.6733752252628
+      ]
+    ],
+    "selection": {
+      "position": [
+        292.7691293341807,
+        735.3518809273469
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 803.7119906956657,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 98.61926330595956,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 162.3174101972291,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3402.6091477973127,
+      "movement_m": 791.4898305565783,
+      "J_s": 374.92500796152456,
+      "evaluation_s": 0.0065502420000029815
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          0.0,
+          0.0
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 87.33
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          292.7691293341807,
+          735.3518809273469
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 136.22
+        },
+        "delta_s": 163.297966,
+        "virtual_s": 168.297966
+      },
+      {
+        "path": "/measure",
+        "position": [
+          24.234180642497833,
+          951.8224996347466
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 19.42
+        },
+        "delta_s": 73.984215,
+        "virtual_s": 242.282181
+      },
+      {
+        "path": "/clear",
+        "position": [
+          55.43665720361757,
+          962.6992426872717
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 11.608776,
+        "virtual_s": 253.890957
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412005,
+      "group": "center",
+      "field": "positive",
+      "radius": 1000.0,
+      "method": "shape",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 30.474802503896328,
+      "posterior_diameter_m": 60.949605007792556,
+      "posterior_area_m2": 543.9549403697814,
+      "clear_ready": false,
+      "second_action_s": 161.925697,
+      "predicted_radius_m": 108.06501204554726,
+      "predicted_J_s": 376.8547340552028,
+      "selection_s": 0.21501441300006263,
+      "evaluated_candidates": 31,
+      "completed": true,
+      "total_virtual_s": 247.435169,
+      "measures": 3,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412005,
+      "group": "center",
+      "field": "positive",
+      "source": [
+        61.93639764884912,
+        964.3803149854608
+      ],
+      "start": [
+        0.0,
+        0.0
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        96.27634540410284,
+        1496.913285512937
+      ],
+      [
+        73.60705397182403,
+        1498.3060040941455
+      ],
+      [
+        43.45395513572627,
+        1499.4166084880321
+      ],
+      [
+        0.14483550793422317,
+        4.997678920631993
+      ],
+      [
+        0.32089707961466307,
+        4.989335129420942
+      ]
+    ],
+    "posterior": [
+      [
+        62.02200137978082,
+        964.3236603595693
+      ],
+      [
+        29.03408991822656,
+        1001.8465879463629
+      ],
+      [
+        28.53220279495006,
+        984.5285352134409
+      ],
+      [
+        61.10171201422453,
+        950.0149184409901
+      ]
+    ],
+    "selection": {
+      "position": [
+        258.5142370281876,
+        740.8186366119666
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 788.4933784009507,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 108.06501204554726,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 160.89653057049287,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3621.561440707026,
+      "movement_m": 784.6284873096814,
+      "J_s": 376.8547340552028,
+      "evaluation_s": 0.006071333999898343
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          0.0,
+          0.0
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 87.33
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          258.5142370281876,
+          740.8186366119666
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 132.33
+        },
+        "delta_s": 161.925697,
+        "virtual_s": 166.925697
+      },
+      {
+        "path": "/measure",
+        "position": [
+          22.889542813836183,
+          955.7287624584955
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 13.49
+        },
+        "delta_s": 68.782555,
+        "virtual_s": 235.708252
+      },
+      {
+        "path": "/clear",
+        "position": [
+          55.62226173905288,
+          963.4653205270552
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 11.726917,
+        "virtual_s": 247.435169
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412006,
+      "group": "edge",
+      "field": "positive",
+      "radius": 1000.0,
+      "method": "on_bearing",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 77.06014545802127,
+      "posterior_diameter_m": 154.12029091604253,
+      "posterior_area_m2": 355.7917066154114,
+      "clear_ready": false,
+      "second_action_s": 155.0,
+      "predicted_radius_m": 372.5005816418753,
+      "predicted_J_s": 474.750406014771,
+      "selection_s": 0.00793425599999864,
+      "evaluated_candidates": 1,
+      "completed": true,
+      "total_virtual_s": 197.800507,
+      "measures": 3,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412006,
+      "group": "edge",
+      "field": "positive",
+      "source": [
+        -1362.1052680586627,
+        1112.5307879722639
+      ],
+      "start": [
+        -690.5671074336345,
+        564.036558845304
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        -694.4389760617561,
+        567.2000083321076
+      ],
+      [
+        -1394.0650343073694,
+        1138.8184740237962
+      ],
+      [
+        -1414.0802499382066,
+        1113.8102533318959
+      ],
+      [
+        -694.5478746245726,
+        567.0614119772148
+      ]
+    ],
+    "posterior": [
+      [
+        -1283.1320209994406,
+        1031.8281444118707
+      ],
+      [
+        -1362.830239750793,
+        1113.298576458235
+      ],
+      [
+        -1394.0650343073694,
+        1138.8184740237962
+      ],
+      [
+        -1394.7719638830217,
+        1137.9351934652643
+      ],
+      [
+        -1283.2560808190806,
+        1031.7029336299688
+      ]
+    ],
+    "selection": {
+      "position": [
+        -1279.6358358314458,
+        1028.25421601033
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 745.001157610606,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 372.5005816418753,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 133.50011519383332,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 4957.777596995555,
+      "movement_m": 750.0,
+      "J_s": 474.750406014771,
+      "evaluation_s": 0.007925071000045136
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          -690.5671074336345,
+          564.036558845304
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 141.76
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          -1279.6358358314458,
+          1028.25421601033
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 135.38
+        },
+        "delta_s": 155.0,
+        "virtual_s": 160.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          -1314.2413029822937,
+          1110.00578224969
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 177.98
+        },
+        "delta_s": 22.754838,
+        "virtual_s": 182.754838
+      },
+      {
+        "path": "/clear",
+        "position": [
+          -1364.4358576855084,
+          1111.8478555399508
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 15.045669,
+        "virtual_s": 197.800507
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412006,
+      "group": "edge",
+      "field": "positive",
+      "radius": 1000.0,
+      "method": "fixed_flank",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 19.91855710006773,
+      "posterior_diameter_m": 39.837114200135225,
+      "posterior_area_m2": 523.2396800003572,
+      "clear_ready": true,
+      "second_action_s": 179.928557,
+      "predicted_radius_m": 28.86115859284956,
+      "predicted_J_s": 373.3999842100743,
+      "selection_s": 0.008043089000011605,
+      "evaluated_candidates": 1,
+      "completed": true,
+      "total_virtual_s": 283.2151,
+      "measures": 2,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412006,
+      "group": "edge",
+      "field": "positive",
+      "source": [
+        -1362.1052680586627,
+        1112.5307879722639
+      ],
+      "start": [
+        -690.5671074336345,
+        564.036558845304
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        -694.4389760617561,
+        567.2000083321076
+      ],
+      [
+        -1394.0650343073694,
+        1138.8184740237962
+      ],
+      [
+        -1414.0802499382066,
+        1113.8102533318959
+      ],
+      [
+        -694.5478746245726,
+        567.0614119772148
+      ]
+    ],
+    "posterior": [
+      [
+        -1361.9698837402261,
+        1112.5956361132999
+      ],
+      [
+        -1375.6726601549472,
+        1123.7912740367078
+      ],
+      [
+        -1387.835513803446,
+        1093.8677468295514
+      ],
+      [
+        -1374.8015706174472,
+        1083.963684719599
+      ]
+    ],
+    "selection": {
+      "position": [
+        -1558.1664301304613,
+        674.8129789716434
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 870.4054608984671,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 28.86115859284956,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 179.0408480682906,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 551.7075547728433,
+      "movement_m": 874.6427842267949,
+      "J_s": 373.3999842100743,
+      "evaluation_s": 0.008031531999904473
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          -690.5671074336345,
+          564.036558845304
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 141.76
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          -1558.1664301304613,
+          674.8129789716434
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 66.87
+        },
+        "delta_s": 179.928557,
+        "virtual_s": 184.928557
+      },
+      {
+        "path": "/clear",
+        "position": [
+          -1375.2371153861973,
+          1103.8774793781536
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 98.286543,
+        "virtual_s": 283.2151
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412006,
+      "group": "edge",
+      "field": "positive",
+      "radius": 1000.0,
+      "method": "current",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 46.227050303897016,
+      "posterior_diameter_m": 92.45410060779373,
+      "posterior_area_m2": 1060.099990983326,
+      "clear_ready": false,
+      "second_action_s": 100.044148,
+      "predicted_radius_m": 66.092959424364,
+      "predicted_J_s": 232.153648341314,
+      "selection_s": 0.9012595340000189,
+      "evaluated_candidates": 129,
+      "completed": true,
+      "total_virtual_s": 205.624716,
+      "measures": 3,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412006,
+      "group": "edge",
+      "field": "positive",
+      "source": [
+        -1362.1052680586627,
+        1112.5307879722639
+      ],
+      "start": [
+        -690.5671074336345,
+        564.036558845304
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        -694.4389760617561,
+        567.2000083321076
+      ],
+      [
+        -1394.0650343073694,
+        1138.8184740237962
+      ],
+      [
+        -1414.0802499382066,
+        1113.8102533318959
+      ],
+      [
+        -694.5478746245726,
+        567.0614119772148
+      ]
+    ],
+    "posterior": [
+      [
+        -1361.8428050472605,
+        1112.4918084661747
+      ],
+      [
+        -1402.019650238231,
+        1128.879495878999
+      ],
+      [
+        -1412.950585854866,
+        1115.2217239463005
+      ],
+      [
+        -1326.166353913551,
+        1083.3429252620326
+      ]
+    ],
+    "selection": {
+      "position": [
+        -966.2377005927373,
+        951.1288949710529
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 476.4747352823423,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 66.092959424364,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 99.06302044104389,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 1337.9370761176851,
+      "movement_m": 475.2207409404406,
+      "J_s": 232.153648341314,
+      "evaluation_s": 0.006178682999916418
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          -690.5671074336345,
+          564.036558845304
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 141.76
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          -966.2377005927373,
+          951.1288949710529
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 158.82
+        },
+        "delta_s": 100.044148,
+        "virtual_s": 105.044148
+      },
+      {
+        "path": "/measure",
+        "position": [
+          -1358.7194967145058,
+          1127.255823860185
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 258.05
+        },
+        "delta_s": 91.037819,
+        "virtual_s": 196.081967
+      },
+      {
+        "path": "/clear",
+        "position": [
+          -1363.290174837326,
+          1105.006707916455
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 9.542749,
+        "virtual_s": 205.624716
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412006,
+      "group": "edge",
+      "field": "positive",
+      "radius": 1000.0,
+      "method": "shape",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 61.48300320152922,
+      "posterior_diameter_m": 122.96600640305844,
+      "posterior_area_m2": 1313.6915831214376,
+      "clear_ready": false,
+      "second_action_s": 100.041502,
+      "predicted_radius_m": 64.4774106938339,
+      "predicted_J_s": 231.3372554507468,
+      "selection_s": 0.21093252899981962,
+      "evaluated_candidates": 31,
+      "completed": true,
+      "total_virtual_s": 205.825429,
+      "measures": 3,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412006,
+      "group": "edge",
+      "field": "positive",
+      "source": [
+        -1362.1052680586627,
+        1112.5307879722639
+      ],
+      "start": [
+        -690.5671074336345,
+        564.036558845304
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        -694.4389760617561,
+        567.2000083321076
+      ],
+      [
+        -1394.0650343073694,
+        1138.8184740237962
+      ],
+      [
+        -1414.0802499382066,
+        1113.8102533318959
+      ],
+      [
+        -694.5478746245726,
+        567.0614119772148
+      ]
+    ],
+    "posterior": [
+      [
+        -1362.2070935074985,
+        1112.7894446223129
+      ],
+      [
+        -1394.0650343073694,
+        1138.8184740237962
+      ],
+      [
+        -1396.1596938741661,
+        1136.2012797008858
+      ],
+      [
+        -1348.970817356127,
+        1064.3357501033292
+      ],
+      [
+        -1318.9092798136312,
+        1041.4929825162062
+      ]
+    ],
+    "selection": {
+      "position": [
+        -1133.49753101264,
+        736.1842243367906
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 479.5933306398941,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 64.4774106938339,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 99.05704782907704,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 1317.2199649951026,
+      "movement_m": 475.2075113737639,
+      "J_s": 231.3372554507468,
+      "evaluation_s": 0.006125068000073952
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          -690.5671074336345,
+          564.036558845304
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 141.76
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          -1133.49753101264,
+          736.1842243367906
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 122.28
+        },
+        "delta_s": 100.041502,
+        "virtual_s": 105.041502
+      },
+      {
+        "path": "/measure",
+        "position": [
+          -1381.850606236871,
+          1074.1340103259836
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 63.79
+        },
+        "delta_s": 88.878318,
+        "virtual_s": 193.91982
+      },
+      {
+        "path": "/clear",
+        "position": [
+          -1366.7455191770086,
+          1105.1827182019279
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 11.905609,
+        "virtual_s": 205.825429
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412007,
+      "group": "rotated",
+      "field": "positive",
+      "radius": 1000.0,
+      "method": "on_bearing",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 30.685578503800567,
+      "posterior_diameter_m": 61.371157007601006,
+      "posterior_area_m2": 65.75057814854938,
+      "clear_ready": false,
+      "second_action_s": 155.0,
+      "predicted_radius_m": 375.15858950659936,
+      "predicted_J_s": 476.61101152006256,
+      "selection_s": 0.007742678999875352,
+      "evaluated_candidates": 1,
+      "completed": true,
+      "total_virtual_s": 187.821178,
+      "measures": 3,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412007,
+      "group": "rotated",
+      "field": "positive",
+      "source": [
+        -471.36393086629914,
+        -546.1614716949807
+      ],
+      "start": [
+        -48.1588768201932,
+        -6.5308983828435885
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        -51.104662618051265,
+        -10.570579204176719
+      ],
+      [
+        -51.245340247166105,
+        -10.464382453625525
+      ],
+      [
+        -974.1676269032663,
+        -1186.665023910379
+      ],
+      [
+        -971.0757566963346,
+        -1189.1395881609392
+      ],
+      [
+        -941.7751212781312,
+        -1211.432922590566
+      ],
+      [
+        -931.961206834104,
+        -1218.5264126193636
+      ]
+    ],
+    "posterior": [
+      [
+        -470.92158076017023,
+        -545.3127336447463
+      ],
+      [
+        -477.10311912634006,
+        -553.1906768872067
+      ],
+      [
+        -498.58722376051276,
+        -600.0944012884866
+      ],
+      [
+        -498.4281680768523,
+        -600.1703575453466
+      ]
+    ],
+    "selection": {
+      "position": [
+        -500.6692642302306,
+        -604.6398761502885
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 750.3025870135333,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 375.15858950659936,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 134.03171676676286,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 9918.574899074341,
+      "movement_m": 750.0000000000001,
+      "J_s": 476.61101152006256,
+      "evaluation_s": 0.007733581999900707
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          -48.1588768201932,
+          -6.5308983828435885
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 232.89
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          -500.6692642302306,
+          -604.6398761502885
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 64.38
+        },
+        "delta_s": 155.0,
+        "virtual_s": 160.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          -511.80485161292296,
+          -559.7315518243415
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 19.55
+        },
+        "delta_s": 14.253667,
+        "virtual_s": 174.253667
+      },
+      {
+        "path": "/clear",
+        "position": [
+          -471.2984060993514,
+          -545.7929714849961
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 13.567511,
+        "virtual_s": 187.821178
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412007,
+      "group": "rotated",
+      "field": "positive",
+      "radius": 1000.0,
+      "method": "fixed_flank",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 15.528301744810431,
+      "posterior_diameter_m": 31.056603489620752,
+      "posterior_area_m2": 394.7045378056873,
+      "clear_ready": true,
+      "second_action_s": 179.928557,
+      "predicted_radius_m": 69.22037467265461,
+      "predicted_J_s": 393.94483885180784,
+      "selection_s": 0.009530958000141254,
+      "evaluated_candidates": 1,
+      "completed": true,
+      "total_virtual_s": 280.562751,
+      "measures": 2,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412007,
+      "group": "rotated",
+      "field": "positive",
+      "source": [
+        -471.36393086629914,
+        -546.1614716949807
+      ],
+      "start": [
+        -48.1588768201932,
+        -6.5308983828435885
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        -51.104662618051265,
+        -10.570579204176719
+      ],
+      [
+        -51.245340247166105,
+        -10.464382453625525
+      ],
+      [
+        -974.1676269032663,
+        -1186.665023910379
+      ],
+      [
+        -971.0757566963346,
+        -1189.1395881609392
+      ],
+      [
+        -941.7751212781312,
+        -1211.432922590566
+      ],
+      [
+        -931.961206834104,
+        -1218.5264126193636
+      ]
+    ],
+    "posterior": [
+      [
+        -454.137639082849,
+        -563.2667454256841
+      ],
+      [
+        -471.4227503305846,
+        -545.9514396102679
+      ],
+      [
+        -481.61207679608793,
+        -558.9370316780029
+      ],
+      [
+        -463.3866767510688,
+        -575.9503419524559
+      ]
+    ],
+    "selection": {
+      "position": [
+        -141.8038775697637,
+        -876.146108596311
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 888.3982260069812,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 69.22037467265461,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 179.40609467012152,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 2675.492802565334,
+      "movement_m": 874.6427842267952,
+      "J_s": 393.94483885180784,
+      "evaluation_s": 0.009519489000012982
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          -48.1588768201932,
+          -6.5308983828435885
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 232.89
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          -141.8038775697637,
+          -876.146108596311
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 135.96
+        },
+        "delta_s": 179.928557,
+        "virtual_s": 184.928557
+      },
+      {
+        "path": "/clear",
+        "position": [
+          -467.4047135408267,
+          -560.950890781362
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 95.634194,
+        "virtual_s": 280.562751
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412007,
+      "group": "rotated",
+      "field": "positive",
+      "radius": 1000.0,
+      "method": "current",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 14.105509063685208,
+      "posterior_diameter_m": 28.211018127370394,
+      "posterior_area_m2": 218.28157175598318,
+      "clear_ready": true,
+      "second_action_s": 161.577908,
+      "predicted_radius_m": 103.50911442653502,
+      "predicted_J_s": 375.4405736902754,
+      "selection_s": 1.0860268970000106,
+      "evaluated_candidates": 129,
+      "completed": true,
+      "total_virtual_s": 221.146743,
+      "measures": 2,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412007,
+      "group": "rotated",
+      "field": "positive",
+      "source": [
+        -471.36393086629914,
+        -546.1614716949807
+      ],
+      "start": [
+        -48.1588768201932,
+        -6.5308983828435885
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        -51.104662618051265,
+        -10.570579204176719
+      ],
+      [
+        -51.245340247166105,
+        -10.464382453625525
+      ],
+      [
+        -974.1676269032663,
+        -1186.665023910379
+      ],
+      [
+        -971.0757566963346,
+        -1189.1395881609392
+      ],
+      [
+        -941.7751212781312,
+        -1211.432922590566
+      ],
+      [
+        -931.961206834104,
+        -1218.5264126193636
+      ]
+    ],
+    "posterior": [
+      [
+        -455.4784256134046,
+        -565.1054227013245
+      ],
+      [
+        -471.45432660528934,
+        -545.9916813891257
+      ],
+      [
+        -477.2270975224707,
+        -553.348678780935
+      ],
+      [
+        -460.4972114135116,
+        -571.987895930034
+      ]
+    ],
+    "selection": {
+      "position": [
+        -303.8808624834429,
+        -746.4783924755382
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 801.9031219856599,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 103.50911442653502,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 162.10810897207114,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3518.014102070255,
+      "movement_m": 782.889537524684,
+      "J_s": 375.4405736902754,
+      "evaluation_s": 0.008557730999882551
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          -48.1588768201932,
+          -6.5308983828435885
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 232.89
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          -303.8808624834429,
+          -746.4783924755382
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 130.9
+        },
+        "delta_s": 161.577908,
+        "virtual_s": 166.577908
+      },
+      {
+        "path": "/clear",
+        "position": [
+          -465.97576900940044,
+          -558.9897886595799
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 54.568835,
+        "virtual_s": 221.146743
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 412007,
+      "group": "rotated",
+      "field": "positive",
+      "radius": 1000.0,
+      "method": "shape",
+      "available": true,
+      "guaranteed_receive": true,
+      "second_received": true,
+      "posterior_contains_truth": true,
+      "posterior_radius_m": 14.465709174958025,
+      "posterior_diameter_m": 28.931418349915987,
+      "posterior_area_m2": 208.70495823606566,
+      "clear_ready": true,
+      "second_action_s": 161.464811,
+      "predicted_radius_m": 108.08952709447311,
+      "predicted_J_s": 375.9645628760785,
+      "selection_s": 0.23270656600016082,
+      "evaluated_candidates": 31,
+      "completed": true,
+      "total_virtual_s": 218.675815,
+      "measures": 2,
+      "clear_attempts": 1,
+      "error": null
+    },
+    "case": {
+      "seed": 412007,
+      "group": "rotated",
+      "field": "positive",
+      "source": [
+        -471.36393086629914,
+        -546.1614716949807
+      ],
+      "start": [
+        -48.1588768201932,
+        -6.5308983828435885
+      ],
+      "radius": 1000.0
+    },
+    "initial": [
+      [
+        -51.104662618051265,
+        -10.570579204176719
+      ],
+      [
+        -51.245340247166105,
+        -10.464382453625525
+      ],
+      [
+        -974.1676269032663,
+        -1186.665023910379
+      ],
+      [
+        -971.0757566963346,
+        -1189.1395881609392
+      ],
+      [
+        -941.7751212781312,
+        -1211.432922590566
+      ],
+      [
+        -931.961206834104,
+        -1218.5264126193636
+      ]
+    ],
+    "posterior": [
+      [
+        -442.6550243289817,
+        -547.5201501760141
+      ],
+      [
+        -466.41834177498686,
+        -539.5736669220253
+      ],
+      [
+        -471.5523794913621,
+        -546.1166430128322
+      ],
+      [
+        -448.04426489799266,
+        -554.9106436970769
+      ]
+    ],
+    "selection": {
+      "position": [
+        -679.7003700984201,
+        -468.2518883953421
+      ],
+      "guaranteed_receive": true,
+      "receive_bound_m": 791.5474663279323,
+      "receive_bound_kind": "certified_upper_bound",
+      "posterior_radius_m": 108.08952709447311,
+      "posterior_kind": "sampled_estimate",
+      "remaining_time_s": 160.454987904648,
+      "remaining_kind": "sampled_estimate",
+      "posterior_area_m2": 3655.3797588971943,
+      "movement_m": 782.3240571209699,
+      "J_s": 375.9645628760785,
+      "evaluation_s": 0.0073213220000525325
+    },
+    "trace": [
+      {
+        "path": "/measure",
+        "position": [
+          -48.1588768201932,
+          -6.5308983828435885
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 232.89
+        },
+        "delta_s": 5.0,
+        "virtual_s": 5.0
+      },
+      {
+        "path": "/measure",
+        "position": [
+          -679.7003700984201,
+          -468.2518883953421
+        ],
+        "channel": 1,
+        "response": {
+          "measure_result": "direction",
+          "svd_deg": 340.5
+        },
+        "delta_s": 161.464811,
+        "virtual_s": 166.464811
+      },
+      {
+        "path": "/clear",
+        "position": [
+          -457.10370191017194,
+          -546.8183965944231
+        ],
+        "channel": 1,
+        "response": {
+          "clear_result": "success"
+        },
+        "delta_s": 52.211004,
+        "virtual_s": 218.675815
+      }
+    ]
+  }
+]

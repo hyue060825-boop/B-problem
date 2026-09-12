@@ -1,0 +1,139 @@
+{
+  "methods": [
+    {
+      "method": "on_bearing",
+      "episodes": 8,
+      "available": 8,
+      "guaranteed": 8,
+      "received": 8,
+      "contains_truth": 8,
+      "clear_ready": 0,
+      "completed": 8,
+      "mean_posterior_radius_m": 246.93068876100628,
+      "mean_second_action_s": 155.0,
+      "mean_total_virtual_s": 271.788028,
+      "mean_selection_s": 0.008867802249994838,
+      "mean_measures": 3.0,
+      "mean_clear_attempts": 1.0,
+      "mean_evaluated_candidates": 1.0,
+      "p95_total_virtual_s": 329.8620194
+    },
+    {
+      "method": "fixed_flank",
+      "episodes": 8,
+      "available": 8,
+      "guaranteed": 8,
+      "received": 8,
+      "contains_truth": 8,
+      "clear_ready": 5,
+      "completed": 8,
+      "mean_posterior_radius_m": 20.11751258930238,
+      "mean_second_action_s": 179.928557,
+      "mean_total_virtual_s": 297.27354025,
+      "mean_selection_s": 0.009112061249965109,
+      "mean_measures": 2.375,
+      "mean_clear_attempts": 1.0,
+      "mean_evaluated_candidates": 1.0,
+      "p95_total_virtual_s": 346.23245855
+    },
+    {
+      "method": "current",
+      "episodes": 8,
+      "available": 8,
+      "guaranteed": 8,
+      "received": 8,
+      "contains_truth": 8,
+      "clear_ready": 4,
+      "completed": 8,
+      "mean_posterior_radius_m": 26.349089077839324,
+      "mean_second_action_s": 148.25383925,
+      "mean_total_virtual_s": 240.76415987500002,
+      "mean_selection_s": 1.0381441927500248,
+      "mean_measures": 2.5,
+      "mean_clear_attempts": 1.0,
+      "mean_evaluated_candidates": 129.0,
+      "p95_total_virtual_s": 307.56750719999997
+    },
+    {
+      "method": "shape",
+      "episodes": 8,
+      "available": 8,
+      "guaranteed": 8,
+      "received": 8,
+      "contains_truth": 8,
+      "clear_ready": 4,
+      "completed": 8,
+      "mean_posterior_radius_m": 29.849179619657185,
+      "mean_second_action_s": 147.86488450000002,
+      "mean_total_virtual_s": 235.702221625,
+      "mean_selection_s": 0.23976224475001118,
+      "mean_measures": 2.5,
+      "mean_clear_attempts": 1.0,
+      "mean_evaluated_candidates": 31.0,
+      "p95_total_virtual_s": 302.01023239999995
+    }
+  ],
+  "paired": [
+    {
+      "method": "on_bearing",
+      "metric": "posterior_radius_m",
+      "pairs": 8,
+      "mean_delta": 220.58159968316693,
+      "ci95_halfwidth": 105.91662440303926,
+      "better": 0,
+      "equal": 0,
+      "worse": 8
+    },
+    {
+      "method": "on_bearing",
+      "metric": "total_virtual_s",
+      "pairs": 8,
+      "mean_delta": 31.02386812500002,
+      "ci95_halfwidth": 42.84456781275241,
+      "better": 5,
+      "equal": 0,
+      "worse": 3
+    },
+    {
+      "method": "fixed_flank",
+      "metric": "posterior_radius_m",
+      "pairs": 8,
+      "mean_delta": -6.231576488536945,
+      "ci95_halfwidth": 7.413457650956528,
+      "better": 4,
+      "equal": 0,
+      "worse": 4
+    },
+    {
+      "method": "fixed_flank",
+      "metric": "total_virtual_s",
+      "pairs": 8,
+      "mean_delta": 56.509380375000006,
+      "ci95_halfwidth": 9.070828970231183,
+      "better": 0,
+      "equal": 0,
+      "worse": 8
+    },
+    {
+      "method": "shape",
+      "metric": "posterior_radius_m",
+      "pairs": 8,
+      "mean_delta": 3.5000905418178623,
+      "ci95_halfwidth": 3.6463061685229805,
+      "better": 1,
+      "equal": 0,
+      "worse": 7
+    },
+    {
+      "method": "shape",
+      "metric": "total_virtual_s",
+      "pairs": 8,
+      "mean_delta": -5.061938249999994,
+      "ci95_halfwidth": 2.0878931592491976,
+      "better": 7,
+      "equal": 0,
+      "worse": 1
+    }
+  ],
+  "elapsed_s": 5.358506546999934
+}
