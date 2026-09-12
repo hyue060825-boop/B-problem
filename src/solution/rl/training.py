@@ -26,8 +26,9 @@ def atomic_json(path,data):
     tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2,allow_nan=False));tmp.replace(p)
 
 def provenance():
-    paths=list(Path('src/solution').rglob('*.py'))+list(Path('src/bsim').glob('*.py'))
-    return dict(files={str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in paths},
+    root=Path(__file__).resolve().parents[3]
+    paths=list((root/'src/solution').rglob('*.py'))+list((root/'src/bsim').glob('*.py'))+list((root/'scripts').glob('*.py'))
+    return dict(files={p.relative_to(root).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in paths},
                 python=platform.python_version(),torch=torch.__version__,numpy=np.__version__,profile=PROFILE_VERSION,features=FEATURE_VERSION)
 
 def init_worker():
@@ -100,7 +101,7 @@ def bc_update(model,opt,rows,device,epochs=4,batch_size=128):
         random.shuffle(rows)
     return dict(loss=float(np.mean(losses)),gradient_norm_max=max(norms),batches=len(losses))
 
-def advantages(episodes,gamma=1.,lam=.95):
+def advantages(episodes,gamma=1.,lam=.95,normalize=True):
     out=[]
     for steps,_ in episodes:
         gae=0.;next_value=0.
@@ -110,8 +111,9 @@ def advantages(episodes,gamma=1.,lam=.95):
             gae=delta+gamma*lam*continuation*gae
             row['advantage']=gae;row['return']=gae+row['value'];next_value=row['value']
         out.extend(steps)
-    a=np.array([r['advantage'] for r in out]);mean=float(a.mean());std=float(a.std())+1e-8
-    for r in out:r['advantage']=(r['advantage']-mean)/std
+    if normalize:
+        a=np.array([r['advantage'] for r in out]);mean=float(a.mean());std=float(a.std())+1e-8
+        for r in out:r['advantage']=(r['advantage']-mean)/std
     return out
 
 def ppo_update(model,opt,episodes,device,epochs=3,batch_size=128,entropy=.01):
@@ -142,9 +144,24 @@ def save_checkpoint(path,model,opt,config,stage,update,metrics,extra=None):
                        cuda=torch.cuda.get_rng_state_all() if torch.cuda.is_available() else []),extra=extra or {},provenance=provenance())
     tmp=p.with_suffix('.tmp');torch.save(data,tmp);tmp.replace(p)
 
-def load_checkpoint(path,model,opt=None,restore_rng=False):
+def verify_checkpoint_code(data):
+    root=Path(__file__).resolve().parents[2]
+    recorded=data.get('provenance',{}).get('files',{})
+    critical=('solution/control/controller.py','solution/coverage/certificates.py',
+              'solution/geometry/core.py','solution/rl/environment.py','solution/rl/model.py','bsim/research.py')
+    # 旧交付记录使用 solution/、bsim/；main 新记录使用 src/，均严格核验内容。
+    mismatch=[]
+    for p in critical:
+        hashes=[recorded[key] for key in (p, 'src/'+p) if key in recorded]
+        actual=hashlib.sha256((root/p).read_bytes()).hexdigest()
+        if not hashes or any(value!=actual for value in hashes):mismatch.append(p)
+    if mismatch:raise ValueError(f'checkpoint/code mismatch; requires explicit diagnostic re-evaluation: {mismatch}')
+
+
+def load_checkpoint(path,model,opt=None,restore_rng=False,allow_code_mismatch=False):
     data=torch.load(path,map_location='cpu',weights_only=False)
     if data['features']!=FEATURE_VERSION or data['profile']!=PROFILE_VERSION:raise ValueError('checkpoint version mismatch')
+    if not allow_code_mismatch:verify_checkpoint_code(data)
     model.load_state_dict(data['model'])
     if opt is not None:opt.load_state_dict(data['optimizer'])
     if restore_rng:
@@ -152,11 +169,11 @@ def load_checkpoint(path,model,opt=None,restore_rng=False):
         if data['rng']['cuda'] and torch.cuda.is_available():torch.cuda.set_rng_state_all(data['rng']['cuda'])
     return data
 
-def paired_evaluation(pool,problem,seeds,model):
-    teacher=collect(pool,problem,seeds);student=collect(pool,problem,seeds,model,'greedy')
+def paired_evaluation(pool,problem,seeds,model,max_macros=400):
+    teacher=collect(pool,problem,seeds,max_macros=max_macros);student=collect(pool,problem,seeds,model,'greedy',max_macros)
     a=summarize(teacher);b=summarize(student)
     differences=np.array([s[1]['virtual_time_s']-t[1]['virtual_time_s'] for t,s in zip(teacher,student)])
-    eligible=all((not t[1]['completion']) or s[1]['completion'] for t,s in zip(teacher,student)) and b['completion_rate']>=a['completion_rate']
+    eligible=a['completion_rate']==1.0 and b['completion_rate']==1.0
     ci=float(1.96*differences.std(ddof=1)/np.sqrt(len(seeds))) if len(seeds)>1 else None
     return dict(baseline=a,student=b,eligible=eligible,mean_paired_delta_s=float(differences.mean()),
                 approximate_95ci_halfwidth_s=ci,selection_pass=bool(eligible and float(differences.mean())<0),
@@ -185,21 +202,16 @@ def run_training(config):
             best_delta=data.get('extra',{}).get('best_delta',float('inf'))
             event('RESUMED',update=first_update,checkpoint=str(resume))
         else:
-            base=collect(pool,problem,range(seed,seed+config['bc_episodes']))
+            base=collect(pool,problem,range(seed,seed+config['bc_episodes']),max_macros=config.get('max_macros',400))
             summary=summarize(base);atomic_json(output/'baseline_episodes.json',[m for _,m in base])
             event('BASELINE',**summary)
-            # Q4 research scenes may contain fewer than 16 active channels; the
-            # controller cannot certify the remaining unknown channels from
-            # no-signal alone. Keep those episodes as explicit failures rather
-            # than blocking large-scale research training altogether.
-            min_completion = 1.0 if problem==3 else 0.0
-            if summary['completion_rate'] < min_completion:
+            if summary['completion_rate'] < 1.0:
                 raise RuntimeError('teacher baseline incomplete; stop before training')
             rows=[row for episode,_ in base for row in episode]
             update=bc_update(model,opt,rows,device,config.get('bc_epochs',6))
             event('BC',**update)
             save_checkpoint(output/'bc.pt',model,opt,config,'BC',-1,update)
-            dagger=collect(pool,problem,range(seed+10000,seed+10000+config['dagger_episodes']),model,'greedy')
+            dagger=collect(pool,problem,range(seed+10000,seed+10000+config['dagger_episodes']),model,'greedy',config.get('max_macros',400))
             atomic_json(output/'dagger_episodes.json',[m for _,m in dagger])
             rows.extend(row for episode,_ in dagger for row in episode)
             update=bc_update(model,opt,rows,device,config.get('dagger_epochs',3))
@@ -209,7 +221,7 @@ def run_training(config):
         for update_index in range(first_update,config['ppo_updates']):
             t=time.perf_counter()
             seeds=range(seed+20000+update_index*n,seed+20000+(update_index+1)*n)
-            episodes=collect(pool,problem,seeds,model,'sample');sample_s=time.perf_counter()-t
+            episodes=collect(pool,problem,seeds,model,'sample',config.get('max_macros',400));sample_s=time.perf_counter()-t
             summary=summarize(episodes)
             # 几何/协议异常不通过增加失败罚分掩盖，立即停训；纯任务预算失败计入奖励。
             anomalies=[m for _,m in episodes if m['error'] not in (None,'macro_budget','virtual_timeout')]
@@ -223,7 +235,7 @@ def run_training(config):
             atomic_json(output/f'episodes_{update_index+1:04d}.json',[m for _,m in episodes])
             save_checkpoint(output/'latest.pt',model,opt,config,'PPO',update_index,stats,dict(best_delta=best_delta))
             if (update_index+1)%config.get('eval_every',8)==0 or update_index+1==config['ppo_updates']:
-                val=paired_evaluation(pool,problem,range(seed+100000,seed+100000+config.get('eval_episodes',8)),model)
+                val=paired_evaluation(pool,problem,range(seed+100000,seed+100000+config.get('eval_episodes',8)),model,config.get('max_macros',400))
                 atomic_json(output/f'validation_{update_index+1:04d}.json',val)
                 event('VALIDATION',update=update_index+1,completion=val['student']['completion_rate'],paired_delta_s=val['mean_paired_delta_s'],selection_pass=val['selection_pass'])
                 if val['selection_pass'] and val['mean_paired_delta_s']<best_delta:

@@ -1,30 +1,29 @@
 # 实验入口
 
-配置放 `q1/`–`q4/`，运行输出放 `results/`。当前接收至 hy 的 `9e10994`，训练参数和算法按原状态保留；[接收状态与已知问题](../docs/notes/接收记录-9e10994.md)持续记录，算法修复由 hy 后续交付。
+配置放 `q1/`–`q4/`，输出放 `results/`。当前接收至 hy 的 `3ddb2d9`，包含 Q4 控制及同步 DDP 修复；[接收记录](../docs/notes/接收记录-3ddb2d9.md)区分当前实现、交付记录与本机验证。
 
-| 配置 | 用途 | 输出 |
+| 配置 | 用途 | 默认新输出 |
 | --- | --- | --- |
-| `q3/large_20260911/g0.json`–`g3.json` | Q3 四路独立训练，GPU 0–3 | `results/training/large_20260911/q3_gpu*/` |
-| `q4/large_20260911/g4.json`–`g7.json` | Q4 四路独立训练，GPU 4–7 | `results/training/large_20260911/q4_gpu*_retry/` |
-| `q3/large_20260911/q3ext0.json`–`q3ext3.json` | Q3 续训 | 依赖上述 Q3 输出中的 `latest.pt`，写入 `q3_ext_gpu*/` |
-| [research_not_authorized.json](research_not_authorized.json) | 原有阻断示例 | 不是可直接训练的完整配置 |
+| [q3/joint_20260912.json](q3/joint_20260912.json) | Q3 搜索标签、四卡 SFT/DAgger/PPO | `results/training/q3_joint_new/` |
+| [q4/repaired_20260912.json](q4/repaired_20260912.json) | 修复后从头 BC/DAgger/PPO，同步 DDP | `results/training/q4_repaired_new/` |
+| [q4/budget_20260912.json](q4/budget_20260912.json) | 从已交付 Q4 权重开始，按现实时间预算微调 | `results/training/q4_budget_new/` |
+| `q3/large_20260911/`、`q4/large_20260911/` | 旧独立多路训练及续训 | 原活动输出；运行前另设目录 |
+| [research_not_authorized.json](research_not_authorized.json) | 原有阻断示例 | 不是完整训练配置 |
 
-12 份日常配置只适配了 `output` 和 `resume` 的目录，其他值与交付一致。[本批训练归档](../results/training/import-4d75bee/README.md)已包含对应大规模权重、原配置和日志；Q3 主训练与续训均已交付 COMPLETE，Q4 retry 尚未完成。
+前三份配置只调整输出及 checkpoint 路径，原参数快照保存在[本批交付](../results/training/import-3ddb2d9/README.md)。每轮另设输出目录，不能指向归档；种子区间和选模集、测试集的独立性由具体实验核对。
 
-归档权重没有复制到上表的活动输出路径。需要从交付断点续训时，另建实验配置，将 `resume` 指向归档中相应的 `latest.pt`，并为 `output` 设置新目录；不要覆盖原始交付，也不要用旧小规模权重替代对应断点。
-
-安装学习依赖、准备对应 GPU，并为新实验设置独立输出目录后，从仓库根目录运行单路：
+在具备 CUDA、NCCL 的训练环境中，从已激活虚拟环境运行 Q4（GPU 编号按实际分配设置）：
 
 ```bash
-python scripts/start_training.py --config experiments/q3/large_20260911/g0.json
+CUDA_VISIBLE_DEVICES=4,5,6,7 python -m torch.distributed.run \
+  --standalone --nnodes=1 --nproc-per-node=4 \
+  scripts/train_ddp.py --config experiments/q4/repaired_20260912.json
 ```
 
-`scripts/run_python.sh` 是原训练机的 Python 3.11/CUDA 环境入口；其他环境使用已激活虚拟环境的 `python`。`smoke_training.py` 输出到 `results/training/smoke_20260911/`，启动新一轮前另设目录；不要覆盖已有实验。
+预算微调将脚本换成 `scripts/train_budget_ddp.py`，配置换成 `experiments/q4/budget_20260912.json`。同步机制见[多卡说明](../docs/simulator/ddp_training.md)。旧 `large_20260911` 是独立多路训练，不与同一个模型的同步 DDP 混称。
 
-当前 Q4 结束与筛选问题未修复，配置的 `max_macros=1000` 仍未传入采样，实际为 400。多路场景种子有重叠，回合数与独立场景数需分别记录。`train_bc.py`、`train_dagger.py`、`train_ppo.py` 的返回状态，以及 `export_model.py` 的导出功能仍待完善。
+Q3 先用 `python scripts/prepare_q3_joint.py --output results/training/q3_joint_new` 准备基线、种子清单和配置，再用 `generate_q3_labels.py` 生成标签、`train_q3_joint.py` 执行各阶段。准备脚本使用已交付 GPU2 原权重，扫描 `results/` 中历史种子；还会生成 `experiments/q3/joint-generated.json`。完整标签和部分中间权重尚未交付，不能直接照抄原报告中的服务器续训命令；原流程见[Q3 实验报告](../results/training/import-3ddb2d9/reports/Q3搜索教师与专家迭代实验报告.MD)。准备步骤需要训练机的 `nvidia-smi`。
 
-`evaluate_checkpoint.py` 用于教师与模型配对评估；`evaluate_3000.py` 用于指定权重的 Q3 单策略批量评估，可设置种子、局数和进程数。后者新增结果放 `results/rehearsal/`，已交付的 3000 局原件保留在[论文引用目录](../results/validation/q3-3000-9e10994/README.md)，不要从该目录的原始脚本副本启动新实验。
+训练入口使用严格源码校验；旧权重与当前控制器不符时，不直接续训。`q4_preflight.py` 的历史权重诊断还缺少旧 DDP checkpoint，当前不能完整复跑。单路 `start_training.py`、`train_bc.py`、`train_dagger.py`、`train_ppo.py` 继续保留，具体阶段行为按实现确认；`export_model.py` 仍待完善。
 
-`run_policy.py` 已提供本机 HTTP 部署入口，改用必填参数 `--checkpoint`，原 `--policy` 参数已移除。三个入口的用法和当前限制见[本机部署与评估](../docs/simulator/local_deployment.md)。
-
-Q1/Q2 人工输入在 [tests/fixtures/solution/](../tests/fixtures/solution/)，命令见根 README。新运行注明源码版本、配置、种子、环境与原始输出；选模验证与独立测试分开记录。
+新模型评估、原模型配对和 HTTP 部署命令见[本机部署与评估](../docs/simulator/local_deployment.md)。Q1/Q2 人工输入在 [tests/fixtures/solution/](../tests/fixtures/solution/)。记录源码版本、配置、种子、依赖和原始输出，选模验证与独立测试分开解释。

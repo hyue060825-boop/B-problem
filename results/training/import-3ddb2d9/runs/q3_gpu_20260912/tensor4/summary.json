@@ -1,0 +1,141 @@
+{
+  "status": "COMPLETE",
+  "roots": 16,
+  "expected_roots": 16,
+  "new_roots": 16,
+  "elapsed_s": 19.742911622859538,
+  "proposal_wall_s": 3.6622341121546924,
+  "devices": [
+    "cuda:0",
+    "cuda:1",
+    "cuda:2",
+    "cuda:3"
+  ],
+  "batch_roots": 2,
+  "accepted": 2,
+  "branches": 768,
+  "events": [
+    {
+      "kind": "ROOT",
+      "root": "4e6acf035e40e258dee25d94aae1e8d521b681fa6363b665b42c654ada1bb27d",
+      "device": "cuda:3",
+      "accepted": false
+    },
+    {
+      "kind": "ROOT",
+      "root": "f1f58ba93be72c14aaa05714d69cc4320b9bf534b3c7b33ae7e627fb99750268",
+      "device": "cuda:3",
+      "accepted": false
+    },
+    {
+      "kind": "ROOT",
+      "root": "240749a41025e6b3c1ea80d77f10c5a37e2715b89026fd10bcc44141e565a4f2",
+      "device": "cuda:2",
+      "accepted": false
+    },
+    {
+      "kind": "ROOT",
+      "root": "95bfea3fcf24693329177c5ee959e5a6dda2ddab93191fd64f7c62f006d17a60",
+      "device": "cuda:0",
+      "accepted": false
+    },
+    {
+      "kind": "ROOT",
+      "root": "34b6d505807511c99f4de229f0f053bc5898fbb3caeb89b7c05027abe22eecc2",
+      "device": "cuda:2",
+      "accepted": false
+    },
+    {
+      "kind": "ROOT",
+      "root": "86d7b28e0cd799859d7c45c5d228db96b5bc8ef10ca6affd4e737b72e961f335",
+      "device": "cuda:0",
+      "accepted": false
+    },
+    {
+      "kind": "ROOT",
+      "root": "1dff90046d0e4e0bfd17d13552911ed6dbf3a7597c8ad2e55bd4218a1c3ac3ac",
+      "device": "cuda:1",
+      "accepted": false
+    },
+    {
+      "kind": "ROOT",
+      "root": "536331f0dcc6e39f255df0c11b8a6454df44c7b577850638560d0c2af6fcdf08",
+      "device": "cuda:1",
+      "accepted": true
+    },
+    {
+      "kind": "ROOT",
+      "root": "39e65e6749e5208f5c8e8cff4a209ecd6ed8b096178653bd1930ffdc25e1137b",
+      "device": "cuda:0",
+      "accepted": false
+    },
+    {
+      "kind": "ROOT",
+      "root": "2cc877f4a3798ef6c0860ed1fb6cc60bdb75ec1e000409863a032f543582a1ba",
+      "device": "cuda:0",
+      "accepted": false
+    },
+    {
+      "kind": "DONE",
+      "device": "cuda:0",
+      "roots": 4,
+      "initialization_s": 0.4503939859569073
+    },
+    {
+      "kind": "ROOT",
+      "root": "65aaf64283f763fe655a60967265ad6f8f697a23e8a6698647e42de24b9dfd1c",
+      "device": "cuda:3",
+      "accepted": false
+    },
+    {
+      "kind": "ROOT",
+      "root": "e313269c688f246d0ce43788e5a83d538d48cab3e6fea734e8394a3f50672159",
+      "device": "cuda:3",
+      "accepted": true
+    },
+    {
+      "kind": "DONE",
+      "device": "cuda:3",
+      "roots": 4,
+      "initialization_s": 0.23934154910966754
+    },
+    {
+      "kind": "ROOT",
+      "root": "aa450817774168d34b831cabf8d8d0aaabce15db90bfb270ad162659c9a2364d",
+      "device": "cuda:1",
+      "accepted": false
+    },
+    {
+      "kind": "ROOT",
+      "root": "e64c1bfb864a2f9b63818327ba4d3b0b36f0bf94a4ce6162af3a1c13ae242c6a",
+      "device": "cuda:1",
+      "accepted": false
+    },
+    {
+      "kind": "DONE",
+      "device": "cuda:1",
+      "roots": 4,
+      "initialization_s": 0.23691264539957047
+    },
+    {
+      "kind": "ROOT",
+      "root": "52bd124104fe6effed60a1440d859be6da7060521d63c2f75eb10b36bd77deec",
+      "device": "cuda:2",
+      "accepted": false
+    },
+    {
+      "kind": "ROOT",
+      "root": "5e84c165f3b8bc781ab39a295d16ad75f813a48f3d74705fb25d1413cd9a26ad",
+      "device": "cuda:2",
+      "accepted": false
+    },
+    {
+      "kind": "DONE",
+      "device": "cuda:2",
+      "roots": 4,
+      "initialization_s": 0.2549071991816163
+    }
+  ],
+  "duplicate_roots": 0,
+  "mode": "tensor"
+}

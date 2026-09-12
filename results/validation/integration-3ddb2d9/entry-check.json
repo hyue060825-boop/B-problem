@@ -1,0 +1,92 @@
+[
+  {
+    "path": "scripts/check_q3_local_http.py",
+    "returncode": 0,
+    "error": null
+  },
+  {
+    "path": "scripts/evaluate_3000.py",
+    "returncode": 0,
+    "error": null
+  },
+  {
+    "path": "scripts/evaluate_checkpoint.py",
+    "returncode": 0,
+    "error": null
+  },
+  {
+    "path": "scripts/evaluate_latest_pair.py",
+    "returncode": 0,
+    "error": null
+  },
+  {
+    "path": "scripts/evaluate_q3_joint.py",
+    "returncode": 0,
+    "error": null
+  },
+  {
+    "path": "scripts/generate_q3_labels.py",
+    "returncode": 0,
+    "error": null
+  },
+  {
+    "path": "scripts/prepare_q3_joint.py",
+    "returncode": 0,
+    "error": null
+  },
+  {
+    "path": "scripts/q3_gpu_search.py",
+    "returncode": 0,
+    "error": null
+  },
+  {
+    "path": "scripts/q3_search_preflight.py",
+    "returncode": 0,
+    "error": null
+  },
+  {
+    "path": "scripts/q4_preflight.py",
+    "returncode": 0,
+    "error": null
+  },
+  {
+    "path": "scripts/run_policy.py",
+    "returncode": 0,
+    "error": null
+  },
+  {
+    "path": "scripts/run_torchrun.sh",
+    "returncode": 0,
+    "error": null
+  },
+  {
+    "path": "scripts/train_bc.py",
+    "returncode": 0,
+    "error": null
+  },
+  {
+    "path": "scripts/train_budget_ddp.py",
+    "returncode": 0,
+    "error": null
+  },
+  {
+    "path": "scripts/train_dagger.py",
+    "returncode": 0,
+    "error": null
+  },
+  {
+    "path": "scripts/train_ddp.py",
+    "returncode": 0,
+    "error": null
+  },
+  {
+    "path": "scripts/train_ppo.py",
+    "returncode": 0,
+    "error": null
+  },
+  {
+    "path": "scripts/train_q3_joint.py",
+    "returncode": 0,
+    "error": null
+  }
+]

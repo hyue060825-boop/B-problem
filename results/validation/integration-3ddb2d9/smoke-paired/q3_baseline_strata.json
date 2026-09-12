@@ -1,0 +1,146 @@
+{
+  "N": {
+    "15": {
+      "episodes": 1,
+      "completed_episodes": 1,
+      "completion_rate": 1.0,
+      "mean_virtual_s": 3018.971565,
+      "median_virtual_s": 3018.971565,
+      "p95_virtual_s": 3018.971565,
+      "mean_per_source_s": 201.264771,
+      "median_per_source_s": 201.264771,
+      "p95_per_source_s": 201.264771,
+      "completed_only_mean_per_source_s": 201.264771,
+      "total_virtual_s": 3018.971565,
+      "total_cleared_sources": 15,
+      "total_sources": 15,
+      "errors": {},
+      "max_macro_steps": 29,
+      "distribution_counts": {
+        "area": 1
+      },
+      "field_counts": {
+        "smooth": 1
+      }
+    },
+    "16": {
+      "episodes": 1,
+      "completed_episodes": 1,
+      "completion_rate": 1.0,
+      "mean_virtual_s": 4602.541341,
+      "median_virtual_s": 4602.541341,
+      "p95_virtual_s": 4602.541341,
+      "mean_per_source_s": 287.6588338125,
+      "median_per_source_s": 287.6588338125,
+      "p95_per_source_s": 287.6588338125,
+      "completed_only_mean_per_source_s": 287.6588338125,
+      "total_virtual_s": 4602.541341,
+      "total_cleared_sources": 16,
+      "total_sources": 16,
+      "errors": {},
+      "max_macro_steps": 44,
+      "distribution_counts": {
+        "edge": 1
+      },
+      "field_counts": {
+        "extreme": 1
+      }
+    }
+  },
+  "distribution": {
+    "area": {
+      "episodes": 1,
+      "completed_episodes": 1,
+      "completion_rate": 1.0,
+      "mean_virtual_s": 3018.971565,
+      "median_virtual_s": 3018.971565,
+      "p95_virtual_s": 3018.971565,
+      "mean_per_source_s": 201.264771,
+      "median_per_source_s": 201.264771,
+      "p95_per_source_s": 201.264771,
+      "completed_only_mean_per_source_s": 201.264771,
+      "total_virtual_s": 3018.971565,
+      "total_cleared_sources": 15,
+      "total_sources": 15,
+      "errors": {},
+      "max_macro_steps": 29,
+      "distribution_counts": {
+        "area": 1
+      },
+      "field_counts": {
+        "smooth": 1
+      }
+    },
+    "edge": {
+      "episodes": 1,
+      "completed_episodes": 1,
+      "completion_rate": 1.0,
+      "mean_virtual_s": 4602.541341,
+      "median_virtual_s": 4602.541341,
+      "p95_virtual_s": 4602.541341,
+      "mean_per_source_s": 287.6588338125,
+      "median_per_source_s": 287.6588338125,
+      "p95_per_source_s": 287.6588338125,
+      "completed_only_mean_per_source_s": 287.6588338125,
+      "total_virtual_s": 4602.541341,
+      "total_cleared_sources": 16,
+      "total_sources": 16,
+      "errors": {},
+      "max_macro_steps": 44,
+      "distribution_counts": {
+        "edge": 1
+      },
+      "field_counts": {
+        "extreme": 1
+      }
+    }
+  },
+  "field": {
+    "extreme": {
+      "episodes": 1,
+      "completed_episodes": 1,
+      "completion_rate": 1.0,
+      "mean_virtual_s": 4602.541341,
+      "median_virtual_s": 4602.541341,
+      "p95_virtual_s": 4602.541341,
+      "mean_per_source_s": 287.6588338125,
+      "median_per_source_s": 287.6588338125,
+      "p95_per_source_s": 287.6588338125,
+      "completed_only_mean_per_source_s": 287.6588338125,
+      "total_virtual_s": 4602.541341,
+      "total_cleared_sources": 16,
+      "total_sources": 16,
+      "errors": {},
+      "max_macro_steps": 44,
+      "distribution_counts": {
+        "edge": 1
+      },
+      "field_counts": {
+        "extreme": 1
+      }
+    },
+    "smooth": {
+      "episodes": 1,
+      "completed_episodes": 1,
+      "completion_rate": 1.0,
+      "mean_virtual_s": 3018.971565,
+      "median_virtual_s": 3018.971565,
+      "p95_virtual_s": 3018.971565,
+      "mean_per_source_s": 201.264771,
+      "median_per_source_s": 201.264771,
+      "p95_per_source_s": 201.264771,
+      "completed_only_mean_per_source_s": 201.264771,
+      "total_virtual_s": 3018.971565,
+      "total_cleared_sources": 15,
+      "total_sources": 15,
+      "errors": {},
+      "max_macro_steps": 29,
+      "distribution_counts": {
+        "area": 1
+      },
+      "field_counts": {
+        "smooth": 1
+      }
+    }
+  }
+}

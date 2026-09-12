@@ -1,0 +1,35 @@
+{
+  "sft_round1": {
+    "stages": 8,
+    "optimizer_steps": 48,
+    "sync": true,
+    "elapsed_s": 14.852463351096958,
+    "logits_max_abs_diff": 0.0,
+    "global_start": 0,
+    "global_end": 48,
+    "ppo_episodes": 0,
+    "ppo_macros": 0
+  },
+  "dagger_round2": {
+    "stages": 8,
+    "optimizer_steps": 88,
+    "sync": true,
+    "elapsed_s": 18.42423708597198,
+    "logits_max_abs_diff": 0.0,
+    "global_start": 48,
+    "global_end": 136,
+    "ppo_episodes": 0,
+    "ppo_macros": 0
+  },
+  "ppo": {
+    "stages": 64,
+    "optimizer_steps": 660,
+    "sync": true,
+    "elapsed_s": 128.8522743708454,
+    "logits_max_abs_diff": 0.0,
+    "global_start": 24,
+    "global_end": 684,
+    "ppo_episodes": 4096,
+    "ppo_macros": 134707
+  }
+}

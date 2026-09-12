@@ -1,0 +1,40 @@
+{
+  "source_commit": "3ddb2d9e914de17f1d2cce8d8f7cf9f4bd423e45",
+  "received_paths": 373,
+  "exact_paths": 355,
+  "raw_paths": 339,
+  "preserved_main_files": 3277,
+  "raw_weights": 10,
+  "evaluation": {
+    "q3_candidate": {
+      "episodes": 3000,
+      "completed": 3000,
+      "mean_virtual_s": 3322.4182164736667,
+      "mean_per_source_s": 260.6346122181703,
+      "checkpoint_sha256": "a924b6013f4c81f0f46c22ad33de823ed4484729d25e517bbf23aaca5a24de14",
+      "mean_paired_delta_s": -14.318309505000002
+    },
+    "q3_baseline": {
+      "episodes": 3000,
+      "completed": 3000,
+      "mean_virtual_s": 3336.7365259786666,
+      "mean_per_source_s": 261.6896217454018,
+      "checkpoint_sha256": "cf63f3c88ca534cae14a2a8dabbdedbf198f53f06aeaebe5d1aff14cbacab1c9"
+    },
+    "q4_best": {
+      "episodes": 3000,
+      "completed": 3000,
+      "mean_virtual_s": 9879.048570323333,
+      "mean_per_source_s": 784.3529576561057,
+      "checkpoint_sha256": "2329eb4d12088ebccfdc459939aeb8d5ee67f9696b4b41b1385c3c158d4c0e4a",
+      "mean_paired_delta_s": -308.35064282033335
+    },
+    "q4_baseline": {
+      "episodes": 3000,
+      "completed": 3000,
+      "mean_virtual_s": 10187.399213143666,
+      "mean_per_source_s": 806.5083111004118,
+      "checkpoint_sha256": "da10d37282278f544c0d2c8f28713098915761187f1c3e850c2c4b2a6b2554b6"
+    }
+  }
+}

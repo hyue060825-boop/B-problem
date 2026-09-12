@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "checkpoint": "runs/q3_joint_20260912/smoke_v2/sft_smoke.pt",
+  "command": [
+    "scripts/run_python.sh",
+    "scripts/run_policy.py",
+    "--problem",
+    "3",
+    "--checkpoint",
+    "runs/q3_joint_20260912/smoke_v2/sft_smoke.pt",
+    "--robot-id",
+    "LOCAL-TRAIN",
+    "--base-url",
+    "http://127.0.0.1:35909",
+    "--device",
+    "cpu",
+    "--max-macros",
+    "400"
+  ],
+  "server": "new LOCAL-RESEARCH ephemeral port; not official service",
+  "exit_reason": "user_exit",
+  "source_count": 10,
+  "cleared": 10,
+  "first_remaining_real_s": 1199.9716926016845,
+  "last_remaining_real_s": 1199.6445751991123,
+  "requests": 141,
+  "virtual_time_s": 3752.023453,
+  "seed": 100200000
+}

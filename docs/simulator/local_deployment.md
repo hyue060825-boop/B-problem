@@ -1,58 +1,61 @@
 # 本机部署与评估
 
-训练机提供 checkpoint，策略程序在测试电脑运行，经本机回环地址调用模拟器接口。`run_policy.py` 使用公开观测构造特征，不读取场景文件或隐藏真值；独立研究评估则由本地环境生成场景。
+从仓库根目录、已安装 `.[rl,test]` 的 Python 环境执行。当前接收至 `3ddb2d9`；四份评估权重已在本机加载并各完成 2 局，Q3/Q4 各通过一次自建 HTTP 部署。完整状态见[接收记录](../notes/接收记录-3ddb2d9.md)。这些验证不调用官方软件。
 
-从仓库根目录、已安装 `.[rl]` 的 Python 环境执行。当前已接收部署代码、权重及研究评估入口，HTTP 部署尚待端到端验证；完整状态见[接收记录](../notes/接收记录-9e10994.md)。
+## 最新 Q3/Q4 配对评估
 
-## 研究场景配对评估
+入口固定比较本批四份权重：Q3 PPO 候选与冻结原模型、Q4 五小时训练 best 与训练前模型。先做少量场景检查，输出目录必须不存在：
 
-示例使用本批 Q3 续训权重，默认以 4 个进程在 CPU 上评估，不连接官方软件：
+```bash
+python scripts/evaluate_latest_pair.py \
+  --episodes 2 --workers 2 \
+  --output results/rehearsal/q34-paired-01
+```
+
+完整复跑用 `--episodes 3000`，按机器资源设置 `--workers`；默认 Q3/Q4 种子分别从 310000000、320000000 开始，与[本批报告](../../results/training/import-3ddb2d9/runs/q34_3000_test_20260912/report.md)一致。改进策略后应另选未使用的测试集，不能反复用原测试集选模。
+
+需要将单个模型与规则教师配对比较时：
 
 ```bash
 python scripts/evaluate_checkpoint.py \
   --problem 3 \
-  --checkpoint results/training/import-4d75bee/large_20260911/q3_ext_gpu1/best.pt \
-  --seed 900000 --episodes 32 \
-  --output results/rehearsal/q3-4d75bee-eval-01.json
+  --checkpoint results/training/import-3ddb2d9/runs/q3_joint_20260912/ppo_candidate.pt \
+  --seed 330000000 --episodes 32 \
+  --output results/rehearsal/q3-teacher-paired-01.json
 ```
 
-每次更换输出文件名；自定义父目录须先创建。指定新的种子范围不会自动证明它与训练、选模数据独立，使用前需核查重叠。归档中的 32 局评估是交付记录，尚未在本机复跑，也尚未确认对应 checkpoint 的内部信息。
-
-## Q3 单策略批量评估
-
-`evaluate_3000.py` 固定评估 Q3，不运行教师基线。以下示例对应本批 GPU2 续训权重；每次另取输出目录，避免覆盖旧结果：
-
-```bash
-python scripts/evaluate_3000.py \
-  --checkpoint results/training/import-4d75bee/large_20260911/q3_ext_gpu2/best.pt \
-  --episodes 3000 --seed 1200000 --workers 8 \
-  --output results/rehearsal/q3-3000-eval-01
-```
-
-新输出包括逐局 JSON、汇总 JSON 和直方图。`mean_of_sample_per_source_times_s` 是各局 `T/C` 的算术平均；`source_weighted_mean_time_s` 是所有局总时间除以总清除数，两者分别报告。若有未完成局，须先报告完成率，不能只比较每源时间。
-
-已交付的 [3000 局原件](../../results/validation/q3-3000-9e10994/README.md)为论文引用快照，包含未适配目录的原脚本副本；新实验使用上面的 `scripts/` 入口。该批与前述 GPU1 的 32 局配对测试使用不同权重，不合并解释为同一模型的性能提升。
+确认输出父目录存在。该入口的对照是规则教师，与最新四模型报告中的“冻结原模型”不同，分别引用。
 
 ## 本机 HTTP 部署
 
-先在模拟器中准备相应会话，确认问题、监听端口与队号，再运行策略。以下以官方软件默认端口为例，将 `YOUR_ROBOT_ID` 替换为实际队号：
+先在模拟器准备对应会话，再填写实际队号、问题与监听端口。以下端口仅为示例：
 
 ```bash
 python scripts/run_policy.py \
   --problem 3 \
-  --checkpoint results/training/import-4d75bee/large_20260911/q3_ext_gpu1/best.pt \
+  --checkpoint results/training/import-3ddb2d9/runs/q3_joint_20260912/ppo_candidate.pt \
   --base-url http://127.0.0.1:2026 \
   --robot-id YOUR_ROBOT_ID
 ```
 
-自建调试服务的端口按实际启动参数填写，例如 `20260`。程序不启动官方软件，只允许 `http://127.0.0.1:端口` 形式的回环地址；`--device` 默认为 `cpu`，可按环境选择 CUDA。必填参数为 `--checkpoint`，旧 `--policy` 参数已移除。
+Q4 改为 `--problem 4`，权重使用 `results/training/import-3ddb2d9/runs/q4_budget_20260912/train/best.pt`。Q3 候选尚不替代此前稳健选模推荐；冻结原模型为同一 Q3 目录中的 `baseline.pt`。先用官方演练核对效果，再决定正式策略。
 
-`scripts/run_policy_local.sh` 转调原训练机的 `run_python.sh`，依赖其 Python/CUDA 路径。其他机器使用上面的已激活环境入口。Q4 指定对应权重和 `--problem 4`；目前 retry 尚未交付完成记录，待修复并通过研究评估、官方演练后再用于正式测试。
+`run_policy.py` 使用公开观测，不读取隐藏真值；只连接本机回环 HTTP，`--device` 默认 `cpu`。进入后按单调时钟更新现实预算，加载时检查问题、特征、研究 profile 和关键源码。完整请求/响应尚未持久化，标准输出为进入、宏动作及退出摘要；异常处理仍需完善。
 
-## 当前边界
+独立检查 Q3 的自建 HTTP 闭环可运行以下命令，它会新建临时端口，不连接现有服务：
 
-- 部署入口校验特征版本、研究 profile 和问题编号，但尚未验证这批权重的完整部署过程。`export_model.py` 仍待完善。
-- Q3 批量评估入口目前仅检查 checkpoint 特征版本，尚未检查其问题编号和研究 profile；使用与 Q3 配置一致的权重，补强校验由 hy 后续处理。
-- 剩余现实时间仅在进入会话时赋值，尚未随运行递减；宏动作预算耗尽、业务拒绝等异常处理仍需完善。
-- 标准输出记录进入、宏动作和退出摘要，没有持久化完整请求/响应。退出后不要再次调用 `/exit` 查询原因。
-- 研究 checkpoint 和本地评估不证明官方隐藏分布上的效果。正式测试前仍需先完成本地与官方演练验证。
+```bash
+python scripts/check_q3_local_http.py \
+  --checkpoint results/training/import-3ddb2d9/runs/q3_joint_20260912/ppo_candidate.pt \
+  --output results/rehearsal/q3-http-01
+```
+
+该检查使用当前 Python 启动部署子进程。训练机的 `run_python.sh`、`run_policy_local.sh` 依赖其 `.venv` 和 CUDA 库路径，其他环境使用上面的 `python` 入口。
+
+## 历史权重与结果
+
+`evaluate_3000.py` 支持 `--problem 3/4` 的单策略批量评估，但仍仅检查特征版本，不校验完整源码、profile 或问题编号；当前优先使用上述配对入口。旧批次结果按原源码、权重和实验口径保留，不据此推断修复后的表现。
+
+main 的源码哈希校验同时识别旧 `solution/`、`bsim/` 和新 `src/` 路径；目录搬迁不放宽文件内容检查。旧权重若与当前关键代码不符，会被正常拒绝。确需研究旧权重接新控制器的行为时，`evaluate_checkpoint.py --allow-code-mismatch` 仅用于显式诊断，并另存结果；部署不提供静默绕过。
+
+`mean_i(T_i/C_i)` 是每局总虚拟时间先除以清除数再平均，`sum(T_i)/sum(C_i)` 是按清除数加权，两者不能混用。先报告完成率，再比较耗时；研究分布、官方演练与正式成绩分别记录。

@@ -20,9 +20,11 @@ from solution.rl.environment import TrainingEnv, features, model_state
 from solution.rl.model import CandidatePolicy
 
 WORKER_MODEL = None
+PROBLEM = 3
 
-def init_worker(checkpoint):
-    global WORKER_MODEL
+def init_worker(checkpoint, problem):
+    global WORKER_MODEL, PROBLEM
+    PROBLEM = problem
     torch.set_num_threads(1)
     WORKER_MODEL = CandidatePolicy()
     data = torch.load(checkpoint, map_location='cpu', weights_only=False)
@@ -32,7 +34,7 @@ def init_worker(checkpoint):
     WORKER_MODEL.eval()
 
 def evaluate_one(seed):
-    env = TrainingEnv(3, int(seed), max_macros=400)
+    env = TrainingEnv(PROBLEM, int(seed), max_macros=400)
     while not env.done:
         state, actions = env.observe()
         public = model_state(features(env.controller, actions))
@@ -58,17 +60,20 @@ def evaluate_one(seed):
 
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument('--problem', type=int, choices=(3, 4), default=3)
     ap.add_argument('--checkpoint', required=True)
     ap.add_argument('--episodes', type=int, default=3000)
     ap.add_argument('--seed', type=int, default=1200000)
     ap.add_argument('--workers', type=int, default=8)
     ap.add_argument('--output', default='results/rehearsal/q3_3000_test_20260911')
     args = ap.parse_args()
+    global PROBLEM
+    PROBLEM = args.problem
     out = Path(args.output); out.mkdir(parents=True, exist_ok=True)
     seeds = list(range(args.seed, args.seed + args.episodes))
     started = time.perf_counter()
     with ProcessPoolExecutor(max_workers=args.workers, mp_context=mp.get_context('spawn'),
-                             initializer=init_worker, initargs=(args.checkpoint,)) as pool:
+                             initializer=init_worker, initargs=(args.checkpoint, args.problem)) as pool:
         rows = list(pool.map(evaluate_one, seeds, chunksize=4))
     completed = [r for r in rows if r['cleared'] > 0]
     per_sample = np.asarray([r['per_source_time_s'] for r in completed], dtype=float)
@@ -76,7 +81,7 @@ def main():
     total_sources = int(sum(r['cleared'] for r in rows))
     summary = {
         'status': 'COMPLETE',
-        'problem': 3,
+        'problem': args.problem,
         'checkpoint': str(args.checkpoint),
         'episodes': args.episodes,
         'seed_start': args.seed,
@@ -103,7 +108,7 @@ def main():
     mean = float(per_sample.mean())
     ax.axvline(mean, color='#dc2626', linewidth=2, label=f'mean = {mean:.2f} s/source')
     ax.axvline(float(np.median(per_sample)), color='#111827', linewidth=1.5, linestyle='--', label=f'median = {np.median(per_sample):.2f} s/source')
-    ax.set_title('Q3 3000-scenario distribution of average time per cleared source')
+    ax.set_title(f'Q{args.problem} 3000-scenario distribution of average time per cleared source')
     ax.set_xlabel('Average virtual time per source in one scenario (s/source)')
     ax.set_ylabel('Number of scenarios')
     ax.grid(axis='y', alpha=0.2)

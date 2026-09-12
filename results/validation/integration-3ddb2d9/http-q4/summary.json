@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "problem": 4,
+  "seed": 320000000,
+  "checkpoint": "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/best.pt",
+  "command": [
+    "/home/lenovo/projects/competition/.local/B-problem-archive/\u6574\u5408-c457828/.venv/bin/python",
+    "scripts/run_policy.py",
+    "--problem",
+    "4",
+    "--checkpoint",
+    "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/best.pt",
+    "--robot-id",
+    "LOCAL-TRAIN",
+    "--base-url",
+    "http://127.0.0.1:43461",
+    "--device",
+    "cpu",
+    "--max-macros",
+    "400"
+  ],
+  "server": "new LOCAL-RESEARCH ephemeral port; not official service",
+  "exit_reason": "user_exit",
+  "source_count": 13,
+  "cleared": 13,
+  "first_remaining_real_s": 1199.970825833996,
+  "last_remaining_real_s": 1199.5106212210085,
+  "requests": 342,
+  "virtual_time_s": 9256.282223
+}

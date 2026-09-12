@@ -11,7 +11,8 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--problem',type=int,required=True)
     p.add_argument('--checkpoint',required=True);p.add_argument('--seed',type=int,default=900000)
     p.add_argument('--episodes',type=int,default=32);p.add_argument('--output')
-    a=p.parse_args();model=CandidatePolicy();load_checkpoint(a.checkpoint,model)
+    p.add_argument('--allow-code-mismatch',action='store_true',help='Explicit diagnostic run of old weights on changed code')
+    a=p.parse_args();model=CandidatePolicy();load_checkpoint(a.checkpoint,model,allow_code_mismatch=a.allow_code_mismatch)
     with ProcessPoolExecutor(4,mp_context=mp.get_context('spawn')) as pool:
         result=paired_evaluation(pool,a.problem,range(a.seed,a.seed+a.episodes),model)
     summary={'checkpoint':a.checkpoint,'problem':a.problem,'seed_start':a.seed,'episodes':a.episodes,

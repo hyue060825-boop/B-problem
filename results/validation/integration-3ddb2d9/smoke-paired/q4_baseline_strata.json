@@ -1,0 +1,146 @@
+{
+  "N": {
+    "13": {
+      "episodes": 1,
+      "completed_episodes": 1,
+      "completion_rate": 1.0,
+      "mean_virtual_s": 9672.860909,
+      "median_virtual_s": 9672.860909,
+      "p95_virtual_s": 9672.860909,
+      "mean_per_source_s": 744.0662237692309,
+      "median_per_source_s": 744.0662237692309,
+      "p95_per_source_s": 744.0662237692309,
+      "completed_only_mean_per_source_s": 744.0662237692309,
+      "total_virtual_s": 9672.860909,
+      "total_cleared_sources": 13,
+      "total_sources": 13,
+      "errors": {},
+      "max_macro_steps": 45,
+      "distribution_counts": {
+        "area": 1
+      },
+      "field_counts": {
+        "smooth": 1
+      }
+    },
+    "14": {
+      "episodes": 1,
+      "completed_episodes": 1,
+      "completion_rate": 1.0,
+      "mean_virtual_s": 9501.021709,
+      "median_virtual_s": 9501.021709,
+      "p95_virtual_s": 9501.021709,
+      "mean_per_source_s": 678.6444077857143,
+      "median_per_source_s": 678.6444077857143,
+      "p95_per_source_s": 678.6444077857143,
+      "completed_only_mean_per_source_s": 678.6444077857143,
+      "total_virtual_s": 9501.021709,
+      "total_cleared_sources": 14,
+      "total_sources": 14,
+      "errors": {},
+      "max_macro_steps": 46,
+      "distribution_counts": {
+        "edge": 1
+      },
+      "field_counts": {
+        "extreme": 1
+      }
+    }
+  },
+  "distribution": {
+    "area": {
+      "episodes": 1,
+      "completed_episodes": 1,
+      "completion_rate": 1.0,
+      "mean_virtual_s": 9672.860909,
+      "median_virtual_s": 9672.860909,
+      "p95_virtual_s": 9672.860909,
+      "mean_per_source_s": 744.0662237692309,
+      "median_per_source_s": 744.0662237692309,
+      "p95_per_source_s": 744.0662237692309,
+      "completed_only_mean_per_source_s": 744.0662237692309,
+      "total_virtual_s": 9672.860909,
+      "total_cleared_sources": 13,
+      "total_sources": 13,
+      "errors": {},
+      "max_macro_steps": 45,
+      "distribution_counts": {
+        "area": 1
+      },
+      "field_counts": {
+        "smooth": 1
+      }
+    },
+    "edge": {
+      "episodes": 1,
+      "completed_episodes": 1,
+      "completion_rate": 1.0,
+      "mean_virtual_s": 9501.021709,
+      "median_virtual_s": 9501.021709,
+      "p95_virtual_s": 9501.021709,
+      "mean_per_source_s": 678.6444077857143,
+      "median_per_source_s": 678.6444077857143,
+      "p95_per_source_s": 678.6444077857143,
+      "completed_only_mean_per_source_s": 678.6444077857143,
+      "total_virtual_s": 9501.021709,
+      "total_cleared_sources": 14,
+      "total_sources": 14,
+      "errors": {},
+      "max_macro_steps": 46,
+      "distribution_counts": {
+        "edge": 1
+      },
+      "field_counts": {
+        "extreme": 1
+      }
+    }
+  },
+  "field": {
+    "extreme": {
+      "episodes": 1,
+      "completed_episodes": 1,
+      "completion_rate": 1.0,
+      "mean_virtual_s": 9501.021709,
+      "median_virtual_s": 9501.021709,
+      "p95_virtual_s": 9501.021709,
+      "mean_per_source_s": 678.6444077857143,
+      "median_per_source_s": 678.6444077857143,
+      "p95_per_source_s": 678.6444077857143,
+      "completed_only_mean_per_source_s": 678.6444077857143,
+      "total_virtual_s": 9501.021709,
+      "total_cleared_sources": 14,
+      "total_sources": 14,
+      "errors": {},
+      "max_macro_steps": 46,
+      "distribution_counts": {
+        "edge": 1
+      },
+      "field_counts": {
+        "extreme": 1
+      }
+    },
+    "smooth": {
+      "episodes": 1,
+      "completed_episodes": 1,
+      "completion_rate": 1.0,
+      "mean_virtual_s": 9672.860909,
+      "median_virtual_s": 9672.860909,
+      "p95_virtual_s": 9672.860909,
+      "mean_per_source_s": 744.0662237692309,
+      "median_per_source_s": 744.0662237692309,
+      "p95_per_source_s": 744.0662237692309,
+      "completed_only_mean_per_source_s": 744.0662237692309,
+      "total_virtual_s": 9672.860909,
+      "total_cleared_sources": 13,
+      "total_sources": 13,
+      "errors": {},
+      "max_macro_steps": 45,
+      "distribution_counts": {
+        "area": 1
+      },
+      "field_counts": {
+        "smooth": 1
+      }
+    }
+  }
+}

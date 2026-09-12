@@ -1,0 +1,27 @@
+{"status": "ENTERED", "remaining_real_duration_s": 1200.0}
+{"status": "ACTION", "macro": 1, "kind": "COVER", "position": [0.0, 0.0], "channel": 0, "remaining_real_s": 1199.9730158409948, "virtual_time_s": 119}
+{"status": "ACTION", "macro": 2, "kind": "COVER", "position": [-567.4999999999998, 982.938833295338], "channel": 0, "remaining_real_s": 1199.948269370987, "virtual_time_s": 465}
+{"status": "ACTION", "macro": 3, "kind": "LOCALIZE", "position": [-1136.757335240074, 1119.6209001139323], "channel": 19, "remaining_real_s": 1199.9446769429924, "virtual_time_s": 588.087301}
+{"status": "ACTION", "macro": 4, "kind": "CLEAR", "position": [-1039.47462803901, 902.4637333189679], "channel": 19, "remaining_real_s": 1199.9408501499856, "virtual_time_s": 640.677703}
+{"status": "ACTION", "macro": 5, "kind": "COVER", "position": [-1135.0, 1.389974117032246e-13], "channel": 0, "remaining_real_s": 1199.9174008079863, "virtual_time_s": 936.178765}
+{"status": "ACTION", "macro": 6, "kind": "PROBE_CLEAR", "position": [-811.6202342696146, -301.10016960956887], "channel": 15, "remaining_real_s": 1199.9126210809918, "virtual_time_s": 1029.549752}
+{"status": "ACTION", "macro": 7, "kind": "COVER", "position": [-567.5000000000005, -982.9388332953375], "channel": 0, "remaining_real_s": 1199.8890961829893, "virtual_time_s": 1281.39431}
+{"status": "ACTION", "macro": 8, "kind": "PROBE_CLEAR", "position": [-213.06135569423023, -920.7576225952163], "channel": 10, "remaining_real_s": 1199.8847016729997, "virtual_time_s": 1358.364653}
+{"status": "ACTION", "macro": 9, "kind": "COVER", "position": [567.5000000000001, -982.9388332953378], "channel": 0, "remaining_real_s": 1199.862031785, "virtual_time_s": 1615.97149}
+{"status": "ACTION", "macro": 10, "kind": "LOCALIZE", "position": [540.2715908493539, -1354.610200238493], "channel": 4, "remaining_real_s": 1199.857078527988, "virtual_time_s": 1696.50497}
+{"status": "ACTION", "macro": 11, "kind": "CLEAR", "position": [670.5565936894805, -1258.0683082358112], "channel": 4, "remaining_real_s": 1199.853591630992, "virtual_time_s": 1733.936139}
+{"status": "ACTION", "macro": 12, "kind": "LOCALIZE", "position": [1202.682467258693, -1058.993932537529], "channel": 2, "remaining_real_s": 1199.8511976579903, "virtual_time_s": 1853.565106}
+{"status": "ACTION", "macro": 13, "kind": "CLEAR", "position": [955.4191176471415, -869.1354390907798], "channel": 2, "remaining_real_s": 1199.8475259389961, "virtual_time_s": 1920.914256}
+{"status": "ACTION", "macro": 14, "kind": "COVER", "position": [1135.0, 0.0], "channel": 0, "remaining_real_s": 1199.8288590329903, "virtual_time_s": 2188.413068}
+{"status": "ACTION", "macro": 15, "kind": "CLEAR", "position": [383.0406732310039, -302.53758604037296], "channel": 8, "remaining_real_s": 1199.8245518819895, "virtual_time_s": 2355.520664}
+{"status": "ACTION", "macro": 16, "kind": "LOCALIZE", "position": [-164.53831442868122, 401.48447837380286], "channel": 18, "remaining_real_s": 1199.822240509995, "virtual_time_s": 2539.901135}
+{"status": "ACTION", "macro": 17, "kind": "CLEAR", "position": [-144.48272471125668, 432.03207587788427], "channel": 18, "remaining_real_s": 1199.8189448109915, "virtual_time_s": 2552.209712}
+{"status": "ACTION", "macro": 18, "kind": "COVER", "position": [567.5000000000001, 982.9388332953378], "channel": 0, "remaining_real_s": 1199.8031608769961, "virtual_time_s": 2810.256112}
+{"status": "ACTION", "macro": 19, "kind": "LOCALIZE", "position": [613.0477994511648, 1345.6046198225495], "channel": 6, "remaining_real_s": 1199.7858186899975, "virtual_time_s": 2889.359074}
+{"status": "ACTION", "macro": 20, "kind": "CLEAR", "position": [777.0237233891287, 1335.7165874106572], "channel": 6, "remaining_real_s": 1199.7814182079892, "virtual_time_s": 2927.213831}
+{"status": "ACTION", "macro": 21, "kind": "LOCALIZE", "position": [-1261.7308414119686, 454.4611754898474], "channel": 11, "remaining_real_s": 1199.7787349869905, "virtual_time_s": 3377.4269}
+{"status": "ACTION", "macro": 22, "kind": "CLEAR", "position": [-1463.2820642692266, 385.66112536241945], "channel": 11, "remaining_real_s": 1199.7752167879953, "virtual_time_s": 3425.020957}
+{"status": "ACTION", "macro": 23, "kind": "LOCALIZE", "position": [-1042.9683052937269, -778.5526254070603], "channel": 17, "remaining_real_s": 1199.7730784319865, "virtual_time_s": 3678.573563}
+{"status": "ACTION", "macro": 24, "kind": "PROBE_CLEAR", "position": [-1329.333766511988, -1007.2370119246084], "channel": 17, "remaining_real_s": 1199.7693463829928, "virtual_time_s": 3752.023453}
+{"status": "ACTION", "macro": 25, "kind": "EXIT", "position": [-1302.7118376914996, -1001.4157756886563], "channel": 0, "remaining_real_s": 1199.7674486209871, "virtual_time_s": 3752.023453}
+{"status": "EXITED", "history_entries": 141}

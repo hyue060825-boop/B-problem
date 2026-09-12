@@ -1,0 +1,23 @@
+{
+  "problem": 4,
+  "checkpoint": "/data5/hy/B-problem/runs/q4_repaired_20260912/train/best.pt",
+  "output": "/data5/hy/B-problem/runs/q4_budget_20260912/train",
+  "seed": 210000000,
+  "validation_seed": 230000000,
+  "test_seed": 240000000,
+  "wall_seconds": 18000,
+  "max_updates": 20000,
+  "episodes_per_update": 128,
+  "validation_episodes": 256,
+  "test_episodes": 3000,
+  "workers_per_rank": 4,
+  "lr": 3e-05,
+  "ppo_epochs": 2,
+  "per_rank_batch_size": 64,
+  "grad_accum_steps": 1,
+  "entropy": 0.003,
+  "target_kl": 0.03,
+  "max_macros": 400,
+  "save_every": 10,
+  "eval_every": 100
+}

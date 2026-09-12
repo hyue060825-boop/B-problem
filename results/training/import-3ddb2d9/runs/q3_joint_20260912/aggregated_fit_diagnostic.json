@@ -1,0 +1,17 @@
+{
+  "baseline": {
+    "weighted_search_ce": 4.117584634896548,
+    "agreement": 0.016431027894535728,
+    "search_labels": 2617
+  },
+  "sft_round1": {
+    "weighted_search_ce": 3.8061681047735547,
+    "agreement": 0.01719526175009553,
+    "search_labels": 2617
+  },
+  "dagger_round2": {
+    "weighted_search_ce": 3.2997399769681954,
+    "agreement": 0.07527703477264043,
+    "search_labels": 2617
+  }
+}

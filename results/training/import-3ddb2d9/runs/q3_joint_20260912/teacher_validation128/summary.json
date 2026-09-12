@@ -1,0 +1,77 @@
+{
+  "rule": {
+    "episodes": 128,
+    "completion_rate": 1.0,
+    "mean_virtual_s": 3683.4189179531254,
+    "median_virtual_s": 3727.206545,
+    "p95_virtual_s": 4459.75940385,
+    "mean_per_source_s": 288.13844900628123,
+    "decision_p50_s": 0.0004002985078841448,
+    "decision_p95_s": 0.0039037924027070393,
+    "decision_max_s": 0.151045358274132,
+    "mean_cleared_fraction": 1.0,
+    "failures": [],
+    "means": {
+      "path_length_m": 14872.56333982127,
+      "measures": 104.203125,
+      "switches": 100.25,
+      "clear_failures": 7.5078125,
+      "macro_steps": 29.171875
+    },
+    "vs_baseline": {
+      "eligible": true,
+      "mean_delta_s": 349.298792,
+      "ci95_halfwidth_s": 68.75486005759659,
+      "robust_gain": false,
+      "selection_pass": false
+    }
+  },
+  "baseline": {
+    "episodes": 128,
+    "completion_rate": 1.0,
+    "mean_virtual_s": 3334.1201259531254,
+    "median_virtual_s": 3458.853089,
+    "p95_virtual_s": 4093.9155614999995,
+    "mean_per_source_s": 261.61531554143176,
+    "decision_p50_s": 0.0026528453454375267,
+    "decision_p95_s": 0.008111733011901379,
+    "decision_max_s": 0.04372755065560341,
+    "mean_cleared_fraction": 1.0,
+    "failures": [],
+    "means": {
+      "path_length_m": 12928.999066623774,
+      "measures": 113.15625,
+      "switches": 108.0,
+      "clear_failures": 3.140625,
+      "macro_steps": 31.7265625
+    }
+  },
+  "search_teacher": {
+    "episodes": 128,
+    "completion_rate": 1.0,
+    "mean_virtual_s": 3285.3945611406252,
+    "median_virtual_s": 3438.6008735,
+    "p95_virtual_s": 4189.8019844,
+    "mean_per_source_s": 257.7862246390214,
+    "decision_p50_s": 0.0019039686303585768,
+    "decision_p95_s": 5.6247500038705756,
+    "decision_max_s": 7.973463945090771,
+    "mean_cleared_fraction": 1.0,
+    "failures": [],
+    "means": {
+      "path_length_m": 12823.379056026995,
+      "measures": 108.5390625,
+      "switches": 103.4375,
+      "clear_failures": 3.15625,
+      "macro_steps": 32.578125
+    },
+    "vs_baseline": {
+      "eligible": true,
+      "mean_delta_s": -48.72556481250001,
+      "ci95_halfwidth_s": 33.6653092349335,
+      "robust_gain": true,
+      "selection_pass": true
+    }
+  },
+  "elapsed_s": 179.1466818396002
+}

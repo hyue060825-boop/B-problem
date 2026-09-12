@@ -1,0 +1,122 @@
+{
+  "checkpoints": {
+    "q3_candidate": {
+      "path": "results/training/import-3ddb2d9/runs/q3_joint_20260912/ppo_candidate.pt",
+      "sha256": "a924b6013f4c81f0f46c22ad33de823ed4484729d25e517bbf23aaca5a24de14",
+      "stage": "ppo",
+      "update": 683
+    },
+    "q3_baseline": {
+      "path": "results/training/import-3ddb2d9/runs/q3_joint_20260912/baseline.pt",
+      "sha256": "cf63f3c88ca534cae14a2a8dabbdedbf198f53f06aeaebe5d1aff14cbacab1c9",
+      "stage": "PPO",
+      "update": 319
+    },
+    "q4_best": {
+      "path": "results/training/import-3ddb2d9/runs/q4_budget_20260912/train/best.pt",
+      "sha256": "2329eb4d12088ebccfdc459939aeb8d5ee67f9696b4b41b1385c3c158d4c0e4a",
+      "stage": "BUDGET_DDP_PPO",
+      "update": 3499
+    },
+    "q4_baseline": {
+      "path": "results/training/import-3ddb2d9/runs/q4_repaired_20260912/train/best.pt",
+      "sha256": "da10d37282278f544c0d2c8f28713098915761187f1c3e850c2c4b2a6b2554b6",
+      "stage": "DDP_PPO",
+      "update": 59
+    }
+  },
+  "seeds": {
+    "3": [
+      310000000,
+      310000001
+    ],
+    "4": [
+      320000000,
+      320000001
+    ]
+  },
+  "provenance": {
+    "files": {
+      "src/solution/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/solution/cli.py": "ae5f77f48754022f7b0113c556cb25b7245a135b5765c1a46d145e8b42ef6c46",
+      "src/solution/control/controller.py": "5c9d14ed73713818d5fde77d99cf15b1d4af40f00547b6e11512428636126c95",
+      "src/solution/control/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/solution/search/collection.py": "78f732414bf99d1415287dcd18305f747e6f5a08624ca0ec144d479c777a7287",
+      "src/solution/search/__init__.py": "b98f017ac999b5df85ce3ad52aa59d2f8ce1313b2d82d39b1a3fa2f15943059a",
+      "src/solution/search/belief.py": "55769f26a6f55847d217d86987b60547e6f4bd225db4f1c380ecd7c00847cfa1",
+      "src/solution/search/teacher.py": "5c054bc3a9774c01f7d77c65ede73178d02c4d6f347cee3f32c9f3d095f2dc01",
+      "src/solution/geometry/core.py": "ba77a502eb2ada24151ad2057ffc2b6606ccab8c92641173211e227bc7286caf",
+      "src/solution/geometry/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/solution/planning/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/solution/planning/q2.py": "d0568dbe68e82997900eebe4633837f515e4682d507a9449284e95785ac44504",
+      "src/solution/evaluation/artifacts.py": "a4a40bdcd78e39f7201a78ed55bf6965f266ff17a6e9275686c962be0c81e2b8",
+      "src/solution/evaluation/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/solution/rl/environment.py": "c50152b35f37f6c6f974713fccf0ccef6f954903e5dcb595381c32056bbf811e",
+      "src/solution/rl/model.py": "015a5b3c4c7995f8d6e365ed4ad9aa114b8927395a2911005f7ce94068e74312",
+      "src/solution/rl/training.py": "a1031a78516492e17676b08e6c5b611160d16bb876ae075c045cbb1abc8ca371",
+      "src/solution/rl/distributed.py": "b98fae2f1941e21a939ea07cded2a6cbf8be99ea31af94e7658ac998acbf569c",
+      "src/solution/rl/__init__.py": "4df2da4c47012dcbd440058597558f4c825acce706345f2d170920d431c16876",
+      "src/solution/rl/features.py": "73238fa29d76cdb0fe9a1d89f4e0eeb23140e167b008f90895146deb19820013",
+      "src/solution/rl/joint_updates.py": "9dc23a824e671460c88bd2e1dc80b9ef8e7e4d4367a5d666836e55ab80a61365",
+      "src/solution/coverage/certificates.py": "547051708528139de87c1b336c5b1d835f334561d17f5e74078c0ce12a76d3e1",
+      "src/solution/coverage/__init__.py": "01f802a854c8dc3589ee6d65ea10db50dc49f29ab0a4e4190622dd0360c46c42",
+      "src/solution/search/gpu/kernel.py": "90e95aed6c5b5ce26b12bc2d3e85a0d0201879c24c6d13bed348476deb845ec1",
+      "src/solution/search/gpu/__init__.py": "76d343e4e154ecc4b3d5c1ffbfb3e6c352b8108de9fdfa12424d3e1f0df96182",
+      "src/solution/search/gpu/rollout.py": "8335e6a48d8b682fbff7ac70c8b1e860d8c23a6b75a83e8e48d6468e714ddaad",
+      "src/bsim/fast.py": "024fbe85c2f80cffd53ed9c07a52c323657785a0f2b24f21f2dd1eced4550f88",
+      "src/bsim/evaluation.py": "6a58238f6f7be5dafd449f0ece59137fc0ca878897dc7ae5a057a9a2e6812afd",
+      "src/bsim/http_server.py": "b5ae05ff747941780fc4d8a60d227356ee6d2489d80f7ee731e41af7cf352c10",
+      "src/bsim/clocks.py": "d1760109982198d84774b81b5f2120b80fac004ea68458720279ba1dc1a17c17",
+      "src/bsim/scenarios.py": "42fe0fd36bfac2f914fc20400a5bb7b37a3e2345a922dc1df6566234180a4d5a",
+      "src/bsim/client.py": "5d1b32ae60d2eef8e272062d5aca783a202c2de787fd18bb5720708a7a17828c",
+      "src/bsim/paths.py": "3b637fe8127bc41689e9bda83a856992bf71c9ad1fa7465ae08a6c17bfa570c3",
+      "src/bsim/web_dashboard.py": "64d75dc646c89c46c83f1e4e633cd1d322ad03b90f3bb8ca2bdd4305652e758c",
+      "src/bsim/session.py": "c5a160a87da0e0c28b0b81cb88ddac55ae14496fe74210160996dccb4a54d547",
+      "src/bsim/protocol.py": "005b796f969ca5ffe912bdd70909e269f208e02a81c45fb5be3a9f6a2b482bf6",
+      "src/bsim/profiles.py": "d00bfb79e124d1b4dced21f2b595eb5375d6287b6fbf6895443582be3cf49bff",
+      "src/bsim/__init__.py": "6c2c7cbbc1912c08c24e177b3d385f4634d3e44036aaa513b53fe799ebe86813",
+      "src/bsim/research.py": "070cb72e35466b9807f573a29dfaed32204fb5a457db006ac9a3f82b9c99b60a",
+      "src/bsim/source_audit.py": "820107b794c678c0b3f4042e5c60c98c2bf61f258c4cd8143c02006a0d6f8bbe",
+      "src/bsim/validation.py": "e2054e298a38bf2e0bc6047740a932ef7336946a982b991adc3712bc4316c718",
+      "src/bsim/noise.py": "0b149c9b1b0470e6c3d37d3b73f42757076cad8440bf91cbcf9c0b112d0fcb88",
+      "src/bsim/reference.py": "eca0ad350a6a22a9ccdd655ae1ed284cc98cec107fd1125aad5a488a8818b86f",
+      "src/bsim/env.py": "656080e77f84c5a132615f14159b9e04c8e05e199ca655c23a5088eb7e481ae0",
+      "src/bsim/strategy.py": "22340e37c64253379f297848f17cf41cbe9c551e30fe8dd1d93b52dd8706e071",
+      "src/bsim/__main__.py": "de80e0eaa11c0852527fd3c4787355cd39f9199875746da7bbd0044c970446f4",
+      "scripts/train_dagger.py": "7b31f0cad327d194ec111d752dbd2e5b36ea8b50b7c1f950225a6484fa839ec9",
+      "scripts/train_q3_joint.py": "900e21a5ac7f31bc064f74f61389252dee56e2f957101217cc8959d0c5850d22",
+      "scripts/evaluate_checkpoint.py": "6610b9f1b552c27bc3a7a3c00adf83420426ae935296a5542e13f13868f4224a",
+      "scripts/generate_q3_labels.py": "c5873a051cddda882e75bc7108052527affe56c982e0bc2c8d704bc8c4f73450",
+      "scripts/evaluate_latest_pair.py": "eef80b9289ca0d46ccbe7927e56864199d511d1e0adb62ef2ba0e701a9002630",
+      "scripts/start_training.py": "b43b902d4b2e511ac2ec3f25b3e0230fa7205dcb4a4f2af5f8dab7fb6d6f9534",
+      "scripts/q3_search_preflight.py": "07b413902c268c57fe8f3dd86df9b0c470b8a17b74911bd7343bcfc33a777ac3",
+      "scripts/check_q3_local_http.py": "d6dd8449ab332980dfde085d27bc6bdbbf8d2c7745b5280c55e1246b3576f0a8",
+      "scripts/validate_coverage.py": "c853d693af33528cc05256f03d5a3619ead2e021d1e184cf65848197142bea69",
+      "scripts/prepare_q3_joint.py": "c1cf002649a5b84597e71e98c9651cce269371291122d4789f54bd048a0cbd20",
+      "scripts/q3_gpu_search.py": "c03471bca438015ab178814d089655a15c73ae6d053c7978298242be02bd8a42",
+      "scripts/train_ddp.py": "e57e05d25e6acb0e145f14e20ac2b3320fdd28ffd19cd37d2b4d523b14201537",
+      "scripts/evaluate_3000.py": "777e49fb2e34d1358df74b462dbc389b2afe2640e7492e7c431d7e5203afe4d4",
+      "scripts/train_ppo.py": "8d089bf636ba7bf7cc06617f3424221c2955f2c767a64ba7f3975ebf2e3cf7ae",
+      "scripts/q4_preflight.py": "ce41b1e29ed7e9a8a6f1d73fbdb53a6d287e9656cf97def5867ea4b4310c5dc4",
+      "scripts/smoke_training.py": "5c675382c65e14566c17206f655ed65ce324c103adf6e3375e061866785e33f9",
+      "scripts/run_policy.py": "bd77b3ad05171405d65cb0709f44ae2e2c51329a7f98c9bb659b75373a80965e",
+      "scripts/train_budget_ddp.py": "8d59289b4931c7194d8e8a1ff5a14f3b489906a18a16cccb9d3563af88a948d3",
+      "scripts/train_bc.py": "a19f0bc031fd1d932e15eb31a7de56cbeeda425fd6b5e23efc61c6b70e7faf4e",
+      "scripts/evaluate_q3_joint.py": "557a88b883cbc6517937c270f7faf55a8987190b38f61f34579a490cba989788",
+      "scripts/export_model.py": "d75382dd4ccbec47b1c1860915c94e503cbd67a5c1d0041dcd315a8ab92ad6c5"
+    },
+    "python": "3.13.13",
+    "torch": "2.8.0+cpu",
+    "numpy": "2.5.1",
+    "profile": "research-v1-20260911",
+    "features": "normalized-public-v2"
+  },
+  "workers": 2,
+  "device": "cpu",
+  "max_macros": 400,
+  "policy": "greedy",
+  "metric": "mean_i(virtual_time_i / cleared_sources_i); failures retained and separately reported",
+  "selection": "Q3 lowest validation mean candidate plus frozen recommended baseline; Q4 validation-selected best",
+  "distribution": "LOCAL-RESEARCH research-v1-20260911, not official test data",
+  "remaining_real_time_feature": "live per-episode wall clock, same as TrainingEnv"
+}

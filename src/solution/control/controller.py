@@ -46,7 +46,12 @@ class Controller:
     def observe(self,channel,position,result,svd_deg=None,station=None):
         s=self.channels[channel];self.position=tuple(position);self.current_channel=channel
         s.observations.append(dict(position=list(position),result=result,svd_deg=svd_deg))
-        if station is not None and result=='no_signal': s.covered_stations.add(station)
+        # A coverage witness must be an accepted observation at that exact
+        # certified station, on this channel. Arbitrary station labels do not count.
+        if station in self.station_names and result=='no_signal':
+            index=self.station_names.index(station)
+            if math.dist(position,self.stations[index])<=1e-6:
+                s.covered_stations.add(station)
         if s.status in ('CLEARED','ABSENT_CERTIFIED'): return s.status
         if result in ('near','direction'):
             self.discovered.add(channel);s.status='LOCALIZING';s.cover_cache=None
@@ -61,16 +66,17 @@ class Controller:
             s.region.exclude(position,1000);s.cover_cache=None;s.cert=s.region.certificate()
             if s.cert is None:raise RuntimeError('几何异常: 存活源可行域为空')
             if s.cert['safe']:s.status='CLEARABLE'
-        if self.problem==3:
+        if self.problem==3 or set(self.station_names)<=s.covered_stations:
             self.certify_absent(channel)
         self.mark_all_remaining_absent_after_16()
         return s.status
 
     def certify_absent(self,channel):
         s=self.channels[channel]
-        if self.problem==4:
-            raise ValueError('Q4 no-signal cannot certify absence')
-        # Q4 directional sources cannot be excluded by a no-signal cover result.
+        if self.problem==4 and not set(self.station_names)<=s.covered_stations:
+            raise ValueError('Q4 absence requires every certified grid station on this channel')
+        # Individual Q4 negatives do not exclude a disk. A complete grid is
+        # different: every possible source has a visible, noncoincident vertex.
         if s.status=='UNKNOWN' and set(self.station_names)<=s.covered_stations:
             s.status='ABSENT_CERTIFIED'
         return s.status
@@ -102,15 +108,6 @@ class Controller:
         for i in nearest:
             cs=tuple(c for c,s in self.channels.items() if s.status=='UNKNOWN' or (s.status in ('FOUND','LOCALIZING') and s.localizations<3))
             if cs:out.append(Action('COVER',tuple(self.stations[i]),station=i,channels=cs,cost=math.dist(self.position,self.stations[i])/5+6*len(cs)))
-        # Q4 cannot certify absence from no-signal. If every station was visited
-        # while unknown channels remain, revisit the nearest station to obtain
-        # another observable measurement instead of dead-ending.
-        if not out:
-            remaining=tuple(c for c,s in self.channels.items() if s.status=='UNKNOWN')
-            if remaining and self.stations:
-                i=min(range(len(self.stations)),key=lambda j: math.dist(self.position,self.stations[j]))
-                out.append(Action('COVER',tuple(self.stations[i]),station=i,channels=remaining,
-                                  cost=math.dist(self.position,self.stations[i])/5+6*len(remaining)))
         for c,s in self.channels.items():
             if c not in self.discovered or s.status=='CLEARED':continue
             cert=s.cert or s.region.certificate()
