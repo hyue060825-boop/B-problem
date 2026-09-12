@@ -48,7 +48,7 @@ outputs:
 ## 5.1 Reading Order
 从左到右；图例与相邻对象或坐标轴共同阅读。
 ## 5.2 Composition
-数据面板使用明确坐标或等比例几何坐标；多面板分别解释同一问题的不同层面。
+双面板：左侧保留完整几何关系，右侧等比例放大候选区域；共用 cividis_r 色标。减小候选点及低分圈标记，将图例移到下方，顶端标明最佳已评估点的坐标与评分。
 ## 5.3 Primary Visual Anchor
 首次观测可行域。
 ## 5.4 Information Hierarchy

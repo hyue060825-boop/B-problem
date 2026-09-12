@@ -172,7 +172,7 @@ def prepare_tables():
 
 def style():
     names={f.name for f in font_manager.fontManager.ttflist}
-    chosen=next((n for n in ('Noto Sans CJK SC','WenQuanYi Zen Hei','Droid Sans Fallback') if n in names),None)
+    chosen=next((n for n in ('Noto Sans CJK SC','WenQuanYi Zen Hei','Droid Sans Fallback','PingFang SC','Arial Unicode MS') if n in names),None)
     if chosen is None:
         raise RuntimeError('请安装中文字体 Noto Sans CJK SC 或文泉驿正黑后重绘。')
     plt.rcParams.update({'font.family':'sans-serif','font.sans-serif':[chosen,'DejaVu Sans'],
@@ -244,22 +244,47 @@ def draw_q2(d):
                   [f'{Q2}/input.json',f'{Q2}/result.json','src/solution/planning/q2.py'],
                   avoid='不画虚构的第二次观测后验；不插值成未经评估的连续热力面。')
     result=d['q2'];inp=d['q2_input'];region=FeasibleRegion(inp.get('epsilon_impl_deg',1.01));region.direction(inp['position'],inp['svd_deg'])
-    fig,ax=plt.subplots(figsize=(7,4.5),layout='constrained')
-    polygon(ax,result['receive_polygon'],facecolor=TEAL,alpha=.1,edgecolor=TEAL,lw=1.5,label='保证接收区域（内近似）')
-    polygon(ax,region.vertices,facecolor=ORANGE,alpha=.17,edgecolor=ORANGE,lw=1.4,label='首次观测可行域')
+    # 总览保留等比例几何关系；右侧放大候选区域，避免局部细化点互相遮挡。
+    from matplotlib.lines import Line2D
+    fig,(ax,zoom)=plt.subplots(1,2,figsize=(8.2,4.35),gridspec_kw={'width_ratios':[1.35,1]})
     cs=[c for c in result['candidates'] if c['guaranteed_receive']]
-    v=np.array([c['position'] for c in cs]);js=np.array([c['J_s'] for c in cs]);good=js<=result['best']['J_s']+10
-    dots=ax.scatter(v[:,0],v[:,1],c=js,cmap='viridis_r',s=24,zorder=3)
-    ax.scatter(v[good,0],v[good,1],facecolors='none',edgecolors=ORANGE,s=62,lw=.9,zorder=4,label='评分 ≤ 最小值 + 10 s')
-    ax.scatter(*result['best']['position'],marker='*',s=170,c=ORANGE,edgecolors='white',lw=.8,zorder=5,label='最佳已评估点')
+    v=np.array([c['position'] for c in cs]);js=np.array([c['J_s'] for c in cs])
+    good=js<=result['best']['J_s']+10
     best_x,best_y=result['best']['position']
-    ax.annotate(f'({best_x:.2f}, {best_y:.2f}) m',xy=result['best']['position'],xytext=(1090,435),fontsize=9,
-                ha='center',arrowprops=dict(arrowstyle='-',color=ORANGE,lw=.9))
-    ax.scatter(*inp['position'],marker='x',s=45,c=INK,zorder=4)
-    ax.annotate('首次检测点',xy=inp['position'],xytext=(25,95),fontsize=9)
-    ax.set_xlim(-70,1560);ax.set_ylim(-790,790);xy_axes(ax)
-    fig.colorbar(dots,ax=ax,shrink=.78,label='有限情景评分 J / s')
-    ax.legend(loc='upper left',fontsize=8.4,frameon=False)
+    for panel in (ax,zoom):
+        polygon(panel,result['receive_polygon'],facecolor=TEAL,alpha=.10,edgecolor=TEAL,lw=1.2)
+        polygon(panel,region.vertices,facecolor=ORANGE,alpha=.20,edgecolor=ORANGE,lw=1.2)
+        dots=panel.scatter(v[:,0],v[:,1],c=js,cmap='cividis_r',s=12,
+                          edgecolors='white',linewidths=.25,zorder=3)
+        panel.scatter(v[good,0],v[good,1],facecolors='none',edgecolors=ORANGE,
+                      s=20,lw=.65,zorder=4)
+        panel.scatter(best_x,best_y,marker='*',s=115,c=ORANGE,
+                      edgecolors='white',lw=.7,zorder=6)
+        xy_axes(panel)
+        panel.tick_params(labelsize=8)
+        panel.set_xlabel('东向坐标 x / m',fontsize=9)
+        panel.set_ylabel('北向坐标 y / m',fontsize=9)
+    ax.scatter(*inp['position'],marker='x',s=32,c=INK,zorder=5)
+    ax.annotate('首次检测点',xy=inp['position'],xytext=(30,110),fontsize=8)
+    ax.annotate('首次观测可行域',xy=(1280,0),xytext=(1210,-280),fontsize=8,
+                ha='center',arrowprops=dict(arrowstyle='-',color=ORANGE,lw=.8))
+    ax.set_xlim(-90,1570);ax.set_ylim(-710,710)
+    ax.set_xticks([0,500,1000,1500]);ax.set_yticks([-600,-300,0,300,600])
+    ax.set_title('(a) 保证接收区域与候选分布',fontsize=10,pad=10)
+    zoom.set_xlim(490,1010);zoom.set_ylim(-510,610)
+    zoom.set_xticks([500,750,1000]);zoom.set_yticks([-400,-200,0,200,400,600])
+    zoom.set_title('(b) 候选区域放大',fontsize=10,pad=10)
+    fig.suptitle(f'最佳已评估点：({best_x:.2f}, {best_y:.2f}) m；J = {result["best"]["J_s"]:.2f} s',
+                 fontsize=9,y=1.02)
+    handles=[PlotPolygon([[0,0],[1,0],[0,1]],fc=TEAL,alpha=.18,ec=TEAL,label='保证接收区域（内近似）'),
+             Line2D([],[],marker='o',ls='',mfc='none',mec=ORANGE,ms=5,label='J ≤ 最小值 + 10 s'),
+             Line2D([],[],marker='*',ls='',color=ORANGE,ms=9,label='最佳已评估点')]
+    fig.legend(handles=handles,loc='lower center',bbox_to_anchor=(.48,.005),ncol=3,frameon=False,fontsize=8)
+    fig.subplots_adjust(left=.075,right=.86,bottom=.22,top=.90,wspace=.53)
+    cax=fig.add_axes([.90,.25,.016,.56])
+    cb=fig.colorbar(dots,cax=cax)
+    cb.set_label('有限情景评分 J / s（越小越好）',fontsize=8)
+    cb.ax.tick_params(labelsize=8)
     save(fig,stem)
 
 
