@@ -1,0 +1,7 @@
+{
+  "kind": "COMPLETE",
+  "stage": "ppo",
+  "run_id": "q3-search-joint-20260912",
+  "elapsed_s": 128.8522743708454,
+  "global_update": 684
+}

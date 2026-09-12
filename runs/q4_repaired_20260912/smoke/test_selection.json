@@ -1,0 +1,4 @@
+{
+  "checkpoint": "runs/q4_repaired_20260912/smoke/latest.pt",
+  "selection_uses_test": false
+}

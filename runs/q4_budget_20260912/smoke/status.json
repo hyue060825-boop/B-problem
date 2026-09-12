@@ -1,0 +1,9 @@
+{
+  "stage": "COMPLETE",
+  "elapsed_s": 17.12358914501965,
+  "consumed_s": 17.123592292889953,
+  "updates": 4,
+  "checkpoint": "runs/q4_repaired_20260912/train/best.pt",
+  "test_completion_rate": 1.0,
+  "mean_delta_s": 0.0
+}

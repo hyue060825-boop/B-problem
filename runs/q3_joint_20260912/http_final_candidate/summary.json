@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "checkpoint": "runs/q3_joint_20260912/ppo_candidate.pt",
+  "command": [
+    "scripts/run_python.sh",
+    "scripts/run_policy.py",
+    "--problem",
+    "3",
+    "--checkpoint",
+    "runs/q3_joint_20260912/ppo_candidate.pt",
+    "--robot-id",
+    "LOCAL-TRAIN",
+    "--base-url",
+    "http://127.0.0.1:38317",
+    "--device",
+    "cpu",
+    "--max-macros",
+    "400"
+  ],
+  "server": "new LOCAL-RESEARCH ephemeral port; not official service",
+  "exit_reason": "user_exit",
+  "source_count": 10,
+  "cleared": 10,
+  "first_remaining_real_s": 1199.9489280646667,
+  "last_remaining_real_s": 1199.3269883678295,
+  "requests": 141,
+  "virtual_time_s": 3752.023453,
+  "seed": 100200000
+}

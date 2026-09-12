@@ -1,0 +1,23 @@
+{
+  "status": "COMPLETE",
+  "episodes": 500,
+  "states": 4000,
+  "search_labels": 1290,
+  "retention_rows": 1329,
+  "filter_reasons": {
+    "no_confident_improvement": 2681,
+    "accepted": 1290,
+    "mandatory_exceeds_candidate_budget": 29
+  },
+  "sampling_rejections": {
+    "position_outside": 119933,
+    "history_constraint": 3319,
+    "radius_interval": 7187,
+    "proposal_exhausted": 20
+  },
+  "expanded_macros": 3933832,
+  "cpu_search_s": 14456.718816610985,
+  "elapsed_s": 476.3798983162269,
+  "labels_per_wall_s": 2.707922816894372,
+  "data_sha256": "b2d1981ad018b1704e70cdea2271046ab90e819a61cb7e7ec24c1dd18b4c7a06"
+}

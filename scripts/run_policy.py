@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Run a trained policy against a loopback simulator endpoint."""
-import argparse, json, sys
+import argparse, json, sys, time
 from pathlib import Path
 import torch
 
@@ -10,9 +10,11 @@ from bsim.client import RobotClient
 from solution.control.controller import Controller
 from solution.rl.environment import features, model_state
 from solution.rl.model import CandidatePolicy
+from solution.rl.training import verify_checkpoint_code
 
 def load_policy(path, device):
     data = torch.load(path, map_location=device, weights_only=False)
+    verify_checkpoint_code(data)
     if data.get('features') != 'normalized-public-v2':
         raise ValueError('checkpoint feature version mismatch')
     if data.get('profile') != 'research-v1-20260911':
@@ -47,9 +49,13 @@ def main():
     if code != 200 or entered.get('accepted') is not True:
         raise SystemExit(f'/enter rejected: HTTP {code} {entered}')
     controller.remaining_real_s = float(entered['remaining_real_duration_s'])
+    deadline = time.monotonic() + controller.remaining_real_s
     print(json.dumps({'status': 'ENTERED', 'remaining_real_duration_s': controller.remaining_real_s}, ensure_ascii=False), flush=True)
     with torch.inference_mode():
         for macro in range(args.max_macros):
+            controller.remaining_real_s = max(0.0, deadline - time.monotonic())
+            if controller.remaining_real_s <= 0:
+                raise SystemExit('real-time budget exhausted')
             actions = controller.legal_actions()
             if not actions:
                 raise RuntimeError('controller has no legal action before exit')
@@ -58,6 +64,9 @@ def main():
             logits, _ = model(tensors, torch.ones((1, len(actions)), dtype=torch.bool, device=device))
             action = actions[int(logits.argmax(dim=-1).item())]
             def request(path, position, channel):
+                controller.remaining_real_s = max(0.0, deadline - time.monotonic())
+                if controller.remaining_real_s <= 0:
+                    raise RuntimeError('real-time budget exhausted before next action')
                 status, body = client.act(path, position, channel)
                 if status != 200 or body.get('accepted') is not True:
                     raise RuntimeError(f'{path} rejected: HTTP {status} {body}')
@@ -66,6 +75,7 @@ def main():
             controller.execute(action, request)
             print(json.dumps({'status': 'ACTION', 'macro': macro + 1, 'kind': action.kind,
                               'position': action.position, 'channel': action.channel,
+                              'remaining_real_s': controller.remaining_real_s,
                               'virtual_time_s': controller.virtual_time}, ensure_ascii=False), flush=True)
             if action.kind == 'EXIT':
                 print(json.dumps({'status': 'EXITED', 'history_entries': len(client.history())}, ensure_ascii=False), flush=True)

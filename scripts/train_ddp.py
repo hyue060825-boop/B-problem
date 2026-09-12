@@ -1,75 +1,137 @@
 #!/usr/bin/env python3
-"""Synchronous multi-GPU research training with one DDP model per GPU."""
-import argparse, json, os, random, time
+"""Equal-step DDP BC -> DAgger -> PPO, one audited checkpoint family."""
+import argparse
+from concurrent.futures import ProcessPoolExecutor
+from datetime import timedelta
+import json
+import multiprocessing as mp
+import os
 from pathlib import Path
+import random
+import sys
+import time
+
 import numpy as np
 import torch
 import torch.distributed as dist
 from torch.nn.parallel import DistributedDataParallel as DDP
 
-ROOT=Path(__file__).resolve().parents[1]
-import sys; sys.path.insert(0,str(ROOT))
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from solution.rl.distributed import synchronized_update, audit_sync
 from solution.rl.model import CandidatePolicy
-from solution.rl.training import (collect, summarize, bc_update, ppo_update,
-                                  save_checkpoint, load_checkpoint, paired_evaluation)
+from solution.rl.training import (collect, init_worker, atomic_json, save_checkpoint,
+                                  paired_evaluation, provenance, require_authorized_research)
+
 
 def main():
-    ap=argparse.ArgumentParser(); ap.add_argument('--config',required=True); a=ap.parse_args()
-    cfg=json.loads(Path(a.config).read_text())
-    if cfg.get('profile')!='compatible_research' or not cfg.get('authorized'):
-        raise SystemExit('BLOCKED: compatible_research authorization is required')
-    if not torch.cuda.is_available(): raise SystemExit('CUDA is required for DDP training')
-    dist.init_process_group(backend='nccl')
-    rank=dist.get_rank(); world=dist.get_world_size(); local=int(os.environ.get('LOCAL_RANK',rank))
-    torch.cuda.set_device(local); device=torch.device('cuda',local)
-    seed=int(cfg['seed'])+rank; random.seed(seed); np.random.seed(seed); torch.manual_seed(seed)
-    out=Path(cfg['output']); out.mkdir(parents=True,exist_ok=True)
-    # BC uses only actor logits while PPO also trains the critic, so some
-    # parameters are intentionally unused during the BC phase.
-    model=DDP(CandidatePolicy().to(device),device_ids=[local],output_device=local,
-              find_unused_parameters=True)
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--config',required=True)
+    args=parser.parse_args();cfg=json.loads(Path(args.config).read_text())
+    if require_authorized_research(cfg):raise ValueError('authorized compatible_research required')
+    torch.set_num_threads(1)
+    local=int(os.environ['LOCAL_RANK']);torch.cuda.set_device(local)
+    device=torch.device('cuda',local)
+    dist.init_process_group('nccl',timeout=timedelta(minutes=20))
+    rank=dist.get_rank();world=dist.get_world_size()
+    out=Path(cfg['output'])
+    if (out/'latest.pt').exists():raise ValueError('use a fresh output directory; automatic overwrite forbidden')
+    cfg={**cfg,'ddp_world_size':world,'cuda_visible_devices':os.environ.get('CUDA_VISIBLE_DEVICES'),
+         'training_algorithm':'ddp-equal-step-v2'}
+    updates=cfg['ppo_updates'];budget=cfg.get('max_macros',400)
+    block=1000000;base=cfg['seed']
+    counts={'BC':cfg['bc_episodes'],'DAGGER':cfg['dagger_episodes'],
+            'PPO':cfg['episodes_per_update'],'VALIDATION':cfg['eval_episodes'],
+            'TEST':cfg.get('test_episodes',512)}
+    offsets={'BC':0,'DAGGER':block,'PPO':2*block,'VALIDATION':3*block,'TEST':4*block}
+    for stage in ('BC','DAGGER','PPO'):
+        if counts[stage]<world or counts[stage]%world:
+            raise ValueError(f'{stage} global episode count must be divisible by world_size')
+    if updates*counts['PPO']>=block or cfg.get('dagger_rounds',2)*counts['DAGGER']>=block:
+        raise ValueError('seed blocks would overlap')
+    def seeds(stage,iteration=0,shard=True):
+        start=base+offsets[stage]+iteration*counts[stage]
+        n=counts[stage]
+        return range(start+rank*n//world,start+(rank+1)*n//world) if shard else range(start,start+n)
+    random.seed(base+rank);np.random.seed(base+rank);torch.manual_seed(base+rank)
+    model=DDP(CandidatePolicy().to(device),device_ids=[local])
     opt=torch.optim.Adam(model.parameters(),lr=cfg.get('lr',3e-4))
-    started=time.perf_counter(); updates=int(cfg.get('ppo_updates',256)); global_eps=int(cfg.get('episodes_per_update',64))
-    local_eps=max(1,global_eps//world)
-    # BC uses disjoint teacher episodes on each rank, then synchronizes updates.
-    base=collect(None,int(cfg['problem']),range(int(cfg['seed'])+rank*100000, int(cfg['seed'])+rank*100000+int(cfg.get('bc_episodes',128))))
-    rows=[r for ep,_ in base for r in ep]
-    with model.join():
-        bc=bc_update(model,opt,rows,device,cfg.get('bc_epochs',6),cfg.get('batch_size',256))
+    started=time.perf_counter();best=float('inf');recent=[]
+    initial_provenance=provenance()
+    def event(stage,**data):
+        if rank!=0:return
+        row=dict(stage=stage,elapsed_s=time.perf_counter()-started,**data)
+        print(json.dumps(row,ensure_ascii=False,allow_nan=False),flush=True)
+        with (out/'metrics.jsonl').open('a') as f:f.write(json.dumps(row,ensure_ascii=False)+'\n')
+        atomic_json(out/'status.json',row)
+    if rank==0:
+        out.mkdir(parents=True,exist_ok=True)
+        atomic_json(out/'config.json',cfg);atomic_json(out/'provenance.json',initial_provenance)
+        atomic_json(out/'seed_manifest.json',{
+            stage:dict(start=base+offsets[stage],count=counts[stage]*(updates if stage=='PPO' else cfg.get('dagger_rounds',2) if stage=='DAGGER' else 1))
+            for stage in offsets})
+        event('INIT',world_size=world,physical_gpus=cfg['cuda_visible_devices'])
     dist.barrier()
-    if rank==0:
-        (out/'config.json').write_text(json.dumps({**cfg,'ddp_world_size':world},ensure_ascii=False,indent=2))
-        print(json.dumps({'stage':'DDP_INIT','world_size':world,'device_count':torch.cuda.device_count(),'local_episodes':local_eps},ensure_ascii=False),flush=True)
-        print(json.dumps({'stage':'BC','elapsed_s':time.perf_counter()-started,**bc},ensure_ascii=False),flush=True)
-    best=float('inf')
-    for idx in range(updates):
+    def campaign(pool,stage,iteration=0,policy=None,behavior='sample',require_complete=False):
         t=time.perf_counter()
-        start=int(cfg['seed'])+200000+idx*global_eps+rank*10000000
-        episodes=collect(None,int(cfg['problem']),range(start,start+local_eps),model.module,'sample',cfg.get('max_macros',400))
-        # Episode lengths differ by random scene, so ranks can have different
-        # numbers of mini-batches. DDP.join() shadow-collectives keep shorter
-        # ranks synchronized until the longest rank finishes.
-        with model.join():
-            stats=ppo_update(model,opt,episodes,device,cfg.get('ppo_epochs',4),cfg.get('batch_size',256),.01)
-        local_n=torch.tensor([len(episodes),sum(int(m['completion']) for _,m in episodes),sum(len(ep) for ep,_ in episodes)],device=device,dtype=torch.long)
-        dist.all_reduce(local_n,op=dist.ReduceOp.SUM)
-        elapsed=time.perf_counter()-t; dist.barrier()
-        if rank==0:
-            completion=float(local_n[1].item()/max(1,local_n[0].item()))
-            eta=elapsed*(updates-idx-1)
-            event={'stage':'DDP_PPO','update':idx+1,'total_updates':updates,'world_size':world,'global_episodes':int(local_n[0]),'completion_rate':completion,'macros':int(local_n[2]),'macros_per_s':float(local_n[2].item()/max(elapsed,1e-9)),'eta_s':eta,**stats}
-            print(json.dumps(event,ensure_ascii=False),flush=True)
-            with (out/'metrics.jsonl').open('a') as fh:
-                fh.write(json.dumps(event,ensure_ascii=False)+'\n')
-            save_checkpoint(out/'latest.pt',model.module,opt,cfg,'DDP_PPO',idx,stats,{'world_size':world})
+        result=collect(pool,cfg['problem'],seeds(stage,iteration),policy,behavior,budget)
+        metrics=[m for _,m in result];gathered=[None]*world
+        dist.all_gather_object(gathered,metrics)
+        all_metrics=[m for group in gathered for m in group]
+        if rank==0:atomic_json(out/f'{stage.lower()}_{iteration:04d}_episodes.json',all_metrics)
+        anomalies=[m for m in all_metrics if m['error'] not in (None,'macro_budget','virtual_timeout')]
+        if anomalies:raise RuntimeError(f'{stage} invariant failure: {anomalies[0]}')
+        complete=sum(m['completion'] for m in all_metrics)/len(all_metrics)
+        if require_complete and complete<1.0:
+            raise RuntimeError(f'{stage} completion {complete}; stopping before learning bad trajectories')
+        return result,dict(completion_rate=complete,episodes=len(all_metrics),
+                           macros=sum(m['macro_steps'] for m in all_metrics),sample_s=time.perf_counter()-t,
+                           mean_virtual_s=float(np.mean([m['virtual_time_s'] for m in all_metrics])))
+    def validate(pool,update,stage='VALIDATION'):
+        nonlocal best
         dist.barrier()
-    if rank==0:
-        # Evaluate the synchronized rank-0 weights on fresh seeds.
-        val=paired_evaluation(None,int(cfg['problem']),range(int(cfg['seed'])+900000,int(cfg['seed'])+900016),model.module)
-        (out/'validation_final.json').write_text(json.dumps(val,ensure_ascii=False,indent=2))
-        if val['selection_pass']:
-            save_checkpoint(out/'best.pt',model.module,opt,cfg,'DDP_PPO',updates-1,val,{'world_size':world})
-        print(json.dumps({'stage':'DDP_COMPLETE','updates':updates,'selection_pass':val['selection_pass'],'paired_delta_s':val['mean_paired_delta_s'],'checkpoint':str(out/'latest.pt')},ensure_ascii=False),flush=True)
-    dist.barrier(); dist.destroy_process_group()
+        if rank==0:
+            val=paired_evaluation(pool,cfg['problem'],seeds(stage,shard=False),model.module,budget)
+            atomic_json(out/f'{stage.lower()}_{update:04d}.json',val)
+            event(stage,update=update,completion_rate=val['student']['completion_rate'],
+                  paired_delta_s=val['mean_paired_delta_s'],selection_pass=val['selection_pass'])
+            if stage=='VALIDATION' and val['selection_pass'] and val['mean_paired_delta_s']<best:
+                best=val['mean_paired_delta_s']
+                save_checkpoint(out/'best.pt',model.module,opt,cfg,'DDP_PPO',update-1,val,{'best_delta':best})
+        dist.barrier()
+    with ProcessPoolExecutor(cfg.get('workers_per_rank',2),mp_context=mp.get_context('spawn'),initializer=init_worker) as pool:
+        base_episodes,metrics=campaign(pool,'BC',require_complete=True)
+        event('BASELINE',**metrics)
+        stats=synchronized_update(model,opt,base_episodes,device,'BC',cfg.get('bc_epochs',6),cfg.get('batch_size',128))
+        event('BC',**stats)
+        for iteration in range(cfg.get('dagger_rounds',2)):
+            eps,metrics=campaign(pool,'DAGGER',iteration,model.module,'greedy',require_complete=True)
+            stats=synchronized_update(model,opt,base_episodes+eps,device,'BC',cfg.get('dagger_epochs',3),cfg.get('batch_size',128))
+            event('DAGGER',round=iteration+1,**metrics,**stats)
+        validate(pool,0)
+        for idx in range(updates):
+            t=time.perf_counter()
+            episodes,metrics=campaign(pool,'PPO',idx,model.module)
+            update_start=time.perf_counter()
+            stats=synchronized_update(model,opt,episodes,device,'PPO',cfg.get('ppo_epochs',4),cfg.get('batch_size',128))
+            update_s=time.perf_counter()-update_start
+            elapsed=torch.tensor(time.perf_counter()-t,device=device);dist.all_reduce(elapsed,op=dist.ReduceOp.MAX)
+            recent.append(float(elapsed));eta=float(np.mean(recent[-10:]))*(updates-idx-1)
+            event('DDP_PPO',update=idx+1,total_updates=updates,eta_s=eta,update_s=update_s,
+                  macros_per_s=metrics['macros']/float(elapsed),**metrics,**stats)
+            if rank==0:
+                if provenance()!=initial_provenance:raise RuntimeError('source changed during training; preserve checkpoint and stop')
+                save_checkpoint(out/'latest.pt',model.module,opt,cfg,'DDP_PPO',idx,stats,{'best_delta':best})
+            dist.barrier()
+            if (idx+1)%cfg.get('eval_every',20)==0 or idx+1==updates:validate(pool,idx+1)
+        # Held-out test is evaluated only once after model selection is frozen.
+        if rank==0:
+            selected=out/('best.pt' if (out/'best.pt').exists() else 'latest.pt')
+            data=torch.load(selected,map_location='cpu',weights_only=False)
+            model.module.load_state_dict(data['model'])
+            atomic_json(out/'test_selection.json',{'checkpoint':str(selected),'selection_uses_test':False})
+        validate(pool,updates,'TEST')
+        event('COMPLETE',updates=updates,world_size=world,best_selected=(out/'best.pt').exists())
+    dist.destroy_process_group()
 
-if __name__=='__main__': main()
+
+if __name__=='__main__':main()
