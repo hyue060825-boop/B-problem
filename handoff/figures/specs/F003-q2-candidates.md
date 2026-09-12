@@ -48,7 +48,7 @@ outputs:
 ## 5.1 Reading Order
 从左到右；图例与相邻对象或坐标轴共同阅读。
 ## 5.2 Composition
-单面板横向展示接收区域：横轴为北向 y，纵轴为东向 x；交换全部几何对象与散点的显示坐标，保持等比例，原始物理坐标和评分不变。使用 cividis_r 色标及底部图例。
+数据面板使用明确坐标或等比例几何坐标；多面板分别解释同一问题的不同层面。
 ## 5.3 Primary Visual Anchor
 首次观测可行域。
 ## 5.4 Information Hierarchy

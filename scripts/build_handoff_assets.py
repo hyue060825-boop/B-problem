@@ -244,38 +244,22 @@ def draw_q2(d):
                   [f'{Q2}/input.json',f'{Q2}/result.json','src/solution/planning/q2.py'],
                   avoid='不画虚构的第二次观测后验；不插值成未经评估的连续热力面。')
     result=d['q2'];inp=d['q2_input'];region=FeasibleRegion(inp.get('epsilon_impl_deg',1.01));region.direction(inp['position'],inp['svd_deg'])
-    # 仅交换显示轴：横轴为北向 y，纵轴为东向 x；物理坐标与评分不变。
-    fig,ax=plt.subplots(figsize=(7.5,4.5))
-    polygon(ax,np.asarray(result['receive_polygon'])[:,::-1],facecolor=TEAL,alpha=.12,
-            edgecolor=TEAL,lw=1.3,label='保证接收区域（内近似）')
-    polygon(ax,np.asarray(region.vertices)[:,::-1],facecolor=ORANGE,alpha=.20,
-            edgecolor=ORANGE,lw=1.2,label='首次观测可行域')
+    fig,ax=plt.subplots(figsize=(7,4.5),layout='constrained')
+    polygon(ax,result['receive_polygon'],facecolor=TEAL,alpha=.1,edgecolor=TEAL,lw=1.5,label='保证接收区域（内近似）')
+    polygon(ax,region.vertices,facecolor=ORANGE,alpha=.17,edgecolor=ORANGE,lw=1.4,label='首次观测可行域')
     cs=[c for c in result['candidates'] if c['guaranteed_receive']]
-    v=np.array([c['position'] for c in cs]);js=np.array([c['J_s'] for c in cs])
-    good=js<=result['best']['J_s']+10
-    dots=ax.scatter(v[:,1],v[:,0],c=js,cmap='cividis_r',s=15,
-                    edgecolors='white',linewidths=.25,zorder=3)
-    ax.scatter(v[good,1],v[good,0],facecolors='none',edgecolors=ORANGE,
-               s=25,lw=.7,zorder=4,label='J ≤ 最小值 + 10 s')
+    v=np.array([c['position'] for c in cs]);js=np.array([c['J_s'] for c in cs]);good=js<=result['best']['J_s']+10
+    dots=ax.scatter(v[:,0],v[:,1],c=js,cmap='viridis_r',s=24,zorder=3)
+    ax.scatter(v[good,0],v[good,1],facecolors='none',edgecolors=ORANGE,s=62,lw=.9,zorder=4,label='评分 ≤ 最小值 + 10 s')
+    ax.scatter(*result['best']['position'],marker='*',s=170,c=ORANGE,edgecolors='white',lw=.8,zorder=5,label='最佳已评估点')
     best_x,best_y=result['best']['position']
-    ax.scatter(best_y,best_x,marker='*',s=135,c=ORANGE,edgecolors='white',lw=.8,
-               zorder=6,label='最佳已评估点')
-    ax.annotate(f'(x, y) = ({best_x:.2f}, {best_y:.2f}) m\nJ = {result["best"]["J_s"]:.2f} s',
-                xy=(best_y,best_x),xytext=(430,1170),fontsize=8.5,ha='left',
-                arrowprops=dict(arrowstyle='-',color=ORANGE,lw=.8))
-    ax.scatter(inp['position'][1],inp['position'][0],marker='x',s=35,c=INK,zorder=5)
-    ax.annotate('首次检测点',xy=(inp['position'][1],inp['position'][0]),
-                xytext=(50,65),fontsize=9)
-    ax.set_aspect('equal');ax.set_xlim(-1100,1100);ax.set_ylim(-70,1570)
-    ax.set_xlabel('北向坐标 y / m');ax.set_ylabel('东向坐标 x / m')
-    ax.set_xticks([-1000,-500,0,500,1000]);ax.set_yticks([0,500,1000,1500])
-    ax.grid(alpha=.14,zorder=0)
-    fig.subplots_adjust(left=.10,right=.84,bottom=.23,top=.97)
-    fig.legend(*ax.get_legend_handles_labels(),loc='lower center',
-               bbox_to_anchor=(.47,.005),ncol=2,frameon=False,fontsize=8.5)
-    cax=fig.add_axes([.87,.28,.018,.59])
-    cb=fig.colorbar(dots,cax=cax);cb.set_label('有限情景评分 J / s（越小越好）',fontsize=9)
-    cb.ax.tick_params(labelsize=8)
+    ax.annotate(f'({best_x:.2f}, {best_y:.2f}) m',xy=result['best']['position'],xytext=(1090,435),fontsize=9,
+                ha='center',arrowprops=dict(arrowstyle='-',color=ORANGE,lw=.9))
+    ax.scatter(*inp['position'],marker='x',s=45,c=INK,zorder=4)
+    ax.annotate('首次检测点',xy=inp['position'],xytext=(25,95),fontsize=9)
+    ax.set_xlim(-70,1560);ax.set_ylim(-790,790);xy_axes(ax)
+    fig.colorbar(dots,ax=ax,shrink=.78,label='有限情景评分 J / s')
+    ax.legend(loc='upper left',fontsize=8.4,frameon=False)
     save(fig,stem)
 
 
