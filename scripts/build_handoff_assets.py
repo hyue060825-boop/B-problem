@@ -244,46 +244,37 @@ def draw_q2(d):
                   [f'{Q2}/input.json',f'{Q2}/result.json','src/solution/planning/q2.py'],
                   avoid='不画虚构的第二次观测后验；不插值成未经评估的连续热力面。')
     result=d['q2'];inp=d['q2_input'];region=FeasibleRegion(inp.get('epsilon_impl_deg',1.01));region.direction(inp['position'],inp['svd_deg'])
-    # 总览保留等比例几何关系；右侧放大候选区域，避免局部细化点互相遮挡。
-    from matplotlib.lines import Line2D
-    fig,(ax,zoom)=plt.subplots(1,2,figsize=(8.2,4.35),gridspec_kw={'width_ratios':[1.35,1]})
+    # 仅交换显示轴：横轴为北向 y，纵轴为东向 x；物理坐标与评分不变。
+    fig,ax=plt.subplots(figsize=(7.5,4.5))
+    polygon(ax,np.asarray(result['receive_polygon'])[:,::-1],facecolor=TEAL,alpha=.12,
+            edgecolor=TEAL,lw=1.3,label='保证接收区域（内近似）')
+    polygon(ax,np.asarray(region.vertices)[:,::-1],facecolor=ORANGE,alpha=.20,
+            edgecolor=ORANGE,lw=1.2,label='首次观测可行域')
     cs=[c for c in result['candidates'] if c['guaranteed_receive']]
     v=np.array([c['position'] for c in cs]);js=np.array([c['J_s'] for c in cs])
     good=js<=result['best']['J_s']+10
+    dots=ax.scatter(v[:,1],v[:,0],c=js,cmap='cividis_r',s=15,
+                    edgecolors='white',linewidths=.25,zorder=3)
+    ax.scatter(v[good,1],v[good,0],facecolors='none',edgecolors=ORANGE,
+               s=25,lw=.7,zorder=4,label='J ≤ 最小值 + 10 s')
     best_x,best_y=result['best']['position']
-    for panel in (ax,zoom):
-        polygon(panel,result['receive_polygon'],facecolor=TEAL,alpha=.10,edgecolor=TEAL,lw=1.2)
-        polygon(panel,region.vertices,facecolor=ORANGE,alpha=.20,edgecolor=ORANGE,lw=1.2)
-        dots=panel.scatter(v[:,0],v[:,1],c=js,cmap='cividis_r',s=12,
-                          edgecolors='white',linewidths=.25,zorder=3)
-        panel.scatter(v[good,0],v[good,1],facecolors='none',edgecolors=ORANGE,
-                      s=20,lw=.65,zorder=4)
-        panel.scatter(best_x,best_y,marker='*',s=115,c=ORANGE,
-                      edgecolors='white',lw=.7,zorder=6)
-        xy_axes(panel)
-        panel.tick_params(labelsize=8)
-        panel.set_xlabel('东向坐标 x / m',fontsize=9)
-        panel.set_ylabel('北向坐标 y / m',fontsize=9)
-    ax.scatter(*inp['position'],marker='x',s=32,c=INK,zorder=5)
-    ax.annotate('首次检测点',xy=inp['position'],xytext=(30,110),fontsize=8)
-    ax.annotate('首次观测可行域',xy=(1280,0),xytext=(1210,-280),fontsize=8,
-                ha='center',arrowprops=dict(arrowstyle='-',color=ORANGE,lw=.8))
-    ax.set_xlim(-90,1570);ax.set_ylim(-710,710)
-    ax.set_xticks([0,500,1000,1500]);ax.set_yticks([-600,-300,0,300,600])
-    ax.set_title('(a) 保证接收区域与候选分布',fontsize=10,pad=10)
-    zoom.set_xlim(490,1010);zoom.set_ylim(-510,610)
-    zoom.set_xticks([500,750,1000]);zoom.set_yticks([-400,-200,0,200,400,600])
-    zoom.set_title('(b) 候选区域放大',fontsize=10,pad=10)
-    fig.suptitle(f'最佳已评估点：({best_x:.2f}, {best_y:.2f}) m；J = {result["best"]["J_s"]:.2f} s',
-                 fontsize=9,y=1.02)
-    handles=[PlotPolygon([[0,0],[1,0],[0,1]],fc=TEAL,alpha=.18,ec=TEAL,label='保证接收区域（内近似）'),
-             Line2D([],[],marker='o',ls='',mfc='none',mec=ORANGE,ms=5,label='J ≤ 最小值 + 10 s'),
-             Line2D([],[],marker='*',ls='',color=ORANGE,ms=9,label='最佳已评估点')]
-    fig.legend(handles=handles,loc='lower center',bbox_to_anchor=(.48,.005),ncol=3,frameon=False,fontsize=8)
-    fig.subplots_adjust(left=.075,right=.86,bottom=.22,top=.90,wspace=.53)
-    cax=fig.add_axes([.90,.25,.016,.56])
-    cb=fig.colorbar(dots,cax=cax)
-    cb.set_label('有限情景评分 J / s（越小越好）',fontsize=8)
+    ax.scatter(best_y,best_x,marker='*',s=135,c=ORANGE,edgecolors='white',lw=.8,
+               zorder=6,label='最佳已评估点')
+    ax.annotate(f'(x, y) = ({best_x:.2f}, {best_y:.2f}) m\nJ = {result["best"]["J_s"]:.2f} s',
+                xy=(best_y,best_x),xytext=(430,1170),fontsize=8.5,ha='left',
+                arrowprops=dict(arrowstyle='-',color=ORANGE,lw=.8))
+    ax.scatter(inp['position'][1],inp['position'][0],marker='x',s=35,c=INK,zorder=5)
+    ax.annotate('首次检测点',xy=(inp['position'][1],inp['position'][0]),
+                xytext=(50,65),fontsize=9)
+    ax.set_aspect('equal');ax.set_xlim(-1100,1100);ax.set_ylim(-70,1570)
+    ax.set_xlabel('北向坐标 y / m');ax.set_ylabel('东向坐标 x / m')
+    ax.set_xticks([-1000,-500,0,500,1000]);ax.set_yticks([0,500,1000,1500])
+    ax.grid(alpha=.14,zorder=0)
+    fig.subplots_adjust(left=.10,right=.84,bottom=.23,top=.97)
+    fig.legend(*ax.get_legend_handles_labels(),loc='lower center',
+               bbox_to_anchor=(.47,.005),ncol=2,frameon=False,fontsize=8.5)
+    cax=fig.add_axes([.87,.28,.018,.59])
+    cb=fig.colorbar(dots,cax=cax);cb.set_label('有限情景评分 J / s（越小越好）',fontsize=9)
     cb.ax.tick_params(labelsize=8)
     save(fig,stem)
 
