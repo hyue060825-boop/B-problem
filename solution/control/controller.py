@@ -4,7 +4,7 @@ import math
 import numpy as np
 from solution.coverage.certificates import omni_skeleton, triangular_grid, verify_directional_certificate
 from solution.geometry.core import FeasibleRegion
-from solution.planning.probe import ProbePlan, build_probe_plan, plan_route_matches
+from solution.planning.probe import ProbePlan, build_probe_plan, plan_route_matches, reorder_probe_plan
 from solution.planning.route import insertion_detour, plan_open_route
 from solution.belief.q4_directional import Q4DirectionalBelief
 
@@ -45,6 +45,14 @@ class Controller:
             'coverage_route_length_planned_m':0.,'coverage_route_actual_m':0.,'route_detour_m':0.,'clear_insertion_count':0,
             'localize_insertion_count':0,'station_visits':0,'station_revisits':0,'per_channel_certificate_measurements':0}
 
+    def _update_q4_belief(self, channel):
+        """Refresh advisory particles from this channel's public history."""
+        s=self.channels[channel]
+        previous=self.q4_beliefs.get(channel)
+        self.q4_beliefs[channel]=Q4DirectionalBelief.from_public_history(
+            s.region.vertices,s.observations,seed=104729*len(s.observations)+9176,count=128,
+            initial=previous.hypotheses if previous else ())
+
     def observe(self,channel,position,result,svd_deg=None,station=None,source='ACTIVE'):
         s=self.channels[channel]; key=exact_position(position); self.position=key; self.current_channel=channel
         s.observations.append({'position':list(key),'result':result,'svd_deg':svd_deg,'source':source}); s.observation_positions.add(key)
@@ -65,16 +73,15 @@ class Controller:
             s.cert=s.region.certificate()
             if s.cert is None: raise RuntimeError('positive observation left empty feasible region')
             if s.cert['safe']: s.status='CLEARABLE'
-            if self.problem == 4 and len(s.observations) % 4 == 0:
-                self.q4_beliefs[channel] = Q4DirectionalBelief.from_public_history(s.region.vertices, s.observations, seed=channel + len(s.observations), count=8)
+            if self.problem == 4:
+                self._update_q4_belief(channel)
         elif result=='no_signal' and self.problem==3 and channel in self.discovered:
             s.region.exclude(key,1000); s.probe_plan=None; s.cert=s.region.certificate()
             if s.cert is None: raise RuntimeError('known source has empty feasible region')
             if s.cert['safe']: s.status='CLEARABLE'
         elif result == 'no_signal' and self.problem == 4 and channel in self.discovered:
             # Preserve the disjunctive planning belief; no certified exclusion.
-            if len(s.observations) % 4 == 0:
-                self.q4_beliefs[channel] = Q4DirectionalBelief.from_public_history(s.region.vertices, s.observations, seed=channel + len(s.observations), count=8)
+            self._update_q4_belief(channel)
         if self.problem==3 or set(self.station_names)<=s.covered_stations: self.certify_absent(channel)
         self.mark_all_remaining_absent_after_16(); return s.status
 
@@ -109,13 +116,28 @@ class Controller:
         if not cert or not cert['safe']: return None
         detour,_=insertion_detour(self.position,p,route,self.stations); self.diagnostics['clear_insertion_count']+=1
         return Action('CLEAR',p,c,cost=math.dist(self.position,p)/5+5,route_detour_m=detour)
-    def _localize_points(self,s,center,radius):
+    def _localize_points(self,channel,s,center,radius):
         v=s.region.vertices
         if len(v)>=2:
             _,_,vh=np.linalg.svd(v-np.mean(v,axis=0),full_matrices=False); axis=vh[0]; flank=np.array([-axis[1],axis[0]])
         else:
             last=next((o for o in reversed(s.observations) if o['result']=='direction'),None); t=math.radians(last['svd_deg']) if last else 0.; flank=np.array([-math.sin(t),math.cos(t)])
-        d=min(420.,max(35.,radius*.45)); return [exact_position(np.asarray(center)+sign*flank*d) for sign in (-1,1)]
+        d=min(420.,max(35.,radius*.45))
+        points=[exact_position(np.asarray(center)+sign*flank*d) for sign in (-1,1)]
+        if self.problem==4:
+            # Add a bounded, diverse public-geometry pool. Belief only ranks
+            # candidates; it cannot certify clear/absence or remove fallback.
+            for scale in (.25,.6):
+                radius2=min(650.,max(45.,radius*scale))
+                for angle in np.linspace(0,2*math.pi,8,endpoint=False):
+                    points.append(exact_position(np.asarray(center)+radius2*np.array([math.cos(angle),math.sin(angle)])))
+            belief=self.q4_beliefs.get(channel)
+            if belief and belief.summary_at(center).valid:
+                points=belief.best_localize_points(points)
+        unique=[]
+        for p in points:
+            if p not in unique: unique.append(p)
+        return unique[:8]
     def legal_actions(self):
         if self.exit_allowed(): return [Action('EXIT',self.position)]
         near=[]
@@ -131,7 +153,10 @@ class Controller:
         for i in station_ids:
             required=self._coverage_required(i)
             if not required: continue
-            known=tuple(c for c,s in self.channels.items() if s.status in ('FOUND','LOCALIZING') and exact_position(self.stations[i]) not in s.observation_positions)
+            known=[c for c,s in self.channels.items() if s.status in ('FOUND','LOCALIZING') and exact_position(self.stations[i]) not in s.observation_positions]
+            known.sort(key=lambda c:(-self.q4_beliefs[c].summary_at(self.stations[i]).receive_entropy
+                                     if c in self.q4_beliefs else 0.,c))
+            known=tuple(known)
             sets=[('CERT_REQUIRED',required)]+([('CERT_PLUS_HIGH_VALUE_KNOWN',required+known[:3])] if known else [])
             for mode,chs in sets:
                 p=exact_position(self.stations[i]); out.append(Action('COVER',p,station=i,channels=tuple(dict.fromkeys(chs)),cost=math.dist(self.position,p)/5+6*len(chs),scan_mode=mode,route_rank=ranks.get(i,-1)))
@@ -144,7 +169,9 @@ class Controller:
                 a=self._safe_action(c,s,route)
                 if a: out.append(a)
                 continue
-            if r<=90 or s.localizations>=2 or not station_ids:
+            belief=self.q4_beliefs.get(c)
+            probe_probability=belief.summary_at(center).near_probability if belief else 0.
+            if r<=90 or probe_probability>=.35 or s.localizations>=6 or not station_ids:
                 # Probe geometry is deterministic for a region version. Reuse
                 # the cached plan across policy observations; rebuilding the
                 # recursive cover dominated Q4 rollout time.
@@ -158,10 +185,17 @@ class Controller:
                     points=tuple(plan.points[i] for i in order.ordered_ids)
                     plan=replace(plan,points=points,estimated_move_s=order.length_m/5.0,
                                  worst_case_clear_s=order.length_m/5.0+3.0*max(0,len(points)-1)+5.0)
-                out.append(Action('PROBE_STEP',plan.first_point,c,cost=plan.estimated_move_s+3,plan=plan))
+                plans=[plan]
+                if belief and belief.summary_at(center).valid and len(plan.points)>1:
+                    scores=belief.probe_scores(plan.points)
+                    for index in np.argsort(-scores,kind='stable')[:2]:
+                        if int(index)!=0:plans.append(reorder_probe_plan(plan,self.position,int(index)))
+                for candidate_plan in plans:
+                    out.append(Action('PROBE_STEP',candidate_plan.first_point,c,
+                                      cost=math.dist(self.position,candidate_plan.first_point)/5+3,plan=candidate_plan))
                 if s.clear_attempts>=3 or len(plan.points)<=2: out.append(Action('FULL_PROBE_FALLBACK',plan.first_point,c,cost=plan.worst_case_clear_s,plan=plan))
             if s.localizations<6:
-                for p in self._localize_points(s,center,r):
+                for p in self._localize_points(c,s,center,r):
                     if p in s.observation_positions: self.diagnostics['duplicate_exact_measure_candidates']+=1; continue
                     self.diagnostics['localize_insertion_count']+=1; out.append(Action('LOCALIZE',p,c,cost=math.dist(self.position,p)/5+6))
         return out
@@ -169,8 +203,14 @@ class Controller:
         def score(a):
             if a.kind=='EXIT':return -1e9
             if a.kind=='CLEAR':return a.cost-300
-            if a.kind=='PROBE_STEP':return a.cost-155
-            if a.kind=='FULL_PROBE_FALLBACK':return a.cost-145
+            if a.kind=='PROBE_STEP':
+                belief=self.q4_beliefs.get(a.channel)
+                probability=belief.summary_at(a.position).near_probability if belief else 0.
+                return a.cost-155-500*probability
+            if a.kind=='FULL_PROBE_FALLBACK':
+                # After bounded public failed clears, finish the finite certified
+                # cover instead of repeatedly preferring its cheap first step.
+                return -1e8 if self.channels[a.channel].clear_attempts>=3 else a.cost-145
             if a.kind=='COVER':return a.cost-10*sum(self.channels[c].status=='UNKNOWN' for c in a.channels)+.02*a.route_rank
             return a.cost+50+25*self.channels[a.channel].localizations
         return min(range(len(actions)),key=lambda i:(score(actions[i]),i))

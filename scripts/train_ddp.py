@@ -21,7 +21,7 @@ from solution.rl.distributed import synchronized_update, audit_sync
 from solution.rl.model import StructuralCandidatePolicy
 from solution.rl.structural_features import FEATURE_VERSION as STRUCTURAL_FEATURE_VERSION
 from solution.rl.training import (collect, init_worker, atomic_json, save_checkpoint,
-                                  paired_evaluation, provenance, require_authorized_research)
+                                  summarize, provenance, require_authorized_research)
 
 
 def main():
@@ -29,6 +29,8 @@ def main():
     parser.add_argument('--config',required=True)
     args=parser.parse_args();cfg=json.loads(Path(args.config).read_text())
     if require_authorized_research(cfg):raise ValueError('authorized compatible_research required')
+    if cfg.get('model_version','candidate-cross-attn-v2')!='candidate-cross-attn-v2':
+        raise ValueError('this entry point trains only the v2 candidate-query attention model')
     torch.set_num_threads(1)
     local=int(os.environ['LOCAL_RANK']);torch.cuda.set_device(local)
     device=torch.device('cuda',local)
@@ -45,6 +47,9 @@ def main():
             'TEST':cfg.get('test_episodes',512)}
     offsets={'BC':0,'DAGGER':block,'PPO':2*block,'VALIDATION':3*block,'TEST':4*block}
     for stage in ('BC','DAGGER','PPO'):
+        if counts[stage]<world or counts[stage]%world:
+            raise ValueError(f'{stage} global episode count must be divisible by world_size')
+    for stage in ('VALIDATION','TEST'):
         if counts[stage]<world or counts[stage]%world:
             raise ValueError(f'{stage} global episode count must be divisible by world_size')
     if updates*counts['PPO']>=block or cfg.get('dagger_rounds',2)*counts['DAGGER']>=block:
@@ -91,8 +96,23 @@ def main():
     def validate(pool,update,stage='VALIDATION'):
         nonlocal best
         dist.barrier()
+        local_seeds=seeds(stage,shard=True)
+        teacher=collect(pool,cfg['problem'],local_seeds,max_macros=budget,structural=structural)
+        student=collect(pool,cfg['problem'],local_seeds,model.module,'greedy',budget,structural=structural)
+        local_pairs=[dict(seed=t[1]['seed'],baseline=t[1],student=s[1]) for t,s in zip(teacher,student)]
+        gathered=[None]*world;dist.all_gather_object(gathered,local_pairs)
         if rank==0:
-            val=paired_evaluation(pool,cfg['problem'],seeds(stage,shard=False),model.module,budget,structural=structural)
+            pairs=sorted((p for part in gathered for p in part),key=lambda p:p['seed'])
+            base=[([],p['baseline']) for p in pairs];new=[([],p['student']) for p in pairs]
+            a=summarize(base);b=summarize(new)
+            delta=np.array([p['student']['virtual_time_s']/p['student']['N']-
+                            p['baseline']['virtual_time_s']/p['baseline']['N'] for p in pairs])
+            half=float(1.96*delta.std(ddof=1)/np.sqrt(len(delta))) if len(delta)>1 else 0.
+            eligible=a['completion_rate']==1. and b['completion_rate']==1.
+            val=dict(baseline=a,student=b,eligible=eligible,
+                     mean_paired_delta_s=float(delta.mean()),approximate_95ci_halfwidth_s=half,
+                     paired_metric='candidate T/N minus baseline T/N, seconds/source',
+                     selection_pass=bool(eligible and delta.mean()+half<0),rows=pairs)
             atomic_json(out/f'{stage.lower()}_{update:04d}.json',val)
             event(stage,update=update,completion_rate=val['student']['completion_rate'],
                   paired_delta_s=val['mean_paired_delta_s'],selection_pass=val['selection_pass'])
@@ -107,7 +127,10 @@ def main():
         stats=synchronized_update(model,opt,base_episodes,device,'BC',cfg.get('bc_epochs',6),cfg.get('batch_size',128),structural=structural)
         event('BC',**stats)
         for iteration in range(cfg.get('dagger_rounds',2)):
-            eps,metrics=campaign(pool,'DAGGER',iteration,model.module,'greedy',require_complete=True)
+            # Failed student trajectories are valuable DAgger states. Keep
+            # and relabel them; the validation gate, not data collection,
+            # enforces 100% completion before checkpoint admission.
+            eps,metrics=campaign(pool,'DAGGER',iteration,model.module,'greedy',require_complete=False)
             stats=synchronized_update(model,opt,base_episodes+eps,device,'BC',cfg.get('dagger_epochs',3),cfg.get('batch_size',128),structural=structural)
             event('DAGGER',round=iteration+1,**metrics,**stats)
         validate(pool,0)

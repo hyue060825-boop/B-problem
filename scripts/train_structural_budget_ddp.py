@@ -130,12 +130,14 @@ def main():
         return episodes,rows
     def compare(base,rows):
         assert [r['seed'] for r in base] == [r['seed'] for r in rows]
-        delta = np.array([s['virtual_time_s']-b['virtual_time_s'] for s,b in zip(rows,base)])
+        delta = np.array([s['virtual_time_s']/s['N']-b['virtual_time_s']/b['N'] for s,b in zip(rows,base)])
         half = float(1.96*delta.std(ddof=1)/np.sqrt(len(delta))) if len(delta)>1 else 0.
         complete = sum(r['completion'] for r in rows)/len(rows)
         return dict(completion_rate=complete,baseline_completion_rate=sum(r['completion'] for r in base)/len(base),
                     mean_virtual_s=float(np.mean([r['virtual_time_s'] for r in rows])),
+                    mean_case_time_per_source_s=float(np.mean([r['virtual_time_s']/r['N'] for r in rows])),
                     mean_delta_s=float(delta.mean()),ci95_halfwidth_s=half,
+                    paired_metric='candidate T/N minus parent T/N, seconds/source',
                     selection_pass=bool(complete==1. and all(r['completion'] for r in base) and delta.mean()+half<0))
     event('RESUMED' if args.resume else 'INIT',world_size=world,physical_gpus=os.environ.get('CUDA_VISIBLE_DEVICES'),
           checkpoint=str(args.resume or parent),parent_sha256=parent_hash,parent_update=data['update'],

@@ -75,17 +75,25 @@ def synchronized_update(model,optimizer,episodes,device,kind,epochs,batch_size,e
                 policy=-torch.minimum(ratio*adv,ratio.clamp(.8,1.2)*adv)
                 value_loss=(value-tensor('return')).square()
                 per_row=policy+.001*value_loss-entropy*distribution.entropy()
+                log_ratio=logp-tensor('old_logp')
+                diagnostics=(float(policy.mean().detach()),float(value_loss.mean().detach()),
+                             float(distribution.entropy().mean().detach()),
+                             float(((ratio-1)-log_ratio).mean().detach()),
+                             float(((ratio-1).abs()>.2).float().mean().detach()))
             else:
                 target=torch.tensor([r['teacher'] for r in used],device=device)
                 # Keep critic in the graph with zero contribution during BC.
                 per_row=torch.nn.functional.cross_entropy(logits,target,reduction='none')+0*value
+                diagnostics=(0.,0.,0.,0.,0.)
             # DDP averages gradients by world size. This scaling recovers the
             # exact global per-transition mean even for unequal last batches.
             loss=(per_row*weight).sum()*(world/n.item())
             grad_norm=checked_step(loss,model,optimizer)
-            stats.append((float(loss.detach()),grad_norm))
+            stats.append((float(loss.detach()),grad_norm,*diagnostics))
     summary=torch.tensor(np.mean(stats,axis=0),device=device);dist.all_reduce(summary);summary/=world
     digest=audit_sync(model.module,optimizer)
-    return dict(loss=float(summary[0]),gradient_norm=float(summary[1]),
+    return dict(loss=float(summary[0]),gradient_norm=float(summary[1]),policy_loss=float(summary[2]),
+                value_loss=float(summary[3]),entropy=float(summary[4]),approx_kl=float(summary[5]),
+                clip_fraction=float(summary[6]),
                 optimizer_steps=steps*epochs,local_transitions=len(rows),state_sha256=digest,
                 parameter_and_optimizer_sync=True)

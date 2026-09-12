@@ -3,11 +3,11 @@ import math
 import numpy as np
 from solution.control.controller import STATES
 
-FEATURE_VERSION = "normalized-public-v3-structural"
+FEATURE_VERSION = "normalized-public-v4-q4-belief-attention"
 GLOBAL_DIM = 10
-CHANNEL_DIM = 16
+CHANNEL_DIM = 28
 STATION_DIM = 8
-CANDIDATE_DIM = 14
+CANDIDATE_DIM = 20
 MAX_STATIONS = 31
 
 
@@ -17,6 +17,12 @@ def _channel_row(ctrl, channel, state):
     cert = state.cert
     center = cert["center"] if cert else (0.0, 0.0)
     area = float(state.region.geom.area) / 1e7
+    belief=ctrl.q4_beliefs.get(channel)
+    bs=belief.summary_at(ctrl.position) if belief else None
+    belief_row=([float(bs.valid),bs.particle_count/256,bs.effective_sample_size/256,bs.age/40,
+                 float(bs.degenerate),bs.reception_probability,bs.near_probability,bs.receive_entropy,
+                 bs.directional_fraction,bs.dispersion/1800,bs.heading_sin,bs.heading_cos]
+                if bs else [0.]*12)
     return [STATES.index(state.status) / 5, len(state.observations) / 50,
             math.sin(theta), math.cos(theta), center[0] / 2000, center[1] / 2000,
             area, cert["radius_upper_m"] / 1500 if cert else 1.0,
@@ -25,7 +31,7 @@ def _channel_row(ctrl, channel, state):
             sum(row["result"] == "no_signal" for row in state.observations) / 40,
             sum(tuple(row["position"]) == tuple(ctrl.position) for row in state.observations) / 10,
             float(state.status == "CLEARABLE"), float(channel == ctrl.current_channel),
-            float(state.clear_attempts) / 10]
+            float(state.clear_attempts) / 10]+belief_row
 
 
 def structural_features(ctrl, actions):
@@ -53,18 +59,30 @@ def structural_features(ctrl, actions):
         mask = np.zeros(20, dtype=np.float32)
         for c in action.channels:
             if 1 <= c <= 20: mask[c - 1] = 1.0
+        if not action.channels and 1 <= channel <= 20:
+            mask[channel - 1] = 1.0
         station = int(action.station)
+        related=tuple(action.channels) or ((channel,) if channel else ())
+        summaries=[ctrl.q4_beliefs[c].summary_at(action.position) for c in related if c in ctrl.q4_beliefs]
+        belief_candidate=([float(any(s.valid for s in summaries)),
+                           float(np.mean([s.reception_probability for s in summaries])),
+                           float(np.mean([s.near_probability for s in summaries])),
+                           float(np.mean([s.receive_entropy for s in summaries])),
+                           float(np.mean([s.directional_fraction for s in summaries])),
+                           float(np.mean([s.dispersion for s in summaries]))/1800]
+                          if summaries else [0.]*6)
         rows.append([{"COVER": 0, "LOCALIZE": 1, "CLEAR": 2, "PROBE_STEP": 3, "FULL_PROBE_FALLBACK": 4, "EXIT": 5}.get(action.kind, -1),
                      action.position[0] / 2000, action.position[1] / 2000, action.cost / 1000,
                      len(action.channels) / 20, float(channel == ctrl.current_channel),
                      float(bool(cstate is not None and cstate.status == "CLEARABLE")), float(action.kind == "COVER"),
                      float(action.kind == "PROBE_STEP"), action.route_rank / max(1, len(ctrl.stations)),
                      action.route_detour_m / 4000, float(action.kind == "FULL_PROBE_FALLBACK"),
-                     float(action.kind == "EXIT"), float(action.kind == "LOCALIZE")])
+                     float(action.kind == "EXIT"), float(action.kind == "LOCALIZE")]+belief_candidate)
         channel_index.append(ci); channel_valid.append(float(1 <= channel <= 20))
         station_index.append(station if 0 <= station < len(ctrl.stations) else 0)
         station_valid.append(float(0 <= station < len(ctrl.stations))); scan_masks.append(mask)
     return {"global": global_row, "channels": channels, "stations": stations,
+            "station_mask": np.ones(len(stations), dtype=np.bool_),
             "candidates": np.asarray(rows, dtype=np.float32) if rows else np.zeros((0, CANDIDATE_DIM), dtype=np.float32),
             "candidate_channel_index": np.asarray(channel_index, dtype=np.int64),
             "candidate_channel_valid": np.asarray(channel_valid, dtype=np.float32),

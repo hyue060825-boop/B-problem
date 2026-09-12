@@ -11,6 +11,7 @@ def structural_collate(rows, device):
         'global':torch.from_numpy(np.stack([r['state']['global'] for r in rows])).to(device),
         'channels':torch.from_numpy(np.stack([r['state']['channels'] for r in rows])).to(device),
         'stations':torch.zeros((n,max_s,STATION_DIM),device=device),
+        'station_mask':torch.zeros((n,max_s),dtype=torch.bool,device=device),
         'candidates':torch.zeros((n,max_a,CANDIDATE_DIM),device=device),
         'candidate_channel_index':torch.zeros((n,max_a),dtype=torch.long,device=device),
         'candidate_channel_valid':torch.zeros((n,max_a),device=device),
@@ -22,6 +23,7 @@ def structural_collate(rows, device):
     for i,row in enumerate(rows):
         s=row['state']; ns=len(s['stations']); na=len(s['candidates'])
         state['stations'][i,:ns]=torch.from_numpy(s['stations'])
+        state['station_mask'][i,:ns]=True
         state['candidates'][i,:na]=torch.from_numpy(s['candidates'])
         for key in ('candidate_channel_index','candidate_channel_valid','candidate_station_index','candidate_station_valid','candidate_channel_mask'):
             state[key][i,:na]=torch.from_numpy(s[key])

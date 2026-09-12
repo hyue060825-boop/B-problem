@@ -38,12 +38,16 @@ def features(controller,actions):
 def model_state(state):return {'global':state['global_'],'channels':state['channels'],'candidates':state['candidates']}
 
 def structural_model_state(state):
-    return {k:v for k,v in state.items() if k in ('global','channels','stations','candidates','candidate_channel_index','candidate_channel_valid','candidate_station_index','candidate_station_valid','candidate_channel_mask')}
+    return {k:v for k,v in state.items() if k in ('global','channels','stations','station_mask','candidates','candidate_channel_index','candidate_channel_valid','candidate_station_index','candidate_station_valid','candidate_channel_mask')}
 
 class TrainingEnv:
     def __init__(self,problem,seed,max_macros=400,**scenario_args):
         self.session,self.profile=make_research_session(problem,seed,**scenario_args)
         self.controller=Controller(problem);self.rid=0;self.max_macros=max_macros;self.started=time.perf_counter()
+        # Episode-private target count is used only for objective scaling and
+        # evaluator metrics; it is never passed through controller features.
+        self._episode_n = len(self.session.kernel.scenario.sources)
+        self._selected_reception_probability = None
         self.path_length=0.;self.measure_count=0;self.switches=0;self.failures=0;self.probes=0;self.max_decision_s=0.
         self.decision_times=[];self.error=None;self.done=False;self.success=False
         self._request('/enter',None,None)
@@ -65,6 +69,13 @@ class TrainingEnv:
         return (structural_features(self.controller, actions) if structural else features(self.controller,actions)),actions
     def step(self,action):
         prev=self.session.state.virtual_us/1e6
+        # Capture the belief value at decision time, before executing the
+        # action.  This avoids the old placeholder that recomputed at the
+        # post-action robot position.
+        if getattr(action, 'channel', None) in self.controller.q4_beliefs:
+            belief = self.controller.q4_beliefs[action.channel]
+            self._selected_reception_probability = float(
+                belief.summary_at(tuple(action.position)).reception_probability)
         if action.kind=='PROBE_CLEAR':self.probes+=1
         try:
             self.controller.execute(action,self._request)
@@ -77,18 +88,23 @@ class TrainingEnv:
             if self.session.phase=='ended' and not self.done:self.done=True;self.error=self.session.reason
         except Exception as exc:
             self.error=f'{type(exc).__name__}: {exc}';self.done=True
-        reward=-(self.session.state.virtual_us/1e6-prev)/100
+        reward=-(self.session.state.virtual_us/1e6-prev)/(100 * max(1, self._episode_n))
         if self.done and not self.success:reward-=1000
         return reward,self.done
     def metrics(self):
         n=len(self.session.kernel.scenario.sources);c=len(self.session.state.cleared);t=self.session.state.virtual_us/1e6
         d=np.asarray(self.decision_times or [0.])
+        summaries=[b.summary_at(self.controller.position) for b in self.controller.q4_beliefs.values()]
         return dict(problem=self.controller.problem,seed=self.profile['seed'],profile=self.profile,N=n,C=c,
                     completion=self.success,cleared_fraction=c/n,virtual_time_s=t,time_per_clear_s=t/c if c else None,
                     elapsed_s=time.perf_counter()-self.started,path_length_m=self.path_length,measures=self.measure_count,
                     switches=self.switches,clear_failures=self.failures,macro_steps=self.controller.steps,
                     **{**self.controller.diagnostics, 'probe_macros': self.probes,
                        'q4_belief_effective_hypotheses': int(sum(len(b.hypotheses) for b in self.controller.q4_beliefs.values())),
-                       'q4_belief_reception_probability_at_selected': 0.0,
+                       'q4_belief_particle_count': int(sum(s.particle_count for s in summaries)),
+                       'q4_belief_ess': float(sum(s.effective_sample_size for s in summaries)),
+                       'q4_belief_max_age': int(max((s.age for s in summaries),default=0)),
+                       'q4_belief_degenerate_count': int(sum(s.degenerate for s in summaries)),
+                       'q4_belief_reception_probability_at_selected': self._selected_reception_probability,
                        'q4_belief_entropy_or_dispersion': float(sum((b.summary_at(self.controller.position).entropy + b.summary_at(self.controller.position).dispersion) for b in self.controller.q4_beliefs.values()))},
                     decision_max_s=float(max(d)),decision_p95_s=float(np.percentile(d,95)),error=self.error)

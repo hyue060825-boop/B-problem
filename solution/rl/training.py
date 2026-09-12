@@ -73,6 +73,7 @@ def summarize(results):
     ms=[m for _,m in results];times=np.array([m['virtual_time_s'] for m in ms])
     return dict(episodes=len(ms),completion_rate=float(np.mean([m['completion'] for m in ms])),
                 mean_virtual_s=float(times.mean()),median_virtual_s=float(np.median(times)),p95_virtual_s=float(np.percentile(times,95)),
+                mean_case_time_per_source_s=float(np.mean([m['virtual_time_s']/m['N'] for m in ms])),
                 macro_steps=sum(len(s) for s,_ in results),failures=[m for m in ms if not m['completion']])
 
 def collate(rows,device,structural=False):
@@ -147,7 +148,8 @@ def save_checkpoint(path,model,opt,config,stage,update,metrics,extra=None,featur
     p=Path(path);p.parent.mkdir(parents=True,exist_ok=True)
     data=dict(model={k:v.detach().cpu() for k,v in model.state_dict().items()},optimizer=opt.state_dict(),
                 config=config,stage=stage,update=update,metrics=metrics,
-                features=feature_version or FEATURE_VERSION,model_version=model_version or MODEL_VERSION,profile=PROFILE_VERSION,
+                features=feature_version or FEATURE_VERSION,
+                model_version=model_version or getattr(model,'MODEL_VERSION',MODEL_VERSION),profile=PROFILE_VERSION,
               rng=dict(python=random.getstate(),numpy=np.random.get_state(),torch=torch.get_rng_state(),
                        cuda=torch.cuda.get_rng_state_all() if torch.cuda.is_available() else []),extra=extra or {},provenance=provenance())
     tmp=p.with_suffix('.tmp');torch.save(data,tmp);tmp.replace(p)
@@ -164,7 +166,8 @@ def verify_checkpoint_code(data):
 def load_checkpoint(path,model,opt=None,restore_rng=False,allow_code_mismatch=False):
     data=torch.load(path,map_location='cpu',weights_only=False)
     expected_features = STRUCTURAL_FEATURE_VERSION if isinstance(model, StructuralCandidatePolicy) else FEATURE_VERSION
-    if data['features']!=expected_features or data.get('model_version')!=MODEL_VERSION or data['profile']!=PROFILE_VERSION:raise ValueError('checkpoint version mismatch')
+    expected_model = getattr(model,'MODEL_VERSION',MODEL_VERSION)
+    if data['features']!=expected_features or data.get('model_version')!=expected_model or data['profile']!=PROFILE_VERSION:raise ValueError('checkpoint version mismatch')
     if not allow_code_mismatch:verify_checkpoint_code(data)
     model.load_state_dict(data['model'])
     if opt is not None:opt.load_state_dict(data['optimizer'])
@@ -176,10 +179,11 @@ def load_checkpoint(path,model,opt=None,restore_rng=False,allow_code_mismatch=Fa
 def paired_evaluation(pool,problem,seeds,model,max_macros=400,structural=False):
     teacher=collect(pool,problem,seeds,max_macros=max_macros,structural=structural);student=collect(pool,problem,seeds,model,'greedy',max_macros,structural=structural)
     a=summarize(teacher);b=summarize(student)
-    differences=np.array([s[1]['virtual_time_s']-t[1]['virtual_time_s'] for t,s in zip(teacher,student)])
+    differences=np.array([s[1]['virtual_time_s']/s[1]['N']-t[1]['virtual_time_s']/t[1]['N'] for t,s in zip(teacher,student)])
     eligible=a['completion_rate']==1.0 and b['completion_rate']==1.0
     ci=float(1.96*differences.std(ddof=1)/np.sqrt(len(seeds))) if len(seeds)>1 else None
     return dict(baseline=a,student=b,eligible=eligible,mean_paired_delta_s=float(differences.mean()),
+                paired_metric='candidate T/N minus baseline T/N, seconds/source',
                 approximate_95ci_halfwidth_s=ci,selection_pass=bool(eligible and float(differences.mean())<0),
                 rows=[dict(seed=t[1]['seed'],baseline=t[1],student=s[1]) for t,s in zip(teacher,student)])
 
