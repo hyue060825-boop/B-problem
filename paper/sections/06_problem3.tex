@@ -8,8 +8,10 @@
 \end{equation}
 优化目标是在清除全部存在源的约束下最小化 $T$。由于源数只知道在 $10$ 至 $16$ 之间，清除 $10$ 个源后不能直接退出。对每个频道维护
 \begin{equation}
-  \mathrm{UNKNOWN},\ \mathrm{FOUND},\ \mathrm{LOCALIZING},\
-  \mathrm{CLEARABLE},\ \mathrm{CLEARED},\ \mathrm{ABSENT\_CERTIFIED}
+  \begin{gathered}
+  \mathrm{UNKNOWN},\ \mathrm{FOUND},\ \mathrm{LOCALIZING},\\
+  \mathrm{CLEARABLE},\ \mathrm{CLEARED},\ \mathrm{ABSENT\_CERTIFIED}.
+  \end{gathered}
 \end{equation}
 六类状态，并记录方向观测、负观测、清除失败、可行域及覆盖完成度。
 
@@ -49,18 +51,65 @@ $f(r)$ 为凸函数，只需检查区间端点。外边界覆盖条件为
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.67\textwidth]{q3_coverage.pdf}
-  \caption{全向源七点覆盖骨架及一条开放式访问路线}
+  \includegraphics[width=0.67\textwidth]{F004-q3-coverage.pdf}
+  \caption{全向源七站覆盖的几何证书；图中不表示实际运行轨迹}
   \label{fig:q3-coverage}
 \end{figure}
 
-\subsection{搜索、定位和清除的交织调度}
-在相邻覆盖站采用相反的频道扫描顺序，减少站点之间多余的切换；已经发现、清除或完成不存在证明的频道不再参加全图存在性扫描。正观测到达后，优先利用后续覆盖站顺路形成较大交会角，再按问题二生成专门的主动测量点。
 
-若检测返回 \texttt{near}，则距离不超过 $5\,\mathrm{m}<20\,\mathrm{m}$，立即原地清除。当 $Q_c$ 非空时前往其中的近路线点执行保证清除；若可行域已较小但尚无单点清除证书，则用少量半径 $20\,\mathrm{m}$ 圆覆盖 $K_c$。失败清除只耗时 $3\,\mathrm{s}$，并给出
+\subsection{几何约束下的候选宏动作调度}
+用公开请求与响应历史 $h_t$ 更新各频道的可行域、清除证书及覆盖进度，再生成候选集合 $\mathcal A(h_t)$。覆盖动作从最近的至多三个未访问站点中选择，串行检测未知频道及仍需补测的频道；已清除或已认证不存在的频道不再扫描。扫描优先使用当前频道，相邻站点交替频道顺序。
+
+专门补测在可行域最小包围圆心的侧翼生成两个候选，方向垂直于最近示向度，偏移随包围圆半径限制在 $30$--$350\,\mathrm{m}$，每源至多专门补测三次。该实现使用问题二的交会几何思想，当前未调用其完整粗到细选点器。半径达到清除条件时前往包围圆心；返回近距离标志时优先原地清除。定位区域较小或补测次数达到阈值后，生成覆盖该区域的清除点序列，成功即停止。失败清除提供 $K_c\leftarrow K_c\setminus B(q,20)$ 的确定性信息。
+
+候选包含覆盖、补测、保证清除、覆盖探测和退出五类宏动作。规则教师按估计成本排序，学习策略对同一集合评分，随后展开为串行请求。退出只在全部频道已清除或已认证不存在时开放；累计发现 $16$ 个不同频道后，可利用题面上界认证其余频道不存在。学习模块不能修改几何证书或放宽退出条件。
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.96\textwidth]{F001-controller-workflow.pdf}
+\caption{公开历史、几何约束与候选动作调度的在线流程}
+\end{figure}
+
+\subsection{公开历史条件化的搜索教师}
+为改进已有策略 $\pi_0$ 的局部调度，在离线阶段从公开历史 $h$ 构造相容假设场景 $\omega_1,\ldots,\omega_K$。位置、接收半径及固定误差场均须与已有观测相容，每个场景还需通过参考内核完整重放，匹配响应与虚拟耗时。实际隐藏位置、源数和场景种子不传入教师。该采样是相容场景近似，不解释为精确贝叶斯后验。
+
+在共同的 $K=8$ 个场景上，比较至多六个合法候选，强制保留原策略动作及保证清除、退出候选。对动作 $a$ 先执行一步，余下过程均由同一冻结策略完成，记从当前时刻到退出的虚拟耗时为 $C_k(a)$。仅保留所有假设场景均完成的动作。若 $a_0$ 为原动作、$a_*$ 为平均耗时最低的可靠候选，定义
 \begin{equation}
-  K_c\leftarrow K_c\setminus B(q,20)
+ d_k=C_k(a_0)-C_k(a_*),\qquad
+ \bar d=\frac1K\sum_{k=1}^{K}d_k,\qquad
+ e_d=\frac{\operatorname{sd}(d_1,\ldots,d_K)}{\sqrt K}.
 \end{equation}
-这一确定性信息，故可与额外检测的移动及 $5\,\mathrm{s}$ 检测成本直接比较。
+仅当 $\bar d>\max(5\,\mathrm{s},e_d)$ 时接收改进标签；否则保留原策略样本或跳过。共同场景配对减少候选比较中的场景差异，门槛仅用于标签筛选，不作为最终性能显著性的保证。可靠动作上的软标签及样本权重为
+\begin{equation}
+ p_E(a\mid h)=\frac{\exp[-\bar C(a)/\tau]}{\sum_{b\in\mathcal A_{\rm rel}}\exp[-\bar C(b)/\tau]},
+ \quad \tau=40\,\mathrm{s},\quad
+ w=\operatorname{clip}\!\left(\frac{\bar d}{\max(1\,\mathrm{s},e_d)},0.25,4\right).
+\end{equation}
+相容场景不足、必要候选超预算或搜索未完成时均回退。概率估计仅生成离线监督，不签发清除或不存在证书。
 
-当多个频道均已得到安全清除区域时，先用最近插入和 2-opt 更新在线路线；清除点基本稳定后，再采用 Held--Karp 状态压缩动态规划求开放式访问顺序，其复杂度为 $O(m^2 2^m)$，在 $m\leq16$ 时可行\cite{heldkarp1962}。退出前逐频道审计，只有全部频道处于 $\mathrm{CLEARED}$ 或 $\mathrm{ABSENT\_CERTIFIED}$ 才调用退出接口。\placeholder{填写问题三三次正式测试的案例编码、清除数、平均定位清除时间和程序运行时间，并与覆盖基线比较。}
+\subsection{搜索蒸馏、数据聚合与策略微调}
+采用三阶段后训练，将离线搜索信息转移到候选评分策略。
+
+\textbf{阶段一：带稳定约束的监督微调。}在已有策略轨迹上获取搜索软标签，并混合原策略概率样本。以冻结策略 $\pi_{\rm ref}$ 为稳定锚点，最小化
+\begin{equation}
+ \mathcal L_{\rm SFT}=\frac{1}{\sum_iw_i}\sum_iw_i\left[-\sum_a p_{E,i}(a)\log\pi_\theta(a\mid h_i)
+ +0.5D_{\rm KL}(\pi_{\rm ref}(\cdot\mid h_i)\Vert\pi_\theta(\cdot\mid h_i))\right].
+\end{equation}
+软标签保留多个可行动作的信息，稳定项限制小规模新数据导致的策略偏移。
+
+\textbf{阶段二：学生分布上的数据聚合。}让第一阶段学生在新的训练场景执行自己的动作，对其实际到达的公开状态重新搜索标注，再与前轮数据聚合，继续训练同一学生。此过程采用 DAgger 的数据聚合思想\cite{ross2011}，针对的是学生偏离教师轨迹后遇到的状态分布变化。
+
+\textbf{阶段三：完整回合 PPO 微调。}从验证集选择阶段快照，重新采集当前行为策略的完整回合；搜索分支不混入 PPO 轨迹。奖励为 $r_t=-\Delta T_t/100$，失败终局追加 $-1000$，取折扣因子 $\gamma=1$，使时间代价与整局目标一致。以 $\rho_t=\pi_\theta(a_t\mid h_t)/\pi_{\rm old}(a_t\mid h_t)$ 构造剪切目标\cite{schulman2017}：
+\begin{equation}
+ \mathcal L_{\rm PPO}=-\mathbb E_t\left[\min\{\rho_t\widehat A_t,
+ \operatorname{clip}(\rho_t,0.8,1.2)\widehat A_t\}\right]
+ +0.001\mathbb E_t[(V_\theta-\widehat G_t)^2]-0.001\mathbb E_t[\mathcal H(\pi_\theta)].
+\end{equation}
+优势估计取 $\lambda=0.95$，在全局有效样本上归一化；全局近似 KL 超过 $0.03$ 时停止本轮剩余更新。具体训练规模和阶段结果在实验部分报告。
+
+\subsection{集合式候选评分与部署}
+输入由 $10$ 维全局特征、$20\times9$ 维频道特征及每候选 $11$ 维动作特征组成，均由公开历史生成。频道编码经两层、四头、隐藏维度 $128$ 的注意力网络后均值汇聚，与全局编码及候选编码拼接，为每个候选输出分数 $\ell_\theta(h,a)$：
+\begin{equation}
+ \pi_\theta(a\mid h)=\frac{\exp\ell_\theta(h,a)}{\sum_{b\in\mathcal A(h)}\exp\ell_\theta(h,b)},\quad a\in\mathcal A(h).
+\end{equation}
+变长候选通过掩码处理。在线按最高分选择宏动作，随后重新观察与规划；离线相容场景展开不随策略部署。现有配对测试仅表明候选均值小幅改善，原稳健选模规则仍推荐冻结基线，故不将三阶段各自的训练损失下降直接解释为部署收益。\placeholder{填写三次正式测试的案例编码、清除数、平均定位清除时间和程序运行时间。}
