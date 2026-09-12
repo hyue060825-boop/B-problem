@@ -61,17 +61,17 @@
 先在 $\mathcal C_{\mathrm{recv}}$ 中生成至多 $64$ 个有效规则网格点并加入区域代表点，计算式\eqref{eq:q2-objective}后保留前 $8$ 个，再在其 $3\times3$ 邻域局部细化；每个入选点均重新核验式\eqref{eq:guaranteed-reception}。若第二次返回 \texttt{near}，由距离不超过 $5\,\mathrm{m}$ 可直接原地清除。
 
 \subsection{选点算例}
-以 $s_1=(0,0)$、$\theta_1=0^\circ$ 的人工首次观测为例，取 $\lambda_1=0.5\,\mathrm{s/m}$、$\lambda_2=1$。最优已评估点为 $(735.90,262.92)\,\mathrm{m}$，其保证接收距离上界为 $816.86\,\mathrm{m}<1000\,\mathrm{m}$。与沿首次示向线移动的基线相比，采样后验半径由 $375.16\,\mathrm{m}$ 降至 $99.22\,\mathrm{m}$，目标值由 $476.61\,\mathrm{s}$ 降至 $375.80\,\mathrm{s}$。固定侧翼点得到更小的采样后验半径，但因移动与后续时间较大，其综合目标值为 $394.15\,\mathrm{s}$。结果见\cref{tab:q2-fixture,fig:q2-candidates}。
+以 $s_1=(0,0)$、$\theta_1=0^\circ$ 的人工首次观测为例，取 $\lambda_1=0.5\,\mathrm{s/m}$、$\lambda_2=1$。最佳已评估点为 $(735.90,262.92)\,\mathrm{m}$，其保证接收距离上界为 $816.86\,\mathrm{m}<1000\,\mathrm{m}$。与沿首次示向线移动的基线相比，采样后验半径由 $375.16\,\mathrm{m}$ 降至 $99.22\,\mathrm{m}$，目标值由 $476.61\,\mathrm{s}$ 降至 $375.80\,\mathrm{s}$。固定侧翼点得到更小的采样后验半径，但因移动与后续时间较大，其综合目标值为 $394.15\,\mathrm{s}$。这表明仅追求更小的后验半径并不足以降低综合代价，检测点还需兼顾移动距离与后续处置成本。结果见\cref{tab:q2-fixture,fig:q2-candidates}。
 
 \begin{table}[H]
   \centering
-  \caption{人工夹具中保证接收候选的定位精度与时间代价比较}
+  \caption{构造算例中保证接收候选的定位精度与时间代价比较}
   \label{tab:q2-fixture}
   \begin{tabularx}{\textwidth}{L>{\hsize=1.2\hsize\linewidth=\hsize}X>{\hsize=.95\hsize\linewidth=\hsize}X>{\hsize=.95\hsize\linewidth=\hsize}X>{\hsize=.90\hsize\linewidth=\hsize}X}
     \toprule
     候选方案 & 坐标/m & 接收距离上界/m & 采样后验半径/m & $J$/s \\
     \midrule
-    本文最优已评估点 & $(735.90,262.92)$ & $816.86$ & $99.22$ & $375.80$ \\
+    本文最佳已评估点 & $(735.90,262.92)$ & $816.86$ & $99.22$ & $375.80$ \\
     沿示向线点 & $(750.00,0.00)$ & $750.25$ & $375.16$ & $476.61$ \\
     固定侧翼点 & $(750.00,450.00)$ & $888.36$ & $69.20$ & $394.15$ \\
     \bottomrule
@@ -81,8 +81,8 @@
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.98\textwidth]{F003-q2-candidates.pdf}
-  \caption{保证接收区域内的有限候选评分；星号为综合代价最小的已评估点，颜色不代表连续域全局最优性}
+  \caption{保证接收区域与候选点评分；颜色表示综合评分 $J$，星号标记最佳已评估点}
   \label{fig:q2-candidates}
 \end{figure}
 
-该结果只说明有限候选搜索在显式夹具上的行为；由于后验角度采用有限情景采样，不能据此宣称连续全局最优。完整输入、结果和源码哈希保存在支撑材料的 \texttt{artifacts/q2/} 目录。
+该结果只说明有限候选搜索在给定算例上的行为；由于后验角度采用有限情景采样，不能据此宣称连续全局最优。完整输入、结果和源码哈希保存在支撑材料的 \texttt{artifacts/q2/} 目录。

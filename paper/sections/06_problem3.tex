@@ -30,7 +30,7 @@
 则可确定该频道不存在未清除源，并将其标记为 $\mathrm{ABSENT\_CERTIFIED}$。
 
 \subsection{中心加正六边形覆盖骨架}
-取中心点 $p_0=(0,0)$，并在半径 $a$ 的圆周上设置六个顶点
+取中心点 $p_{\mathrm{ctr}}=(0,0)$，并在半径 $a$ 的圆周上设置六个顶点
 \begin{equation}
   p_k=a
   \begin{bmatrix}\cos(k\pi/3)\\ \sin(k\pi/3)\end{bmatrix},
@@ -48,7 +48,7 @@ $f(r)$ 为凸函数，只需检查区间端点。外边界覆盖条件为
 \begin{equation}
   a=1135\,\mathrm{m}
 \end{equation}
-时，$r=1800\,\mathrm{m}$ 处的最坏距离约为 $994.81\,\mathrm{m}$，保留约 $5.19\,\mathrm{m}$ 的覆盖裕量。由中心依次访问六个外圈顶点且不返回中心，骨架路程为 $6a=6810\,\mathrm{m}$；相较 $a=1200\,\mathrm{m}$ 的方案减少 $390\,\mathrm{m}$，即节省 $78\,\mathrm{s}$ 移动时间。该布局是有解析保证的强基线，不宣称为全局最优。
+时，$r=1800\,\mathrm{m}$ 处的最坏距离约为 $994.81\,\mathrm{m}$，保留约 $5.19\,\mathrm{m}$ 的覆盖裕量。由中心依次访问六个外圈顶点且不返回中心，骨架路程为 $6a=6810\,\mathrm{m}$；相较 $a=1200\,\mathrm{m}$ 的方案减少 $390\,\mathrm{m}$，即节省 $78\,\mathrm{s}$ 移动时间。该布局以解析覆盖条件确定站点半径，使覆盖裕量与移动成本之间的取舍能够直接计算；其结论限于所构造的七站布局，不包含全局最优性。
 
 \begin{figure}[H]
   \centering
