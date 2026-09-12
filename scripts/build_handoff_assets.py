@@ -176,7 +176,7 @@ def prepare_tables():
 
 def style():
     names={f.name for f in font_manager.fontManager.ttflist}
-    chosen=next((n for n in ('Noto Sans CJK SC','WenQuanYi Zen Hei','Droid Sans Fallback') if n in names),None)
+    chosen=next((n for n in ('Noto Sans CJK SC','WenQuanYi Zen Hei','Droid Sans Fallback','PingFang SC','Arial Unicode MS') if n in names),None)
     if chosen is None:
         raise RuntimeError('请安装中文字体 Noto Sans CJK SC 或文泉驿正黑后重绘。')
     plt.rcParams.update({'font.family':'sans-serif','font.sans-serif':[chosen,'DejaVu Sans'],

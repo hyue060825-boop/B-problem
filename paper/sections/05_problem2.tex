@@ -1,4 +1,4 @@
-\section{问题二：保证接收约束下的主动选点}
+\section{问题二：保证接收选点模型的建立与求解}
 
 \subsection{第一次观测后的物理可行域}
 设第一次检测点为 $s_1$，返回示向度 $\theta_1$。由于问题二考虑全向源，且返回结果为方向值，源位置必定位于
@@ -16,7 +16,13 @@
   \left\{q:\sup_{x\in K_1}\|q-x\|\leq1000-\eta_r\right\},
   \label{eq:guaranteed-reception}
 \end{equation}
-其中 $\eta_r>0$ 为距离计算的保护量。若 $q\in\mathcal C_{\mathrm{recv}}$，则无论真实源位于 $K_1$ 的何处、真实接收半径在给定区间中取何值，第二次检测必返回方向值或近距离标志。
+其中 $\eta_r=0.02\,\mathrm{m}$ 为本实现的距离保护量。若 $q\in\mathcal C_{\mathrm{recv}}$，则无论真实源位于 $K_1$ 的何处、真实接收半径在给定区间中取何值，第二次检测必返回方向值或近距离标志。
+
+取包含 $K_1$ 的凸多边形包络，顶点集合为 $V$。对任意凸组合 $x=\sum_j\alpha_jv_j$，有 $\|q-x\|\leq\sum_j\alpha_j\|q-v_j\|\leq\max_j\|q-v_j\|$。因此只需对全部顶点检查距离，可构造
+\begin{equation}
+ \widehat{\mathcal C}_{\mathrm{recv}}=\bigcap_{v\in V}B(v,999.98)\subseteq\mathcal C_{\mathrm{recv}}.
+\end{equation}
+程序进一步以各圆的 $128$ 边内接多边形求交，生成候选后再逐顶点复核。外包源位置、内缩接收区、最后距离复核共同保持接收可靠性；若候选区为空，则返回恢复状态。这里是充分条件，未利用第一次接收所隐含的半径下界来扩大候选区。
 
 除接收可靠性外，还需要改善两条观测射线的交会角。对候选点 $q$ 和可能源位置 $x$，定义
 \begin{equation}
@@ -40,7 +46,7 @@
   \sup_{z:K_2(q,z)\neq\varnothing}
   \operatorname{rad}_{\mathrm{MEC}}\!\left(K_2(q,z)\right).
 \end{equation}
-连续枚举全部 $z$ 的代价较高。程序在每个候选点采用误差情景集 $\{-1^\circ,0^\circ,1^\circ\}$ 计算后验，并将所得最大值明确记为采样估计 $\widehat R_{\mathrm{post}}(q)$。它用于候选排序，不作为连续最坏上界。最终在保证接收区域内最小化
+连续枚举全部 $z$ 的代价较高。本算例在可行包络中选取 $13$ 个位置情景，并在每个候选点采用误差情景集 $\{-1^\circ,0^\circ,1^\circ\}$ 计算后验，并将所得最大值明确记为采样估计 $\widehat R_{\mathrm{post}}(q)$。它用于候选排序，不作为连续最坏上界。最终在保证接收区域内最小化
 \begin{equation}
   J(q)=\frac{\|q-s_{\mathrm{now}}\|}{5}+5
   +\mathbf 1_{\{c\neq c_{\mathrm{cur}}\}}
@@ -48,23 +54,23 @@
   +\lambda_2T_{\mathrm{remain}}^{\mathrm{est}}(q).
   \label{eq:q2-objective}
 \end{equation}
-初版令 $\lambda_2=0$，使模型只比较可核算的移动、检测、切换成本和最坏定位半径；$\lambda_1$ 的单位为秒每米，通过演练实验选择。
+当前实现取 $\lambda_1=0.5\,\mathrm{s/m}$、$\lambda_2=1$。后续时间采用到估计包围圆心的移动时间、一次成功清除及估计失败探测次数构造，仅服务于排序，不构成剩余总耗时上界。
 
 \subsection{粗到细搜索}
-先在 $\mathcal C_{\mathrm{recv}}$ 中生成不超过 $64$ 个规则网格和侧翼候选点，计算式\eqref{eq:q2-objective}后保留前 $8$ 个，再在其 $3\times3$ 邻域局部细化；每个入选点均重新核验式\eqref{eq:guaranteed-reception}。若第二次返回 \texttt{near}，由距离不超过 $5\,\mathrm{m}$ 可直接原地清除。
+先在 $\mathcal C_{\mathrm{recv}}$ 中生成至多 $64$ 个有效规则网格点并加入区域代表点，计算式\eqref{eq:q2-objective}后保留前 $8$ 个，再在其 $3\times3$ 邻域局部细化；每个入选点均重新核验式\eqref{eq:guaranteed-reception}。若第二次返回 \texttt{near}，由距离不超过 $5\,\mathrm{m}$ 可直接原地清除。
 
 \subsection{选点算例}
-以 $s_1=(0,0)$、$\theta_1=0^\circ$ 的人工首次观测为例，取 $\lambda_1=0.5\,\mathrm{s/m}$、$\lambda_2=1$。最优已评估点为 $(735.90,262.92)\,\mathrm{m}$，其保证接收距离上界为 $816.86\,\mathrm{m}<1000\,\mathrm{m}$。与沿首次示向线移动的基线相比，采样后验半径由 $375.16\,\mathrm{m}$ 降至 $99.22\,\mathrm{m}$，目标值由 $476.61\,\mathrm{s}$ 降至 $375.80\,\mathrm{s}$。固定侧翼点得到更小的采样后验半径，但因移动与后续时间较大，其综合目标值为 $394.15\,\mathrm{s}$。结果见\cref{tab:q2-fixture,fig:q2-candidates}。
+以 $s_1=(0,0)$、$\theta_1=0^\circ$ 的人工首次观测为例，取 $\lambda_1=0.5\,\mathrm{s/m}$、$\lambda_2=1$。最佳已评估点为 $(735.90,262.92)\,\mathrm{m}$，其保证接收距离上界为 $816.86\,\mathrm{m}<1000\,\mathrm{m}$。与沿首次示向线移动的基线相比，采样后验半径由 $375.16\,\mathrm{m}$ 降至 $99.22\,\mathrm{m}$，目标值由 $476.61\,\mathrm{s}$ 降至 $375.80\,\mathrm{s}$。固定侧翼点得到更小的采样后验半径，但因移动与后续时间较大，其综合目标值为 $394.15\,\mathrm{s}$。这表明仅追求更小的后验半径并不足以降低综合代价，检测点还需兼顾移动距离与后续处置成本。结果见\cref{tab:q2-fixture,fig:q2-candidates}。
 
 \begin{table}[H]
   \centering
-  \caption{问题二人工夹具的候选点比较}
+  \caption{构造算例中保证接收候选的定位精度与时间代价比较}
   \label{tab:q2-fixture}
-  \begin{tabularx}{\textwidth}{LLLLL}
+  \begin{tabularx}{\textwidth}{L>{\hsize=1.2\hsize\linewidth=\hsize}X>{\hsize=.95\hsize\linewidth=\hsize}X>{\hsize=.95\hsize\linewidth=\hsize}X>{\hsize=.90\hsize\linewidth=\hsize}X}
     \toprule
     候选方案 & 坐标/m & 接收距离上界/m & 采样后验半径/m & $J$/s \\
     \midrule
-    本文最优已评估点 & $(735.90,262.92)$ & $816.86$ & $99.22$ & $375.80$ \\
+    本文最佳已评估点 & $(735.90,262.92)$ & $816.86$ & $99.22$ & $375.80$ \\
     沿示向线点 & $(750.00,0.00)$ & $750.25$ & $375.16$ & $476.61$ \\
     固定侧翼点 & $(750.00,450.00)$ & $888.36$ & $69.20$ & $394.15$ \\
     \bottomrule
@@ -73,9 +79,9 @@
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.88\textwidth]{q2_candidates.png}
-  \caption{保证接收区域内的候选点评价；红星为综合目标最小点}
+  \includegraphics[width=0.98\textwidth]{F003-q2-candidates.pdf}
+  \caption{保证接收区域与候选点评分；颜色表示综合评分 $J$，星号标记最佳已评估点}
   \label{fig:q2-candidates}
 \end{figure}
 
-该结果只说明有限候选搜索在显式夹具上的行为；由于后验角度采用有限情景采样，不能据此宣称连续全局最优。完整输入、结果和源码哈希保存在支撑材料的 \texttt{artifacts/q2/} 目录。
+该结果只说明有限候选搜索在给定算例上的行为；由于后验角度采用有限情景采样，不能据此宣称连续全局最优。完整输入、结果和源码哈希保存在支撑材料的 \texttt{artifacts/q2/} 目录。

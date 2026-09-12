@@ -1,8 +1,8 @@
 {
-  "source_git_commit": "a2d1e99d8a700af3b6a7c918c375a84d8196d942",
+  "source_git_commit": "e501557d95d5ac5e8163980d175c4ae2654bc8d8",
   "scope": "当前工作区中受跟踪及未忽略的新文件；排除 paper 与清单自身，含尚未提交的整理成果",
   "files": 3889,
-  "bytes": 620419526,
+  "bytes": 620422072,
   "parts": {
     ".agents": {
       "files": 11,
@@ -22,7 +22,7 @@
     },
     "handoff": {
       "files": 75,
-      "bytes": 5429262
+      "bytes": 5431775
     },
     "problem": {
       "files": 5,
@@ -38,7 +38,7 @@
     },
     "scripts": {
       "files": 29,
-      "bytes": 162744
+      "bytes": 162777
     },
     "src": {
       "files": 49,

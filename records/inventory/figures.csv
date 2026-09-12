@@ -1,5 +1,5 @@
 ﻿path,format,bytes,sha256,role
-handoff/figures/F001-controller-workflow.pdf,pdf,30821,be9ff6af57516e4e5d697ef8d3ab1a805307d96c08ae74611f83589ef65099bc,本批中文写作图件
+handoff/figures/F001-controller-workflow.pdf,pdf,30821,b06266fa4837b424d79edc408c2c0a14fbb387446b43f98f7af9aa3b916d0e2c,本批中文写作图件
 handoff/figures/F001-controller-workflow.png,png,260109,5a08a301f1972cbeb1975b79133be66013dd6acb4abb7b808a5890c25a14cfd9,本批中文写作图件
 handoff/figures/F001-controller-workflow.svg,svg,5184,48a4666aabc736f10700c9496020e19441d64903015f619f41934f378bbff6e9,本批中文写作图件
 handoff/figures/F002-q1-diameter-circle.pdf,pdf,179587,121543b364ec536fb5734af3a34a3448725897649d214db7b3ca340d854c6d55,本批中文写作图件
@@ -23,7 +23,7 @@ handoff/figures/F007-q34-paired-by-count.svg,svg,28783,205705b93d5fbe2e6f7e631af
 handoff/figures/F008-q34-validation-progress.pdf,pdf,184283,a95fe6ed16563f63c8247fa208b7fa5748a62c5cf31dd75037701fc12c97f507,本批中文写作图件
 handoff/figures/F008-q34-validation-progress.png,png,224905,a74072c486858678232e3bfe27abb18bd515f6005b0033eabb87df64a0884e74,本批中文写作图件
 handoff/figures/F008-q34-validation-progress.svg,svg,29436,1e2a145f3d13831ee7c833991d6710a6c3e59d63ee20faac28f37f6ff0352977,本批中文写作图件
-handoff/figures/F009-training-evaluation-workflow.pdf,pdf,33290,d514048da2430a93bbf6ba657c8701bf05bb5cb5ab78ba1dacd4e00305ca8cd1,本批中文写作图件
+handoff/figures/F009-training-evaluation-workflow.pdf,pdf,33290,a576a0a4de6f9a014f343392a29a2f11a84ecfd28c6d256fcb435e35f6c6acef,本批中文写作图件
 handoff/figures/F009-training-evaluation-workflow.png,png,246641,58a91fb1825a221b593cbc32adc6a0e20fb8cf1251c3e5adae09a5f6ffe36c0b,本批中文写作图件
 handoff/figures/F009-training-evaluation-workflow.svg,svg,5231,d11afe26fab654081c80a2ae40c0fac8ad134448a9371a946f4d9f2cc91a69da,本批中文写作图件
 handoff/figures/F010-q2-observed-posterior.pdf,pdf,186989,8b2e2c6e1e4c3b15274d62049e8a83916c8def326a090feaa02510be2efcc2d5,本批中文写作图件
