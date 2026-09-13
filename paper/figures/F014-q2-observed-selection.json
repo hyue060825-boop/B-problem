@@ -1,0 +1,16 @@
+{
+  "source": "results/validation/LIT-Q2-01/pilot/records.json",
+  "sha256": "f73ab7f1f3e54031c4ecf708c380c89e7ce9ef06557234e3468bee82efbe5c46",
+  "seed": 412000,
+  "method": "current",
+  "first_svd_deg": 36.39,
+  "second_svd_deg": 131.82,
+  "second_point": [
+    743.6537688156412,
+    245.93506129567538
+  ],
+  "initial_mec_radius_m": 747.6324067300432,
+  "posterior_mec_radius_m": 13.866634856408162,
+  "receive_bound_m": 801.9213982083029,
+  "note": "同一原策略真实本地补测记录；非官方测试，真值未作为选点输入。保证接收区域按相同内接128边形方法从记录凸包重建。"
+}
