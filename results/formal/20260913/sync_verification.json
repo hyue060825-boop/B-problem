@@ -1,0 +1,16 @@
+{
+  "overleaf_build": "1a099a5a543-817a5dc8296c1f11",
+  "pages": 27,
+  "errors": 0,
+  "warnings": 0,
+  "verified_source_files": {
+    "sections/09_evaluation.tex": "77bcea7a4272eaea993785d9d4a64075a56b71d0468d33f93b017a0e841176f1",
+    "sections/12_appendix.tex": "fdb44a47f985becef1fae71fc4ec8eb32ceef70e4714e026d7ca396307ffeffc",
+    "sections/07_problem4.tex": "8aea89a4f1f0f39eec85cc01d925d9b8c82dc0c0f78f8fbc8cfdefc04178500d",
+    "sections/06_problem3.tex": "3f1f6023572de20e1aec64cfb756b27e734b6a54033a4e0958badc9b90bcb426",
+    "09b_conclusion.tex": "5f3839e78e071fc88805e39b2daac72e246eae510bf3d1d04d3643ceb70b83ca"
+  },
+  "pdf_sha256": "22e694b8151f84084d0088bc214644099c3fbce480d3d0f87ee5d4ff8b3a3fb3",
+  "pending": "6个正式案例编码、成绩页运行时间核对与模拟器导出日志",
+  "github_pushed_at_verification": false
+}
