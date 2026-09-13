@@ -10,11 +10,11 @@
     \midrule
     \texttt{src/bsim/} & 本地模拟器、协议客户端、计时与回放工具 \\
     \texttt{src/solution/} & 几何、覆盖、主动选点、控制器和学习策略实现 \\
-    \texttt{scripts/} & 训练、配对评估、覆盖核验和模型导出入口 \\
+    \texttt{scripts/} & 参数构造、配对评估、覆盖核验和模型导出入口 \\
     \texttt{tests/} & 规则、协议、计时、几何边界和策略接口测试 \\
     \texttt{handoff/tables/} & 论文表格的原始数据、计算口径和来源记录 \\
     \texttt{handoff/figures/} & 论文插图的 PDF、PNG 与可编辑 SVG 文件 \\
-    \texttt{runs/} & 训练配置、检查点、逐局记录和独立评估汇总 \\
+    \texttt{runs/} & 参数配置、检查点、逐局记录和独立评估汇总 \\
     \texttt{results/} & 演练与正式测试记录的固定归档位置 \\
     \texttt{README.md}、\texttt{pyproject.toml} & 环境、依赖、命令和复现说明 \\
     《AI工具使用详情》 & AI工具用途、采纳内容与人工核验记录 \\
@@ -37,7 +37,7 @@
     \path{src/solution/coverage/certificates.py} & 全向七站与定向三角网格覆盖证书 \\
     \path{src/solution/control/controller.py} & 频道状态、合法候选、回退与退出控制 \\
     \path{src/solution/search/teacher.py} & 相容场景搜索、配对代价与标签筛选 \\
-    \path{src/solution/rl/} & 候选评分、数据聚合、PPO 与分布式训练 \\
+    \path{src/solution/rl/} & 候选评分、数据聚合与整局目标校准 \\
     \path{scripts/evaluate_3000.py} & 冻结策略的独立大样本评估 \\
     \path{scripts/validate_coverage.py} & 连续域覆盖条件和几何参数复核 \\
     \bottomrule
