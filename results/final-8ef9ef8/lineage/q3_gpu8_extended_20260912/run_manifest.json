@@ -1,0 +1,11 @@
+{
+  "baseline_original": "/data5/hy/B-problem/runs/q3_joint_20260912/ppo_candidate.pt",
+  "baseline_sha256": "a924b6013f4c81f0f46c22ad33de823ed4484729d25e517bbf23aaca5a24de14",
+  "world_size": 8,
+  "devices": "0,1,2,3,4,5,6,7",
+  "ppo_seconds": 5400,
+  "smoke": false,
+  "started_unix": 1789179195.2840636,
+  "source": "/data5/hy/B-problem/runs/q3_gpu8_extended_source_20260912",
+  "architecture": "one student, synchronous DDP; search uses frozen replicas without optimizers"
+}

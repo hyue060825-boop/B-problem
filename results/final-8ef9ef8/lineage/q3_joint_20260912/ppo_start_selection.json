@@ -1,0 +1,96 @@
+{
+  "selected": {
+    "path": "runs/q3_joint_20260912/sft_round1/checkpoint_0004.pt",
+    "stage": "sft_round1",
+    "step": 4,
+    "eligible": true,
+    "mean_delta_s": -2.571973890625001,
+    "ci95_halfwidth_s": 10.21049648742765,
+    "robust_gain": false,
+    "selection_pass": true
+  },
+  "candidates": [
+    {
+      "path": "runs/q3_joint_20260912/sft_round1/checkpoint_0002.pt",
+      "stage": "sft_round1",
+      "step": 2,
+      "eligible": true,
+      "mean_delta_s": 0.7784621796875015,
+      "ci95_halfwidth_s": 3.4226622524260257,
+      "robust_gain": false,
+      "selection_pass": false
+    },
+    {
+      "path": "runs/q3_joint_20260912/sft_round1/checkpoint_0008.pt",
+      "stage": "sft_round1",
+      "step": 8,
+      "eligible": true,
+      "mean_delta_s": 0.9229069843749933,
+      "ci95_halfwidth_s": 13.153755798281956,
+      "robust_gain": false,
+      "selection_pass": false
+    },
+    {
+      "path": "runs/q3_joint_20260912/sft_round1/checkpoint_0004.pt",
+      "stage": "sft_round1",
+      "step": 4,
+      "eligible": true,
+      "mean_delta_s": -2.571973890625001,
+      "ci95_halfwidth_s": 10.21049648742765,
+      "robust_gain": false,
+      "selection_pass": true
+    },
+    {
+      "path": "runs/q3_joint_20260912/sft_round1/checkpoint_0006.pt",
+      "stage": "sft_round1",
+      "step": 6,
+      "eligible": true,
+      "mean_delta_s": -0.48456800781249676,
+      "ci95_halfwidth_s": 11.137731269181627,
+      "robust_gain": false,
+      "selection_pass": true
+    },
+    {
+      "path": "runs/q3_joint_20260912/dagger_round2/checkpoint_0002.pt",
+      "stage": "dagger_round2",
+      "step": 2,
+      "eligible": true,
+      "mean_delta_s": 6.8243529843750075,
+      "ci95_halfwidth_s": 17.330822833809826,
+      "robust_gain": false,
+      "selection_pass": false
+    },
+    {
+      "path": "runs/q3_joint_20260912/dagger_round2/checkpoint_0008.pt",
+      "stage": "dagger_round2",
+      "step": 8,
+      "eligible": true,
+      "mean_delta_s": 7.502823585937497,
+      "ci95_halfwidth_s": 19.318820551001615,
+      "robust_gain": false,
+      "selection_pass": false
+    },
+    {
+      "path": "runs/q3_joint_20260912/dagger_round2/checkpoint_0004.pt",
+      "stage": "dagger_round2",
+      "step": 4,
+      "eligible": true,
+      "mean_delta_s": 4.0018769296875,
+      "ci95_halfwidth_s": 18.271376941921346,
+      "robust_gain": false,
+      "selection_pass": false
+    },
+    {
+      "path": "runs/q3_joint_20260912/dagger_round2/checkpoint_0006.pt",
+      "stage": "dagger_round2",
+      "step": 6,
+      "eligible": true,
+      "mean_delta_s": 8.192498070312492,
+      "ci95_halfwidth_s": 18.099038963720464,
+      "robust_gain": false,
+      "selection_pass": false
+    }
+  ],
+  "test_used": false,
+  "note": "No robust SFT improvement; bounded PPO ablation still permitted on complete distilled checkpoint; no production recommendation"
+}

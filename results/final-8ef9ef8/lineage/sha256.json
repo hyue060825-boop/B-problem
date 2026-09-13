@@ -1,0 +1,10 @@
+{
+  "q3_gpu8_extended_20260912/run_manifest.json": "b1244d01668db18a4fef2e0e33905f73d3dd1a19c7fd59b23a7f4b9bc15c5c65",
+  "q3_gpu8_extended_20260912/ppo_initial_selection.json": "e8995e457d12bf3a443141814fd298724b161afa21a2f91ba3245bc6459f2c6b",
+  "q3_gpu8_extended_20260912/ppo_config.json": "9ccae1ee8ef635357d992c0d2d86a0eb34ff9ba8f482c92ea6ce3eca233fcc67",
+  "q3_gpu8_extended_20260912/sft_config.json": "57f1d1ed3670856769557a5fb40b849277ab4b7180e8fc934280b527fcc56c25",
+  "q3_joint_20260912/ppo_start_selection.json": "c46de9fb62940c261d9c4db02bbe5b006bff14b3a0034df3d5a2febb698f8d0f",
+  "q3_joint_20260912/frozen_selection.json": "85000d859c1ef0eb116a7940962739fc18c994af70a6d3a015eeb5ff493ce018",
+  "q3_joint_20260912/dagger_round2/status.json": "cf66a630fd22a2cc18638b363eb490bc23ec5780aaf09c83d73b316df7d4ef2e",
+  "q3_joint_20260912/config.json": "0780fc008041fda04aeeae8ebb745eefe3fc78b0d6dd1b169985903375cfcdce"
+}

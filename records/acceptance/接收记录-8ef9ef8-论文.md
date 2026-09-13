@@ -9,3 +9,7 @@
 Overleaf 项目 `6aa35e81fca7345a83057613` 已同步，编译 27 页、0 错误、0 警告。13 个本轮同步文件从在线重新下载后与本地逐字节一致；主分支 `paper/main.pdf` 为在线构建 `1a099457fb5-250c5f7407f4d3c5` 的下载原件。校验记录见 `results/final-8ef9ef8/paper_sync_verification.json`。
 
 已获用户本轮同步 GitHub 与 Overleaf 授权；保留最初本地已有的背景、分析和Q4/实验修改。官方要求的各次正式测试记录和 AI 使用详情仍待补齐，未消耗新的正式测试机会或启动训练。
+
+## 同轮模型继承链纠正
+
+用户指出 SFT/DAgger 被正文过度删减。回查实验归档发现最终 Q3 明确继承 SFT：joint 第一轮 SFT→PPO 候选 a924b601→extended 搜索监督 SFT 第4轮→PPO best→最终续优化。DAgger 第二轮确实完成，但归档选模回退到 SFT 第一轮。已在第7.6节恢复搜索教师、SFT、DAgger、PPO 完整方法和公式，新增8份原始继承证据。未修改算法或最终研究结果。后续同步核验单独记录。

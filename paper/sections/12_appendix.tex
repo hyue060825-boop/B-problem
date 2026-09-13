@@ -1,7 +1,7 @@
 \clearpage
 \begin{appendices}
 \section{支撑材料与版本对应}
-最终实现与结果固定于实验版本 \texttt{8ef9ef8}。运行包 \path{final-runtime.zip} 保存该版本的控制器、模拟器、评估脚本和两份最终权重；逐局结果、配置、表格与文件摘要单独保存，以避免工作分支更新影响复算。
+最终实现与结果固定于实验版本 \texttt{8ef9ef8}。运行包 \path{final-runtime.zip} 保存该版本的控制器、模拟器、评估脚本和两份最终权重；逐局结果、配置和表格另存，阶段继承证据见 \path{lineage/}。
 \begin{table}[H]
 \centering
 \caption{最终支撑材料及其作用}
@@ -32,7 +32,7 @@
 \path{solution/geometry/core.py} & 角域求交、凸包与最小包围圆 \\
 \path{solution/coverage/certificates.py} & 七站与三角网格覆盖证书 \\
 \path{solution/control/controller.py} & 频道状态、候选、清除与合法退出 \\
-\path{solution/rl/model.py} & 集合式候选策略网络 \\
+\path{solution/rl/} & 候选网络、SFT/DAgger 监督更新 \\
 \path{scripts/train_legacy_deadline_ddp.py} & 最终离线整局策略优化 \\
 \path{scripts/evaluate_deadline_pair.py} & Q3 最终与父模型配对评估 \\
 \path{scripts/report_q4_hour_pair.py} & Q4 最终配对结果整理 \\
