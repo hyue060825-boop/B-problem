@@ -1,0 +1,23 @@
+{
+  "overleaf_build": "1a0995f2f75-103f56ba7bd0a59a",
+  "pages": 27,
+  "errors": 0,
+  "warnings": 0,
+  "source_files_verified": {
+    "sections/09_evaluation.tex": "fe128d662fed823025aef10de482a5b4f7b508f112f54f22ac2b91c810eed7a5",
+    "sections/12_appendix.tex": "e597db365cf2674034ff3cf7811def82cf1fb96592bc2fedfcfeeb443dd94392",
+    "sections/07_problem4.tex": "743dd3cba7138d557fd3def224c85dcc2ed69093bd77b9c4e83278ff0883f9c9",
+    "sections/06_problem3.tex": "4c02cbbcdf32596582a97dc9fb17605be1895c60113c3fe710a961c5c9492e94",
+    "sections/00_abstract.tex": "e21c2f1eee80138310e7dc0cd2e1a0f21b6b9fce519f34ef61c4752ec29894f9",
+    "sections/08_validation.tex": "da5571a7c73160dcedbc2944b62e41c78a25a7421793a38267af8c91aae88768",
+    "sections/01b_analysis.tex": "ca2d3339ecc328ec7009bf355832c90c4ab76eb5b00a8690776dfcbaa3ba2b2a",
+    "QUALITY_REVIEW.md": "d049e87402604806d62b39c2772fd396e8f48503e685d956f50d0db68059ca35",
+    "README.md": "82a224a8538d8791a2159478e2318ea9101ff7766946a94fc4d73a74a7811aba",
+    "09b_conclusion.tex": "28de8b81ceb91ba228db6911aba7e4adfd0baf1c3ad2467764b1ce887868834c",
+    "figures/F013-complete-search-comparison.pdf": "1b5143afdcfae393335b1ab6cb2c98d3a262b9afb2b6c3c3ce580ec4b187e16c"
+  },
+  "pdf_sha256": "6a2af79e0e139d60a21fb20bec93beb7554a604493c69ca271562a1b0c2dcc33",
+  "experiment_basis": "8ef9ef87d8c5413e85e02d18a99eee083da8d66f",
+  "scope": "论文删除旧父模型对照；以确保全部干扰源被清除为前提；保留 SFT、DAgger、PPO 方法和原始归档。",
+  "new_remote_note": "798bdf0 为相同 Q4 最终权重的 7000 场景补充评测，本次不替换已核验的 3000 场景主结果。"
+}
