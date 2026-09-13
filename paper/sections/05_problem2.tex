@@ -31,7 +31,7 @@
 \end{equation}
 当 $\beta$ 接近 $0^\circ$ 或 $180^\circ$ 时，角度误差会被显著放大；侧翼候选点通常可形成更接近 $90^\circ$ 的交会角。
 
-\subsection{最坏后验代价}
+\subsection{定位质量指标与选点评分}
 对候选位置 $q$ 和所有可行第二观测 $z$，令
 \begin{equation}
   K_2(q,z)=
@@ -40,13 +40,13 @@
     K_1\cap W(q,z,\epsilon)\cap\{x:5<\|x-q\|\leq1500\}, & z=\mathrm{direction}.
   \end{cases}
 \end{equation}
-理想模型以所有可行结果中的最坏最小包围圆半径衡量定位风险：
+以所有可行第二观测下的最大包围圆半径定义保守定位质量指标：
 \begin{equation}
   R_{\mathrm{post}}^{\mathrm{worst}}(q)=
   \sup_{z:K_2(q,z)\neq\varnothing}
   \operatorname{rad}_{\mathrm{MEC}}\!\left(K_2(q,z)\right).
 \end{equation}
-连续枚举全部 $z$ 的代价较高。本算例在可行包络中选取 $13$ 个位置情景，并在每个候选点采用误差情景集 $\{-1^\circ,0^\circ,1^\circ\}$ 计算后验，并将所得最大值明确记为采样估计 $\widehat R_{\mathrm{post}}(q)$。它用于候选排序，不作为连续最坏上界。最终在保证接收区域内最小化
+连续枚举全部 $z$ 的代价较高。本算例在可行包络中选取 $13$ 个位置情景，并在每个候选点采用误差情景集 $\{-1^\circ,0^\circ,1^\circ\}$ 计算后验，并将所得最大值明确记为采样估计 $\widehat R_{\mathrm{post}}(q)$。它用于候选排序，不作为连续最坏上界。为与后续定位清除任务衔接，原选点器在定位质量之外计入行动成本，采用以下评分：
 \begin{equation}
   J(q)=\frac{\|q-s_{\mathrm{now}}\|}{5}+5
   +\mathbf 1_{\{c\neq c_{\mathrm{cur}}\}}
@@ -54,74 +54,37 @@
   +\lambda_2T_{\mathrm{remain}}^{\mathrm{est}}(q).
   \label{eq:q2-objective}
 \end{equation}
-当前实现取 $\lambda_1=0.5\,\mathrm{s/m}$、$\lambda_2=1$。后续时间采用到估计包围圆心的移动时间、一次成功清除及估计失败探测次数构造，仅服务于排序，不构成剩余总耗时上界。
+当前实现取 $\lambda_1=0.5\,\mathrm{s/m}$、$\lambda_2=1$。后续时间采用到估计包围圆心的移动时间、一次成功清除及估计失败探测次数构造。$J$ 是本文为候选排序设置的估计指标，不是题面指定的评价公式，也不是实际完成时间；其最小值不等同于定位半径最小值。
 
 \subsection{粗到细搜索}
 先在 $\mathcal C_{\mathrm{recv}}$ 中生成至多 $64$ 个有效规则网格点并加入区域代表点，计算式\eqref{eq:q2-objective}后保留前 $8$ 个，再在其 $3\times3$ 邻域局部细化；每个入选点均重新核验式\eqref{eq:guaranteed-reception}。若第二次返回 \texttt{near}，由距离不超过 $5\,\mathrm{m}$ 可直接原地清除。
 
-\subsection{基于可行域主轴的稀疏候选}
-为降低候选评估成本，另构造一个保持相同目标函数的稀疏变体。设 $K_1$ 凸包的最小包围圆圆心和半径为 $c,r$，最远点对的单位方向为 $e$，其垂向单位向量为 $n$。按
-\begin{equation}
- q=c+\max(r,5)(be\pm an),\qquad
- a\in\{0.15,0.30,0.50,0.75,1.00\},\quad
- b\in\{-0.25,0,0.25\}
- \label{eq:q2-shape-candidate}
-\end{equation}
-生成两侧候选。超出 $\widehat{\mathcal C}_{\mathrm{recv}}$ 的点投影回该集合，去重后加入代表点，并再次检查每个凸包顶点到候选点的距离不超过 $999.98\,\mathrm{m}$。该构造以最远点对近似主要不确定方向，借鉴主动定位中沿主要不确定方向侧向补测并同时计入行动成本的思想\cite{vanderhook2012cautious}；本题仍采用有界角域与确定性接收复核，不引入高斯先验。
+\subsection{第二次观测与定位效果}
+检测点选择的输出包括保证接收候选区域和选定位置 $q$；到达 $q$ 后，再依据实际返回的示向度更新定位区域。由于 $K_2(q,z)\subseteq K_1$，新增的相容观测不会扩大精确可行集，其最小包围圆半径也不会增大。实现采用多边形包络及数值保护量，需同时检查新区域包含真实源的情况与定位尺度的变化。
 
-\subsection{选点算例}
-以 $s_1=(0,0)$、$\theta_1=0^\circ$ 的人工首次观测为例，取 $\lambda_1=0.5\,\mathrm{s/m}$、$\lambda_2=1$。最佳已评估点为 $(735.90,262.92)\,\mathrm{m}$，其保证接收距离上界为 $816.86\,\mathrm{m}<1000\,\mathrm{m}$。与沿首次示向线移动的基线相比，采样后验半径由 $375.16\,\mathrm{m}$ 降至 $99.22\,\mathrm{m}$，目标值由 $476.61\,\mathrm{s}$ 降至 $375.80\,\mathrm{s}$。固定侧翼点得到更小的采样后验半径，但因移动与后续时间较大，其综合目标值为 $394.15\,\mathrm{s}$。这表明仅追求更小的后验半径并不足以降低综合代价，检测点还需兼顾移动距离与后续处置成本。结果见\cref{tab:q2-fixture,fig:q2-candidates}。
+采用已有试运行中的固定场景（种子 $412000$）说明这一过程。首检测点为 $s_1=(0,0)$，首次示向度为 $36.39^\circ$。原粗到细选点器给出 $q=(743.65,245.94)\,\mathrm{m}$，该点到首次可行域包络顶点的最远距离为 $801.92\,\mathrm{m}$，满足保证接收条件。到达该点后，实际获得第二次示向度 $131.82^\circ$；两次角域交会得到的定位区域仍包含场景真实源，其最小包围圆半径为 $13.87\,\mathrm{m}$。\cref{tab:q2-observation}列出同一策略在同一场景中的观测与区域尺度，\cref{fig:q2-candidates}展示候选区域、检测位置及交会结果。
 
-\begin{table}[H]
-  \centering
-  \caption{构造算例中保证接收候选的定位精度与时间代价比较}
-  \label{tab:q2-fixture}
-  \begin{tabularx}{\textwidth}{L>{\hsize=1.2\hsize\linewidth=\hsize}X>{\hsize=.95\hsize\linewidth=\hsize}X>{\hsize=.95\hsize\linewidth=\hsize}X>{\hsize=.90\hsize\linewidth=\hsize}X}
-    \toprule
-    候选方案 & 坐标/m & 接收距离上界/m & 采样后验半径/m & $J$/s \\
-    \midrule
-    本文最佳已评估点 & $(735.90,262.92)$ & $816.86$ & $99.22$ & $375.80$ \\
-    沿示向线点 & $(750.00,0.00)$ & $750.25$ & $375.16$ & $476.61$ \\
-    固定侧翼点 & $(750.00,450.00)$ & $888.36$ & $69.20$ & $394.15$ \\
-    \bottomrule
-  \end{tabularx}
+\begin{table}[htbp]
+\centering
+\caption{原选点策略在同一构造场景中的补测前后定位尺度}
+\label{tab:q2-observation}
+\begin{tabularx}{\textwidth}{cYcc}
+\toprule
+观测阶段 & 检测位置/m & 实测示向度 & 区域包围圆半径/m \\
+\midrule
+首次观测 & $(0.00,0.00)$ & $36.39^\circ$ & $747.63$ \\
+第二次观测 & $(743.65,245.94)$ & $131.82^\circ$ & $13.87$ \\
+\bottomrule
+\end{tabularx}
 \end{table}
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.98\textwidth]{F003-q2-candidates.pdf}
-  \caption{保证接收区域与候选点评分；颜色表示综合评分 $J$，星号标记最佳已评估点}
-  \label{fig:q2-candidates}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\textwidth]{F014-q2-observed-selection.pdf}
+\caption{同一构造场景中的第二检测点与交会定位结果。虚线为两次实测示向线；局部放大显示补测后的定位区域。候选区域由首次可行域凸包保守构造，各坐标轴均按等比例绘制。}
+\label{fig:q2-candidates}
 \end{figure}
 
-该结果只说明有限候选搜索在给定算例上的行为；由于后验角度采用有限情景采样，不能据此宣称连续全局最优。
+本例说明所选第二检测点能够获得有效观测并缩小定位范围，不据单个场景推断所有场景均达到相同精度。记录采用 $1.01^\circ$ 的实现角度保护量；图中区域与该记录一致。源真值仅供离线核验，不作为选点输入。评分中的采样后验半径是检测前估计，表中半径则由实际第二观测得到，二者不可混用。完整原始记录保存在支撑材料 \path{results/validation/LIT-Q2-01/pilot/records.json} 中。
 
-\subsection{实际补测的配对验证}
-在冻结参数后，按五类几何位置、四类固定误差和三档接收半径构造 $120$ 个分层研究场景。沿示向线、固定侧翼、当前粗到细搜索和式\eqref{eq:q2-shape-candidate}的稀疏候选共享场景真值与误差场；策略选点只读取首次公开观测。执行第二次实际检测后，四组共 $480$ 个后验区域均包含真值，且所有场景最终完成清除。
-
-\begin{table}[H]
-  \centering
-  \caption{问题二四种选点方法的实际补测与完整行动结果}
-  \label{tab:q2-paired}
-  \begin{tabularx}{\textwidth}{Yrrrr}
-    \toprule
-    方法 & 完成数 & 平均后验半径/m & 可直接清除数 & 平均总虚拟时间/s \\
-    \midrule
-    沿示向线 & $120/120$ & $256.51$ & $7$ & $269.93$ \\
-    固定侧翼 & $120/120$ & $26.01$ & $49$ & $315.95$ \\
-    当前粗到细搜索 & $120/120$ & $34.52$ & $42$ & $269.01$ \\
-    稀疏几何候选 & $120/120$ & $38.20$ & $40$ & $263.27$ \\
-    \bottomrule
-  \end{tabularx}
-\end{table}
-
-相对当前搜索，稀疏候选的配对总耗时平均减少 $5.74\,\mathrm{s}$，近似 $95\%$ 置信区间为 $[-6.63,-4.85]$ s，$111$ 个场景更快、$9$ 个更慢；与此同时，平均后验半径增加 $3.68\,\mathrm{m}$。固定侧翼获得最小后验半径，却付出最高的完整行动成本。这说明第二次观测精度不能单独代表最终效率，选点应同时核算后续补测与清除。四种方法的分布和配对差见\cref{fig:q2-paired}。
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.92\textwidth]{F011-q2-paired-evaluation.pdf}
-  \caption{问题二四种选点方法的实际后验半径分布及稀疏候选相对当前搜索的配对耗时差}
-  \label{fig:q2-paired}
-\end{figure}
-
-另在 $12$ 个独立场景上比较 $3,5,9$ 档径向候选与半径权重 $0,0.5,1.0$。增加候选数或精度权重并未使总耗时单调下降，且该小批只覆盖接收半径 $1000\,\mathrm{m}$ 和三类常值误差，故不据此回选主实验参数。考虑到稀疏变体尚未接入多源控制器，问题二的推荐点仍由式\eqref{eq:q2-objective}和粗到细搜索给出；稀疏候选作为行动成本敏感性证据保留。完整配置、逐步轨迹、原始表格和源码哈希保存在支撑材料的 \path{results/validation/LIT-Q2-01/}。
+在另行冻结的 $120$ 个分层研究场景中，原选点策略均获得有效第二观测，更新区域均包含真值，平均补测后包围圆半径为 $34.52\,\mathrm{m}$。该统计用于检查本策略在所构造场景上的定位效果，不等同于官方分布下的精度保证。稀疏候选变体及其耗时对比留在支撑材料中，不作为本文第二问的选定方案。

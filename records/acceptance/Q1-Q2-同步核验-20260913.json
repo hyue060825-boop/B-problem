@@ -1,0 +1,15 @@
+{
+  "overleaf_build": "1a0997521ea-76ad36b86bc7d493",
+  "pages": 26,
+  "errors": 0,
+  "warnings": 0,
+  "source_files": {
+    "sections/05_problem2.tex": "7d4db11ea6b42cb533b9d15455e215c34b479ed59a10ccf2e974ede0d52dadc9",
+    "sections/00_abstract.tex": "4b85c009d50fa6754eec76eaddaa9597e03d06e2d6d785e0f335af83db0eb4d0",
+    "sections/04_problem1.tex": "39abe4bd3cb567de137f5f41c20013466890d09203f1c7dc2a580e1709d56aca",
+    "README.md": "78002899992588178530eca23426e35ab0539ac4631c0c0a97d7a1e58d60ca2f",
+    "09b_conclusion.tex": "112aff86876514cd0aed7dd69fea753d13fa992633a157b9ccd90336374dea46",
+    "figures/F014-q2-observed-selection.pdf": "b2b2f55b3e24901b95688b03f9efb4147a64a7e947b8fc2d99f0d8d1c1dfb345"
+  },
+  "pdf_sha256": "cd594f8c63e5fa26f5949b7cec712fc7ae673ff50e2cb7fb5dd0f2ba6c17c6ba"
+}

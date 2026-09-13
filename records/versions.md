@@ -25,3 +25,5 @@ Git 提交保留完整变更历史。旧记录中的缺陷、完成率和“待�
 在论文证据同步基础上补齐所有来源文件、实验档案、父模型和部署包，更新每题交付与复现入口。资产去向见[实际映射](acceptance/experiment_result-8ef9ef8/asset-map-main.json)，本机验证见[整合验证](../results/validation/integration-8ef9ef8/README.md)。本地合并保留 main 与 experiment_result 双亲，未推送远端。
 
 推送前另接收远端 `1e48a64`、`8f0efba`：补齐 Q3 参数继承证据、调整论文最终模型展示范围。合并无冲突，论文与其证据子集以 `8f0efba` 核对，完整实验整合基准仍保留 `910df44`。
+
+上传期间另接收 `725353b` 的 Q1/Q2 论文与实际补测图修订，完整保留论文手提交；当前保护基准相应更新。
