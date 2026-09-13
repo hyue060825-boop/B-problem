@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "checks": {
+    "model_identities_verified": 6,
+    "final_runtime_files": 44,
+    "archives_verified": 50,
+    "archive_parts_verified": 59,
+    "archive_members": "All member hashes were verified during organization; extractor rechecks members before writing.",
+    "cache_originals": "not available on this clone",
+    "original_run_evidence": {
+      "preserved_files": 25219,
+      "cache_only_weights_bytecode_pid_tar": 259
+    },
+    "authoritative_links_checked": 227,
+    "main_means_recomputed_from_raw": true,
+    "cache_not_tracked": true,
+    "cache_ignore_rule": true
+  },
+  "failures": []
+}

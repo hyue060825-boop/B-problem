@@ -1,48 +1,47 @@
 \clearpage
 \begin{appendices}
-\section{支撑材料文件列表}
+\section{支撑材料与版本对应}
+最终实现与结果固定于实验版本 \texttt{8ef9ef8}。运行包 \path{final-runtime.zip} 保存该版本的控制器、模拟器、评估脚本和两份最终权重；逐局结果、配置、表格与文件摘要单独保存，以避免工作分支更新影响复算。
 \begin{table}[H]
-  \centering
-  \caption{支撑材料文件列表}
-  \begin{tabularx}{\textwidth}{LL}
-    \toprule
-    文件或目录 & 功能说明 \\
-    \midrule
-    \texttt{src/bsim/} & 本地模拟器、协议客户端、计时与回放工具 \\
-    \texttt{src/solution/} & 几何、覆盖、主动选点、控制器和学习策略实现 \\
-    \texttt{scripts/} & 参数构造、配对评估、覆盖核验和模型导出入口 \\
-    \texttt{tests/} & 规则、协议、计时、几何边界和策略接口测试 \\
-    \texttt{handoff/tables/} & 论文表格的原始数据、计算口径和来源记录 \\
-    \texttt{handoff/figures/} & 论文插图的 PDF、PNG 与可编辑 SVG 文件 \\
-    \texttt{runs/} & 参数配置、检查点、逐局记录和独立评估汇总 \\
-    \texttt{results/} & 演练与正式测试记录的固定归档位置 \\
-    \texttt{README.md}、\texttt{pyproject.toml} & 环境、依赖、命令和复现说明 \\
-    《AI工具使用详情》 & AI工具用途、采纳内容与人工核验记录 \\
-    \bottomrule
-  \end{tabularx}
+\centering
+\caption{最终支撑材料及其作用}
+\begin{tabularx}{\textwidth}{>{\hsize=1.2\hsize}L>{\hsize=.8\hsize}L}
+\toprule
+文件或目录 & 功能说明 \\
+\midrule
+\path{final-runtime.zip} & 最终可运行源码、依赖说明与 Q3/Q4 权重 \\
+\path{paper/model_registry.json} & 模型身份、完整 SHA-256 及结果对应关系 \\
+\path{paper/tables/} & 主结果、配对差、源数分层与补充实验数据 \\
+\path{runs/} & 最终逐局样本、配置与补充实验汇总 \\
+\path{paper/official_logs/} & 已获得的 Q4 父模型公开协议日志 \\
+\path{sha256.json} & 导入材料的完整性校验清单 \\
+\path{paper_recalculation.json} & 主结果逐局复算及权重核验输出 \\
+\bottomrule
+\end{tabularx}
 \end{table}
 \section{核心程序与复现入口}
-完整可运行源码随支撑材料一并提交。为便于核验，\cref{tab:reproduce-entry}列出本文各结论对应的程序入口；正式提交包中保留配置文件、随机种子、冻结检查点和逐局原始记录，使表图能够从同一版本重新生成。
-
+\cref{tab:reproduce-entry}中的路径以解压后的最终运行包为根目录。问题一、二的原始实现与配对评估另保存在项目的 \path{src/} 和 \path{results/validation/} 中。
 \begin{table}[H]
-  \centering
-  \caption{模型实现与结果复现入口}
-  \label{tab:reproduce-entry}
-  \begin{tabularx}{\textwidth}{LL}
-    \toprule
-    程序入口 & 对应内容 \\
-    \midrule
-    \path{src/solution/geometry/core.py} & 角域求交、最远点对与最小包围圆 \\
-    \path{src/solution/planning/q2.py} & 问题二保证接收约束与粗到细选点 \\
-    \path{src/solution/coverage/certificates.py} & 全向七站与定向三角网格覆盖证书 \\
-    \path{src/solution/control/controller.py} & 频道状态、合法候选、回退与退出控制 \\
-    \path{src/solution/search/teacher.py} & 相容场景搜索、配对代价与标签筛选 \\
-    \path{src/solution/rl/} & 候选评分、数据聚合与整局目标校准 \\
-    \path{scripts/evaluate_3000.py} & 冻结策略的独立大样本评估 \\
-    \path{scripts/validate_coverage.py} & 连续域覆盖条件和几何参数复核 \\
-    \bottomrule
-  \end{tabularx}
+\centering
+\caption{最终算法与核验入口}
+\label{tab:reproduce-entry}
+\begin{tabularx}{\textwidth}{>{\hsize=1.2\hsize}L>{\hsize=.8\hsize}L}
+\toprule
+程序入口 & 对应内容 \\
+\midrule
+\path{solution/geometry/core.py} & 角域求交、凸包与最小包围圆 \\
+\path{solution/coverage/certificates.py} & 七站与三角网格覆盖证书 \\
+\path{solution/control/controller.py} & 频道状态、候选、清除与合法退出 \\
+\path{solution/rl/model.py} & 集合式候选策略网络 \\
+\path{scripts/train_legacy_deadline_ddp.py} & 最终离线整局策略优化 \\
+\path{scripts/evaluate_deadline_pair.py} & Q3 最终与父模型配对评估 \\
+\path{scripts/report_q4_hour_pair.py} & Q4 最终配对结果整理 \\
+\path{scripts/verify_q4_certificate_exact.py} & 定向覆盖证书的有理数核验 \\
+\path{scripts/run_policy.py} & 冻结策略公开协议运行入口 \\
+\bottomrule
+\end{tabularx}
 \end{table}
+论文工作仓库中的 \path{scripts/build_final_paper_assets.py} 从固定归档重算完成率、均值、分位数及配对区间，并生成源数分层对照图。
 
-正式测试完成后，将原始响应、逐步动作、虚拟时间分解、程序运行时间和退出证书保存到 \path{results/formal/}，再由同一复算脚本生成问题三、四的正式结果表。
+最后续优化阶段分别使用 Q3 四张、Q4 八张 RTX 4090。离线参数构造成本与部署虚拟时间分列；官方日志保留其原始模型身份。
 \end{appendices}

@@ -1,0 +1,24 @@
+{
+  "source_commit": "8ef9ef87d8c5413e85e02d18a99eee083da8d66f",
+  "overleaf_project": "6aa35e81fca7345a83057613",
+  "overleaf_build": "1a099457fb5-250c5f7407f4d3c5",
+  "pages": 27,
+  "errors": 0,
+  "warnings": 0,
+  "source_files_byte_identical": {
+    "sections/09_evaluation.tex": true,
+    "sections/12_appendix.tex": true,
+    "sections/07_problem4.tex": true,
+    "sections/06_problem3.tex": true,
+    "sections/01_background.tex": true,
+    "sections/00_abstract.tex": true,
+    "sections/03_symbols.tex": true,
+    "sections/08_validation.tex": true,
+    "sections/01b_analysis.tex": true,
+    "QUALITY_REVIEW.md": true,
+    "README.md": true,
+    "09b_conclusion.tex": true,
+    "figures/F013-complete-search-comparison.pdf": true
+  },
+  "pdf_sha256": "87fa6776d966a1fc2eb467365692a9330c98ca00dee0926a9dda06e85f569c12"
+}

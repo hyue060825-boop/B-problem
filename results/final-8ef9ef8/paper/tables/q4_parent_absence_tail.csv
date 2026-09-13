@@ -1,0 +1,3 @@
+﻿model,group,episodes,mean_T_s,mean_last_clear_s,mean_tail_s,median_tail_s,p95_tail_s,pooled_tail_fraction,after6000_pooled_negative_rate,episodes_with_late_discovery,evidence
+q4_parent,overall,3000,9694.479592128335,8563.805753909333,1130.6738382190001,0.0,6167.8842091999995,0.11663068940153067,0.9593743611398773,1172,runs/q4_absence_tail_analysis_20260913_v2/summary.json
+q4_parent,lt16,2577,10093.551156389989,8777.28359152503,1316.2675648649592,253.63925200000085,6274.0762423999995,0.13040678592406574,0.9626982907892532,1020,runs/q4_absence_tail_analysis_20260913_v2/summary.json

@@ -10,7 +10,13 @@
 4. [records/](records/README.md) 保存接收、版本与资产清点，当前边界见[接收记录](records/acceptance/接收记录-3ddb2d9.md)。
 5. 协作流程见 [GitHub 速查](github-guidance.md)，项目约定见 [AGENTS.md](AGENTS.md)，共享技能见[使用说明](.agents/skills/README.md)。
 
-## 当前进展
+## 当前论文版本（2026-09-13）
+
+论文已按 `experiment_result@8ef9ef8` 的最终代码与逐局结果修订，并同步 Overleaf。两问各 3000/3000 局完整完成，Q3/Q4 分别清除全部 38961/39086 个源；平均每源完整耗时为 255.99/767.25 s。最终结果与下方历史批次不同。
+
+入口：[论文 PDF](paper/main.pdf)、[最终证据与冻结运行包](results/final-8ef9ef8/README.md)、[质量复核及正式提交缺项](paper/QUALITY_REVIEW.md)、[本轮接收记录](records/acceptance/接收记录-8ef9ef8-论文.md)。完整实验档案保留在固定实验分支；主分支算法目录未被不同目录结构覆盖。Q4 布局/消融/单份官方日志仍标注父模型身份。
+
+## 前期整合记录（截至 3ddb2d9）
 
 已接收 hy 分支截至 `3ddb2d9` 的资产，包含 Q4 控制修复、同步多卡训练、Q3 搜索与最新配对评估；保留 main 的论文和历史结果，源码、配置及新交付沿用下列目录。
 

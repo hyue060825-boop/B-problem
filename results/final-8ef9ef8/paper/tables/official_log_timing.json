@@ -1,0 +1,11 @@
+{
+  "model": "q4_parent",
+  "checkpoint_sha256": "e8a525f78d176d9073372394b324bd585f4445fbf9cd1515141c483f38d5bd90",
+  "log_sha256": "ae0acc005455bcc21b400f0898b635bc94cb4b6abe95e7470684757ba357e028",
+  "enter_timestamp_ms": 1789261051342,
+  "exit_timestamp_ms": 1789261054072,
+  "real_enter_to_exit_s": 2.73,
+  "virtual_total_s": 9236.067257,
+  "requests": 304,
+  "limitation": "Single official session, previous parent checkpoint; excludes Python startup/model loading. Not the final Q4 or an official multi-scenario evaluation."
+}
