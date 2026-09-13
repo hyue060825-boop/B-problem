@@ -1,0 +1,158 @@
+{
+  "archive_sha256": "c37e34ac1ff9023cc678e967b9fd827497d4a0cb42e2558de9b2751c28a3774a",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 4146,
+      "sha256": "c37e34ac1ff9023cc678e967b9fd827497d4a0cb42e2558de9b2751c28a3774a"
+    }
+  ],
+  "members": [
+    {
+      "path": "configs/q34_structural_q3_4card_smoke.json",
+      "bytes": 457,
+      "sha256": "5b0ba12fd5d5d4d3f942e211eb897db9edf1e4741cf4a212611d04a5d360463c"
+    },
+    {
+      "path": "configs/q34_structural_q3_smoke.json",
+      "bytes": 455,
+      "sha256": "16073ab71d82ee760374a9281f62dcf9e253cf31c4cebb9689acdee187fcfab5"
+    },
+    {
+      "path": "configs/q34_structural_q3_train.json",
+      "bytes": 450,
+      "sha256": "f68b75495437099a1c298403393f693c8329b402e9543c2f77fa882aa520606a"
+    },
+    {
+      "path": "configs/q34_structural_q4_4card_smoke.json",
+      "bytes": 461,
+      "sha256": "5b0b0c8c3313fc0376e323fa77fcdf5c57994ae28cde4dd82104d02497e593ea"
+    },
+    {
+      "path": "configs/q34_structural_q4_8card_30min.json",
+      "bytes": 469,
+      "sha256": "0a7f9635a7c0fd22560869219fd01c5406a08709dbeb60ec7c2980f30eda9b9d"
+    },
+    {
+      "path": "configs/q34_structural_q4_8card_long.json",
+      "bytes": 460,
+      "sha256": "adbd372a2d62dca165be4910f909e9d155cb8a22259f89becc978a248971011e"
+    },
+    {
+      "path": "configs/q34_structural_q4_8card_restart.json",
+      "bytes": 463,
+      "sha256": "d2a7d092e2f6ff64b0b79a99198ca9091a2d1b6d894390326ba7be479584dbc4"
+    },
+    {
+      "path": "configs/q34_structural_q4_optimized_smoke.json",
+      "bytes": 454,
+      "sha256": "f4ab54d74ba5e39d41df1df60616d40c684bcf579d95409c5ee8e6881b2bcf4f"
+    },
+    {
+      "path": "configs/q34_structural_q4_smoke.json",
+      "bytes": 450,
+      "sha256": "488f53e4e6048741d98ffd0d850765827b7576ec006508b3fc076eff07aba6a0"
+    },
+    {
+      "path": "configs/q34_structural_q4_train.json",
+      "bytes": 450,
+      "sha256": "318e5aeb58d4c90b07c8b34c1c26b5b7c261f664a2c715143e7356dde60fc61a"
+    },
+    {
+      "path": "configs/q34_structural_q4_train_short.json",
+      "bytes": 460,
+      "sha256": "90ba662a5237b4f3a4be7998d3a3903372a50813ba5ecb6b455c5b2729a9daa0"
+    },
+    {
+      "path": "configs/q34_structural_q4_train_v4.json",
+      "bytes": 461,
+      "sha256": "c5384f38a272eac76a81d601d170ecc5826e0898eb660b811b23626cd00ca452"
+    },
+    {
+      "path": "configs/q3_4card_6h15.json",
+      "bytes": 543,
+      "sha256": "5714d5d1b1437bf459bad6097835f6f11f523491602d22812966547aaa62457a"
+    },
+    {
+      "path": "configs/q3_joint_4gpu.json",
+      "bytes": 974,
+      "sha256": "0780fc008041fda04aeeae8ebb745eefe3fc78b0d6dd1b169985903375cfcdce"
+    },
+    {
+      "path": "configs/q3_legacy_deadline_4gpu.json",
+      "bytes": 751,
+      "sha256": "19868553c7345959f41785ef0f6b5af167f69b23946161ba9de6a7a27e679470"
+    },
+    {
+      "path": "configs/q4_belief_attention_8gpu_medium.json",
+      "bytes": 804,
+      "sha256": "a85fa3686a34173e2a93530b107c7c10b5df169f93b8ed1bfac93495af26ac83"
+    },
+    {
+      "path": "configs/q4_belief_attention_8gpu_medium2.json",
+      "bytes": 804,
+      "sha256": "3a7b16ae20fb5c13d7b290fd552ac1657722c3bfb0f73ae8a9613d4ccbff144c"
+    },
+    {
+      "path": "configs/q4_belief_attention_8gpu_medium3.json",
+      "bytes": 801,
+      "sha256": "b0877f1379cea2d00d3dba7efdf8a8b990fcc4241eab92a39879148a958e0c09"
+    },
+    {
+      "path": "configs/q4_belief_attention_8gpu_smoke.json",
+      "bytes": 712,
+      "sha256": "7968dcd461ca1aee2457a9aa4099c6e8815742dc638d01d65e94c73d4197e26b"
+    },
+    {
+      "path": "configs/q4_belief_attention_8gpu_smoke2.json",
+      "bytes": 718,
+      "sha256": "724ec73fab9de97c578a02129212bfe53495f6b3c4aee74e85703717ed9cfebe"
+    },
+    {
+      "path": "configs/q4_belief_attention_8gpu_smoke3.json",
+      "bytes": 716,
+      "sha256": "431323bc3f0a10c768b8e8afea9412fecb505b7ca45ca10b2a9c0ae2b9ec9b52"
+    },
+    {
+      "path": "configs/q4_closed_loop_8gpu.json",
+      "bytes": 883,
+      "sha256": "61564e99320074159db549feb280f5deb3ba3feb42f89d09dfd8380d453a2e4a"
+    },
+    {
+      "path": "configs/q4_closed_loop_smoke.json",
+      "bytes": 874,
+      "sha256": "b309961fb74e584ba3762d68b64fc0c30169bb8b7a80ae15c55b610d7a439461"
+    },
+    {
+      "path": "configs/q4_closed_loop_smoke3.json",
+      "bytes": 904,
+      "sha256": "b7b40c17b2f3c66df4f6a6f29f70401a62b5383e7032450ca4ecefe4a2474145"
+    },
+    {
+      "path": "configs/q4_legacy_deadline_4gpu.json",
+      "bytes": 746,
+      "sha256": "c9d72f920ca5bc1b8c1ccbe4d2d6ae5c2be3835700f520c1997fb43da4e35bfa"
+    },
+    {
+      "path": "configs/q4_legacy_deadline_smoke.json",
+      "bytes": 746,
+      "sha256": "c7901f17047bf97b67c2a6f0f74708f4dfd77da4ba1261156eef5a759ea346b7"
+    },
+    {
+      "path": "configs/q4_structural_continue_30min.json",
+      "bytes": 575,
+      "sha256": "998972524b170bad706fb5d70c9bc10e0e4b6f16af6201b66044f1a8525f9fab"
+    },
+    {
+      "path": "configs/q4_structural_continue_smoke.json",
+      "bytes": 570,
+      "sha256": "df458dd18f88f34900f55468a6e06b146451f14c74271f6435c08f64543304b3"
+    },
+    {
+      "path": "configs/research_not_authorized.json",
+      "bytes": 230,
+      "sha256": "365109bcfae918e1841d5595e1d989c23d87b5c4a7b3d764fb5f66ded37833b6"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

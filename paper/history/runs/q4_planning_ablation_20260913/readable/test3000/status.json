@@ -1,0 +1,7 @@
+{
+  "status": "COMPLETE",
+  "paired_scenarios": 3000,
+  "total_episodes": 12000,
+  "elapsed_s": 89.35747534874827,
+  "failures": 0
+}

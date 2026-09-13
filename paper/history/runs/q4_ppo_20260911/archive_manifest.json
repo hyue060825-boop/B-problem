@@ -1,0 +1,393 @@
+{
+  "archive_sha256": "946d34217a938abdc846701439552f7bdf625c480d1a67bb5c58085cd64694e1",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 241525,
+      "sha256": "946d34217a938abdc846701439552f7bdf625c480d1a67bb5c58085cd64694e1"
+    }
+  ],
+  "members": [
+    {
+      "path": "runs/q4_ppo_20260911/baseline_episodes.json",
+      "bytes": 13246,
+      "sha256": "91ac3909b1cb006c5643ed9821c9c3d21658743533295c2286891952b0dd9408"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/config.json",
+      "bytes": 489,
+      "sha256": "eb3c67097096191360f1fd686d8a5231ee9cc10b9e1ce86c06441015bfc9ab50"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/console.log",
+      "bytes": 2324,
+      "sha256": "2f44d7abd5fd674d13baea1546f50fd1fd5bc9c12dab88abf6cb4fcf98d76db1"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/dagger_episodes.json",
+      "bytes": 13218,
+      "sha256": "f857dfa3de27637451309612f4a0a7fc2ff43227b1a35b29e5a6efc4805b356c"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0001.json",
+      "bytes": 26406,
+      "sha256": "5626a85dd1ee38d27a82f5586909d637c7a18ae90e1730bbdf7deb77991c9b9e"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0002.json",
+      "bytes": 26450,
+      "sha256": "700d5b6b9990eae0d857de285fe0a22fc5fc72c1454c9ce43498c19148c71807"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0003.json",
+      "bytes": 26448,
+      "sha256": "6c69d8e9f354e2f0837e6934984a8d27af07a57f5386d30741b350e7b09a9cc9"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0004.json",
+      "bytes": 26445,
+      "sha256": "bad6c31ad9ecb59bfd82854b6b3183160fa503876edda7c0e3771005c7fad75d"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0005.json",
+      "bytes": 26454,
+      "sha256": "ba303d2210858464fa653bccc66949edeceae1644910b4d15c2ee4f3dbf90585"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0006.json",
+      "bytes": 26442,
+      "sha256": "39c1656f5ab042ec81c096884abe885de6c0fd4c14bcb515db575181a629d43f"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0007.json",
+      "bytes": 26443,
+      "sha256": "4fbc4bf0b27e290c9f8d527749ecd6fc9159e9e4bdd7363743d74ef3976d9f5d"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0008.json",
+      "bytes": 26467,
+      "sha256": "3905c2373f1e910c680966455dded41bdea7c23698801c2f97f171577d55d52c"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0009.json",
+      "bytes": 26399,
+      "sha256": "9a7014ef13ced4affa794499a57d089e1b1ae021618c25c16f5bfe82adb713d5"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0010.json",
+      "bytes": 26448,
+      "sha256": "eb20ed9bfc53cb43b02ddaa2eb3e899e8f30b20c1a27929515d1afc7b73f7677"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0011.json",
+      "bytes": 26448,
+      "sha256": "b1270d510197b46e34dbd6bdff538c8971d060deb92cef220daf577b799c6e0b"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0012.json",
+      "bytes": 26441,
+      "sha256": "c409af5a944cfe02ea18e3c1a28dec0b959b19db96806b3013ee3ed82ffaf5bb"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0013.json",
+      "bytes": 26430,
+      "sha256": "088b7f84c99d2f447013eb757d8f2da1a4aa980819fef97d49fc06a2bd4b8967"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0014.json",
+      "bytes": 26430,
+      "sha256": "c2936c867be8de05ab74f246ce829f8ee07cd1242c2501d2b126c48bfe404edd"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0015.json",
+      "bytes": 26458,
+      "sha256": "154453c8eb81d58b6253f97e63434f8188c47626c977a1c0bb17a09a1f7ecfbd"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0016.json",
+      "bytes": 26453,
+      "sha256": "9ecd0a11467eac1ea1bd7451b9f9a7182cafbfe7a0b84eb4a0c2244d7a90a2ff"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0017.json",
+      "bytes": 26449,
+      "sha256": "65dfd8d9cc252f0b2874408889a53218e8ad5ac791c9094584e163d03b02de9b"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0018.json",
+      "bytes": 26440,
+      "sha256": "03e8ea5c524817144e66b8e7e399eac835698f480d3ac38f755d19a19c25c9a2"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0019.json",
+      "bytes": 26446,
+      "sha256": "10a5ed2c240ff614c387b5f490b7f9fc4bd1c41bf3611a30201ff71bd9af6550"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0020.json",
+      "bytes": 26456,
+      "sha256": "71e345c0fb01427ee1c1321e0dd758e13ba3a6e8ebf2f513fb7f41339c446bf9"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0021.json",
+      "bytes": 26434,
+      "sha256": "db498ef3b0b65147f3d515cf31232b68b1ee9c357f3643a8d58cd20df5d5bae4"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0022.json",
+      "bytes": 26466,
+      "sha256": "5e58939a61d4e96828726a1bf663db59339630f8a1c157f101195b5e6497b49d"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0023.json",
+      "bytes": 26476,
+      "sha256": "935a6244ab7844be95925b96262caff521573336c0a5ed77dba80d1d7750d79b"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0024.json",
+      "bytes": 26437,
+      "sha256": "eea1e4c7aa588d08a3accb3445c12eae8ea28100053fb74c9663520fd25c5cf1"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0025.json",
+      "bytes": 26474,
+      "sha256": "5f20fdee46d53afd67bd3c43e86573f81611e58e305eca81f668e745931ba629"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0026.json",
+      "bytes": 26449,
+      "sha256": "7dcd2f28bf33f085525af030ddfb9b293f3a25bc2e687aad57b758f2f5fbd14a"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0027.json",
+      "bytes": 26459,
+      "sha256": "f8d3a305833c6fc29d49d2a2ea13bc9378ab8d7e77e55d3a14c83931dfde49bb"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0028.json",
+      "bytes": 26452,
+      "sha256": "ff9d826658d4b214b4a71f883eae72faa6a7f349ce50d92812874800c42dc7d5"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0029.json",
+      "bytes": 26461,
+      "sha256": "a817f4f9c94961219d6e83b3b1efc9ac62c36788edc3c9a7bc4c5942d22f08ae"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0030.json",
+      "bytes": 26504,
+      "sha256": "7b1c802a739eef80e477432ba4b20b27d5a4746cdc675fa54ea2286f2e479aa7"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0031.json",
+      "bytes": 26439,
+      "sha256": "1e8ae91ea2fe74bf670551ec2c4da507aea02b4fc9b9960981c95683caaace40"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0032.json",
+      "bytes": 26466,
+      "sha256": "2179db8cc556fbdf21ec236af110d46d925a2746442a1bee2a08af86454065c1"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0033.json",
+      "bytes": 26445,
+      "sha256": "2771c471da43da94dca0a633b2f36a10ee2818f6ed843d9ebadbe95babb4a294"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0034.json",
+      "bytes": 26455,
+      "sha256": "f7cdd9c54066c275b28fccc08e42e3491b48747c3aca794eb15682353164d531"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0035.json",
+      "bytes": 26476,
+      "sha256": "706691a9ffa2d208971e038c5e7d7c4d33dd1f56488d9b8926000e106aeac8cc"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0036.json",
+      "bytes": 26443,
+      "sha256": "5bdcf137baa934a2641d42d8b483e1c4ba7c0ce1de6bfa6d54b4e27e79ca7f57"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0037.json",
+      "bytes": 26451,
+      "sha256": "70113d01df9a264662377f29de9235517a0d5ca33dfa4b23d4514090593f7152"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0038.json",
+      "bytes": 26469,
+      "sha256": "0cab2ba5cf410e44b9b81819b5fa5559443ee0b3fc3a52ab9a33679252d6c766"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0039.json",
+      "bytes": 26508,
+      "sha256": "1fb50f37aebbe25ab07408a2f378fc1b152ce02e236d33724b1323e115e13c31"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0040.json",
+      "bytes": 26452,
+      "sha256": "786457df4392ae377a81e0c3bf9c211380627adfb56770809faa68bbb8843e1a"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0041.json",
+      "bytes": 26435,
+      "sha256": "5736055df2ac84b618b71c55d812f60f264ae5c0e3243a01b2b4bb0dcb8f585c"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0042.json",
+      "bytes": 26426,
+      "sha256": "a01997734e43c9523f36d66a39e4adcbf6879fd076b722d1d21ea3df0532bdac"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0043.json",
+      "bytes": 26414,
+      "sha256": "c54adb257643ea48ed320df00c0047eaa3d1048c6c48fd77845ca96563ce3bfe"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0044.json",
+      "bytes": 26425,
+      "sha256": "9ea062705fe5e328c36e45fcb839905fa3c2bf5d73f2fada93a120f4d2c7c284"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0045.json",
+      "bytes": 26440,
+      "sha256": "e46f394e5a364bf2a1967ed0029c8d5e007820c0c43d06d00c71bc8160a37bfe"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0046.json",
+      "bytes": 26414,
+      "sha256": "721698bc2dcf80c495caaa57c0d5294fc3c2b1bcec868c8bac14880d9650586a"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0047.json",
+      "bytes": 26438,
+      "sha256": "59dcc0203c65c950292f2aa5b13bd69e5a32da708fb32de9c11705f49a5079b8"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0048.json",
+      "bytes": 26444,
+      "sha256": "3355a9b410363a6fb46014ab7688f1c0101394e6897d05380c5500d076ccbb17"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0049.json",
+      "bytes": 26438,
+      "sha256": "1bb280d679d3eadd146aa2de1734039b5dc88838a61f498f8d3de671c24940b7"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0050.json",
+      "bytes": 26448,
+      "sha256": "0551abb25f80d4021f85194764c31bc001ec2ab6b822576292f7d350ec8339e6"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0051.json",
+      "bytes": 26441,
+      "sha256": "d5c0979173824f192010433589740bfb81f49e93e57d0993edaf2e2b32fb9a91"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0052.json",
+      "bytes": 26433,
+      "sha256": "cefd187e4ed59d09470e6a08556eb3d51a9d59ac6a127c40ef36fa792ad7576e"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0053.json",
+      "bytes": 26440,
+      "sha256": "f7c91a81b08774acc9490943b1387450bbb0ae30d6c925ef28345dd7badee805"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0054.json",
+      "bytes": 26419,
+      "sha256": "811c45af147bfc406260be1b4243a2e067e7761a7a8b4e1246f4c5cd66be8d67"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0055.json",
+      "bytes": 26480,
+      "sha256": "d682e1b73c9c3fef2c166a81e82c6e8cac464faca905dff89572b2bd18c9a39d"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0056.json",
+      "bytes": 26455,
+      "sha256": "573875f5a2f27fac7ce71d19ab0b8c9c1e6c6f8e63bfb80930cc74be56d4c289"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0057.json",
+      "bytes": 26426,
+      "sha256": "8b8fe3fc45753c6645221d0e06ff506aaab6eac05a2dcf02724d228df15abe98"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0058.json",
+      "bytes": 26416,
+      "sha256": "987378d3cf6e226550735b474d65737711de5ae4c7e4a4b5bb456a0c51f4c306"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0059.json",
+      "bytes": 26449,
+      "sha256": "d75d91166645d1107de6761d423ebcd0c84e0c2ea685b3cc13d71391211813a1"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0060.json",
+      "bytes": 26437,
+      "sha256": "0dbd538555404d331396160abc8de523e5eb8a5385390ea23d62bbaa8deb0761"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0061.json",
+      "bytes": 26443,
+      "sha256": "fcd334ec4ec0729a6bc1d924da48f798a57ddfcd06cb2f9ec3744662a1697f1d"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0062.json",
+      "bytes": 26418,
+      "sha256": "bd25d77322fb5c51f82fc2080fe8f5491d367a9011b0db23f5618408448a7836"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0063.json",
+      "bytes": 26443,
+      "sha256": "b4b57a5591945aea30a5330f76b95c9134c8c911dbf24f8e6fd463d818a53068"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/episodes_0064.json",
+      "bytes": 26457,
+      "sha256": "2f0f55893a233fbda8009cc7e2b88912bd3c0ff0d04bd9e7d124086e6446e481"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/metrics.jsonl",
+      "bytes": 39682,
+      "sha256": "476c09b8936cbb66ff3c54fcc994e787ce7ce62112fdc935eda346d5220e0ad7"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/pid",
+      "bytes": 8,
+      "sha256": "61943742d12c240ec097f0496133ae40aa00670a0f7dbc2aa1723f35dffe6c7f"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/provenance.json",
+      "bytes": 3546,
+      "sha256": "a99f0a7552c92883ffd0c3a67e8415d497aae28725b7613c25eef232ae23889f"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/status.json",
+      "bytes": 238,
+      "sha256": "fd9053c292e6962577fe374787652f7b9d65d0c9293a71e4392a2ada969370ff"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/validation_0016.json",
+      "bytes": 16325,
+      "sha256": "7a6df35b86665500c9f3ff4d594903bfd89eaa6e9da8ecfae4cfafa2dbb9de0d"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/validation_0032.json",
+      "bytes": 16325,
+      "sha256": "0e27be849dc4b8e4df521781cc5fa9628a0636396fbdc75d0c7f7d446d094743"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/validation_0048.json",
+      "bytes": 16327,
+      "sha256": "5e0647bc7893b8b5c5e86d603920d9785f9e2ca1d55a5027079d6e4149ddf00f"
+    },
+    {
+      "path": "runs/q4_ppo_20260911/validation_0064.json",
+      "bytes": 16328,
+      "sha256": "e6b23a28deb5d265e670bcbc95056e98f8e4e98e9296b673265e6618af2b2cde"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

@@ -1,0 +1,18 @@
+{
+  "status": "NO_COUNTEREXAMPLE_FOUND",
+  "samples": 100000,
+  "source_radius_m": 1800.0,
+  "receive_radius_m": 1000.0,
+  "min_noncoincident_near_station_count": 3,
+  "worst_max_angle_gap_rad": 2.5992037242973316,
+  "worst_point": [
+    -502.4156591008782,
+    1585.0759422478286
+  ],
+  "counterexample": null,
+  "device": "cuda:0",
+  "dtype": "float64",
+  "seed": 1,
+  "elapsed_s": 0.24610426323488355,
+  "meaning": "empirical attack only; NO_COUNTEREXAMPLE_FOUND is not a continuous-domain proof"
+}

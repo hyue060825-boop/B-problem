@@ -1,0 +1,5 @@
+{
+  "checkpoint": "runs/q4_optimization_20260912/gpu_smoke3/latest.pt",
+  "selection_uses_test": false,
+  "recommended": "runs/q4_optimization_20260912/initial.pt"
+}

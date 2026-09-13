@@ -1,0 +1,34 @@
+{
+  "created": "2026-09-13T01:06:15.054680+08:00",
+  "runtime_worktree": "/tmp/B-problem-q3legacy",
+  "runtime_commit": "3ddb2d9",
+  "all_checkpoint_solution_bsim_hashes_match": true,
+  "source_changes": "budget trainer only; runtime model/controller/features unchanged",
+  "q3_cards": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "q4_cards": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "deadline": "2026-09-13T07:10:00+08:00",
+  "soft_stop": "07:00",
+  "term": "07:08",
+  "kill": "07:09",
+  "restart_rng": "new distinct rank streams for 8-to-4 GPU continuation; Adam restored; not bitwise continuation of old 8-rank job",
+  "recommendations_unchanged": true,
+  "final_test": "NOT_RUN; not automatically scheduled beyond deadline",
+  "q3_parent": {
+    "path": "/data5/hy/B-problem/runs/q3_gpu8_extended_20260912/ppo/best.pt",
+    "sha256": "8cc3a1621334640e6010d8d8fc2cc91a7d47a879573bd54b55fa45a990a56e71"
+  },
+  "q4_parent": {
+    "path": "/data5/hy/B-problem/runs/q4_budget_20260912/train/best.pt",
+    "sha256": "2329eb4d12088ebccfdc459939aeb8d5ee67f9696b4b41b1385c3c158d4c0e4a"
+  }
+}

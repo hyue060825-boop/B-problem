@@ -1,7 +1,0 @@
-{
-  "gpus": "index, uuid, memory.used [MiB], utilization.gpu [%]\n0, GPU-293ca2f1-18c4-e35b-089c-2d009ee63c41, 1 MiB, 0 %\n1, GPU-8cbd775e-7266-7451-44d7-eb212e27ceaf, 1 MiB, 0 %\n2, GPU-7dad0a70-6680-82d2-266d-c9bb79135e94, 1 MiB, 0 %\n3, GPU-77e39d97-2dfe-a769-8a23-045c7fc168ff, 0 MiB, 0 %\n4, GPU-e8a1bf2a-a08b-994f-5477-1820d232c409, 1 MiB, 0 %\n5, GPU-92027014-5626-44fc-f589-236c5b4f5a01, 1 MiB, 0 %\n6, GPU-81c9a37d-1c7d-8dbb-4213-5dec95cab9b1, 1 MiB, 0 %\n7, GPU-bfc27ca9-02eb-3144-ce87-024df53a53a0, 1 MiB, 0 %\n",
-  "assigned_physical_devices": "0,1,2,3",
-  "git_head": "0720358d7e04b3dff8bd615181a9d8511b5c62be",
-  "branch": "hy_branch/b45c0d2",
-  "baseline_hash": "cf63f3c88ca534cae14a2a8dabbdedbf198f53f06aeaebe5d1aff14cbacab1c9"
-}

@@ -1,0 +1,15 @@
+{
+  "stage": "IMITATION_GATE_FAILED",
+  "elapsed_s": 202.57660821313038,
+  "reserved_gpu_hours": 0.4501702404736231,
+  "reason": "student completion/TN gate failed; PPO NOT_RUN",
+  "cursor": {
+    "stage": "DAGGER",
+    "dagger_round": 1,
+    "ppo_updates": 0,
+    "ppo_episodes": 0,
+    "ppo_transitions": 0,
+    "pretrain_episodes": 48,
+    "optimizer_steps": 78
+  }
+}

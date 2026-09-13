@@ -1,0 +1,78 @@
+{
+  "archive_sha256": "12d0ffedee9d3863f7335638f96ac93176abffb3f059097cf609bf774f2deadf",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 120623,
+      "sha256": "12d0ffedee9d3863f7335638f96ac93176abffb3f059097cf609bf774f2deadf"
+    }
+  ],
+  "members": [
+    {
+      "path": "runs/ddp_20260911/q3/config.json",
+      "bytes": 342,
+      "sha256": "5885c4124b65cb0d720cae144f26f0f4093f6179cfe660790822a4fc1f830b1d"
+    },
+    {
+      "path": "runs/ddp_20260911/q3/metrics.jsonl",
+      "bytes": 104225,
+      "sha256": "6e0c717f5dad2dcff08d7a3638d0587edb6d871ef139a437a5cd8a796f2c965f"
+    },
+    {
+      "path": "runs/ddp_20260911/q3/validation_final.json",
+      "bytes": 32146,
+      "sha256": "fcfa422c810fabcab4293a2d2de45a851b15349a78aa3e59952629890a0d8428"
+    },
+    {
+      "path": "runs/ddp_20260911/q3.log",
+      "bytes": 110686,
+      "sha256": "d3686ec27184c0bb01a8bb727c7d61ba2b77e4e7bb42d49d1e4fbe29ced99eed"
+    },
+    {
+      "path": "runs/ddp_20260911/q3_config.json",
+      "bytes": 320,
+      "sha256": "b06f135812fca62cf1f9477c91431b4d5a62ae1788b879e31667cf71b16c832d"
+    },
+    {
+      "path": "runs/ddp_20260911/q3_smoke/config.json",
+      "bytes": 346,
+      "sha256": "eefad72ca0ea22dad718f0654f9d839558043527d08222dcca5ec3cee0256840"
+    },
+    {
+      "path": "runs/ddp_20260911/q3_smoke/metrics.jsonl",
+      "bytes": 387,
+      "sha256": "d80d5dd23c651e16c1da8f1a89319dfe82b83ce947eb88cae513a3f43304839c"
+    },
+    {
+      "path": "runs/ddp_20260911/q3_smoke/validation_final.json",
+      "bytes": 32143,
+      "sha256": "04d8bc13bd6ea84d48196f207e3be4755c6bdce6741e403aaaf3d45dc8628cd5"
+    },
+    {
+      "path": "runs/ddp_20260911/q4/config.json",
+      "bytes": 342,
+      "sha256": "41f48c613bba509a181c6d8e8250df35475c17545068db65b6fbe4f9c9b8a1c5"
+    },
+    {
+      "path": "runs/ddp_20260911/q4/metrics.jsonl",
+      "bytes": 105135,
+      "sha256": "adf1648a2e90cd1642be5e7557810fa8c4eaeafb9edfec8ed00aa38bd3804e44"
+    },
+    {
+      "path": "runs/ddp_20260911/q4/validation_final.json",
+      "bytes": 58083,
+      "sha256": "39b2e82a22e0e74788de56d23e27b1488d12f00021329f546ff63083d8c3cb55"
+    },
+    {
+      "path": "runs/ddp_20260911/q4.log",
+      "bytes": 111596,
+      "sha256": "cec7c1256c1780d79f5ef9701742ce78813f9053c9312f52524e260eb0979c26"
+    },
+    {
+      "path": "runs/ddp_20260911/q4_config.json",
+      "bytes": 320,
+      "sha256": "5991a5cda676165c3316e3b9629343aa51532115495f3545fcfe0d15eb70ef93"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

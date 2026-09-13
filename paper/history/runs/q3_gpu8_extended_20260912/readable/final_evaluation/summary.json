@@ -1,0 +1,32 @@
+{
+  "baseline": {
+    "episodes": 3000,
+    "completed": 3000,
+    "completion_rate": 1.0,
+    "mean_virtual_s": 3317.7149544100002,
+    "mean_per_source_s": 259.7709582947834,
+    "p95_virtual_s": 4180.3805807,
+    "errors": []
+  },
+  "candidate": {
+    "episodes": 3000,
+    "completed": 3000,
+    "completion_rate": 1.0,
+    "mean_virtual_s": 3276.6193848973335,
+    "mean_per_source_s": 256.69461991291763,
+    "p95_virtual_s": 4126.591113199999,
+    "errors": []
+  },
+  "mean_delta_s": -41.095569512666664,
+  "paired_ci95_s": [
+    -46.843415444877785,
+    -35.34772358045554
+  ],
+  "faster": 1903,
+  "slower": 959,
+  "checkpoint": "/data5/hy/B-problem/runs/q3_gpu8_extended_20260912/ppo/best.pt",
+  "recommended_checkpoint": "/data5/hy/B-problem/runs/q3_gpu8_extended_20260912/ppo/best.pt",
+  "validation_selected": true,
+  "selection_used_test": false,
+  "profile": "LOCAL-RESEARCH; not official simulator results"
+}

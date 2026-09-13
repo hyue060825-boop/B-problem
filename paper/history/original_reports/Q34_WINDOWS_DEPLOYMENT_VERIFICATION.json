@@ -1,0 +1,20 @@
+{
+  "archive": "/data5/hy/B-problem/dist/B-problem-windows-20260913.zip",
+  "archive_sha256": "99c0b5de65811366fee44a3022b4532a98e1ec55466f9cff321c3af36e5903e9",
+  "file_count": 51,
+  "all_archive_hashes_match": true,
+  "standalone_extraction_passed": true,
+  "native_windows_test": "NOT_RUN",
+  "results": [
+    {
+      "problem": 3,
+      "returncode": 0,
+      "stdout": "{\"status\": \"MODEL_READY\", \"problem\": 3, \"checkpoint\": \"/data3/yekangjie/tmp/部署包独立验证_mztnf9_h/B-problem-windows-20260913/models/q3_best.pt\", \"checkpoint_sha256\": \"51397bc8056798c9926ddadd9620faf7438dce29cf7b52616d82c0ed16e74679\", \"candidate_dim\": 11, \"feature_version\": \"normalized-public-v2\", \"device\": \"cpu\", \"initial_logits\": [15.75805950164795, -24.80474853515625, -27.597116470336914]}\n{\"status\": \"PARITY_CHECK\", \"cases\": 13, \"max_logit_error\": 0.0, \"near_tied_choices\": 0, \"message\": \"匹配权重的参考观测回放\"}\n{\"status\": \"CHECK_ONLY_OK\", \"message\": \"离线自检通过；未连接或进入模拟器。\"}\n日志：/data3/yekangjie/tmp/部署包独立验证_mztnf9_h/B-problem-windows-20260913/logs/q3_20260913_081035_652224.jsonl\n"
+    },
+    {
+      "problem": 4,
+      "returncode": 0,
+      "stdout": "{\"status\": \"MODEL_READY\", \"problem\": 4, \"checkpoint\": \"/data3/yekangjie/tmp/部署包独立验证_mztnf9_h/B-problem-windows-20260913/models/q4_best.pt\", \"checkpoint_sha256\": \"e8a525f78d176d9073372394b324bd585f4445fbf9cd1515141c483f38d5bd90\", \"candidate_dim\": 11, \"feature_version\": \"normalized-public-v2\", \"device\": \"cpu\", \"initial_logits\": [45.68197250366211, 24.370439529418945, 22.97992515563965]}\n{\"status\": \"PARITY_CHECK\", \"cases\": 13, \"max_logit_error\": 0.0, \"near_tied_choices\": 0, \"message\": \"匹配权重的参考观测回放\"}\n{\"status\": \"CHECK_ONLY_OK\", \"message\": \"离线自检通过；未连接或进入模拟器。\"}\n日志：/data3/yekangjie/tmp/部署包独立验证_mztnf9_h/B-problem-windows-20260913/logs/q4_20260913_081038_287908.jsonl\n"
+    }
+  ]
+}

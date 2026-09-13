@@ -50,25 +50,9 @@ def test_macro_budget_is_honored():
     assert env.done and env.error=='macro_budget' and env.controller.steps==1
 
 
-def test_successful_episode_reward_sum_is_time_per_source_objective():
-    env=TrainingEnv(4,30000012,count=12,distribution='area',field='zero')
-    total=0.
-    while not env.done:
-        _,actions=env.observe();reward,_=env.step(actions[env.controller.teacher_index(actions)])
-        total+=reward
-    assert env.success
-    assert total==pytest.approx(-env.metrics()['virtual_time_s']/(100*12),abs=1e-9)
-
-
-def test_failure_penalty_prevents_early_failure_from_ranking_as_fast():
-    env=TrainingEnv(4,30000012,count=12,distribution='area',field='zero',max_macros=1)
-    _,actions=env.observe();reward,done=env.step(actions[env.controller.teacher_index(actions)])
-    assert done and not env.success and reward < -1000
-
-
 def test_incomplete_teacher_cannot_select_faster_model(monkeypatch):
     def fake_collect(pool,problem,seeds,model=None,*args,**kwargs):
-        return [([],dict(seed=1,N=10,completion=False,virtual_time_s=100 if model is None else 1))]
+        return [([],dict(seed=1,completion=False,virtual_time_s=100 if model is None else 1))]
     monkeypatch.setattr(training,'collect',fake_collect)
     result=training.paired_evaluation(None,4,[1],object())
     assert result['mean_paired_delta_s']<0

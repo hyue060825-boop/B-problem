@@ -1,0 +1,58 @@
+{
+  "archive_sha256": "95527d7445357c0347aa229cc8c7d2f6172cea06d07cd278fa3228fc4f150c1a",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 114067,
+      "sha256": "95527d7445357c0347aa229cc8c7d2f6172cea06d07cd278fa3228fc4f150c1a"
+    }
+  ],
+  "members": [
+    {
+      "path": "runs/q4_continue_paired_smoke_20260912/manifest.json",
+      "bytes": 5675,
+      "sha256": "d33ad544a692cc8845a627d8350136c4b51dd425efc909d0aae77159e30290e3"
+    },
+    {
+      "path": "runs/q4_continue_paired_smoke_20260912/paired_distribution.pdf",
+      "bytes": 23207,
+      "sha256": "d30d9c79df3a6cf1088be2ec0bcd7ea5575e437df5dc21fb4096dc81a2e8e146"
+    },
+    {
+      "path": "runs/q4_continue_paired_smoke_20260912/paired_distribution.png",
+      "bytes": 95556,
+      "sha256": "2b1adca102442b637f7617ae3fc2184116ecba1d2808c7e09d46a3438d82a6b8"
+    },
+    {
+      "path": "runs/q4_continue_paired_smoke_20260912/report.md",
+      "bytes": 1755,
+      "sha256": "f5ab87c06c8084789801ab609f6ece81bedc478fd75db801b7e3109eda631645"
+    },
+    {
+      "path": "runs/q4_continue_paired_smoke_20260912/samples.csv",
+      "bytes": 1429,
+      "sha256": "42142b9a857d86c4b5198810c603d477b9080d01379bc3288aebb6e3cd16937c"
+    },
+    {
+      "path": "runs/q4_continue_paired_smoke_20260912/samples.json",
+      "bytes": 30882,
+      "sha256": "0fe94edfcea05e063d8eacfddb8be92abee0c7057806b109260da08f53581c46"
+    },
+    {
+      "path": "runs/q4_continue_paired_smoke_20260912/samples.jsonl",
+      "bytes": 25944,
+      "sha256": "59648507057bb1fad22a8d3469620acbecbc1622d098df20024e732500f7e3c2"
+    },
+    {
+      "path": "runs/q4_continue_paired_smoke_20260912/status.json",
+      "bytes": 75,
+      "sha256": "912d9898db759a10323bb5c99bf70ca615ab5cc885002d84c4a635cfabe3184c"
+    },
+    {
+      "path": "runs/q4_continue_paired_smoke_20260912/summary.json",
+      "bytes": 36058,
+      "sha256": "38f36f58a59195b207d9add6a2264b0b7144175f16d6b30a5455403f8b5e886d"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

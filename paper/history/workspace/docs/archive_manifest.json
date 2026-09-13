@@ -1,0 +1,103 @@
+{
+  "archive_sha256": "f7314cd50fc5f152590734e58401a8ece381137f4e5bf5f62ff49f1314828834",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 451473,
+      "sha256": "f7314cd50fc5f152590734e58401a8ece381137f4e5bf5f62ff49f1314828834"
+    }
+  ],
+  "members": [
+    {
+      "path": "docs/benchmark_cpu.json",
+      "bytes": 642,
+      "sha256": "a4a4951d8f07f48d9d0e2a33cf5647a973d014ec1d93dc2bb43f6abf7185b83b"
+    },
+    {
+      "path": "docs/compatibility.md",
+      "bytes": 5517,
+      "sha256": "726acbf722f3a66ad0f699511c05e125d10250ca5089f32596d8f36188c61967"
+    },
+    {
+      "path": "docs/conformance_report.md",
+      "bytes": 8358,
+      "sha256": "6a6f40de91b84bd80d1f0029f20977c9598417baa3b5f8a37c4ce0f4ee428b6e"
+    },
+    {
+      "path": "docs/ddp_training.md",
+      "bytes": 2299,
+      "sha256": "c87af2d55e7ec8335c28429520525c47619c3056441e54b40b14cd3fa9ef6f01"
+    },
+    {
+      "path": "docs/extracted/B题.txt",
+      "bytes": 12479,
+      "sha256": "56fc2af614977b5f3b30f2ee09dc7cf39b33d0c18cc9b41c6117f424aba8e849"
+    },
+    {
+      "path": "docs/extracted/page2.png",
+      "bytes": 196610,
+      "sha256": "d0d4aac5bcd8e6f2dc8b50fe4715ea1b3b7cf3e230ef1567bc224b454cc4d0ba"
+    },
+    {
+      "path": "docs/extracted/page3.png",
+      "bytes": 234779,
+      "sha256": "5f0ba1ef18236f9f21d6dbce3813e26b6ff4b3fa6318fe453815f180ec44be21"
+    },
+    {
+      "path": "docs/extracted/附件1.txt",
+      "bytes": 11235,
+      "sha256": "cbabb150dc49957987a5e4249a5e23f09b02aaaf90c5b98add58bcd5c28ff989"
+    },
+    {
+      "path": "docs/extracted/附件2.txt",
+      "bytes": 27188,
+      "sha256": "16e523cf48acc747763b285322a829362f24805136f3b1e9974d5e6513432ad7"
+    },
+    {
+      "path": "docs/kernel_comparison.json",
+      "bytes": 239,
+      "sha256": "43cfaed2a334c486bfbdfd6e040e7adb1edf0717bc3d2e78e618f4d33ec09ff8"
+    },
+    {
+      "path": "docs/local_deployment.md",
+      "bytes": 1098,
+      "sha256": "4faef87885ae447d82640991d2c0d4e802fb0d084afbc25b4d86d92a0d8f1397"
+    },
+    {
+      "path": "docs/official_gaps.md",
+      "bytes": 5086,
+      "sha256": "e4724a981fa56a3dec729d644ff68051c6a9ea6d996d579653ee058c7ce35341"
+    },
+    {
+      "path": "docs/rules_matrix.md",
+      "bytes": 9726,
+      "sha256": "e8c53d3adcea3fbfd2c7e96a55aa1d7ce126bbbd6118290b36d3dca92c959198"
+    },
+    {
+      "path": "docs/source_audit.json",
+      "bytes": 1016,
+      "sha256": "e3bb5257c42019f80c8d75cc5c239d90ffb81126ccaed076701d5a3ddb6cbeac"
+    },
+    {
+      "path": "docs/test_results.txt",
+      "bytes": 2233,
+      "sha256": "0a8cfb40225076c01761fc4344585cef2aa4b53f4342ca67e3688fd440b2c55a"
+    },
+    {
+      "path": "docs/timing_replay.json",
+      "bytes": 3105,
+      "sha256": "f32d37c76aee01c0f1e8771257ab9aa1c45258ed8bed1ef111c16d8c9ff7edbe"
+    },
+    {
+      "path": "docs/trace_audit.json",
+      "bytes": 192,
+      "sha256": "61c1593253b75de168ed3366fdbd340eccbb110bd776a2944fc8037db856474a"
+    },
+    {
+      "path": "docs/web_dashboard_report.md",
+      "bytes": 3525,
+      "sha256": "a059ffe1d1574d27bb483c00cf332dca566a46e0344bf7788f4fddc2f6de8f19"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

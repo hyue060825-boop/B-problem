@@ -1,1 +1,0 @@
-{"roots": 1024, "search_labels": 300, "retention_rows": 300, "filter_reasons": {"no_confident_improvement": 720, "accepted": 300, "mandatory_exceeds_candidate_budget": 4}, "status": "COMPLETE", "policy_sha256": "a924b6013f4c81f0f46c22ad33de823ed4484729d25e517bbf23aaca5a24de14", "data_sha256": "764a33d55a818a68b678f457fd2d7c97374f322a1d2025bc545b9e4312ea735f"}

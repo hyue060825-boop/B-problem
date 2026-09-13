@@ -1,0 +1,151 @@
+{
+  "status": {
+    "status": "COMPLETE",
+    "finished": 8,
+    "total": 8,
+    "elapsed_s": 4.133151941001415
+  },
+  "summary": {
+    "q3_candidate": {
+      "episodes": 2,
+      "completed_episodes": 2,
+      "completion_rate": 1.0,
+      "mean_virtual_s": 4066.5294384999997,
+      "median_virtual_s": 4066.5294384999997,
+      "p95_virtual_s": 4640.90271325,
+      "mean_per_source_s": 261.30045847083335,
+      "median_per_source_s": 261.30045847083335,
+      "p95_per_source_s": 290.7706564345833,
+      "completed_only_mean_per_source_s": 261.30045847083335,
+      "total_virtual_s": 8133.0588769999995,
+      "total_cleared_sources": 31,
+      "total_sources": 31,
+      "errors": {},
+      "max_macro_steps": 42,
+      "distribution_counts": {
+        "area": 1,
+        "edge": 1
+      },
+      "field_counts": {
+        "smooth": 1,
+        "extreme": 1
+      },
+      "vs_baseline": {
+        "mean_delta_s": -20.693352499999946,
+        "ci95_s": [
+          -61.25232339999984,
+          19.865618399999946
+        ],
+        "reduction_percent": 0.5062937245693183,
+        "faster_episodes": 1,
+        "tied_episodes": 1,
+        "slower_episodes": 0,
+        "all_completed": true,
+        "paired_tn": {
+          "mean": -1.2933345312499966,
+          "ci95": [
+            -3.82827021249999,
+            1.2416011499999966
+          ],
+          "reduction_percent": 0.49252288733257904
+        }
+      }
+    },
+    "q3_baseline": {
+      "episodes": 2,
+      "completed_episodes": 2,
+      "completion_rate": 1.0,
+      "mean_virtual_s": 4087.222791,
+      "median_virtual_s": 4087.222791,
+      "p95_virtual_s": 4680.220083,
+      "mean_per_source_s": 262.5937930020833,
+      "median_per_source_s": 262.5937930020833,
+      "p95_per_source_s": 293.22799204395835,
+      "completed_only_mean_per_source_s": 262.5937930020833,
+      "total_virtual_s": 8174.445582,
+      "total_cleared_sources": 31,
+      "total_sources": 31,
+      "errors": {},
+      "max_macro_steps": 42,
+      "distribution_counts": {
+        "area": 1,
+        "edge": 1
+      },
+      "field_counts": {
+        "smooth": 1,
+        "extreme": 1
+      }
+    },
+    "q4_best": {
+      "episodes": 2,
+      "completed_episodes": 2,
+      "completion_rate": 1.0,
+      "mean_virtual_s": 9252.258022,
+      "median_virtual_s": 9252.258022,
+      "p95_virtual_s": 9525.2371543,
+      "mean_per_source_s": 685.4605946346154,
+      "median_per_source_s": 685.4605946346154,
+      "p95_per_source_s": 688.0886046557692,
+      "completed_only_mean_per_source_s": 685.4605946346154,
+      "total_virtual_s": 18504.516044,
+      "total_cleared_sources": 27,
+      "total_sources": 27,
+      "errors": {},
+      "max_macro_steps": 46,
+      "distribution_counts": {
+        "area": 1,
+        "edge": 1
+      },
+      "field_counts": {
+        "smooth": 1,
+        "extreme": 1
+      },
+      "vs_baseline": {
+        "mean_delta_s": -175.36897250000038,
+        "ci95_s": [
+          -288.1639256800014,
+          -62.574019319999366
+        ],
+        "reduction_percent": 1.860160277897176,
+        "faster_episodes": 2,
+        "tied_episodes": 0,
+        "slower_episodes": 0,
+        "all_completed": true,
+        "paired_tn": {
+          "mean": -13.166238195054916,
+          "ci95": [
+            -22.4771912773627,
+            -3.855285112747133
+          ],
+          "reduction_percent": 1.8845881057455647
+        }
+      }
+    },
+    "q4_baseline": {
+      "episodes": 2,
+      "completed_episodes": 2,
+      "completion_rate": 1.0,
+      "mean_virtual_s": 9427.6269945,
+      "median_virtual_s": 9427.6269945,
+      "p95_virtual_s": 9648.81252585,
+      "mean_per_source_s": 698.6268328296703,
+      "median_per_source_s": 698.6268328296703,
+      "p95_per_source_s": 705.5302804906594,
+      "completed_only_mean_per_source_s": 698.6268328296703,
+      "total_virtual_s": 18855.253989,
+      "total_cleared_sources": 27,
+      "total_sources": 27,
+      "errors": {},
+      "max_macro_steps": 46,
+      "distribution_counts": {
+        "area": 1,
+        "edge": 1
+      },
+      "field_counts": {
+        "smooth": 1,
+        "extreme": 1
+      }
+    }
+  },
+  "note": "Release entrypoint smoke: each of four final/parent models ran two scenes. Not an additional performance benchmark."
+}

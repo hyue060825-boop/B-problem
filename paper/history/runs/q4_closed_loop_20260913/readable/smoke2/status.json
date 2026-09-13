@@ -1,0 +1,94 @@
+{
+  "stage": "SAMPLING",
+  "elapsed_s": 50.661184151191264,
+  "reserved_gpu_hours": 0.11258040922486948,
+  "phase": "bc",
+  "iteration": 0,
+  "episodes": 32,
+  "completed": 32,
+  "completion_rate": 1.0,
+  "mean_tn": 796.1383099388213,
+  "p95_tn": 1012.2763340600001,
+  "transitions": 2564,
+  "stagnation": 38,
+  "by_N": {
+    "10": {
+      "episodes": 4,
+      "mean_tn": 943.2063476750001
+    },
+    "11": {
+      "episodes": 4,
+      "mean_tn": 954.8177042727273
+    },
+    "12": {
+      "episodes": 4,
+      "mean_tn": 930.3489694375
+    },
+    "13": {
+      "episodes": 5,
+      "mean_tn": 822.5586601538462
+    },
+    "14": {
+      "episodes": 5,
+      "mean_tn": 753.9320462714286
+    },
+    "15": {
+      "episodes": 5,
+      "mean_tn": 695.5334488
+    },
+    "16": {
+      "episodes": 5,
+      "mean_tn": 560.562611275
+    }
+  },
+  "rank_profiles": [
+    {
+      "observe_s": 12.559829463716596,
+      "inference_s": 0.0,
+      "environment_s": 11.74153214134276,
+      "feature_transfer_s": 0.0
+    },
+    {
+      "observe_s": 9.008983839768916,
+      "inference_s": 0.0,
+      "environment_s": 14.6224992047064,
+      "feature_transfer_s": 0.0
+    },
+    {
+      "observe_s": 6.471724872011691,
+      "inference_s": 0.0,
+      "environment_s": 13.171813527587801,
+      "feature_transfer_s": 0.0
+    },
+    {
+      "observe_s": 6.704093319829553,
+      "inference_s": 0.0,
+      "environment_s": 13.902067219372839,
+      "feature_transfer_s": 0.0
+    },
+    {
+      "observe_s": 6.05327880801633,
+      "inference_s": 0.0,
+      "environment_s": 15.612317679915577,
+      "feature_transfer_s": 0.0
+    },
+    {
+      "observe_s": 6.716233421117067,
+      "inference_s": 0.0,
+      "environment_s": 16.06944426940754,
+      "feature_transfer_s": 0.0
+    },
+    {
+      "observe_s": 5.525854585226625,
+      "inference_s": 0.0,
+      "environment_s": 14.71946441149339,
+      "feature_transfer_s": 0.0
+    },
+    {
+      "observe_s": 6.222395815420896,
+      "inference_s": 0.0,
+      "environment_s": 12.719383925199509,
+      "feature_transfer_s": 0.0
+    }
+  ]
+}

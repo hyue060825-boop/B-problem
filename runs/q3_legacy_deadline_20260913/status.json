@@ -1,0 +1,8 @@
+{
+  "stage": "TRAINING_STOPPED",
+  "elapsed_s": 21427.4733507568,
+  "consumed_s": 21427.473351429682,
+  "updates": 6498,
+  "checkpoint": "/data5/hy/B-problem/runs/q3_legacy_deadline_20260913/latest.pt",
+  "final_test": "NOT_RUN; separate frozen evaluation required"
+}

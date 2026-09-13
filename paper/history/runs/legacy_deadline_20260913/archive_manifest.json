@@ -1,0 +1,28 @@
+{
+  "archive_sha256": "737ff791a738baebbc1f3905edd7c6bc77732ffbcf7eb10a776e1ad08a363fbb",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 7057,
+      "sha256": "737ff791a738baebbc1f3905edd7c6bc77732ffbcf7eb10a776e1ad08a363fbb"
+    }
+  ],
+  "members": [
+    {
+      "path": "runs/legacy_deadline_20260913/evaluation.console.log",
+      "bytes": 27475,
+      "sha256": "f6a6b6929e10a1bf758604f15d75049f42d8e78db227f1492066809454988997"
+    },
+    {
+      "path": "runs/legacy_deadline_20260913/initial_restore_verification.json",
+      "bytes": 680,
+      "sha256": "dc26e5821fa6093582e36ed6979d28fdf35f467a753a56a04559cdc04c254b3b"
+    },
+    {
+      "path": "runs/legacy_deadline_20260913/manifest.json",
+      "bytes": 1072,
+      "sha256": "190398ffe83a68d06b36d1b0d80d8e85b9713e162431ef06e14b7f86a222f629"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

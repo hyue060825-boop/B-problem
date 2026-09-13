@@ -1,0 +1,408 @@
+{
+  "archive_sha256": "076afffd3f4a2fe85e895e76b066ccb0c4dcf48ac49253c801d422f1e233916b",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 107817,
+      "sha256": "076afffd3f4a2fe85e895e76b066ccb0c4dcf48ac49253c801d422f1e233916b"
+    }
+  ],
+  "members": [
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/bsim/__init__.py",
+      "bytes": 100,
+      "sha256": "967ff09517cb806a6b6c579c99105850862a9bf0884d1db1167e2fd81bab83c0"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/bsim/__main__.py",
+      "bytes": 6809,
+      "sha256": "708e2679407b0b6a825ad1a2debb95d25f19403cdf713d5c5db3eff04f997aa9"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/bsim/client.py",
+      "bytes": 4131,
+      "sha256": "acb69eda926bddfc3ccfcb840899406abd5bb8257154d31f96d4c689db7cb558"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/bsim/clocks.py",
+      "bytes": 583,
+      "sha256": "d1760109982198d84774b81b5f2120b80fac004ea68458720279ba1dc1a17c17"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/bsim/env.py",
+      "bytes": 1046,
+      "sha256": "291e1f3d23386b672f317d98ad94ac09b676369f0a3204357f821b56c55ba7d5"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/bsim/evaluation.py",
+      "bytes": 5457,
+      "sha256": "fc51c3bd83b01fb96d946007b3dbd24f11b6704bc638244fceeadec1ce27fb5c"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/bsim/fast.py",
+      "bytes": 1650,
+      "sha256": "024fbe85c2f80cffd53ed9c07a52c323657785a0f2b24f21f2dd1eced4550f88"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/bsim/http_server.py",
+      "bytes": 4652,
+      "sha256": "b5ae05ff747941780fc4d8a60d227356ee6d2489d80f7ee731e41af7cf352c10"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/bsim/noise.py",
+      "bytes": 3056,
+      "sha256": "0b149c9b1b0470e6c3d37d3b73f42757076cad8440bf91cbcf9c0b112d0fcb88"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/bsim/profiles.py",
+      "bytes": 457,
+      "sha256": "d00bfb79e124d1b4dced21f2b595eb5375d6287b6fbf6895443582be3cf49bff"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/bsim/protocol.py",
+      "bytes": 3267,
+      "sha256": "10651bf3464554f1386fe4b7d95619cae8b5e890ced89cc807d2998d696c3c21"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/bsim/reference.py",
+      "bytes": 3297,
+      "sha256": "eca0ad350a6a22a9ccdd655ae1ed284cc98cec107fd1125aad5a488a8818b86f"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/bsim/research.py",
+      "bytes": 2752,
+      "sha256": "070cb72e35466b9807f573a29dfaed32204fb5a457db006ac9a3f82b9c99b60a"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/bsim/scenarios.py",
+      "bytes": 2978,
+      "sha256": "42fe0fd36bfac2f914fc20400a5bb7b37a3e2345a922dc1df6566234180a4d5a"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/bsim/session.py",
+      "bytes": 6410,
+      "sha256": "c5a160a87da0e0c28b0b81cb88ddac55ae14496fe74210160996dccb4a54d547"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/bsim/strategy.py",
+      "bytes": 636,
+      "sha256": "22340e37c64253379f297848f17cf41cbe9c551e30fe8dd1d93b52dd8706e071"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/bsim/validation.py",
+      "bytes": 3700,
+      "sha256": "e2054e298a38bf2e0bc6047740a932ef7336946a982b991adc3712bc4316c718"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/bsim/web/app.js",
+      "bytes": 14032,
+      "sha256": "9a2c299e9ea2cd72e750ef9e57142df31a2b0bbdff85dee8a899f5aa93ee2b3a"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/bsim/web/index.html",
+      "bytes": 7626,
+      "sha256": "8f6bb8fcc040cb4806094be9476b77eea7bac7c3d4e820dfe551130163282502"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/bsim/web/style.css",
+      "bytes": 12693,
+      "sha256": "8fcdb8f9d1af4c0a13639b1c884640451d234d2e39e5dd7650546af370fa99e8"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/bsim/web_dashboard.py",
+      "bytes": 12005,
+      "sha256": "98079b40ab10cc323934fc0255ecfa6cb35f1f9994bf4c39d7e2b8c889b0c357"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/configs/q3_joint_4gpu.json",
+      "bytes": 974,
+      "sha256": "0780fc008041fda04aeeae8ebb745eefe3fc78b0d6dd1b169985903375cfcdce"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/configs/research_not_authorized.json",
+      "bytes": 230,
+      "sha256": "365109bcfae918e1841d5595e1d989c23d87b5c4a7b3d764fb5f66ded37833b6"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/pyproject.toml",
+      "bytes": 525,
+      "sha256": "7a5277cd3eaa003b003788067319b68d29f09f509122ac575cb4ccb16bfcab1c"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/rules/build_manifest.json",
+      "bytes": 4428,
+      "sha256": "4a65aafc2a92eea01cdd342e3fb5775a176444761035df8f5de39d50f093ff48"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/rules/source_manifest.json",
+      "bytes": 639,
+      "sha256": "cf7afa50a5ce1abdbfc3dca5a335b0c2aff9df4ebbae9d79cfb7581be66ce493"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/scripts/check_q3_local_http.py",
+      "bytes": 2357,
+      "sha256": "08c2faf81946e3ca0e4686cb91192673f235e3f54339dd3740f7cd681d5609a3"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/scripts/evaluate_3000.py",
+      "bytes": 5686,
+      "sha256": "b2ae0bc404336d48b4dc1c3aaf1024f0c34a561ab76ab57916e524f0fa7ab44e"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/scripts/evaluate_checkpoint.py",
+      "bytes": 1763,
+      "sha256": "c8c1ce4da8f4bd7b21216ff91aed9e122848185fd12fb1e740114c3f0dce7313"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/scripts/evaluate_latest_pair.py",
+      "bytes": 9287,
+      "sha256": "7d63567cddb9b38ad707ebe9865008c81df895718d432634ba4c0d0be3fb4e47"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/scripts/evaluate_q3_joint.py",
+      "bytes": 4905,
+      "sha256": "50c190b46733d8544f01739e92b44c6f86fd041b87c8671d8475dd17066d7998"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/scripts/export_model.py",
+      "bytes": 305,
+      "sha256": "d75382dd4ccbec47b1c1860915c94e503cbd67a5c1d0041dcd315a8ab92ad6c5"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/scripts/generate_q3_labels.py",
+      "bytes": 3952,
+      "sha256": "d67c77ef47a2ff1737e6cd122d51c1e1c00e46cfdf3d52a5779a2097ec0f2364"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/scripts/prepare_q3_joint.py",
+      "bytes": 4904,
+      "sha256": "ca33cb2785c1ab18e6c3fe73e6e3f64b24380ae74021795fb6f2cd08fef0acbe"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/scripts/q3_gpu_labels.py",
+      "bytes": 7565,
+      "sha256": "39aa71ad9b2a09ea1ea70afab63c85bddc63f6bedb4b8200d0ba461b7dc92fd2"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/scripts/q3_gpu_search.py",
+      "bytes": 12310,
+      "sha256": "c919e5db55140d3520337fe8611a0c44762dcb53907b8f19d3f7b5e2dd364e6c"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/scripts/q3_search_preflight.py",
+      "bytes": 2477,
+      "sha256": "22f233f1484b4452377ad6fc45a4883c4902991b462e83f21426cbdd76d7fcc1"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/scripts/q4_preflight.py",
+      "bytes": 2986,
+      "sha256": "d1d9907d5631233d70092a62305e6c251c8ca8b282d700bb3742cf206cacdc29"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/scripts/run_policy.py",
+      "bytes": 4719,
+      "sha256": "49006ae204d86723182a3bd09c2c521826ea937d332947be21defc0ad8233a89"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/scripts/run_policy_local.sh",
+      "bytes": 149,
+      "sha256": "b25843afb2b13a0999e029f1bf9fcf726a00ccba7e98c6035d1f95ae3464bf05"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/scripts/run_python.sh",
+      "bytes": 449,
+      "sha256": "0a64131f40272d84eb0cba6a2e50281d40cb1ce1494ef1a8f1276b21e56a58bf"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/scripts/run_q3_gpu_extended.py",
+      "bytes": 12874,
+      "sha256": "40517e30a662cc9d81bbabbb9220341025efcbafc34472b803e016c5ac47bfc5"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/scripts/run_torchrun.sh",
+      "bytes": 427,
+      "sha256": "2eb066e87052c749a62e6c45669baf121fcf8a85c15e032dc53abe9e23ae65a7"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/scripts/smoke_training.py",
+      "bytes": 5340,
+      "sha256": "1800607e4cd83fb455e837bd3f27024385065d635a67b1e6a38fc5927fdb9def"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/scripts/start_training.py",
+      "bytes": 607,
+      "sha256": "f92703eee63e6eaed18341d82e67ab7a70a45a083688dc093390eeabbcb0b9ca"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/scripts/train_bc.py",
+      "bytes": 538,
+      "sha256": "566dc85866e790505e207be186b2a8782fcdd390eafdf599f8821df028606493"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/scripts/train_budget_ddp.py",
+      "bytes": 10422,
+      "sha256": "b28f7aab67a89f57cce464f527d4d9feb38fb9512c986a4ff695fc858b55c863"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/scripts/train_dagger.py",
+      "bytes": 546,
+      "sha256": "58e18206a30acc2ebbca99cdee9472fbac3e32ef5dd89d4aafb110ef05108e54"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/scripts/train_ddp.py",
+      "bytes": 8170,
+      "sha256": "d5fe7cf956dc5ab0be59e5f16ec462da0d8ba388d28f811340ee80867002fd67"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/scripts/train_ppo.py",
+      "bytes": 540,
+      "sha256": "da44216f234baf00dd524722e8d844782b618f58240dd74de5a762dd68482700"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/scripts/train_q3_joint.py",
+      "bytes": 10604,
+      "sha256": "e0fde556485c6db06cdd557640b6120a2df90db56b34225376ff976ebab83601"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/scripts/validate_coverage.py",
+      "bytes": 760,
+      "sha256": "32cbc6ada3352f767c214e0d06baa7d4bbc730232bf811a1c6c3932d20feb856"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/solution/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/solution/cli.py",
+      "bytes": 780,
+      "sha256": "ae5f77f48754022f7b0113c556cb25b7245a135b5765c1a46d145e8b42ef6c46"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/solution/control/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/solution/control/controller.py",
+      "bytes": 11026,
+      "sha256": "5c9d14ed73713818d5fde77d99cf15b1d4af40f00547b6e11512428636126c95"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/solution/coverage/__init__.py",
+      "bytes": 28,
+      "sha256": "01f802a854c8dc3589ee6d65ea10db50dc49f29ab0a4e4190622dd0360c46c42"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/solution/coverage/certificates.py",
+      "bytes": 3627,
+      "sha256": "547051708528139de87c1b336c5b1d835f334561d17f5e74078c0ce12a76d3e1"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/solution/evaluation/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/solution/evaluation/artifacts.py",
+      "bytes": 1924,
+      "sha256": "0974634f63534fe647a2529df83be7c3a7bfac0401889ffc88759109ed33cc26"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/solution/geometry/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/solution/geometry/core.py",
+      "bytes": 12574,
+      "sha256": "ba77a502eb2ada24151ad2057ffc2b6606ccab8c92641173211e227bc7286caf"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/solution/planning/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/solution/planning/q2.py",
+      "bytes": 7975,
+      "sha256": "800f21b916b73df6094f7b5157faf8111c283c512d84b23d67c6e57370596325"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/solution/rl/__init__.py",
+      "bytes": 97,
+      "sha256": "4df2da4c47012dcbd440058597558f4c825acce706345f2d170920d431c16876"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/solution/rl/distributed.py",
+      "bytes": 4291,
+      "sha256": "b98fae2f1941e21a939ea07cded2a6cbf8be99ea31af94e7658ac998acbf569c"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/solution/rl/environment.py",
+      "bytes": 5607,
+      "sha256": "c50152b35f37f6c6f974713fccf0ccef6f954903e5dcb595381c32056bbf811e"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/solution/rl/features.py",
+      "bytes": 2470,
+      "sha256": "73238fa29d76cdb0fe9a1d89f4e0eeb23140e167b008f90895146deb19820013"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/solution/rl/joint_updates.py",
+      "bytes": 6715,
+      "sha256": "9dc23a824e671460c88bd2e1dc80b9ef8e7e4d4367a5d666836e55ab80a61365"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/solution/rl/model.py",
+      "bytes": 1830,
+      "sha256": "015a5b3c4c7995f8d6e365ed4ad9aa114b8927395a2911005f7ce94068e74312"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/solution/rl/training.py",
+      "bytes": 16104,
+      "sha256": "44351f2d43b51e1a79101ac49530a4c1c0318d5482613317c86e92213647d920"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/solution/search/__init__.py",
+      "bytes": 74,
+      "sha256": "b98f017ac999b5df85ce3ad52aa59d2f8ce1313b2d82d39b1a3fa2f15943059a"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/solution/search/belief.py",
+      "bytes": 9071,
+      "sha256": "55769f26a6f55847d217d86987b60547e6f4bd225db4f1c380ecd7c00847cfa1"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/solution/search/collection.py",
+      "bytes": 5314,
+      "sha256": "78f732414bf99d1415287dcd18305f747e6f5a08624ca0ec144d479c777a7287"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/solution/search/gpu/__init__.py",
+      "bytes": 80,
+      "sha256": "76d343e4e154ecc4b3d5c1ffbfb3e6c352b8108de9fdfa12424d3e1f0df96182"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/solution/search/gpu/kernel.py",
+      "bytes": 9330,
+      "sha256": "90e95aed6c5b5ce26b12bc2d3e85a0d0201879c24c6d13bed348476deb845ec1"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/solution/search/gpu/rollout.py",
+      "bytes": 9015,
+      "sha256": "8335e6a48d8b682fbff7ac70c8b1e860d8c23a6b75a83e8e48d6468e714ddaad"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/solution/search/teacher.py",
+      "bytes": 7720,
+      "sha256": "5c054bc3a9774c01f7d77c65ede73178d02c4d6f347cee3f32c9f3d095f2dc01"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_source_20260912/source_manifest.json",
+      "bytes": 6819,
+      "sha256": "c86d37bbd79b348811d7cfd870bbb7871c18aebdadf69454d5e5e9216acd7412"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

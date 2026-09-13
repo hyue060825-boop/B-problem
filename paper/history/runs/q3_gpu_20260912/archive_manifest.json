@@ -1,0 +1,298 @@
+{
+  "archive_sha256": "bbfdd9fb041b930f23babb7079d567466d8e743b817bbea71402b83f0a20d773",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 4371151,
+      "sha256": "bbfdd9fb041b930f23babb7079d567466d8e743b817bbea71402b83f0a20d773"
+    }
+  ],
+  "members": [
+    {
+      "path": "runs/q3_gpu_20260912/reference/1dff90046d0e4e0bfd17d13552911ed6dbf3a7597c8ad2e55bd4218a1c3ac3ac.json",
+      "bytes": 380945,
+      "sha256": "1baeea015f0c217869566b76487f7e9d791859ef7f8597fe93d6b43486b12e9f"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/reference/240749a41025e6b3c1ea80d77f10c5a37e2715b89026fd10bcc44141e565a4f2.json",
+      "bytes": 425281,
+      "sha256": "46a55a8a9db66af9414e102f0a2aadb1822bfca02cad7251732d5dfa1979cb09"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/reference/2cc877f4a3798ef6c0860ed1fb6cc60bdb75ec1e000409863a032f543582a1ba.json",
+      "bytes": 693264,
+      "sha256": "a5549402cd538fea21fb7988c7cf595abe46bbe19778e09ad968f65ff770aa71"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/reference/34b6d505807511c99f4de229f0f053bc5898fbb3caeb89b7c05027abe22eecc2.json",
+      "bytes": 409924,
+      "sha256": "6b5c4e2313866d145f167efa84c4aa36c3eeff2915136f3fa32326fb3f09670e"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/reference/39e65e6749e5208f5c8e8cff4a209ecd6ed8b096178653bd1930ffdc25e1137b.json",
+      "bytes": 684121,
+      "sha256": "c8a3cbb7b9653e4cc86bbcfa31ed2b0bd23c2a60ca4b3c7a76fa0bd9e0d6d66c"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/reference/4e6acf035e40e258dee25d94aae1e8d521b681fa6363b665b42c654ada1bb27d.json",
+      "bytes": 691974,
+      "sha256": "faf7d4c9e53dcd3938e529c426877774b85240e449c3d287a114c4cb76239363"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/reference/52bd124104fe6effed60a1440d859be6da7060521d63c2f75eb10b36bd77deec.json",
+      "bytes": 449483,
+      "sha256": "6084bc14337ff2805d61ccc1bb8a809e865a649be38037000e3871a42ac2a54c"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/reference/536331f0dcc6e39f255df0c11b8a6454df44c7b577850638560d0c2af6fcdf08.json",
+      "bytes": 342371,
+      "sha256": "c91b1e9cdc0bfdb6dcd2bd946f25d70b7c286d2aa15309678ab8f9fcd55bdae7"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/reference/5e84c165f3b8bc781ab39a295d16ad75f813a48f3d74705fb25d1413cd9a26ad.json",
+      "bytes": 415271,
+      "sha256": "547d6fab16f9ce86c3dc08da35cee1af4d1aee6fd6f083fb156f9a905015896f"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/reference/65aaf64283f763fe655a60967265ad6f8f697a23e8a6698647e42de24b9dfd1c.json",
+      "bytes": 431592,
+      "sha256": "b08a81f1e8e934f5805788161bd51595f1a2b6a7be9257be14858e894d524015"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/reference/86d7b28e0cd799859d7c45c5d228db96b5bc8ef10ca6affd4e737b72e961f335.json",
+      "bytes": 356132,
+      "sha256": "ce37a7d4c78aed4d265f3798a8bd779df472ddaf9f90fa07bcb0a25cc129584d"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/reference/95bfea3fcf24693329177c5ee959e5a6dda2ddab93191fd64f7c62f006d17a60.json",
+      "bytes": 411873,
+      "sha256": "d3b2b448a14c5f67f156707676dc53be0fe43328cb0eba9f057e67c2efe15764"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/reference/aa450817774168d34b831cabf8d8d0aaabce15db90bfb270ad162659c9a2364d.json",
+      "bytes": 689179,
+      "sha256": "d1e7c864a76683748965b6bf3161923bf5c4757f32140305c5de62e17f8c37d1"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/reference/e313269c688f246d0ce43788e5a83d538d48cab3e6fea734e8394a3f50672159.json",
+      "bytes": 433104,
+      "sha256": "543c4e24862fab055bb3b45c690248df7fe418981039077c4d787b0c5ececc15"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/reference/e64c1bfb864a2f9b63818327ba4d3b0b36f0bf94a4ce6162af3a1c13ae242c6a.json",
+      "bytes": 654280,
+      "sha256": "65185e0e4c095eb837ff24c76eb09d497dddbef8fdcafc7de3d17f7513f8b62c"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/reference/f1f58ba93be72c14aaa05714d69cc4320b9bf534b3c7b33ae7e627fb99750268.json",
+      "bytes": 447773,
+      "sha256": "1293dad0d244397060717dcdfeff5b46a4d37751e2a3d452c291b13a9df14fad"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/reference/manifest.json",
+      "bytes": 6798,
+      "sha256": "6435d663dbe2f45ffcdf83f7f39bd74c133b8751efc86bec975f2baae413edb5"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/reference/summary.json",
+      "bytes": 3453,
+      "sha256": "bf765b088b7c625680d2cd372703edb08b9cf00f6f9ab42ae44d228c32ff9cda"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tasks.pt",
+      "bytes": 663896,
+      "sha256": "726379c8e66e8c9cbdb273dc735f1d9b3f3c5cd095f3f2ac4231b86d745a5216"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor1/error.json",
+      "bytes": 704,
+      "sha256": "5af02c9e5ca8c4d604c2b34390cb10c52ab97fb852aebf3da2f3a232436ffa55"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor1/manifest.json",
+      "bytes": 6795,
+      "sha256": "9c585a221e7ec99c860b7ddf5557c0d0929e80c9bf7c0a080033b99655cb32cd"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor1_v2/1dff90046d0e4e0bfd17d13552911ed6dbf3a7597c8ad2e55bd4218a1c3ac3ac.json",
+      "bytes": 1086690,
+      "sha256": "5582b08068a47fc0b0282afda2cf7a227244037ab0b38376bb0bffaf29206f08"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor1_v2/240749a41025e6b3c1ea80d77f10c5a37e2715b89026fd10bcc44141e565a4f2.json",
+      "bytes": 1746420,
+      "sha256": "fba37f1ca34dbe899b109cfb861daf2f8b6cd7b59a04070dfa31f7ce78bd76ef"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor1_v2/2cc877f4a3798ef6c0860ed1fb6cc60bdb75ec1e000409863a032f543582a1ba.json",
+      "bytes": 2331717,
+      "sha256": "5a1a1b319f6581e2f1631b5f6b3e5d0802aedba2c0d4062307c945e024a0725e"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor1_v2/34b6d505807511c99f4de229f0f053bc5898fbb3caeb89b7c05027abe22eecc2.json",
+      "bytes": 1412912,
+      "sha256": "74c586e3f9c1b57a56ccde9a70aee1302e2364b6558324ba605d725e441ebcaa"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor1_v2/39e65e6749e5208f5c8e8cff4a209ecd6ed8b096178653bd1930ffdc25e1137b.json",
+      "bytes": 2347429,
+      "sha256": "80235742e438ffa87fd7779c1847d06f481452294a0ff0a1b19985828dd105fc"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor1_v2/4e6acf035e40e258dee25d94aae1e8d521b681fa6363b665b42c654ada1bb27d.json",
+      "bytes": 2292793,
+      "sha256": "8cedf94e73e48ed3ee04d1da67ab7b271324e3fcafdb05b67276b1c69ce22b14"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor1_v2/52bd124104fe6effed60a1440d859be6da7060521d63c2f75eb10b36bd77deec.json",
+      "bytes": 798218,
+      "sha256": "6c7529262f8036f0f0fe4edc03749d0cf4e23a76e699112172da50173b23d65a"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor1_v2/536331f0dcc6e39f255df0c11b8a6454df44c7b577850638560d0c2af6fcdf08.json",
+      "bytes": 1027697,
+      "sha256": "01316642141a262c8f7325e9d2537a0b21147a8b4bd69d9ea5514357617553f2"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor1_v2/5e84c165f3b8bc781ab39a295d16ad75f813a48f3d74705fb25d1413cd9a26ad.json",
+      "bytes": 731051,
+      "sha256": "a0af22085f84b39056deb97dd119b0e8d5aa8965a9c7322052e607626db9ceb5"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor1_v2/65aaf64283f763fe655a60967265ad6f8f697a23e8a6698647e42de24b9dfd1c.json",
+      "bytes": 1039204,
+      "sha256": "4804888b8e8a493efea96cbc62d72688c77f0f029a2773b0d6a0d7d97306d114"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor1_v2/86d7b28e0cd799859d7c45c5d228db96b5bc8ef10ca6affd4e737b72e961f335.json",
+      "bytes": 877536,
+      "sha256": "c2cba257bbb910239cf8acb66d321e185c0e028ee31a12ca2ae6412c5a35b0bd"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor1_v2/95bfea3fcf24693329177c5ee959e5a6dda2ddab93191fd64f7c62f006d17a60.json",
+      "bytes": 951819,
+      "sha256": "18295d7e7c24956f4883b09b8f1f4dab7168ff5f6cfdb726cb8d39e13c08854a"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor1_v2/aa450817774168d34b831cabf8d8d0aaabce15db90bfb270ad162659c9a2364d.json",
+      "bytes": 2287139,
+      "sha256": "c055015e52fe3ea8eddc4ecda4a6a069345e1b55217b09c0b39392b93ea4e636"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor1_v2/e313269c688f246d0ce43788e5a83d538d48cab3e6fea734e8394a3f50672159.json",
+      "bytes": 1020525,
+      "sha256": "6a05021ccd04184ba92358fd1b552f8be505237e89ff69b9b5bdb366620cde01"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor1_v2/e64c1bfb864a2f9b63818327ba4d3b0b36f0bf94a4ce6162af3a1c13ae242c6a.json",
+      "bytes": 2297380,
+      "sha256": "b420b1b714505af488049fb917409c70effd0fe091b0a547998caf05a96fe688"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor1_v2/f1f58ba93be72c14aaa05714d69cc4320b9bf534b3c7b33ae7e627fb99750268.json",
+      "bytes": 1519407,
+      "sha256": "64385458d5a4ae33953e40366760f1086cecb759c6960c23fc49e9bc3c96ac5d"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor1_v2/manifest.json",
+      "bytes": 6900,
+      "sha256": "3f068f4d97e3f155fa07471eb7129e826fb015411666721480705df2146c84e7"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor1_v2/summary.json",
+      "bytes": 2771,
+      "sha256": "0bef68f39ec71cf35d4659ec43bdde0a1b903d4f7c9f9076e501e9713f484240"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor4/1dff90046d0e4e0bfd17d13552911ed6dbf3a7597c8ad2e55bd4218a1c3ac3ac.json",
+      "bytes": 1086691,
+      "sha256": "ead12baaf62df2654f9afff10f67abf040bff1f326d26f028140654e9631b1f2"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor4/240749a41025e6b3c1ea80d77f10c5a37e2715b89026fd10bcc44141e565a4f2.json",
+      "bytes": 1746423,
+      "sha256": "592ffc74896c95d421a0cd4f89db4f508e3ce5de086cc2b7756ccfbc2f06740c"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor4/2cc877f4a3798ef6c0860ed1fb6cc60bdb75ec1e000409863a032f543582a1ba.json",
+      "bytes": 2331717,
+      "sha256": "d1f369e01e7f66e432cf9b9ebb05805740060818478a1bbb3126fb14f5b74ec0"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor4/34b6d505807511c99f4de229f0f053bc5898fbb3caeb89b7c05027abe22eecc2.json",
+      "bytes": 1412915,
+      "sha256": "42c76532612cc6d90a32ce9febb443a7e264dffe0d1e7fd88dc7d0cfcf814990"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor4/39e65e6749e5208f5c8e8cff4a209ecd6ed8b096178653bd1930ffdc25e1137b.json",
+      "bytes": 2347429,
+      "sha256": "f80a2e2c254dec62c53b2e6a239fa6452b9e46f57497685780b1ec45fcf9b291"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor4/4e6acf035e40e258dee25d94aae1e8d521b681fa6363b665b42c654ada1bb27d.json",
+      "bytes": 2292792,
+      "sha256": "d1f10a19d9163d0819e73df2188fc581d192b6880f8dd47f15dfb3371b8ef908"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor4/52bd124104fe6effed60a1440d859be6da7060521d63c2f75eb10b36bd77deec.json",
+      "bytes": 798220,
+      "sha256": "f6cd8abb2df99b84519b5de87f7d168781939ca6f8eb79e242a3db97b8d5a7c2"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor4/536331f0dcc6e39f255df0c11b8a6454df44c7b577850638560d0c2af6fcdf08.json",
+      "bytes": 1027698,
+      "sha256": "16c1abfb55d7a18a8ca91457c9a10a982ced3c050601fc53dff6ef78556a74e4"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor4/5e84c165f3b8bc781ab39a295d16ad75f813a48f3d74705fb25d1413cd9a26ad.json",
+      "bytes": 731053,
+      "sha256": "2857406c8783ca2557cf2496a34349b35f28bcf8075b7a57c3e0c431473432c2"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor4/65aaf64283f763fe655a60967265ad6f8f697a23e8a6698647e42de24b9dfd1c.json",
+      "bytes": 1039209,
+      "sha256": "cd04790a3aead631ede89243d0b54b0ba99c765e50fb3478af527a62e16dd2f6"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor4/86d7b28e0cd799859d7c45c5d228db96b5bc8ef10ca6affd4e737b72e961f335.json",
+      "bytes": 877535,
+      "sha256": "8b2e0e95552b743c930a6e7b2e9a7b46491cf8d16172e786b344350d6a07a8c8"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor4/95bfea3fcf24693329177c5ee959e5a6dda2ddab93191fd64f7c62f006d17a60.json",
+      "bytes": 951818,
+      "sha256": "de1df4538ed9b5e424ae1ad5285888b8196ae0548129536ae75507e4d5c2e645"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor4/aa450817774168d34b831cabf8d8d0aaabce15db90bfb270ad162659c9a2364d.json",
+      "bytes": 2287140,
+      "sha256": "53f2350b4e21821bc51e2e5958f512e7f03275aa25ab1679d50affde7cfc79aa"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor4/e313269c688f246d0ce43788e5a83d538d48cab3e6fea734e8394a3f50672159.json",
+      "bytes": 1020530,
+      "sha256": "83affce4aa8d8c591494bb303e5ef7efcef1b43b26d83ad0dd7c935a2aa9b336"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor4/e64c1bfb864a2f9b63818327ba4d3b0b36f0bf94a4ce6162af3a1c13ae242c6a.json",
+      "bytes": 2297381,
+      "sha256": "85aec92445de3d7aaabe53a34f8f9684de86a226746f3e284bd048aa2b666ab7"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor4/f1f58ba93be72c14aaa05714d69cc4320b9bf534b3c7b33ae7e627fb99750268.json",
+      "bytes": 1519406,
+      "sha256": "cab72a036c1973265558661fe672849c59b4e55aa53ebc4601be3b5c10112191"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor4/manifest.json",
+      "bytes": 6900,
+      "sha256": "3f068f4d97e3f155fa07471eb7129e826fb015411666721480705df2146c84e7"
+    },
+    {
+      "path": "runs/q3_gpu_20260912/tensor4/summary.json",
+      "bytes": 3521,
+      "sha256": "9937178a24e055e19a39a6e3f44980bf5bfaa45dda1f1838692d256527612cc5"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

@@ -1,0 +1,42 @@
+{
+  "status": "FALSIFIED",
+  "samples": 250000,
+  "source_radius_m": 1800.0,
+  "receive_radius_m": 1000.0,
+  "min_noncoincident_near_station_count": 2,
+  "worst_max_angle_gap_rad": 3.6775559073999182,
+  "worst_point": [
+    7.125100931577819,
+    -1761.81888196795
+  ],
+  "counterexample": {
+    "position": [
+      11.40540930215571,
+      -1773.4157828591158
+    ],
+    "confirmed": true,
+    "near_count": 3,
+    "max_angle_gap_rad": 3.240546279727859,
+    "heading_deg": 97.78628214043039,
+    "max_dot_margin": -1.4372596896978767,
+    "station_margins": [
+      {
+        "distance_m": 921.3540416965966,
+        "dot": -45.567065359398796
+      },
+      {
+        "distance_m": 29.061011799338818,
+        "dot": -1.4372596896978767
+      },
+      {
+        "distance_m": 995.5955382784061,
+        "dot": -922.9944492502158
+      }
+    ]
+  },
+  "device": "cuda:0",
+  "dtype": "float64",
+  "seed": 901,
+  "elapsed_s": 0.1847239681519568,
+  "meaning": "empirical attack only; NO_COUNTEREXAMPLE_FOUND is not a continuous-domain proof"
+}

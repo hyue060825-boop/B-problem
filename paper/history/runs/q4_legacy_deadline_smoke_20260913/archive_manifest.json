@@ -1,0 +1,63 @@
+{
+  "archive_sha256": "00bd306b20e8f20ed8212f8870816552be1d620e779abc8a2145cb7d0b3a1e42",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 26394,
+      "sha256": "00bd306b20e8f20ed8212f8870816552be1d620e779abc8a2145cb7d0b3a1e42"
+    }
+  ],
+  "members": [
+    {
+      "path": "runs/q4_legacy_deadline_smoke_20260913/baseline_validation.json",
+      "bytes": 28922,
+      "sha256": "463368a2c23b1cd89c1e3c3be3657d743e88fef823780b9f4b0911a66573969f"
+    },
+    {
+      "path": "runs/q4_legacy_deadline_smoke_20260913/config.json",
+      "bytes": 746,
+      "sha256": "c7901f17047bf97b67c2a6f0f74708f4dfd77da4ba1261156eef5a759ea346b7"
+    },
+    {
+      "path": "runs/q4_legacy_deadline_smoke_20260913/console.log",
+      "bytes": 1819,
+      "sha256": "f91a7280188512f5f654cc717c3628881ceb8e094aa4c10266445d9acdd2feda"
+    },
+    {
+      "path": "runs/q4_legacy_deadline_smoke_20260913/episodes_000001.json",
+      "bytes": 13392,
+      "sha256": "a1d61807cff9cfe4eb0836d6e2990ec4595e89b13cf6af75b580a63b4fb4b900"
+    },
+    {
+      "path": "runs/q4_legacy_deadline_smoke_20260913/episodes_000002.json",
+      "bytes": 13429,
+      "sha256": "5ca9b6aca5784e49289f237fbb0f06c0c542c3e5b4a7109c5b0a836e20d920e7"
+    },
+    {
+      "path": "runs/q4_legacy_deadline_smoke_20260913/metrics.jsonl",
+      "bytes": 1819,
+      "sha256": "f91a7280188512f5f654cc717c3628881ceb8e094aa4c10266445d9acdd2feda"
+    },
+    {
+      "path": "runs/q4_legacy_deadline_smoke_20260913/paired_development.json",
+      "bytes": 95446,
+      "sha256": "fceccb36fb79bb9da2ce370358ffb616ea7114a7bd46493abd98acfeb2c99932"
+    },
+    {
+      "path": "runs/q4_legacy_deadline_smoke_20260913/provenance.json",
+      "bytes": 6714,
+      "sha256": "242adcf17d1ae86bf3f0c3b4be6925895dce68aa2a25ccd39b1c6463b0a98a56"
+    },
+    {
+      "path": "runs/q4_legacy_deadline_smoke_20260913/seed_manifest.json",
+      "bytes": 166,
+      "sha256": "8dc29a73b3a8155d941a515a542d738b124eb127cef591711b1d9d37d53fda0c"
+    },
+    {
+      "path": "runs/q4_legacy_deadline_smoke_20260913/status.json",
+      "bytes": 270,
+      "sha256": "0b16a1e7f872588e19fdbe968fa4e1256ba121f4b760ad80a576178e9cf98e05"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

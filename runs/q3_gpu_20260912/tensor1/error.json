@@ -1,5 +1,0 @@
-{
-  "kind": "ERROR",
-  "device": "cuda:0",
-  "error": "Traceback (most recent call last):\n  File \"/data5/hy/B-problem/scripts/q3_gpu_search.py\", line 104, in search_worker\n    results,stats=batched_rollouts(specs,model,device,physics='cpu' if mode=='policy' else 'tensor',\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/data5/hy/B-problem/solution/search/gpu/rollout.py\", line 84, in batched_rollouts\n    if not all(valid):raise ValueError('GPU full public history consistency failed')\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: GPU full public history consistency failed\n"
-}

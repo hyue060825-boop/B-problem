@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "updates": 4,
+  "world_size": 8,
+  "exact_optimizer_resume": true,
+  "all_rank_sync": true,
+  "baseline_completed": 64,
+  "teacher_completed": 64
+}

@@ -1,0 +1,33 @@
+{
+  "archive_sha256": "bc60480625a2f8baa2465a4d5cc32c772e0002b9ccf1f9d340502b0473c0e763",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 164976,
+      "sha256": "bc60480625a2f8baa2465a4d5cc32c772e0002b9ccf1f9d340502b0473c0e763"
+    }
+  ],
+  "members": [
+    {
+      "path": "runs/q3_3000_test_20260911/README.md",
+      "bytes": 998,
+      "sha256": "3f17ce826170a707120c097ba16e4803eea697075a189ce4201f5985b82efa03"
+    },
+    {
+      "path": "runs/q3_3000_test_20260911/per_source_time_distribution.png",
+      "bytes": 66102,
+      "sha256": "8e50728730ba82a2eaaf23f9bee786f182fa4595bbfbb38c31ac8a4d8ab53258"
+    },
+    {
+      "path": "runs/q3_3000_test_20260911/samples.json",
+      "bytes": 1621792,
+      "sha256": "4467985c18fd139a9163b4fb64acbb8e71c96d35e6d48225259a9b912ee7038d"
+    },
+    {
+      "path": "runs/q3_3000_test_20260911/summary.json",
+      "bytes": 871,
+      "sha256": "e715c300d0ccac3bcf504c8d015b4a2a3a8448469bdfd6329da6abe6df71f00f"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

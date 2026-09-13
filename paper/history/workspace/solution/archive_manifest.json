@@ -1,0 +1,183 @@
+{
+  "archive_sha256": "2a35f55077e3510934ef9b590e93421d1f433f545d6bd97284a2267d9ddacd26",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 53901,
+      "sha256": "2a35f55077e3510934ef9b590e93421d1f433f545d6bd97284a2267d9ddacd26"
+    }
+  ],
+  "members": [
+    {
+      "path": "solution/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "solution/belief/__init__.py",
+      "bytes": 73,
+      "sha256": "6660fc03a6029656345ec64ce203bd326c4c971d9ab79f12ed7d34615ca7413a"
+    },
+    {
+      "path": "solution/belief/q4_directional.py",
+      "bytes": 11243,
+      "sha256": "54d3d4e1225d98dd3db38d17f5bb85c87061cc92c58a99c903bf020ce5b7d550"
+    },
+    {
+      "path": "solution/cli.py",
+      "bytes": 780,
+      "sha256": "ae5f77f48754022f7b0113c556cb25b7245a135b5765c1a46d145e8b42ef6c46"
+    },
+    {
+      "path": "solution/control/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "solution/control/controller.py",
+      "bytes": 20783,
+      "sha256": "ad1fbb152df4f207a41b780c7ee520a4867cbef94bbb8698129500e0f2b46cf7"
+    },
+    {
+      "path": "solution/coverage/__init__.py",
+      "bytes": 28,
+      "sha256": "01f802a854c8dc3589ee6d65ea10db50dc49f29ab0a4e4190622dd0360c46c42"
+    },
+    {
+      "path": "solution/coverage/certificates.py",
+      "bytes": 3627,
+      "sha256": "547051708528139de87c1b336c5b1d835f334561d17f5e74078c0ce12a76d3e1"
+    },
+    {
+      "path": "solution/coverage/q4_exact.py",
+      "bytes": 2357,
+      "sha256": "2c014fe3f1995e8ed41aac6aa5699f89f2143e1dffe2e7e5ca6139be21b96f58"
+    },
+    {
+      "path": "solution/evaluation/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "solution/evaluation/artifacts.py",
+      "bytes": 1924,
+      "sha256": "0974634f63534fe647a2529df83be7c3a7bfac0401889ffc88759109ed33cc26"
+    },
+    {
+      "path": "solution/geometry/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "solution/geometry/core.py",
+      "bytes": 12574,
+      "sha256": "ba77a502eb2ada24151ad2057ffc2b6606ccab8c92641173211e227bc7286caf"
+    },
+    {
+      "path": "solution/planning/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "solution/planning/probe.py",
+      "bytes": 2415,
+      "sha256": "249d60e351771efb8f87c9be729695a057e789d23cb67dd1c1e1274b09aacd1b"
+    },
+    {
+      "path": "solution/planning/q2.py",
+      "bytes": 7975,
+      "sha256": "800f21b916b73df6094f7b5157faf8111c283c512d84b23d67c6e57370596325"
+    },
+    {
+      "path": "solution/planning/route.py",
+      "bytes": 5302,
+      "sha256": "d411a6dc327486c16360e4c137a2290f22f53aa19f09d39331b539c6e139d83e"
+    },
+    {
+      "path": "solution/rl/__init__.py",
+      "bytes": 97,
+      "sha256": "4df2da4c47012dcbd440058597558f4c825acce706345f2d170920d431c16876"
+    },
+    {
+      "path": "solution/rl/distributed.py",
+      "bytes": 5129,
+      "sha256": "13810ccbe5f0ce6744d28202463069ee4089b41e527ae71bc39cd8aaafbe552d"
+    },
+    {
+      "path": "solution/rl/environment.py",
+      "bytes": 9355,
+      "sha256": "c27aa4984b25eb9339b489f0337fe27de0ee60cd384a2245f2216600c0fb0a7e"
+    },
+    {
+      "path": "solution/rl/features.py",
+      "bytes": 2470,
+      "sha256": "1ba1f81379574e9f0ab0886067a92c18e944ad9ccd4648c921b205212c0f31dc"
+    },
+    {
+      "path": "solution/rl/joint_updates.py",
+      "bytes": 6715,
+      "sha256": "9dc23a824e671460c88bd2e1dc80b9ef8e7e4d4367a5d666836e55ab80a61365"
+    },
+    {
+      "path": "solution/rl/model.py",
+      "bytes": 7210,
+      "sha256": "8d2ab4a34b82489717321990aa736919a14c14d22a1af8628299e02d6017a058"
+    },
+    {
+      "path": "solution/rl/q4_batch.py",
+      "bytes": 4697,
+      "sha256": "a1ed66d73eeaaf3e60c1e3ac5841fa49fbd752f3302edac7cae9160580d0475f"
+    },
+    {
+      "path": "solution/rl/structural_features.py",
+      "bytes": 6213,
+      "sha256": "bc7453b28a3b6f4e16f4d7ebfc3cee55bd14202be36261ed69f933000f63420a"
+    },
+    {
+      "path": "solution/rl/structural_training.py",
+      "bytes": 2867,
+      "sha256": "b671c41485b1dd205d32d3b0dff389c4f253cf29f7085b97366a3dd57931e9cf"
+    },
+    {
+      "path": "solution/rl/training.py",
+      "bytes": 17539,
+      "sha256": "5c6bed303e063729738f0a7117bd550783f62d7fe7e104fdca09826cfe28a360"
+    },
+    {
+      "path": "solution/search/__init__.py",
+      "bytes": 74,
+      "sha256": "b98f017ac999b5df85ce3ad52aa59d2f8ce1313b2d82d39b1a3fa2f15943059a"
+    },
+    {
+      "path": "solution/search/belief.py",
+      "bytes": 9264,
+      "sha256": "095e3cfea0323033de2b31fd1843f732ee19c646c4045982d585d58e289c2020"
+    },
+    {
+      "path": "solution/search/collection.py",
+      "bytes": 5314,
+      "sha256": "78f732414bf99d1415287dcd18305f747e6f5a08624ca0ec144d479c777a7287"
+    },
+    {
+      "path": "solution/search/gpu/__init__.py",
+      "bytes": 80,
+      "sha256": "76d343e4e154ecc4b3d5c1ffbfb3e6c352b8108de9fdfa12424d3e1f0df96182"
+    },
+    {
+      "path": "solution/search/gpu/kernel.py",
+      "bytes": 9330,
+      "sha256": "90e95aed6c5b5ce26b12bc2d3e85a0d0201879c24c6d13bed348476deb845ec1"
+    },
+    {
+      "path": "solution/search/gpu/rollout.py",
+      "bytes": 9015,
+      "sha256": "8335e6a48d8b682fbff7ac70c8b1e860d8c23a6b75a83e8e48d6468e714ddaad"
+    },
+    {
+      "path": "solution/search/teacher.py",
+      "bytes": 7720,
+      "sha256": "5c054bc3a9774c01f7d77c65ede73178d02c4d6f347cee3f32c9f3d095f2dc01"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

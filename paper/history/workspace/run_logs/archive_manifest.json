@@ -1,0 +1,103 @@
+{
+  "archive_sha256": "4b8351869609ff87aedfaea91b3d59917ba45a6395ba3f873972968b92f11f39",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 72067,
+      "sha256": "4b8351869609ff87aedfaea91b3d59917ba45a6395ba3f873972968b92f11f39"
+    }
+  ],
+  "members": [
+    {
+      "path": "runs/q3_best_by_source_count_20260912.console.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_20260912.log",
+      "bytes": 2272,
+      "sha256": "279bb50149f4b657463b5e26a956e0ed31058e7242b1b0754ac3415b34713dde"
+    },
+    {
+      "path": "runs/q3_gpu8_extended_20260912_launcher.json",
+      "bytes": 699,
+      "sha256": "d448efa673115c832184cac3fc5ab7ae865ecaebc78f93472bdf6c51b1655fa0"
+    },
+    {
+      "path": "runs/q4_belief_attention_8gpu_medium.console.log",
+      "bytes": 9092,
+      "sha256": "e8f0cd223b61f73757b9226fb0106b656149ee575532ec8427e5f297921c6c65"
+    },
+    {
+      "path": "runs/q4_belief_attention_8gpu_medium2.console.log",
+      "bytes": 9064,
+      "sha256": "2fcdae7a976455d3a192c8860de5f6399103ab61b9d1a2174004cc1d387a9acc"
+    },
+    {
+      "path": "runs/q4_belief_attention_8gpu_medium3.console.log",
+      "bytes": 5301,
+      "sha256": "b245c6214ae876dba4baedd8c833c4bd7c4d6836444fa5d0eb624e911270b122"
+    },
+    {
+      "path": "runs/q4_belief_attention_8gpu_smoke.console.log",
+      "bytes": 10027,
+      "sha256": "43b118b3c2e0ae96920f0f7dc526b6b42e7ed5c7a9f03b4ad8104aaa043c4cc4"
+    },
+    {
+      "path": "runs/q4_belief_attention_8gpu_smoke2.console.log",
+      "bytes": 2054,
+      "sha256": "99e0d8032c5055057f02f2d12620ef39bced806780e5f9f47ee6a060aa5b15ca"
+    },
+    {
+      "path": "runs/q4_belief_attention_8gpu_smoke3.console.log",
+      "bytes": 2465,
+      "sha256": "e0a0c83ecc638080859424447f60e4ea592f3553be54d4a07b91ba7e1f57f32b"
+    },
+    {
+      "path": "runs/q4_certificate_search_k23.log",
+      "bytes": 125964,
+      "sha256": "301f81b9f651268b50b99d213c6686bc3e335915de57e18b2f864b9e16c35bba"
+    },
+    {
+      "path": "runs/q4_certificate_search_k24.log",
+      "bytes": 125818,
+      "sha256": "87a8f41af681e543994988ef36fac5579d66822ed5a34fccb27638d9c9a2a966"
+    },
+    {
+      "path": "runs/q4_certificate_search_k25.log",
+      "bytes": 126131,
+      "sha256": "16f8b0b0084e50c37d5ef0af43d2c1035e9e3262850edecf73ab38f7435725a9"
+    },
+    {
+      "path": "runs/q4_certificate_search_k26.log",
+      "bytes": 125755,
+      "sha256": "a81a625a3e53ba7134e96a50dcda86c6fc7cc7302bad8a8631410c31622bc3ab"
+    },
+    {
+      "path": "runs/q4_certificate_search_k27.log",
+      "bytes": 125945,
+      "sha256": "d208d49dd9efe43f5a47344d7012e23bb7cf24005e7c73ad3087f654ac7541b2"
+    },
+    {
+      "path": "runs/q4_certificate_search_k28.log",
+      "bytes": 126001,
+      "sha256": "e6c28aa6c3d66116d9af2ddf8b8bc0152628b48c87d1d263cd32110dd53cd564"
+    },
+    {
+      "path": "runs/q4_certificate_search_k29.log",
+      "bytes": 126290,
+      "sha256": "a93a0c06e86d4c05c71ed0b7a618eaa1e60dbb2f26b18f24ea0187fae598563b"
+    },
+    {
+      "path": "runs/q4_certificate_search_k30.log",
+      "bytes": 115736,
+      "sha256": "27ade8e186bba1d12f8f2e4eb4d0bdb08f07337f8f66b34e33f08e358f6f9487"
+    },
+    {
+      "path": "runs/q4_continue_paired_3000_20260912.console.log",
+      "bytes": 13066,
+      "sha256": "75048722f31cd2b0002c5795525a363a8aaedffd4cc63d77d4dd87b3e881b851"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

@@ -1,9 +1,0 @@
-{
-  "status": "PASS",
-  "rows": 12000,
-  "unique_seeds_per_model": 3000,
-  "paired_scenarios_match": true,
-  "all_completed": true,
-  "metrics_recomputed": true,
-  "seed_overlap_with_latest_training": false
-}

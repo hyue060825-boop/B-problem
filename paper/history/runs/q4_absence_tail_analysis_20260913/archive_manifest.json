@@ -1,0 +1,53 @@
+{
+  "archive_sha256": "0f4d8c52ff92b273b397bc2895ed93eb1e358504138c840e74f7287ad16949b1",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 689646,
+      "sha256": "0f4d8c52ff92b273b397bc2895ed93eb1e358504138c840e74f7287ad16949b1"
+    }
+  ],
+  "members": [
+    {
+      "path": "runs/q4_absence_tail_analysis_20260913/manifest.json",
+      "bytes": 582,
+      "sha256": "3c9c4b84e735c8f180a8dd4e98df77c434c7aa5f526ec66ab62973e472647b26"
+    },
+    {
+      "path": "runs/q4_absence_tail_analysis_20260913/official_events.json",
+      "bytes": 75807,
+      "sha256": "5512ea5775755048d419be1cf411eec5742f0512d2dd5e48ba867400727f8363"
+    },
+    {
+      "path": "runs/q4_absence_tail_analysis_20260913/official_log_summary.json",
+      "bytes": 840,
+      "sha256": "8bb7ccd5bc53235671e107dd8c6040bea114cc4163633080b09aedf52d7f30a1"
+    },
+    {
+      "path": "runs/q4_absence_tail_analysis_20260913/replay.jsonl",
+      "bytes": 2848463,
+      "sha256": "077be64391a27ecbd08d5f009dcc5d88b4958f392b39ff965120d2ac742add62"
+    },
+    {
+      "path": "runs/q4_absence_tail_analysis_20260913/samples.csv",
+      "bytes": 731016,
+      "sha256": "fe6df49621e77187d365fa4352475309873c8ce1869f715cd207588cedf7a4f6"
+    },
+    {
+      "path": "runs/q4_absence_tail_analysis_20260913/summary.json",
+      "bytes": 48421,
+      "sha256": "5ae334a8f00c89b11217a0dd4d3108551a09ef68c8b1da27729244a793c01489"
+    },
+    {
+      "path": "runs/q4_absence_tail_analysis_20260913/tail_analysis.pdf",
+      "bytes": 19534,
+      "sha256": "2c47e722296df3d8e74dd7cbb199f89123c432cc2cc47a8e307dd9ee6b591693"
+    },
+    {
+      "path": "runs/q4_absence_tail_analysis_20260913/tail_analysis.png",
+      "bytes": 102702,
+      "sha256": "5e3bfd7a037d69bec8c427ff4ee3db69a7c52bc9f9d9aeb4c968ab861e9560f8"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

@@ -6,7 +6,7 @@ from pathlib import Path
 import sys
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
-from solution.coverage.q4_exact import (cell_outside_disk,cell_vertices,hull,
+from experiments.q4_exact import (cell_outside_disk,cell_vertices,hull,
     in_closed_convex_polygon,point,q,squared_distance,witness_valid)
 
 

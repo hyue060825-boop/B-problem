@@ -1,9 +1,0 @@
-{
-  "authorized": true, "profile": "compatible_research", "problem": 4,
-  "seed": 640000000, "output": "runs/q34_structural_20260912/q4/structural_8card_long",
-  "bc_episodes": 8, "dagger_episodes": 8, "dagger_rounds": 0,
-  "episodes_per_update": 8, "ppo_updates": 20, "eval_episodes": 8,
-  "test_episodes": 8, "eval_every": 5, "max_macros": 320,
-  "workers_per_rank": 1, "lr": 0.0001, "bc_epochs": 2, "dagger_epochs": 1,
-  "ppo_epochs": 1, "batch_size": 32
-}

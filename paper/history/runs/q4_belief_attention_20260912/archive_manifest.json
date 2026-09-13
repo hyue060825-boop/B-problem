@@ -1,0 +1,298 @@
+{
+  "archive_sha256": "3dc15cc0db99354f93d56b0dc7e7b3a7d04f89165c9271e0fd7d865446921cbc",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 401167,
+      "sha256": "3dc15cc0db99354f93d56b0dc7e7b3a7d04f89165c9271e0fd7d865446921cbc"
+    }
+  ],
+  "members": [
+    {
+      "path": "runs/q4_belief_attention_20260912/medium2_8gpu/bc_0000_episodes.json",
+      "bytes": 229574,
+      "sha256": "65920d334a384ffd420f999eea7447ceb207b91b0ae51a35f79ee7438a35f36c"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium2_8gpu/config.json",
+      "bytes": 914,
+      "sha256": "e0a06cae398c5290ed2694986b44500f7fdeb1803e86e66b78f67bf03f5c0621"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium2_8gpu/metrics.jsonl",
+      "bytes": 107,
+      "sha256": "3ba9eeeb9c32cc6600c08bfcc12bd3b112b0d6be7d182d2e7d790bd4746de3d5"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium2_8gpu/provenance.json",
+      "bytes": 8462,
+      "sha256": "a753d8b9336422dfd7de4f9c4ea9e819820ff46df2caee60d8ca0afe1557e802"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium2_8gpu/seed_manifest.json",
+      "bytes": 296,
+      "sha256": "8382d99cc31257293fa2713db6d711b0ee289fd20ed57458d9368f4dad67ae1b"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium2_8gpu/status.json",
+      "bytes": 116,
+      "sha256": "002a4f4e818d7a03d2c6f521ae1d825edb10bd85270cb472d04c75fa92fcbd2a"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium3_8gpu/bc_0000_episodes.json",
+      "bytes": 229313,
+      "sha256": "ccfa28c56b59bce75a12ac543d8716a5e799a03fbd20650455139630b5ec28fd"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium3_8gpu/config.json",
+      "bytes": 911,
+      "sha256": "68ee041b4abe095e7341607298717f6f04b3fab33afd98459b7fdddd6a461a50"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium3_8gpu/dagger_0000_episodes.json",
+      "bytes": 115062,
+      "sha256": "56a383d5afeafda46b4bf3bd5feaa6303d7268650839f9ce8294ce1df7cb13bb"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium3_8gpu/dagger_0001_episodes.json",
+      "bytes": 114527,
+      "sha256": "312dd650a01befad84d6f7514fab38a8989acac37cbc4fca7938eecb50743ee2"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium3_8gpu/metrics.jsonl",
+      "bytes": 5301,
+      "sha256": "b245c6214ae876dba4baedd8c833c4bd7c4d6836444fa5d0eb624e911270b122"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium3_8gpu/ppo_0000_episodes.json",
+      "bytes": 114587,
+      "sha256": "6730e753e40ef88ef79dbbdabd52b5a6cb7562eb088f15352bcb6abe65f157e9"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium3_8gpu/ppo_0001_episodes.json",
+      "bytes": 114613,
+      "sha256": "f244c041ebaebfa5bacc8b2c6cee65ff6725c52e37306a95cce62c63f3ea1518"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium3_8gpu/ppo_0002_episodes.json",
+      "bytes": 114706,
+      "sha256": "4bd927e6bfe27c0d06a63dd3f5342bec5d09b5ab3cb4885c5b50e40370140f3b"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium3_8gpu/ppo_0003_episodes.json",
+      "bytes": 114702,
+      "sha256": "8e816ccfe9e092062e0238d9927caa8083e34e4b8d9df13169f080b286001586"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium3_8gpu/provenance.json",
+      "bytes": 8462,
+      "sha256": "24b24205480bb7f1a0536963f25f40437742710428e78ba3dd7d9e2b675131c4"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium3_8gpu/seed_manifest.json",
+      "bytes": 296,
+      "sha256": "49203049797f736e348db91ce8d4e5913d8a32514007413ec50980874073ef76"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium3_8gpu/status.json",
+      "bytes": 120,
+      "sha256": "279b58564781b49bd7213adf156dfb29f36d559ec66b89cc09903c971a241d46"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium3_8gpu/test_0004.json",
+      "bytes": 523211,
+      "sha256": "af5ebd9fa9fad50ebf57a458915665450a8c4debd75b683e5a718ac2b460eb78"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium3_8gpu/test_selection.json",
+      "bytes": 110,
+      "sha256": "13042584b4f396b152cb9a8ad56853f99a80013827812dbcf5911c7a43eb5c7e"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium3_8gpu/validation_0000.json",
+      "bytes": 261986,
+      "sha256": "52ae5882838f7c40cad9e0645861e3600e0b50f0342835a57c127a019da4a7f6"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium3_8gpu/validation_0002.json",
+      "bytes": 262027,
+      "sha256": "70864d5033020d7faa9428a7c425847e569730a0ba8f4783895ee03bbf780d0e"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium3_8gpu/validation_0004.json",
+      "bytes": 262008,
+      "sha256": "da55dedfccc4abf5bdb3a90f4727ae6363c91acc788ec7e40c2a899811febdf3"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium_8gpu/bc_0000_episodes.json",
+      "bytes": 459049,
+      "sha256": "88b8c1de03e885df980e7dabc54faa363d5be5dd0cbcbbc36f41079282aed791"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium_8gpu/config.json",
+      "bytes": 914,
+      "sha256": "6717f0c2b23f17f82c7ac32bbc4bcf22e6643e679f079a5edbc1a6c64afb4084"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium_8gpu/metrics.jsonl",
+      "bytes": 107,
+      "sha256": "25614447e0017c25063d9b94cd791d5ef400798367799ac9a4d0ba353230d896"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium_8gpu/provenance.json",
+      "bytes": 8462,
+      "sha256": "5ea78bd81f0f2c80b5f592a5e8527a71b932456f329eb3f17433d5279c756040"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium_8gpu/seed_manifest.json",
+      "bytes": 296,
+      "sha256": "c61689c426eae199c96d27d8951ba6e0b689a4fa2a3e3018a1c764f6e47c9574"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/medium_8gpu/status.json",
+      "bytes": 116,
+      "sha256": "57c2c5f87fd46059d9bfb0b39e862827683553a3e1b8716d6fb7aa4f0974a853"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke2_8gpu/bc_0000_episodes.json",
+      "bytes": 57295,
+      "sha256": "516d9b00944f1ee0f38e8d7ed6bacea9aacba791d38624d14a9672678cfc694f"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke2_8gpu/config.json",
+      "bytes": 830,
+      "sha256": "537ac750f7ea3d63063596c40078b5da5c55d5c989e9a9381d38067954aaae2b"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke2_8gpu/dagger_0000_episodes.json",
+      "bytes": 28888,
+      "sha256": "9567d88b92fdb3b17a66409c16e6936d1dda9521e3df85c2c7b4b28f0c12375a"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke2_8gpu/metrics.jsonl",
+      "bytes": 2054,
+      "sha256": "99e0d8032c5055057f02f2d12620ef39bced806780e5f9f47ee6a060aa5b15ca"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke2_8gpu/ppo_0000_episodes.json",
+      "bytes": 28647,
+      "sha256": "2d12e82c0c2cadb994096a8057883f8ac4d37591e93c2b92231d2c6bf4d5be0a"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke2_8gpu/provenance.json",
+      "bytes": 8350,
+      "sha256": "4b416b8a8caff74160291234272d49e4b7de7533691a75d6110e6fd82293fc76"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke2_8gpu/seed_manifest.json",
+      "bytes": 292,
+      "sha256": "6f049f8faa4e929db9770b753a146f9e0d71985c8da30c0fc02c1d911f9cd396"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke2_8gpu/status.json",
+      "bytes": 763,
+      "sha256": "a19731c0ffccf9520f3f65f7683e4dbb9a1b35bc3a5050e68f873cdab64070fb"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke2_8gpu/validation_0000.json",
+      "bytes": 90833,
+      "sha256": "048a2e486904c8d538b82ffbe4c24276b0ac4cdf9f2edfa2fbf6a417a05e2803"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke3_8gpu/bc_0000_episodes.json",
+      "bytes": 57406,
+      "sha256": "dac916f80b94c15d41817decb6dd6785b243f029a9d10aa96e055bd2f3da0385"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke3_8gpu/config.json",
+      "bytes": 828,
+      "sha256": "d6b6b300e6097b61e53db47c26f603aff28143b689f546b576470eed0c5d1977"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke3_8gpu/dagger_0000_episodes.json",
+      "bytes": 28836,
+      "sha256": "ab57e3aa1b57ad0fbbf1a6a3a895e4fe273f881f8350269d42945d6165e52eca"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke3_8gpu/metrics.jsonl",
+      "bytes": 2465,
+      "sha256": "e0a0c83ecc638080859424447f60e4ea592f3553be54d4a07b91ba7e1f57f32b"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke3_8gpu/ppo_0000_episodes.json",
+      "bytes": 28604,
+      "sha256": "9d13876156044f823dc5b7292636c3be2166d5e9db74fd26eda7600076acdf7d"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke3_8gpu/provenance.json",
+      "bytes": 8350,
+      "sha256": "63210fb449ca0b5c391bc0eea815053cfec4c5f7798638da84f996be7cdb6151"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke3_8gpu/seed_manifest.json",
+      "bytes": 290,
+      "sha256": "1c7d8dc8cf5709a882ff06ff6014e597f1fa86a61785ffa7a8cc063f34e5cded"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke3_8gpu/status.json",
+      "bytes": 120,
+      "sha256": "8f6f11755e65d44bb1903f5161b489b77775958beb585f3f3ad5bea2eb4050fb"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke3_8gpu/test_0001.json",
+      "bytes": 41613,
+      "sha256": "b76f5b3c5847d1dd9b5ab22fa33a3fd3dea933d7ad2262f31c84abc0e4081151"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke3_8gpu/test_selection.json",
+      "bytes": 109,
+      "sha256": "6d56da0ba40e6332f48f84712684837f6179066ccb7b8ff0cf62658f0d2af644"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke3_8gpu/validation_0000.json",
+      "bytes": 45792,
+      "sha256": "556d785c54d545f4dc2961aa51d0d675c9e75dd447c57c55099351056ac09d61"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke3_8gpu/validation_0001.json",
+      "bytes": 45793,
+      "sha256": "5db14442f6aab996523137d38fb1026ca59bfc6e6a211caf47a8217445df5215"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke_8gpu/bc_0000_episodes.json",
+      "bytes": 14313,
+      "sha256": "4d1a3e36a5d82952efe5615173b11afb5bdc094ca546bf385c18c04a4a878cfe"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke_8gpu/config.json",
+      "bytes": 824,
+      "sha256": "00ed6a392b58a4df5a3c3d1b93eae122a3fb097709090f4e102994c08abf9465"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke_8gpu/dagger_0000_episodes.json",
+      "bytes": 14422,
+      "sha256": "6b8291bf8cbb160298abc3d82aaed393526d93821749f282a80917e707ccb091"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke_8gpu/metrics.jsonl",
+      "bytes": 662,
+      "sha256": "fc2e22350b3aaf40c1ef0be8db96e4c56d00ae73bbc4943b7fb7b04dcdd32487"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke_8gpu/provenance.json",
+      "bytes": 8350,
+      "sha256": "17650da0c0b949646ab9c1cee36b2ac2c289899f684646e7b1db806d2185b2b5"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke_8gpu/seed_manifest.json",
+      "bytes": 288,
+      "sha256": "45071f0a73269ca1673205ba7f97ebcc772d6af20554f64e05ca99e7fe6dc7b3"
+    },
+    {
+      "path": "runs/q4_belief_attention_20260912/smoke_8gpu/status.json",
+      "bytes": 405,
+      "sha256": "fb597ad41478ffbc21f1a70caf3e7173ac52bdef63457253e0a4cfd2edf92777"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

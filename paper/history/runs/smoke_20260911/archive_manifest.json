@@ -1,0 +1,43 @@
+{
+  "archive_sha256": "9e28e1a95ea735140b5a28d53b768fc4531ebb8ce7f7e71ca92390e0e439f615",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 10354,
+      "sha256": "9e28e1a95ea735140b5a28d53b768fc4531ebb8ce7f7e71ca92390e0e439f615"
+    }
+  ],
+  "members": [
+    {
+      "path": "runs/smoke_20260911/console.log",
+      "bytes": 2214,
+      "sha256": "61b9cc63fbea1cdc02ef24bcea697927e038818e873ebeac17b115fdc12e5019"
+    },
+    {
+      "path": "runs/smoke_20260911/q3_baseline.json",
+      "bytes": 13051,
+      "sha256": "b5f58c8bce79d2bb6d1cbac5f35615afc09209373192b6b9c060a95189329f21"
+    },
+    {
+      "path": "runs/smoke_20260911/q3_paired.json",
+      "bytes": 8395,
+      "sha256": "9cd319f5006ad28684386224348dd34840c4f6b69f327ed4c4b7bc5b9843899c"
+    },
+    {
+      "path": "runs/smoke_20260911/q4_baseline.json",
+      "bytes": 13108,
+      "sha256": "885af217cc41d54097a46c4cbc6d23d6105857b5b4bf34ba58f25ec705c7c54e"
+    },
+    {
+      "path": "runs/smoke_20260911/q4_paired.json",
+      "bytes": 8400,
+      "sha256": "a270caa7db958337647b4392d4ee5d846465ee612a8518a68709522a1fded6b2"
+    },
+    {
+      "path": "runs/smoke_20260911/report.json",
+      "bytes": 6805,
+      "sha256": "ec0a1796fe188f27a5d2d2d78c3038396dbb752af912889fa116ba943da2bf20"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

@@ -1,0 +1,18 @@
+{
+  "archive_sha256": "72e3988b61b9b95e7dc9deb4cc61761a46ed5da4a51754cfa9d5768ee40a15d0",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 613,
+      "sha256": "72e3988b61b9b95e7dc9deb4cc61761a46ed5da4a51754cfa9d5768ee40a15d0"
+    }
+  ],
+  "members": [
+    {
+      "path": "logs/q4_20260913_080703_902299.jsonl",
+      "bytes": 460,
+      "sha256": "005f97559be9871dc225281ddcb0d1bea552d9f7a2d563aff9db6392673b9dde"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

@@ -1,0 +1,63 @@
+{
+  "archive_sha256": "6a16f1fbb93681e6e2890d783f8871bacefae2ff47b3fc87cb05e5761a89e801",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 2511722,
+      "sha256": "6a16f1fbb93681e6e2890d783f8871bacefae2ff47b3fc87cb05e5761a89e801"
+    }
+  ],
+  "members": [
+    {
+      "path": "runs/q4_continue_paired_3000_20260912/diagnose.py",
+      "bytes": 3904,
+      "sha256": "284b6ca9641acafba89b2387e2722253a85184433360f8029772cb17554e10f0"
+    },
+    {
+      "path": "runs/q4_continue_paired_3000_20260912/manifest.json",
+      "bytes": 5679,
+      "sha256": "af916681bfd85c361a10c8298011fd9867cc7833c534f6e1cdb39f64022580f3"
+    },
+    {
+      "path": "runs/q4_continue_paired_3000_20260912/paired_distribution.pdf",
+      "bytes": 23540,
+      "sha256": "832bf9419bbdfaef56a0ba13cbdf6e43a49034b29e068f95ac9ed80e46c2ae75"
+    },
+    {
+      "path": "runs/q4_continue_paired_3000_20260912/paired_distribution.png",
+      "bytes": 93795,
+      "sha256": "3417f305268adc35fbe68a1bed78aa343708b89d46b6ed26d50c9472e80d6e83"
+    },
+    {
+      "path": "runs/q4_continue_paired_3000_20260912/report.md",
+      "bytes": 3298,
+      "sha256": "986622dc260e48b53d6a667db06262a2bbfa4d80ef0161fe10b6c851d15eebb2"
+    },
+    {
+      "path": "runs/q4_continue_paired_3000_20260912/samples.csv",
+      "bytes": 496360,
+      "sha256": "d150db47fb6474eb9add561e19a39630f7630bd4d6d35cf1ba6846ef764854e2"
+    },
+    {
+      "path": "runs/q4_continue_paired_3000_20260912/samples.json",
+      "bytes": 11570569,
+      "sha256": "de93d6bde57113fb5423e716f6a457b63d4932e3c7808b36bade70fdcc8919aa"
+    },
+    {
+      "path": "runs/q4_continue_paired_3000_20260912/samples.jsonl",
+      "bytes": 9719567,
+      "sha256": "1992beee34ea7e77cd8874e034b8fa9442d7b96901e497d3f29cb3f5e2f2fef5"
+    },
+    {
+      "path": "runs/q4_continue_paired_3000_20260912/status.json",
+      "bytes": 78,
+      "sha256": "964b152afd1b4c43b1847e4769397627dcee9498be083769ee933bbcce3bd21c"
+    },
+    {
+      "path": "runs/q4_continue_paired_3000_20260912/summary.json",
+      "bytes": 46363,
+      "sha256": "3c2c3c3ad298ba76aa1404fc237ced8a5d42c55bfaa75165472fdf06003b7139"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

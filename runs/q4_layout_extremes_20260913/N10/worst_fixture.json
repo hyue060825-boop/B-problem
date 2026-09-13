@@ -1,0 +1,103 @@
+{
+  "scenario": {
+    "label": "LOCAL-Q4-LAYOUT-2010003968",
+    "problem": 4,
+    "scope": "official_constraints",
+    "sources": [
+      {
+        "channel": 1,
+        "x": 1095.973372673781,
+        "y": -1257.6784800241073,
+        "radius": 1000.0,
+        "kind": "directional",
+        "heading": 308.96455494058654
+      },
+      {
+        "channel": 2,
+        "x": 819.2120800611813,
+        "y": 1602.663900473781,
+        "radius": 1000.0,
+        "kind": "directional",
+        "heading": 58.23824553944633
+      },
+      {
+        "channel": 3,
+        "x": -1225.5752037442062,
+        "y": 1318.182623905864,
+        "radius": 1000.0,
+        "kind": "directional",
+        "heading": 129.92025285723457
+      },
+      {
+        "channel": 4,
+        "x": 1622.372391652456,
+        "y": -182.9648160136464,
+        "radius": 1000.0,
+        "kind": "directional",
+        "heading": 353.951096918353
+      },
+      {
+        "channel": 5,
+        "x": -752.7720166753118,
+        "y": 1580.9917480389443,
+        "radius": 1000.0,
+        "kind": "directional",
+        "heading": 113.73050851336859
+      },
+      {
+        "channel": 6,
+        "x": 1465.6259868587972,
+        "y": -295.35966551549006,
+        "radius": 1000.0,
+        "kind": "omni",
+        "heading": null
+      },
+      {
+        "channel": 7,
+        "x": -1160.8146741069838,
+        "y": -1313.00465982861,
+        "radius": 1000.0,
+        "kind": "omni",
+        "heading": null
+      },
+      {
+        "channel": 8,
+        "x": 1607.902322519989,
+        "y": 154.57903783134117,
+        "radius": 1000.0,
+        "kind": "omni",
+        "heading": null
+      },
+      {
+        "channel": 9,
+        "x": 919.4376100530808,
+        "y": 1545.3143450810041,
+        "radius": 1000.0,
+        "kind": "omni",
+        "heading": null
+      },
+      {
+        "channel": 10,
+        "x": 1649.344295375958,
+        "y": 51.60648528433763,
+        "radius": 1000.0,
+        "kind": "omni",
+        "heading": null
+      }
+    ]
+  },
+  "seed": 2010003968,
+  "mode": "mutated:edge_outward",
+  "noise": {
+    "label": "TEST_INPUT",
+    "kind": "constant",
+    "value": 0.0
+  },
+  "numerics": {
+    "label": "TEST_INPUT",
+    "angle_rounding": "half_up",
+    "time_rounding": "half_up",
+    "directional_overlap": "invisible",
+    "boundary_epsilon": 0.0
+  }
+}

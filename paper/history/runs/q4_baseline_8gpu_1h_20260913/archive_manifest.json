@@ -1,0 +1,3918 @@
+{
+  "archive_sha256": "7ecb0670e289986bc84ab648a50ffa87a4957a585bc2d46c90be2292a00ed933",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 20390381,
+      "sha256": "7ecb0670e289986bc84ab648a50ffa87a4957a585bc2d46c90be2292a00ed933"
+    }
+  ],
+  "members": [
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/evaluation/comparison.pdf",
+      "bytes": 21503,
+      "sha256": "138888f9d149708b57ecf6149dc1f2f58d70fc7165f16c739f6c347b22ee91fd"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/evaluation/comparison.png",
+      "bytes": 88409,
+      "sha256": "76a15835bf1d30b9d246e42bbed69624aa146317a6da0e7e2a9f670579f682e2"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/evaluation/manifest.json",
+      "bytes": 10304,
+      "sha256": "80f0de8e6626e9d686abaaac25817c137611907cb5d0eb458b81e0c10e220f51"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/evaluation/paired_samples.csv",
+      "bytes": 267393,
+      "sha256": "1e57c908428d3fdc5b4ce5e6166c65340a2403719ecda591f46cead9ffe1811b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/evaluation/report.md",
+      "bytes": 3273,
+      "sha256": "a8bc16b7f68359eae0c088e256686ddf95eb32f042714e4bb58c3f2b6ca397a3"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/evaluation/summary.json",
+      "bytes": 15675,
+      "sha256": "3986f25ec99cfdd563f62b8d0448bb7e89e5ddf740be93d9e99a3ec765fa06ed"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/launch_manifest.json",
+      "bytes": 609,
+      "sha256": "1caa738998720969396006aa520467bc728fb34fac1796d1073acf4c2e6f00e6"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/smoke/baseline_validation.json",
+      "bytes": 115653,
+      "sha256": "6abe4c6e28a8d81c539fc6542446cde005a806c41d16054c6674a35173499373"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/smoke/config.json",
+      "bytes": 896,
+      "sha256": "8073660080dcc5a19e36992cdf7a6e44133832fa01881141a9e71305588744c0"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/smoke/episodes_000001.json",
+      "bytes": 215030,
+      "sha256": "e3724be247e39ce0db77a124cfc3a108642758b612e032f4e35e82012b27e89b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/smoke/episodes_000002.json",
+      "bytes": 215042,
+      "sha256": "f179dccfb13f27e5540df82c39eb8569024dddd8f7e06b9aa33f706033905a0a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/smoke/episodes_000003.json",
+      "bytes": 215076,
+      "sha256": "57e9b102fb87146b139944dadf7f2b49b7fdcaa6edf3ad2db63b958dae7494cc"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/smoke/episodes_000004.json",
+      "bytes": 215060,
+      "sha256": "83937cc597faf70d4e81ff361dfe7a23245a52eb4b36e24b549331486af388cf"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/smoke/metrics.jsonl",
+      "bytes": 10642,
+      "sha256": "39382c8790c772002afd7e73b903de4a0d556eec11e5d053c2477a1f94ad6e9a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/smoke/provenance.json",
+      "bytes": 4573,
+      "sha256": "4e81d5596e423c255d108c1022fe0b2321849e6a7f9aff745e6d94406031121c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/smoke/seed_manifest.json",
+      "bytes": 169,
+      "sha256": "f2a43d7d54f919dfab944b7159021cea6f29101e65758660af7df261fb12111e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/smoke/status.json",
+      "bytes": 109,
+      "sha256": "67182d0cae78e7d3d9cfeb9e30d1c460e42a614b7f4693af2d617de6caa5c540"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/smoke/validation_000002.json",
+      "bytes": 57832,
+      "sha256": "f4cd6ce1ef1993c1803076670669b76269b3d1a3359fb8cce61b29a30b13d034"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/smoke/validation_000004.json",
+      "bytes": 57838,
+      "sha256": "c5a0b15fc401b60bbcf4ed1152ed8a7038d7f955f4ec7b7194298170ae3b6a03"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/smoke.config.json",
+      "bytes": 896,
+      "sha256": "8073660080dcc5a19e36992cdf7a6e44133832fa01881141a9e71305588744c0"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/smoke.console.log",
+      "bytes": 7574,
+      "sha256": "9108bc30079d85d2180959a19524b11a8505848d6711e6508aab72b4949e72f3"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/smoke_gate.json",
+      "bytes": 169,
+      "sha256": "cf2fb4ed1dc5095e0fdb2d771b9361bc6ec9011fdb5e9ab30126e2dad9fb5a92"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/smoke_resume.config.json",
+      "bytes": 896,
+      "sha256": "8073660080dcc5a19e36992cdf7a6e44133832fa01881141a9e71305588744c0"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/smoke_resume.console.log",
+      "bytes": 3068,
+      "sha256": "9a787edcc1ab3d4f21ec9cd93349e48044b87f5224601f297fe6aede6c0419ff"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/bsim/__init__.py",
+      "bytes": 100,
+      "sha256": "967ff09517cb806a6b6c579c99105850862a9bf0884d1db1167e2fd81bab83c0"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/bsim/__main__.py",
+      "bytes": 6809,
+      "sha256": "708e2679407b0b6a825ad1a2debb95d25f19403cdf713d5c5db3eff04f997aa9"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/bsim/client.py",
+      "bytes": 4131,
+      "sha256": "acb69eda926bddfc3ccfcb840899406abd5bb8257154d31f96d4c689db7cb558"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/bsim/clocks.py",
+      "bytes": 583,
+      "sha256": "d1760109982198d84774b81b5f2120b80fac004ea68458720279ba1dc1a17c17"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/bsim/env.py",
+      "bytes": 1046,
+      "sha256": "291e1f3d23386b672f317d98ad94ac09b676369f0a3204357f821b56c55ba7d5"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/bsim/evaluation.py",
+      "bytes": 5457,
+      "sha256": "fc51c3bd83b01fb96d946007b3dbd24f11b6704bc638244fceeadec1ce27fb5c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/bsim/fast.py",
+      "bytes": 1650,
+      "sha256": "024fbe85c2f80cffd53ed9c07a52c323657785a0f2b24f21f2dd1eced4550f88"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/bsim/http_server.py",
+      "bytes": 4652,
+      "sha256": "b5ae05ff747941780fc4d8a60d227356ee6d2489d80f7ee731e41af7cf352c10"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/bsim/noise.py",
+      "bytes": 3056,
+      "sha256": "0b149c9b1b0470e6c3d37d3b73f42757076cad8440bf91cbcf9c0b112d0fcb88"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/bsim/profiles.py",
+      "bytes": 457,
+      "sha256": "d00bfb79e124d1b4dced21f2b595eb5375d6287b6fbf6895443582be3cf49bff"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/bsim/protocol.py",
+      "bytes": 3267,
+      "sha256": "10651bf3464554f1386fe4b7d95619cae8b5e890ced89cc807d2998d696c3c21"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/bsim/reference.py",
+      "bytes": 3297,
+      "sha256": "eca0ad350a6a22a9ccdd655ae1ed284cc98cec107fd1125aad5a488a8818b86f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/bsim/research.py",
+      "bytes": 2752,
+      "sha256": "070cb72e35466b9807f573a29dfaed32204fb5a457db006ac9a3f82b9c99b60a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/bsim/scenarios.py",
+      "bytes": 2978,
+      "sha256": "42fe0fd36bfac2f914fc20400a5bb7b37a3e2345a922dc1df6566234180a4d5a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/bsim/session.py",
+      "bytes": 6410,
+      "sha256": "c5a160a87da0e0c28b0b81cb88ddac55ae14496fe74210160996dccb4a54d547"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/bsim/strategy.py",
+      "bytes": 636,
+      "sha256": "22340e37c64253379f297848f17cf41cbe9c551e30fe8dd1d93b52dd8706e071"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/bsim/validation.py",
+      "bytes": 3700,
+      "sha256": "e2054e298a38bf2e0bc6047740a932ef7336946a982b991adc3712bc4316c718"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/bsim/web_dashboard.py",
+      "bytes": 12005,
+      "sha256": "98079b40ab10cc323934fc0255ecfa6cb35f1f9994bf4c39d7e2b8c889b0c357"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/manifest.json",
+      "bytes": 4405,
+      "sha256": "44a63835fd4bc8e4a4994a9ef018ef729f9ff274be990d444dce03a81b4808a6"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/scripts/train.py",
+      "bytes": 11201,
+      "sha256": "500546f1b40abd1d71021c0ec48d5e48e8f7f4cb8ef1acc646d6a890082a43cc"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/solution/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/solution/cli.py",
+      "bytes": 780,
+      "sha256": "ae5f77f48754022f7b0113c556cb25b7245a135b5765c1a46d145e8b42ef6c46"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/solution/control/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/solution/control/controller.py",
+      "bytes": 11026,
+      "sha256": "5c9d14ed73713818d5fde77d99cf15b1d4af40f00547b6e11512428636126c95"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/solution/coverage/__init__.py",
+      "bytes": 28,
+      "sha256": "01f802a854c8dc3589ee6d65ea10db50dc49f29ab0a4e4190622dd0360c46c42"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/solution/coverage/certificates.py",
+      "bytes": 3627,
+      "sha256": "547051708528139de87c1b336c5b1d835f334561d17f5e74078c0ce12a76d3e1"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/solution/evaluation/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/solution/evaluation/artifacts.py",
+      "bytes": 1924,
+      "sha256": "0974634f63534fe647a2529df83be7c3a7bfac0401889ffc88759109ed33cc26"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/solution/geometry/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/solution/geometry/core.py",
+      "bytes": 12574,
+      "sha256": "ba77a502eb2ada24151ad2057ffc2b6606ccab8c92641173211e227bc7286caf"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/solution/planning/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/solution/planning/q2.py",
+      "bytes": 7975,
+      "sha256": "800f21b916b73df6094f7b5157faf8111c283c512d84b23d67c6e57370596325"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/solution/rl/__init__.py",
+      "bytes": 97,
+      "sha256": "4df2da4c47012dcbd440058597558f4c825acce706345f2d170920d431c16876"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/solution/rl/distributed.py",
+      "bytes": 4291,
+      "sha256": "b98fae2f1941e21a939ea07cded2a6cbf8be99ea31af94e7658ac998acbf569c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/solution/rl/environment.py",
+      "bytes": 5607,
+      "sha256": "c50152b35f37f6c6f974713fccf0ccef6f954903e5dcb595381c32056bbf811e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/solution/rl/features.py",
+      "bytes": 2470,
+      "sha256": "73238fa29d76cdb0fe9a1d89f4e0eeb23140e167b008f90895146deb19820013"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/solution/rl/joint_updates.py",
+      "bytes": 6715,
+      "sha256": "9dc23a824e671460c88bd2e1dc80b9ef8e7e4d4367a5d666836e55ab80a61365"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/solution/rl/model.py",
+      "bytes": 1830,
+      "sha256": "015a5b3c4c7995f8d6e365ed4ad9aa114b8927395a2911005f7ce94068e74312"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/solution/rl/training.py",
+      "bytes": 16104,
+      "sha256": "44351f2d43b51e1a79101ac49530a4c1c0318d5482613317c86e92213647d920"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/solution/search/__init__.py",
+      "bytes": 74,
+      "sha256": "b98f017ac999b5df85ce3ad52aa59d2f8ce1313b2d82d39b1a3fa2f15943059a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/solution/search/belief.py",
+      "bytes": 9071,
+      "sha256": "55769f26a6f55847d217d86987b60547e6f4bd225db4f1c380ecd7c00847cfa1"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/solution/search/collection.py",
+      "bytes": 5314,
+      "sha256": "78f732414bf99d1415287dcd18305f747e6f5a08624ca0ec144d479c777a7287"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/solution/search/gpu/__init__.py",
+      "bytes": 80,
+      "sha256": "76d343e4e154ecc4b3d5c1ffbfb3e6c352b8108de9fdfa12424d3e1f0df96182"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/solution/search/gpu/kernel.py",
+      "bytes": 9330,
+      "sha256": "90e95aed6c5b5ce26b12bc2d3e85a0d0201879c24c6d13bed348476deb845ec1"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/solution/search/gpu/rollout.py",
+      "bytes": 9015,
+      "sha256": "8335e6a48d8b682fbff7ac70c8b1e860d8c23a6b75a83e8e48d6468e714ddaad"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/source/solution/search/teacher.py",
+      "bytes": 7720,
+      "sha256": "5c054bc3a9774c01f7d77c65ede73178d02c4d6f347cee3f32c9f3d095f2dc01"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/supervisor.json",
+      "bytes": 253,
+      "sha256": "f92e748db8eda1dd5099d78f69e7442d0e503a15c42e3e7ca01410501fad5571"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/baseline_validation.json",
+      "bytes": 924635,
+      "sha256": "c08d67b716173f02a6129a7d6f7c80830daad16c7fa6c9978f28dcb1277a29ce"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/config.json",
+      "bytes": 900,
+      "sha256": "942eb8d0c028754ccd1305f6bb6e18857e6d83b3e052a2e50e865e39a2012263"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000001.json",
+      "bytes": 215104,
+      "sha256": "b65fa93ae305074f2245b565ae3844c9e3cd012c0ab0c5502f3471f2c1ef375a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000002.json",
+      "bytes": 215100,
+      "sha256": "49a784e405eecb9165de9c2c468d5e138a3f304bb92f82808e289dffdbcc01d3"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000003.json",
+      "bytes": 215118,
+      "sha256": "8201226af583b51056cbb1fc1a72a53649ba58cd3c08321ca52537fcf20a0d50"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000004.json",
+      "bytes": 215050,
+      "sha256": "1ee7d5776d0e2bc4a2e293a742f90ab31608d545419a421d3eeeb2ebe8aa2be8"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000005.json",
+      "bytes": 215021,
+      "sha256": "4e37d3322451b0cb5f84ee1a730e56db38a758c8c2a39de7eea3b8788469b79d"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000006.json",
+      "bytes": 215001,
+      "sha256": "10a225feefc441a17b6d96b0fc72b50a7e3f47781473bdb903154cb8fa05f115"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000007.json",
+      "bytes": 215012,
+      "sha256": "38334db925e9f494c6f47e58b7f66901c1b53156b1b2af213c1964392c9f0543"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000008.json",
+      "bytes": 215034,
+      "sha256": "8c182557fde96715d867cf5e1d4053eee3723889984fdbfc3a152e5847da1d5d"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000009.json",
+      "bytes": 215043,
+      "sha256": "526b03264572e3b5a14391d7917d2d8ec385af8101ee19a0535cf5ccb6aa3c57"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000010.json",
+      "bytes": 215041,
+      "sha256": "6508601cbe70a1e095b0386ac12d46ba146f7cbaef464ac571e36221ab71fcf7"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000011.json",
+      "bytes": 215026,
+      "sha256": "251aa57e875b99e7a3628f0725b483abaafe436d2ef3feb91e0e5c7268e6065b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000012.json",
+      "bytes": 215070,
+      "sha256": "30b786fab6ea522a92dde8f3387976dec2a79f0fa3da97a50880aa7bf16d6d30"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000013.json",
+      "bytes": 215078,
+      "sha256": "13d204ae7ac224bd22e10dbbbf21b7f4b8d6bf716b55afd9c77c684b25362697"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000014.json",
+      "bytes": 214995,
+      "sha256": "4ee69e7edcd43368b2edfc49e48be6a89080c525e72c2a75e1f544ab115af8fe"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000015.json",
+      "bytes": 215021,
+      "sha256": "deef7bc847db5abf037facb45e6248724ce99eda5d4d7ffa2e88598f6250094c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000016.json",
+      "bytes": 214995,
+      "sha256": "5a9c6cc0891e5764f050b5bcf8defda6b38a4d1e8c3722edb7d93400516d9e0b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000017.json",
+      "bytes": 214965,
+      "sha256": "9d458796fa57f88e7b84c8cbfc2d46b947371c703ba4039f96e3b745a364ddf1"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000018.json",
+      "bytes": 215095,
+      "sha256": "9dfc2fb056fd0780095d5eecac3fca4b3a8549ebb2b128a4227906b600201c9b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000019.json",
+      "bytes": 215014,
+      "sha256": "a124861fecd79b9af1ff69ff55c5536d24bcb65b71b1eaea848c130875632650"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000020.json",
+      "bytes": 214968,
+      "sha256": "4ddbb7455dfca3bc0683ce5a743a20687fa15fd73134345aa7cd0a68e27dc13f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000021.json",
+      "bytes": 215034,
+      "sha256": "6971ff2ca89a8d06db33dd680f7ab0a00597ffae34ae4067401d7121b905d169"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000022.json",
+      "bytes": 215025,
+      "sha256": "626577beca2cc1757263ec5fd5e2a3a01e6b5fbe9f1008797fff0996031d00b3"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000023.json",
+      "bytes": 214976,
+      "sha256": "1f2df00727ae189d6acae992ec8c03b5aa56889e84249afb9cc91bf521eae37e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000024.json",
+      "bytes": 214910,
+      "sha256": "f37dd8bed581f29eb966c79b311e8458af86acb71c46c252cf97258918db1c2b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000025.json",
+      "bytes": 214967,
+      "sha256": "9b69b27812f700d466955bd0c40a909f6a22a574f729fcebe8f6674445b54493"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000026.json",
+      "bytes": 215048,
+      "sha256": "102c0a36009a09a56e83a5b3ce2bda017181c67e506c099a81066eed77b9123e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000027.json",
+      "bytes": 215009,
+      "sha256": "92135e661fc8617237633d12fce6bde581b6d21674fe6e501fa200eb3eaf6844"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000028.json",
+      "bytes": 215010,
+      "sha256": "c82a5e184936195b6f6d95703f197df5909d832214b2036f539b681730028c48"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000029.json",
+      "bytes": 214950,
+      "sha256": "9b6ba30917dfe7e602d676d5f086581e70ac08f926d1db071962d1ce0e541cd4"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000030.json",
+      "bytes": 215031,
+      "sha256": "bb9d0c8743a81ab0ceb8e2bda44b6bc2206aa437f7db3713b601ba561181b0d8"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000031.json",
+      "bytes": 215026,
+      "sha256": "9da15d1fe6af7c2c7fd87ee2ed1b619bb2e9ffd8e8c4c4eb23064c24bc58207c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000032.json",
+      "bytes": 214997,
+      "sha256": "1c8fc1312a904a6e29a56ca9c47b8238212123998002098e5360697d383fd2c9"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000033.json",
+      "bytes": 215017,
+      "sha256": "f1e621a903dc787b6e68fb3dfa004b4fa085783e61d9f0be74920eadc743a63c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000034.json",
+      "bytes": 215016,
+      "sha256": "2372c22b4440a75e44a6ef752316b39fd95fe417ae2b54d62640fde33da74f4a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000035.json",
+      "bytes": 215001,
+      "sha256": "e16fb074aab41164a2daeb2ac69b463ae7cde5197ccec1ee605d491e37c4eb58"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000036.json",
+      "bytes": 214985,
+      "sha256": "c0b27d2ce70df0e439610fa13cdefaf9de27a76aceda8378b6160163b94d67d1"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000037.json",
+      "bytes": 215044,
+      "sha256": "975b75f936b11a5fc036808bba24112b43971e658042f6f1f97586e71e6eaf6e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000038.json",
+      "bytes": 215126,
+      "sha256": "7ac8f0d148ab518715f80b41317049459653f0ff3c30065dc49bfa4adee0455b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000039.json",
+      "bytes": 215000,
+      "sha256": "c3eccfe58ca9a4caac1ba542d5a974b1d9fefa7d3ac240db3df76f9db784852f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000040.json",
+      "bytes": 214973,
+      "sha256": "631fc52224f7a6b6a9dbbfa9b14702bb96fe6c075d2c4068423de6b4b0e5ebde"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000041.json",
+      "bytes": 214976,
+      "sha256": "f0a2a8aa0f5b655b9fb5afed209336bee9a9efc0a966cc8e3dbda4730e703e17"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000042.json",
+      "bytes": 215037,
+      "sha256": "12710f857ae55b7a66b4c5ee35bcb8adedfd1e025315e0666dfc6b908021a133"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000043.json",
+      "bytes": 215081,
+      "sha256": "9ea52dcb37745c85cd34c7de6b03c7282158e472224e9da7f6145af0c324edd9"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000044.json",
+      "bytes": 215030,
+      "sha256": "9f043d872a6cbb039c00ad1cf1c10e3e54fe224e0d170e36f0580e2f73dfbe34"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000045.json",
+      "bytes": 214940,
+      "sha256": "8f5ab628d50ba2cff29847cd8f5b8187fd422d6c06b7ced3c6f800733a7631d6"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000046.json",
+      "bytes": 214966,
+      "sha256": "fe86064de5cff8a5a60a7ba2bdfd2df6153eedf7250396de61bb32a347bc4f7c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000047.json",
+      "bytes": 214950,
+      "sha256": "7ec544cf10410ab93261a93a3838fbfcff936f9d4c198f15342d0934700527f9"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000048.json",
+      "bytes": 215045,
+      "sha256": "b453729752e9bf444cd0b3711e4e29410de63b65df89b500f2bc5eea88c5d24f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000049.json",
+      "bytes": 215027,
+      "sha256": "5b0898456e9c83fd3058f7ba39e9308595686e96e0ac83e6219c27580a63c4e0"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000050.json",
+      "bytes": 214950,
+      "sha256": "cf63989e5f45a1027141998e8c99ddde6794ac22c8d0a44396d7e96354158112"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000051.json",
+      "bytes": 215047,
+      "sha256": "8515ae6f747dddd0b05520d172779386be64f6f9832748635feabb91ec4e1620"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000052.json",
+      "bytes": 214964,
+      "sha256": "64563747f0c510b0f2311a10fbf72498776b30f53e1c4c3d3d5c0b8ea7bcf97b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000053.json",
+      "bytes": 215030,
+      "sha256": "f4f80e669c645165a66f21df18e6f412b5e453d12a413f9025ff9cb066b4c8c9"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000054.json",
+      "bytes": 215017,
+      "sha256": "c56dd3e84bd755952d644dda1697de0cfe46c97d8cdd8409f36e75899d0ddc7a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000055.json",
+      "bytes": 214944,
+      "sha256": "31f8c7936e58b45b5ebe67f70db1f0730de257943689feebeb063531989457ad"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000056.json",
+      "bytes": 214998,
+      "sha256": "506fc58b38a958b52a6738b0786eb46403608b509977854834d2e416949650c7"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000057.json",
+      "bytes": 215022,
+      "sha256": "1437dc7a7aa229379e20aa9e0c710a2dee6a7b1f88371f6b055b768708c63b81"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000058.json",
+      "bytes": 215070,
+      "sha256": "f557094a1ffa612da85ef00edc48d20d2577cc1e5f33bccb1b897a3819e7b872"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000059.json",
+      "bytes": 215077,
+      "sha256": "6554d201f570bf64913c4e5a622c387fa04e1df00f51660adc6065f2631ca58e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000060.json",
+      "bytes": 214965,
+      "sha256": "8cc4bf5950325ff2285250d790740dd27ddbb59011d05cc9795739533ddb98fe"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000061.json",
+      "bytes": 215070,
+      "sha256": "9ea88e9bb650d3e8de132e11206aba2d485dc10737c3a85bb5565bf36a4feafb"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000062.json",
+      "bytes": 214990,
+      "sha256": "be519319aa92c3488a223868fa8ce22c8d965050bc79e82c0709bef5dc2505c6"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000063.json",
+      "bytes": 215114,
+      "sha256": "c1ae9ac94b187d94fac0315b8199c18df43524a400e2c686cc20b7f475fc5df4"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000064.json",
+      "bytes": 214970,
+      "sha256": "d2758de8ee590a29b4e76ffc9e632a4a6996324176cffad02d212abf5ad5adf1"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000065.json",
+      "bytes": 215068,
+      "sha256": "6e102cf29be8e030771a764a187a09ca0fb8915b7e41a47203f1e8753a0cbd6c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000066.json",
+      "bytes": 215034,
+      "sha256": "de5757928a2cbb58d6dc99c4bb0a6354689dc1cc0981e6ab23a2c31e0a97e01b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000067.json",
+      "bytes": 215026,
+      "sha256": "7923ab757d4d8927fbfc6f47290b1629f3db30075c48b4f6c147ce7524f4fb17"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000068.json",
+      "bytes": 215052,
+      "sha256": "74d230639e0c721aaa8e98107d2b0582672e83dd8bbfab00796682127ae9b50f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000069.json",
+      "bytes": 215017,
+      "sha256": "096c875da2cd37443d66b2721d745c233616bddab8690e236ee8856938c662ba"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000070.json",
+      "bytes": 215050,
+      "sha256": "b83f147a6256fa6fad63b512cd5be10b98d83ef9c600adad1f8cfd70ef52e720"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000071.json",
+      "bytes": 215029,
+      "sha256": "1864f96c0855b4341aed0c7ae6e476cec189361abfe3d496ff6b354db6b7c562"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000072.json",
+      "bytes": 215052,
+      "sha256": "1f9f8d47563ec79bfdd89a7a26302cb4f234887f89f91c2ec54b8efa7788cc74"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000073.json",
+      "bytes": 215049,
+      "sha256": "2a6e14c75341f30bc0d7455d91412a79e413fd0ead8469ca2c4c1415da04f1b3"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000074.json",
+      "bytes": 215021,
+      "sha256": "241cdb0f07ffb287264ccfa8fdd53d7e23b62bdf5716f7cb67da02f6a7c066ed"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000075.json",
+      "bytes": 215031,
+      "sha256": "22751a36c07f18e426bfbdc2b1a70f99bbf344f4793d89e70bdf9e5baf9b14a9"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000076.json",
+      "bytes": 215055,
+      "sha256": "5bc4c2b6baba7f0b7fd70c9b72068fd7d938f00fa66f1e2306009854edbf0397"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000077.json",
+      "bytes": 214962,
+      "sha256": "d1bde35842ee798ba758e2bd97dcba5123764b89fec53bf3bb1d4c683dc124a0"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000078.json",
+      "bytes": 214975,
+      "sha256": "e070b5943bfcf40d82afc8af9c06841ad448f2b30eed3616202477e2ca9725ac"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000079.json",
+      "bytes": 215102,
+      "sha256": "2c65ed443a63d444bc72e7e9f4c37e1a1113c6ab5fab2adb51858bf9d9a1a2bd"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000080.json",
+      "bytes": 215027,
+      "sha256": "7e8aaac4e6e2fd1e6016a5346658f8e3128fdaaf2d8a7607ce5d5a01a41b18af"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000081.json",
+      "bytes": 214979,
+      "sha256": "6ee10f5f7277681748aea0eb7fef1b4a3380c4e31e7db0cfa35078e4510ba0ec"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000082.json",
+      "bytes": 215118,
+      "sha256": "c5e6a522a98283e42ed3c2a43cf2bd7a9cf5a0387233ceaa2a7c4847d646aa37"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000083.json",
+      "bytes": 215035,
+      "sha256": "aab025fc8ffdc41c8ca7a9e1e281cbee0e7398502ec63627c80311c9d26e7230"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000084.json",
+      "bytes": 215009,
+      "sha256": "f0d8086425ced6d123e7b73a873a6072848a135f6a98e3806b14a297209980cb"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000085.json",
+      "bytes": 215025,
+      "sha256": "2355ebe99665147cd5d71f263f1d4b028969c6f80ae1068d4e4b7cd4524b7761"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000086.json",
+      "bytes": 215110,
+      "sha256": "06585fb9f4bad64453a06ed18298874cb92d347182a4779a9562b5e5496f3b30"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000087.json",
+      "bytes": 215110,
+      "sha256": "29b02ef98d163d57c2a0d14be79a6c507fae5accf967968ec52954ce93601a44"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000088.json",
+      "bytes": 215139,
+      "sha256": "c69cacbd5286a9f4513b133f257314224a38b3c5d5092dcede6882243adaf594"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000089.json",
+      "bytes": 215094,
+      "sha256": "62c2b776ee145a60c799eff089152ca3cb4a730ae7e84ef5b1639f0c6f76aded"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000090.json",
+      "bytes": 215012,
+      "sha256": "783a9a072e70d772641b4b70ed856bd762d4978c6e2b127ea8a52df08141b524"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000091.json",
+      "bytes": 215084,
+      "sha256": "9240f845ccf8a434e3d78f40496623a9e1645cbe2eb06edbd4cbe97723ad96a4"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000092.json",
+      "bytes": 215025,
+      "sha256": "bafc1c15cfb9f67af7b0dcdfc197e401d88dcdc509b38fb0dbcafc40104619e5"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000093.json",
+      "bytes": 215006,
+      "sha256": "d4dbbeb61834032716baaaa3c15e5807e1c139b012ba987404bf44068781bc9c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000094.json",
+      "bytes": 215028,
+      "sha256": "1fe57341c811636cf55d0de7b68fe9c2f704b333f01fd6aa67ebff95c60ce0c1"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000095.json",
+      "bytes": 215077,
+      "sha256": "cc7f78faa343b3deebade5fcef4339e26a5cfa0d72755e8e233ff3940fb0a291"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000096.json",
+      "bytes": 215097,
+      "sha256": "9cc1d90e5f4e5be69c0b19fed3be2f6fa4aac893abc1b2d0eed2c80d6f408925"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000097.json",
+      "bytes": 215095,
+      "sha256": "9e0d11525f23eb6c2ca5f40243eed4b9a63ccac39049fe05b2d624f76bec7c63"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000098.json",
+      "bytes": 215015,
+      "sha256": "af0e6ea5b901be276af888b81aa3e9862d2d88f75fd2fd689c4ebc8cb645633b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000099.json",
+      "bytes": 215056,
+      "sha256": "31cbeed2109390490700f26632752378d31ab63a6aa408f866f81a846bba8b0f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000100.json",
+      "bytes": 215009,
+      "sha256": "73ff9e7a9d5baff51610ec277a73d799859ecf3436068696f047194bc089094e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000101.json",
+      "bytes": 215080,
+      "sha256": "696c3215ea152e9070e83ff21d3683462c6c66908c4241729ec6681d9a0e4909"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000102.json",
+      "bytes": 215035,
+      "sha256": "a9823528ed83d12ad293ae3dfba53707d6ce6b0a0ea65db83c03b1c4e0831afb"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000103.json",
+      "bytes": 215084,
+      "sha256": "f168760f2707689dd1244bc91efe9b8bcd1cb69878e4162db65ac81ff8c77748"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000104.json",
+      "bytes": 215062,
+      "sha256": "6dffc8513e80552eb686798a630bf8a386ffd5f0bd4623e8d2b9c6ba86503281"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000105.json",
+      "bytes": 215028,
+      "sha256": "77bc8c1488cf4630f4a83be51e421cd1819602c2ba5f1e3ddce668efb0b0627e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000106.json",
+      "bytes": 215089,
+      "sha256": "4dd2bb41f568fde62fc2aaed4af0b78b707d68f92ce52e5f892786681a0264ab"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000107.json",
+      "bytes": 215013,
+      "sha256": "98e874ba246d81c86bf4cf3664e87d5bc65d08181c26f45a1c66043209d6e8d2"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000108.json",
+      "bytes": 215030,
+      "sha256": "4e3806ac58e82a26f996bb4609ee7bc06fe9475f975bd9b73ee54b4a84486925"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000109.json",
+      "bytes": 214976,
+      "sha256": "9fe171d364f97d95086b878b525a43b5f81771714248353253e1342f1b2f03ec"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000110.json",
+      "bytes": 214936,
+      "sha256": "0712b28d39eb4f9beff728648803426460c92e875e5d2652caf31d4938ce7b07"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000111.json",
+      "bytes": 214986,
+      "sha256": "debfd3454f1138649cf56496ec772e0a0a26bb53aa3856c77126beb81ba7853d"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000112.json",
+      "bytes": 214972,
+      "sha256": "e1a5fe93f9f2c76aa607e9f7f21ee537d12dfa267233472aa518d8a83fa7a16b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000113.json",
+      "bytes": 215079,
+      "sha256": "a7668b03a16c995001981ba20ef36d8c2f6e813ea66a0433c6e4086df2333e4e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000114.json",
+      "bytes": 215066,
+      "sha256": "4f20b4c9f2eca97562c4a12bead4de8c0f70daeb1bfb0eb529b17c9de74c99cb"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000115.json",
+      "bytes": 215052,
+      "sha256": "652880aa0ac3ff151f94fd86714481222a26053e3944eea8ec10dccbd0a3cde8"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000116.json",
+      "bytes": 214985,
+      "sha256": "07e1c0db803d576268b9ada9a10198eeb4b44db1bee50ff6b805cbd6143e1c18"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000117.json",
+      "bytes": 215060,
+      "sha256": "ea408a9377cbf41a8b5829d8364564dfe89e74bf88f429e0e441e149e65fc678"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000118.json",
+      "bytes": 214944,
+      "sha256": "d897a449b75387597848033a0606cc679527ed2486591fff9df415eeb5a390cb"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000119.json",
+      "bytes": 215056,
+      "sha256": "44b256d5cc13a0847b2445a93fd7a1f5f9b99fc2e2f87d81511a1c81f384ee90"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000120.json",
+      "bytes": 215087,
+      "sha256": "c8791f36fa26240873ded17742df2b9ccd1751004c3e74d518bcbe9f6ce16e9c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000121.json",
+      "bytes": 215061,
+      "sha256": "948c3b522f2506063f60dd0899b259acb0f16bb624512665ee0f8a66a4a3e050"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000122.json",
+      "bytes": 215020,
+      "sha256": "7c5781840a0e7a5bf130cdf7c47d283f2f1a510b9df4cac9252dadc6c10a550a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000123.json",
+      "bytes": 215047,
+      "sha256": "8b089ac9606f0b1d5d0812a69acfc037293401c32e05b1eca846c97cbdc6f7a0"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000124.json",
+      "bytes": 214981,
+      "sha256": "df43184cecf31797ddb93e04decb051058e4408ba4f40f7b27e9209412422a91"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000125.json",
+      "bytes": 215062,
+      "sha256": "8719695efeb14ab3bf8dab915f0ace5d6369dcc16e9d3d1587435f3f29361757"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000126.json",
+      "bytes": 214995,
+      "sha256": "622561367d0a3e7a6633342a7c9955196d48a3dab232349053b334c13da7dffd"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000127.json",
+      "bytes": 215035,
+      "sha256": "51929a85f7be0ba18651a1fe34fd8a485b728e49229cb4b289d291381ebf301a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000128.json",
+      "bytes": 215045,
+      "sha256": "160602ad8d8d2d67974bcb850083a9a9d0b0ab4bef1e6e8d1a776ed862872b9a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000129.json",
+      "bytes": 215079,
+      "sha256": "9bdc047aec0757e71a67726297144f24340fc5ad2f59f287cc76f27995126b80"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000130.json",
+      "bytes": 215031,
+      "sha256": "9a4ffa942eb0472c92a232c02dd3e7a506dc186b3b18c1e1e6be94f14cacd756"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000131.json",
+      "bytes": 215014,
+      "sha256": "d8c1479cdc1cb738a80461c6df826c57e81e8139a5122c45dd23eab76e72467b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000132.json",
+      "bytes": 214972,
+      "sha256": "e83a89f542a0f2b512c66b0234608f266eeaf87b82710a95ca267e80efdbb07f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000133.json",
+      "bytes": 215058,
+      "sha256": "045d29608b98c76aa20d0ad90e1fc47d1451218b9eed0cd15915d0306ac16dd6"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000134.json",
+      "bytes": 215047,
+      "sha256": "aa379d8c4efb58c3c2926b74c42dffe227783015bcccd3a40462811868c9701d"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000135.json",
+      "bytes": 215016,
+      "sha256": "00f2abbb3fcf1bf023e3d0e424eb754f1492878b308e46b9d3bd90d56b2691c8"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000136.json",
+      "bytes": 214984,
+      "sha256": "13a5dfd4757fd9c41a9b5110c984a3b339e31214a3f06a0c34fe6d7646477a4e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000137.json",
+      "bytes": 215180,
+      "sha256": "7636e324625063698ea3cfceec9f80dfbd88d96a132c9df1fb42497a716abcd0"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000138.json",
+      "bytes": 215080,
+      "sha256": "9a576a5e2d6ea13ccadfda6e9ff21756ebbf559c88b4612deeaefc512647cae8"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000139.json",
+      "bytes": 215019,
+      "sha256": "2f7d972b776651e83c6dfa0989769f954c12695408522998a57b06743f5b30e7"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000140.json",
+      "bytes": 214944,
+      "sha256": "e387c24a39632b13806639c55b36e416afbc7477ecb3c80633793dd3b3ce27f2"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000141.json",
+      "bytes": 215066,
+      "sha256": "b894d3eea22619ab2c7f1ab4d54be3e33f4a05f56cf0048728863d0ae67448cb"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000142.json",
+      "bytes": 214952,
+      "sha256": "f92742284d7a8d559b900d6495ddffdbb352aa10cc04ae131b6ebd84503181a4"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000143.json",
+      "bytes": 215071,
+      "sha256": "4a54ceb20a3b784c2217e1bc297b92990b520cfd27a151455c5ac911055ab551"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000144.json",
+      "bytes": 214982,
+      "sha256": "86a4f219164dc0862477f2acc7435d4207571da79b7cac62b456d491593f8c7e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000145.json",
+      "bytes": 215057,
+      "sha256": "f37fedb38b56e9efb3c2f106c9bf9aef54ad330c10f20b2d71a69a40a8d80600"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000146.json",
+      "bytes": 215009,
+      "sha256": "c70574ec6e7f4fb681558882d79f6967e380dffbc62494115b86eeb2cf2a9599"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000147.json",
+      "bytes": 215108,
+      "sha256": "6c274e14878b5791beecdacc976fe4311493079be57326595a2afde4870c2cbc"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000148.json",
+      "bytes": 215031,
+      "sha256": "fbb3e7ad1726adb11ec50bee6eb4a5e729b5d7924e018b378e10522e984ea829"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000149.json",
+      "bytes": 215049,
+      "sha256": "2f03e73e3cb1136b07030e08e6c3350e6da9ceaabf6f438413d9705d92e77fd6"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000150.json",
+      "bytes": 215027,
+      "sha256": "5c2fb1232fa9ea9e4311dae761ffb72b6828c62c28ddbb594e767aebe6246650"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000151.json",
+      "bytes": 215065,
+      "sha256": "bddd251a5d82448a8a07be5a39b3d8fcef3c15c0bc8973d170c5d909fb8b9e15"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000152.json",
+      "bytes": 215156,
+      "sha256": "eba311357f64cb2127d776257c09241ed7f70ca6a25a87018df75b8872c6a3d0"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000153.json",
+      "bytes": 215101,
+      "sha256": "95addc93f6042ce00eb7a764b852856e3794ab4de356b1493dda324ccea5f1b8"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000154.json",
+      "bytes": 215064,
+      "sha256": "fc70a11f534f62f23c881fe866a450a326d2dbe1884570edbf836ec4adb6de00"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000155.json",
+      "bytes": 215056,
+      "sha256": "6aeaeb7343cf763cbba412d024c9835fd865c8731bbe6d1975e511387c9e94e9"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000156.json",
+      "bytes": 215004,
+      "sha256": "9cbeefa4847b35c3ad3abc46c1296c10e7e595b34e85cb9889fdc0f738d02896"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000157.json",
+      "bytes": 215063,
+      "sha256": "d491c3426f668a51bb7d7970caf74b1dd18db442e7632c642373c32887207972"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000158.json",
+      "bytes": 215057,
+      "sha256": "62d064160408164cc76656a0183bd32b10276a6069b45b5d74590e2b356b9837"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000159.json",
+      "bytes": 215044,
+      "sha256": "ddea60795484af184931d44d506fed8d53f2391445849b6ff1746618e59eca44"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000160.json",
+      "bytes": 214981,
+      "sha256": "aeb3cc98fb8f63c7da629c7db070401955e309c75ad2dac7169a671c849ef1c2"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000161.json",
+      "bytes": 215012,
+      "sha256": "fdd1bff4be1b96f4db21387ca7800fb17aa8a6a147ed33a16cea58717d28fb5c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000162.json",
+      "bytes": 214942,
+      "sha256": "8c3d363c9f5e4c2e8d500c6942ba83cb5473afc26e2fad4776ecdae9ef855b6c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000163.json",
+      "bytes": 214991,
+      "sha256": "93c041bdf763f16234898c8c21ac19b86e23ddab2be3cc9eb6b82009afc8b73b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000164.json",
+      "bytes": 215004,
+      "sha256": "fb48adf86c2bf1fa3422406e5edf0dd3f21e2359e2caef8067870614546a5f64"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000165.json",
+      "bytes": 215056,
+      "sha256": "3b851c7b106cb5631c8a591d98dadd4cad62055fe61b28fd2a0b1c907d2f0b3f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000166.json",
+      "bytes": 215034,
+      "sha256": "5633475282711cc895bc77e7618dcf9ae760352ac64c1acc9a9c7efdacd8924c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000167.json",
+      "bytes": 214959,
+      "sha256": "465f8451171c077286098e5bef38ef2580547cb0f25bd930585904ec851210b6"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000168.json",
+      "bytes": 215045,
+      "sha256": "208087e65ed21bab9e65cafce832481d61e049725355c5e0d2635bbeb76412e5"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000169.json",
+      "bytes": 215005,
+      "sha256": "49dafa452cc4a668f2eee5c9e172962d12c29b662f0baf002dfcff73b15b6d49"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000170.json",
+      "bytes": 215014,
+      "sha256": "5cb151b7b05c5b36bbf38e32bf5e78c63737b8f52c96da857e6c4c37f1dc8566"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000171.json",
+      "bytes": 215045,
+      "sha256": "d1f05af3cd15f1268807253ae1e9b551c93b28b09551b9d0732c0902f772eb93"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000172.json",
+      "bytes": 215015,
+      "sha256": "e00df12215f00bed654a8959d76396f0184ba10fc3b7b8e7afc9beecc5a0a706"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000173.json",
+      "bytes": 214986,
+      "sha256": "28ed16d84540c2d756221dab762a21335c1bc19302fb434c5e5be6ee1f2fdee9"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000174.json",
+      "bytes": 214997,
+      "sha256": "8f85db912199eae114298b937a1ee7aedc1fd328f251c3157ca2e5b049d3149d"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000175.json",
+      "bytes": 215098,
+      "sha256": "b455c5cc490a2638841ed35b8f956d4b46f80658951a1860cecd1927e64710ca"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000176.json",
+      "bytes": 215023,
+      "sha256": "7818c21c80bd6d44a229e49f1cb32b3ba2bb9a919cd83e95cef729cb0c043fb6"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000177.json",
+      "bytes": 215037,
+      "sha256": "efd01fe3c1e876bf54ddb26d8187af06dbf653e4fcb908b386e7630674a17aee"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000178.json",
+      "bytes": 215026,
+      "sha256": "716d25bafe7c7174e85bf5b3e38ae445cb13bd137a7f639345fe0040bb5f8ddf"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000179.json",
+      "bytes": 215091,
+      "sha256": "08e5fc181a42610162ec146e1eb6e25a54277115dba61d0faf1de3b516358cc2"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000180.json",
+      "bytes": 215020,
+      "sha256": "5935e5b9a034514bf1f46602f36db0d5f7963e237821ce31156597e3f6b2ae17"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000181.json",
+      "bytes": 215085,
+      "sha256": "6a9213d4b5f3bf03fe40eda7f45a7b0d74fb1ea0e4d55f071a35128955655ac0"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000182.json",
+      "bytes": 215065,
+      "sha256": "14f3382eb9bae57b1a6268996c768014d4044f6b3503d604f43e696a2e8c1450"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000183.json",
+      "bytes": 215021,
+      "sha256": "3ddf29f8f2391ab80c39185be2a8924c20a367b30f9b7805a66740f8608d5402"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000184.json",
+      "bytes": 214982,
+      "sha256": "732cd1320f7062223f5a26428913e073d7ec442eaee5bd4b4060d245b6f6c675"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000185.json",
+      "bytes": 215061,
+      "sha256": "eec8edefee1846383ab36f62aaeebef0d18a8102a647dd55b29abd1bbe1281a2"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000186.json",
+      "bytes": 214952,
+      "sha256": "72863546eb2a2ba4a8fb9e742430c79af24da149b5f02fe4764da2a647bcc1a5"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000187.json",
+      "bytes": 214983,
+      "sha256": "c9bff8c39cd5c252a79d0dcf353e77633ff74620125728d8c687f875ca6e69af"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000188.json",
+      "bytes": 215044,
+      "sha256": "c827711d6d68a0dc94a6e1cdefcc86d3b33007dc3a3c741a126175699f0be70e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000189.json",
+      "bytes": 215058,
+      "sha256": "42420aee52044bd056c72fe68078be5627c9a0e21bbcf85ddcd6505aa22c5b29"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000190.json",
+      "bytes": 215020,
+      "sha256": "0c0c3604a95dae54936f63c80212c4bb2c7b34a1103670fa29c1193b3c6d0f54"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000191.json",
+      "bytes": 215068,
+      "sha256": "23ce0dab2022845e3825b598960c780734589b11bb7b5dc9255ccd0bc0d42228"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000192.json",
+      "bytes": 215066,
+      "sha256": "57de59409a3f594f75697aa418a2f28e52ba7c68c68e39c3d11bb32f37ac8576"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000193.json",
+      "bytes": 214997,
+      "sha256": "59c026b8319627d1463627b4cbe6e6042968b26125b10b7d25f3c3f8f459e9b7"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000194.json",
+      "bytes": 215090,
+      "sha256": "046be4cba270e3169a8894c070169c7c049b69389a6f28064e86e3fa795c9342"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000195.json",
+      "bytes": 214997,
+      "sha256": "14c60fac8111366f7c9b40db1457ab61520ac3fc0f844b667b09800506b1409d"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000196.json",
+      "bytes": 215004,
+      "sha256": "ef24cfed6ae69a42392879f0d7abb7e7561f0533c197577e700e8214e3225deb"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000197.json",
+      "bytes": 214942,
+      "sha256": "db2e73b757f7bfd20c75602c1d9e65c655afc472f8d16bb5ce1940afadc461f3"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000198.json",
+      "bytes": 214965,
+      "sha256": "59079cbfd057c8e9057c6548ddd56c1fb950cb8debd0bd9191ca75dbb0a350a5"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000199.json",
+      "bytes": 214978,
+      "sha256": "84c9d068a507f474b8e4cd6d589d0d32b10695802aeb3f16b994dfa0d2dc99ec"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000200.json",
+      "bytes": 215012,
+      "sha256": "8f238ee7828685f5469293ebe1566d64734889a5bbc8a710dd66e6663eb0cce4"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000201.json",
+      "bytes": 215051,
+      "sha256": "900c889ef1b23138bb9db392a6cf52bf9d4c3463d1353893987c65542a55bd7a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000202.json",
+      "bytes": 215020,
+      "sha256": "76797f792ae3031833abd9ca81619f955962c248162c9e293ff20ec45c9e6b2f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000203.json",
+      "bytes": 214953,
+      "sha256": "7fdede1b15db888cad303378c41501ed0f30dcfae10355e42e712c8f6d340fcb"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000204.json",
+      "bytes": 215010,
+      "sha256": "5eabd3156adcc1e8bd90811d3798e9d73d356e082ef3d5fa7f9111d8fc3bca73"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000205.json",
+      "bytes": 214952,
+      "sha256": "c7dd7971a886ecb228b8fa15986796e11b6a31f36c88ccce563cbc0c2294345b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000206.json",
+      "bytes": 215050,
+      "sha256": "c2e52e80a742f09afdc59c75cca173daaee997015b70f84559ad3903d6982a9d"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000207.json",
+      "bytes": 215076,
+      "sha256": "3ce1a04d785ed62aa5ecaa53eb2019e9fd519800847755c041ce124e0e7fb4ae"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000208.json",
+      "bytes": 215059,
+      "sha256": "efb907631e3d756cd1397c1a0bd13f16b2eed22d9effc602052047c25dabcf1c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000209.json",
+      "bytes": 214980,
+      "sha256": "97e3804f3e1ca1693d386cfd30e4a46c131dd9131f9a02c5ea665e8a2d33714f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000210.json",
+      "bytes": 215123,
+      "sha256": "feef9047dd621100aab939494813efc7db4cb72f25008a27bf3987066a2f7324"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000211.json",
+      "bytes": 214986,
+      "sha256": "46478c402e8d0ed40325c41adeb99624b43634ba85ff1bdbb4ea514cb235c628"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000212.json",
+      "bytes": 215040,
+      "sha256": "e4acc498b9200d6739d3a3b9ca7a84733dfe9614472ba29f6d12868384ae3550"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000213.json",
+      "bytes": 215065,
+      "sha256": "16b352e6239f333141189d9650885d30fc7c7b50209685155d173e6445cf8789"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000214.json",
+      "bytes": 214978,
+      "sha256": "3de367b70a38f5563d07e5a7fd8e85fa8acc2e828eb1cde2287f5883dbe4eb46"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000215.json",
+      "bytes": 214954,
+      "sha256": "08838f3afce8b85f6249564089fc13777715248ec519e3251415c1379049e8be"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000216.json",
+      "bytes": 214993,
+      "sha256": "7a096cebebca39407fb4d52ddf6c14876ecf0f6271b3dc06f619535f25a70481"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000217.json",
+      "bytes": 215076,
+      "sha256": "bfd3babd02a7459d6edbff00da56e42a32ecb2899f9e90ba902adc8ada6be607"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000218.json",
+      "bytes": 214964,
+      "sha256": "8ae22b1bacb0888fb159c17c0dc734b914bb8dba55b3c5278b2b9e86b5f1b17f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000219.json",
+      "bytes": 215006,
+      "sha256": "a7beb1584826b542d91b14eb2ea2d11d26d7ac2789d442996906be3c2624cc74"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000220.json",
+      "bytes": 214967,
+      "sha256": "0c9c6cc317cc51365931e1b88e774507fd6af8182ee4a72fd084f1f8c4f0a991"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000221.json",
+      "bytes": 215018,
+      "sha256": "7c9350d8bfe42920106c0f98886be71a79186b0b22e58675f4e0b149f6321c6e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000222.json",
+      "bytes": 214997,
+      "sha256": "e03b7a1bf8851bf32384fcdf500b7a1b9c8740f7b9e7b2a119ecd5327daa670c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000223.json",
+      "bytes": 214992,
+      "sha256": "c65bd2df85f0788f59569c0ebda0e8343ad62bdde8714a2dc44f0af11916c460"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000224.json",
+      "bytes": 214967,
+      "sha256": "6a34f3c28cc2b2980fa160b4ebb5bc08f66b1d01b1e43d2cca02d509549f4829"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000225.json",
+      "bytes": 215102,
+      "sha256": "40ac3253ce75501a0360ff417994885948e9f75c3d476946631387ccdb5dfab9"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000226.json",
+      "bytes": 215056,
+      "sha256": "8c5ca0a5908c7fdba2ad0a0eddd22d53d87269fdc98f8049d159b734092855f7"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000227.json",
+      "bytes": 215031,
+      "sha256": "6637f842af78fbea92658a0c646d660eb1ded4ed46ddeb3c463b3487adebbc1a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000228.json",
+      "bytes": 214955,
+      "sha256": "6ba85bc6a2c28dab659c3c0dac9f94243af8869e80ddf8e3d9b222d389b46e08"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000229.json",
+      "bytes": 215070,
+      "sha256": "915ac8d9fa437b6c600e6b63365d87d78a5fa74b14145b0612f72814f2c47c2e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000230.json",
+      "bytes": 214974,
+      "sha256": "e125d40cd8b5161166ab9ee61446290e4345f46be9b4d6e5b73d50776aad7495"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000231.json",
+      "bytes": 214980,
+      "sha256": "1756159e788713d9d0be84521e7b9a97afbd2cc59ed226aa4e7481331b698b6a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000232.json",
+      "bytes": 215046,
+      "sha256": "266126f223ba0c6427518d90dd9b1c054dbe5c820c30b3beb212cf69e50da7ac"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000233.json",
+      "bytes": 215117,
+      "sha256": "163289172654615737fe21f570e1afc29e1e7e0dd1e13946882749684008c1ab"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000234.json",
+      "bytes": 215062,
+      "sha256": "eb4c7056403fc0831e7189e04d483b9614bb0de7cabd4dd2518f6bb06a8c8127"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000235.json",
+      "bytes": 215049,
+      "sha256": "0028268555a7cd1c1d9e0b70695011b2d51787872627c3ddfdc68d9386d2e7a1"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000236.json",
+      "bytes": 215062,
+      "sha256": "dc4d737876c000c88cacd228a5f49ec341d6f57517ca513b1c52680e28037bf1"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000237.json",
+      "bytes": 215063,
+      "sha256": "fcc8acba76e2fe50c5cbc393a8e28ecb47cb2675999b4537cfeb69e01bbae3ae"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000238.json",
+      "bytes": 215054,
+      "sha256": "aab9ba250064ef6cc90c9351114ad05b73909216ddaa8d5d1106d41328960e76"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000239.json",
+      "bytes": 215067,
+      "sha256": "f9a2b8c2c81511c8c0f6ea3558ce520e1273acc3c15a8c51f8e4b9feebab93b5"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000240.json",
+      "bytes": 215042,
+      "sha256": "5c0e16e072f2c546e64090cd648efd82e7d5f0c1023f3e329f787a58da160c6a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000241.json",
+      "bytes": 215008,
+      "sha256": "7dfe21265feceaaade470fefad5660855a435e23830c1b40f973a83eb502723d"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000242.json",
+      "bytes": 215069,
+      "sha256": "3f6af57f8cd251e290c0722747a09e4823c2319f5b524f8204e76ae15c733c06"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000243.json",
+      "bytes": 215001,
+      "sha256": "25e3a263b353b6e4cc81dc55b1ead0135c77cd124dbcc7a0d339647e2cc3d25b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000244.json",
+      "bytes": 215055,
+      "sha256": "88e7d7e591244f7f1ca2944fde9315f5acb03d9d3bff7785d56c9e3327b3360b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000245.json",
+      "bytes": 214953,
+      "sha256": "9f1cdde01dbf6d76f1e2557dfb837cd007ce46a047752b794476de7b76bf9d10"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000246.json",
+      "bytes": 215070,
+      "sha256": "ad8aa40cd4bc7f64a17d329a3545bb3577157f429bd6cd482eab76107fd81ee4"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000247.json",
+      "bytes": 215027,
+      "sha256": "97d9aa8a0f97edbb8d0af4ef1bc7774d6285bb59e580c0cdb9614b83f69b7c4a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000248.json",
+      "bytes": 215012,
+      "sha256": "97bbcf6473cdf47ba88c5e384a82a52722ae552d185aadeb388dc690cd57c2dd"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000249.json",
+      "bytes": 215089,
+      "sha256": "581e119e7a024f6fb87f67a7d6357339e12bcbc0b68d53ee6ac3e31e3e934d86"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000250.json",
+      "bytes": 215017,
+      "sha256": "a8101bdee649c1cc5d4a4b0fc25bdb01cbbba79a82282b64f938a9c2cbdc17af"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000251.json",
+      "bytes": 214940,
+      "sha256": "5208284d733b84fad1192ccbf5c5638b1f87f959752662f033e3a10acdcb7f57"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000252.json",
+      "bytes": 215072,
+      "sha256": "618209f660fda418a2e72e14a522d7696b9a745b42051be485b18b4cb0fa591b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000253.json",
+      "bytes": 215101,
+      "sha256": "5d87d531176967744d5a5608ed300af8f877d87ba5b780aa9fda9dc0ceedbf2b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000254.json",
+      "bytes": 215038,
+      "sha256": "8acce7140b2bdb33e59e9ddb3205d531100c757869a9aab63ac9616a88df65bb"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000255.json",
+      "bytes": 215014,
+      "sha256": "de4ae36b1e5072508bf49aea0d0bb91534652abeb250427d64406d16ea48dd73"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000256.json",
+      "bytes": 215060,
+      "sha256": "b99e5066db430ef3f465ef5ea3d343aebf33db11fbfa1fc2f26332c52344f07c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000257.json",
+      "bytes": 215043,
+      "sha256": "aa8b89294b6c15f64b8773df849911868fc5b49f55f6c28827e3e1073256e24b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000258.json",
+      "bytes": 215077,
+      "sha256": "47b45adbb0be74aff6544b5036732d84224e193ca785fbbfd7f95b1c9104d9d0"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000259.json",
+      "bytes": 215084,
+      "sha256": "d9ef23ec80e6179be0d2da110136bb5674bbbff4f4c408e371345b8d5d136743"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000260.json",
+      "bytes": 215014,
+      "sha256": "44d6e4a49527b279098a52bc814905e46902c55acd90f90b5401bfa868cdcdbf"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000261.json",
+      "bytes": 215110,
+      "sha256": "de3f1fc5e2c123488d574043fe35288c7d9506d780502fdc4d2a038485e91fcb"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000262.json",
+      "bytes": 215032,
+      "sha256": "1eb5f0ec1357ec8f3cc524e8d1026da52cd98f1c1c29531ace288f58ea6924c4"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000263.json",
+      "bytes": 214987,
+      "sha256": "b7d291de2bd88b8227f7d547b65a249f536c80765624b074f764d7676d11d972"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000264.json",
+      "bytes": 214869,
+      "sha256": "95bd5a60135de22a14b4c895f2bfd173a3aad64a105ab2ae0c5fa11135b97453"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000265.json",
+      "bytes": 214998,
+      "sha256": "b529d6da9a6d04de9d9f0cb524c097dd141437b99b5d10c5b5353d47bf7e7265"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000266.json",
+      "bytes": 215141,
+      "sha256": "bf856bc6d984a6d8c6e7eefdcd12e40743ea7319fa250bb4b3c4fd51c1e6664e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000267.json",
+      "bytes": 214917,
+      "sha256": "ac075a392850bf3cadaef182e10ce9e2bf92fd15bf581c4e1c769dc358e12121"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000268.json",
+      "bytes": 215049,
+      "sha256": "836d64533a236dd890f4e324b44f59540c97d9ca24dd87d46ab6043caeda48a0"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000269.json",
+      "bytes": 215001,
+      "sha256": "327343811fb4a42d797b139baaad11e4991369a0cad093fb255e525f7c443453"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000270.json",
+      "bytes": 215029,
+      "sha256": "7ab99507bdddc056de87dc75decb4321c62a08f6adbd9a57d97ce026f5b3e996"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000271.json",
+      "bytes": 215102,
+      "sha256": "8b49a240f0c0d9ad5e91bfce7ad40dccb60c5ae68fda3cc23c1de29a0cc7f2a0"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000272.json",
+      "bytes": 215029,
+      "sha256": "41ff9006d22d14f82acb7a764c0bad21a21d6e4b8c232001a425b8f0850193a1"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000273.json",
+      "bytes": 214955,
+      "sha256": "f110f50099a0fdd6f3f943051ee352779deaf062f3fdb494df793399ec4614b1"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000274.json",
+      "bytes": 215010,
+      "sha256": "c94070dae99ed1f5bb43aef1d7bd42664531daf5f24e5f68743b5da289833c31"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000275.json",
+      "bytes": 215072,
+      "sha256": "5d67b07c504ab89995491cd5fb05eacc242e74ef76446f64059658dbfa764b0c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000276.json",
+      "bytes": 215040,
+      "sha256": "90dd218dca8a70fefae9efaa121b5fa1fb168619546da5e07c826abfdea2ca15"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000277.json",
+      "bytes": 214992,
+      "sha256": "ea6cbd03e6a4f178f0e7923716b607f3e2cee6745ee8259a5faa7633a9c50748"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000278.json",
+      "bytes": 215085,
+      "sha256": "2a1c7aae5729567eb85c02ff229ff13713e38c8f0ba763f4a17e19a36fdd6308"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000279.json",
+      "bytes": 214943,
+      "sha256": "0e45b28a834c20903067195d931cd86e56e1da347972962d789dfb5e8f537fe6"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000280.json",
+      "bytes": 214996,
+      "sha256": "87b15dc8d4117db2a41c38dad9ce7e8495f45b1416ce47ed303769d43f50d7e7"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000281.json",
+      "bytes": 215064,
+      "sha256": "1780fb74502816e2f12df7ac7a4851e62c29f6e866475bc9901c279181979787"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000282.json",
+      "bytes": 215051,
+      "sha256": "ee104bb37f646d1f81ab68d0a5d9f8f097074e577ac7c00b1ad969257e55ed67"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000283.json",
+      "bytes": 215061,
+      "sha256": "3f9f5af44ad55fa72e04d36ca6760d2fd510d49bc4f0030ff696bfce9a3d1044"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000284.json",
+      "bytes": 215002,
+      "sha256": "93f4d6e54d182348681a16ee1be8baeb8ef58b9c47a135004d98149ad142c752"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000285.json",
+      "bytes": 215041,
+      "sha256": "995fb475814f8d200c8f1a7471a567b4af28f2028f5afcd0edfccadeb7a0d883"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000286.json",
+      "bytes": 215024,
+      "sha256": "e0f2f25cea1f484debb3f1aa7b7b8c95161fbcd084d2ac15450b24d3c02893b7"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000287.json",
+      "bytes": 215033,
+      "sha256": "34bf678b2ec1293d1491cf7ee21cf7d6a19bcdca9a37d26d81f6a0ca87319221"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000288.json",
+      "bytes": 215022,
+      "sha256": "d2b0b64914c6d4048ea137a1ee352df6f0e56f544e8ed36f8f27e22f613926ab"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000289.json",
+      "bytes": 214977,
+      "sha256": "5887cf9c2e52dabe134db80ed6b53ea93e1efc49b509eacffe754e53665cd985"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000290.json",
+      "bytes": 215074,
+      "sha256": "1968492c99af548eaf2fb02aca26b117b12a4df6e8a23d1b9e8eacac8116c6b9"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000291.json",
+      "bytes": 215047,
+      "sha256": "1c9d87fda48352dd3ff6781673369ee5fc9687ce49a68889a2f3e317d6245609"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000292.json",
+      "bytes": 215024,
+      "sha256": "88a68e8c4696626e483955c683691487ed721f7cab6dec45e5302b79616f0e25"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000293.json",
+      "bytes": 215021,
+      "sha256": "8281fd241601ba06440c58ed619249ef64798c7b813ebcc247f7eaad159c0db2"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000294.json",
+      "bytes": 214988,
+      "sha256": "0fe19bf0238ca8165621d8195b0237f02311e4afcd2c53650f292c7164428475"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000295.json",
+      "bytes": 214993,
+      "sha256": "a6d6358a9ed2c8669b43279f65db0e400fb7439bf30ca351952eb93215333cf5"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000296.json",
+      "bytes": 214991,
+      "sha256": "97e6b0c9534c1031155d2e3d24f242501a9af7a5e5fca2d959819e751c30f3e9"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000297.json",
+      "bytes": 214969,
+      "sha256": "73f93796a21d98e29daf3f37c183d2586c1c402854f9923f22a548275a4cb28b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000298.json",
+      "bytes": 215136,
+      "sha256": "351e003116977a39ae00fe61f925b78767fd06128e362062d268492ca008606c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000299.json",
+      "bytes": 214998,
+      "sha256": "c1c7ec7bc67379439b772d2f568182ea3c21860d251e2fc83dfdf15ab1fec64e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000300.json",
+      "bytes": 215083,
+      "sha256": "b5316b0505ca4ce70a75925a8607d90e4e687e03fb1edd1179aaf404c7ab5df4"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000301.json",
+      "bytes": 215036,
+      "sha256": "9e435e8c9296f49bbb3682a5ee3d67c4d1c19997853be4ddc64d83ea76d383d4"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000302.json",
+      "bytes": 215018,
+      "sha256": "c195e964b07d6b06c7ace698f04faf8548ce20746b7f6b3328840ed98e69bee9"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000303.json",
+      "bytes": 215045,
+      "sha256": "d5e473f6ebb7071c033ef75b2d7f0d5fad347b99b587092bb03763a198ac00bc"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000304.json",
+      "bytes": 215024,
+      "sha256": "3d490db2e3bb8b155745370f81d065b4ad864e99cb69deedf6310693bc65f771"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000305.json",
+      "bytes": 215017,
+      "sha256": "b6374a954ba200b6b11191715fd633f506e7af35bce999358e794e7817d3a3cb"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000306.json",
+      "bytes": 215006,
+      "sha256": "6d9b0008666b71b81f8b65abdbc0fb0b68d1838136d719e5049107f3ce827294"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000307.json",
+      "bytes": 214992,
+      "sha256": "dc4d9952403551666752b02c20655c0c6459532df11a86d8b6dcc43d27f28779"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000308.json",
+      "bytes": 214993,
+      "sha256": "077839b95fe91e20c7802e3134a94212c505f060f3bb126fb04dccc891df0f71"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000309.json",
+      "bytes": 215033,
+      "sha256": "105e55b7a0dbc9afe98ba20294f3980029506093a97516e68e85c3dcae74c1e7"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000310.json",
+      "bytes": 215081,
+      "sha256": "16a76adbc07c82a94298d4ea17dbeb0aa48566ad8e04c7c2eea16f4bf08d5f3e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000311.json",
+      "bytes": 215083,
+      "sha256": "541c569cd2ac2b239d60986a1814a13870e61366f219593a8d98748c28cbbbe5"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000312.json",
+      "bytes": 215027,
+      "sha256": "bfc21ba064b61040e878d3d2ea98cfb355a57bfc1f4fe9f4787f64eba2d9a6b2"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000313.json",
+      "bytes": 215043,
+      "sha256": "1e32828a6e5550b221c0679abed79ce5d78efdbd540a121865a7223c844fead9"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000314.json",
+      "bytes": 215019,
+      "sha256": "77212956abbb697aba9a5ae1a8a6f5d286d8cad20119cf40c8d08b8aad601d18"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000315.json",
+      "bytes": 215111,
+      "sha256": "fa80ce7817a5d686cbf2ff8171019f3172cb2c48ccebc69165f1fca8dec6aa3b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000316.json",
+      "bytes": 215104,
+      "sha256": "d0b232cc6eca46a22941baedf643cc3152876fb94f4a723840e606f7bb01d4fb"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000317.json",
+      "bytes": 215101,
+      "sha256": "69cdc14c85e1839869f6c7789fa6d1775bd8e5ab65e94ff55f9ac3c1207dc3a5"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000318.json",
+      "bytes": 215085,
+      "sha256": "33cb62a917951809ab228fe19a0583634558d924800bcbdc6007fac0e3697af4"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000319.json",
+      "bytes": 215072,
+      "sha256": "70c94870845d76dae9620927a2cc549a4afa3ad61ee205f58ccb6f1efd506d65"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000320.json",
+      "bytes": 215057,
+      "sha256": "58c0a16cab4add15c0b22be2c9ae5db6d986dd082bf0801ffe3ffc9ed252d7fc"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000321.json",
+      "bytes": 215031,
+      "sha256": "99707acf28dd3b2748db9ea32f6f95c5bea9eb4fe99dd030cbcbb07cf164668b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000322.json",
+      "bytes": 215073,
+      "sha256": "42425eda918bfa8f23c1dd0514b750b381f0a2fc1bbef3d2c48c846e9b59825b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000323.json",
+      "bytes": 215059,
+      "sha256": "9a1509cb35296a38b26ea3b2f86af8e82ed88b8c69f00aa7a3f934c579e0b6a7"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000324.json",
+      "bytes": 215061,
+      "sha256": "8f7eb859f147b33a99b89b1d994f726ab8e742051290900d05b5b3f753025a1c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000325.json",
+      "bytes": 215063,
+      "sha256": "c465dd76d78898177ae00c381c7a7599f4879b51fe96effa5d7fff02fe82b267"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000326.json",
+      "bytes": 215146,
+      "sha256": "074ac76f06ba53bd73bb04c14828bc018896c790410f956ce3491ac22cd5ddff"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000327.json",
+      "bytes": 215153,
+      "sha256": "a44c78b6568c5d9c60a91aaa38d42e2fecb7f9db21ef3b4c68845c9645e1511d"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000328.json",
+      "bytes": 215108,
+      "sha256": "756574a084b3e11d3eebf4dc499fb845d8e5af19476a530330e313b1c96d54b0"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000329.json",
+      "bytes": 215120,
+      "sha256": "6ea173f6ed12a9180918a257466c4630154fd0844717e4b7d3de1cc1bef8ca3a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000330.json",
+      "bytes": 214986,
+      "sha256": "782fad7d7c81185ca493cc470ac9d253e86bda7f7a5638812119e28e8a947d32"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000331.json",
+      "bytes": 215008,
+      "sha256": "8005003165f545c740be9c97d5e3636ad9519aed645b38a8ddfab45f422df2ea"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000332.json",
+      "bytes": 215068,
+      "sha256": "b8e00d8e1297c9f66511e8013efbbc6879521d07d0c434d7ecd909060d7f40f8"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000333.json",
+      "bytes": 215112,
+      "sha256": "7ac230320129ec54569e7a998a6a3b451436a0409b070071798b7457fd30261d"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000334.json",
+      "bytes": 215022,
+      "sha256": "fc815e5e4eea6c6c68f1f1ae9a369c53146b48e1f28c79fbcf93b481aac0576e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000335.json",
+      "bytes": 215064,
+      "sha256": "44aeefcc3b29a443f89bf04b0f5f7843e43659b721d50b49027bbf5c1d3223d3"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000336.json",
+      "bytes": 215078,
+      "sha256": "c9a3f7e86c5e2d57cc346069ba29023a9e2bfdbbdd27f99243158d759d7c249f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000337.json",
+      "bytes": 215030,
+      "sha256": "bfa8470d82d9dbec749f635b50810cd98150aa84ff7be95f8ae4c90d946aabc8"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000338.json",
+      "bytes": 215049,
+      "sha256": "a898b05fcade35474d1146985331562d1757318595d5ea39cdbfa64247fc466f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000339.json",
+      "bytes": 215064,
+      "sha256": "73dc528912b0ec9029af0480fb2bf2c2a8e44c50818f51f1c08415b02c6c39c3"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000340.json",
+      "bytes": 215114,
+      "sha256": "60cd6197ed7afa9038744655fc9422f1053d6c65168107892ddb92909f60f484"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000341.json",
+      "bytes": 215083,
+      "sha256": "aca94e17502e38bc59747fc98ae44ea0e9d319d4234f71bd2c06d8668422541a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000342.json",
+      "bytes": 215185,
+      "sha256": "abd82feb9c4d868e6358b02d7d7a7bb167261d5d10f0aa1e4bf82c18302a6c3a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000343.json",
+      "bytes": 215092,
+      "sha256": "8004bacb0ef2e38c70cbc61197e5db138148fe8d11e9f75585dfbdd9ae22193f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000344.json",
+      "bytes": 215044,
+      "sha256": "7b8a06dde5998863e61a734ce37d6a612faa554c81c4ad804949bb027fab54ba"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000345.json",
+      "bytes": 215042,
+      "sha256": "bf0596305d9ccfdd699efef4c94ddcda86785bfe40c6eb8d0af841cc6d765b08"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000346.json",
+      "bytes": 215154,
+      "sha256": "8356beb0c35a0d717b7e142a1a9f7f1fcd718d0931c1b5b42662a6f3e97118f1"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000347.json",
+      "bytes": 215089,
+      "sha256": "6b527beaf158bc9d77066f9fc3767bff8d1967d7e180ea3413cc287db944f3ec"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000348.json",
+      "bytes": 215075,
+      "sha256": "d934f74d26a016ce1d20a86e4ccc57a388222998a8b99dc0e4806979122f00eb"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000349.json",
+      "bytes": 215071,
+      "sha256": "a44be66925e5f205d93ae3062cd74a3cfcf44483481f9126eb8a5bfb4cb8424e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000350.json",
+      "bytes": 215063,
+      "sha256": "31453e669748d1cdc4cd49256e95a5a2a4fa0c9aa0a585423d5de40db7b8cfdd"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000351.json",
+      "bytes": 215050,
+      "sha256": "3ff633f46173b167aa622427d22753e53c04481a7ec23470f3bccef6a056a6ed"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000352.json",
+      "bytes": 215041,
+      "sha256": "388f018b5710fd0252cc0384683138ee84db4f7c8be6a7eb7c6addf03ed4af75"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000353.json",
+      "bytes": 215019,
+      "sha256": "703095d0faf23b221ef7e730c4ed959a60aac709419ef2cf83c2079a26e6233e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000354.json",
+      "bytes": 215115,
+      "sha256": "14de6c386555dfb8c69e6165be7e79d9c2c3c9292ea564a45d2f4f80edc74a15"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000355.json",
+      "bytes": 215056,
+      "sha256": "dea7183e02b69398e32fb60c2a50a343cc7a296144f643ec67e937eaec6b6df4"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000356.json",
+      "bytes": 215028,
+      "sha256": "828a45daa0d612efe857c41a4cbd467be5979a3765625f955b6e2bbb994afcd0"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000357.json",
+      "bytes": 215125,
+      "sha256": "47fecdc2fc96765e554f74d350e8a442975e48c9fd7a8711222bbb68af1e543a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000358.json",
+      "bytes": 215088,
+      "sha256": "2d96821d48872ad68b708126349e03e7c73d99bf30e1990d9e5e0c75b31f7f8d"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000359.json",
+      "bytes": 215045,
+      "sha256": "276ff2eb3fdaf05669e53071544cf574631412ca2722eaeccfc12268651a4251"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000360.json",
+      "bytes": 215074,
+      "sha256": "ad65e48cf2647dbdf56b69e22e5f791bc03fa7590a9bd9845b7e9aa96bac1034"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000361.json",
+      "bytes": 215065,
+      "sha256": "fd46d97c5b9844ff8ab76a2e871e7841ddd2b03c84a404d0cb9c9ebecd30fcda"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000362.json",
+      "bytes": 214993,
+      "sha256": "b0c6d0d47b8fd4963e8d8d6d590d422d2cf1e8ca61108ebd499a2f9d6af28247"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000363.json",
+      "bytes": 215073,
+      "sha256": "0dfe2cf096f5ea59dc49611e3493342cf0384c3837efe2bfe3a0c4459912146b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000364.json",
+      "bytes": 215079,
+      "sha256": "055f502a22ec16a146cb9469985f5eee4164c55a09839050c3de35ef5b2dd3f5"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000365.json",
+      "bytes": 214987,
+      "sha256": "82f55a4e71c4ad0be75c6793df95e3728d6d920604a66a1a8d8e37ef368033c3"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000366.json",
+      "bytes": 215052,
+      "sha256": "b31e80ac06afd1879063515644cf39076fdafcf77878e1aa6d691eed6af2e0b6"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000367.json",
+      "bytes": 214905,
+      "sha256": "e79ed43fa637dcfd73a57e056dfa94c39ce943a50381760a4bed0db3bbfbe482"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000368.json",
+      "bytes": 215117,
+      "sha256": "3f80c645902504d9cce7813d0c3082d0fdf44703c0f130e4819be131a5f19525"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000369.json",
+      "bytes": 215002,
+      "sha256": "7dc3d8f91bd007145c23b5231506ce90feba850c4cc9cf6b4aeb3c2f0374fe4c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000370.json",
+      "bytes": 215063,
+      "sha256": "6ce240b634b900f7eebf98874091d8002116069f8d69d2d795c95aac35ff9735"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000371.json",
+      "bytes": 215055,
+      "sha256": "0f9f70c2cfb76d58e1cd474a68b4837743b367d9d87be338d16d6187b8f24f04"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000372.json",
+      "bytes": 215059,
+      "sha256": "25bb1ec7300670ab594337e93cd54c132d8b81e98a77c1d7c0a181051b3fb826"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000373.json",
+      "bytes": 215020,
+      "sha256": "f3e127ce1aed3e9d2b08f3ae92c6a59da46b84c5c7aeef3b5add2e0c9d153edc"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000374.json",
+      "bytes": 215054,
+      "sha256": "b7b5e3a6f6405f74225ef057f0d6e0a0f1fae1c97cb88bccb68a61258d6f3b23"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000375.json",
+      "bytes": 215035,
+      "sha256": "704e501478316e79e5bae4e1ce5536a07834d6dc8bafc1f925895a8de18ebc54"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000376.json",
+      "bytes": 215039,
+      "sha256": "49acdf23ccda9da7018fa0e5072db1190c4dca510c39a613a463475999e2d6e3"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000377.json",
+      "bytes": 215041,
+      "sha256": "5aca1290434e9034bbc980e185d8f4c0d49d6de725f1b6080d4707b9d10b342d"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000378.json",
+      "bytes": 215122,
+      "sha256": "5273900988058b41ab9f7f197e7a530fa5cd55fcc61a40cb5922b8e85f641b36"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000379.json",
+      "bytes": 215045,
+      "sha256": "3feb4808a5fea4ea935545f0a6dff4ed07d0cf6ab42af3a978a8c622a4752e4f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000380.json",
+      "bytes": 214924,
+      "sha256": "0db070283f8e544a609a07b8f83cc0e4026c131b2ae744ae3c6d7638c025d104"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000381.json",
+      "bytes": 214975,
+      "sha256": "2239af6229a40bda70cd08b905ca1cc03a9bc1fcb15521decc4ee2daf50d0beb"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000382.json",
+      "bytes": 215072,
+      "sha256": "8f7d30a448218fb0d5c3b8cfc3de2d9a2c5cb24e416d4916ffe9bc006259053f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000383.json",
+      "bytes": 214979,
+      "sha256": "6912235566cee3d751bc256ddda493e9ba9d7102c38f90220ec38ccc5c19e554"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000384.json",
+      "bytes": 214941,
+      "sha256": "53142fa0fb2f6656cbe9e178148d76dcb98bc5d385e873407092be99a9eb0b9f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000385.json",
+      "bytes": 214974,
+      "sha256": "870c401a2c7a61fcca60ac594665c7c0452f1f2ec35af229c92b72329641e801"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000386.json",
+      "bytes": 215002,
+      "sha256": "7e4a011bb7cdec32b6da1c802252a4430996ba66a1f66cf56441eae75b9690c1"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000387.json",
+      "bytes": 214990,
+      "sha256": "79d55e77032011dad9da76519299e46d5ea550d498c2fe2c8d629ab665553900"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000388.json",
+      "bytes": 214999,
+      "sha256": "e2be2acf7f39de35aa67c03697c5d18f2846ae3b6d79e28384157b66dc04de60"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000389.json",
+      "bytes": 215067,
+      "sha256": "45d3240189ab940edf30df4789fc6f5ea155163c6bbf137f95eaa138cba9998b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000390.json",
+      "bytes": 215018,
+      "sha256": "5e9895e5ccb234131be01634f62759b9cf76e4c697ba1e078ce530a0996e7de9"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000391.json",
+      "bytes": 215024,
+      "sha256": "a9d8b82cbed9b74949c835f3aae805392e1f57090310a370e671a615532d8535"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000392.json",
+      "bytes": 215004,
+      "sha256": "ad01efb01e7b95e01d78a58f5a627ad92fa8ffb32ad44e48bbdc6420c140b2a9"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000393.json",
+      "bytes": 214997,
+      "sha256": "0dec151c4924b27e2b0b6ad1028d838e824e142986f23729b0d9b7dd2ee8fefa"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000394.json",
+      "bytes": 215006,
+      "sha256": "827c10a0a31734c23c3d5ace9454db18b567e598d534f210285242769c60e063"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000395.json",
+      "bytes": 214916,
+      "sha256": "c63cf4a30439505494b5393e3cc31af7276c9cfb1c7b36b3fb622b8ba08e2812"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000396.json",
+      "bytes": 215058,
+      "sha256": "fec7bbb1384f04c71f5f2d35e04c4fc4fade5d2562e65806676c6b21a6f269c7"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000397.json",
+      "bytes": 214982,
+      "sha256": "3228e6ab87b0d84ffcef4a078aee5ced486d12dac8cb62dd969347e5698fa692"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000398.json",
+      "bytes": 215084,
+      "sha256": "10e7bb8338c885a9d4f7b8c73ea1fe3042f746585c975c66775e1225f01c3963"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000399.json",
+      "bytes": 214988,
+      "sha256": "de8ac3d619b0c4ed414d2434d72dc3aeb0e2077198882d619239b40148072bc1"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000400.json",
+      "bytes": 215032,
+      "sha256": "48823d0e1a52e8c356149a4326b55f5aabceb70c9432a036f19e2a7b027dc4fc"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000401.json",
+      "bytes": 215056,
+      "sha256": "9f51210ffb4c9287522d737eb7dd2dda09b9749aaa1fdb8879669e60d34c37cc"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000402.json",
+      "bytes": 215082,
+      "sha256": "1f3662375c7854437e2ca170047321b01296f4917f58cfc33a125a8a17855439"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000403.json",
+      "bytes": 215095,
+      "sha256": "98c5b753a6fa990dc98bbc01248706c4e59c97f07b8756874b9bfb8e7b04ba1c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000404.json",
+      "bytes": 215150,
+      "sha256": "4096ee6428be3b53b0d0800daacd093044a2aa9f0c8ffdf617a9b8b215074b2d"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000405.json",
+      "bytes": 214997,
+      "sha256": "042bdc2c66eb96a471318ac5baba8b9a56ce97caaf5bec7c028f04fba27109be"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000406.json",
+      "bytes": 215043,
+      "sha256": "3d9dd18e7c0890808f265347c4964d43b0f4e52f0e559a2cb16e796731e2e504"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000407.json",
+      "bytes": 214938,
+      "sha256": "ec2282133f434602c3bac5eadca4a4a18f288dab13c8bf10cf76f13bf86b650c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000408.json",
+      "bytes": 215058,
+      "sha256": "b857b41f8136921f58c3baf1623984e0a430a4cf04c10499fd5495906fadf7ff"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000409.json",
+      "bytes": 215024,
+      "sha256": "2ac92f07305ebe04441095fba6a0ba1412337f8aa2b11b3cdfdbf0fdb6bd232d"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000410.json",
+      "bytes": 215070,
+      "sha256": "1cc0393c851ce01586e3902c741ddcf555201dd1ff773aefb2141fedcd8d1d97"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000411.json",
+      "bytes": 215046,
+      "sha256": "4934fdb242aa303b506d9e4540950a09b003712eaecd64a8c6f57e16065468c5"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000412.json",
+      "bytes": 215019,
+      "sha256": "d8ac1396db132d2952c8ffca6bb2e8f1f0e45c1d14354ee5d3ff235b019280de"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000413.json",
+      "bytes": 215065,
+      "sha256": "ed408af62534e5ff0bcaa5e9d211e97a115f1b352180a5ea11f4e5da1a8cec6b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000414.json",
+      "bytes": 215036,
+      "sha256": "9adc8d211549c4ab56998ef4ddb07a00771d3d5b88aeab87f8b10d98697df7a5"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000415.json",
+      "bytes": 214984,
+      "sha256": "61b4f1ae2a9ee7ca5a8600e2c1dda43315cb4e0a2d9e10e367d5f0ea60b528be"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000416.json",
+      "bytes": 215108,
+      "sha256": "62e173adf38923c2cd7fe433b59f0101acdc12fd36923717557de11f5cc787cc"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000417.json",
+      "bytes": 214936,
+      "sha256": "255062176c6141a63932655311daaf171aa9e27baf234ea06b562779a61c6e1f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000418.json",
+      "bytes": 214994,
+      "sha256": "18d66ad442bef42199ada139bff696c1c6b74c5e49e2f0413bb14f5a085c7d45"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000419.json",
+      "bytes": 215021,
+      "sha256": "33810aecb79a24feb3744b6f144e92147ae33e0fc0209530fbf4400a7cb53e38"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000420.json",
+      "bytes": 215057,
+      "sha256": "5a27b2449fd89706ad3b11e9f8d1bde7f5b26ea986e7c9b9bc8430a968f529e7"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000421.json",
+      "bytes": 215047,
+      "sha256": "7a8cba149903bc51da8eafad8b9b9f4f483e6553476733f48dd8a9838452dfbc"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000422.json",
+      "bytes": 215055,
+      "sha256": "a7322dbd916298f98d88edf761b683dc6d6a19a363b8c54734d35d49c8217fc8"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000423.json",
+      "bytes": 215053,
+      "sha256": "d1948b5d3c98ab1f860ef6e8353b6ce60c69effa8c47f07dbf59fe46822fb8de"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000424.json",
+      "bytes": 214981,
+      "sha256": "49247eceeb62ae8f889423623f2a72586d85661a4ced1c8f46f0785154d603f2"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000425.json",
+      "bytes": 215008,
+      "sha256": "864fa3c33e91cbe1df43ec02de80feeeadc86ec9185e5f4d2f78ecd79b036756"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000426.json",
+      "bytes": 215002,
+      "sha256": "b166b906c153d97f0e88ef39d8e26013ebe0f71e3072517e50def443c976ec83"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000427.json",
+      "bytes": 215005,
+      "sha256": "b0cbca57891c508962b8908474927ce57065245efa522a4aff5b5c8fd829e885"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000428.json",
+      "bytes": 215013,
+      "sha256": "a8310d16ebb7d6a386c192de027a8c6ea37c2bf5e3714eaceb2520135a766753"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000429.json",
+      "bytes": 215023,
+      "sha256": "b1ee141955e949a9ba3f51109f6c00960e6a75e5018410ddddedb6c474431106"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000430.json",
+      "bytes": 214963,
+      "sha256": "4939347dffa1d644c18bd44231a613cc5d7e3ee0e1946588f6e96c631838e4f5"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000431.json",
+      "bytes": 215047,
+      "sha256": "3a4cda0d78e48e18c231475954bbfc413ac9b2bfcfc2e1cb9aff2abef8fc3152"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000432.json",
+      "bytes": 215115,
+      "sha256": "e42c44b32045af4b248b3a551f4103ce9626963f7c316b506d2ebcd623722958"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000433.json",
+      "bytes": 215007,
+      "sha256": "f7be5bd7bd27b99f8cb6ae9badcc33e4f30ff92c6de8be1d23030fbf86e80041"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000434.json",
+      "bytes": 215055,
+      "sha256": "3d9e9fa326da0419649ee697c1bd2f80cfcb905a8cc925a6706669b41a56d91e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000435.json",
+      "bytes": 215024,
+      "sha256": "0493e2631d08b034dea8b3981a6c4409d66a3ebe95e0548c5457ac9a4439c1e9"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000436.json",
+      "bytes": 215070,
+      "sha256": "204b1cbaaa48eb84cd66ef651f0ec02c7bf329f532393418fe4a59d3c5e13720"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000437.json",
+      "bytes": 214919,
+      "sha256": "861628339a82c9f29815d40c593f822bd12b7302b4dcc7ecd370ad9a90f474d4"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000438.json",
+      "bytes": 215016,
+      "sha256": "0bb601a04572a646e1622a65288cd5feb7286abccf8d150a9bc82b2b55961899"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000439.json",
+      "bytes": 215035,
+      "sha256": "28c1e82ca8b013de29759bdebb865f45346af93441b1a4d2574c89edd39a95ca"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000440.json",
+      "bytes": 215070,
+      "sha256": "b926dd57b0819be34b8263ac4b60509be4674dcd23352f15ac5afa6a5de01551"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000441.json",
+      "bytes": 215081,
+      "sha256": "11d6531f35f07d4c0f9890792ea3e2a75855701d3a42c6863ac5c5a22660410e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000442.json",
+      "bytes": 215015,
+      "sha256": "054b05221ffea4e5d28152e0c1c6c6f6526198ee4a6d60bb43045c157e0afeae"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000443.json",
+      "bytes": 214984,
+      "sha256": "6e5497742a1ede667bfefb276fb5d79278ebd4a2011540aa6e61d894a19c4f8e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000444.json",
+      "bytes": 214912,
+      "sha256": "0a9b09c3beafeef9aa47affc2e25cf5fdef08466467414dbfec3695e184b8b1d"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000445.json",
+      "bytes": 214995,
+      "sha256": "356d4d43e69617c61ad1eee8a0297400ae5394beaae70c9eb1505963f310976a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000446.json",
+      "bytes": 214996,
+      "sha256": "4970ab6ccb1535b2922e8b8e9f9bc3c9da898a41398d079cf03cbab45b4943c2"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000447.json",
+      "bytes": 214984,
+      "sha256": "a1ad3693cbe8060091262700febab99d4f3b27269f719c2d3ff0c243fae0e759"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000448.json",
+      "bytes": 215026,
+      "sha256": "edf81179992d7d45c636ad8b4f06881cec771518c697e6889e4aa0e1f9fe94d9"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000449.json",
+      "bytes": 215023,
+      "sha256": "849fc5d55401dfe4ec9af8cbfc58238e3fc41ab468fb4c8b951f1b4f042c13be"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000450.json",
+      "bytes": 215032,
+      "sha256": "0b78114631e367342333be7698bd0c25f0fa50f4c102a1e1694004a26c2e52d4"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000451.json",
+      "bytes": 214927,
+      "sha256": "80856281147ae9daaa015dcf8ace01c30749680593d2b4aa9df321718e75e55f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000452.json",
+      "bytes": 214959,
+      "sha256": "6d33424cd8cfd236577bbde359169509b60489e5c4b899b64a5c7543aba4e67d"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000453.json",
+      "bytes": 215035,
+      "sha256": "907ea26bdb9d5a603c6533ed21ebda51cfe98992b9f9f37a8e7868476d6530e6"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000454.json",
+      "bytes": 214985,
+      "sha256": "c61ca28680370505aa21f9ba3650d40c5651265e85a1354d63b566891d6870e4"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000455.json",
+      "bytes": 215117,
+      "sha256": "262315026e5412a67151da50ad4f1ec0c554e9b24c1ded484cff0dc904900496"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000456.json",
+      "bytes": 215067,
+      "sha256": "d45946a9aac432a9dd8a45e35d6324a8838182787353ccacc88c2a2c48b7b350"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000457.json",
+      "bytes": 214937,
+      "sha256": "862a7056fc568e206919605e5ae2965375f70b5622e4ead59e0672fa48c322fd"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000458.json",
+      "bytes": 215062,
+      "sha256": "63b77f9b2f1b5b33639d60861b46b04227829459e9211eb81b7ee20255f26ca0"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000459.json",
+      "bytes": 215003,
+      "sha256": "d9dcc04cdf77092b3be015e2271e18fd6621dcf11569b8e3cd1870ef768ef4f2"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000460.json",
+      "bytes": 215083,
+      "sha256": "41f0cd669c2634a36e036c7202c581ec36cb23588a683537d0b7963c4df3d74f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000461.json",
+      "bytes": 215004,
+      "sha256": "dbe7855c1e093d4a4101cf8e570ee037378f4cd6cb7b404a05490f0e62cea6ae"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000462.json",
+      "bytes": 215054,
+      "sha256": "5c514ba590d4b28dbfe133c4f776540b49c85a146927b7991d9bed03bc6edd38"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000463.json",
+      "bytes": 215126,
+      "sha256": "d32225f4a119ea42a4440e35aa62baf11b77f0274081604552d2459dd19f22c4"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000464.json",
+      "bytes": 214976,
+      "sha256": "19cb0693099e38551825e4555b86bf6f09a707a913399d3be6471887298c6885"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000465.json",
+      "bytes": 215080,
+      "sha256": "4254690e3acdcc56159fcba2f05023ecc5549b1d3a8e8d815e6aeb6710fe522e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000466.json",
+      "bytes": 215084,
+      "sha256": "4e3b50a51444a661c1ea63967b01ec23311fe7239615bb4ada0340689d46ebdf"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000467.json",
+      "bytes": 215012,
+      "sha256": "88eecd86a90b9f03b2232febfbd75a9b7186b225f4dd327938c5b948f80129ba"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000468.json",
+      "bytes": 214978,
+      "sha256": "744f9c5a318a43546728721d1b256fdfad86abbd27560e959189f0c686d28d6f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000469.json",
+      "bytes": 214970,
+      "sha256": "990fe8bde2b03e5d9c54c554512001d3e4ae2ed0c81d5217f7b6044600072cb2"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000470.json",
+      "bytes": 215061,
+      "sha256": "852e817361c272634f1b6f2b02ecd0e0d36da49169ff7dcd609e400c6a90c882"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000471.json",
+      "bytes": 215140,
+      "sha256": "6dc4ba65ac1ba31a012bbef4396cd8040b110e107eb88775ee376ca98c5fe737"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000472.json",
+      "bytes": 215026,
+      "sha256": "afab0e6b0d1498eff279a3d79f7613c07cfb0e29ce52522781bb28815f28dcdb"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000473.json",
+      "bytes": 215079,
+      "sha256": "60f58ab52fbf1499ba6fc28be67b8fd89818cf532d11185bb87da2a8e0ccad51"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000474.json",
+      "bytes": 215104,
+      "sha256": "5fa6318c8b60b5a6dca3d115bbdc58dcab1e3727266d53309392646b29396696"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000475.json",
+      "bytes": 215133,
+      "sha256": "553a8fc4d1d51069b530599a59fa0ab96b315fe1b040f43cb650965750898d38"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000476.json",
+      "bytes": 215068,
+      "sha256": "71262dffb307c1c475a435e5bc39ceb3974c2ed50d251fa4447451bceadfdfa9"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000477.json",
+      "bytes": 215181,
+      "sha256": "923e60a89b58efab8173c188ca96cb8bbdb2ad7de79e4f4c2a4aa99b3392bf6c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000478.json",
+      "bytes": 214928,
+      "sha256": "145eafbe7e6ae457912ca3d17214d683288e461045a807ba7e6dbf93c6bfcbc3"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000479.json",
+      "bytes": 215054,
+      "sha256": "e5b77094cd397aa90195a91e1819797059c8b6b96901b235368ebb10e9f22c3a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000480.json",
+      "bytes": 214973,
+      "sha256": "d3cc077031ae7a909536bcf1ec0fea9098ffd8227d5e97f0637218782bf31fdc"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000481.json",
+      "bytes": 215001,
+      "sha256": "294b147be047ddeaf9fdcf20c04a642c4efc4f8f7939ee56d4d1e159dea9f0be"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000482.json",
+      "bytes": 214988,
+      "sha256": "528dfb4caa0f1ad08a5dcb493d80f620a9d3478e43f98838c0986c1be908b58d"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000483.json",
+      "bytes": 215079,
+      "sha256": "cc15c8a162aed0320c639352fada1eaa50349165c5df5b7020b0921cc383dee3"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000484.json",
+      "bytes": 215066,
+      "sha256": "63bfde2386b4030a06fd8da65477dfef1dbb9ba21bf4eb6d3c05f4912e457c13"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000485.json",
+      "bytes": 215024,
+      "sha256": "5b86994161702f3193b1d1f22466a017e475d7b2aaff58139702bbb5071b968c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000486.json",
+      "bytes": 215022,
+      "sha256": "5eb0e6c3a256fef5706baf8400ef140683ed0fc9882ee6978115c09d4b923f9e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000487.json",
+      "bytes": 215006,
+      "sha256": "17344a7a73266cca7e1cac5ce311daac01d2a310aa50d1df0f832a5af1136741"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000488.json",
+      "bytes": 215028,
+      "sha256": "ba0369800671b34ece10f1cc225eed55ada5ac8b95eed9f1baa9652e054b9fdc"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000489.json",
+      "bytes": 215056,
+      "sha256": "60a47c426d63305480d5b4ddbf5ab28e141fa5dddce4e4800351fc54f1725b7b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000490.json",
+      "bytes": 215066,
+      "sha256": "1048c8c12b9320b055ead1a75b89e42d16c588ef643a67a65c1e04e931a7d3da"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000491.json",
+      "bytes": 214982,
+      "sha256": "398a31de92beb04ba8008c5614c767775ed124d08e00dd85b5e144498420dd01"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000492.json",
+      "bytes": 215079,
+      "sha256": "8927b67a96cf7171419cd7218a3175c4192e0243e2409e7d073d57c478be0092"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000493.json",
+      "bytes": 215069,
+      "sha256": "8935fade6a7abf49881f6d647afd729c239cf8b06dffda3de2a60ff21a838fb4"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000494.json",
+      "bytes": 215042,
+      "sha256": "a809bad0923273f03d659b97941ed9450ed3448800f3351bdc645641392dfdca"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000495.json",
+      "bytes": 215047,
+      "sha256": "fb006b84c0dbb5de9a14c6a13c85635ff116e1094e4711b6610a36ce0d34ece9"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000496.json",
+      "bytes": 214992,
+      "sha256": "847efa9d001fc056f3ef70017dfe34c796775ec78e50895f283bfe2f1cdb822a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000497.json",
+      "bytes": 214942,
+      "sha256": "eb3d09d92f07e20b7132bfc1a15ab40ecfb16135e7da0d0154c6466d3a5bb24f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000498.json",
+      "bytes": 215079,
+      "sha256": "717604eb8c442072381ed99189c72bf54d3750e97aa338ece7d38b8055babedf"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000499.json",
+      "bytes": 214946,
+      "sha256": "d9706442d76db6eebd3fc7919558a783aa9682e411879e6e40c805b5bbef81df"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000500.json",
+      "bytes": 214994,
+      "sha256": "8e45ab2bcb6a4b4e912c2e5c86c5618b94edc7f7d0ed704afab4fd290b34f9cd"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000501.json",
+      "bytes": 214981,
+      "sha256": "db2ca17558986356024a3fe0ee46485dc595a193c38581314176d049d80b9a78"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000502.json",
+      "bytes": 215062,
+      "sha256": "70c64d8337f42f7072bddb0fc8b5d7a47312af4ac9243a9b346a38375bb50637"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000503.json",
+      "bytes": 215054,
+      "sha256": "cb5bb8801f976125992a18aa7e56798faa17b3a1fcf9daf16d64553667e36768"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000504.json",
+      "bytes": 215052,
+      "sha256": "f0ad84a6949f425e2eb33f7c9a55ad5c4cf750ce5075da81df5ed66229d78cf5"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000505.json",
+      "bytes": 215065,
+      "sha256": "1cfd63d76c581d02f727d884f71f78ecb024ef4a64057fe2bc36a789cb4e7c45"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000506.json",
+      "bytes": 214950,
+      "sha256": "3e01abfed70f7a15a7914cb4aa7675f504e0099595841b2873d4db802e7db9f0"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000507.json",
+      "bytes": 215054,
+      "sha256": "31c2d7fcd1be4a0d784cca501fdbc7e3ac0742afd9a881fa201e6761397f9b88"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000508.json",
+      "bytes": 215049,
+      "sha256": "2ee802447c0ffa92c43f893c5da3e4c699c1526e0e878b2f8b3eec7d7af18aa3"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000509.json",
+      "bytes": 214976,
+      "sha256": "4a6289b839020ab5bd8a0586708bbacf60460997920e5c9a48b82c2aac31e6f9"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000510.json",
+      "bytes": 215028,
+      "sha256": "1e729e1b4e0b56f69a2d5f19381552b21f42b42b2d95e34fc70a07cd7e176e68"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000511.json",
+      "bytes": 215007,
+      "sha256": "f13ad382d8550fd442d81cf0d375265e68447c833058225a5d7664521091e578"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000512.json",
+      "bytes": 215028,
+      "sha256": "e6a1a18591a4733759231b592278d07082ba9a387a19b73033d97f01552b19fa"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000513.json",
+      "bytes": 215069,
+      "sha256": "09fd46101c3757c5031a79db3abbfe60c3c142cbbbda2e2e69e88024518d17f7"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000514.json",
+      "bytes": 214952,
+      "sha256": "1dcc1a94f25fe179a9bb61c7b4b3a428666ac5bf6880c254fd83974d45c8595d"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000515.json",
+      "bytes": 215054,
+      "sha256": "fbaca3497308fdf84c1fec341e47e15cea1de3db4feb5e47eee99bb022484fe8"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000516.json",
+      "bytes": 215112,
+      "sha256": "2ec1fb47167336b06e4da052b49cbc7b4281b8d880b998f6d4bd81a9f4f2579e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000517.json",
+      "bytes": 215014,
+      "sha256": "cb4a65ddaa1a814aa777634f1d5a5b513346373ad00e6125b16a9f3b1fe4b7e2"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000518.json",
+      "bytes": 215025,
+      "sha256": "4463853e75cecc0bae15a224524ed737092ea340ab42ecc118d888990a6e831e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000519.json",
+      "bytes": 214990,
+      "sha256": "17ffb0081b44bfffddb8324c64439fd5bf2dc7070e8a018113d65194eeef3eb4"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000520.json",
+      "bytes": 215115,
+      "sha256": "700e8154bdc4513f2fcac2b6389358d6c43a23f4c21f5bc7fb772ba2213c2862"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000521.json",
+      "bytes": 215061,
+      "sha256": "6c4e9262adcca516146e90248f08f20fda608c500ea418cf5eec668a448fe617"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000522.json",
+      "bytes": 215028,
+      "sha256": "f147a7bfd85616ba2dfeab442c004da1bcb75f5661baf3c16f0de47e36a06a24"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000523.json",
+      "bytes": 215012,
+      "sha256": "6c9729f59165a3788d64579da7d181170a9b0c2fb12a5257b2dca07d5e2222ee"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000524.json",
+      "bytes": 215078,
+      "sha256": "75a56bc067d7570307dc0df630a05181485d94841b2581ee2f2fe31acc513cd6"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000525.json",
+      "bytes": 215017,
+      "sha256": "a956aec61711f33fd5d8f741df76a2acf1541c4162db49775ec486c333042369"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000526.json",
+      "bytes": 215120,
+      "sha256": "f4b7c289666278695d9be3bb1df3dc120dc474b3247a6f0464ffc22da4d44c7b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000527.json",
+      "bytes": 215143,
+      "sha256": "bd2303733fbda2fc4fbdf68129c23b1ef819bb886d01b3c910c002818f0b6b40"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000528.json",
+      "bytes": 215183,
+      "sha256": "659571ed149b9c987e031091aa2adfae6c33bfba95fd540d5a96c2e9d2a1c082"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000529.json",
+      "bytes": 214973,
+      "sha256": "aac91fa3d996be869fae1ba82420fed0855ac76bd41751c728efcb5eb8675e73"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000530.json",
+      "bytes": 215143,
+      "sha256": "5afe8d8adf56405d4f096dbfd4bc95cc1e973ddabe7cecfa58db59a50859790e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000531.json",
+      "bytes": 215025,
+      "sha256": "aa99e3d06123b0603be411652345de7fc05d5987ffc72c3880b37b7ddeda1905"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000532.json",
+      "bytes": 215022,
+      "sha256": "3ce22fd8a261e078864155f2d6b0d9b8b9472fca2e4576528128c33cca0671fc"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000533.json",
+      "bytes": 214960,
+      "sha256": "45d6d76c58d06fbe573ef40ec188cd29d9137b3e6303cbef79503fe448310c68"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000534.json",
+      "bytes": 215011,
+      "sha256": "2cb8dc53c30644a6a82c297216be08ca86efcc6e46e2366cdeb810cd727a8bc7"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000535.json",
+      "bytes": 215031,
+      "sha256": "b251e965cc7edfbf8c6fb00c71c7d04a5f2042bfa0c6be3df6fca57f32363e98"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000536.json",
+      "bytes": 215078,
+      "sha256": "73274bbc132852f23b0fe8795275514e85a5fcc35d85eb7c43a26641b0ce046b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000537.json",
+      "bytes": 214986,
+      "sha256": "4be17bb1a9e541dcf7f96efb9a7fec25e5df8c4b3a81473c933467e0ac409b11"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000538.json",
+      "bytes": 215046,
+      "sha256": "e44b0d0b532bc99b3d232f249ca0492119b3b2f0e9b4e81315be1fcb58d6d807"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000539.json",
+      "bytes": 215059,
+      "sha256": "c16239be0bff2324f65685fc0a2a769e79375b202fa4e3a633a9b21af434643e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000540.json",
+      "bytes": 214979,
+      "sha256": "631c9a2d0e5bb765c6c54b4328bd80271f892579c754c8fc180d49b48b955767"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000541.json",
+      "bytes": 214944,
+      "sha256": "e590c2514d06cb9b513a2b7aa50661021a328b5069553fbfabfe22933060d59e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000542.json",
+      "bytes": 215006,
+      "sha256": "c0ee3596c8a1417b90b4c2bd486531cdd67711b8d1da44d5863d29ca9ff87a0e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000543.json",
+      "bytes": 215054,
+      "sha256": "358035ea8970163754f64b9574c884e3752a004f954382b8d5d6441063d0331f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000544.json",
+      "bytes": 215094,
+      "sha256": "bd6c159bc7c7ce701d85093b9dde259de33a176be720cbd3cbe8124ff9c1be96"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000545.json",
+      "bytes": 215041,
+      "sha256": "34e81f4a6bc40df4abcfe69a981ad1decc9bb0dd95ab82d3ebd84ce4f198c5f7"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000546.json",
+      "bytes": 215093,
+      "sha256": "3877eb79611b9797f752e7aa37d074f1e17501b98e3891ccbe82f70f6b70002e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000547.json",
+      "bytes": 215090,
+      "sha256": "86e4cb454ca0a833e560d36a91e215291eac01410b04285fa3ca5464106e970b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000548.json",
+      "bytes": 215052,
+      "sha256": "78511f28c8da25d3f07b686e55b96f9550852dbb164103b29e261914f2a90d5c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000549.json",
+      "bytes": 215157,
+      "sha256": "bb534fa93f87d75331921833f284bb76358f83e2993ecd4e6837b3a26d0fd90e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000550.json",
+      "bytes": 215031,
+      "sha256": "deb6471000b7d4282ea024bd66ef41ff69301949bd795e35e99a246511cce819"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000551.json",
+      "bytes": 214966,
+      "sha256": "bd370ff9e88a233b598fc7239c6138572f44320d731381392f571aaa19756ba8"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000552.json",
+      "bytes": 214899,
+      "sha256": "1e8eb824ead08a4c770534e8e8d1636982c11e10f9f43a2ed18dbdd9e7bfddbc"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000553.json",
+      "bytes": 215001,
+      "sha256": "c691e79f5e15f0f7649621072d82d86a3d6a0d15a88e4ec200ec4edbff577a2e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000554.json",
+      "bytes": 215017,
+      "sha256": "e35be8057d896a3469cd88e7f7ef957871bdf13e687cef4d61240e8757cc7b27"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000555.json",
+      "bytes": 215050,
+      "sha256": "31e16fdfa9d40f5cc7466d06505f18ad25fee449ddbf09bfe687777aff956dce"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000556.json",
+      "bytes": 215083,
+      "sha256": "da99b8b8f923cc75e961c20f32f2ca587b64eb83fc2542fd442203268d27a08a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000557.json",
+      "bytes": 214957,
+      "sha256": "758a02807e92a2d9cd0da3f776005d2fb6b22404dfc196498016dcc4b7153b91"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000558.json",
+      "bytes": 214989,
+      "sha256": "92d4f758426fbbe7df588bd83f96e4a611f410556df536c06d942e8a66f80817"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000559.json",
+      "bytes": 215004,
+      "sha256": "ad006f8b8841dbdc33265a7a6dc1dcdbd24663a04113ebacfbb5122011dd2999"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000560.json",
+      "bytes": 215107,
+      "sha256": "6700a3160788349adc4dd1194c362b0365a8fa7d01f9d47dc3796c672759d57a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000561.json",
+      "bytes": 215069,
+      "sha256": "2513614e2929625f484032e356a4c35abb639789122e55ebe3e22255ff2793e9"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000562.json",
+      "bytes": 214992,
+      "sha256": "07603430a0ee2d8667ad032720d95e2746ee88ccf3c3eca326eba0a0dff26559"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000563.json",
+      "bytes": 215003,
+      "sha256": "bc92b000ad6fcda84c080bb1f87f0dbf634c3fa45d846cce9208cd9cfed6bb0e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000564.json",
+      "bytes": 214987,
+      "sha256": "b334713a4bb700bd021b44a6388c0e33b4e4ab1284dcbadc6b7b856d3b635fe9"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000565.json",
+      "bytes": 215128,
+      "sha256": "e80f607937f4dbb1e43b849f8f11af4ae8ffd2ae583e58bb903503e5b8e3f8b3"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000566.json",
+      "bytes": 215105,
+      "sha256": "133b2a728facd97035853f8b5ff152e20ef7e298b54106a016e2c6a10268033a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000567.json",
+      "bytes": 215018,
+      "sha256": "d000c5b81ea7a93ee1fb85ba1cff19b6427bdfd06e8390f36359c17b99ec5284"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000568.json",
+      "bytes": 215017,
+      "sha256": "896586501c50d038dc718d088da8a3151f2349c8bb08bb961b0e7c22bafd143b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000569.json",
+      "bytes": 214927,
+      "sha256": "b00176641cd0001cab1d9506256ca372a037cee77f08d7f88d5a4be98e03773d"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000570.json",
+      "bytes": 215088,
+      "sha256": "dafd767727d266db5849ee092e9b0cae539d59091e5714c7286339d2b2c5d3f5"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000571.json",
+      "bytes": 214999,
+      "sha256": "294f17d7825b3b205b39034d5d8f9043bb85e61c7c86fd315471d912326527bf"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000572.json",
+      "bytes": 215058,
+      "sha256": "d8453581545e89faaa919b0398a6396a27fbcdcbeea18d9bea98e22bfca53c6e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000573.json",
+      "bytes": 215048,
+      "sha256": "4dc4c4b7df5542af7ce3bf83e20f49450ad1a0bb1a8d2c8ef67e87b6fb01c1c2"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000574.json",
+      "bytes": 215061,
+      "sha256": "86c6288a64b2ef580bbcdb099b54e314afe8a4a40dadafdc3ddb2cfbcedc5dac"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000575.json",
+      "bytes": 214997,
+      "sha256": "c068553d8a15f061e4967484f146af5c51ab81e63977692d48deb2a13e9a029c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000576.json",
+      "bytes": 215109,
+      "sha256": "5edf541e762683666169124835ee9f4317ad3af7eb46025b5d1ef2a3df62b6c0"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000577.json",
+      "bytes": 215048,
+      "sha256": "86cf1a4a8c8aff1502cd19db1c754074042042655d43108f927ccd0375c730b2"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000578.json",
+      "bytes": 214989,
+      "sha256": "11ac277351fb85c02c1029e014dbe76cb75e759bc6f46bd73f688e9dba784923"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000579.json",
+      "bytes": 215012,
+      "sha256": "dcb969ab34af8c90de9b04fad2e8461913b6dd2fc096bd78bee7f169eb197d11"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000580.json",
+      "bytes": 215010,
+      "sha256": "f7cc603b80468dea05d94cfa0d0e40a1dbc9c03f0d9cefb8feb77e83d478720b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000581.json",
+      "bytes": 215020,
+      "sha256": "6f56d1397f66a9c601863fbd9574a5b321ce0a7a49c54c2036ce9416a2068626"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000582.json",
+      "bytes": 215100,
+      "sha256": "d47ce4e961ac7c56ac572cffc7f8d8afa82b9b617bd0af2ee1e6242fd734861a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000583.json",
+      "bytes": 215063,
+      "sha256": "f75e3bf5e33a4948d2bde62c0cde76cceb2afecf8e8dd78d546a00395964c15b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000584.json",
+      "bytes": 215046,
+      "sha256": "000444477cdfdbd36abcca2dfb68c70f5f427a462684f1201e430dc76eec5e24"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000585.json",
+      "bytes": 215072,
+      "sha256": "41498d9fd9cdb865026b712e333dd40e59f108b400a75fab7dd60cee312e4731"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000586.json",
+      "bytes": 215046,
+      "sha256": "93766a9069158ab520796a7d4da11f21eca8c08d7a4d76ac7cc71e7559e0821f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000587.json",
+      "bytes": 215000,
+      "sha256": "9116750682489c56d1dae10b265a55bf953727316824bdaba767d6e0c1a2da0c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000588.json",
+      "bytes": 215054,
+      "sha256": "d129df97d34847e3883a1a12575c453b6849b4c033dd2c3f30b16c9ba794bb57"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000589.json",
+      "bytes": 214948,
+      "sha256": "3ac364fc5f2d8b63c5543c18a141788e3e16743be1c2a154ec4a68bb1e25db6e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000590.json",
+      "bytes": 215009,
+      "sha256": "c36c2c7d63d9f61bdb6e85d1e0f924fea2c4c39c5a061ef033bcc60c236f0dba"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000591.json",
+      "bytes": 214975,
+      "sha256": "b492f5183b216af1fac1c7d622334bf761b99599220a090eb904483fab174ded"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000592.json",
+      "bytes": 215051,
+      "sha256": "f9c9d5c01478308c16b2d3c0081bf745e38c9e26e971b56eabec63dabcd18871"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000593.json",
+      "bytes": 214998,
+      "sha256": "da2d7d63bbd4dfda9d8ecfded5d416c0c267e652b42f9f775e61bf22c07cf931"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000594.json",
+      "bytes": 215035,
+      "sha256": "fba584ee592868afdb7e122357f41ae39052751a2c2d18796d2f5413709cf0f0"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000595.json",
+      "bytes": 214993,
+      "sha256": "aa9bca144875b51fa8adc73cbcf519668d5dc2603b1968f9e0ee1797d95ed07d"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000596.json",
+      "bytes": 215122,
+      "sha256": "c11db3e8f81393ff6f7f0cb0d261fb0c55f7cc320be473f7edc75899a63181c5"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000597.json",
+      "bytes": 214954,
+      "sha256": "77d12253c39f3a87272947c0c7976298b14f20b67cc752493b110ba8a993af1c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000598.json",
+      "bytes": 215011,
+      "sha256": "efb309e77d09941b69e8f36762919bf48d967b18522549e3cb48c2e8c5beb40e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000599.json",
+      "bytes": 214954,
+      "sha256": "ba145fc7c5f61ecc9873a74a865210d977f2f023d925fd2026bc88a88194ebfa"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000600.json",
+      "bytes": 215011,
+      "sha256": "860060960a0130920d316f930a801918f49b3766312d077f5e8351f2319d7dde"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000601.json",
+      "bytes": 214963,
+      "sha256": "e05a41e5d1b72852b05d1b85be17c74c0282a5c8ed9bd235ce5529794cb11e54"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000602.json",
+      "bytes": 215068,
+      "sha256": "6af884869bd723040790bc5ed512d6ae79c7c00b9156370f291a84b516d5f2f2"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000603.json",
+      "bytes": 215051,
+      "sha256": "c1ebcdba2e4fcad7ef194c77c314670aef19cdf1dd66a1899704ddae38c5ca55"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000604.json",
+      "bytes": 215086,
+      "sha256": "9a80c12552892288559d342a765bb61abd3f0412eb269fdca9890aa7fbec0471"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000605.json",
+      "bytes": 214996,
+      "sha256": "b963b53597de1d0461ad545bb085db3d5ea7899428b9cc9f61b023fc6b7e3af5"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000606.json",
+      "bytes": 215092,
+      "sha256": "9f5487f537fd4e85f39856af87c43a620d4ebed6e97e177737012f2bd253aac8"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000607.json",
+      "bytes": 215135,
+      "sha256": "cd3d9784f2c731115bdaddd1c31ba493a55122fcdb3a2f88f71ab0a8740d3b14"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000608.json",
+      "bytes": 214998,
+      "sha256": "6048f07385ff87299fde5cfbf05fd5077373d0bf96dc3f71e4b4e8a0f7633c8d"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000609.json",
+      "bytes": 215002,
+      "sha256": "035221891efd85b6ee4465fcedf99b745faca8631987322d60b6d3018210a542"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000610.json",
+      "bytes": 215142,
+      "sha256": "f28b0b55acdc35d051e2881a5facb4c9ff27a76533af7b1c4f2325aefa55c41e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000611.json",
+      "bytes": 215047,
+      "sha256": "7af07ce62c27e1208501b2a3dba52c16fb3adbbc907a7847f7d7f16e6fc36d29"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000612.json",
+      "bytes": 215064,
+      "sha256": "9e36d0d25cff79160fd214b4317b6bd9f264cec40a798cc1345a979bf09b2129"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000613.json",
+      "bytes": 214980,
+      "sha256": "441c51ef253d01dd7fb41e62a35cf5caa7ecb8484e784bb6d936abc73443cd41"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000614.json",
+      "bytes": 215029,
+      "sha256": "70c96afedbfa7f20f80ace3dc403f654127414dcb48ab59852dc8d1c9f2355a9"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000615.json",
+      "bytes": 215081,
+      "sha256": "aefba9d6c9b2d36aeb7ca8062729e436e46c3686429eedadf266516ce292574e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000616.json",
+      "bytes": 215015,
+      "sha256": "0ca69a886a718a283a067452d68df796f285a28431fbc6dc4c3c126488c174af"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000617.json",
+      "bytes": 214984,
+      "sha256": "986a113552da604c5e1e29b65e464cd4f1736fc18cae97f83244c334275762c9"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000618.json",
+      "bytes": 215099,
+      "sha256": "a4d64b5879522aad658dfd946d1fd0391dbb34942d2a6144b9a530368a67334a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000619.json",
+      "bytes": 215021,
+      "sha256": "3ce65c1b9ea0871bc602b913ac36a12a92a629d7685e41573515961ab2525132"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000620.json",
+      "bytes": 214937,
+      "sha256": "d7627aeba72780aae843306b6c672844de64c00dbd74608f96dae5f038d0c62b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000621.json",
+      "bytes": 214969,
+      "sha256": "3e0d7caf8867fe5b036834a72a87a3d29e429bc40326e1c97b32c47b56b0ded8"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000622.json",
+      "bytes": 215031,
+      "sha256": "0ac9b1d5f42f7a57273a4176cd31d7a4d466df4de7fa99ef56635c3e923a524c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000623.json",
+      "bytes": 215023,
+      "sha256": "c96c8a0af7326007f6c34add0adb1d93f80b5aa08942198edd59f80d149fc09b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000624.json",
+      "bytes": 214976,
+      "sha256": "4bf5e583ea1a14241126865ab9ac24838e288885c03e9816e8504c32c7d2346d"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000625.json",
+      "bytes": 215040,
+      "sha256": "30c3a83a1736d04a427dd1e2a381e18878b384839e4e126465bf88ee77798548"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000626.json",
+      "bytes": 215011,
+      "sha256": "37a1d89cee9a1efc7ab19091991f966a7f3eb68a544738d91d34900df0d1a85c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000627.json",
+      "bytes": 215034,
+      "sha256": "0632f4e17479e9345b199101606d79e10c730747030b055fe185fdc437bcd6f9"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000628.json",
+      "bytes": 215043,
+      "sha256": "1812268b22a2f10850154ad53284ef3477f0c87c4d1d0a2645c5b09c42a3fe90"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000629.json",
+      "bytes": 215069,
+      "sha256": "107fffd9e24e0ffcfdd475c58fadf8785ce70993f9968d636f496de86d325875"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000630.json",
+      "bytes": 214940,
+      "sha256": "589371c632c8099059f9d71a93dc31d1c5f3be43cd17265c4d7dad9132761ef5"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000631.json",
+      "bytes": 215061,
+      "sha256": "2fbfe6de6cf84adae64cf6ce290581da8c892808ed9446f0edac8e31ec02ddcb"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000632.json",
+      "bytes": 215042,
+      "sha256": "20ce2087995648476fb46bfce7aa06fca2a459d9eefafd89a7c0591142a88251"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000633.json",
+      "bytes": 215111,
+      "sha256": "a8c9c28f66521144a58907819349c191c26ff8fc84d92ed5a2cb860563f261d6"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000634.json",
+      "bytes": 214949,
+      "sha256": "c446e1afedb7b2f8d00265e1edd01084b3474ec1c3748072f65cf1f1904c7a5b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000635.json",
+      "bytes": 215033,
+      "sha256": "97b583c87b43ad8891b4cbb40964666ae608f9538369c51a74e565ce0499d9ec"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000636.json",
+      "bytes": 215010,
+      "sha256": "dfaa8a2c85c940a2ef76806f6457514681455afa99bfad5742fc875e34388557"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000637.json",
+      "bytes": 214923,
+      "sha256": "d56374173559228ce4401278291ba6180c3604875ddd59553cdb12dc197650e0"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000638.json",
+      "bytes": 214971,
+      "sha256": "e4e7bbff63e9aad4d26d240171610d2b03bffe4c84ef4d87859bc4a79e28cfaa"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000639.json",
+      "bytes": 214988,
+      "sha256": "7a7b8bfe7b8bb21758fb4db0d3d61443ddaa8249cb0df9008aeb4629b4f23fff"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000640.json",
+      "bytes": 215024,
+      "sha256": "ab7b8849496b5d5465bb09efe4047e548307be8753c6759a959297f59035511a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000641.json",
+      "bytes": 215031,
+      "sha256": "8a5f4325ec0b2963de9ba2654ad11f161f337a966979a64bba874979cb73fd91"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000642.json",
+      "bytes": 215004,
+      "sha256": "846894aa2321661c46003b089d8d7785687fb8fdf10a0e6db3ceebed22a5f1bb"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000643.json",
+      "bytes": 215059,
+      "sha256": "44416180f33313436d04a75e157c3bd13b72928854b0f86a987d9752bbd02258"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000644.json",
+      "bytes": 215037,
+      "sha256": "d99607e8449256e98729dda4ca636f2a1f8d88860b0bf863e9dde971799eabba"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000645.json",
+      "bytes": 214935,
+      "sha256": "9ee518f12aae8cf9c7075737c1aa4abe44b5bb5d6c04c7675d3204c190290437"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000646.json",
+      "bytes": 215050,
+      "sha256": "d6fa37c3d5080ef0ede551b98b9065b34e849cf99e8aa78ac602b72cb40024d5"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000647.json",
+      "bytes": 215052,
+      "sha256": "0ea83952a59064814c96234730fb00ecf14e6884c666361d570db124297c69ac"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000648.json",
+      "bytes": 215060,
+      "sha256": "1a2fe94dd1aeb46931b66ad3a8347bfa89cbb57d59d83c97b647131748b6c98f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000649.json",
+      "bytes": 215013,
+      "sha256": "679c854aa753b39ba389b71b2792681ea2fb84ea20252ef2ae160e0d1eb0441e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000650.json",
+      "bytes": 215041,
+      "sha256": "5d3d6246d76dc571f73155ce5dca97b83ffe75ce5274714503ce57e67eb074ae"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000651.json",
+      "bytes": 215056,
+      "sha256": "c51ade75b1eb2d26ea6ed586afeff64cc28e10b27854761dad0e592543af8cf2"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000652.json",
+      "bytes": 215002,
+      "sha256": "e8742c2c7c6bf2968a86a76b76e444ed1cad2a045f73c98b3f30577d8d1fe008"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000653.json",
+      "bytes": 215000,
+      "sha256": "790dc0af443dffd11502f2636de226f35ecd4b311932476359296909f066beb5"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000654.json",
+      "bytes": 214995,
+      "sha256": "cb1643676aef88b1a447234f3a1aa936f9e26c89ad0eb39fbe6d0d0425189ac3"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000655.json",
+      "bytes": 215066,
+      "sha256": "739ae0886a141e20c4ae9a3b7fafb016c7ad1437eba69e16ce0d318bfbe54606"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000656.json",
+      "bytes": 215131,
+      "sha256": "2ce35175c78f852824a8184e6edad7869e87ceb84d7f70bca869ba418bd9b966"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000657.json",
+      "bytes": 215056,
+      "sha256": "dc5186420115a06b8bd3d604d029378610acde58727c0af6882a35d71a5a4ad3"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000658.json",
+      "bytes": 215124,
+      "sha256": "a6ea617e3e8618ac2dc09ebde0eb685da95dcff59b103309c4f038f16f67013f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000659.json",
+      "bytes": 215150,
+      "sha256": "b09a60ec2d92fecd6abcb244112b1afbbb71e985e4c4a43a02f37ca57b8b4afc"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000660.json",
+      "bytes": 215061,
+      "sha256": "6284b5e706ed8cc4a0c64b097a918bb664d78a5202cede5c9430ba9e768522fe"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000661.json",
+      "bytes": 215097,
+      "sha256": "dbd4f36e836a76c355b41240da283e387875b8326f16ee6ec1da9a14798d4d60"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000662.json",
+      "bytes": 215102,
+      "sha256": "0aadbca0791d3362b08007ef2030c9181d2d967e911378685308b7b161961748"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000663.json",
+      "bytes": 214955,
+      "sha256": "bc2fb0efae9ca847f867afea16ca4ce7984b7208cd85617ee98fdc9b477a173c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000664.json",
+      "bytes": 214941,
+      "sha256": "8f83efd726230c9c6e228035ed23fb7e45b8514433d38e20198669da995cb187"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000665.json",
+      "bytes": 215068,
+      "sha256": "52bdd52986b448cf1724374b56654a46f7a75f506b7d1f5f1d53609e7a3ded0f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000666.json",
+      "bytes": 215068,
+      "sha256": "4c747a8acc8a85e51228971f3aa97963f715be24eeb07f51dec3f73976d9e1ee"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000667.json",
+      "bytes": 215062,
+      "sha256": "5a3a95ab178c685e072c367156c642fb25edecee8845bfb6652d719e96bd00da"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000668.json",
+      "bytes": 214953,
+      "sha256": "070a8ffd2e06bf206b195c74bf27d02a257c03bda2cc3c0a909021503698faf0"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000669.json",
+      "bytes": 214993,
+      "sha256": "b9f3a6062dad773f646f0be01c58f9409e53589670fef3d87f53809afa47d39b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000670.json",
+      "bytes": 215033,
+      "sha256": "6aa502439ff5e8567de2efd9ef80db92de4605e455e901a8e9913f746fd32aa6"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000671.json",
+      "bytes": 214951,
+      "sha256": "31a7082a425695e5ab704a612fd4b683a60547055d6dead435d82a42020c68f5"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000672.json",
+      "bytes": 214938,
+      "sha256": "cea42217af75660eb93e596b8cf9be8d77029cb01e98e2d9d6f1fea216143a04"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000673.json",
+      "bytes": 214963,
+      "sha256": "fb0ab48d51e0506203cefd4d69cd18ac99c52b06c607a757d79c69e58742feae"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000674.json",
+      "bytes": 214950,
+      "sha256": "a36f8e805e7ccc594b64b583049de45856d9f21c8ef06895e992a6c31dd376f6"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000675.json",
+      "bytes": 215046,
+      "sha256": "1a19a41cb9c1875ce3b39db9db5aba765c91f96d477be95826f1b4a697045a30"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000676.json",
+      "bytes": 215059,
+      "sha256": "9fd09d0735fbeceb2ed45a66a65e94ccefd1d3d5e0bad2d80bfe8172347a2a8f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000677.json",
+      "bytes": 214997,
+      "sha256": "e569e8a8de445ac4cb3cb2b913af17ee0c81be1c1964f940c07d322ef1e2cddb"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000678.json",
+      "bytes": 214999,
+      "sha256": "c8001bb2cc01b979a176adf05564203d608eadb52ae66984f6fb95c97bf84e80"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000679.json",
+      "bytes": 214955,
+      "sha256": "999f1917dfdc6cd220bb8afaae746ff1c1b8f48d80d1f1e0ae962ec1797b82b9"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000680.json",
+      "bytes": 214981,
+      "sha256": "a175914999ba1c9f5de43e5572ff363410a57074dc98892a29d21d095bc9cf7b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000681.json",
+      "bytes": 215093,
+      "sha256": "52cf3af25bfd26eaddb899f0120e81c4be5cbce0313c9e75cef41939cdedbe4a"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/episodes_000682.json",
+      "bytes": 215018,
+      "sha256": "e97f2f0553f849f29de084333570c8b167fa14d921a3ad446ad91e1d0b72c53d"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/final_test.json",
+      "bytes": 5413515,
+      "sha256": "958ba42af418f9d163ba4813ef6685d7fbd770a36479a63734364c44ef014165"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/metrics.jsonl",
+      "bytes": 1545894,
+      "sha256": "2c3e855615462035cef3c72fe6237c167dff469fd2d039b207f4be9e90ed9265"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/provenance.json",
+      "bytes": 4573,
+      "sha256": "4e81d5596e423c255d108c1022fe0b2321849e6a7f9aff745e6d94406031121c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/seed_manifest.json",
+      "bytes": 172,
+      "sha256": "767383554f493b3fb7d2d62b75595cd0f044feedb897674dafba9886c3adc5fd"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/status.json",
+      "bytes": 270,
+      "sha256": "3c0e79984f8bf81bb4410023be0f3c7cd4c296a851c8c0efae7452ac92227e34"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/validation_000040.json",
+      "bytes": 461914,
+      "sha256": "2a182514b67b5b323e5812d565e8d4f45913bb30367784252be75b8310abf8bf"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/validation_000080.json",
+      "bytes": 461865,
+      "sha256": "8268041d709fd746c4234c9978ca6a353f5676fe32b426fc6214903b8b43088f"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/validation_000120.json",
+      "bytes": 461883,
+      "sha256": "67e5f55e99f6becbebe75812bad85e8f5cc8b28f803201de83f0d0440eb24138"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/validation_000160.json",
+      "bytes": 461827,
+      "sha256": "83b3e6b389df0e7f514bbd88eefaba440b9c74c6bed9da4d25c6612214c5da18"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/validation_000200.json",
+      "bytes": 461981,
+      "sha256": "3cd01d2b405719cda491c572869fad4fccd89592ccd61f2ac76c82a7972dbf02"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/validation_000240.json",
+      "bytes": 462145,
+      "sha256": "1aa6afad510674b7dd58be7b5c94b620b772eb05a6285b8876587c2e4eb08227"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/validation_000280.json",
+      "bytes": 461836,
+      "sha256": "0ff50039705bf2b6cafe38c89b44475b173978c956eed6f2315c0275d059de45"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/validation_000320.json",
+      "bytes": 461929,
+      "sha256": "9813cd2849bc3b7422f001092bd0c4a9d80c138e25eadaeb3dcbb40d9647ce24"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/validation_000360.json",
+      "bytes": 461859,
+      "sha256": "5e1b0115194daa4d8e7624e7e6cc3363c733294bac51ed803fac1276104fa7df"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/validation_000400.json",
+      "bytes": 461912,
+      "sha256": "793a02005a62cec5674a2d8ec761c9a9cc1a1414896dccbee7855ac0c0d82275"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/validation_000440.json",
+      "bytes": 461846,
+      "sha256": "746339dbd99d3a021e1d65203cf3acff51df63d83c8877de6720d5d7a460533b"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/validation_000480.json",
+      "bytes": 461826,
+      "sha256": "c0e51c0729e8c6be78d07c28375dcfc6dd4a3648827c5cc1783542aff03b731d"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/validation_000520.json",
+      "bytes": 461861,
+      "sha256": "7dacaf743fad9c5f59de0fb89d2df17b8d0babc6c1b4fadbf33474e27a7f293c"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/validation_000560.json",
+      "bytes": 461836,
+      "sha256": "482c59ceff18e24aa01a511d0e6daa2f8639717b2085d10055a784e2815a9bac"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/validation_000600.json",
+      "bytes": 461853,
+      "sha256": "bad1b983a2003154bdf360779a73cd0b1eecf10b5aca7d030ef3eeb173fd69d0"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/validation_000640.json",
+      "bytes": 461883,
+      "sha256": "e6207d3a09ba9bc3727070973cf4b81f1d6613befe8659cbd2f9d790fe20e39e"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/validation_000680.json",
+      "bytes": 461910,
+      "sha256": "6f8d5a096ac1df4056f2888aa0b5f9119b172e203a43bb37baf778146e041dc5"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train/validation_000682.json",
+      "bytes": 462015,
+      "sha256": "95507a3c12c6df065ca4a4e34a1329828500a02087033d649b0b8bb748bee5df"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train.config.json",
+      "bytes": 900,
+      "sha256": "942eb8d0c028754ccd1305f6bb6e18857e6d83b3e052a2e50e865e39a2012263"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/train.console.log",
+      "bytes": 1545894,
+      "sha256": "2c3e855615462035cef3c72fe6237c167dff469fd2d039b207f4be9e90ed9265"
+    },
+    {
+      "path": "runs/q4_baseline_8gpu_1h_20260913/training_schedule.json",
+      "bytes": 264,
+      "sha256": "b353e85446f847e062de90d2f62665e9c1b62d429244844dff5b6ea424b6b896"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

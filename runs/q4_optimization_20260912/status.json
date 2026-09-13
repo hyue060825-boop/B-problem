@@ -1,0 +1,75 @@
+{
+  "phase": "model_and_certificate_audit",
+  "status": "IMPLEMENTED",
+  "head": "c4876b3ffdd2d2dcd172c2547203cc4fa5c00192",
+  "branch": "hy_branch/b45c0d2",
+  "gpu": {
+    "model": "NVIDIA GeForce RTX 4090",
+    "count": 8,
+    "free_mib": 24209
+  },
+  "torch_cuda": "TESTED",
+  "torch_cuda_error": "libcusparse.so.12 undefined symbol __nvJitLinkComplete_12_4",
+  "user_changes_preserved": true,
+  "completed": [
+    "baseline_source_audit",
+    "episode_objective_scaling",
+    "selected_belief_probability_diagnostic"
+  ],
+  "not_run": [
+    "GPU training",
+    "certificate compression",
+    "3000 episode final evaluation"
+  ],
+  "next": "run bounded GPU training smoke and certificate tooling",
+  "torch_version": "2.5.1+cu124",
+  "cuda_smoke": "PASS",
+  "tests": {
+    "tests/test_q4_repair.py": "92 passed"
+  },
+  "gpu_training_smoke": "TESTED",
+  "smoke_checkpoint": "runs/q4_optimization_20260912/gpu_smoke3/latest.pt",
+  "smoke_completion": 1.0,
+  "smoke_selection_pass": false,
+  "certificate_verifier": "IMPLEMENTED",
+  "certificate_compression": "NOT_RUN",
+  "layout31": "CANDIDATE",
+  "gpu_falsification": "NO_COUNTEREXAMPLE_FOUND",
+  "falsification_samples": 157137,
+  "exact_verifier": "UNKNOWN",
+  "falsification_runs": [
+    {
+      "status": "NO_COUNTEREXAMPLE_FOUND",
+      "samples": 784490,
+      "requested_samples": 1000000,
+      "min_near_station_count": 7,
+      "device": "cuda:0",
+      "seed": 29
+    },
+    {
+      "status": "NO_COUNTEREXAMPLE_FOUND",
+      "samples": 1569910,
+      "requested_samples": 2000000,
+      "min_near_station_count": 7,
+      "device": "cuda:0",
+      "seed": 17
+    },
+    {
+      "status": "NO_COUNTEREXAMPLE_FOUND",
+      "samples": 785090,
+      "requested_samples": 1000000,
+      "min_near_station_count": 7,
+      "device": "cuda:0",
+      "seed": 41
+    },
+    {
+      "status": "NO_COUNTEREXAMPLE_FOUND",
+      "samples": 786053,
+      "requested_samples": 1000000,
+      "min_near_station_count": 7,
+      "device": "cuda:0",
+      "seed": 3
+    }
+  ],
+  "falsification_total_samples": 3925543
+}

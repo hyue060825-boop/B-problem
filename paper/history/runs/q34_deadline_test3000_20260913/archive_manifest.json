@@ -1,0 +1,108 @@
+{
+  "archive_sha256": "48dfc8e9f3f498dab70d5e14bcc2fcc3725c54cd4bc03f767ffe1737f05791e7",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 3425910,
+      "sha256": "48dfc8e9f3f498dab70d5e14bcc2fcc3725c54cd4bc03f767ffe1737f05791e7"
+    }
+  ],
+  "members": [
+    {
+      "path": "runs/q34_deadline_test3000_20260913/manifest.json",
+      "bytes": 116371,
+      "sha256": "67bc8168f79225766fe8aacb72d55e53b349a72fbf0126cbe0e85f5f6b6557c1"
+    },
+    {
+      "path": "runs/q34_deadline_test3000_20260913/paired_by_N.json",
+      "bytes": 1714,
+      "sha256": "b231c65df16ad7d37cb4520077f58d1031a609712b8009a7137ddf9d786e4be9"
+    },
+    {
+      "path": "runs/q34_deadline_test3000_20260913/per_source_distribution.pdf",
+      "bytes": 19110,
+      "sha256": "11a7673b4003a952ae57102fb449c5cdee67b530db0327dc8dcb8840db3060ef"
+    },
+    {
+      "path": "runs/q34_deadline_test3000_20260913/per_source_distribution.png",
+      "bytes": 101667,
+      "sha256": "9d1cc488094027f2f88635a0191a2b96718323d113c829fe4b105b745a8522a6"
+    },
+    {
+      "path": "runs/q34_deadline_test3000_20260913/q3_baseline_samples.json",
+      "bytes": 2794002,
+      "sha256": "2d7043401654270917c772802eb85d43de1b9b92713a7c3e5e609c25ad83fd8c"
+    },
+    {
+      "path": "runs/q34_deadline_test3000_20260913/q3_baseline_strata.json",
+      "bytes": 10715,
+      "sha256": "b0cfa379987f0f4438cbee2a42171848639c5207099b7c3190806f2a7e9cf3a3"
+    },
+    {
+      "path": "runs/q34_deadline_test3000_20260913/q3_candidate_samples.json",
+      "bytes": 2793927,
+      "sha256": "3e69273808252978fbe0fa432cb6579d0a73830647f13f3e9c2af79efefba8e2"
+    },
+    {
+      "path": "runs/q34_deadline_test3000_20260913/q3_candidate_strata.json",
+      "bytes": 10668,
+      "sha256": "1c49e544c3d295e52b21519833fbd2b34383e967cdcd5cb189390a2b2bb94beb"
+    },
+    {
+      "path": "runs/q34_deadline_test3000_20260913/q4_baseline_samples.json",
+      "bytes": 2794627,
+      "sha256": "0dfb448dd6a5ec6e2a7659f8383b2586bea1ea70f373f67f6daf92269c46c96e"
+    },
+    {
+      "path": "runs/q34_deadline_test3000_20260913/q4_baseline_strata.json",
+      "bytes": 10695,
+      "sha256": "c058e67f062113616f309c0fe40881af5c36d544e5e6f53d8d1ba949552c9aa9"
+    },
+    {
+      "path": "runs/q34_deadline_test3000_20260913/q4_best_samples.json",
+      "bytes": 2794102,
+      "sha256": "3029838822251c7ad69f92583024e9580242fed07eb8b368bfa7ed24c3e0a9bf"
+    },
+    {
+      "path": "runs/q34_deadline_test3000_20260913/q4_best_strata.json",
+      "bytes": 10701,
+      "sha256": "5376a5f2f47993e4fcd16c42d2efb57dcfa708d853848c0de253cc61ef2547d5"
+    },
+    {
+      "path": "runs/q34_deadline_test3000_20260913/report.md",
+      "bytes": 2677,
+      "sha256": "1ef5ea6f14a1c871334af8e6220009ba1fa8b47fcfae0a48af97f18ca5263e11"
+    },
+    {
+      "path": "runs/q34_deadline_test3000_20260913/runtime_verification.json",
+      "bytes": 411,
+      "sha256": "a82bdf553d7ee0c129abac08cfcba5b0fef7b766bb33768110313fd80ba5dc60"
+    },
+    {
+      "path": "runs/q34_deadline_test3000_20260913/samples.csv",
+      "bytes": 801251,
+      "sha256": "b06c315e9a8de0327cdea21261a044439f5b24b9cf33becb5d0a74aa477a4a00"
+    },
+    {
+      "path": "runs/q34_deadline_test3000_20260913/samples.jsonl",
+      "bytes": 10231650,
+      "sha256": "eeec2f905578b08be829d539d874d4937340508cb865f8b06ae1475e655997de"
+    },
+    {
+      "path": "runs/q34_deadline_test3000_20260913/status.json",
+      "bytes": 99,
+      "sha256": "f7dedcc8bdd6f12ee0b1d0ff0238cd8198218c261183c895417b5df395d08066"
+    },
+    {
+      "path": "runs/q34_deadline_test3000_20260913/summary.json",
+      "bytes": 4140,
+      "sha256": "cf94eb0f2bced57141a7a8cbd801863c07337559aa0ef90476af12748ff7388b"
+    },
+    {
+      "path": "runs/q34_deadline_test3000_20260913/verification.json",
+      "bytes": 188,
+      "sha256": "f331a0107c3978f5312f511b5228523fa62f61966e70374e2ac6b395ec5e1052"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

@@ -1,0 +1,8 @@
+{
+  "stage": "COMPLETE",
+  "elapsed_s": 49.798618097789586,
+  "budget_consumed_s": 41.029817377217114,
+  "updates": 6,
+  "checkpoint": "runs/q34_structural_20260912/q4/continue_budget_smoke/latest.pt",
+  "best_selected": false
+}

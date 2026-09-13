@@ -1,0 +1,173 @@
+{
+  "archive_sha256": "bd7459cc93831411f3205dfcda5c34f5f4c514420485d0bea410288932716a54",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 29494,
+      "sha256": "bd7459cc93831411f3205dfcda5c34f5f4c514420485d0bea410288932716a54"
+    }
+  ],
+  "members": [
+    {
+      "path": "runs/q4_optimization_20260912/audit.md",
+      "bytes": 2095,
+      "sha256": "a013a4614f0f29767e427594bd1acf9c9347d3ab988056072906eb9dcd8bbc76"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/falsify31.json",
+      "bytes": 146,
+      "sha256": "1c0cafd8fddf781c84d9cb2893d7e58b0867e9c0d3ce2cfb7fc4db0395a37997"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/falsify31_corrected_smoke.json",
+      "bytes": 501,
+      "sha256": "e945f37a9ac8887a03ab4b1c9086e568036ff146dd12bdd304b6d6817a904c22"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/falsify31_seed17.json",
+      "bytes": 149,
+      "sha256": "d5e3b032185348413a7dbbad132725c8e3b911d8dc4360a04e01c97071ccff8f"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/falsify31_seed29.json",
+      "bytes": 148,
+      "sha256": "a19436213dcb8652dfb7b26e16bb7204e45c9e31329791d4770f4911d3a12c7d"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/falsify31_seed3.json",
+      "bytes": 147,
+      "sha256": "3923cc628b4c0040c747a5ea7d93efb34bf89cc25de3aeb36fce711fc91e1d7b"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/falsify31_seed41.json",
+      "bytes": 148,
+      "sha256": "143f721d67ce280b4e0891f2521055e93163462ddebe821423b99f28699ed3f5"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/gpu_smoke/baseline_validation.json",
+      "bytes": 3604,
+      "sha256": "53d5c365fd44f1807ea5bbb5b2b9451c210e7e1c7b775c4ad337cda375d1cfcd"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/gpu_smoke/config.json",
+      "bytes": 654,
+      "sha256": "ec67fee958dd58b52a0c0ebf162bd8deb42f40c4e6d5ad135203d884a356e2cc"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/gpu_smoke/metrics.jsonl",
+      "bytes": 561,
+      "sha256": "091b6f01411c817ce77599900a6f3ab264202a64424a7e7b7369d50f8570de42"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/gpu_smoke/provenance.json",
+      "bytes": 7903,
+      "sha256": "a1667e46bc89c6fc8bd47e54a5485f104cc53e52b49fa24892f0425d9035f21b"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/gpu_smoke/seed_manifest.json",
+      "bytes": 172,
+      "sha256": "4a437d9752de25271c1e635a60d4df35276fbaf1c70e7386a7214b6d2daa450b"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/gpu_smoke/status.json",
+      "bytes": 141,
+      "sha256": "a44a389b159d5b2e63c96a10dd7b6313fb1f9a4228d0bfdadb9a1c91f73fbb5e"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/gpu_smoke2/baseline_validation.json",
+      "bytes": 1783,
+      "sha256": "48aba2f6289988672aba3bcb7fb9ab6fc64c7585420775171a3a24bcf56e309e"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/gpu_smoke2/config.json",
+      "bytes": 679,
+      "sha256": "66bf362adc92bb2dd73f88bed03004f4324501ca65c5b21b27a5a5e57454c12b"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/gpu_smoke2/metrics.jsonl",
+      "bytes": 560,
+      "sha256": "c47d40f5a9883154d0f250f25aff4c72d1e657c1cc845d0ec9cc8164fb0864c6"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/gpu_smoke2/provenance.json",
+      "bytes": 7903,
+      "sha256": "a1667e46bc89c6fc8bd47e54a5485f104cc53e52b49fa24892f0425d9035f21b"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/gpu_smoke2/seed_manifest.json",
+      "bytes": 172,
+      "sha256": "9ebd8b038a8e2b5a4c7da63a8b941d1052e9176bebce5f3c552d8f78e98ed4de"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/gpu_smoke2/status.json",
+      "bytes": 140,
+      "sha256": "dbd8976a367b29096e6d72b10107708e8e8c6280e78dc7d5412ec3fa27e0e4d2"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/gpu_smoke3/baseline_validation.json",
+      "bytes": 1784,
+      "sha256": "59e820f95498a64a1033323b3cd2ef2204f0dd1fa58f1d4d89c6f73c16a6f92f"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/gpu_smoke3/config.json",
+      "bytes": 698,
+      "sha256": "1b217f559169400167446bef7f5ea89ccce0196d338c1ce138d343ba3b07d356"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/gpu_smoke3/episodes_000001.json",
+      "bytes": 1797,
+      "sha256": "6953d63b72861d48a6d21b812139d2c7db964796e78c6c52ffca9c4fcc067e0d"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/gpu_smoke3/metrics.jsonl",
+      "bytes": 2257,
+      "sha256": "98aa9e95155f0cf5f3b39bb61118746a3d73c93ae838a636eb819ca9d6035078"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/gpu_smoke3/provenance.json",
+      "bytes": 7903,
+      "sha256": "a1667e46bc89c6fc8bd47e54a5485f104cc53e52b49fa24892f0425d9035f21b"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/gpu_smoke3/seed_manifest.json",
+      "bytes": 172,
+      "sha256": "9ebd8b038a8e2b5a4c7da63a8b941d1052e9176bebce5f3c552d8f78e98ed4de"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/gpu_smoke3/status.json",
+      "bytes": 213,
+      "sha256": "d08000e3df0e81b89ed581c7dc1fd934dd1bbfe29a5a17a97e12067140d7699f"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/gpu_smoke3/test_000001.json",
+      "bytes": 4035,
+      "sha256": "3daf278dff7fef2cae7d973c75c8f3a18ebf4787a127c47b5aca1062eda82d99"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/gpu_smoke3/test_selection.json",
+      "bytes": 165,
+      "sha256": "3e01e6537ecfcaead9baab82386d814645c57141e7657d56f143aecb8e3ecb35"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/gpu_smoke3/validation_000001.json",
+      "bytes": 3997,
+      "sha256": "889be9e42f0b7c5c535757a05e7bb0cab8b6b8b36d9ff02c5a158a3b04ab4fc4"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/layout31.json",
+      "bytes": 4289,
+      "sha256": "f8958d801ad450fd74a6336e2630f7cc1797471a445e81803de8df311209c582"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/layout31_proof.json",
+      "bytes": 352736,
+      "sha256": "7d83d0ad068b852281897368c35d34f2bae6142b8ca8208e62d8786e3b29e32a"
+    },
+    {
+      "path": "runs/q4_optimization_20260912/status.json",
+      "bytes": 2066,
+      "sha256": "874d4a7bce3dcfe2ea6b8c2678e22512c0342101c1eb65c5edf1e47c283f2725"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

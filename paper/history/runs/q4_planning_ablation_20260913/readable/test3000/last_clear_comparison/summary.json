@@ -1,0 +1,26 @@
+{
+  "episodes": 3000,
+  "source": "/data5/hy/B-problem/runs/q4_planning_ablation_20260913/test3000/samples.jsonl",
+  "source_sha256": "53f6fcbbd5c31721fbc43fc5f9c5842a186d5be1b04c7b50b643d6ba6ed04d37",
+  "metric": "last successful clear timestamp in virtual seconds; post-clear absence certification excluded",
+  "order": "ascending scenario seed, indices 0..2999; x axis shown 0..3000",
+  "baseline_mean_s": 8542.776701622668,
+  "c_mean_s": 8504.310995668333,
+  "mean_delta_s": -38.46570595433335,
+  "reduction_percent": 0.4502717008513981,
+  "ci95_mean_delta_s": [
+    -77.4003768538917,
+    -1.7843453567834258
+  ],
+  "earlier": 1035,
+  "tied": 1130,
+  "later": 835,
+  "baseline_p95_s": 12836.706966449998,
+  "c_p95_s": 12812.408185749995,
+  "bootstrap": {
+    "seed": 20260913,
+    "replicates": 5000,
+    "paired": true
+  },
+  "matched_scenario_hashes": true
+}

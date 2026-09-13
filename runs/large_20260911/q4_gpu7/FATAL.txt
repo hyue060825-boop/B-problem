@@ -1,8 +1,0 @@
-RuntimeError: teacher baseline incomplete; stop before training
-Traceback (most recent call last):
-  File "/data5/hy/B-problem/scripts/start_training.py", line 10, in main
-    run_training(c)
-  File "/data5/hy/B-problem/solution/rl/training.py", line 191, in run_training
-    if summary['completion_rate']<1:raise RuntimeError('teacher baseline incomplete; stop before training')
-                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-RuntimeError: teacher baseline incomplete; stop before training

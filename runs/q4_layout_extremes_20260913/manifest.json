@@ -1,0 +1,36 @@
+{
+  "checkpoint": "/data5/hy/B-problem/runs/q4_legacy_deadline_20260913/best.pt",
+  "checkpoint_sha256": "e8a525f78d176d9073372394b324bd585f4445fbf9cd1515141c483f38d5bd90",
+  "counts": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "modes": [
+    "near_start",
+    "compact",
+    "area",
+    "edge_outward",
+    "edge_inward",
+    "edge_tangent",
+    "two_clusters",
+    "thin_line"
+  ],
+  "per_mode": 64,
+  "refinement_rounds": 4,
+  "mutations_per_extreme": 24,
+  "fixed_controls": {
+    "channels": "1..N",
+    "directional_count": "floor(N/2)",
+    "radius_m": 1000,
+    "error_deg": 0
+  },
+  "source_sha256": "b2a57b67f3c378d7c6a038c8f8ed121706bee34e3c91beb8c47b0db6c5f18db9",
+  "scope": "Constructed/adaptively selected extrema, not random-test averages or proven global bounds",
+  "selection_metric": "total virtual time, completed cases only; any failures separately retained",
+  "clock_feature": "fixed 1200 for search; selected cases replayed with live feature",
+  "workers": 8
+}

@@ -1,0 +1,500 @@
+{
+  "baseline": {
+    "episodes": 3000,
+    "completed": 3000,
+    "total_sources": 39086,
+    "cleared_sources": 39086,
+    "mean_s": 9697.796069506,
+    "median_s": 9703.600128999999,
+    "p95_s": 12921.426920849994,
+    "mean_per_source_s": 768.1595712431266,
+    "p95_per_source_s": 1070.5973324814393,
+    "mean_path_length_m": 36246.00701482551,
+    "mean_measures": 377.362,
+    "mean_clear_failures": 49.624
+  },
+  "candidate": {
+    "episodes": 3000,
+    "completed": 3000,
+    "total_sources": 39086,
+    "cleared_sources": 39086,
+    "mean_s": 9685.100352233334,
+    "median_s": 9677.9379155,
+    "p95_s": 12884.487603899994,
+    "mean_per_source_s": 767.2524390954204,
+    "p95_per_source_s": 1072.9602898621206,
+    "mean_path_length_m": 36127.24842912444,
+    "mean_measures": 379.30133333333333,
+    "mean_clear_failures": 49.446
+  },
+  "paired": {
+    "mean_delta_s": -12.69571727266666,
+    "ci95_delta_s": [
+      -31.85319828677504,
+      6.461763741441722
+    ],
+    "improvement_pct": 0.1309134279755315,
+    "mean_delta_per_source_s": -0.9071321477063834,
+    "ci95_per_source_s": [
+      -2.304436645535357,
+      0.4901723501225903
+    ],
+    "improvement_per_source_pct": 0.1180916285711776,
+    "faster": 1349,
+    "tied": 356,
+    "slower": 1295
+  },
+  "by_N": {
+    "10": {
+      "baseline": {
+        "episodes": 399,
+        "completed": 399,
+        "total_sources": 3990,
+        "cleared_sources": 3990,
+        "mean_s": 9951.38852053634,
+        "median_s": 9712.597109,
+        "p95_s": 12258.621560599995,
+        "mean_per_source_s": 995.1388520536341,
+        "p95_per_source_s": 1225.8621560599995,
+        "mean_path_length_m": 35896.12806642193,
+        "mean_measures": 445.0601503759398,
+        "mean_clear_failures": 27.6265664160401
+      },
+      "candidate": {
+        "episodes": 399,
+        "completed": 399,
+        "total_sources": 3990,
+        "cleared_sources": 3990,
+        "mean_s": 9954.172048223058,
+        "median_s": 9694.799109,
+        "p95_s": 12288.793566899998,
+        "mean_per_source_s": 995.4172048223056,
+        "p95_per_source_s": 1228.8793566899997,
+        "mean_path_length_m": 35834.55698472602,
+        "mean_measures": 447.77694235588973,
+        "mean_clear_failures": 27.25814536340852
+      },
+      "paired": {
+        "mean_delta_s": 2.7835276867167376,
+        "ci95_delta_s": [
+          -34.29220960817736,
+          39.859264981610835
+        ],
+        "improvement_pct": -0.027971249248006612,
+        "mean_delta_per_source_s": 0.2783527686716739,
+        "ci95_per_source_s": [
+          -3.429220960817736,
+          3.9859264981610836
+        ],
+        "improvement_per_source_pct": -0.027971249248006626,
+        "faster": 170,
+        "tied": 54,
+        "slower": 175
+      }
+    },
+    "11": {
+      "baseline": {
+        "episodes": 437,
+        "completed": 437,
+        "total_sources": 4807,
+        "cleared_sources": 4807,
+        "mean_s": 10126.432310750572,
+        "median_s": 9772.325069,
+        "p95_s": 12614.1732368,
+        "mean_per_source_s": 920.5847555227792,
+        "p95_per_source_s": 1146.7430215272725,
+        "mean_path_length_m": 36944.449886846625,
+        "mean_measures": 432.42105263157896,
+        "mean_clear_failures": 39.764302059496565
+      },
+      "candidate": {
+        "episodes": 437,
+        "completed": 437,
+        "total_sources": 4807,
+        "cleared_sources": 4807,
+        "mean_s": 10102.941713274598,
+        "median_s": 9724.794955,
+        "p95_s": 12595.944757399999,
+        "mean_per_source_s": 918.4492466613272,
+        "p95_per_source_s": 1145.0858870363636,
+        "mean_path_length_m": 36781.493467660606,
+        "mean_measures": 434.29977116704805,
+        "mean_clear_failures": 39.05491990846682
+      },
+      "paired": {
+        "mean_delta_s": -23.49059747597247,
+        "ci95_delta_s": [
+          -56.76598712298227,
+          9.784792171037324
+        ],
+        "improvement_pct": 0.23197308543734638,
+        "mean_delta_per_source_s": -2.1355088614520428,
+        "ci95_per_source_s": [
+          -5.160544283907479,
+          0.8895265610033936
+        ],
+        "improvement_per_source_pct": 0.23197308543734638,
+        "faster": 207,
+        "tied": 65,
+        "slower": 165
+      }
+    },
+    "12": {
+      "baseline": {
+        "episodes": 424,
+        "completed": 424,
+        "total_sources": 5088,
+        "cleared_sources": 5088,
+        "mean_s": 10069.515394077831,
+        "median_s": 9791.134883499999,
+        "p95_s": 13095.115397899992,
+        "mean_per_source_s": 839.1262828398192,
+        "p95_per_source_s": 1091.259616491666,
+        "mean_path_length_m": 37344.64064944276,
+        "mean_measures": 409.34669811320754,
+        "mean_clear_failures": 38.573113207547166
+      },
+      "candidate": {
+        "episodes": 424,
+        "completed": 424,
+        "total_sources": 5088,
+        "cleared_sources": 5088,
+        "mean_s": 10053.330931863207,
+        "median_s": 9802.5908275,
+        "p95_s": 12897.541316349998,
+        "mean_per_source_s": 837.7775776552671,
+        "p95_per_source_s": 1074.7951096958332,
+        "mean_path_length_m": 37243.02258350286,
+        "mean_measures": 411.313679245283,
+        "mean_clear_failures": 36.02122641509434
+      },
+      "paired": {
+        "mean_delta_s": -16.18446221462259,
+        "ci95_delta_s": [
+          -58.18360832939285,
+          25.814683900147664
+        ],
+        "improvement_pct": 0.16072731984839247,
+        "mean_delta_per_source_s": -1.3487051845518827,
+        "ci95_per_source_s": [
+          -4.848634027449404,
+          2.1512236583456383
+        ],
+        "improvement_per_source_pct": 0.16072731984839247,
+        "faster": 181,
+        "tied": 46,
+        "slower": 197
+      }
+    },
+    "13": {
+      "baseline": {
+        "episodes": 425,
+        "completed": 425,
+        "total_sources": 5525,
+        "cleared_sources": 5525,
+        "mean_s": 10131.803748569411,
+        "median_s": 9811.375474,
+        "p95_s": 12990.2693066,
+        "mean_per_source_s": 779.369519120724,
+        "p95_per_source_s": 999.2514851230769,
+        "mean_path_length_m": 38084.0540387899,
+        "mean_measures": 392.19529411764705,
+        "mean_clear_failures": 42.64941176470588
+      },
+      "candidate": {
+        "episodes": 425,
+        "completed": 425,
+        "total_sources": 5525,
+        "cleared_sources": 5525,
+        "mean_s": 10126.750502851768,
+        "median_s": 9779.806706,
+        "p95_s": 12883.724342999994,
+        "mean_per_source_s": 778.9808079116742,
+        "p95_per_source_s": 991.0557186923073,
+        "mean_path_length_m": 38013.117217532854,
+        "mean_measures": 394.2988235294118,
+        "mean_clear_failures": 41.52
+      },
+      "paired": {
+        "mean_delta_s": -5.053245717647069,
+        "ci95_delta_s": [
+          -50.893773899873565,
+          40.78728246457942
+        ],
+        "improvement_pct": 0.049875084861968205,
+        "mean_delta_per_source_s": -0.3887112090497745,
+        "ci95_per_source_s": [
+          -3.914905684605659,
+          3.1374832665061096
+        ],
+        "improvement_per_source_pct": 0.04987508486196819,
+        "faster": 186,
+        "tied": 53,
+        "slower": 186
+      }
+    },
+    "14": {
+      "baseline": {
+        "episodes": 471,
+        "completed": 471,
+        "total_sources": 6594,
+        "cleared_sources": 6594,
+        "mean_s": 10152.920060957536,
+        "median_s": 9843.043356,
+        "p95_s": 13427.0694515,
+        "mean_per_source_s": 725.2085757826812,
+        "p95_per_source_s": 959.0763893928572,
+        "mean_path_length_m": 38745.70433795044,
+        "mean_measures": 369.3651804670913,
+        "mean_clear_failures": 49.64331210191083
+      },
+      "candidate": {
+        "episodes": 471,
+        "completed": 471,
+        "total_sources": 6594,
+        "cleared_sources": 6594,
+        "mean_s": 10190.43131087686,
+        "median_s": 9859.259006,
+        "p95_s": 13488.806596999999,
+        "mean_per_source_s": 727.8879507769184,
+        "p95_per_source_s": 963.4861854999999,
+        "mean_path_length_m": 38784.83171311941,
+        "mean_measures": 372.4331210191083,
+        "mean_clear_failures": 53.43312101910828
+      },
+      "paired": {
+        "mean_delta_s": 37.51124991932056,
+        "ci95_delta_s": [
+          -5.671197087535141,
+          80.69369692617627
+        ],
+        "improvement_pct": -0.36946267373430713,
+        "mean_delta_per_source_s": 2.6793749942371834,
+        "ci95_per_source_s": [
+          -0.4050855062525094,
+          5.763835494726877
+        ],
+        "improvement_per_source_pct": -0.3694626737343072,
+        "faster": 200,
+        "tied": 50,
+        "slower": 221
+      }
+    },
+    "15": {
+      "baseline": {
+        "episodes": 422,
+        "completed": 422,
+        "total_sources": 6330,
+        "cleared_sources": 6330,
+        "mean_s": 10110.082377578197,
+        "median_s": 9789.1292825,
+        "p95_s": 13154.2314794,
+        "mean_per_source_s": 674.0054918385466,
+        "p95_per_source_s": 876.9487652933334,
+        "mean_path_length_m": 39289.83131731213,
+        "mean_measures": 343.7464454976303,
+        "mean_clear_failures": 48.59478672985782
+      },
+      "candidate": {
+        "episodes": 422,
+        "completed": 422,
+        "total_sources": 6330,
+        "cleared_sources": 6330,
+        "mean_s": 10067.554839739338,
+        "median_s": 9722.1150545,
+        "p95_s": 13084.829300399999,
+        "mean_per_source_s": 671.1703226492891,
+        "p95_per_source_s": 872.32195336,
+        "mean_path_length_m": 39051.186521426935,
+        "mean_measures": 346.0118483412322,
+        "mean_clear_failures": 45.81042654028436
+      },
+      "paired": {
+        "mean_delta_s": -42.52753783886253,
+        "ci95_delta_s": [
+          -87.58705678872838,
+          2.5319811110033186
+        ],
+        "improvement_pct": 0.42064482019630894,
+        "mean_delta_per_source_s": -2.8351691892575026,
+        "ci95_per_source_s": [
+          -5.8391371192485595,
+          0.16879874073355428
+        ],
+        "improvement_per_source_pct": 0.420644820196309,
+        "faster": 214,
+        "tied": 43,
+        "slower": 165
+      }
+    },
+    "16": {
+      "baseline": {
+        "episodes": 422,
+        "completed": 422,
+        "total_sources": 6752,
+        "cleared_sources": 6752,
+        "mean_s": 7283.3223619573455,
+        "median_s": 7313.3300755,
+        "p95_s": 12579.2162104,
+        "mean_per_source_s": 455.2076476223341,
+        "p95_per_source_s": 786.20101315,
+        "mean_path_length_m": 27064.822712067275,
+        "mean_measures": 251.80331753554503,
+        "mean_clear_failures": 99.76777251184834
+      },
+      "candidate": {
+        "episodes": 422,
+        "completed": 422,
+        "total_sources": 6752,
+        "cleared_sources": 6752,
+        "mean_s": 7236.773251523697,
+        "median_s": 7229.061475,
+        "p95_s": 12330.958741299999,
+        "mean_per_source_s": 452.29832822023104,
+        "p95_per_source_s": 770.6849213312499,
+        "mean_path_length_m": 26816.04635858261,
+        "mean_measures": 251.29146919431278,
+        "mean_clear_failures": 101.84123222748815
+      },
+      "paired": {
+        "mean_delta_s": -46.549110433649275,
+        "ci95_delta_s": [
+          -135.18099019561384,
+          42.08276932831531
+        ],
+        "improvement_pct": 0.6391191838052807,
+        "mean_delta_per_source_s": -2.9093194021030797,
+        "ci95_per_source_s": [
+          -8.448811887225865,
+          2.6301730830197068
+        ],
+        "improvement_per_source_pct": 0.6391191838052807,
+        "faster": 191,
+        "tied": 45,
+        "slower": 186
+      }
+    }
+  },
+  "by_distribution": {
+    "area": {
+      "baseline": {
+        "episodes": 750,
+        "completed": 750,
+        "total_sources": 9820,
+        "cleared_sources": 9820,
+        "mean_s": 9824.027996268,
+        "median_s": 9841.8142205,
+        "p95_s": 12703.864838099998,
+        "mean_per_source_s": 775.3423115152244,
+        "p95_per_source_s": 1069.5366595363635,
+        "mean_path_length_m": 37576.313314038736,
+        "mean_measures": 357.3906666666667,
+        "mean_clear_failures": 42.692
+      },
+      "candidate": {
+        "episodes": 750,
+        "completed": 750,
+        "total_sources": 9820,
+        "cleared_sources": 9820,
+        "mean_s": 9794.513001938665,
+        "median_s": 9771.64406,
+        "p95_s": 12865.070911899998,
+        "mean_per_source_s": 773.078624310874,
+        "p95_per_source_s": 1069.5263186799998,
+        "mean_path_length_m": 37338.685012156086,
+        "mean_measures": 360.34133333333335,
+        "mean_clear_failures": 42.818666666666665
+      }
+    },
+    "cluster": {
+      "baseline": {
+        "episodes": 750,
+        "completed": 750,
+        "total_sources": 9800,
+        "cleared_sources": 9800,
+        "mean_s": 8438.320819017334,
+        "median_s": 8766.0559925,
+        "p95_s": 11335.61199935,
+        "mean_per_source_s": 674.3232598119356,
+        "p95_per_source_s": 971.7278924749999,
+        "mean_path_length_m": 33013.17076630972,
+        "mean_measures": 281.12533333333334,
+        "mean_clear_failures": 37.37733333333333
+      },
+      "candidate": {
+        "episodes": 750,
+        "completed": 750,
+        "total_sources": 9800,
+        "cleared_sources": 9800,
+        "mean_s": 8412.987573514667,
+        "median_s": 8744.289679,
+        "p95_s": 11244.4744723,
+        "mean_per_source_s": 672.293431268166,
+        "p95_per_source_s": 971.910168615,
+        "mean_path_length_m": 32882.344536437886,
+        "mean_measures": 282.49466666666666,
+        "mean_clear_failures": 34.946666666666665
+      }
+    },
+    "edge": {
+      "baseline": {
+        "episodes": 750,
+        "completed": 750,
+        "total_sources": 9704,
+        "cleared_sources": 9704,
+        "mean_s": 9868.203413724,
+        "median_s": 9741.491539499999,
+        "p95_s": 12260.9467387,
+        "mean_per_source_s": 784.3949621011764,
+        "p95_per_source_s": 1038.50619304,
+        "mean_path_length_m": 36081.75039929457,
+        "mean_measures": 418.548,
+        "mean_clear_failures": 35.13333333333333
+      },
+      "candidate": {
+        "episodes": 750,
+        "completed": 750,
+        "total_sources": 9704,
+        "cleared_sources": 9704,
+        "mean_s": 9868.128993110668,
+        "median_s": 9750.5590955,
+        "p95_s": 12337.7493846,
+        "mean_per_source_s": 784.8813164648159,
+        "p95_per_source_s": 1054.6061508349999,
+        "mean_path_length_m": 36074.05163145127,
+        "mean_measures": 418.7253333333333,
+        "mean_clear_failures": 35.264
+      }
+    },
+    "outward": {
+      "baseline": {
+        "episodes": 750,
+        "completed": 750,
+        "total_sources": 9762,
+        "cleared_sources": 9762,
+        "mean_s": 10660.632049014668,
+        "median_s": 10016.6531375,
+        "p95_s": 14429.456792349996,
+        "mean_per_source_s": 838.5777515441704,
+        "p95_per_source_s": 1190.6429853849997,
+        "mean_path_length_m": 38312.79357965901,
+        "mean_measures": 452.384,
+        "mean_clear_failures": 83.29333333333334
+      },
+      "candidate": {
+        "episodes": 750,
+        "completed": 750,
+        "total_sources": 9762,
+        "cleared_sources": 9762,
+        "mean_s": 10664.771840369334,
+        "median_s": 10058.430956,
+        "p95_s": 14272.3306062,
+        "mean_per_source_s": 838.7563843378251,
+        "p95_per_source_s": 1190.2750298958333,
+        "mean_path_length_m": 38213.91253645251,
+        "mean_measures": 455.644,
+        "mean_clear_failures": 84.75466666666667
+      }
+    }
+  }
+}

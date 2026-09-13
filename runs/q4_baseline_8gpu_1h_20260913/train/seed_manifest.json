@@ -1,0 +1,8 @@
+{
+  "train_start": 1810000000,
+  "train_max_count": 5120000,
+  "validation_start": 1820000000,
+  "validation_count": 512,
+  "test_start": 1830000000,
+  "test_count": 3000
+}

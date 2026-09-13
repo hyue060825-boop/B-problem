@@ -1,6 +1,0 @@
-{
-  "smoke_formal_current_source_match": true,
-  "selected_checkpoint_load_verified": true,
-  "checkpoint_stage": "DDP_PPO",
-  "checkpoint_update": -1
-}

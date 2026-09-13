@@ -1,0 +1,33 @@
+{
+  "archive_sha256": "6691c1040871a2aa3192adcb9e0456b9cba71c56c696b64e735dc5315cd7897d",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 348810,
+      "sha256": "6691c1040871a2aa3192adcb9e0456b9cba71c56c696b64e735dc5315cd7897d"
+    }
+  ],
+  "members": [
+    {
+      "path": "runs/q3_layout_extremes_20260913/manifest.json",
+      "bytes": 985,
+      "sha256": "365a44475f8ac5a438943a02802d6ed54fc88bdd7b90343d293387ff95db472c"
+    },
+    {
+      "path": "runs/q3_layout_extremes_20260913/samples.jsonl",
+      "bytes": 2189721,
+      "sha256": "2550f5e14750546b5d39fb513796885591f9fd1f74e94c7eb20d71f5141060da"
+    },
+    {
+      "path": "runs/q3_layout_extremes_20260913/search_source.py",
+      "bytes": 11645,
+      "sha256": "d0cf4b9a1f5c6de47c1a700dd3de3a6f5e1e8c6c9c498a9aa3737ece2a47b2b7"
+    },
+    {
+      "path": "runs/q3_layout_extremes_20260913/status.json",
+      "bytes": 66,
+      "sha256": "a08722f7c8dab7ee96008f1a5a587c84f4d77b6d40fa936a742eefa6df844d86"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

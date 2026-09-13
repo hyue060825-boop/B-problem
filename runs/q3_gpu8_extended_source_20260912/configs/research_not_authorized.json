@@ -1,7 +1,0 @@
-{
-  "profile": "compatible_research",
-  "authorized": false,
-  "env_ready": false,
-  "algorithm": "bc_dagger_ppo",
-  "notes": "研究分布、固定误差场和官方隐藏生成器未确认；此配置仅用于显式阻断。"
-}

@@ -6,7 +6,7 @@ from pathlib import Path
 import sys
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
-from solution.coverage.q4_exact import (cell_outside_disk,cell_vertices,
+from experiments.q4_exact import (cell_outside_disk,cell_vertices,
     overlap_guard_valid,point,q,witness_valid)
 
 

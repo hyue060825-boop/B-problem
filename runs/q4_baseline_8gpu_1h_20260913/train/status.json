@@ -1,0 +1,9 @@
+{
+  "stage": "COMPLETE",
+  "elapsed_s": 3718.2284782887436,
+  "consumed_s": 3718.2284825849347,
+  "updates": 682,
+  "checkpoint": "/data5/hy/B-problem/runs/q4_baseline_8gpu_1h_20260913/train/best.pt",
+  "test_completion_rate": 1.0,
+  "mean_delta_s": -12.69571727266666
+}

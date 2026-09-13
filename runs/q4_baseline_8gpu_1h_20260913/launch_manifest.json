@@ -1,0 +1,11 @@
+{
+  "parent_checkpoint": "/data5/hy/B-problem/runs/q4_legacy_deadline_20260913/best.pt",
+  "parent_sha256": "e8a525f78d176d9073372394b324bd585f4445fbf9cd1515141c483f38d5bd90",
+  "cuda_visible_devices": "0,1,2,3,4,5,6,7",
+  "world_size": 8,
+  "planner": "original frozen baseline; no route/scheduling overlays",
+  "train_budget_s": 3600,
+  "post_training_test": "3000 paired scenes; best by validation, latest if no new best; parent recommendation retained unless validation passes",
+  "process": "tmux -> launcher -> torchrun -> 8 synchronized NCCL ranks",
+  "created_at": "2026-09-13T10:09:38.606693+08:00"
+}

@@ -1,0 +1,13 @@
+﻿N,case,total_s,last_clear_s,post_clear_s,mode,path_length_m,measures,clear_failures,fixture
+10,best,8055.678111,169.0,7886.678111,near_start,30578.39055353103,320,0,/data5/hy/B-problem/runs/q4_layout_extremes_20260913/N10/best_fixture.json
+10,worst,16941.272216,16941.272216,0.0,mutated:edge_outward,58536.3618042659,512,717,/data5/hy/B-problem/runs/q4_layout_extremes_20260913/N10/worst_fixture.json
+11,best,7934.0,174.0,7760.0,near_start,30844.999999999996,290,0,/data5/hy/B-problem/runs/q4_layout_extremes_20260913/N11/best_fixture.json
+11,worst,16724.010683,16724.010683,0.0,mutated:edge_outward,60125.053869484065,489,582,/data5/hy/B-problem/runs/q4_layout_extremes_20260913/N11/worst_fixture.json
+12,best,7759.0,179.0,7580.0,near_start,30844.999999999996,260,0,/data5/hy/B-problem/runs/q4_layout_extremes_20260913/N12/best_fixture.json
+12,worst,19197.636534,19197.636534,0.0,mutated:edge_outward,69093.18322250294,488,810,/data5/hy/B-problem/runs/q4_layout_extremes_20260913/N12/worst_fixture.json
+13,best,7584.0,184.0,7400.0,near_start,30844.999999999996,230,0,/data5/hy/B-problem/runs/q4_layout_extremes_20260913/N13/best_fixture.json
+13,worst,16725.368953,16725.368953,0.0,two_clusters,58496.844775661404,494,680,/data5/hy/B-problem/runs/q4_layout_extremes_20260913/N13/worst_fixture.json
+14,best,7409.0,189.0,7220.0,near_start,30844.999999999996,200,0,/data5/hy/B-problem/runs/q4_layout_extremes_20260913/N14/best_fixture.json
+14,worst,18462.337351,18462.337351,0.0,two_clusters,61781.686713744624,590,847,/data5/hy/B-problem/runs/q4_layout_extremes_20260913/N14/worst_fixture.json
+15,best,7234.0,194.0,7040.0,near_start,30845.0,170,0,/data5/hy/B-problem/runs/q4_layout_extremes_20260913/N15/best_fixture.json
+15,worst,19895.553411,19895.553411,0.0,mutated:edge_outward,70672.7669836397,504,901,/data5/hy/B-problem/runs/q4_layout_extremes_20260913/N15/worst_fixture.json

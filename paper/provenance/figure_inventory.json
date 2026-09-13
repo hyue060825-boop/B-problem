@@ -1,0 +1,487 @@
+[
+  {
+    "path": "paper/figures/final_paired_results.pdf",
+    "sha256": "b0983fd6d4123ad2ddce84e6bac4744174b319c897df01c05549af7089d13537",
+    "attribution": "最终Q3=51397bc8、Q4=c8812ced；各自与父模型配对"
+  },
+  {
+    "path": "paper/figures/final_paired_results.png",
+    "sha256": "c3a2e7e5c127b303d28751b78b1c753c2f3f1588af1ca162f19c6442754cb804",
+    "attribution": "最终Q3=51397bc8、Q4=c8812ced；各自与父模型配对"
+  },
+  {
+    "path": "paper/figures/validation_curves.pdf",
+    "sha256": "1409eb2147d8666f1d84aeddefc9a7fcdab4e8c30636f652ce2bbb6c5e11889d",
+    "attribution": "最终训练段验证曲线；非独立测试"
+  },
+  {
+    "path": "paper/figures/validation_curves.png",
+    "sha256": "4fb1b70b723e84a60b2a123f176535469f8266d0a39a788e3d163d45aaff46c9",
+    "attribution": "最终训练段验证曲线；非独立测试"
+  },
+  {
+    "path": "artifacts/q1/crossing/geometry.pdf",
+    "sha256": "0c7456583719dc38dc4bb43402c0bd94c02d85bf4abf5c2de3468840c61f28c6",
+    "attribution": "Q1/Q2解析算例"
+  },
+  {
+    "path": "artifacts/q1/crossing/geometry.png",
+    "sha256": "91c58d9ed82e80859ba669956c3e6acec005483553865cca9aca29da6a558d2c",
+    "attribution": "Q1/Q2解析算例"
+  },
+  {
+    "path": "artifacts/q1/triangle/geometry.pdf",
+    "sha256": "6c9898cfe054b2027ff09313b287ae860ce6cdd9af4ee322d6e04c7d8aa4d1df",
+    "attribution": "Q1/Q2解析算例"
+  },
+  {
+    "path": "artifacts/q1/triangle/geometry.png",
+    "sha256": "efe3bba50c8de8d612385cfaca568acf7172244a4365dab1c2954c3247714851",
+    "attribution": "Q1/Q2解析算例"
+  },
+  {
+    "path": "artifacts/q2/example/q2.pdf",
+    "sha256": "80c5f6a5ca942eb56917a4f8fb687748317e0c36e6bbf611299aab8d96d2b7f6",
+    "attribution": "Q1/Q2解析算例"
+  },
+  {
+    "path": "artifacts/q2/example/q2.png",
+    "sha256": "6d5f1c89af5b16c3977e65446e5b5f1c9203f5f152b8f54a550e9c247fc1dafd",
+    "attribution": "Q1/Q2解析算例"
+  },
+  {
+    "path": "runs/q34_deadline_test3000_20260913/per_source_distribution.pdf",
+    "sha256": "11a7673b4003a952ae57102fb449c5cdee67b530db0327dc8dcb8840db3060ef",
+    "attribution": "正文：最终Q3；该目录Q4行是父基线"
+  },
+  {
+    "path": "runs/q34_deadline_test3000_20260913/per_source_distribution.png",
+    "sha256": "9d1cc488094027f2f88635a0191a2b96718323d113c829fe4b105b745a8522a6",
+    "attribution": "正文：最终Q3；该目录Q4行是父基线"
+  },
+  {
+    "path": "runs/q3_final_best_counts_20260912/evaluation/N10_distribution.pdf",
+    "sha256": "b52fdd0b9083b0ce7383dc47d8c2747ce576a097ba3be20ce97bda1a1fdcf4a2",
+    "attribution": "附录：Q3父模型8cc3，10–16源每组1000局"
+  },
+  {
+    "path": "runs/q3_final_best_counts_20260912/evaluation/N10_distribution.png",
+    "sha256": "b14a75b7c9b26b77bad55b833e62d6b7b537dcdbee35d2e96eff583141764239",
+    "attribution": "附录：Q3父模型8cc3，10–16源每组1000局"
+  },
+  {
+    "path": "runs/q3_final_best_counts_20260912/evaluation/N11_distribution.pdf",
+    "sha256": "630554568186c368e73c1c8d69e466e0160ef6ab6644d5c95b7e3bdb6ae64900",
+    "attribution": "附录：Q3父模型8cc3，10–16源每组1000局"
+  },
+  {
+    "path": "runs/q3_final_best_counts_20260912/evaluation/N11_distribution.png",
+    "sha256": "5cb6f29ac75442be0ad60faf96548dc9e8add2d6c2d3f2d95e2dbb0bea8aa702",
+    "attribution": "附录：Q3父模型8cc3，10–16源每组1000局"
+  },
+  {
+    "path": "runs/q3_final_best_counts_20260912/evaluation/N12_distribution.pdf",
+    "sha256": "6da1280becf4a3474887ed01bdd44f930d72a6f455200d5bf1415ad54ab4b679",
+    "attribution": "附录：Q3父模型8cc3，10–16源每组1000局"
+  },
+  {
+    "path": "runs/q3_final_best_counts_20260912/evaluation/N12_distribution.png",
+    "sha256": "2e5ae071f7e6a073ef57a82c11ea702e0a59058ceb19220f251ef04e33cc710e",
+    "attribution": "附录：Q3父模型8cc3，10–16源每组1000局"
+  },
+  {
+    "path": "runs/q3_final_best_counts_20260912/evaluation/N13_distribution.pdf",
+    "sha256": "9f8fac5f4477042e669e5aa95860ff2d72fedf718aef3ee10f3b2d4902e2eca6",
+    "attribution": "附录：Q3父模型8cc3，10–16源每组1000局"
+  },
+  {
+    "path": "runs/q3_final_best_counts_20260912/evaluation/N13_distribution.png",
+    "sha256": "9f94c8ad7a9778c60fba87188e3c89a2c66761012b230418e2c4720f1798c278",
+    "attribution": "附录：Q3父模型8cc3，10–16源每组1000局"
+  },
+  {
+    "path": "runs/q3_final_best_counts_20260912/evaluation/N14_distribution.pdf",
+    "sha256": "dd279286202233be86779204ab7c02c5e5ce7452d9112718bdbe1dfb9655e5f4",
+    "attribution": "附录：Q3父模型8cc3，10–16源每组1000局"
+  },
+  {
+    "path": "runs/q3_final_best_counts_20260912/evaluation/N14_distribution.png",
+    "sha256": "9f4984a494e1267c8ffa846f05a3aba423200b8538448dd82beccb6f837234a8",
+    "attribution": "附录：Q3父模型8cc3，10–16源每组1000局"
+  },
+  {
+    "path": "runs/q3_final_best_counts_20260912/evaluation/N15_16_distribution.pdf",
+    "sha256": "2037e767f9bb2e97315a72484c6ea3f6ec28cab466b7074a033c764ef2006c3e",
+    "attribution": "附录：Q3父模型8cc3，10–16源每组1000局"
+  },
+  {
+    "path": "runs/q3_final_best_counts_20260912/evaluation/N15_16_distribution.png",
+    "sha256": "d05b3772e474c9d23025e8e9f9dd3267b8839cf7caa5b448e09997325e65c548",
+    "attribution": "附录：Q3父模型8cc3，10–16源每组1000局"
+  },
+  {
+    "path": "runs/q3_gpu8_extended_20260912/final_evaluation/per_source_distribution.pdf",
+    "sha256": "9911428f842d5694d897c510d989a9fadc7cfbb98a72e56986dfe9413c91ab3d",
+    "attribution": "Q3父模型训练、GPU搜索与独立评估"
+  },
+  {
+    "path": "runs/q3_gpu8_extended_20260912/final_evaluation/per_source_distribution.png",
+    "sha256": "34cf7ce056b3b318cf16f4584c626bc0e20c367ff6d685622a76bda72f66294c",
+    "attribution": "Q3父模型训练、GPU搜索与独立评估"
+  },
+  {
+    "path": "runs/q3_layout_extremes_20260913_v2/layouts.pdf",
+    "sha256": "de82148071aef126f78797c27317fabcf2f008ca2d7e6b58728ba29c84a73432",
+    "attribution": "附录：最终Q3主动搜索极端布局"
+  },
+  {
+    "path": "runs/q3_layout_extremes_20260913_v2/layouts.png",
+    "sha256": "ea3b19591ca025db30c2efb5180401b8bb5b427a2840797f09dfb58cc057a6b6",
+    "attribution": "附录：最终Q3主动搜索极端布局"
+  },
+  {
+    "path": "runs/q3_layout_extremes_20260913_v2/time_extremes.pdf",
+    "sha256": "fa0f2e37a471a5d07374c25f53cfce67126e0fbc7115ee53093480f83ced73a1",
+    "attribution": "附录：最终Q3主动搜索极端布局"
+  },
+  {
+    "path": "runs/q3_layout_extremes_20260913_v2/time_extremes.png",
+    "sha256": "1c2de83b0c8a1eb21c6a0a529c2a32f896501754b9055b5a8e1671b454b39a1a",
+    "attribution": "附录：最终Q3主动搜索极端布局"
+  },
+  {
+    "path": "runs/q4_absence_tail_analysis_20260913_v2/tail_analysis.pdf",
+    "sha256": "da64ab2ae454a07d1869a215cc5677b865b4f857b3ec7b6530528b5caaed816b",
+    "attribution": "附录：Q4父基线3000局无源尾段复放"
+  },
+  {
+    "path": "runs/q4_absence_tail_analysis_20260913_v2/tail_analysis.png",
+    "sha256": "5e3bfd7a037d69bec8c427ff4ee3db69a7c52bc9f9d9aeb4c968ab861e9560f8",
+    "attribution": "附录：Q4父基线3000局无源尾段复放"
+  },
+  {
+    "path": "runs/q4_baseline_8gpu_1h_20260913/evaluation/comparison.pdf",
+    "sha256": "138888f9d149708b57ecf6149dc1f2f58d70fc7165f16c739f6c347b22ee91fd",
+    "attribution": "最终Q4训练与3000局配对主结果"
+  },
+  {
+    "path": "runs/q4_baseline_8gpu_1h_20260913/evaluation/comparison.png",
+    "sha256": "76a15835bf1d30b9d246e42bbed69624aa146317a6da0e7e2a9f670579f682e2",
+    "attribution": "最终Q4训练与3000局配对主结果"
+  },
+  {
+    "path": "runs/q4_layout_extremes_20260913/layouts.pdf",
+    "sha256": "2a565032c90df9e40194fcb963aee8e8a158b1e5e3ffe90e6b6c7f9ea86d8233",
+    "attribution": "附录：Q4父基线主动搜索极端布局"
+  },
+  {
+    "path": "runs/q4_layout_extremes_20260913/layouts.png",
+    "sha256": "75ad6f36ceddb45e0b7573a675bc2a3121bcf501b1086736d79b1ff2f2a56671",
+    "attribution": "附录：Q4父基线主动搜索极端布局"
+  },
+  {
+    "path": "runs/q4_layout_extremes_20260913/time_extremes.pdf",
+    "sha256": "b1c2067433763a7f4a6af127df15be05586f613d3542167cf72b580ad8f07ce6",
+    "attribution": "附录：Q4父基线主动搜索极端布局"
+  },
+  {
+    "path": "runs/q4_layout_extremes_20260913/time_extremes.png",
+    "sha256": "0a54f4660fc08d6e0c9b0d3f81e0a38f26e6c3b02816e1583137449f01c6b0be",
+    "attribution": "附录：Q4父基线主动搜索极端布局"
+  },
+  {
+    "path": "runs/q4_planning_ablation_20260913/test3000/comparison.pdf",
+    "sha256": "27a5b6d2a4e91ad7d8982f2391cf1f9b48015615febdd46faf9d7dc8a078b222",
+    "attribution": "附录：Q4父基线A/B/C/D负结果与最后清除曲线"
+  },
+  {
+    "path": "runs/q4_planning_ablation_20260913/test3000/comparison.png",
+    "sha256": "607f4852e48307b7556edbc1363eaaf1c5f5ef344021e3c78f961faec085b335",
+    "attribution": "附录：Q4父基线A/B/C/D负结果与最后清除曲线"
+  },
+  {
+    "path": "runs/q4_planning_ablation_20260913/test3000/last_clear_comparison/last_clear_lines.pdf",
+    "sha256": "c9c6d7e119cd236450975a07d1e34a3784c8fb5e52688aaa56eb5a68b91472dd",
+    "attribution": "附录：Q4父基线A/B/C/D负结果与最后清除曲线"
+  },
+  {
+    "path": "runs/q4_planning_ablation_20260913/test3000/last_clear_comparison/last_clear_lines.png",
+    "sha256": "184938504e6e2c1cc3b852619f796e9299dbc90fb70c3e41cae46ef4f0dca16e",
+    "attribution": "附录：Q4父基线A/B/C/D负结果与最后清除曲线"
+  },
+  {
+    "path": "runs/q4_planning_ablation_20260913/test3000/last_clear_comparison/last_clear_lines.svg",
+    "sha256": "362e9336361a2fe233fe4d883b1f1cf0d5f8b5b477d3712b3c45fc7200b964ca",
+    "attribution": "附录：Q4父基线A/B/C/D负结果与最后清除曲线"
+  },
+  {
+    "path": "paper/history/original_docs/extracted/page2.png",
+    "sha256": "d0d4aac5bcd8e6f2dc8b50fe4715ea1b3b7cf3e230ef1567bc224b454cc4d0ba",
+    "attribution": "历史图表；以原报告和权重哈希为准"
+  },
+  {
+    "path": "paper/history/original_docs/extracted/page3.png",
+    "sha256": "5f0ba1ef18236f9f21d6dbce3813e26b6ff4b3fa6318fe453815f180ec44be21",
+    "attribution": "历史图表；以原报告和权重哈希为准"
+  },
+  {
+    "path": "paper/history/runs/q34_3000_test_20260912/readable/per_source_distribution.pdf",
+    "sha256": "271042f84f5d2a94e8233bcabb86589043626c742a019b23bcc2d6d8f8698212",
+    "attribution": "历史图表；以原报告和权重哈希为准"
+  },
+  {
+    "path": "paper/history/runs/q34_3000_test_20260912/readable/per_source_distribution.png",
+    "sha256": "3ad9dcfdbe9511ffb02589a6e2a5c7be13df31e42a3d953485fcd3bb3898dccc",
+    "attribution": "历史图表；以原报告和权重哈希为准"
+  },
+  {
+    "path": "paper/history/runs/q34_deadline_test3000_20260913/readable/per_source_distribution.pdf",
+    "sha256": "11a7673b4003a952ae57102fb449c5cdee67b530db0327dc8dcb8840db3060ef",
+    "attribution": "正文：最终Q3；该目录Q4行是父基线"
+  },
+  {
+    "path": "paper/history/runs/q34_deadline_test3000_20260913/readable/per_source_distribution.png",
+    "sha256": "9d1cc488094027f2f88635a0191a2b96718323d113c829fe4b105b745a8522a6",
+    "attribution": "正文：最终Q3；该目录Q4行是父基线"
+  },
+  {
+    "path": "paper/history/runs/q3_3000_test_20260911/readable/per_source_time_distribution.png",
+    "sha256": "8e50728730ba82a2eaaf23f9bee786f182fa4595bbfbb38c31ac8a4d8ab53258",
+    "attribution": "历史图表；以原报告和权重哈希为准"
+  },
+  {
+    "path": "paper/history/runs/q3_current_best_eval_20260912/readable/current_best_eval/per_source_time_distribution.png",
+    "sha256": "2f875c0c6ae11e23b93abaf650cfcf1a0ce7a24ba6f96260848f25c5f2f74419",
+    "attribution": "历史图表；以原报告和权重哈希为准"
+  },
+  {
+    "path": "paper/history/runs/q3_current_best_eval_20260912/readable/previous_candidate_eval/per_source_time_distribution.png",
+    "sha256": "aef5a598a17eb92016e7e0d0a95033ff921d1887ca2d9e79a5ac8a36ce9a2195",
+    "attribution": "历史图表；以原报告和权重哈希为准"
+  },
+  {
+    "path": "paper/history/runs/q3_final_best_counts_20260912/readable/evaluation/N10_distribution.pdf",
+    "sha256": "b52fdd0b9083b0ce7383dc47d8c2747ce576a097ba3be20ce97bda1a1fdcf4a2",
+    "attribution": "附录：Q3父模型8cc3，10–16源每组1000局"
+  },
+  {
+    "path": "paper/history/runs/q3_final_best_counts_20260912/readable/evaluation/N10_distribution.png",
+    "sha256": "b14a75b7c9b26b77bad55b833e62d6b7b537dcdbee35d2e96eff583141764239",
+    "attribution": "附录：Q3父模型8cc3，10–16源每组1000局"
+  },
+  {
+    "path": "paper/history/runs/q3_final_best_counts_20260912/readable/evaluation/N11_distribution.pdf",
+    "sha256": "630554568186c368e73c1c8d69e466e0160ef6ab6644d5c95b7e3bdb6ae64900",
+    "attribution": "附录：Q3父模型8cc3，10–16源每组1000局"
+  },
+  {
+    "path": "paper/history/runs/q3_final_best_counts_20260912/readable/evaluation/N11_distribution.png",
+    "sha256": "5cb6f29ac75442be0ad60faf96548dc9e8add2d6c2d3f2d95e2dbb0bea8aa702",
+    "attribution": "附录：Q3父模型8cc3，10–16源每组1000局"
+  },
+  {
+    "path": "paper/history/runs/q3_final_best_counts_20260912/readable/evaluation/N12_distribution.pdf",
+    "sha256": "6da1280becf4a3474887ed01bdd44f930d72a6f455200d5bf1415ad54ab4b679",
+    "attribution": "附录：Q3父模型8cc3，10–16源每组1000局"
+  },
+  {
+    "path": "paper/history/runs/q3_final_best_counts_20260912/readable/evaluation/N12_distribution.png",
+    "sha256": "2e5ae071f7e6a073ef57a82c11ea702e0a59058ceb19220f251ef04e33cc710e",
+    "attribution": "附录：Q3父模型8cc3，10–16源每组1000局"
+  },
+  {
+    "path": "paper/history/runs/q3_final_best_counts_20260912/readable/evaluation/N13_distribution.pdf",
+    "sha256": "9f8fac5f4477042e669e5aa95860ff2d72fedf718aef3ee10f3b2d4902e2eca6",
+    "attribution": "附录：Q3父模型8cc3，10–16源每组1000局"
+  },
+  {
+    "path": "paper/history/runs/q3_final_best_counts_20260912/readable/evaluation/N13_distribution.png",
+    "sha256": "9f94c8ad7a9778c60fba87188e3c89a2c66761012b230418e2c4720f1798c278",
+    "attribution": "附录：Q3父模型8cc3，10–16源每组1000局"
+  },
+  {
+    "path": "paper/history/runs/q3_final_best_counts_20260912/readable/evaluation/N14_distribution.pdf",
+    "sha256": "dd279286202233be86779204ab7c02c5e5ce7452d9112718bdbe1dfb9655e5f4",
+    "attribution": "附录：Q3父模型8cc3，10–16源每组1000局"
+  },
+  {
+    "path": "paper/history/runs/q3_final_best_counts_20260912/readable/evaluation/N14_distribution.png",
+    "sha256": "9f4984a494e1267c8ffa846f05a3aba423200b8538448dd82beccb6f837234a8",
+    "attribution": "附录：Q3父模型8cc3，10–16源每组1000局"
+  },
+  {
+    "path": "paper/history/runs/q3_final_best_counts_20260912/readable/evaluation/N15_16_distribution.pdf",
+    "sha256": "2037e767f9bb2e97315a72484c6ea3f6ec28cab466b7074a033c764ef2006c3e",
+    "attribution": "附录：Q3父模型8cc3，10–16源每组1000局"
+  },
+  {
+    "path": "paper/history/runs/q3_final_best_counts_20260912/readable/evaluation/N15_16_distribution.png",
+    "sha256": "d05b3772e474c9d23025e8e9f9dd3267b8839cf7caa5b448e09997325e65c548",
+    "attribution": "附录：Q3父模型8cc3，10–16源每组1000局"
+  },
+  {
+    "path": "paper/history/runs/q3_gpu8_extended_20260912/readable/final_evaluation/per_source_distribution.pdf",
+    "sha256": "9911428f842d5694d897c510d989a9fadc7cfbb98a72e56986dfe9413c91ab3d",
+    "attribution": "Q3父模型训练、GPU搜索与独立评估"
+  },
+  {
+    "path": "paper/history/runs/q3_gpu8_extended_20260912/readable/final_evaluation/per_source_distribution.png",
+    "sha256": "34cf7ce056b3b318cf16f4584c626bc0e20c367ff6d685622a76bda72f66294c",
+    "attribution": "Q3父模型训练、GPU搜索与独立评估"
+  },
+  {
+    "path": "paper/history/runs/q3_gpu8_smoke_20260912/readable/final_evaluation/per_source_distribution.pdf",
+    "sha256": "8ffdfdde9a017434a85e3850afdef1188ef7857dc36285c04ea2ff77469563ce",
+    "attribution": "历史图表；以原报告和权重哈希为准"
+  },
+  {
+    "path": "paper/history/runs/q3_gpu8_smoke_20260912/readable/final_evaluation/per_source_distribution.png",
+    "sha256": "2b449229c5491f4639a5a69fa1ff7bb073bacb42c771c30fff2d21cb8f8eefef",
+    "attribution": "历史图表；以原报告和权重哈希为准"
+  },
+  {
+    "path": "paper/history/runs/q3_joint_20260912/readable/test_distribution.pdf",
+    "sha256": "0047b78a40667388844b2ef69a647bd7b12f7a291edd4c64a15e669b930aae1d",
+    "attribution": "历史图表；以原报告和权重哈希为准"
+  },
+  {
+    "path": "paper/history/runs/q3_joint_20260912/readable/test_distribution.png",
+    "sha256": "b2ba297d5b14e81d6028b57764840ad9cd2496bad405fc9018599ffa8fd61698",
+    "attribution": "历史图表；以原报告和权重哈希为准"
+  },
+  {
+    "path": "paper/history/runs/q3_joint_20260912/readable/validation_curve.png",
+    "sha256": "99a12513cad93fdfa25b578506c5726a6c10842b7c733cac71d1f36874f2a295",
+    "attribution": "历史图表；以原报告和权重哈希为准"
+  },
+  {
+    "path": "paper/history/runs/q3_layout_extremes_20260913_v2/readable/layouts.pdf",
+    "sha256": "de82148071aef126f78797c27317fabcf2f008ca2d7e6b58728ba29c84a73432",
+    "attribution": "附录：最终Q3主动搜索极端布局"
+  },
+  {
+    "path": "paper/history/runs/q3_layout_extremes_20260913_v2/readable/layouts.png",
+    "sha256": "ea3b19591ca025db30c2efb5180401b8bb5b427a2840797f09dfb58cc057a6b6",
+    "attribution": "附录：最终Q3主动搜索极端布局"
+  },
+  {
+    "path": "paper/history/runs/q3_layout_extremes_20260913_v2/readable/time_extremes.pdf",
+    "sha256": "fa0f2e37a471a5d07374c25f53cfce67126e0fbc7115ee53093480f83ced73a1",
+    "attribution": "附录：最终Q3主动搜索极端布局"
+  },
+  {
+    "path": "paper/history/runs/q3_layout_extremes_20260913_v2/readable/time_extremes.png",
+    "sha256": "1c2de83b0c8a1eb21c6a0a529c2a32f896501754b9055b5a8e1671b454b39a1a",
+    "attribution": "附录：最终Q3主动搜索极端布局"
+  },
+  {
+    "path": "paper/history/runs/q4_3000_test_20260911/readable/per_source_time_distribution.png",
+    "sha256": "3594663ec188e70cb23c8bb2ef95e06ec48888e1e1048c47019037b4b947f43f",
+    "attribution": "历史图表；以原报告和权重哈希为准"
+  },
+  {
+    "path": "paper/history/runs/q4_absence_tail_analysis_20260913/readable/tail_analysis.pdf",
+    "sha256": "2c47e722296df3d8e74dd7cbb199f89123c432cc2cc47a8e307dd9ee6b591693",
+    "attribution": "历史图表；以原报告和权重哈希为准"
+  },
+  {
+    "path": "paper/history/runs/q4_absence_tail_analysis_20260913/readable/tail_analysis.png",
+    "sha256": "5e3bfd7a037d69bec8c427ff4ee3db69a7c52bc9f9d9aeb4c968ab861e9560f8",
+    "attribution": "历史图表；以原报告和权重哈希为准"
+  },
+  {
+    "path": "paper/history/runs/q4_absence_tail_analysis_20260913_v2/readable/tail_analysis.pdf",
+    "sha256": "da64ab2ae454a07d1869a215cc5677b865b4f857b3ec7b6530528b5caaed816b",
+    "attribution": "附录：Q4父基线3000局无源尾段复放"
+  },
+  {
+    "path": "paper/history/runs/q4_absence_tail_analysis_20260913_v2/readable/tail_analysis.png",
+    "sha256": "5e3bfd7a037d69bec8c427ff4ee3db69a7c52bc9f9d9aeb4c968ab861e9560f8",
+    "attribution": "附录：Q4父基线3000局无源尾段复放"
+  },
+  {
+    "path": "paper/history/runs/q4_baseline_8gpu_1h_20260913/readable/evaluation/comparison.pdf",
+    "sha256": "138888f9d149708b57ecf6149dc1f2f58d70fc7165f16c739f6c347b22ee91fd",
+    "attribution": "最终Q4训练与3000局配对主结果"
+  },
+  {
+    "path": "paper/history/runs/q4_baseline_8gpu_1h_20260913/readable/evaluation/comparison.png",
+    "sha256": "76a15835bf1d30b9d246e42bbed69624aa146317a6da0e7e2a9f670579f682e2",
+    "attribution": "最终Q4训练与3000局配对主结果"
+  },
+  {
+    "path": "paper/history/runs/q4_continue_paired_3000_20260912/readable/paired_distribution.pdf",
+    "sha256": "832bf9419bbdfaef56a0ba13cbdf6e43a49034b29e068f95ac9ed80e46c2ae75",
+    "attribution": "历史图表；以原报告和权重哈希为准"
+  },
+  {
+    "path": "paper/history/runs/q4_continue_paired_3000_20260912/readable/paired_distribution.png",
+    "sha256": "3417f305268adc35fbe68a1bed78aa343708b89d46b6ed26d50c9472e80d6e83",
+    "attribution": "历史图表；以原报告和权重哈希为准"
+  },
+  {
+    "path": "paper/history/runs/q4_continue_paired_smoke_20260912/readable/paired_distribution.pdf",
+    "sha256": "d30d9c79df3a6cf1088be2ec0bcd7ea5575e437df5dc21fb4096dc81a2e8e146",
+    "attribution": "历史图表；以原报告和权重哈希为准"
+  },
+  {
+    "path": "paper/history/runs/q4_continue_paired_smoke_20260912/readable/paired_distribution.png",
+    "sha256": "2b1adca102442b637f7617ae3fc2184116ecba1d2808c7e09d46a3438d82a6b8",
+    "attribution": "历史图表；以原报告和权重哈希为准"
+  },
+  {
+    "path": "paper/history/runs/q4_layout_extremes_20260913/readable/layouts.pdf",
+    "sha256": "2a565032c90df9e40194fcb963aee8e8a158b1e5e3ffe90e6b6c7f9ea86d8233",
+    "attribution": "附录：Q4父基线主动搜索极端布局"
+  },
+  {
+    "path": "paper/history/runs/q4_layout_extremes_20260913/readable/layouts.png",
+    "sha256": "75ad6f36ceddb45e0b7573a675bc2a3121bcf501b1086736d79b1ff2f2a56671",
+    "attribution": "附录：Q4父基线主动搜索极端布局"
+  },
+  {
+    "path": "paper/history/runs/q4_layout_extremes_20260913/readable/time_extremes.pdf",
+    "sha256": "b1c2067433763a7f4a6af127df15be05586f613d3542167cf72b580ad8f07ce6",
+    "attribution": "附录：Q4父基线主动搜索极端布局"
+  },
+  {
+    "path": "paper/history/runs/q4_layout_extremes_20260913/readable/time_extremes.png",
+    "sha256": "0a54f4660fc08d6e0c9b0d3f81e0a38f26e6c3b02816e1583137449f01c6b0be",
+    "attribution": "附录：Q4父基线主动搜索极端布局"
+  },
+  {
+    "path": "paper/history/runs/q4_planning_ablation_20260913/readable/test3000/comparison.pdf",
+    "sha256": "27a5b6d2a4e91ad7d8982f2391cf1f9b48015615febdd46faf9d7dc8a078b222",
+    "attribution": "附录：Q4父基线A/B/C/D负结果与最后清除曲线"
+  },
+  {
+    "path": "paper/history/runs/q4_planning_ablation_20260913/readable/test3000/comparison.png",
+    "sha256": "607f4852e48307b7556edbc1363eaaf1c5f5ef344021e3c78f961faec085b335",
+    "attribution": "附录：Q4父基线A/B/C/D负结果与最后清除曲线"
+  },
+  {
+    "path": "paper/history/runs/q4_planning_ablation_20260913/readable/test3000/last_clear_comparison/last_clear_lines.pdf",
+    "sha256": "c9c6d7e119cd236450975a07d1e34a3784c8fb5e52688aaa56eb5a68b91472dd",
+    "attribution": "附录：Q4父基线A/B/C/D负结果与最后清除曲线"
+  },
+  {
+    "path": "paper/history/runs/q4_planning_ablation_20260913/readable/test3000/last_clear_comparison/last_clear_lines.png",
+    "sha256": "184938504e6e2c1cc3b852619f796e9299dbc90fb70c3e41cae46ef4f0dca16e",
+    "attribution": "附录：Q4父基线A/B/C/D负结果与最后清除曲线"
+  },
+  {
+    "path": "paper/history/runs/q4_repaired_20260912/readable/per_source_distribution.pdf",
+    "sha256": "fcbbb6bf4b4e06ef092631f3244d2b9da0d7e1b7e47cc1ddb6ee1fb894adf31e",
+    "attribution": "历史图表；以原报告和权重哈希为准"
+  },
+  {
+    "path": "paper/history/runs/q4_repaired_20260912/readable/per_source_distribution.png",
+    "sha256": "733264fd95d17ba4fbef865d28fbefc0b4b04fea21fa611424410d57f12565bc",
+    "attribution": "历史图表；以原报告和权重哈希为准"
+  },
+  {
+    "path": "paper/history/runs/q4_repaired_20260912/readable/training_curve.png",
+    "sha256": "79db7d540530e50966d23199a58acb53bc8c6ef4ce4c08eb04ba619d9619cf23",
+    "attribution": "历史图表；以原报告和权重哈希为准"
+  }
+]

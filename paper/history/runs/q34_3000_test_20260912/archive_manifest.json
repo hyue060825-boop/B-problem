@@ -1,0 +1,98 @@
+{
+  "archive_sha256": "ff6fb1b1c70b1caa426705e4be335830a1a82d71ff1f94c1082a6efe6cb92866",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 2694036,
+      "sha256": "ff6fb1b1c70b1caa426705e4be335830a1a82d71ff1f94c1082a6efe6cb92866"
+    }
+  ],
+  "members": [
+    {
+      "path": "runs/q34_3000_test_20260912/manifest.json",
+      "bytes": 110160,
+      "sha256": "b83c83d98a9eaf3928ac6daf1da2a49e61a3e71e5f34a861fb1e525a7871d2ee"
+    },
+    {
+      "path": "runs/q34_3000_test_20260912/per_source_distribution.pdf",
+      "bytes": 18627,
+      "sha256": "271042f84f5d2a94e8233bcabb86589043626c742a019b23bcc2d6d8f8698212"
+    },
+    {
+      "path": "runs/q34_3000_test_20260912/per_source_distribution.png",
+      "bytes": 101357,
+      "sha256": "3ad9dcfdbe9511ffb02589a6e2a5c7be13df31e42a3d953485fcd3bb3898dccc"
+    },
+    {
+      "path": "runs/q34_3000_test_20260912/q3_baseline_samples.json",
+      "bytes": 2511232,
+      "sha256": "94f73ead21d68b1fed83f8142f885530968331d3be6a60c7897eff9a7a0fccd9"
+    },
+    {
+      "path": "runs/q34_3000_test_20260912/q3_baseline_strata.json",
+      "bytes": 10695,
+      "sha256": "ab4f910e2541c56dee68abd39f46d210b943ea9812d32a07bf5ee9484e28e5ec"
+    },
+    {
+      "path": "runs/q34_3000_test_20260912/q3_candidate_samples.json",
+      "bytes": 2511200,
+      "sha256": "e6bce027a7dce17dabea147ad17002cf1b49e783f6ee48333b95c5f0e390171e"
+    },
+    {
+      "path": "runs/q34_3000_test_20260912/q3_candidate_strata.json",
+      "bytes": 10672,
+      "sha256": "41496bfb89c634c97e6677a311d8ae357ef3242142ae8978b19c2715b96d6b81"
+    },
+    {
+      "path": "runs/q34_3000_test_20260912/q4_baseline_samples.json",
+      "bytes": 2513679,
+      "sha256": "c43f568d92ab3cc0cf9daf395fa173ecec5910823ea14bea332df9a531faf427"
+    },
+    {
+      "path": "runs/q34_3000_test_20260912/q4_baseline_strata.json",
+      "bytes": 10703,
+      "sha256": "4b9043cdc5d06969a7675734964af25b976b5a595fadd92dae8522e302387bd1"
+    },
+    {
+      "path": "runs/q34_3000_test_20260912/q4_best_samples.json",
+      "bytes": 2512755,
+      "sha256": "24a4a29645c9a0f1d5a5fe9d69964c8242bcb3d55c3c27d86e534f5444fa20da"
+    },
+    {
+      "path": "runs/q34_3000_test_20260912/q4_best_strata.json",
+      "bytes": 10698,
+      "sha256": "57052377e4bc7c05a594869134b5a02e5555286629aa8261057c40e61b47bc6f"
+    },
+    {
+      "path": "runs/q34_3000_test_20260912/report.md",
+      "bytes": 3261,
+      "sha256": "3087a79355b25f636f7896976fd773f482ce6f6850c13ed9b4cd3a57ba177453"
+    },
+    {
+      "path": "runs/q34_3000_test_20260912/samples.csv",
+      "bytes": 789448,
+      "sha256": "64cefc1168e7ca2ea0b563c0d010567dd6ac8488609af9bd8fde5a1aa8fe088a"
+    },
+    {
+      "path": "runs/q34_3000_test_20260912/samples.jsonl",
+      "bytes": 9151858,
+      "sha256": "c54da71e1aae83539d8ea2cabaabc62f19fed014c6db1da66692ae3642e9883f"
+    },
+    {
+      "path": "runs/q34_3000_test_20260912/status.json",
+      "bytes": 99,
+      "sha256": "1f5222e005409d2f563a460af0cbb0d3521123cbd2382441619a8f2b514820b8"
+    },
+    {
+      "path": "runs/q34_3000_test_20260912/summary.json",
+      "bytes": 3724,
+      "sha256": "e4daae678c8d04e42056242bf11db6032f4b132c38b3d219047f9f70043898ca"
+    },
+    {
+      "path": "runs/q34_3000_test_20260912/verification.json",
+      "bytes": 208,
+      "sha256": "6a541dc11925fb63fcc0be20eb1e641b5fb30e512f8970f3875e41753ed7b1e3"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

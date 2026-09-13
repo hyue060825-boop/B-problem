@@ -1,0 +1,208 @@
+{
+  "archive_sha256": "bbdb3f497f173a61ad247b80e5b5e4af56a1ae97ffeaf04dbee038471c964cb4",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 44002,
+      "sha256": "bbdb3f497f173a61ad247b80e5b5e4af56a1ae97ffeaf04dbee038471c964cb4"
+    }
+  ],
+  "members": [
+    {
+      "path": "reports/Q34_LEGACY_DEADLINE_20260913.md",
+      "bytes": 2230,
+      "sha256": "e735f84f20be612bfd35e6491211ceb80572f5cf489e5968399f12ef98044ac4"
+    },
+    {
+      "path": "reports/Q34_STRUCTURAL_OPT_ABLATION.md",
+      "bytes": 1202,
+      "sha256": "77ef5033e15b84980489d540ee07bf493805b976fd02bcca1f00196d54c5fbdc"
+    },
+    {
+      "path": "reports/Q34_STRUCTURAL_OPT_BASELINE_AUDIT.md",
+      "bytes": 5755,
+      "sha256": "ce3afcee782bafb5f5b8872c04da848c2a8fd2ba3c83bbc71bb3d6a290cc7330"
+    },
+    {
+      "path": "reports/Q34_STRUCTURAL_OPT_FINAL.md",
+      "bytes": 1880,
+      "sha256": "280d6149cc9c15262438c7efdd12a8c27acc8d10c2caefab198b6f93f2ed74e0"
+    },
+    {
+      "path": "reports/Q34_STRUCTURAL_OPT_IMPLEMENTATION.md",
+      "bytes": 2002,
+      "sha256": "c4fd29e7254bdfd70d89e512d9bfcc7a50bf2c88ae58e25e6bab7aef396e6d54"
+    },
+    {
+      "path": "reports/Q34_STRUCTURAL_OPT_RUNBOOK.md",
+      "bytes": 1058,
+      "sha256": "a06240f54eaba4ff9b9b4e0bd905c19336cb0a7c7316692e2c80b1acaeec721e"
+    },
+    {
+      "path": "reports/Q34_WINDOWS_DEPLOYMENT_VERIFICATION.json",
+      "bytes": 2083,
+      "sha256": "7e15bb93db573239281ff483f387c8a94a3af2daec2c7a84a84a20f1373bcd46"
+    },
+    {
+      "path": "reports/Q3多卡单模型训练验收报告.MD",
+      "bytes": 4705,
+      "sha256": "7f5faa3a39d5f8e00c010c9e369c4914254f099ebdfd4b345c9f6b3b4f360339"
+    },
+    {
+      "path": "reports/Q3搜索教师与专家迭代实验报告.MD",
+      "bytes": 9476,
+      "sha256": "f371218f23214a9defd903f1f6680f2d8e7083a91e12360b3a835457e0138ada"
+    },
+    {
+      "path": "reports/Q3模型部署与复现实验说明.MD",
+      "bytes": 2654,
+      "sha256": "e469d50db06208a02e2782b65c24e6002585475eec44d3be5adf56a7556f08ba"
+    },
+    {
+      "path": "reports/Q4_BASELINE_8GPU_1H_20260913.md",
+      "bytes": 1935,
+      "sha256": "f3e2edabde0308f6c7e6edfc4f74886ae8369fa76e01363053f0f251eac9bc60"
+    },
+    {
+      "path": "reports/Q4_BELIEF_ATTENTION_FINAL.md",
+      "bytes": 5183,
+      "sha256": "fbda22c33a5edd96f043a7f1df2a98ed91b9278f0f1ec5333b74d5f30c1e4959"
+    },
+    {
+      "path": "reports/Q4_OPTIMIZATION_AUDIT_20260912.md",
+      "bytes": 2103,
+      "sha256": "1318d4045b72cdbc1590501741f2b7607ec9d9943aa64ce22ac3e4b2903ee59a"
+    },
+    {
+      "path": "reports/Q4修复与四卡同步复验.MD",
+      "bytes": 7794,
+      "sha256": "2241cb8e4a2b971b0435988b3d3424b2ebf449d18c5f82b5982f1d6157661613"
+    },
+    {
+      "path": "reports/raw/all_tests.txt",
+      "bytes": 560,
+      "sha256": "37f8491c8e5af3ec469636d12c7928acaf4efdea0a228dd910a0e768dc479927"
+    },
+    {
+      "path": "reports/raw/all_tests_final.txt",
+      "bytes": 560,
+      "sha256": "dbbc3b2867951f02beb320e458672ab0a9afab369092fa1ce3b17cf5b32962a1"
+    },
+    {
+      "path": "reports/raw/cuda_torch_install.log",
+      "bytes": 7458,
+      "sha256": "d2b918119cf23c4b087f522fbe8d252cf754f56d4c31bcc7d505b8c352bd693a"
+    },
+    {
+      "path": "reports/raw/dependency_install.log",
+      "bytes": 10036,
+      "sha256": "45fdd7d7e7849467120e8f4dac385ea6888f9213b6f85b35771e494125a7e53b"
+    },
+    {
+      "path": "reports/raw/q1_final_cli.json",
+      "bytes": 646,
+      "sha256": "0714dab56d57e19aa9a454d219eafec8933142076f5651b1590db529cd8f92db"
+    },
+    {
+      "path": "reports/raw/q1_tests.txt",
+      "bytes": 99,
+      "sha256": "65afe6c026339f272995e0272dc32678c250526c9ca7efb055e7a3e98691c0db"
+    },
+    {
+      "path": "reports/raw/q2_cli.json",
+      "bytes": 1973,
+      "sha256": "cdb7bc9c6a20d9b23e6fd0366d5db09597c9ce99228b61fb9e3a3c91c9ebf55a"
+    },
+    {
+      "path": "reports/raw/q2_final_cli.json",
+      "bytes": 1973,
+      "sha256": "48bac0281756f4059dcb1a160795d585a42c0ef9d8be92cca40c86b5cebe5495"
+    },
+    {
+      "path": "reports/raw/q2_tests.txt",
+      "bytes": 98,
+      "sha256": "d59d800dfd0d8e71d19f7c318f9234f89adb28f91a155816441f85c0b9cde4f2"
+    },
+    {
+      "path": "reports/raw/replay_final.json",
+      "bytes": 3105,
+      "sha256": "f32d37c76aee01c0f1e8771257ab9aa1c45258ed8bed1ef111c16d8c9ff7edbe"
+    },
+    {
+      "path": "reports/raw/run_policy_status.json",
+      "bytes": 150,
+      "sha256": "4673b703ebb5d2a35c887c6b4154c4bd0fc692a235ec13434ca390643052652e"
+    },
+    {
+      "path": "reports/raw/stage0_tests.txt",
+      "bytes": 99,
+      "sha256": "7a31e66378c8cfe7c15128f94cc1506ce059a413da978d80115e1e55e5e976e5"
+    },
+    {
+      "path": "reports/raw/torch_install.log",
+      "bytes": 4688,
+      "sha256": "4ca0ce60637fdb1826b163cfe490421675dd67c44de2467052e844011a7f06f9"
+    },
+    {
+      "path": "reports/raw/train_bc_status.json",
+      "bytes": 143,
+      "sha256": "ce8e202e6185fcc68aaa8a0a08eac80e3aa7a35eeee9050ce9a277debe6a8a7a"
+    },
+    {
+      "path": "reports/raw/validate_q3.json",
+      "bytes": 3551,
+      "sha256": "cf71654bd0b494f72fb1a28678ed2e8e687d66cb92796445863075be4a29e56d"
+    },
+    {
+      "path": "reports/raw/validate_q4.json",
+      "bytes": 167,
+      "sha256": "6e9bf7f26dbb4ea3f4ff93ba81b4110b46b1fdc93802088f9b7199fbbc555471"
+    },
+    {
+      "path": "reports/强化学习训练与评估报告.MD",
+      "bytes": 3043,
+      "sha256": "4945f1536b480bc7bd0b3e400f4b95e8b155a6df403c8b232346e81c080ef79a"
+    },
+    {
+      "path": "reports/总体验收与交付索引.MD",
+      "bytes": 1076,
+      "sha256": "1ffe98eefd5deb16b6e4d797b34281df1e9f16243649fd71c4a26f03b5e9aa2f"
+    },
+    {
+      "path": "reports/方案核对与实施差异.MD",
+      "bytes": 2726,
+      "sha256": "76c5cdf3bb029473498c91ff4c17957c967b38cddfb58c96f7a62be13cbbb517"
+    },
+    {
+      "path": "reports/最新模型与3000局测评索引.MD",
+      "bytes": 1688,
+      "sha256": "a7240fdf089286c8fac60a0a839fb25349a5cfa36a0bd7c36c4e35145ad66f10"
+    },
+    {
+      "path": "reports/系统集成与部署报告.MD",
+      "bytes": 2142,
+      "sha256": "0a10ecf0208b6099096bcce6beaa16475400252c8c3bf8d6c72c188f6c44baa3"
+    },
+    {
+      "path": "reports/问题1_结果报告.MD",
+      "bytes": 5267,
+      "sha256": "0991886a62eacc08f56e11e51efe3e6394e92dafd103296731c78fd2be3fdee0"
+    },
+    {
+      "path": "reports/问题2_结果报告.MD",
+      "bytes": 2370,
+      "sha256": "4e0a71d8176efae69e3e7dbce05f092c788f193833e23e18343525c15bdcf0f0"
+    },
+    {
+      "path": "reports/问题3_结果报告.MD",
+      "bytes": 2834,
+      "sha256": "3fe57b6dec428b39301d52e04bfde6b8143fe2a88b028a1cf9928be7c56a4074"
+    },
+    {
+      "path": "reports/问题4_结果报告.MD",
+      "bytes": 2662,
+      "sha256": "3177cf9f416439748b757a4ee9b374b3b62748bbb2c64098278c25be77e65e99"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

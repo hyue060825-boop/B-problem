@@ -1,0 +1,2 @@
+{"stage": "INIT", "elapsed_s": 0.020677427761256695, "budget_consumed_s": 0.0, "world_size": 1, "physical_gpus": "0", "checkpoint": "runs/q4_optimization_20260912/initial.pt", "parent_sha256": "8391434882d234bd49fdd53f68f0189502c5b25a9c66391c38b7e342e6fff300", "parent_update": 5, "optimizer_restored": true, "state_sha256": "94a02e22a3dd56d2130a786c8260a978a479e780b3be216176545fa5036633a7", "parameter_and_optimizer_sync": true}
+{"stage": "BASELINE_VALIDATION", "elapsed_s": 2.741657936014235, "budget_consumed_s": 0.0, "episodes": 2, "completion_rate": 0.0}

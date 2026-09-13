@@ -1,0 +1,1 @@
+{"pid": 3007898, "pgid": 3007898, "command": ["/data5/hy/B-problem/.venv/bin/python", "-m", "torch.distributed.run", "--standalone", "--nproc_per_node=4", "scripts/train_deadline_ddp.py", "--config", "/data5/hy/B-problem/configs/q3_legacy_deadline_4gpu.json"], "cuda": "0,1,2,3", "soft_stop": "2026-09-13T07:00:00+08:00", "term": "07:08", "kill": "07:09"}
