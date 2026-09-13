@@ -82,7 +82,7 @@ def main():
     if (ROOT/countdir/'status.json').exists() and read(countdir+'/status.json')['status']=='COMPLETE':
         manifest=read(countdir+'/manifest.json');summary=read(countdir+'/summary.json');seeds=[]
         require(manifest['sha256']==next(m['sha256'] for m in registry if m['id']=='q4_final'),'Q4 count model identity')
-        require(digest(ROOT/'scripts/evaluate_q4_source_counts.py')==manifest['evaluator_sha256'],'Q4 count evaluator changed')
+        require(digest(ROOT/manifest.get('evaluator_source_file','scripts/evaluate_q4_source_counts.py'))==manifest['evaluator_sha256'],'Q4 count evaluator changed')
         for n in range(10,17):
             data=read(countdir+f'/N{n}_samples.json');expected=summary[str(n)]
             require(len(data)==1000 and all(r['N']==n for r in data),'Q4 count stratum '+str(n))

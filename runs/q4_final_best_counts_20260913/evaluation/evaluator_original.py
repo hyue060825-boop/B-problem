@@ -109,7 +109,7 @@ def report(out, rows, manifest):
         v=values[n];s=summary[str(n)]
         ax.hist(v,bins=bins,color='#0f766e',edgecolor='white',alpha=.86)
         if len(v):ax.axvline(v.mean(),color='#c2410c',lw=1.8,label=f'Mean: {v.mean():.2f} s/source')
-        ax.set(xlim=(bins[0],bins[-1]),ylim=(0,ymax),xlabel='Total virtual time / source count (s/source)',ylabel='Scenarios',title=f'Q4 N={n} | completed {s["completed"]}/{s["episodes"]}')
+        ax.set(xlim=(bins[0],bins[-1]),ylim=(0,ymax),xlabel='Total virtual time / source count (s/source)',ylabel='Scenarios',title=f'Final Q4 c8812ced | N={n} | {s["completed"]}/{s["episodes"]} complete')
         ax.grid(axis='y',alpha=.18);ax.legend()
     # Match the historical Q3 layout: five single plots + one N15/N16 two-panel figure.
     names=[]

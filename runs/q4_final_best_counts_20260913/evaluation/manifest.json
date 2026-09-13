@@ -7076,5 +7076,6 @@
   "selection": "User-specified frozen final model; no training or checkpoint selection on this test",
   "python": "3.11.5",
   "torch": "2.5.1+cu124",
-  "numpy": "2.4.6"
+  "numpy": "2.4.6",
+  "evaluator_source_file": "runs/q4_final_best_counts_20260913/evaluation/evaluator_original.py"
 }

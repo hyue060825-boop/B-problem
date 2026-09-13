@@ -1,0 +1,20 @@
+{
+  "change": "Title only: Q4 N={N} | completed {completed}/{episodes}",
+  "renderer": "scripts/evaluate_q4_source_counts.py",
+  "renderer_sha256": "c922e94e14e829cfe6f82642ea732e59e11f707156a68824bdad261aed0ccfee",
+  "samples_sha256": "9afd7e86f9e0c93a41c77ca32e2a2437aaeb3d7ca34f6a86ca2f8c7992e8b40c",
+  "files": {
+    "N10_distribution.pdf": "f28f1f86aea512052b69151eca9ac13ad8ba6ce86707591035579245cb3ef80e",
+    "N10_distribution.png": "1c4aaecc7f6bb4dbbe2fd328aa78ea68ef508f22b0e630a54b835a1a75d31045",
+    "N11_distribution.pdf": "46c952a87e529671195c235a9c220e453468feb684a062feb542b3b1b8e1f596",
+    "N11_distribution.png": "43ab90b9421f5a9d1b5aa2752f8877b0a227f3d7a824bb97a4817088b4f2a8fb",
+    "N12_distribution.pdf": "c755e2f881c14789c663346eb5066035fa06bff312d3656de44837512a825763",
+    "N12_distribution.png": "3e29729e497d809e9c3c2ad627b88494ea11f1cc464b6c012e0ad49bd5974d38",
+    "N13_distribution.pdf": "b7cebfa0df377c212ab91c0a276870bb090063e07e83f2cc06ecb2ceeb949925",
+    "N13_distribution.png": "9573f62a10217001db840c7a0b3b60588c643a7765952c96d93f7b75fcbf3334",
+    "N14_distribution.pdf": "e5c30ac06467b48ae9ef8d3876e31909a60bc4bd8b4ec4f1793f8d9965f44957",
+    "N14_distribution.png": "371f5d2da732dbc05be0317485393763d1c3c1444670b9e86f10c24e3aaa3c5a",
+    "N15_16_distribution.pdf": "a2d7f66c969feffe08c341914c452f75e634d985e0f5d485b45f57783f764018",
+    "N15_16_distribution.png": "e67ccee52c72d8ef8c84011ef690836a0c8f8514196063b9e413b309dd60682d"
+  }
+}
