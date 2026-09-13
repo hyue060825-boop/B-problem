@@ -19,7 +19,7 @@ def main():
     server=LocalServer(('127.0.0.1',0),session);port=server.server_address[1]
     thread=threading.Thread(target=server.serve_forever,kwargs={'poll_interval':.01});thread.start()
     try:
-        cmd=[sys.executable,str(Path(__file__).resolve().with_name('run_policy.py')),'--problem','3','--checkpoint',a.checkpoint,
+        cmd=[sys.executable,str(Path(__file__).resolve().with_name('run_policy_research.py')),'--problem','3','--checkpoint',a.checkpoint,
              '--robot-id','LOCAL-TRAIN','--base-url',f'http://127.0.0.1:{port}','--device','cpu','--max-macros','400']
         result=subprocess.run(cmd,text=True,capture_output=True,timeout=120)
     finally:server.shutdown();server.server_close();thread.join()

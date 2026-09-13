@@ -1,5 +1,7 @@
 # 实验结果
 
+完整最终资产见[final-20260913](final-20260913/README.md)，历史分卷见[history](history/README.md)；论文固定子集 [final-8ef9ef8](final-8ef9ef8/README.md)保留引用路径。以下规则和旧批次继续适用。
+
 - `validation/`：模型算例、工程验证、历史评估原始证据；论文已引用的归档保留原路径。
 - `training/`：研究训练的配置、日志、权重和逐局记录；历史交付与新实验分目录保存。
 - `rehearsal/`：演练及本地策略评估，每次运行使用独立目录。

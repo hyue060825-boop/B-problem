@@ -1,0 +1,12 @@
+{
+  "3": {
+    "pairs": 3000,
+    "scenario_hashes_match": true,
+    "all_complete": true
+  },
+  "4": {
+    "pairs": 3000,
+    "scenario_hashes_match": true,
+    "all_complete": true
+  }
+}

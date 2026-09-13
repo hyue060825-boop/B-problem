@@ -1,0 +1,302 @@
+[
+  {
+    "id": "runs/ddp_20260911",
+    "files": 13,
+    "compressed_bytes": 120623,
+    "parts": 1
+  },
+  {
+    "id": "runs/large_20260911",
+    "files": 3270,
+    "compressed_bytes": 40482162,
+    "parts": 1
+  },
+  {
+    "id": "runs/legacy_deadline_20260913",
+    "files": 3,
+    "compressed_bytes": 7057,
+    "parts": 1
+  },
+  {
+    "id": "runs/q34_3000_test_20260912",
+    "files": 17,
+    "compressed_bytes": 2694036,
+    "parts": 1
+  },
+  {
+    "id": "runs/q34_deadline_test3000_20260913",
+    "files": 19,
+    "compressed_bytes": 3425910,
+    "parts": 1
+  },
+  {
+    "id": "runs/q34_structural_20260912",
+    "files": 347,
+    "compressed_bytes": 3025194,
+    "parts": 1
+  },
+  {
+    "id": "runs/q3_3000_test_20260911",
+    "files": 4,
+    "compressed_bytes": 164976,
+    "parts": 1
+  },
+  {
+    "id": "runs/q3_best_finetune_20260913",
+    "files": 2,
+    "compressed_bytes": 3137,
+    "parts": 1
+  },
+  {
+    "id": "runs/q3_current_best_eval_20260912",
+    "files": 8,
+    "compressed_bytes": 329566,
+    "parts": 1
+  },
+  {
+    "id": "runs/q3_final_best_counts_20260912",
+    "files": 74,
+    "compressed_bytes": 1979311,
+    "parts": 1
+  },
+  {
+    "id": "runs/q3_gpu8_extended_20260912",
+    "files": 2690,
+    "compressed_bytes": 172709450,
+    "parts": 5
+  },
+  {
+    "id": "runs/q3_gpu8_extended_source_20260912",
+    "files": 79,
+    "compressed_bytes": 107817,
+    "parts": 1
+  },
+  {
+    "id": "runs/q3_gpu8_smoke_20260912",
+    "files": 137,
+    "compressed_bytes": 8927213,
+    "parts": 1
+  },
+  {
+    "id": "runs/q3_gpu_20260912",
+    "files": 57,
+    "compressed_bytes": 4371151,
+    "parts": 1
+  },
+  {
+    "id": "runs/q3_joint_20260912",
+    "files": 2179,
+    "compressed_bytes": 67463723,
+    "parts": 2
+  },
+  {
+    "id": "runs/q3_layout_extremes_20260913",
+    "files": 4,
+    "compressed_bytes": 348810,
+    "parts": 1
+  },
+  {
+    "id": "runs/q3_layout_extremes_20260913_v2",
+    "files": 36,
+    "compressed_bytes": 1241969,
+    "parts": 1
+  },
+  {
+    "id": "runs/q3_legacy_deadline_20260913",
+    "files": 6668,
+    "compressed_bytes": 85819203,
+    "parts": 3
+  },
+  {
+    "id": "runs/q3_ppo_20260911",
+    "files": 76,
+    "compressed_bytes": 234690,
+    "parts": 1
+  },
+  {
+    "id": "runs/q4_3000_test_20260911",
+    "files": 4,
+    "compressed_bytes": 162208,
+    "parts": 1
+  },
+  {
+    "id": "runs/q4_absence_tail_analysis_20260913",
+    "files": 8,
+    "compressed_bytes": 689646,
+    "parts": 1
+  },
+  {
+    "id": "runs/q4_absence_tail_analysis_20260913_v2",
+    "files": 10,
+    "compressed_bytes": 738806,
+    "parts": 1
+  },
+  {
+    "id": "runs/q4_baseline_8gpu_1h_20260913",
+    "files": 781,
+    "compressed_bytes": 20390381,
+    "parts": 1
+  },
+  {
+    "id": "runs/q4_belief_attention_20260912",
+    "files": 57,
+    "compressed_bytes": 401167,
+    "parts": 1
+  },
+  {
+    "id": "runs/q4_budget_20260912",
+    "files": 3931,
+    "compressed_bytes": 51794288,
+    "parts": 2
+  },
+  {
+    "id": "runs/q4_certificate_search_20260912",
+    "files": 20,
+    "compressed_bytes": 42356,
+    "parts": 1
+  },
+  {
+    "id": "runs/q4_closed_loop_20260913",
+    "files": 65,
+    "compressed_bytes": 21550420,
+    "parts": 1
+  },
+  {
+    "id": "runs/q4_continue_paired_3000_20260912",
+    "files": 10,
+    "compressed_bytes": 2511722,
+    "parts": 1
+  },
+  {
+    "id": "runs/q4_continue_paired_smoke_20260912",
+    "files": 9,
+    "compressed_bytes": 114067,
+    "parts": 1
+  },
+  {
+    "id": "runs/q4_empty_arena_20260913",
+    "files": 5,
+    "compressed_bytes": 14841,
+    "parts": 1
+  },
+  {
+    "id": "runs/q4_layout_extremes_20260913",
+    "files": 36,
+    "compressed_bytes": 1682876,
+    "parts": 1
+  },
+  {
+    "id": "runs/q4_legacy_deadline_20260913",
+    "files": 4279,
+    "compressed_bytes": 56442249,
+    "parts": 2
+  },
+  {
+    "id": "runs/q4_legacy_deadline_smoke_20260913",
+    "files": 10,
+    "compressed_bytes": 26394,
+    "parts": 1
+  },
+  {
+    "id": "runs/q4_old_new_paired_20260912_v2",
+    "files": 2,
+    "compressed_bytes": 487683,
+    "parts": 1
+  },
+  {
+    "id": "runs/q4_optimization_20260912",
+    "files": 32,
+    "compressed_bytes": 29494,
+    "parts": 1
+  },
+  {
+    "id": "runs/q4_planning_ablation_20260913",
+    "files": 26,
+    "compressed_bytes": 6411798,
+    "parts": 1
+  },
+  {
+    "id": "runs/q4_ppo_20260911",
+    "files": 76,
+    "compressed_bytes": 241525,
+    "parts": 1
+  },
+  {
+    "id": "runs/q4_repaired_20260912",
+    "files": 145,
+    "compressed_bytes": 2645148,
+    "parts": 1
+  },
+  {
+    "id": "runs/smoke_20260911",
+    "files": 6,
+    "compressed_bytes": 10354,
+    "parts": 1
+  },
+  {
+    "id": "workspace/scripts",
+    "files": 54,
+    "compressed_bytes": 103788,
+    "parts": 1
+  },
+  {
+    "id": "workspace/tests",
+    "files": 25,
+    "compressed_bytes": 23990,
+    "parts": 1
+  },
+  {
+    "id": "workspace/solution",
+    "files": 34,
+    "compressed_bytes": 53901,
+    "parts": 1
+  },
+  {
+    "id": "workspace/bsim",
+    "files": 21,
+    "compressed_bytes": 32161,
+    "parts": 1
+  },
+  {
+    "id": "workspace/configs",
+    "files": 29,
+    "compressed_bytes": 4146,
+    "parts": 1
+  },
+  {
+    "id": "workspace/reports",
+    "files": 39,
+    "compressed_bytes": 44002,
+    "parts": 1
+  },
+  {
+    "id": "workspace/docs",
+    "files": 18,
+    "compressed_bytes": 451473,
+    "parts": 1
+  },
+  {
+    "id": "workspace/logs",
+    "files": 1,
+    "compressed_bytes": 613,
+    "parts": 1
+  },
+  {
+    "id": "workspace/experiments",
+    "files": 1,
+    "compressed_bytes": 1791,
+    "parts": 1
+  },
+  {
+    "id": "workspace/run_logs",
+    "files": 18,
+    "compressed_bytes": 72067,
+    "parts": 1
+  },
+  {
+    "id": "workspace/external_logs",
+    "files": 10,
+    "compressed_bytes": 7975,
+    "parts": 1
+  }
+]

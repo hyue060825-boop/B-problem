@@ -1,0 +1,23 @@
+{
+  "profile": "compatible_research",
+  "authorized": true,
+  "env_ready": true,
+  "problem": 4,
+  "seed": 41011,
+  "device": "cuda:1",
+  "output": "runs/q4_ppo_20260911",
+  "workers": 4,
+  "episodes_per_update": 32,
+  "ppo_updates": 64,
+  "bc_episodes": 16,
+  "dagger_episodes": 16,
+  "bc_epochs": 6,
+  "dagger_epochs": 3,
+  "ppo_epochs": 3,
+  "batch_size": 128,
+  "eval_every": 16,
+  "eval_episodes": 8,
+  "lr": 0.0003,
+  "max_macros": 700,
+  "resume": "runs/q4_ppo_20260911/latest.pt"
+}

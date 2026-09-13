@@ -1,0 +1,6 @@
+{
+  "stage": "COMPLETE",
+  "ended_at": "2026-09-13T11:12:40.689499+08:00",
+  "result": "/data5/hy/B-problem/runs/q4_baseline_8gpu_1h_20260913/train/final_test.json",
+  "status": "/data5/hy/B-problem/runs/q4_baseline_8gpu_1h_20260913/train/status.json"
+}

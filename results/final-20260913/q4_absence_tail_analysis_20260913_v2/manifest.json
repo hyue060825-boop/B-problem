@@ -1,0 +1,8 @@
+{
+  "checkpoint": "/data5/hy/B-problem/runs/q4_legacy_deadline_20260913/best.pt",
+  "sha256": "e8a525f78d176d9073372394b324bd585f4445fbf9cd1515141c483f38d5bd90",
+  "original_samples": "/data5/hy/B-problem/runs/q34_deadline_test3000_20260913/q4_best_samples.json",
+  "samples_sha256": "3029838822251c7ad69f92583024e9580242fed07eb8b368bfa7ed24c3e0a9bf",
+  "official_log_sha256": "ae0acc005455bcc21b400f0898b635bc94cb4b6abe95e7470684757ba357e028",
+  "note": "original aggregate data lack primitive timestamps; same scenarios replayed with instrumentation; live wall feature retained"
+}

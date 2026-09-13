@@ -1,0 +1,691 @@
+{
+  "status": "REVIEWED_NOT_MERGED",
+  "main_commit": "d146430fea97ead3f067dfa6b7530fc49fcb5346",
+  "source_commit": "8ef9ef87d8c5413e85e02d18a99eee083da8d66f",
+  "asset_audit": {
+    "source_commit": "8ef9ef87d8c5413e85e02d18a99eee083da8d66f",
+    "main_commit": "d146430fea97ead3f067dfa6b7530fc49fcb5346",
+    "checks": {
+      "snapshot": {
+        "files": 1475,
+        "bytes": 772835380,
+        "files_identical_to_existing_main": 370
+      },
+      "models": [
+        {
+          "id": "q3_final",
+          "role": "final",
+          "path": "runs/q3_legacy_deadline_20260913/best.pt",
+          "sha256": "51397bc8056798c9926ddadd9620faf7438dce29cf7b52616d82c0ed16e74679",
+          "parent": "q3_parent",
+          "architecture": "CandidatePolicy",
+          "feature_version": "normalized-public-v2",
+          "parameters": 352386,
+          "checkpoint_update": 4399,
+          "runtime_revision": "3ddb2d9"
+        },
+        {
+          "id": "q4_final",
+          "role": "final",
+          "path": "runs/q4_baseline_8gpu_1h_20260913/train/best.pt",
+          "sha256": "c8812cedc2a755997dbd431873b3c4229d8411d827937225e34f1b8ac6949ffb",
+          "parent": "q4_parent",
+          "architecture": "CandidatePolicy",
+          "feature_version": "normalized-public-v2",
+          "parameters": 352386,
+          "checkpoint_update": 599,
+          "runtime_revision": "3ddb2d9"
+        },
+        {
+          "id": "q3_parent",
+          "role": "reference",
+          "path": "runs/q3_gpu8_extended_20260912/ppo/best.pt",
+          "sha256": "8cc3a1621334640e6010d8d8fc2cc91a7d47a879573bd54b55fa45a990a56e71",
+          "parent": null,
+          "architecture": "CandidatePolicy",
+          "feature_version": "normalized-public-v2",
+          "parameters": 352386,
+          "checkpoint_update": 1599,
+          "runtime_revision": "3ddb2d9"
+        },
+        {
+          "id": "q4_parent",
+          "role": "reference",
+          "path": "runs/q4_legacy_deadline_20260913/best.pt",
+          "sha256": "e8a525f78d176d9073372394b324bd585f4445fbf9cd1515141c483f38d5bd90",
+          "parent": "q4_earlier",
+          "architecture": "CandidatePolicy",
+          "feature_version": "normalized-public-v2",
+          "parameters": 352386,
+          "checkpoint_update": 3799,
+          "runtime_revision": "3ddb2d9"
+        },
+        {
+          "id": "q4_parent_copy",
+          "role": "reference_duplicate_for_pair",
+          "path": "runs/q4_baseline_8gpu_1h_20260913/parent/best.pt",
+          "sha256": "e8a525f78d176d9073372394b324bd585f4445fbf9cd1515141c483f38d5bd90",
+          "parent": "q4_earlier",
+          "architecture": "CandidatePolicy",
+          "feature_version": "normalized-public-v2",
+          "parameters": 352386,
+          "checkpoint_update": 3799,
+          "runtime_revision": "3ddb2d9"
+        },
+        {
+          "id": "q4_earlier",
+          "role": "reference",
+          "path": "runs/q4_budget_20260912/train/best.pt",
+          "sha256": "2329eb4d12088ebccfdc459939aeb8d5ee67f9696b4b41b1385c3c158d4c0e4a",
+          "parent": null,
+          "architecture": "CandidatePolicy",
+          "feature_version": "normalized-public-v2",
+          "parameters": 352386,
+          "checkpoint_update": 3499,
+          "runtime_revision": "3ddb2d9"
+        }
+      ],
+      "archives": {
+        "count": 50,
+        "parts": 59,
+        "members": 25445,
+        "bytes": 5341241634
+      },
+      "archives_detail": [
+        {
+          "manifest": "paper/history/runs/ddp_20260911/archive_manifest.json",
+          "parts": 1,
+          "members": 13,
+          "bytes": 556071
+        },
+        {
+          "manifest": "paper/history/runs/large_20260911/archive_manifest.json",
+          "parts": 1,
+          "members": 3270,
+          "bytes": 312160250
+        },
+        {
+          "manifest": "paper/history/runs/legacy_deadline_20260913/archive_manifest.json",
+          "parts": 1,
+          "members": 3,
+          "bytes": 29227
+        },
+        {
+          "manifest": "paper/history/runs/q34_3000_test_20260912/archive_manifest.json",
+          "parts": 1,
+          "members": 17,
+          "bytes": 20270376
+        },
+        {
+          "manifest": "paper/history/runs/q34_deadline_test3000_20260913/archive_manifest.json",
+          "parts": 1,
+          "members": 19,
+          "bytes": 22498715
+        },
+        {
+          "manifest": "paper/history/runs/q34_structural_20260912/archive_manifest.json",
+          "parts": 1,
+          "members": 347,
+          "bytes": 25851169
+        },
+        {
+          "manifest": "paper/history/runs/q3_3000_test_20260911/archive_manifest.json",
+          "parts": 1,
+          "members": 4,
+          "bytes": 1689763
+        },
+        {
+          "manifest": "paper/history/runs/q3_best_finetune_20260913/archive_manifest.json",
+          "parts": 1,
+          "members": 2,
+          "bytes": 13556
+        },
+        {
+          "manifest": "paper/history/runs/q3_current_best_eval_20260912/archive_manifest.json",
+          "parts": 1,
+          "members": 8,
+          "bytes": 3415982
+        },
+        {
+          "manifest": "paper/history/runs/q3_final_best_counts_20260912/archive_manifest.json",
+          "parts": 1,
+          "members": 74,
+          "bytes": 12400478
+        },
+        {
+          "manifest": "paper/history/runs/q3_gpu8_extended_20260912/archive_manifest.json",
+          "parts": 5,
+          "members": 2690,
+          "bytes": 2043663704
+        },
+        {
+          "manifest": "paper/history/runs/q3_gpu8_extended_source_20260912/archive_manifest.json",
+          "parts": 1,
+          "members": 79,
+          "bytes": 341246
+        },
+        {
+          "manifest": "paper/history/runs/q3_gpu8_smoke_20260912/archive_manifest.json",
+          "parts": 1,
+          "members": 137,
+          "bytes": 110434310
+        },
+        {
+          "manifest": "paper/history/runs/q3_gpu_20260912/archive_manifest.json",
+          "parts": 1,
+          "members": 57,
+          "bytes": 56154199
+        },
+        {
+          "manifest": "paper/history/runs/q3_joint_20260912/archive_manifest.json",
+          "parts": 2,
+          "members": 2179,
+          "bytes": 618813607
+        },
+        {
+          "manifest": "paper/history/runs/q3_layout_extremes_20260913/archive_manifest.json",
+          "parts": 1,
+          "members": 4,
+          "bytes": 2202417
+        },
+        {
+          "manifest": "paper/history/runs/q3_layout_extremes_20260913_v2/archive_manifest.json",
+          "parts": 1,
+          "members": 36,
+          "bytes": 4404280
+        },
+        {
+          "manifest": "paper/history/runs/q3_legacy_deadline_20260913/archive_manifest.json",
+          "parts": 3,
+          "members": 6668,
+          "bytes": 724806092
+        },
+        {
+          "manifest": "paper/history/runs/q3_ppo_20260911/archive_manifest.json",
+          "parts": 1,
+          "members": 76,
+          "bytes": 1828033
+        },
+        {
+          "manifest": "paper/history/runs/q4_3000_test_20260911/archive_manifest.json",
+          "parts": 1,
+          "members": 4,
+          "bytes": 1719240
+        },
+        {
+          "manifest": "paper/history/runs/q4_absence_tail_analysis_20260913/archive_manifest.json",
+          "parts": 1,
+          "members": 8,
+          "bytes": 3827365
+        },
+        {
+          "manifest": "paper/history/runs/q4_absence_tail_analysis_20260913_v2/archive_manifest.json",
+          "parts": 1,
+          "members": 10,
+          "bytes": 4189693
+        },
+        {
+          "manifest": "paper/history/runs/q4_baseline_8gpu_1h_20260913/archive_manifest.json",
+          "parts": 1,
+          "members": 781,
+          "bytes": 166125282
+        },
+        {
+          "manifest": "paper/history/runs/q4_belief_attention_20260912/archive_manifest.json",
+          "parts": 1,
+          "members": 57,
+          "bytes": 3467777
+        },
+        {
+          "manifest": "paper/history/runs/q4_budget_20260912/archive_manifest.json",
+          "parts": 2,
+          "members": 3931,
+          "bytes": 425892133
+        },
+        {
+          "manifest": "paper/history/runs/q4_certificate_search_20260912/archive_manifest.json",
+          "parts": 1,
+          "members": 20,
+          "bytes": 743263
+        },
+        {
+          "manifest": "paper/history/runs/q4_closed_loop_20260913/archive_manifest.json",
+          "parts": 1,
+          "members": 65,
+          "bytes": 217843884
+        },
+        {
+          "manifest": "paper/history/runs/q4_continue_paired_3000_20260912/archive_manifest.json",
+          "parts": 1,
+          "members": 10,
+          "bytes": 21963153
+        },
+        {
+          "manifest": "paper/history/runs/q4_continue_paired_smoke_20260912/archive_manifest.json",
+          "parts": 1,
+          "members": 9,
+          "bytes": 220581
+        },
+        {
+          "manifest": "paper/history/runs/q4_empty_arena_20260913/archive_manifest.json",
+          "parts": 1,
+          "members": 5,
+          "bytes": 270281
+        },
+        {
+          "manifest": "paper/history/runs/q4_layout_extremes_20260913/archive_manifest.json",
+          "parts": 1,
+          "members": 36,
+          "bytes": 7599732
+        },
+        {
+          "manifest": "paper/history/runs/q4_legacy_deadline_20260913/archive_manifest.json",
+          "parts": 2,
+          "members": 4279,
+          "bytes": 465011530
+        },
+        {
+          "manifest": "paper/history/runs/q4_legacy_deadline_smoke_20260913/archive_manifest.json",
+          "parts": 1,
+          "members": 10,
+          "bytes": 162723
+        },
+        {
+          "manifest": "paper/history/runs/q4_old_new_paired_20260912_v2/archive_manifest.json",
+          "parts": 1,
+          "members": 2,
+          "bytes": 4693992
+        },
+        {
+          "manifest": "paper/history/runs/q4_optimization_20260912/archive_manifest.json",
+          "parts": 1,
+          "members": 32,
+          "bytes": 409718
+        },
+        {
+          "manifest": "paper/history/runs/q4_planning_ablation_20260913/archive_manifest.json",
+          "parts": 1,
+          "members": 26,
+          "bytes": 31577681
+        },
+        {
+          "manifest": "paper/history/runs/q4_ppo_20260911/archive_manifest.json",
+          "parts": 1,
+          "members": 76,
+          "bytes": 1830604
+        },
+        {
+          "manifest": "paper/history/runs/q4_repaired_20260912/archive_manifest.json",
+          "parts": 1,
+          "members": 145,
+          "bytes": 19660254
+        },
+        {
+          "manifest": "paper/history/runs/smoke_20260911/archive_manifest.json",
+          "parts": 1,
+          "members": 6,
+          "bytes": 51973
+        },
+        {
+          "manifest": "paper/history/workspace/bsim/archive_manifest.json",
+          "parts": 1,
+          "members": 21,
+          "bytes": 97337
+        },
+        {
+          "manifest": "paper/history/workspace/configs/archive_manifest.json",
+          "parts": 1,
+          "members": 29,
+          "bytes": 17841
+        },
+        {
+          "manifest": "paper/history/workspace/docs/archive_manifest.json",
+          "parts": 1,
+          "members": 18,
+          "bytes": 525327
+        },
+        {
+          "manifest": "paper/history/workspace/experiments/archive_manifest.json",
+          "parts": 1,
+          "members": 1,
+          "bytes": 4014
+        },
+        {
+          "manifest": "paper/history/workspace/external_logs/archive_manifest.json",
+          "parts": 1,
+          "members": 10,
+          "bytes": 33317
+        },
+        {
+          "manifest": "paper/history/workspace/logs/archive_manifest.json",
+          "parts": 1,
+          "members": 1,
+          "bytes": 460
+        },
+        {
+          "manifest": "paper/history/workspace/reports/archive_manifest.json",
+          "parts": 1,
+          "members": 39,
+          "bytes": 109174
+        },
+        {
+          "manifest": "paper/history/workspace/run_logs/archive_manifest.json",
+          "parts": 1,
+          "members": 18,
+          "bytes": 1051680
+        },
+        {
+          "manifest": "paper/history/workspace/scripts/archive_manifest.json",
+          "parts": 1,
+          "members": 54,
+          "bytes": 362220
+        },
+        {
+          "manifest": "paper/history/workspace/solution/archive_manifest.json",
+          "parts": 1,
+          "members": 34,
+          "bytes": 172170
+        },
+        {
+          "manifest": "paper/history/workspace/tests/archive_manifest.json",
+          "parts": 1,
+          "members": 25,
+          "bytes": 73760
+        }
+      ],
+      "originals": {
+        "count": 25984,
+        "matched_by_original_path_or_archive": 25517,
+        "not_in_exact_original_path_or_archives": 467,
+        "server_cache_available": false
+      },
+      "cache_only_models": {
+        "entries": 143,
+        "unique_sha256": 136,
+        "also_available_in_main": 59
+      },
+      "main_results": [
+        {
+          "problem": 3,
+          "model": "parent",
+          "episodes": 3000,
+          "completed": 3000,
+          "sources": 38961,
+          "mean_T": 3271.0380697853334,
+          "mean_T_N": 257.1546516345326
+        },
+        {
+          "problem": 3,
+          "model": "final",
+          "episodes": 3000,
+          "completed": 3000,
+          "sources": 38961,
+          "mean_T": 3255.7587905496666,
+          "mean_T_N": 255.98914613743668
+        },
+        {
+          "problem": 3,
+          "metric": "T",
+          "difference": -15.27927923566666,
+          "ci95": [
+            -19.22074019745491,
+            -11.337818273878412
+          ],
+          "faster": 1379,
+          "slower": 972
+        },
+        {
+          "problem": 3,
+          "metric": "T_N",
+          "difference": -1.1655054970959264,
+          "ci95": [
+            -1.4659998511874885,
+            -0.8650111430043643
+          ],
+          "faster": 1379,
+          "slower": 972
+        },
+        {
+          "problem": 4,
+          "model": "parent",
+          "episodes": 3000,
+          "completed": 3000,
+          "sources": 39086,
+          "mean_T": 9697.796069506,
+          "mean_T_N": 768.1595712431267
+        },
+        {
+          "problem": 4,
+          "model": "final",
+          "episodes": 3000,
+          "completed": 3000,
+          "sources": 39086,
+          "mean_T": 9685.100352233334,
+          "mean_T_N": 767.2524390954203
+        },
+        {
+          "problem": 4,
+          "metric": "T",
+          "difference": -12.695717272666657,
+          "ci95": [
+            -31.85319828677504,
+            6.4617637414417235
+          ],
+          "faster": 1349,
+          "slower": 1295
+        },
+        {
+          "problem": 4,
+          "metric": "T_N",
+          "difference": -0.9071321477063821,
+          "ci95": [
+            -2.3044366455353558,
+            0.49017235012259164
+          ],
+          "faster": 1349,
+          "slower": 1295
+        }
+      ]
+    },
+    "status": "PASS",
+    "failures": []
+  },
+  "supplement_audit": {
+    "training": [
+      {
+        "problem": 3,
+        "scope": "through_best",
+        "iterations": 4400,
+        "episodes": 563200,
+        "macros": 17395818,
+        "world_size": 4
+      },
+      {
+        "problem": 3,
+        "scope": "whole_run",
+        "iterations": 6498,
+        "episodes": 831744,
+        "macros": 25685472,
+        "world_size": 4
+      },
+      {
+        "problem": 4,
+        "scope": "through_best",
+        "iterations": 600,
+        "episodes": 153600,
+        "macros": 6946581,
+        "world_size": 8
+      },
+      {
+        "problem": 4,
+        "scope": "whole_run",
+        "iterations": 682,
+        "episodes": 174592,
+        "macros": 7894324,
+        "world_size": 8
+      }
+    ],
+    "q4_ablation": {
+      "baseline": {
+        "records": 3000,
+        "mean_T": 9667.767671509,
+        "mean_last_clear": 8542.776701622666
+      },
+      "route": {
+        "records": 3000,
+        "mean_T": 9893.001835658333,
+        "mean_last_clear": 9105.084204546
+      },
+      "schedule": {
+        "records": 3000,
+        "mean_T": 9675.536409567334,
+        "mean_last_clear": 8504.310995668333
+      },
+      "combined": {
+        "records": 3000,
+        "mean_T": 9863.411145636,
+        "mean_last_clear": 9009.804427832
+      }
+    },
+    "q4_tail": {
+      "records": 3000,
+      "exact_total_replay_matches": 3000,
+      "lt16": 2577,
+      "lt16_mean_T": 10093.551156389989,
+      "lt16_mean_tail": 1316.2675648649592
+    },
+    "extremes": [
+      {
+        "problem": 3,
+        "candidates": 4224,
+        "per_N": {
+          "10": 704,
+          "11": 704,
+          "12": 704,
+          "13": 704,
+          "14": 704,
+          "15": 704
+        }
+      },
+      {
+        "problem": 4,
+        "candidates": 4224,
+        "per_N": {
+          "10": 704,
+          "11": 704,
+          "12": 704,
+          "13": 704,
+          "14": 704,
+          "15": 704
+        }
+      }
+    ],
+    "official_log": {
+      "audit": {
+        "label": "LOCAL-observable-invariants",
+        "status": "PASS",
+        "records": 304,
+        "checked_transitions": 302,
+        "errors": [],
+        "unverified": [],
+        "qualification": "仅核对公开响应与可观测状态；微秒计时允许 2 微秒差异，不证明隐藏场景一致或全部清除。"
+      },
+      "requests": 304,
+      "distinct_cleared_channels": 14,
+      "virtual_time_s": 9236.067257,
+      "real_enter_to_exit_s": 2.73,
+      "checkpoint_sha256": "e8a525f78d176d9073372394b324bd585f4445fbf9cd1515141c483f38d5bd90",
+      "run_type": "not stated; no case code or encrypted official export in this branch"
+    },
+    "bundle": {
+      "verified_files": 52,
+      "zip_sha256": "f01d8c3221557949b2599110c5a65445100ed0e3c1d7dcd898754d6bdba31505"
+    },
+    "proof_vs_runtime": {
+      "proof_station_count": 31,
+      "runtime_station_count": 31,
+      "max_distance_to_nearest_runtime_station_m": 0.0
+    },
+    "status": "PASS"
+  },
+  "merge_preview": {
+    "unmerged_paths": 3784,
+    "by_root": {
+      ".gitignore": 1,
+      "README.md": 1,
+      "dist": 1,
+      "docs": 19,
+      "\"docs": 7,
+      "experiments": 1,
+      "paper": 136,
+      "\"paper": 15,
+      "\"reports": 11,
+      "reports": 16,
+      "results": 3434,
+      "\"results": 11,
+      "runs": 129,
+      "scripts": 1,
+      "\"\\346\\226\\271\\346\\241\\210\\344\\272\\214.MD\"": 1
+    },
+    "conflicts_by_type": {
+      "CONFLICT (content)": 3,
+      "CONFLICT (directory rename split)": 1,
+      "CONFLICT (rename/rename)": 163,
+      "CONFLICT (rename/delete)": 3290,
+      "CONFLICT (file location)": 2
+    }
+  },
+  "tests": {
+    "passed": 193,
+    "skipped_no_cuda": 2,
+    "subtests_passed": 15,
+    "first_run": "180 passed; 13 local socket/process tests blocked by sandbox; 2 CUDA skipped",
+    "local_service_rerun": "13 passed with local-socket permission",
+    "python": "3.13.13",
+    "torch": "2.8.0+cpu",
+    "scope": "CPU, local ephemeral HTTP, offline inference and rational certificate; no official software or long GPU training"
+  },
+  "entry_links": {
+    "checked": 227,
+    "broken": 0
+  },
+  "figures": {
+    "hash_verified_files": 97,
+    "distinct_hashes": 64,
+    "png_contact_reviewed": 35
+  },
+  "cache_model_inventory": {
+    "entries": 143,
+    "matches_in_main_checkout": 59,
+    "additional_match_in_incoming_checkout": 1,
+    "not_in_either_checkout": 83,
+    "qualification": "Not a claim that the files are absent from all reachable Git history or the source server"
+  },
+  "mapping": {
+    "rows": 1475,
+    "counts": {
+      "保留 main 并整合": 3,
+      "复用 main": 67,
+      "保留冻结实现": 10,
+      "原样归档": 1271,
+      "已包含于 ZIP": 52,
+      "整合复现说明": 1,
+      "迁移实验工具": 2,
+      "整合说明或索引": 4,
+      "生成交付副本": 12,
+      "复用 main 原题": 3,
+      "复用 main 原报告": 2,
+      "适配活动入口": 24,
+      "保留 main 并适配接口": 4,
+      "沿用 main 包结构": 1,
+      "新增并适配测试路径": 4,
+      "保留 main 强化测试": 6,
+      "复用 main 测试": 9
+    }
+  },
+  "local_review_workspace": "/home/lenovo/projects/competition/.local/B-problem-archive/验收-experiment_result-8ef9ef8",
+  "reproduction_scripts": [
+    "/home/lenovo/projects/competition/.local/B-problem-archive/验收-experiment_result-8ef9ef8/audit_assets.py",
+    "/home/lenovo/projects/competition/.local/B-problem-archive/验收-experiment_result-8ef9ef8/audit_supplements.py"
+  ]
+}

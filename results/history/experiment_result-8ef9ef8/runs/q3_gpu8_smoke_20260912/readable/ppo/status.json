@@ -1,0 +1,9 @@
+{
+  "stage": "COMPLETE",
+  "elapsed_s": 6.080925166141242,
+  "consumed_s": 11.573826043400913,
+  "updates": 2,
+  "checkpoint": "/data5/hy/B-problem/runs/q3_gpu8_smoke_20260912/ppo/latest.pt",
+  "test_completion_rate": 1.0,
+  "mean_delta_s": -2.339735625000003
+}

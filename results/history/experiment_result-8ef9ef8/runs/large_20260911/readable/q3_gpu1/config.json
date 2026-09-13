@@ -1,0 +1,22 @@
+{
+  "profile": "compatible_research",
+  "authorized": true,
+  "env_ready": true,
+  "problem": 3,
+  "seed": 501000,
+  "device": "cuda:1",
+  "output": "runs/large_20260911/q3_gpu1",
+  "workers": 2,
+  "episodes_per_update": 64,
+  "ppo_updates": 256,
+  "bc_episodes": 128,
+  "dagger_episodes": 128,
+  "bc_epochs": 8,
+  "dagger_epochs": 4,
+  "ppo_epochs": 4,
+  "batch_size": 256,
+  "eval_every": 32,
+  "eval_episodes": 32,
+  "lr": 0.0003,
+  "max_macros": 400
+}

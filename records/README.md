@@ -4,6 +4,7 @@
 
 | 入口 | 内容 |
 | --- | --- |
+| [最终完整交付](acceptance/接收记录-8ef9ef8-完整资产.md) | 最终模型、实验、部署与来源映射 |
 | [版本索引](versions.md) | 各批来源、main 整合版本与对应证据 |
 | [acceptance/](acceptance/) | 按来源提交保存的接收记录；保留当时的结论 |
 | [方法改进：LIT-Q2-01](improvements/LIT-Q2-01.md) | 文献启发、Q2新实验与本批验证记录 |

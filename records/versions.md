@@ -1,6 +1,6 @@
 # 版本索引
 
-当前算法基准为 `main@4e2cf9f`，已接收 hy 至 `3ddb2d9`。a2d1e99完成资产整理；LIT-Q2-01在其基础上新增独立Q2实验，src算法和历史数据不变。
+当前完整交付来源为 `experiment_result@8ef9ef8`，在 main@910df44 上整合。核心算法、main 协议修复和 LIT-Q2-01 保留，最终权重通过冻结运行时部署。见[完整接收记录](acceptance/接收记录-8ef9ef8-完整资产.md)。
 
 | 来源 / 阶段 | main 整合提交 | 主要资产 | 接收与验证 |
 | --- | --- | --- | --- |
@@ -19,3 +19,7 @@ Git 提交保留完整变更历史。旧记录中的缺陷、完成率和“待�
 ## 2026-09-13 最终论文证据同步
 
 接收固定实验提交 `8ef9ef8`，更新论文及 Overleaf，详见 [接收记录](acceptance/接收记录-8ef9ef8-论文.md)。最终逐局结果和可运行源码、权重固定在 `results/final-8ef9ef8/`，原算法目录及历史结果保留。
+
+## 最终完整资产整合
+
+在论文证据同步基础上补齐所有来源文件、实验档案、父模型和部署包，更新每题交付与复现入口。资产去向见[实际映射](acceptance/experiment_result-8ef9ef8/asset-map-main.json)，本机验证见[整合验证](../results/validation/integration-8ef9ef8/README.md)。本地合并保留 main 与 experiment_result 双亲，未推送远端。

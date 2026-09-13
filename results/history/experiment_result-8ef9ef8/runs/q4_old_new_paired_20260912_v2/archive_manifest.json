@@ -1,0 +1,23 @@
+{
+  "archive_sha256": "51d57114551a4c67c555d4a8444860ca167dd07e1fb53570e8df1f7f84f4d167",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 487683,
+      "sha256": "51d57114551a4c67c555d4a8444860ca167dd07e1fb53570e8df1f7f84f4d167"
+    }
+  ],
+  "members": [
+    {
+      "path": "runs/q4_old_new_paired_20260912_v2/samples.json",
+      "bytes": 4693639,
+      "sha256": "70690f55e10ea16fa30a7b3f7437f5bd5e6de318857888cf810f201147bd0d41"
+    },
+    {
+      "path": "runs/q4_old_new_paired_20260912_v2/summary.json",
+      "bytes": 353,
+      "sha256": "9df414f2fed2e329e33cfcf438a66d559e502c7fc109a887dd313309315a2c97"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "script": "report_q3_layout_extremes.py",
+    "archived_input_rejected": true
+  },
+  {
+    "script": "report_q4_layout_extremes.py",
+    "archived_input_rejected": true
+  }
+]

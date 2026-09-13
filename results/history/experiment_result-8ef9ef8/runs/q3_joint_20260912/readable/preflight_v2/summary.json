@@ -1,0 +1,20 @@
+{
+  "episodes": 16,
+  "completion": 1.0,
+  "states": 64,
+  "labels": 14,
+  "reasons": {
+    "no_confident_improvement": 50,
+    "accepted": 14
+  },
+  "elapsed_s": 41.32322212122381,
+  "config": {
+    "states_per_episode": 4,
+    "max_macros": 400,
+    "search": {
+      "state_seconds": 30.0,
+      "sampler_seconds": 10.0
+    }
+  },
+  "estimated_branch_macros": 71386
+}

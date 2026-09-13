@@ -1,5 +1,7 @@
 # 本机部署与评估
 
+最终模型请优先使用[最终部署与自检](../../deployment/README.md)、[新配对评测](最终模型复现.md)。以下保留旧批研究配置；原 main 部署脚本现名 `scripts/run_policy_research.py`。
+
 从仓库根目录、已安装 `.[rl,test]` 的 Python 环境执行。当前接收至 `3ddb2d9`；四份评估权重已在本机加载并各完成 2 局，Q3/Q4 各通过一次自建 HTTP 部署。完整状态见[接收记录](../../records/acceptance/接收记录-3ddb2d9.md)。这些验证不调用官方软件。
 
 ## 最新 Q3/Q4 配对评估
@@ -31,7 +33,7 @@ python scripts/evaluate_checkpoint.py \
 先在模拟器准备对应会话，再填写实际队号、问题与监听端口。以下端口仅为示例：
 
 ```bash
-python scripts/run_policy.py \
+python scripts/run_policy_research.py \
   --problem 3 \
   --checkpoint results/training/import-3ddb2d9/runs/q3_joint_20260912/ppo_candidate.pt \
   --base-url http://127.0.0.1:2026 \

@@ -1,0 +1,118 @@
+{
+  "archive_sha256": "bd061fdd3b51fb3af1fd9a02c8d1a77823a15a79bd0ff29e9721a8be7dfee8ec",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 32161,
+      "sha256": "bd061fdd3b51fb3af1fd9a02c8d1a77823a15a79bd0ff29e9721a8be7dfee8ec"
+    }
+  ],
+  "members": [
+    {
+      "path": "bsim/__init__.py",
+      "bytes": 100,
+      "sha256": "967ff09517cb806a6b6c579c99105850862a9bf0884d1db1167e2fd81bab83c0"
+    },
+    {
+      "path": "bsim/__main__.py",
+      "bytes": 6809,
+      "sha256": "708e2679407b0b6a825ad1a2debb95d25f19403cdf713d5c5db3eff04f997aa9"
+    },
+    {
+      "path": "bsim/client.py",
+      "bytes": 4131,
+      "sha256": "acb69eda926bddfc3ccfcb840899406abd5bb8257154d31f96d4c689db7cb558"
+    },
+    {
+      "path": "bsim/clocks.py",
+      "bytes": 583,
+      "sha256": "d1760109982198d84774b81b5f2120b80fac004ea68458720279ba1dc1a17c17"
+    },
+    {
+      "path": "bsim/env.py",
+      "bytes": 1046,
+      "sha256": "291e1f3d23386b672f317d98ad94ac09b676369f0a3204357f821b56c55ba7d5"
+    },
+    {
+      "path": "bsim/evaluation.py",
+      "bytes": 5457,
+      "sha256": "fc51c3bd83b01fb96d946007b3dbd24f11b6704bc638244fceeadec1ce27fb5c"
+    },
+    {
+      "path": "bsim/fast.py",
+      "bytes": 1650,
+      "sha256": "024fbe85c2f80cffd53ed9c07a52c323657785a0f2b24f21f2dd1eced4550f88"
+    },
+    {
+      "path": "bsim/http_server.py",
+      "bytes": 4652,
+      "sha256": "b5ae05ff747941780fc4d8a60d227356ee6d2489d80f7ee731e41af7cf352c10"
+    },
+    {
+      "path": "bsim/noise.py",
+      "bytes": 3056,
+      "sha256": "0b149c9b1b0470e6c3d37d3b73f42757076cad8440bf91cbcf9c0b112d0fcb88"
+    },
+    {
+      "path": "bsim/profiles.py",
+      "bytes": 457,
+      "sha256": "d00bfb79e124d1b4dced21f2b595eb5375d6287b6fbf6895443582be3cf49bff"
+    },
+    {
+      "path": "bsim/protocol.py",
+      "bytes": 3267,
+      "sha256": "10651bf3464554f1386fe4b7d95619cae8b5e890ced89cc807d2998d696c3c21"
+    },
+    {
+      "path": "bsim/reference.py",
+      "bytes": 3297,
+      "sha256": "eca0ad350a6a22a9ccdd655ae1ed284cc98cec107fd1125aad5a488a8818b86f"
+    },
+    {
+      "path": "bsim/research.py",
+      "bytes": 2752,
+      "sha256": "070cb72e35466b9807f573a29dfaed32204fb5a457db006ac9a3f82b9c99b60a"
+    },
+    {
+      "path": "bsim/scenarios.py",
+      "bytes": 2978,
+      "sha256": "42fe0fd36bfac2f914fc20400a5bb7b37a3e2345a922dc1df6566234180a4d5a"
+    },
+    {
+      "path": "bsim/session.py",
+      "bytes": 6410,
+      "sha256": "c5a160a87da0e0c28b0b81cb88ddac55ae14496fe74210160996dccb4a54d547"
+    },
+    {
+      "path": "bsim/strategy.py",
+      "bytes": 636,
+      "sha256": "22340e37c64253379f297848f17cf41cbe9c551e30fe8dd1d93b52dd8706e071"
+    },
+    {
+      "path": "bsim/validation.py",
+      "bytes": 3700,
+      "sha256": "e2054e298a38bf2e0bc6047740a932ef7336946a982b991adc3712bc4316c718"
+    },
+    {
+      "path": "bsim/web/app.js",
+      "bytes": 14032,
+      "sha256": "9a2c299e9ea2cd72e750ef9e57142df31a2b0bbdff85dee8a899f5aa93ee2b3a"
+    },
+    {
+      "path": "bsim/web/index.html",
+      "bytes": 7626,
+      "sha256": "8f6bb8fcc040cb4806094be9476b77eea7bac7c3d4e820dfe551130163282502"
+    },
+    {
+      "path": "bsim/web/style.css",
+      "bytes": 12693,
+      "sha256": "8fcdb8f9d1af4c0a13639b1c884640451d234d2e39e5dd7650546af370fa99e8"
+    },
+    {
+      "path": "bsim/web_dashboard.py",
+      "bytes": 12005,
+      "sha256": "98079b40ab10cc323934fc0255ecfa6cb35f1f9994bf4c39d7e2b8c889b0c357"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

@@ -1,0 +1,22 @@
+{
+  "BC": {
+    "start": 610000000,
+    "count": 4
+  },
+  "DAGGER": {
+    "start": 611000000,
+    "count": 0
+  },
+  "PPO": {
+    "start": 612000000,
+    "count": 4
+  },
+  "VALIDATION": {
+    "start": 613000000,
+    "count": 4
+  },
+  "TEST": {
+    "start": 614000000,
+    "count": 4
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "scenario": {
+    "label": "LOCAL-Q3-LAYOUT-2020003960",
+    "problem": 3,
+    "scope": "official_constraints",
+    "sources": [
+      {
+        "channel": 1,
+        "x": 787.5471135809104,
+        "y": -1600.9984675982907,
+        "radius": 1000.0,
+        "kind": "omni",
+        "heading": null
+      },
+      {
+        "channel": 2,
+        "x": -1779.4523328202215,
+        "y": -247.96638635885236,
+        "radius": 1000.0,
+        "kind": "omni",
+        "heading": null
+      },
+      {
+        "channel": 3,
+        "x": 1785.3230797990939,
+        "y": 228.60776613378326,
+        "radius": 1000.0,
+        "kind": "omni",
+        "heading": null
+      },
+      {
+        "channel": 4,
+        "x": 1223.2415571541978,
+        "y": 1297.7718468106737,
+        "radius": 1000.0,
+        "kind": "omni",
+        "heading": null
+      },
+      {
+        "channel": 5,
+        "x": 281.8056871373327,
+        "y": 1758.6670571974582,
+        "radius": 1000.0,
+        "kind": "omni",
+        "heading": null
+      },
+      {
+        "channel": 6,
+        "x": -817.0682177201255,
+        "y": 1549.9191921284048,
+        "radius": 1000.0,
+        "kind": "omni",
+        "heading": null
+      },
+      {
+        "channel": 7,
+        "x": -1593.3504861054234,
+        "y": 837.1823209000598,
+        "radius": 1000.0,
+        "kind": "omni",
+        "heading": null
+      },
+      {
+        "channel": 8,
+        "x": 1585.3288752736769,
+        "y": -789.9018223714035,
+        "radius": 1000.0,
+        "kind": "omni",
+        "heading": null
+      },
+      {
+        "channel": 9,
+        "x": -1267.8718425815152,
+        "y": -1256.797747777986,
+        "radius": 1000.0,
+        "kind": "omni",
+        "heading": null
+      },
+      {
+        "channel": 10,
+        "x": -146.92448674160008,
+        "y": -1769.7931973510863,
+        "radius": 1000.0,
+        "kind": "omni",
+        "heading": null
+      }
+    ]
+  },
+  "seed": 2020003960,
+  "mode": "mutated:edge_ring",
+  "noise": {
+    "label": "TEST_INPUT",
+    "kind": "constant",
+    "value": 0.0
+  },
+  "numerics": {
+    "label": "TEST_INPUT",
+    "angle_rounding": "half_up",
+    "time_rounding": "half_up",
+    "directional_overlap": "invisible",
+    "boundary_epsilon": 0.0
+  }
+}

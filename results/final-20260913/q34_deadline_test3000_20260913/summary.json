@@ -1,0 +1,154 @@
+{
+  "q3_candidate": {
+    "episodes": 3000,
+    "completed_episodes": 3000,
+    "completion_rate": 1.0,
+    "mean_virtual_s": 3255.758790549666,
+    "median_virtual_s": 3393.216501,
+    "p95_virtual_s": 4112.843099499999,
+    "mean_per_source_s": 255.9891461374367,
+    "median_per_source_s": 257.7337292916667,
+    "p95_per_source_s": 342.27984388181807,
+    "completed_only_mean_per_source_s": 255.9891461374367,
+    "total_virtual_s": 9767276.371648999,
+    "total_cleared_sources": 38961,
+    "total_sources": 38961,
+    "errors": {},
+    "max_macro_steps": 48,
+    "distribution_counts": {
+      "area": 750,
+      "edge": 750,
+      "cluster": 750,
+      "outward": 750
+    },
+    "field_counts": {
+      "smooth": 1500,
+      "extreme": 750,
+      "zero": 750
+    },
+    "vs_baseline": {
+      "mean_delta_s": -15.279279235666658,
+      "ci95_s": [
+        -19.220740197454905,
+        -11.33781827387841
+      ],
+      "reduction_percent": 0.4671079611332492,
+      "faster_episodes": 1379,
+      "tied_episodes": 649,
+      "slower_episodes": 972,
+      "all_completed": true,
+      "paired_tn": {
+        "mean": -1.1655054970959264,
+        "ci95": [
+          -1.4659998511874885,
+          -0.8650111430043643
+        ],
+        "reduction_percent": 0.4532313491852908
+      }
+    }
+  },
+  "q3_baseline": {
+    "episodes": 3000,
+    "completed_episodes": 3000,
+    "completion_rate": 1.0,
+    "mean_virtual_s": 3271.038069785333,
+    "median_virtual_s": 3404.5061115,
+    "p95_virtual_s": 4171.5660064,
+    "mean_per_source_s": 257.15465163453257,
+    "median_per_source_s": 259.5173733948718,
+    "p95_per_source_s": 343.3869764408333,
+    "completed_only_mean_per_source_s": 257.15465163453257,
+    "total_virtual_s": 9813114.209355999,
+    "total_cleared_sources": 38961,
+    "total_sources": 38961,
+    "errors": {},
+    "max_macro_steps": 48,
+    "distribution_counts": {
+      "area": 750,
+      "edge": 750,
+      "cluster": 750,
+      "outward": 750
+    },
+    "field_counts": {
+      "smooth": 1500,
+      "extreme": 750,
+      "zero": 750
+    }
+  },
+  "q4_best": {
+    "episodes": 3000,
+    "completed_episodes": 3000,
+    "completion_rate": 1.0,
+    "mean_virtual_s": 9694.479592128335,
+    "median_virtual_s": 9706.804062,
+    "p95_virtual_s": 12806.294692849999,
+    "mean_per_source_s": 767.7370519718947,
+    "median_per_source_s": 771.1785007207793,
+    "p95_per_source_s": 1082.1070294941558,
+    "completed_only_mean_per_source_s": 767.7370519718947,
+    "total_virtual_s": 29083438.776385,
+    "total_cleared_sources": 39127,
+    "total_sources": 39127,
+    "errors": {},
+    "max_macro_steps": 68,
+    "distribution_counts": {
+      "area": 750,
+      "edge": 750,
+      "cluster": 750,
+      "outward": 750
+    },
+    "field_counts": {
+      "smooth": 1500,
+      "extreme": 750,
+      "zero": 750
+    },
+    "vs_baseline": {
+      "mean_delta_s": -169.31944369533332,
+      "ci95_s": [
+        -193.85736174703888,
+        -144.78152564362776
+      ],
+      "reduction_percent": 1.7165743450408248,
+      "faster_episodes": 1803,
+      "tied_episodes": 133,
+      "slower_episodes": 1064,
+      "all_completed": true,
+      "paired_tn": {
+        "mean": -13.395989186752981,
+        "ci95": [
+          -15.18863304926539,
+          -11.603345324240573
+        ],
+        "reduction_percent": 1.714943355472818
+      }
+    }
+  },
+  "q4_baseline": {
+    "episodes": 3000,
+    "completed_episodes": 3000,
+    "completion_rate": 1.0,
+    "mean_virtual_s": 9863.799035823668,
+    "median_virtual_s": 9880.904273,
+    "p95_virtual_s": 13155.585038699997,
+    "mean_per_source_s": 781.1330411586478,
+    "median_per_source_s": 782.7299298041958,
+    "p95_per_source_s": 1097.5784867057139,
+    "completed_only_mean_per_source_s": 781.1330411586478,
+    "total_virtual_s": 29591397.107471,
+    "total_cleared_sources": 39127,
+    "total_sources": 39127,
+    "errors": {},
+    "max_macro_steps": 71,
+    "distribution_counts": {
+      "area": 750,
+      "edge": 750,
+      "cluster": 750,
+      "outward": 750
+    },
+    "field_counts": {
+      "smooth": 1500,
+      "extreme": 750,
+      "zero": 750
+    }
+  }
+}

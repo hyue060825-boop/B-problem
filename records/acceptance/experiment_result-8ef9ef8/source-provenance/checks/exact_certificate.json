@@ -1,0 +1,1 @@
+{"status": "PROVED_MATH", "station_count": 31, "leaf_count": 2224, "witness_cells": 2152, "outside_cells": 72, "overlap_guards": 13, "source_domain_radius": "1800", "radius_cert": "999", "artifact_sha256": "7d83d0ad068b852281897368c35d34f2bae6142b8ca8208e62d8786e3b29e32a", "arithmetic": "fractions.Fraction; no float predicates"}

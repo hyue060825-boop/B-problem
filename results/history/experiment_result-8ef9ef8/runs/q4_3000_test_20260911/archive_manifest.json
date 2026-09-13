@@ -1,0 +1,33 @@
+{
+  "archive_sha256": "1f173c506752582b5b6ec567671c30244208b9406b3129568049540ebe06a82b",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 162208,
+      "sha256": "1f173c506752582b5b6ec567671c30244208b9406b3129568049540ebe06a82b"
+    }
+  ],
+  "members": [
+    {
+      "path": "runs/q4_3000_test_20260911/README.md",
+      "bytes": 862,
+      "sha256": "1054b8a104ce8985edd00dedfb59d983e8987d884b5fb6895213e2cbe715e3af"
+    },
+    {
+      "path": "runs/q4_3000_test_20260911/per_source_time_distribution.png",
+      "bytes": 62006,
+      "sha256": "3594663ec188e70cb23c8bb2ef95e06ec48888e1e1048c47019037b4b947f43f"
+    },
+    {
+      "path": "runs/q4_3000_test_20260911/samples.json",
+      "bytes": 1655501,
+      "sha256": "f56f394d5461830516b494b2dab38932ef0e758b8d95f72cc62405a3aeba6618"
+    },
+    {
+      "path": "runs/q4_3000_test_20260911/summary.json",
+      "bytes": 871,
+      "sha256": "2c84c514d15cdfda3a5e216544e1ba723100c460136d662a8ce3898174fc8b75"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

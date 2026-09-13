@@ -1,5 +1,7 @@
 # 资产清点
 
+本次完整来源有[逐文件落位表](../acceptance/experiment_result-8ef9ef8/资产落位建议.csv)、[实际整合清单](../acceptance/experiment_result-8ef9ef8/asset-map-main.json)及[最终模型身份](models-final-20260913.json)。下方旧清单保留各自批次与生成时间。
+
 清点范围为 `paper/` 之外的仓库工作资产，不扫描虚拟环境、忽略文件或权重内部张量。这里保存路径与来源；用于写作的整理表格在 [handoff/tables/](../../handoff/tables/README.md)。
 
 | 文件 | 用途 |

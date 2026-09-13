@@ -1,0 +1,17 @@
+{
+  "profile": "compatible_research",
+  "authorized": true,
+  "env_ready": true,
+  "problem": 3,
+  "seed": 710000,
+  "output": "runs/ddp_20260911/q3_smoke",
+  "episodes_per_update": 64,
+  "ppo_updates": 1,
+  "bc_episodes": 128,
+  "bc_epochs": 6,
+  "ppo_epochs": 4,
+  "batch_size": 256,
+  "max_macros": 400,
+  "lr": 0.0003,
+  "ddp_world_size": 8
+}

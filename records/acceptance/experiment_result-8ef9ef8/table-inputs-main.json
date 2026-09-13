@@ -1,0 +1,15 @@
+{
+  "records/acceptance/experiment_result-8ef9ef8/source-adapted/paper/model_registry.json": "96a5e0faf96c80935094e2c9d64f14511761351b6c24dce3c78e3b599b736674",
+  "results/final-20260913/q4_baseline_8gpu_1h_20260913/train/final_test.json": "958ba42af418f9d163ba4813ef6685d7fbd770a36479a63734364c44ef014165",
+  "results/final-20260913/q34_deadline_test3000_20260913/q3_baseline_samples.json": "2d7043401654270917c772802eb85d43de1b9b92713a7c3e5e609c25ad83fd8c",
+  "results/final-20260913/q34_deadline_test3000_20260913/q3_candidate_samples.json": "3e69273808252978fbe0fa432cb6579d0a73830647f13f3e9c2af79efefba8e2",
+  "results/final-20260913/q3_legacy_deadline_20260913/metrics.jsonl": "6c6d8d5aaf0718209e29c65f70d37ef0e3b1bc8225eab3aa89cf1ce484ba8718",
+  "results/final-20260913/q4_baseline_8gpu_1h_20260913/train/metrics.jsonl": "2c3e855615462035cef3c72fe6237c167dff469fd2d039b207f4be9e90ed9265",
+  "records/acceptance/experiment_result-8ef9ef8/source-adapted/paper/tables/claim_evidence.csv": "d11b71998acfa0e91d9f218f84e0add392fb5722f1a89845a4a864cee28088e5",
+  "records/acceptance/experiment_result-8ef9ef8/source-adapted/paper/tables/q3_layout_extremes.csv": "94f784860831ea8a61dabea53f0d07b0285910ecdde7e569c60a2ca37df794cb",
+  "records/acceptance/experiment_result-8ef9ef8/source-adapted/paper/tables/q4_layout_extremes.csv": "1d2be1a6a6b509f5cb6a09b0b45e9bd39a83c6c9dbfd308860212a178dce1a65",
+  "records/acceptance/experiment_result-8ef9ef8/source-adapted/paper/tables/q4_parent_AC_paired_last_clear_3000.csv": "efd6130ea2a530b649b80be1b3b327c820fc0bbe094f11a07281fae3c9b66e9e",
+  "records/acceptance/experiment_result-8ef9ef8/source-adapted/paper/tables/q4_parent_absence_tail.csv": "da3fc8fe8eb13c0f34f862881c3bf69b2f62138545d9b8177adf28b2c10d6642",
+  "records/acceptance/experiment_result-8ef9ef8/source-adapted/paper/tables/q4_parent_planning_ablation.csv": "da7d72f8b2feb7e9a49a6860b06c2188ca63a0783a05e7618051a92317e157d6",
+  "records/acceptance/experiment_result-8ef9ef8/source-adapted/paper/tables/official_log_timing.json": "64880a7257e24f4fd5d3ef077ecc4910d0cc78ad198ad1922c66dce5bc3a6fde"
+}

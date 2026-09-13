@@ -1,0 +1,23 @@
+{
+  "archive_sha256": "09d67296e404e2e060cb57a0257bfbe91af9b6601d0406d5d462cf4743afb212",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 3137,
+      "sha256": "09d67296e404e2e060cb57a0257bfbe91af9b6601d0406d5d462cf4743afb212"
+    }
+  ],
+  "members": [
+    {
+      "path": "runs/q3_best_finetune_20260913/console.log",
+      "bytes": 5839,
+      "sha256": "be1bb3dfce43122eaa5b72f58aa7326911e63e605421c488f151849269a309dd"
+    },
+    {
+      "path": "runs/q3_best_finetune_20260913/seeds.json",
+      "bytes": 7717,
+      "sha256": "e3c4c2fdf84185340644a931d0aab9548f86495997f50947c99f2f8c504c1d92"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

@@ -1,0 +1,22 @@
+{
+  "bc": {
+    "start": 923010000,
+    "count": 32
+  },
+  "dagger": {
+    "start": 924010000,
+    "count": 16
+  },
+  "ppo": {
+    "start": 925010000,
+    "count": 32
+  },
+  "validation": {
+    "start": 926010000,
+    "count": 8
+  },
+  "test": {
+    "start": 927010000,
+    "count": 8
+  }
+}

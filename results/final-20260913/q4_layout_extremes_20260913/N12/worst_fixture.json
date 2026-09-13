@@ -1,0 +1,119 @@
+{
+  "scenario": {
+    "label": "LOCAL-Q4-LAYOUT-2010004060",
+    "problem": 4,
+    "scope": "official_constraints",
+    "sources": [
+      {
+        "channel": 1,
+        "x": -883.631266745879,
+        "y": -1568.0675350344684,
+        "radius": 1000.0,
+        "kind": "directional",
+        "heading": 238.7574825528477
+      },
+      {
+        "channel": 2,
+        "x": 1396.0581358025486,
+        "y": 1110.4735696222365,
+        "radius": 1000.0,
+        "kind": "directional",
+        "heading": 38.49996950036348
+      },
+      {
+        "channel": 3,
+        "x": -1573.4696539000925,
+        "y": 47.45956812526933,
+        "radius": 1000.0,
+        "kind": "directional",
+        "heading": 175.01962942771203
+      },
+      {
+        "channel": 4,
+        "x": 1663.3020331558341,
+        "y": 160.885763589333,
+        "radius": 1000.0,
+        "kind": "directional",
+        "heading": 2.0640476218477577
+      },
+      {
+        "channel": 5,
+        "x": 1602.310098141536,
+        "y": -111.56453017375023,
+        "radius": 1000.0,
+        "kind": "directional",
+        "heading": 1.633784623983212
+      },
+      {
+        "channel": 6,
+        "x": -1751.1651159696764,
+        "y": 144.17178032993718,
+        "radius": 1000.0,
+        "kind": "directional",
+        "heading": 176.23705734554525
+      },
+      {
+        "channel": 7,
+        "x": -1195.3340444762837,
+        "y": -1171.454627515809,
+        "radius": 1000.0,
+        "kind": "omni",
+        "heading": null
+      },
+      {
+        "channel": 8,
+        "x": 46.47711752474508,
+        "y": 1775.4146916538473,
+        "radius": 1000.0,
+        "kind": "omni",
+        "heading": null
+      },
+      {
+        "channel": 9,
+        "x": 25.219365012512625,
+        "y": -1799.7233102975486,
+        "radius": 1000.0,
+        "kind": "omni",
+        "heading": null
+      },
+      {
+        "channel": 10,
+        "x": 592.5547266498601,
+        "y": 1699.5643282691333,
+        "radius": 1000.0,
+        "kind": "omni",
+        "heading": null
+      },
+      {
+        "channel": 11,
+        "x": 1327.4418701005916,
+        "y": 1039.8452779286913,
+        "radius": 1000.0,
+        "kind": "omni",
+        "heading": null
+      },
+      {
+        "channel": 12,
+        "x": -1103.065423300232,
+        "y": -1392.4310717001856,
+        "radius": 1000.0,
+        "kind": "omni",
+        "heading": null
+      }
+    ]
+  },
+  "seed": 2010004060,
+  "mode": "mutated:edge_outward",
+  "noise": {
+    "label": "TEST_INPUT",
+    "kind": "constant",
+    "value": 0.0
+  },
+  "numerics": {
+    "label": "TEST_INPUT",
+    "angle_rounding": "half_up",
+    "time_rounding": "half_up",
+    "directional_overlap": "invisible",
+    "boundary_epsilon": 0.0
+  }
+}

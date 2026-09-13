@@ -1,0 +1,4 @@
+{
+  "checkpoint": "runs/q4_belief_attention_20260912/medium3_8gpu/latest.pt",
+  "selection_uses_test": false
+}

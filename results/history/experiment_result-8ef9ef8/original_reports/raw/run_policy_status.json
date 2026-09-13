@@ -1,0 +1,7 @@
+{
+  "status": "READY_FOR_LOCAL_CLIENT",
+  "problem": 3,
+  "policy": "heuristic",
+  "base_url": "http://127.0.0.1:20260",
+  "robot_id": "LOCAL-TEAM"
+}

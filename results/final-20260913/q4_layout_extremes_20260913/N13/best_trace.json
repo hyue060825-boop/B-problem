@@ -1,0 +1,3935 @@
+{
+  "problem": 4,
+  "seed": 2010001536,
+  "profile": {
+    "seed": 2010001536,
+    "distribution": "near_start",
+    "field": "zero",
+    "version": "layout-extremes-v1"
+  },
+  "N": 13,
+  "C": 13,
+  "completion": true,
+  "cleared_fraction": 1.0,
+  "virtual_time_s": 7584.0,
+  "time_per_clear_s": 583.3846153846154,
+  "elapsed_s": 0.0899348403327167,
+  "path_length_m": 30844.999999999996,
+  "measures": 230,
+  "switches": 200,
+  "clear_failures": 0,
+  "probe_macros": 0,
+  "macro_steps": 32,
+  "decision_max_s": 0.0,
+  "decision_p95_s": 0.0,
+  "error": null,
+  "mode": "near_start",
+  "last_clear_s": 184.0,
+  "last_discovery_s": 179.0,
+  "tail_s": 7400.0,
+  "clock_mode": "live",
+  "scenario_sha256": "2ff2da8a70eb49d4f78081fb178953cb0a7adee7ed9dbaba23311fdbe2cd5392",
+  "events": [
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 1,
+      "start_s": 0.0,
+      "end_s": 5.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5,
+        "measure_result": "near"
+      }
+    },
+    {
+      "path": "/clear",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 1,
+      "start_s": 5.0,
+      "end_s": 10.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 10,
+        "clear_result": "success"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 20,
+      "start_s": 10.0,
+      "end_s": 16.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 16,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 19,
+      "start_s": 16.0,
+      "end_s": 22.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 22,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 18,
+      "start_s": 22.0,
+      "end_s": 28.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 28,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 17,
+      "start_s": 28.0,
+      "end_s": 34.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 34,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 16,
+      "start_s": 34.0,
+      "end_s": 40.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 40,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 15,
+      "start_s": 40.0,
+      "end_s": 46.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 46,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 14,
+      "start_s": 46.0,
+      "end_s": 52.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 52,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 13,
+      "start_s": 52.0,
+      "end_s": 58.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 58,
+        "measure_result": "near"
+      }
+    },
+    {
+      "path": "/clear",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 13,
+      "start_s": 58.0,
+      "end_s": 63.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 63,
+        "clear_result": "success"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 12,
+      "start_s": 63.0,
+      "end_s": 69.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 69,
+        "measure_result": "near"
+      }
+    },
+    {
+      "path": "/clear",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 12,
+      "start_s": 69.0,
+      "end_s": 74.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 74,
+        "clear_result": "success"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 11,
+      "start_s": 74.0,
+      "end_s": 80.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 80,
+        "measure_result": "near"
+      }
+    },
+    {
+      "path": "/clear",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 11,
+      "start_s": 80.0,
+      "end_s": 85.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 85,
+        "clear_result": "success"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 10,
+      "start_s": 85.0,
+      "end_s": 91.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 91,
+        "measure_result": "near"
+      }
+    },
+    {
+      "path": "/clear",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 10,
+      "start_s": 91.0,
+      "end_s": 96.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 96,
+        "clear_result": "success"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 9,
+      "start_s": 96.0,
+      "end_s": 102.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 102,
+        "measure_result": "near"
+      }
+    },
+    {
+      "path": "/clear",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 9,
+      "start_s": 102.0,
+      "end_s": 107.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 107,
+        "clear_result": "success"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 8,
+      "start_s": 107.0,
+      "end_s": 113.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 113,
+        "measure_result": "near"
+      }
+    },
+    {
+      "path": "/clear",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 8,
+      "start_s": 113.0,
+      "end_s": 118.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 118,
+        "clear_result": "success"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 7,
+      "start_s": 118.0,
+      "end_s": 124.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 124,
+        "measure_result": "near"
+      }
+    },
+    {
+      "path": "/clear",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 7,
+      "start_s": 124.0,
+      "end_s": 129.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 129,
+        "clear_result": "success"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 6,
+      "start_s": 129.0,
+      "end_s": 135.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 135,
+        "measure_result": "near"
+      }
+    },
+    {
+      "path": "/clear",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 6,
+      "start_s": 135.0,
+      "end_s": 140.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 140,
+        "clear_result": "success"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 5,
+      "start_s": 140.0,
+      "end_s": 146.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 146,
+        "measure_result": "near"
+      }
+    },
+    {
+      "path": "/clear",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 5,
+      "start_s": 146.0,
+      "end_s": 151.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 151,
+        "clear_result": "success"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 4,
+      "start_s": 151.0,
+      "end_s": 157.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 157,
+        "measure_result": "near"
+      }
+    },
+    {
+      "path": "/clear",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 4,
+      "start_s": 157.0,
+      "end_s": 162.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 162,
+        "clear_result": "success"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 3,
+      "start_s": 162.0,
+      "end_s": 168.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 168,
+        "measure_result": "near"
+      }
+    },
+    {
+      "path": "/clear",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 3,
+      "start_s": 168.0,
+      "end_s": 173.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 173,
+        "clear_result": "success"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 2,
+      "start_s": 173.0,
+      "end_s": 179.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 179,
+        "measure_result": "near"
+      }
+    },
+    {
+      "path": "/clear",
+      "position": [
+        0.0,
+        0.0
+      ],
+      "channel": 2,
+      "start_s": 179.0,
+      "end_s": 184.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 184,
+        "clear_result": "success"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        861.6952767655164
+      ],
+      "channel": 14,
+      "start_s": 184.0,
+      "end_s": 389.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 389,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        861.6952767655164
+      ],
+      "channel": 15,
+      "start_s": 389.0,
+      "end_s": 395.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 395,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        861.6952767655164
+      ],
+      "channel": 16,
+      "start_s": 395.0,
+      "end_s": 401.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 401,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        861.6952767655164
+      ],
+      "channel": 17,
+      "start_s": 401.0,
+      "end_s": 407.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 407,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        861.6952767655164
+      ],
+      "channel": 18,
+      "start_s": 407.0,
+      "end_s": 413.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 413,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        861.6952767655164
+      ],
+      "channel": 19,
+      "start_s": 413.0,
+      "end_s": 419.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 419,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        861.6952767655164
+      ],
+      "channel": 20,
+      "start_s": 419.0,
+      "end_s": 425.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 425,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -995.0,
+        0.0
+      ],
+      "channel": 20,
+      "start_s": 425.0,
+      "end_s": 629.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 629,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -995.0,
+        0.0
+      ],
+      "channel": 14,
+      "start_s": 629.0,
+      "end_s": 635.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 635,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -995.0,
+        0.0
+      ],
+      "channel": 15,
+      "start_s": 635.0,
+      "end_s": 641.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 641,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -995.0,
+        0.0
+      ],
+      "channel": 16,
+      "start_s": 641.0,
+      "end_s": 647.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 647,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -995.0,
+        0.0
+      ],
+      "channel": 17,
+      "start_s": 647.0,
+      "end_s": 653.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 653,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -995.0,
+        0.0
+      ],
+      "channel": 18,
+      "start_s": 653.0,
+      "end_s": 659.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 659,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -995.0,
+        0.0
+      ],
+      "channel": 19,
+      "start_s": 659.0,
+      "end_s": 665.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 665,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        -861.6952767655164
+      ],
+      "channel": 19,
+      "start_s": 665.0,
+      "end_s": 869.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 869,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        -861.6952767655164
+      ],
+      "channel": 20,
+      "start_s": 869.0,
+      "end_s": 875.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 875,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        -861.6952767655164
+      ],
+      "channel": 18,
+      "start_s": 875.0,
+      "end_s": 881.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 881,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        -861.6952767655164
+      ],
+      "channel": 17,
+      "start_s": 881.0,
+      "end_s": 887.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 887,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        -861.6952767655164
+      ],
+      "channel": 16,
+      "start_s": 887.0,
+      "end_s": 893.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 893,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        -861.6952767655164
+      ],
+      "channel": 15,
+      "start_s": 893.0,
+      "end_s": 899.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 899,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        -861.6952767655164
+      ],
+      "channel": 14,
+      "start_s": 899.0,
+      "end_s": 905.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 905,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1492.5,
+        -861.6952767655164
+      ],
+      "channel": 14,
+      "start_s": 905.0,
+      "end_s": 1109.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1109,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1492.5,
+        -861.6952767655164
+      ],
+      "channel": 20,
+      "start_s": 1109.0,
+      "end_s": 1115.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1115,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1492.5,
+        -861.6952767655164
+      ],
+      "channel": 19,
+      "start_s": 1115.0,
+      "end_s": 1121.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1121,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1492.5,
+        -861.6952767655164
+      ],
+      "channel": 18,
+      "start_s": 1121.0,
+      "end_s": 1127.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1127,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1492.5,
+        -861.6952767655164
+      ],
+      "channel": 17,
+      "start_s": 1127.0,
+      "end_s": 1133.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1133,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1492.5,
+        -861.6952767655164
+      ],
+      "channel": 16,
+      "start_s": 1133.0,
+      "end_s": 1139.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1139,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1492.5,
+        -861.6952767655164
+      ],
+      "channel": 15,
+      "start_s": 1139.0,
+      "end_s": 1145.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1145,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1990.0,
+        0.0
+      ],
+      "channel": 15,
+      "start_s": 1145.0,
+      "end_s": 1349.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1349,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1990.0,
+        0.0
+      ],
+      "channel": 20,
+      "start_s": 1349.0,
+      "end_s": 1355.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1355,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1990.0,
+        0.0
+      ],
+      "channel": 19,
+      "start_s": 1355.0,
+      "end_s": 1361.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1361,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1990.0,
+        0.0
+      ],
+      "channel": 18,
+      "start_s": 1361.0,
+      "end_s": 1367.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1367,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1990.0,
+        0.0
+      ],
+      "channel": 17,
+      "start_s": 1367.0,
+      "end_s": 1373.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1373,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1990.0,
+        0.0
+      ],
+      "channel": 16,
+      "start_s": 1373.0,
+      "end_s": 1379.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1379,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1990.0,
+        0.0
+      ],
+      "channel": 14,
+      "start_s": 1379.0,
+      "end_s": 1385.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1385,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -2487.5,
+        -861.6952767655164
+      ],
+      "channel": 14,
+      "start_s": 1385.0,
+      "end_s": 1589.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1589,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -2487.5,
+        -861.6952767655164
+      ],
+      "channel": 15,
+      "start_s": 1589.0,
+      "end_s": 1595.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1595,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -2487.5,
+        -861.6952767655164
+      ],
+      "channel": 16,
+      "start_s": 1595.0,
+      "end_s": 1601.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1601,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -2487.5,
+        -861.6952767655164
+      ],
+      "channel": 17,
+      "start_s": 1601.0,
+      "end_s": 1607.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1607,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -2487.5,
+        -861.6952767655164
+      ],
+      "channel": 18,
+      "start_s": 1607.0,
+      "end_s": 1613.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1613,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -2487.5,
+        -861.6952767655164
+      ],
+      "channel": 19,
+      "start_s": 1613.0,
+      "end_s": 1619.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1619,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -2487.5,
+        -861.6952767655164
+      ],
+      "channel": 20,
+      "start_s": 1619.0,
+      "end_s": 1625.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1625,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1990.0,
+        -1723.3905535310328
+      ],
+      "channel": 20,
+      "start_s": 1625.0,
+      "end_s": 1829.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1829,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1990.0,
+        -1723.3905535310328
+      ],
+      "channel": 14,
+      "start_s": 1829.0,
+      "end_s": 1835.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1835,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1990.0,
+        -1723.3905535310328
+      ],
+      "channel": 15,
+      "start_s": 1835.0,
+      "end_s": 1841.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1841,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1990.0,
+        -1723.3905535310328
+      ],
+      "channel": 16,
+      "start_s": 1841.0,
+      "end_s": 1847.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1847,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1990.0,
+        -1723.3905535310328
+      ],
+      "channel": 17,
+      "start_s": 1847.0,
+      "end_s": 1853.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1853,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1990.0,
+        -1723.3905535310328
+      ],
+      "channel": 18,
+      "start_s": 1853.0,
+      "end_s": 1859.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1859,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1990.0,
+        -1723.3905535310328
+      ],
+      "channel": 19,
+      "start_s": 1859.0,
+      "end_s": 1865.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 1865,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -995.0,
+        -1723.3905535310328
+      ],
+      "channel": 19,
+      "start_s": 1865.0,
+      "end_s": 2069.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2069,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -995.0,
+        -1723.3905535310328
+      ],
+      "channel": 20,
+      "start_s": 2069.0,
+      "end_s": 2075.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2075,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -995.0,
+        -1723.3905535310328
+      ],
+      "channel": 18,
+      "start_s": 2075.0,
+      "end_s": 2081.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2081,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -995.0,
+        -1723.3905535310328
+      ],
+      "channel": 17,
+      "start_s": 2081.0,
+      "end_s": 2087.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2087,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -995.0,
+        -1723.3905535310328
+      ],
+      "channel": 16,
+      "start_s": 2087.0,
+      "end_s": 2093.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2093,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -995.0,
+        -1723.3905535310328
+      ],
+      "channel": 15,
+      "start_s": 2093.0,
+      "end_s": 2099.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2099,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -995.0,
+        -1723.3905535310328
+      ],
+      "channel": 14,
+      "start_s": 2099.0,
+      "end_s": 2105.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2105,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        -2585.085830296549
+      ],
+      "channel": 14,
+      "start_s": 2105.0,
+      "end_s": 2309.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2309,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        -2585.085830296549
+      ],
+      "channel": 15,
+      "start_s": 2309.0,
+      "end_s": 2315.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2315,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        -2585.085830296549
+      ],
+      "channel": 16,
+      "start_s": 2315.0,
+      "end_s": 2321.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2321,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        -2585.085830296549
+      ],
+      "channel": 17,
+      "start_s": 2321.0,
+      "end_s": 2327.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2327,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        -2585.085830296549
+      ],
+      "channel": 18,
+      "start_s": 2327.0,
+      "end_s": 2333.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2333,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        -2585.085830296549
+      ],
+      "channel": 19,
+      "start_s": 2333.0,
+      "end_s": 2339.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2339,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        -2585.085830296549
+      ],
+      "channel": 20,
+      "start_s": 2339.0,
+      "end_s": 2345.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2345,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        -1723.3905535310328
+      ],
+      "channel": 20,
+      "start_s": 2345.0,
+      "end_s": 2549.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2549,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        -1723.3905535310328
+      ],
+      "channel": 14,
+      "start_s": 2549.0,
+      "end_s": 2555.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2555,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        -1723.3905535310328
+      ],
+      "channel": 15,
+      "start_s": 2555.0,
+      "end_s": 2561.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2561,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        -1723.3905535310328
+      ],
+      "channel": 16,
+      "start_s": 2561.0,
+      "end_s": 2567.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2567,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        -1723.3905535310328
+      ],
+      "channel": 17,
+      "start_s": 2567.0,
+      "end_s": 2573.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2573,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        -1723.3905535310328
+      ],
+      "channel": 18,
+      "start_s": 2573.0,
+      "end_s": 2579.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2579,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        -1723.3905535310328
+      ],
+      "channel": 19,
+      "start_s": 2579.0,
+      "end_s": 2585.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2585,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        -861.6952767655164
+      ],
+      "channel": 19,
+      "start_s": 2585.0,
+      "end_s": 2789.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2789,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        -861.6952767655164
+      ],
+      "channel": 14,
+      "start_s": 2789.0,
+      "end_s": 2795.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2795,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        -861.6952767655164
+      ],
+      "channel": 15,
+      "start_s": 2795.0,
+      "end_s": 2801.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2801,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        -861.6952767655164
+      ],
+      "channel": 16,
+      "start_s": 2801.0,
+      "end_s": 2807.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2807,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        -861.6952767655164
+      ],
+      "channel": 17,
+      "start_s": 2807.0,
+      "end_s": 2813.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2813,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        -861.6952767655164
+      ],
+      "channel": 18,
+      "start_s": 2813.0,
+      "end_s": 2819.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2819,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        -861.6952767655164
+      ],
+      "channel": 20,
+      "start_s": 2819.0,
+      "end_s": 2825.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 2825,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        995.0,
+        0.0
+      ],
+      "channel": 20,
+      "start_s": 2825.0,
+      "end_s": 3029.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3029,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        995.0,
+        0.0
+      ],
+      "channel": 14,
+      "start_s": 3029.0,
+      "end_s": 3035.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3035,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        995.0,
+        0.0
+      ],
+      "channel": 15,
+      "start_s": 3035.0,
+      "end_s": 3041.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3041,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        995.0,
+        0.0
+      ],
+      "channel": 16,
+      "start_s": 3041.0,
+      "end_s": 3047.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3047,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        995.0,
+        0.0
+      ],
+      "channel": 17,
+      "start_s": 3047.0,
+      "end_s": 3053.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3053,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        995.0,
+        0.0
+      ],
+      "channel": 18,
+      "start_s": 3053.0,
+      "end_s": 3059.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3059,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        995.0,
+        0.0
+      ],
+      "channel": 19,
+      "start_s": 3059.0,
+      "end_s": 3065.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3065,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        861.6952767655164
+      ],
+      "channel": 19,
+      "start_s": 3065.0,
+      "end_s": 3269.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3269,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        861.6952767655164
+      ],
+      "channel": 20,
+      "start_s": 3269.0,
+      "end_s": 3275.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3275,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        861.6952767655164
+      ],
+      "channel": 18,
+      "start_s": 3275.0,
+      "end_s": 3281.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3281,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        861.6952767655164
+      ],
+      "channel": 17,
+      "start_s": 3281.0,
+      "end_s": 3287.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3287,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        861.6952767655164
+      ],
+      "channel": 16,
+      "start_s": 3287.0,
+      "end_s": 3293.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3293,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        861.6952767655164
+      ],
+      "channel": 15,
+      "start_s": 3293.0,
+      "end_s": 3299.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3299,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        861.6952767655164
+      ],
+      "channel": 14,
+      "start_s": 3299.0,
+      "end_s": 3305.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3305,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        1723.3905535310328
+      ],
+      "channel": 14,
+      "start_s": 3305.0,
+      "end_s": 3509.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3509,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        1723.3905535310328
+      ],
+      "channel": 15,
+      "start_s": 3509.0,
+      "end_s": 3515.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3515,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        1723.3905535310328
+      ],
+      "channel": 16,
+      "start_s": 3515.0,
+      "end_s": 3521.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3521,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        1723.3905535310328
+      ],
+      "channel": 17,
+      "start_s": 3521.0,
+      "end_s": 3527.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3527,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        1723.3905535310328
+      ],
+      "channel": 18,
+      "start_s": 3527.0,
+      "end_s": 3533.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3533,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        1723.3905535310328
+      ],
+      "channel": 19,
+      "start_s": 3533.0,
+      "end_s": 3539.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3539,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        0.0,
+        1723.3905535310328
+      ],
+      "channel": 20,
+      "start_s": 3539.0,
+      "end_s": 3545.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3545,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -995.0,
+        1723.3905535310328
+      ],
+      "channel": 20,
+      "start_s": 3545.0,
+      "end_s": 3749.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3749,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -995.0,
+        1723.3905535310328
+      ],
+      "channel": 19,
+      "start_s": 3749.0,
+      "end_s": 3755.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3755,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -995.0,
+        1723.3905535310328
+      ],
+      "channel": 18,
+      "start_s": 3755.0,
+      "end_s": 3761.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3761,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -995.0,
+        1723.3905535310328
+      ],
+      "channel": 17,
+      "start_s": 3761.0,
+      "end_s": 3767.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3767,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -995.0,
+        1723.3905535310328
+      ],
+      "channel": 16,
+      "start_s": 3767.0,
+      "end_s": 3773.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3773,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -995.0,
+        1723.3905535310328
+      ],
+      "channel": 15,
+      "start_s": 3773.0,
+      "end_s": 3779.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3779,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -995.0,
+        1723.3905535310328
+      ],
+      "channel": 14,
+      "start_s": 3779.0,
+      "end_s": 3785.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3785,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1990.0,
+        1723.3905535310328
+      ],
+      "channel": 14,
+      "start_s": 3785.0,
+      "end_s": 3989.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3989,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1990.0,
+        1723.3905535310328
+      ],
+      "channel": 15,
+      "start_s": 3989.0,
+      "end_s": 3995.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 3995,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1990.0,
+        1723.3905535310328
+      ],
+      "channel": 16,
+      "start_s": 3995.0,
+      "end_s": 4001.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 4001,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1990.0,
+        1723.3905535310328
+      ],
+      "channel": 17,
+      "start_s": 4001.0,
+      "end_s": 4007.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 4007,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1990.0,
+        1723.3905535310328
+      ],
+      "channel": 18,
+      "start_s": 4007.0,
+      "end_s": 4013.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 4013,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1990.0,
+        1723.3905535310328
+      ],
+      "channel": 19,
+      "start_s": 4013.0,
+      "end_s": 4019.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 4019,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1990.0,
+        1723.3905535310328
+      ],
+      "channel": 20,
+      "start_s": 4019.0,
+      "end_s": 4025.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 4025,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -2487.5,
+        861.6952767655164
+      ],
+      "channel": 20,
+      "start_s": 4025.0,
+      "end_s": 4229.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 4229,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -2487.5,
+        861.6952767655164
+      ],
+      "channel": 19,
+      "start_s": 4229.0,
+      "end_s": 4235.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 4235,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -2487.5,
+        861.6952767655164
+      ],
+      "channel": 18,
+      "start_s": 4235.0,
+      "end_s": 4241.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 4241,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -2487.5,
+        861.6952767655164
+      ],
+      "channel": 17,
+      "start_s": 4241.0,
+      "end_s": 4247.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 4247,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -2487.5,
+        861.6952767655164
+      ],
+      "channel": 16,
+      "start_s": 4247.0,
+      "end_s": 4253.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 4253,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -2487.5,
+        861.6952767655164
+      ],
+      "channel": 15,
+      "start_s": 4253.0,
+      "end_s": 4259.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 4259,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -2487.5,
+        861.6952767655164
+      ],
+      "channel": 14,
+      "start_s": 4259.0,
+      "end_s": 4265.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 4265,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1492.5,
+        861.6952767655164
+      ],
+      "channel": 14,
+      "start_s": 4265.0,
+      "end_s": 4469.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 4469,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1492.5,
+        861.6952767655164
+      ],
+      "channel": 15,
+      "start_s": 4469.0,
+      "end_s": 4475.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 4475,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1492.5,
+        861.6952767655164
+      ],
+      "channel": 16,
+      "start_s": 4475.0,
+      "end_s": 4481.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 4481,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1492.5,
+        861.6952767655164
+      ],
+      "channel": 17,
+      "start_s": 4481.0,
+      "end_s": 4487.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 4487,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1492.5,
+        861.6952767655164
+      ],
+      "channel": 18,
+      "start_s": 4487.0,
+      "end_s": 4493.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 4493,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1492.5,
+        861.6952767655164
+      ],
+      "channel": 19,
+      "start_s": 4493.0,
+      "end_s": 4499.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 4499,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -1492.5,
+        861.6952767655164
+      ],
+      "channel": 20,
+      "start_s": 4499.0,
+      "end_s": 4505.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 4505,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        2585.085830296549
+      ],
+      "channel": 20,
+      "start_s": 4505.0,
+      "end_s": 4908.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 4908,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        2585.085830296549
+      ],
+      "channel": 19,
+      "start_s": 4908.0,
+      "end_s": 4914.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 4914,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        2585.085830296549
+      ],
+      "channel": 18,
+      "start_s": 4914.0,
+      "end_s": 4920.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 4920,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        2585.085830296549
+      ],
+      "channel": 17,
+      "start_s": 4920.0,
+      "end_s": 4926.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 4926,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        2585.085830296549
+      ],
+      "channel": 16,
+      "start_s": 4926.0,
+      "end_s": 4932.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 4932,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        2585.085830296549
+      ],
+      "channel": 15,
+      "start_s": 4932.0,
+      "end_s": 4938.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 4938,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        -497.5,
+        2585.085830296549
+      ],
+      "channel": 14,
+      "start_s": 4938.0,
+      "end_s": 4944.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 4944,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        2585.085830296549
+      ],
+      "channel": 14,
+      "start_s": 4944.0,
+      "end_s": 5148.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5148,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        2585.085830296549
+      ],
+      "channel": 15,
+      "start_s": 5148.0,
+      "end_s": 5154.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5154,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        2585.085830296549
+      ],
+      "channel": 16,
+      "start_s": 5154.0,
+      "end_s": 5160.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5160,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        2585.085830296549
+      ],
+      "channel": 17,
+      "start_s": 5160.0,
+      "end_s": 5166.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5166,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        2585.085830296549
+      ],
+      "channel": 18,
+      "start_s": 5166.0,
+      "end_s": 5172.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5172,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        2585.085830296549
+      ],
+      "channel": 19,
+      "start_s": 5172.0,
+      "end_s": 5178.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5178,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        2585.085830296549
+      ],
+      "channel": 20,
+      "start_s": 5178.0,
+      "end_s": 5184.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5184,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        995.0,
+        1723.3905535310328
+      ],
+      "channel": 20,
+      "start_s": 5184.0,
+      "end_s": 5388.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5388,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        995.0,
+        1723.3905535310328
+      ],
+      "channel": 19,
+      "start_s": 5388.0,
+      "end_s": 5394.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5394,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        995.0,
+        1723.3905535310328
+      ],
+      "channel": 18,
+      "start_s": 5394.0,
+      "end_s": 5400.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5400,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        995.0,
+        1723.3905535310328
+      ],
+      "channel": 17,
+      "start_s": 5400.0,
+      "end_s": 5406.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5406,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        995.0,
+        1723.3905535310328
+      ],
+      "channel": 16,
+      "start_s": 5406.0,
+      "end_s": 5412.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5412,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        995.0,
+        1723.3905535310328
+      ],
+      "channel": 15,
+      "start_s": 5412.0,
+      "end_s": 5418.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5418,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        995.0,
+        1723.3905535310328
+      ],
+      "channel": 14,
+      "start_s": 5418.0,
+      "end_s": 5424.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5424,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1990.0,
+        1723.3905535310328
+      ],
+      "channel": 14,
+      "start_s": 5424.0,
+      "end_s": 5628.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5628,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1990.0,
+        1723.3905535310328
+      ],
+      "channel": 15,
+      "start_s": 5628.0,
+      "end_s": 5634.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5634,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1990.0,
+        1723.3905535310328
+      ],
+      "channel": 16,
+      "start_s": 5634.0,
+      "end_s": 5640.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5640,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1990.0,
+        1723.3905535310328
+      ],
+      "channel": 17,
+      "start_s": 5640.0,
+      "end_s": 5646.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5646,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1990.0,
+        1723.3905535310328
+      ],
+      "channel": 18,
+      "start_s": 5646.0,
+      "end_s": 5652.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5652,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1990.0,
+        1723.3905535310328
+      ],
+      "channel": 19,
+      "start_s": 5652.0,
+      "end_s": 5658.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5658,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1990.0,
+        1723.3905535310328
+      ],
+      "channel": 20,
+      "start_s": 5658.0,
+      "end_s": 5664.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5664,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        2487.5,
+        861.6952767655164
+      ],
+      "channel": 20,
+      "start_s": 5664.0,
+      "end_s": 5868.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5868,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        2487.5,
+        861.6952767655164
+      ],
+      "channel": 14,
+      "start_s": 5868.0,
+      "end_s": 5874.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5874,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        2487.5,
+        861.6952767655164
+      ],
+      "channel": 15,
+      "start_s": 5874.0,
+      "end_s": 5880.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5880,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        2487.5,
+        861.6952767655164
+      ],
+      "channel": 16,
+      "start_s": 5880.0,
+      "end_s": 5886.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5886,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        2487.5,
+        861.6952767655164
+      ],
+      "channel": 17,
+      "start_s": 5886.0,
+      "end_s": 5892.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5892,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        2487.5,
+        861.6952767655164
+      ],
+      "channel": 18,
+      "start_s": 5892.0,
+      "end_s": 5898.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5898,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        2487.5,
+        861.6952767655164
+      ],
+      "channel": 19,
+      "start_s": 5898.0,
+      "end_s": 5904.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 5904,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1492.5,
+        861.6952767655164
+      ],
+      "channel": 19,
+      "start_s": 5904.0,
+      "end_s": 6108.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6108,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1492.5,
+        861.6952767655164
+      ],
+      "channel": 20,
+      "start_s": 6108.0,
+      "end_s": 6114.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6114,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1492.5,
+        861.6952767655164
+      ],
+      "channel": 18,
+      "start_s": 6114.0,
+      "end_s": 6120.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6120,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1492.5,
+        861.6952767655164
+      ],
+      "channel": 17,
+      "start_s": 6120.0,
+      "end_s": 6126.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6126,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1492.5,
+        861.6952767655164
+      ],
+      "channel": 16,
+      "start_s": 6126.0,
+      "end_s": 6132.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6132,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1492.5,
+        861.6952767655164
+      ],
+      "channel": 15,
+      "start_s": 6132.0,
+      "end_s": 6138.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6138,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1492.5,
+        861.6952767655164
+      ],
+      "channel": 14,
+      "start_s": 6138.0,
+      "end_s": 6144.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6144,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1990.0,
+        0.0
+      ],
+      "channel": 14,
+      "start_s": 6144.0,
+      "end_s": 6348.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6348,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1990.0,
+        0.0
+      ],
+      "channel": 20,
+      "start_s": 6348.0,
+      "end_s": 6354.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6354,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1990.0,
+        0.0
+      ],
+      "channel": 19,
+      "start_s": 6354.0,
+      "end_s": 6360.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6360,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1990.0,
+        0.0
+      ],
+      "channel": 18,
+      "start_s": 6360.0,
+      "end_s": 6366.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6366,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1990.0,
+        0.0
+      ],
+      "channel": 17,
+      "start_s": 6366.0,
+      "end_s": 6372.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6372,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1990.0,
+        0.0
+      ],
+      "channel": 16,
+      "start_s": 6372.0,
+      "end_s": 6378.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6378,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1990.0,
+        0.0
+      ],
+      "channel": 15,
+      "start_s": 6378.0,
+      "end_s": 6384.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6384,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        2487.5,
+        -861.6952767655164
+      ],
+      "channel": 15,
+      "start_s": 6384.0,
+      "end_s": 6588.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6588,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        2487.5,
+        -861.6952767655164
+      ],
+      "channel": 20,
+      "start_s": 6588.0,
+      "end_s": 6594.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6594,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        2487.5,
+        -861.6952767655164
+      ],
+      "channel": 19,
+      "start_s": 6594.0,
+      "end_s": 6600.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6600,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        2487.5,
+        -861.6952767655164
+      ],
+      "channel": 18,
+      "start_s": 6600.0,
+      "end_s": 6606.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6606,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        2487.5,
+        -861.6952767655164
+      ],
+      "channel": 17,
+      "start_s": 6606.0,
+      "end_s": 6612.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6612,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        2487.5,
+        -861.6952767655164
+      ],
+      "channel": 16,
+      "start_s": 6612.0,
+      "end_s": 6618.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6618,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        2487.5,
+        -861.6952767655164
+      ],
+      "channel": 14,
+      "start_s": 6618.0,
+      "end_s": 6624.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6624,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1990.0,
+        -1723.3905535310328
+      ],
+      "channel": 14,
+      "start_s": 6624.0,
+      "end_s": 6828.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6828,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1990.0,
+        -1723.3905535310328
+      ],
+      "channel": 15,
+      "start_s": 6828.0,
+      "end_s": 6834.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6834,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1990.0,
+        -1723.3905535310328
+      ],
+      "channel": 16,
+      "start_s": 6834.0,
+      "end_s": 6840.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6840,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1990.0,
+        -1723.3905535310328
+      ],
+      "channel": 17,
+      "start_s": 6840.0,
+      "end_s": 6846.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6846,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1990.0,
+        -1723.3905535310328
+      ],
+      "channel": 18,
+      "start_s": 6846.0,
+      "end_s": 6852.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6852,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1990.0,
+        -1723.3905535310328
+      ],
+      "channel": 19,
+      "start_s": 6852.0,
+      "end_s": 6858.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6858,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1990.0,
+        -1723.3905535310328
+      ],
+      "channel": 20,
+      "start_s": 6858.0,
+      "end_s": 6864.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 6864,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1492.5,
+        -861.6952767655164
+      ],
+      "channel": 20,
+      "start_s": 6864.0,
+      "end_s": 7068.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 7068,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1492.5,
+        -861.6952767655164
+      ],
+      "channel": 14,
+      "start_s": 7068.0,
+      "end_s": 7074.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 7074,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1492.5,
+        -861.6952767655164
+      ],
+      "channel": 15,
+      "start_s": 7074.0,
+      "end_s": 7080.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 7080,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1492.5,
+        -861.6952767655164
+      ],
+      "channel": 16,
+      "start_s": 7080.0,
+      "end_s": 7086.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 7086,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1492.5,
+        -861.6952767655164
+      ],
+      "channel": 17,
+      "start_s": 7086.0,
+      "end_s": 7092.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 7092,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1492.5,
+        -861.6952767655164
+      ],
+      "channel": 18,
+      "start_s": 7092.0,
+      "end_s": 7098.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 7098,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        1492.5,
+        -861.6952767655164
+      ],
+      "channel": 19,
+      "start_s": 7098.0,
+      "end_s": 7104.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 7104,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        995.0,
+        -1723.3905535310328
+      ],
+      "channel": 19,
+      "start_s": 7104.0,
+      "end_s": 7308.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 7308,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        995.0,
+        -1723.3905535310328
+      ],
+      "channel": 20,
+      "start_s": 7308.0,
+      "end_s": 7314.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 7314,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        995.0,
+        -1723.3905535310328
+      ],
+      "channel": 18,
+      "start_s": 7314.0,
+      "end_s": 7320.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 7320,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        995.0,
+        -1723.3905535310328
+      ],
+      "channel": 17,
+      "start_s": 7320.0,
+      "end_s": 7326.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 7326,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        995.0,
+        -1723.3905535310328
+      ],
+      "channel": 16,
+      "start_s": 7326.0,
+      "end_s": 7332.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 7332,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        995.0,
+        -1723.3905535310328
+      ],
+      "channel": 15,
+      "start_s": 7332.0,
+      "end_s": 7338.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 7338,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        995.0,
+        -1723.3905535310328
+      ],
+      "channel": 14,
+      "start_s": 7338.0,
+      "end_s": 7344.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 7344,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        -2585.085830296549
+      ],
+      "channel": 14,
+      "start_s": 7344.0,
+      "end_s": 7548.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 7548,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        -2585.085830296549
+      ],
+      "channel": 20,
+      "start_s": 7548.0,
+      "end_s": 7554.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 7554,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        -2585.085830296549
+      ],
+      "channel": 19,
+      "start_s": 7554.0,
+      "end_s": 7560.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 7560,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        -2585.085830296549
+      ],
+      "channel": 18,
+      "start_s": 7560.0,
+      "end_s": 7566.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 7566,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        -2585.085830296549
+      ],
+      "channel": 17,
+      "start_s": 7566.0,
+      "end_s": 7572.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 7572,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        -2585.085830296549
+      ],
+      "channel": 16,
+      "start_s": 7572.0,
+      "end_s": 7578.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 7578,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/measure",
+      "position": [
+        497.5,
+        -2585.085830296549
+      ],
+      "channel": 15,
+      "start_s": 7578.0,
+      "end_s": 7584.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 7584,
+        "measure_result": "no_signal"
+      }
+    },
+    {
+      "path": "/exit",
+      "position": null,
+      "channel": null,
+      "start_s": 7584.0,
+      "end_s": 7584.0,
+      "response": {
+        "accepted": true,
+        "real_timestamp_ms": 1760000000000,
+        "virtual_time_s": 7584,
+        "exit_reason": "user_exit"
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "checkpoint": "runs/q34_structural_20260912/q4/structural_8card_restart/best.pt",
+  "selection_uses_test": false
+}

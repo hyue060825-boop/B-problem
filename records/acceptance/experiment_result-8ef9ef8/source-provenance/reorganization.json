@@ -1,0 +1,13 @@
+{
+  "backup": "/data5/hy/B-problem/cache/original_workspace_20260913",
+  "original_files": 25984,
+  "original_bytes": 6612498777,
+  "all_original_hashes_verified_after_move": true,
+  "preserved_runtime_revision": "3ddb2d9",
+  "excluded_from_git": "cache/",
+  "raw_results": "all non-checkpoint experimental artifacts archived, including tensor label datasets",
+  "old_model_weights_and_large_redundant_source_tar": "kept in cache; original paths and SHA256 available in inventory",
+  "previous_branch": "hy_branch/b45c0d2",
+  "previous_commit": "660e63f",
+  "branch": "experiment_result"
+}

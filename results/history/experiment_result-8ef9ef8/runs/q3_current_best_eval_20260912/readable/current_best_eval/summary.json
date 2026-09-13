@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE",
+  "problem": 3,
+  "checkpoint": "runs/q3_current_best_eval_20260912/current_best.pt",
+  "episodes": 3000,
+  "seed_start": 430000000,
+  "seed_end_exclusive": 430003000,
+  "completed_episodes": 3000,
+  "completion_rate": 1.0,
+  "samples_with_cleared_source": 3000,
+  "mean_of_sample_per_source_times_s": 258.682679919808,
+  "total_virtual_time_s": 9867637.929922009,
+  "total_cleared_sources": 38961,
+  "source_weighted_mean_time_s": 253.2696268042917,
+  "median_sample_per_source_time_s": 260.5791251370192,
+  "p05_sample_per_source_time_s": 163.70381515666668,
+  "p95_sample_per_source_time_s": 346.3976527071969,
+  "min_sample_per_source_time_s": 70.5271159375,
+  "max_sample_per_source_time_s": 417.08315945454547,
+  "elapsed_wall_s": 22.38739184709266,
+  "distribution": "LOCAL-RESEARCH research-v1-20260911; four seeded distributions and three error fields"
+}

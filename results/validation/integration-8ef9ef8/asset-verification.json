@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "source_commit": "8ef9ef87d8c5413e85e02d18a99eee083da8d66f",
+  "main_base": "910df44bdf2a6a67c2a954bf6ef93c44435c50f5",
+  "checks": {
+    "mapped_source_files": 1475,
+    "byte_identical_targets": 1418,
+    "main_protected_paths_unchanged": true,
+    "models": 6,
+    "runtime_files_per_model": 44,
+    "main_raw_records_recomputed": 12000,
+    "archives": {
+      "archives": 50,
+      "parts": 59,
+      "members_read": 25445,
+      "member_check": "streamed hashes"
+    },
+    "current_links": 609,
+    "server_cache": "Not in this delivery; no claim that all historical weights are backed up."
+  },
+  "failures": []
+}

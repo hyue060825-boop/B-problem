@@ -38,6 +38,7 @@ Thumbs.db
 # 可重建的缓存与调试输出；实验日志、图表和正式结果正常跟踪
 /results/cache/
 /results/debug/
+/cache/
 
 # 论文编译中间文件；保留正文、参考文献、PDF 和支撑材料
 /paper/**/*.aux

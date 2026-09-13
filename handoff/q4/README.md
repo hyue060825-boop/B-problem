@@ -20,11 +20,21 @@
 
 规则回归包含不同源数、空间布局和误差场的交叉场景。修复动机、代码与日志见[Q4 修复报告](../../results/training/import-3ddb2d9/reports/Q4修复与四卡同步复验.MD)及 [test_q4_repair.py](../../tests/solution/test_q4_repair.py)。覆盖发现证明不等于已证明全部清除操作都在每局预算内完成。
 
-## 实验过程与当前结果
+## 最终训练、证书与主结果
+
+最终权重为 `c8812ced…`，从父模型 `e8a525f7…` 进行八卡同步 PPO 一小时续训；选中第 600 轮，本段入选前共 153600 个场景，整段实际运行 682 轮。31 站控制器和 normalized-public-v2 网络保持不变。
+
+种子 1830000000–1830002999 的研究配对集上，父/最终均完成 3000/3000、清除 39086 个源。最终平均整局 T=9685.100 s，逐局 T/N 均值=767.252 s/源；相对父模型平均总时间差 −12.696 s，95% 区间 [−31.853,+6.462] s。均值略降，不能宣称显著提升，也不能与旧预算批次改善比例相加。
+
+补充的[有理四叉树证书](../../results/final-20260913/q4_optimization_20260912/layout31_proof.json)覆盖同一组 31 个站点，核验代码为 [exact.py](../../experiments/q4/exact.py)与[独立验证入口](../../scripts/verify_q4_certificate_exact.py)。它不证明站数最少，也不将在线控制改成精确算术。
+
+3000 局无源尾段、四组规划对照、零源诊断、4224 个布局候选和[官方交互单例](../../results/official/q4-20260913/README.md)均使用父模型。路线调整存在退化，调度干预未显示总时间显著收益，均保留原结论。完整过程、模型对应和图件见[最终说明](../shared/最终方案与实验说明.md)及[实验索引](../shared/最终实验索引.md)。部署使用[冻结入口](../../deployment/README.md)。
+
+## 前期预算训练与结果（3ddb2d9）
 
 先使用修复后控制器完成 BC/DAgger/PPO，同步四卡训练；再从该阶段 best 进行预算微调，共 3800 轮，验证集选中第 3500 轮。配置分别见 [repaired_20260912.json](../../experiments/q4/repaired_20260912.json)和 [budget_20260912.json](../../experiments/q4/budget_20260912.json)，共同训练说明见[训练与评估](../shared/训练与评估.md)。
 
-最新在种子 `320000000–320002999` 的 3000 个研究场景上，与预算训练前的模型配对，二者使用相同场景和当前控制器。
+该阶段在种子 `320000000–320002999` 的 3000 个研究场景上，与预算训练前的模型配对，二者使用相同场景和当前控制器。
 
 | 指标 | 训练前对照 | 预算训练 best |
 | --- | ---: | ---: |
@@ -35,13 +45,13 @@
 
 平均配对总耗时差为 -308.35 s，近似 95% 区间 `[-343.25,-273.45]` s；1888 局更快、1112 局更慢。总时间均值改善约 3.03%，逐局 T/C 均值改善约 2.75%，不能表述为每局都更快。best 的样本最大总耗时约 21618.47 s，高于对照的 20061.08 s，因此平均收益与尾部表现分别解释。
 
-原始记录见[最新配对批次](../../results/training/import-3ddb2d9/runs/q34_3000_test_20260912/)，表格和图件见 [q34_summary.csv](../tables/q34_summary.csv)、[q34_paired.csv](../tables/q34_paired.csv)、[F006](../figures/F006-q34-per-source-ecdf.pdf)、[F007](../figures/F007-q34-paired-by-count.pdf)和 [F008](../figures/F008-q34-validation-progress.pdf)。
+原始记录见[前期配对批次](../../results/training/import-3ddb2d9/runs/q34_3000_test_20260912/)，表格和图件见 [q34_summary.csv](../tables/q34_summary.csv)、[q34_paired.csv](../tables/q34_paired.csv)、[F006](../figures/F006-q34-per-source-ecdf.pdf)、[F007](../figures/F007-q34-paired-by-count.pdf)和 [F008](../figures/F008-q34-validation-progress.pdf)。
 
 ## 复现与引用边界
 
-覆盖检查：`python scripts/validate_coverage.py --problem 4`。训练入口、权重评估和 HTTP 部署分别见[实验说明](../../experiments/README.md)与[部署说明](../../docs/simulator/local_deployment.md)。本批图表脚本只复算已交付记录。
+覆盖检查：`python scripts/validate_coverage.py --problem 4`。训练入口、权重评估和 HTTP 部署分别见[实验说明](../../experiments/README.md)与[最终部署说明](../../deployment/README.md)。本批图表脚本只复算已交付记录。
 
-旧低完成率数据用于说明旧缺陷；修复后与规则教师约 4.12% 的比较、最新预算训练约 3.03% 的比较使用不同对照，不能相加或混称。当前尚无官方成绩；源分布、固定误差场和真实接口行为仍须通过官方演练检验。历史数据与当前结论均保留明确版本。
+旧低完成率数据用于说明旧缺陷；修复后与规则教师约 4.12% 的比较、最新预算训练约 3.03% 的比较使用不同对照，不能相加或混称。已提供的官方单例不是最终模型批量成绩；源分布、固定误差场和真实接口表现不能由研究结果代替。历史数据与当前结论均保留明确版本。
 
 ## 文献启发补充 · LIT-Q2-01｜待验证方案
 

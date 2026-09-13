@@ -1,0 +1,12 @@
+{
+  "episodes": 3000,
+  "completed": 2950,
+  "new_mean_virtual_s": 10918.329018828668,
+  "old_mean_virtual_s": 9879.048570323333,
+  "mean_delta_s": 1039.2804485053334,
+  "ci95_s": 49.42275937259943,
+  "faster": 507,
+  "slower": 2493,
+  "elapsed_s": 218.29188129026443,
+  "checkpoint": "runs/q34_structural_20260912/q4/structural_8card_restart/best.pt"
+}

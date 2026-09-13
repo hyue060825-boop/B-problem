@@ -1,0 +1,138 @@
+{
+  "archive_sha256": "098408938ac7f7e2e2a0b49728a760e26618d311206b4e6204a543687239e8b2",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 23990,
+      "sha256": "098408938ac7f7e2e2a0b49728a760e26618d311206b4e6204a543687239e8b2"
+    }
+  ],
+  "members": [
+    {
+      "path": "tests/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tests/support.py",
+      "bytes": 1202,
+      "sha256": "09325fd8ba6d9bd2950b9094a5ad559bcc3e1b9867712ad2cc81c7efe2eac9ca"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "bytes": 2780,
+      "sha256": "2abd5ceed7d4045e0e1dc35daaf1d559430699bfaac7587a3dad2868262544c4"
+    },
+    {
+      "path": "tests/test_clock_client.py",
+      "bytes": 4018,
+      "sha256": "c5cd2711b74f210788c24619ad24f4edff69970957524ba28201a5d76bbb898e"
+    },
+    {
+      "path": "tests/test_ddp_updates.py",
+      "bytes": 2736,
+      "sha256": "cb8a31148b13eb7b7b9fb2c918a278a2f3a60c03536bc3f3f100661b74ceef80"
+    },
+    {
+      "path": "tests/test_equivalence.py",
+      "bytes": 1729,
+      "sha256": "6746afa10d15c52b33baf353f474468ef1cd636da2761820a8a20871eaf30de0"
+    },
+    {
+      "path": "tests/test_geometry.py",
+      "bytes": 3324,
+      "sha256": "2793ef30ee2aabf558fc39960fd19f16ff2ccaded54030cb31852d35e5b4e22b"
+    },
+    {
+      "path": "tests/test_http.py",
+      "bytes": 2820,
+      "sha256": "1e9fa4a6bef07e5d1cfe20ced61c12d2fc42532e89d8ac9752bf0013a48cc30b"
+    },
+    {
+      "path": "tests/test_physics.py",
+      "bytes": 5531,
+      "sha256": "026fb70a6ad4dc49568a8000fd9dea6728bca3116494713aa77d19f898a0062e"
+    },
+    {
+      "path": "tests/test_protocol.py",
+      "bytes": 5500,
+      "sha256": "fdfa4f9df40198181ddb5e580765d50c3f1896c48dbb9faa20927a791ffccc58"
+    },
+    {
+      "path": "tests/test_q2.py",
+      "bytes": 1259,
+      "sha256": "4b46a768e6790aec8aa7b36bfe5c17a33732eea4bad1c7d924d4e4cfea3554b4"
+    },
+    {
+      "path": "tests/test_q3_gpu_labels.py",
+      "bytes": 1915,
+      "sha256": "79da04099a9301fa4929d8ef814f7ebe688b89d775d12b201190716560e941c8"
+    },
+    {
+      "path": "tests/test_q3_joint.py",
+      "bytes": 5561,
+      "sha256": "d8476c17f6ce2e8adbe446f0de7c4a65b908d84376bcdab2ee9bbad0c9820be3"
+    },
+    {
+      "path": "tests/test_q3_search.py",
+      "bytes": 5012,
+      "sha256": "b649aa742278010a91aa4b35dfbcadf1aeb95fc54436967ddfc5d83141c1dcc4"
+    },
+    {
+      "path": "tests/test_q3_tensor.py",
+      "bytes": 2603,
+      "sha256": "d4c12e55e937bb3f896a0faa4c62ba23f5f35f0432b5772ab717fe844727cd72"
+    },
+    {
+      "path": "tests/test_q4_attention.py",
+      "bytes": 3549,
+      "sha256": "58a4258b23fc0cd8788426e10b6e0a240c2a78dd648561c6a0f4abe61efe702b"
+    },
+    {
+      "path": "tests/test_q4_belief.py",
+      "bytes": 1679,
+      "sha256": "4b974b04b077e175d885c0380a5790c975dbd6640295a0d0ed22856266148918"
+    },
+    {
+      "path": "tests/test_q4_closed_loop.py",
+      "bytes": 2525,
+      "sha256": "ffbf3c2326a42d1b704896012511c90929881c73ad7c6494560f115f5e09e5e1"
+    },
+    {
+      "path": "tests/test_q4_exact_certificate.py",
+      "bytes": 1429,
+      "sha256": "a280f56f8cdf95e7d55961bf1399c8e9dfb574e668f592b7d612ba13d9e95f72"
+    },
+    {
+      "path": "tests/test_q4_planning_ablation.py",
+      "bytes": 2139,
+      "sha256": "5fbdeea16f2bdaf53095447e52f3690f73aa24d71e6a19b68d0a30afcd8bd73f"
+    },
+    {
+      "path": "tests/test_q4_repair.py",
+      "bytes": 3114,
+      "sha256": "2f67e48e38e46d3b3f62d2f91c00a4b4647887e6b85f35def9d32b5a54181862"
+    },
+    {
+      "path": "tests/test_route_budget.py",
+      "bytes": 2276,
+      "sha256": "3a608c1495de2855b7af0f673f120a67d9d7bc29a98e76faae29f1a3545cceed"
+    },
+    {
+      "path": "tests/test_run_policy_deployment.py",
+      "bytes": 3295,
+      "sha256": "20130dbd526b9537bdba2c40aed26ef71f45864a1e982f4784153bf9a82ec0ad"
+    },
+    {
+      "path": "tests/test_solution_components.py",
+      "bytes": 2308,
+      "sha256": "771ad7bd5288e0448b5f2ada7e6e9777e66dd43e14c982f93417c38c4fb76d0f"
+    },
+    {
+      "path": "tests/test_web.py",
+      "bytes": 5456,
+      "sha256": "89486a2cfab434b431f817ea1e80a4cf732007626499a7f885bbc9f9cc1b50c5"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

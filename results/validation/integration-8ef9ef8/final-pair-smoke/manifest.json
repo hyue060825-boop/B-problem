@@ -1,0 +1,106 @@
+{
+  "checkpoints": {
+    "q3_candidate": {
+      "path": "/home/lenovo/projects/competition/B-problem/results/final-20260913/q3_legacy_deadline_20260913/best.pt",
+      "sha256": "51397bc8056798c9926ddadd9620faf7438dce29cf7b52616d82c0ed16e74679",
+      "stage": "BUDGET_DDP_PPO",
+      "update": 4399
+    },
+    "q3_baseline": {
+      "path": "/home/lenovo/projects/competition/B-problem/results/final-20260913/q3_gpu8_extended_20260912/ppo/best.pt",
+      "sha256": "8cc3a1621334640e6010d8d8fc2cc91a7d47a879573bd54b55fa45a990a56e71",
+      "stage": "BUDGET_DDP_PPO",
+      "update": 1599
+    },
+    "q4_best": {
+      "path": "/home/lenovo/projects/competition/B-problem/results/final-20260913/q4_baseline_8gpu_1h_20260913/train/best.pt",
+      "sha256": "c8812cedc2a755997dbd431873b3c4229d8411d827937225e34f1b8ac6949ffb",
+      "stage": "BUDGET_DDP_PPO",
+      "update": 599
+    },
+    "q4_baseline": {
+      "path": "/home/lenovo/projects/competition/B-problem/results/final-20260913/q4_legacy_deadline_20260913/best.pt",
+      "sha256": "e8a525f78d176d9073372394b324bd585f4445fbf9cd1515141c483f38d5bd90",
+      "stage": "BUDGET_DDP_PPO",
+      "update": 3799
+    }
+  },
+  "seeds": {
+    "3": [
+      1950000000,
+      1950000001
+    ],
+    "4": [
+      1960000000,
+      1960000001
+    ]
+  },
+  "provenance": {
+    "files": {
+      "scripts/evaluate_q4_planning_ablation.py": "be0b226c0c39a71ecb1ad21fa1158dddfd2bb02139bf1708faab96de127f6c93",
+      "scripts/search_q3_layout_extremes.py": "b06f3a4a51dcd641061f2ff3be5e583537456a0c067f1dcd19e5c586ac69355d",
+      "scripts/build_q2_literature_assets.py": "1efc0320da98caf2cebc5c2477c4e03bb9cdb1a02d839e4065ed6c0b61e41fe2",
+      "scripts/train_dagger.py": "7b31f0cad327d194ec111d752dbd2e5b36ea8b50b7c1f950225a6484fa839ec9",
+      "scripts/report_q4_hour_pair.py": "01c705a04d579ab580ec5d24fa86499b493c2b7fec1bee5c26b15104391192ae",
+      "scripts/train_q3_joint.py": "900e21a5ac7f31bc064f74f61389252dee56e2f957101217cc8959d0c5850d22",
+      "scripts/evaluate_checkpoint.py": "6610b9f1b552c27bc3a7a3c00adf83420426ae935296a5542e13f13868f4224a",
+      "scripts/extract_experiment_archive.py": "153793bf79dbdbdc5e4923a1a200d5bf0c8c7aec0471d102aabc69a59652597c",
+      "scripts/verify_final_assets.py": "beb190bb924a4fe2bc8f091e699e9bf53b2f82cf92f3d28913e32a049c297296",
+      "scripts/evaluate_q4_empty_arena.py": "b109152100b8fbb8f01122abe02dc3914cdef00d975db29564fbde23670eacd1",
+      "scripts/report_q3_layout_extremes.py": "8ac18215a861364fe0b7f30ae49c634d8a95d1874661c609b898d7bbb24cf10e",
+      "scripts/generate_q3_labels.py": "c5873a051cddda882e75bc7108052527affe56c982e0bc2c8d704bc8c4f73450",
+      "scripts/evaluate_latest_pair.py": "eef80b9289ca0d46ccbe7927e56864199d511d1e0adb62ef2ba0e701a9002630",
+      "scripts/launch_q4_baseline_8gpu_hour.py": "2ced317f78f6c69084944a7bce1d3ebb3ad7a4a983a250aa2495a9f3cd82f503",
+      "scripts/experiment_q2_literature.py": "2d51415793054ef5ec4258f4ca9810721be33075a4cdbbda1f1a0e050b701f1c",
+      "scripts/start_training.py": "b43b902d4b2e511ac2ec3f25b3e0230fa7205dcb4a4f2af5f8dab7fb6d6f9534",
+      "scripts/verify_q2_literature.py": "1f20a4e92dda89b31d3bb92a27472f3a08333027c8e825deeac46f65d076ef59",
+      "scripts/inventory_assets.py": "b599e23006e4dba13d4cf35856837d90d959829bec14360b3957ae64a0f43687",
+      "scripts/q3_search_preflight.py": "07b413902c268c57fe8f3dd86df9b0c470b8a17b74911bd7343bcfc33a777ac3",
+      "scripts/check_q3_local_http.py": "d6dd8449ab332980dfde085d27bc6bdbbf8d2c7745b5280c55e1246b3576f0a8",
+      "scripts/validate_coverage.py": "c853d693af33528cc05256f03d5a3619ead2e021d1e184cf65848197142bea69",
+      "scripts/plot_q4_last_clear_comparison.py": "2648c7cf47e0614b9f33f794650b282ba76dcf3907893a9d862581d507f07bc2",
+      "scripts/_final_paths.py": "d39986caa763c11d7453c650554fe0a780ec4251197d62a62e99f12d0c62628e",
+      "scripts/build_final_handoff_assets.py": "e080f7c8144c4a4eaa8996c5530c3d560ea0a6749e56c9d5e3eb455c34b4a909",
+      "scripts/prepare_q3_joint.py": "c1cf002649a5b84597e71e98c9651cce269371291122d4789f54bd048a0cbd20",
+      "scripts/q3_gpu_search.py": "c03471bca438015ab178814d089655a15c73ae6d053c7978298242be02bd8a42",
+      "scripts/train_ddp.py": "e57e05d25e6acb0e145f14e20ac2b3320fdd28ffd19cd37d2b4d523b14201537",
+      "scripts/train_legacy_deadline_ddp.py": "a3a207fcb8244a499bc18116b6e1e67ff85558c7e5cd32d51cb13bd9a1bbd281",
+      "scripts/search_q4_layout_extremes.py": "4fae18f5a9eca1872c6a5cc8c4805c540a96fc60dcb0a9763ed146dcc67b9493",
+      "scripts/build_windows_policy_bundle.py": "e98ffc8e5075f41ec644a5af82caa32ecf89a87df00821986b84ee0174621763",
+      "scripts/evaluate_3000.py": "777e49fb2e34d1358df74b462dbc389b2afe2640e7492e7c431d7e5203afe4d4",
+      "scripts/train_ppo.py": "8d089bf636ba7bf7cc06617f3424221c2955f2c767a64ba7f3975ebf2e3cf7ae",
+      "scripts/verify_q4_certificate_exact.py": "66a6a8663695d2c852f554f77ef3815edd11bc211786701b2a0ed93b023e05c2",
+      "scripts/evaluate_deadline_pair.py": "7a842890fa94ef17a7ecd2f323ba344bfc753f4a45f3a37cb8b4b6b178b5c4ca",
+      "scripts/q4_preflight.py": "ce41b1e29ed7e9a8a6f1d73fbdb53a6d287e9656cf97def5867ea4b4310c5dc4",
+      "scripts/smoke_training.py": "5c675382c65e14566c17206f655ed65ce324c103adf6e3375e061866785e33f9",
+      "scripts/analyze_q4_absence_tail.py": "17af742630e69efb616840344392b353f3b37215ac435071e5cc2eceaf86c93f",
+      "scripts/build_q4_witness_certificate.py": "0db8b7fe2d75cd22e7e63ccf80dfe9ab42a27afa45e9461f1d67bd5d5b37f5bb",
+      "scripts/report_q4_planning_ablation.py": "2e220312a114299a02baacdd321a94fcfba75ef32b9a76a18d8c7a44ce8d0f01",
+      "scripts/build_handoff_assets.py": "c615dfec34005bb50a63203740adfdb36f222a6819e83792491ada59db3996cb",
+      "scripts/run_policy.py": "59cc60022a22ef02877acd806fa18b7eb22ae91788969337aa172c6e1021df41",
+      "scripts/report_deadline_pair.py": "c0cb23a0b00ef51c854cb6fe89fc85b60540b4e7ce149e4f8dec05211dcf122d",
+      "scripts/train_budget_ddp.py": "8d59289b4931c7194d8e8a1ff5a14f3b489906a18a16cccb9d3563af88a948d3",
+      "scripts/run_policy_research.py": "bd77b3ad05171405d65cb0709f44ae2e2c51329a7f98c9bb659b75373a80965e",
+      "scripts/train_bc.py": "a19f0bc031fd1d932e15eb31a7de56cbeeda425fd6b5e23efc61c6b70e7faf4e",
+      "scripts/build_final_paper_assets.py": "012a54d9e63e575b703a2c3bb6b74f4e11067f26c169fef10d4e2fc20614f0f6",
+      "scripts/evaluate_q3_joint.py": "557a88b883cbc6517937c270f7faf55a8987190b38f61f34579a490cba989788",
+      "scripts/evaluate_final_pair.py": "646e58161d1de23e1419d9643eabe60b1e22395c1da46b69b302d94bdb72c293",
+      "scripts/report_q4_layout_extremes.py": "ff328c8d1098e94a25212813becd6c7e2db413b7d9df5188fb2e2748741cd854",
+      "scripts/export_model.py": "d75382dd4ccbec47b1c1860915c94e503cbd67a5c1d0041dcd315a8ab92ad6c5",
+      "scripts/report_q4_absence_tail.py": "fc0f0e51f6d8d9f060478c0510f00b8e0e6de255c964d56fb22a5176976407e1"
+    },
+    "python": "3.13.13",
+    "torch": "2.8.0+cpu",
+    "numpy": "2.5.1",
+    "profile": "research-v1-20260911",
+    "features": "normalized-public-v2"
+  },
+  "workers": 1,
+  "device": "cpu",
+  "max_macros": 400,
+  "policy": "greedy",
+  "metric": "mean_i(virtual_time_i / cleared_sources_i); failures retained and separately reported",
+  "selection": "Both candidates selected by training validation only; frozen before final test",
+  "distribution": "LOCAL-RESEARCH research-v1-20260911, not official test data",
+  "remaining_real_time_feature": "live per-episode wall clock, same as TrainingEnv"
+}

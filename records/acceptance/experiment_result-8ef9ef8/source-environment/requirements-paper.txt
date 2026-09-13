@@ -1,0 +1,7 @@
+# Tested Linux research environment; install torch separately for your CUDA/CPU platform.
+numpy==2.4.6
+scipy==1.17.1
+shapely==2.1.2
+matplotlib==3.11.1
+requests==2.31.0
+pytest==9.1.1

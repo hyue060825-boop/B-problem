@@ -31,11 +31,19 @@ $$
 
 当前补测不是 Q2 完整选点器；当前保证清除点取圆心，也未实现最近插入、2-opt 或 Held–Karp 路线优化。这些可作为进一步设计，不能用于解释现有耗时结果。
 
-## 训练、评估及结果
+## 最终训练与主结果
+
+最终权重为 `51397bc8…`，父模型 `8cc3a162…`。在既有搜索、SFT/DAgger/PPO 谱系上，用同架构四卡同步 PPO 续训；最终 best 对应第 4400 轮，本段入选前共 563200 个场景，整段实际运行 6498 轮。网络和控制器未改用结构化或信念注意力模型。
+
+在种子 1230000000–1230002999 的研究配对集上，父/最终模型均完成 3000/3000、清除 38961 个源。最终平均整局 T=3255.759 s，逐局 T/N 均值=255.989 s/源；相对父模型平均总时间差 −15.279 s，95% 区间 [−19.221,−11.338] s。时间包含完整搜索和不存在确认。
+
+最终模型的 4224 个布局候选搜索用于有限场景诊断；按 N=10–16 各 1000 局的批次使用父模型，两者不可混称。模型、主表、过程和图件见[最终说明](../shared/最终方案与实验说明.md)、[实验索引](../shared/最终实验索引.md)和[最终表格](../tables/final-20260913/README.md)。运行使用[冻结部署入口](../../deployment/README.md)。
+
+## 前期训练与结果（3ddb2d9）
 
 训练采用 Q3 搜索教师辅助的 SFT、DAgger、PPO；细节、特征、数据分割和同步 DDP 见[训练与评估](../shared/训练与评估.md)。相关配置为 [joint_20260912.json](../../experiments/q3/joint_20260912.json)。
 
-最新两份固定权重在种子 `310000000–310002999` 的 3000 个研究场景配对评估，每局 10–16 个源、最多 400 个宏动作。对照是冻结旧训练模型。
+该阶段两份固定权重在种子 `310000000–310002999` 的 3000 个研究场景配对评估，每局 10–16 个源、最多 400 个宏动作。对照是冻结旧训练模型。
 
 | 指标 | 对照 | PPO 候选 |
 | --- | ---: | ---: |
@@ -46,11 +54,11 @@ $$
 
 平均配对总耗时差为 -14.32 s，近似 95% 区间 `[-19.25,-9.39]` s；候选在 1651 局更快、427 局持平、922 局更慢。总时间均值改善约 0.43%，逐局 T/C 均值改善约 0.40%。原稳健验证规则仍推荐 baseline，故保留“候选”称谓。
 
-数据见[最新原始批次](../../results/training/import-3ddb2d9/runs/q34_3000_test_20260912/)，整理表为 [q34_summary.csv](../tables/q34_summary.csv)、[q34_paired.csv](../tables/q34_paired.csv)。可取用图 [F006：耗时分布](../figures/F006-q34-per-source-ecdf.pdf)、[F007：按源数分组](../figures/F007-q34-paired-by-count.pdf)、[F008：训练验证](../figures/F008-q34-validation-progress.pdf)。
+数据见[前期原始批次](../../results/training/import-3ddb2d9/runs/q34_3000_test_20260912/)，整理表为 [q34_summary.csv](../tables/q34_summary.csv)、[q34_paired.csv](../tables/q34_paired.csv)。可取用图 [F006：耗时分布](../figures/F006-q34-per-source-ecdf.pdf)、[F007：按源数分组](../figures/F007-q34-paired-by-count.pdf)、[F008：训练验证](../figures/F008-q34-validation-progress.pdf)。
 
 ## 编程与复现入口
 
-覆盖检查：`python scripts/validate_coverage.py --problem 3`。权重评估及自建 HTTP 部署命令见[部署说明](../../docs/simulator/local_deployment.md)；训练命令见[实验入口](../../experiments/README.md)。原始图表可用 `python scripts/build_handoff_assets.py` 重新汇总和重绘，不触发训练或官方测试。
+覆盖检查：`python scripts/validate_coverage.py --problem 3`。最终权重评估及部署命令见[复现说明](../../docs/simulator/最终模型复现.md)；训练命令见[实验入口](../../experiments/README.md)。原始图表可用 `python scripts/build_handoff_assets.py` 重新汇总和重绘，不触发训练或官方测试。
 
 此前 256 对选模验证、GPU1 的 32 对、GPU2 旧 3000 局与本批使用不同权重和比较口径，见[共同实验说明](../shared/训练与评估.md)。当前材料尚无官方成绩；覆盖证明和研究完成率也不构成所有合法场景内现实时间预算的证明。
 

@@ -1,0 +1,9 @@
+{
+  "stage": "COMPLETE",
+  "elapsed_s": 5446.889415485784,
+  "consumed_s": 5446.889418927021,
+  "updates": 1602,
+  "checkpoint": "/data5/hy/B-problem/runs/q3_gpu8_extended_20260912/ppo/best.pt",
+  "test_completion_rate": 1.0,
+  "mean_delta_s": -41.095569512666664
+}

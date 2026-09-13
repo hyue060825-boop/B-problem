@@ -1,0 +1,19 @@
+{
+  "q3_candidate": {
+    "runtime_all_files_match": true,
+    "runtime_files_checked": 44
+  },
+  "q3_baseline": {
+    "runtime_all_files_match": true,
+    "runtime_files_checked": 44
+  },
+  "q4_best": {
+    "runtime_all_files_match": true,
+    "runtime_files_checked": 44
+  },
+  "q4_baseline": {
+    "runtime_all_files_match": true,
+    "runtime_files_checked": 44
+  },
+  "training_validation_overlap": false
+}

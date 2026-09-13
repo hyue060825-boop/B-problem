@@ -1,0 +1,13 @@
+# 原始证据、权重配套代码和来源副本按字节保存，禁止自动转换行尾。
+/results/final-20260913/** -text
+/results/history/experiment_result-8ef9ef8/** -text
+/results/official/q4-20260913/** -text
+/results/validation/integration-8ef9ef8/** -text
+/deployment/runtime_public_v2/** -text
+/deployment/bundles/** -text
+/deployment/inference_fixtures.json -text
+/deployment/README_WINDOWS.md -text
+/deployment/requirements-windows.txt -text
+/records/acceptance/experiment_result-8ef9ef8/source-*/** -text
+/records/protocols/experiment_result-8ef9ef8/** -text
+/handoff/figures/final-20260913/** -text

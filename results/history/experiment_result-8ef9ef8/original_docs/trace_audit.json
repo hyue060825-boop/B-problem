@@ -1,0 +1,7 @@
+{
+  "label": "LOCAL-observable-invariants",
+  "status": "PASS",
+  "records": 6,
+  "errors": [],
+  "qualification": "G05 microsecond rounding not resolved; no hidden-state equivalence claim"
+}

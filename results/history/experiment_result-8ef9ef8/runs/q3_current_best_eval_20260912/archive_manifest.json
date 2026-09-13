@@ -1,0 +1,53 @@
+{
+  "archive_sha256": "677f123ba5d0d342334560c462ac01651018353e5bfeb6db1b2b6100ecdf0565",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 329566,
+      "sha256": "677f123ba5d0d342334560c462ac01651018353e5bfeb6db1b2b6100ecdf0565"
+    }
+  ],
+  "members": [
+    {
+      "path": "runs/q3_current_best_eval_20260912/comparison_summary.json",
+      "bytes": 1030,
+      "sha256": "372b38968a0e587597b1b644e09e418ffba2db6718eb79328cdaa4731e8e1748"
+    },
+    {
+      "path": "runs/q3_current_best_eval_20260912/current_best_eval/per_source_time_distribution.png",
+      "bytes": 66020,
+      "sha256": "2f875c0c6ae11e23b93abaf650cfcf1a0ce7a24ba6f96260848f25c5f2f74419"
+    },
+    {
+      "path": "runs/q3_current_best_eval_20260912/current_best_eval/samples.json",
+      "bytes": 1639880,
+      "sha256": "d03fe33e9df4e84a26db64d86abc28464e6048b6f55640df800306ad9c274a6b"
+    },
+    {
+      "path": "runs/q3_current_best_eval_20260912/current_best_eval/summary.json",
+      "bytes": 889,
+      "sha256": "8401cc7b075adae06b47a14d9ecdb1bb17832c28539670229529bac3f9917acf"
+    },
+    {
+      "path": "runs/q3_current_best_eval_20260912/previous_candidate_eval/per_source_time_distribution.png",
+      "bytes": 65879,
+      "sha256": "aef5a598a17eb92016e7e0d0a95033ff921d1887ca2d9e79a5ac8a36ce9a2195"
+    },
+    {
+      "path": "runs/q3_current_best_eval_20260912/previous_candidate_eval/samples.json",
+      "bytes": 1640092,
+      "sha256": "b09ab0df411bae3e42a6ecf09238a84db545b8525cfa1fcd6ed4d841ab624043"
+    },
+    {
+      "path": "runs/q3_current_best_eval_20260912/previous_candidate_eval/summary.json",
+      "bytes": 881,
+      "sha256": "3820142dbbf862c7b0c29c87026a178fdeb5dc2b2651dd51f543ddf2a0892b0b"
+    },
+    {
+      "path": "runs/q3_current_best_eval_20260912/report.md",
+      "bytes": 1311,
+      "sha256": "d027532e5be00d0f798bbe40482dae3cef1a425ac1884fc661701d040faa46c7"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

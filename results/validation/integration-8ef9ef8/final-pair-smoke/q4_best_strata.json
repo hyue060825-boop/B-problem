@@ -1,0 +1,146 @@
+{
+  "N": {
+    "14": {
+      "episodes": 1,
+      "completed_episodes": 1,
+      "completion_rate": 1.0,
+      "mean_virtual_s": 9432.332548,
+      "median_virtual_s": 9432.332548,
+      "p95_virtual_s": 9432.332548,
+      "mean_per_source_s": 673.7380391428571,
+      "median_per_source_s": 673.7380391428571,
+      "p95_per_source_s": 673.7380391428571,
+      "completed_only_mean_per_source_s": 673.7380391428571,
+      "total_virtual_s": 9432.332548,
+      "total_cleared_sources": 14,
+      "total_sources": 14,
+      "errors": {},
+      "max_macro_steps": 46,
+      "distribution_counts": {
+        "edge": 1
+      },
+      "field_counts": {
+        "extreme": 1
+      }
+    },
+    "16": {
+      "episodes": 1,
+      "completed_episodes": 1,
+      "completion_rate": 1.0,
+      "mean_virtual_s": 6305.197307,
+      "median_virtual_s": 6305.197307,
+      "p95_virtual_s": 6305.197307,
+      "mean_per_source_s": 394.0748316875,
+      "median_per_source_s": 394.0748316875,
+      "p95_per_source_s": 394.0748316875,
+      "completed_only_mean_per_source_s": 394.0748316875,
+      "total_virtual_s": 6305.197307,
+      "total_cleared_sources": 16,
+      "total_sources": 16,
+      "errors": {},
+      "max_macro_steps": 31,
+      "distribution_counts": {
+        "area": 1
+      },
+      "field_counts": {
+        "smooth": 1
+      }
+    }
+  },
+  "distribution": {
+    "area": {
+      "episodes": 1,
+      "completed_episodes": 1,
+      "completion_rate": 1.0,
+      "mean_virtual_s": 6305.197307,
+      "median_virtual_s": 6305.197307,
+      "p95_virtual_s": 6305.197307,
+      "mean_per_source_s": 394.0748316875,
+      "median_per_source_s": 394.0748316875,
+      "p95_per_source_s": 394.0748316875,
+      "completed_only_mean_per_source_s": 394.0748316875,
+      "total_virtual_s": 6305.197307,
+      "total_cleared_sources": 16,
+      "total_sources": 16,
+      "errors": {},
+      "max_macro_steps": 31,
+      "distribution_counts": {
+        "area": 1
+      },
+      "field_counts": {
+        "smooth": 1
+      }
+    },
+    "edge": {
+      "episodes": 1,
+      "completed_episodes": 1,
+      "completion_rate": 1.0,
+      "mean_virtual_s": 9432.332548,
+      "median_virtual_s": 9432.332548,
+      "p95_virtual_s": 9432.332548,
+      "mean_per_source_s": 673.7380391428571,
+      "median_per_source_s": 673.7380391428571,
+      "p95_per_source_s": 673.7380391428571,
+      "completed_only_mean_per_source_s": 673.7380391428571,
+      "total_virtual_s": 9432.332548,
+      "total_cleared_sources": 14,
+      "total_sources": 14,
+      "errors": {},
+      "max_macro_steps": 46,
+      "distribution_counts": {
+        "edge": 1
+      },
+      "field_counts": {
+        "extreme": 1
+      }
+    }
+  },
+  "field": {
+    "extreme": {
+      "episodes": 1,
+      "completed_episodes": 1,
+      "completion_rate": 1.0,
+      "mean_virtual_s": 9432.332548,
+      "median_virtual_s": 9432.332548,
+      "p95_virtual_s": 9432.332548,
+      "mean_per_source_s": 673.7380391428571,
+      "median_per_source_s": 673.7380391428571,
+      "p95_per_source_s": 673.7380391428571,
+      "completed_only_mean_per_source_s": 673.7380391428571,
+      "total_virtual_s": 9432.332548,
+      "total_cleared_sources": 14,
+      "total_sources": 14,
+      "errors": {},
+      "max_macro_steps": 46,
+      "distribution_counts": {
+        "edge": 1
+      },
+      "field_counts": {
+        "extreme": 1
+      }
+    },
+    "smooth": {
+      "episodes": 1,
+      "completed_episodes": 1,
+      "completion_rate": 1.0,
+      "mean_virtual_s": 6305.197307,
+      "median_virtual_s": 6305.197307,
+      "p95_virtual_s": 6305.197307,
+      "mean_per_source_s": 394.0748316875,
+      "median_per_source_s": 394.0748316875,
+      "p95_per_source_s": 394.0748316875,
+      "completed_only_mean_per_source_s": 394.0748316875,
+      "total_virtual_s": 6305.197307,
+      "total_cleared_sources": 16,
+      "total_sources": 16,
+      "errors": {},
+      "max_macro_steps": 31,
+      "distribution_counts": {
+        "area": 1
+      },
+      "field_counts": {
+        "smooth": 1
+      }
+    }
+  }
+}

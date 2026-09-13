@@ -1,0 +1,113 @@
+{
+  "archive_sha256": "314d5f36e763080e4409e9385f295ffb4027bb670df16762ecfa6ebb3bd88a59",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 42356,
+      "sha256": "314d5f36e763080e4409e9385f295ffb4027bb670df16762ecfa6ebb3bd88a59"
+    }
+  ],
+  "members": [
+    {
+      "path": "runs/q4_certificate_search_20260912/k23/best_layout.json",
+      "bytes": 3363,
+      "sha256": "f8d2fb8ebf380d3b8b791374b1b832f60f1dd6fca85952c15be90b86fe94f512"
+    },
+    {
+      "path": "runs/q4_certificate_search_20260912/k23/checkpoint.json",
+      "bytes": 3341,
+      "sha256": "25fd99346e4a2390bd34ecd9a73b1e070dc86567bcb32bf2de1b36a30e99eea1"
+    },
+    {
+      "path": "runs/q4_certificate_search_20260912/k24/best_layout.json",
+      "bytes": 3473,
+      "sha256": "53f24423108d525008a7bcbed8adfc8ceff2efc9d9f9ea0dc7a085a2f537bf91"
+    },
+    {
+      "path": "runs/q4_certificate_search_20260912/k24/checkpoint.json",
+      "bytes": 3451,
+      "sha256": "324f8eee64eb1a73e4bad328c3261d5e87abc347a8f683940efe3462a20c6128"
+    },
+    {
+      "path": "runs/q4_certificate_search_20260912/k25/best_layout.json",
+      "bytes": 3571,
+      "sha256": "8f2fb13ebffc47a097c74eb1b354998c0c1e843d92313bddcd82210c1914b0c4"
+    },
+    {
+      "path": "runs/q4_certificate_search_20260912/k25/checkpoint.json",
+      "bytes": 3549,
+      "sha256": "62a61c05827f0874662d77e2fa93b1326c962c5252c67acb004ca03639e7a79a"
+    },
+    {
+      "path": "runs/q4_certificate_search_20260912/k26/best_layout.json",
+      "bytes": 3685,
+      "sha256": "a555f979dbcec8eb3ec23517cee5ebb698695994689383f596feb361b7339839"
+    },
+    {
+      "path": "runs/q4_certificate_search_20260912/k26/checkpoint.json",
+      "bytes": 3663,
+      "sha256": "e1caac54f5801a274fe3dc23db9b20a0a2755dd25b101a930852737d64ed56c8"
+    },
+    {
+      "path": "runs/q4_certificate_search_20260912/k27/best_layout.json",
+      "bytes": 3784,
+      "sha256": "0408509d724e6f79ee8ed761e608ad4b57182aa517698987f72e70d9becb3bee"
+    },
+    {
+      "path": "runs/q4_certificate_search_20260912/k27/checkpoint.json",
+      "bytes": 3762,
+      "sha256": "e3cc8d38705f25b1e49b11ea103144a86226ab421ad0b1962f13a593afbc7dbf"
+    },
+    {
+      "path": "runs/q4_certificate_search_20260912/k28/best_layout.json",
+      "bytes": 3886,
+      "sha256": "874903bad2015e6e531deca289e7265b8f1f72a9334e46b303496405694a4680"
+    },
+    {
+      "path": "runs/q4_certificate_search_20260912/k28/checkpoint.json",
+      "bytes": 3864,
+      "sha256": "3f217ea0b3086efe0f93fbe0c7c236a0a59e36bb845bf64ac462a45a9fc4bfd9"
+    },
+    {
+      "path": "runs/q4_certificate_search_20260912/k29/best_layout.json",
+      "bytes": 3995,
+      "sha256": "3791969c21a55cb482cf815f2ff8cd08e8f24fecc7f50a8fd3090ea3f70f1323"
+    },
+    {
+      "path": "runs/q4_certificate_search_20260912/k29/checkpoint.json",
+      "bytes": 3973,
+      "sha256": "c39cb9a275df3b1cb33497f3797059e17c64f56c21c4b40d1bf69e91047cc2ae"
+    },
+    {
+      "path": "runs/q4_certificate_search_20260912/k30/best_layout.json",
+      "bytes": 4029,
+      "sha256": "cf6a0552d88e7ac29478854decab0cd256ac24fa2cf8e68ca9b16400984c942b"
+    },
+    {
+      "path": "runs/q4_certificate_search_20260912/k30/checkpoint.json",
+      "bytes": 4007,
+      "sha256": "77b0fc3d7abcef15571197d88c6277f6eadee8d2e9714fbfee7255330449d58c"
+    },
+    {
+      "path": "runs/q4_certificate_search_20260912/k30/falsify_5m_seed901.json",
+      "bytes": 1041,
+      "sha256": "9d426de7fce854db631cbc308b42b882e2c0cb983ecf9e4ec41d3b34f2585724"
+    },
+    {
+      "path": "runs/q4_certificate_search_20260912/k30/proof.json",
+      "bytes": 675550,
+      "sha256": "3c4a811835df4cb46c703affabc60edf8eff5a5e991146d14884047543e072fb"
+    },
+    {
+      "path": "runs/q4_certificate_search_20260912/k30_smoke/best_layout.json",
+      "bytes": 3649,
+      "sha256": "7ba8b765ea8f83aa185395a4c0f3244eda5ed8d2620b247030850ecf36641940"
+    },
+    {
+      "path": "runs/q4_certificate_search_20260912/k30_smoke/checkpoint.json",
+      "bytes": 3627,
+      "sha256": "d1767632b4b24671c189711e03a7e313231f462f94de9b7cf28b9b553c3f3c8d"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

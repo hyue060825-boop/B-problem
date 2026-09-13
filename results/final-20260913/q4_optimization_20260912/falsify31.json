@@ -1,0 +1,1 @@
+{"status": "NO_COUNTEREXAMPLE_FOUND", "samples": 157137, "requested_samples": 200000, "min_near_station_count": 7, "device": "cuda:0", "seed": 0}

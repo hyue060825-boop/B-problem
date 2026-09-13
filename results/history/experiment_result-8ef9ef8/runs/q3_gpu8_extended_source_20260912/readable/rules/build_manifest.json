@@ -1,0 +1,138 @@
+{
+  "label": "LOCAL-build-manifest",
+  "version": "0.2.0",
+  "files": [
+    {
+      "path": "bsim/__init__.py",
+      "sha256": "967ff09517cb806a6b6c579c99105850862a9bf0884d1db1167e2fd81bab83c0"
+    },
+    {
+      "path": "bsim/__main__.py",
+      "sha256": "708e2679407b0b6a825ad1a2debb95d25f19403cdf713d5c5db3eff04f997aa9"
+    },
+    {
+      "path": "bsim/client.py",
+      "sha256": "acb69eda926bddfc3ccfcb840899406abd5bb8257154d31f96d4c689db7cb558"
+    },
+    {
+      "path": "bsim/clocks.py",
+      "sha256": "d1760109982198d84774b81b5f2120b80fac004ea68458720279ba1dc1a17c17"
+    },
+    {
+      "path": "bsim/env.py",
+      "sha256": "291e1f3d23386b672f317d98ad94ac09b676369f0a3204357f821b56c55ba7d5"
+    },
+    {
+      "path": "bsim/evaluation.py",
+      "sha256": "fc51c3bd83b01fb96d946007b3dbd24f11b6704bc638244fceeadec1ce27fb5c"
+    },
+    {
+      "path": "bsim/fast.py",
+      "sha256": "024fbe85c2f80cffd53ed9c07a52c323657785a0f2b24f21f2dd1eced4550f88"
+    },
+    {
+      "path": "bsim/http_server.py",
+      "sha256": "b5ae05ff747941780fc4d8a60d227356ee6d2489d80f7ee731e41af7cf352c10"
+    },
+    {
+      "path": "bsim/noise.py",
+      "sha256": "0b149c9b1b0470e6c3d37d3b73f42757076cad8440bf91cbcf9c0b112d0fcb88"
+    },
+    {
+      "path": "bsim/profiles.py",
+      "sha256": "d00bfb79e124d1b4dced21f2b595eb5375d6287b6fbf6895443582be3cf49bff"
+    },
+    {
+      "path": "bsim/protocol.py",
+      "sha256": "10651bf3464554f1386fe4b7d95619cae8b5e890ced89cc807d2998d696c3c21"
+    },
+    {
+      "path": "bsim/reference.py",
+      "sha256": "eca0ad350a6a22a9ccdd655ae1ed284cc98cec107fd1125aad5a488a8818b86f"
+    },
+    {
+      "path": "bsim/scenarios.py",
+      "sha256": "42fe0fd36bfac2f914fc20400a5bb7b37a3e2345a922dc1df6566234180a4d5a"
+    },
+    {
+      "path": "bsim/session.py",
+      "sha256": "c5a160a87da0e0c28b0b81cb88ddac55ae14496fe74210160996dccb4a54d547"
+    },
+    {
+      "path": "bsim/strategy.py",
+      "sha256": "22340e37c64253379f297848f17cf41cbe9c551e30fe8dd1d93b52dd8706e071"
+    },
+    {
+      "path": "bsim/validation.py",
+      "sha256": "e2054e298a38bf2e0bc6047740a932ef7336946a982b991adc3712bc4316c718"
+    },
+    {
+      "path": "bsim/web/app.js",
+      "sha256": "9a2c299e9ea2cd72e750ef9e57142df31a2b0bbdff85dee8a899f5aa93ee2b3a"
+    },
+    {
+      "path": "bsim/web/index.html",
+      "sha256": "8f6bb8fcc040cb4806094be9476b77eea7bac7c3d4e820dfe551130163282502"
+    },
+    {
+      "path": "bsim/web/style.css",
+      "sha256": "8fcdb8f9d1af4c0a13639b1c884640451d234d2e39e5dd7650546af370fa99e8"
+    },
+    {
+      "path": "bsim/web_dashboard.py",
+      "sha256": "98079b40ab10cc323934fc0255ecfa6cb35f1f9994bf4c39d7e2b8c889b0c357"
+    },
+    {
+      "path": "fixtures/timing.json",
+      "sha256": "3da8e5bd494e8ea002bbbd3bd0ed0e2944256f5ab0c010048f07115622f9d8da"
+    },
+    {
+      "path": "fixtures/timing.trace.json",
+      "sha256": "cbc8fc37a57fe548833954ecc0e7ab85b8659c35e437e8ceaff773aafcdddd40"
+    },
+    {
+      "path": "fixtures/visual_mixed.json",
+      "sha256": "70637e79c969ab787d2d9a23c1c03278f5f6cc3a20f11a543b302c3bd754aaf2"
+    },
+    {
+      "path": "requirements.lock",
+      "sha256": "cd20245d137fbba314c34e98895da407d38620a4dbc586d9af731b6f85837d88"
+    },
+    {
+      "path": "tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tests/support.py",
+      "sha256": "09325fd8ba6d9bd2950b9094a5ad559bcc3e1b9867712ad2cc81c7efe2eac9ca"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "sha256": "2abd5ceed7d4045e0e1dc35daaf1d559430699bfaac7587a3dad2868262544c4"
+    },
+    {
+      "path": "tests/test_clock_client.py",
+      "sha256": "c5cd2711b74f210788c24619ad24f4edff69970957524ba28201a5d76bbb898e"
+    },
+    {
+      "path": "tests/test_equivalence.py",
+      "sha256": "6746afa10d15c52b33baf353f474468ef1cd636da2761820a8a20871eaf30de0"
+    },
+    {
+      "path": "tests/test_http.py",
+      "sha256": "1e9fa4a6bef07e5d1cfe20ced61c12d2fc42532e89d8ac9752bf0013a48cc30b"
+    },
+    {
+      "path": "tests/test_physics.py",
+      "sha256": "026fb70a6ad4dc49568a8000fd9dea6728bca3116494713aa77d19f898a0062e"
+    },
+    {
+      "path": "tests/test_protocol.py",
+      "sha256": "fdfa4f9df40198181ddb5e580765d50c3f1896c48dbb9faa20927a791ffccc58"
+    },
+    {
+      "path": "tests/test_web.py",
+      "sha256": "89486a2cfab434b431f817ea1e80a4cf732007626499a7f885bbc9f9cc1b50c5"
+    }
+  ]
+}

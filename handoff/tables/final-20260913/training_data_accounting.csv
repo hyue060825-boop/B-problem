@@ -1,0 +1,5 @@
+﻿model,scope,iterations,episodes,macro_transitions,elapsed_at_last_ppo_s,ddp_world_size,sync_all,evidence
+q3_final,through_selected_best,4400,563200,17395818,14483.916245225817,4,True,results/final-20260913/q3_legacy_deadline_20260913/metrics.jsonl
+q3_final,whole_run,6498,831744,25685472,21427.35164401401,4,True,results/final-20260913/q3_legacy_deadline_20260913/metrics.jsonl
+q4_final,through_selected_best,600,153600,6946581,3154.9107894310728,8,True,results/final-20260913/q4_baseline_8gpu_1h_20260913/train/metrics.jsonl
+q4_final,whole_run,682,174592,7894324,3600.816319336649,8,True,results/final-20260913/q4_baseline_8gpu_1h_20260913/train/metrics.jsonl

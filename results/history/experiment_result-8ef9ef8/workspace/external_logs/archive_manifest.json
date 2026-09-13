@@ -1,0 +1,63 @@
+{
+  "archive_sha256": "aa653b2de7c5afd8b5ab1c055c4168683957a324e5e5b682584a431c00924e2d",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 7975,
+      "sha256": "aa653b2de7c5afd8b5ab1c055c4168683957a324e5e5b682584a431c00924e2d"
+    }
+  ],
+  "members": [
+    {
+      "path": "paper_reorganization.log",
+      "bytes": 4541,
+      "sha256": "3aa4ab7f0e7ce10a54913729ec8e294be5fbfbdfc4b81b3aaa59f92df75e352d"
+    },
+    {
+      "path": "q3_layout_extremes_search.log",
+      "bytes": 1765,
+      "sha256": "170ecd2aa17ca2b82d4740e8c2bbd2e873652480fefa1fe2f717db391cc5d4ca"
+    },
+    {
+      "path": "q3_layout_extremes_search_v2.log",
+      "bytes": 1753,
+      "sha256": "c0027b3ba64f8087d6533956d08164c78142c43693e9a663d9055df2ae46f69e"
+    },
+    {
+      "path": "q4_absence_tail_analysis.log",
+      "bytes": 4062,
+      "sha256": "a09006eb49d205af363aa6d352cec2fbfd2685b15a93fe3aff993b1bc9643130"
+    },
+    {
+      "path": "q4_absence_tail_analysis_v2.log",
+      "bytes": 4550,
+      "sha256": "58a9ee48837e1b835fce917da6dbeb0fa37e7266d5ee8cd5f013046a4f64e631"
+    },
+    {
+      "path": "q4_baseline_8gpu_1h_launcher.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "q4_layout_extremes_search.log",
+      "bytes": 1762,
+      "sha256": "70cc41366368b638f4eacdb7684a7f0663e26857739189459294cf557654bb58"
+    },
+    {
+      "path": "q4_planning_ablation_report.log",
+      "bytes": 5201,
+      "sha256": "d52b8983873566531596ee7634ab13de3b1fc62aebead68b87dd287b0901f41e"
+    },
+    {
+      "path": "q4_planning_ablation_smoke.log",
+      "bytes": 440,
+      "sha256": "b025fee716fcaa7b1a16cdbd50e55a0f9937b4a58ae1dfd6d5b07f1f7cc59ee6"
+    },
+    {
+      "path": "q4_planning_ablation_test3000.log",
+      "bytes": 9243,
+      "sha256": "669f5e162b76e653f66f8afd2a3b78092b88290b3bf42b72ca2626c19c699ddf"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

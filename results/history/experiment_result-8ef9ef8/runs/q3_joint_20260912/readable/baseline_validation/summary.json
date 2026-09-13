@@ -1,0 +1,77 @@
+{
+  "rule": {
+    "episodes": 128,
+    "completion_rate": 1.0,
+    "mean_virtual_s": 3683.4189179531254,
+    "median_virtual_s": 3727.206545,
+    "p95_virtual_s": 4459.75940385,
+    "mean_per_source_s": 288.13844900628123,
+    "decision_p50_s": 0.0003220755606889725,
+    "decision_p95_s": 0.003035056986846029,
+    "decision_max_s": 0.12505707377567887,
+    "mean_cleared_fraction": 1.0,
+    "failures": [],
+    "means": {
+      "path_length_m": 14872.56333982127,
+      "measures": 104.203125,
+      "switches": 100.25,
+      "clear_failures": 7.5078125,
+      "macro_steps": 29.171875
+    },
+    "vs_baseline": {
+      "eligible": true,
+      "mean_delta_s": 349.298792,
+      "ci95_halfwidth_s": 68.75486005759659,
+      "robust_gain": false,
+      "selection_pass": false
+    }
+  },
+  "baseline": {
+    "episodes": 128,
+    "completion_rate": 1.0,
+    "mean_virtual_s": 3334.1201259531254,
+    "median_virtual_s": 3458.853089,
+    "p95_virtual_s": 4093.9155614999995,
+    "mean_per_source_s": 261.61531554143176,
+    "decision_p50_s": 0.00219584908336401,
+    "decision_p95_s": 0.0068969628773629665,
+    "decision_max_s": 0.04780912073329091,
+    "mean_cleared_fraction": 1.0,
+    "failures": [],
+    "means": {
+      "path_length_m": 12928.999066623774,
+      "measures": 113.15625,
+      "switches": 108.0,
+      "clear_failures": 3.140625,
+      "macro_steps": 31.7265625
+    }
+  },
+  "search_teacher": {
+    "episodes": 16,
+    "completion_rate": 1.0,
+    "mean_virtual_s": 3305.8279218125,
+    "median_virtual_s": 3463.834791,
+    "p95_virtual_s": 3927.5016305,
+    "mean_per_source_s": 263.54426891364005,
+    "decision_p50_s": 0.0016844319179654121,
+    "decision_p95_s": 5.821300187101587,
+    "decision_max_s": 8.14937440212816,
+    "mean_cleared_fraction": 1.0,
+    "failures": [],
+    "means": {
+      "path_length_m": 12915.077104300526,
+      "measures": 109.0,
+      "switches": 104.625,
+      "clear_failures": 2.9375,
+      "macro_steps": 32.125
+    },
+    "vs_baseline": {
+      "eligible": true,
+      "mean_delta_s": -45.10047043749999,
+      "ci95_halfwidth_s": 98.10720125267156,
+      "robust_gain": false,
+      "selection_pass": true
+    }
+  },
+  "elapsed_s": 49.4516801899299
+}

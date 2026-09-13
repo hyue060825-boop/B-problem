@@ -1,0 +1,63 @@
+{
+  "archive_sha256": "3e13c258e09c1a26750849f907f0b9ddf64d12fb82413273ab3329d24529375b",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 738806,
+      "sha256": "3e13c258e09c1a26750849f907f0b9ddf64d12fb82413273ab3329d24529375b"
+    }
+  ],
+  "members": [
+    {
+      "path": "runs/q4_absence_tail_analysis_20260913_v2/additional_statistics.json",
+      "bytes": 289,
+      "sha256": "e4405e1790390bacfe7782458bf38b86f4549f2bead0d1c7683eb7762052da9e"
+    },
+    {
+      "path": "runs/q4_absence_tail_analysis_20260913_v2/manifest.json",
+      "bytes": 582,
+      "sha256": "3c9c4b84e735c8f180a8dd4e98df77c434c7aa5f526ec66ab62973e472647b26"
+    },
+    {
+      "path": "runs/q4_absence_tail_analysis_20260913_v2/official_events.json",
+      "bytes": 75807,
+      "sha256": "5512ea5775755048d419be1cf411eec5742f0512d2dd5e48ba867400727f8363"
+    },
+    {
+      "path": "runs/q4_absence_tail_analysis_20260913_v2/official_log_summary.json",
+      "bytes": 953,
+      "sha256": "05335b083a94230805ede3f5c64cc8ce4436e5b6779f69ed15ad6dd538a9a995"
+    },
+    {
+      "path": "runs/q4_absence_tail_analysis_20260913_v2/replay.jsonl",
+      "bytes": 3171532,
+      "sha256": "dcee8c03ebc8f889fd88c4f2008bc569bccddbdeaf0e7b45feee653642100060"
+    },
+    {
+      "path": "runs/q4_absence_tail_analysis_20260913_v2/report.md",
+      "bytes": 8580,
+      "sha256": "ba9f66a1f0f2eb339829b90f3c8718c899b278343c44af7289703ed18500d355"
+    },
+    {
+      "path": "runs/q4_absence_tail_analysis_20260913_v2/samples.csv",
+      "bytes": 754173,
+      "sha256": "90b2dc318e4e898d44890c52962af85d1430ddacd53b43dc913367f8619682eb"
+    },
+    {
+      "path": "runs/q4_absence_tail_analysis_20260913_v2/summary.json",
+      "bytes": 55541,
+      "sha256": "09dc745976943a0a9f7adf6d901b1bc89e4deff6b5241e0cc1534da727bf8599"
+    },
+    {
+      "path": "runs/q4_absence_tail_analysis_20260913_v2/tail_analysis.pdf",
+      "bytes": 19534,
+      "sha256": "da64ab2ae454a07d1869a215cc5677b865b4f857b3ec7b6530528b5caaed816b"
+    },
+    {
+      "path": "runs/q4_absence_tail_analysis_20260913_v2/tail_analysis.png",
+      "bytes": 102702,
+      "sha256": "5e3bfd7a037d69bec8c427ff4ee3db69a7c52bc9f9d9aeb4c968ab861e9560f8"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

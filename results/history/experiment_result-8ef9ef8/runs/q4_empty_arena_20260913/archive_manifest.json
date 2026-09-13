@@ -1,0 +1,38 @@
+{
+  "archive_sha256": "7e2d7d911516026ce9e5d5164b97cc70f898be08c4e2fc26a349bf30568bfa30",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 14841,
+      "sha256": "7e2d7d911516026ce9e5d5164b97cc70f898be08c4e2fc26a349bf30568bfa30"
+    }
+  ],
+  "members": [
+    {
+      "path": "runs/q4_empty_arena_20260913/actions.json",
+      "bytes": 12015,
+      "sha256": "d9ad95193cf9071f2a7e74350d52c261c635544e62e1fd5b6d65b69df8040669"
+    },
+    {
+      "path": "runs/q4_empty_arena_20260913/events.jsonl",
+      "bytes": 249302,
+      "sha256": "dc9b5bbc18be316802dae31d81b96ac2c337d5ae4b780c7bbb9b2c91340d0245"
+    },
+    {
+      "path": "runs/q4_empty_arena_20260913/report.md",
+      "bytes": 1479,
+      "sha256": "6f2308dae1b1d7d64662f1a5cd96762e1881b4c4c157848ff587fef113f6fd7a"
+    },
+    {
+      "path": "runs/q4_empty_arena_20260913/scenario.json",
+      "bytes": 108,
+      "sha256": "f8d6a312c8ab8f3d7458352f16626ca0b9c5645dc048ecb23c1be9c366f1cdfc"
+    },
+    {
+      "path": "runs/q4_empty_arena_20260913/summary.json",
+      "bytes": 7377,
+      "sha256": "dc1667115d16605e230d1854ee1f863dc73e916cc5f3c8a719304d6c1e99f207"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

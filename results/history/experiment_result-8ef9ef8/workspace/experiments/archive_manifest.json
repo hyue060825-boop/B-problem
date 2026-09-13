@@ -1,0 +1,18 @@
+{
+  "archive_sha256": "2b6b867e968c92bfdc6350aea42a4f8c57f313bee9d541474833ef7f93e4aa20",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 1791,
+      "sha256": "2b6b867e968c92bfdc6350aea42a4f8c57f313bee9d541474833ef7f93e4aa20"
+    }
+  ],
+  "members": [
+    {
+      "path": "experiments/q4_planning.py",
+      "bytes": 4014,
+      "sha256": "ea522526e456119a8837324278bb0d78f89dbfb5a1825981558840e583cc7c27"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}

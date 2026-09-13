@@ -1,0 +1,82 @@
+[
+  {
+    "script": "analyze_q4_absence_tail",
+    "code": 0,
+    "error": ""
+  },
+  {
+    "script": "build_q4_witness_certificate",
+    "code": 0,
+    "error": ""
+  },
+  {
+    "script": "evaluate_q4_empty_arena",
+    "code": 0,
+    "error": ""
+  },
+  {
+    "script": "evaluate_q4_planning_ablation",
+    "code": 0,
+    "error": ""
+  },
+  {
+    "script": "launch_q4_baseline_8gpu_hour",
+    "code": 0,
+    "error": ""
+  },
+  {
+    "script": "report_deadline_pair",
+    "code": 0,
+    "error": ""
+  },
+  {
+    "script": "report_q3_layout_extremes",
+    "code": 0,
+    "error": ""
+  },
+  {
+    "script": "report_q4_layout_extremes",
+    "code": 0,
+    "error": ""
+  },
+  {
+    "script": "report_q4_absence_tail",
+    "code": 0,
+    "error": ""
+  },
+  {
+    "script": "report_q4_hour_pair",
+    "code": 0,
+    "error": ""
+  },
+  {
+    "script": "report_q4_planning_ablation",
+    "code": 0,
+    "error": ""
+  },
+  {
+    "script": "plot_q4_last_clear_comparison",
+    "code": 0,
+    "error": ""
+  },
+  {
+    "script": "search_q3_layout_extremes",
+    "code": 0,
+    "error": ""
+  },
+  {
+    "script": "search_q4_layout_extremes",
+    "code": 0,
+    "error": ""
+  },
+  {
+    "script": "train_legacy_deadline_ddp",
+    "code": 0,
+    "error": ""
+  },
+  {
+    "script": "verify_q4_certificate_exact",
+    "code": 0,
+    "error": ""
+  }
+]

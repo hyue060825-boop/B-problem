@@ -1,0 +1,143 @@
+{
+  "archive_sha256": "71ca50e5f98212934519a7de1e7d85c5ff41035a430579937c44273c00c43978",
+  "parts": [
+    {
+      "file": "data.tar.gz.part000",
+      "bytes": 6411798,
+      "sha256": "71ca50e5f98212934519a7de1e7d85c5ff41035a430579937c44273c00c43978"
+    }
+  ],
+  "members": [
+    {
+      "path": "runs/q4_planning_ablation_20260913/smoke/manifest.json",
+      "bytes": 5789,
+      "sha256": "a22d07532f4fe1eb4a72ec0d8efa06275d24f9c9a02701b39232aa38bfe89377"
+    },
+    {
+      "path": "runs/q4_planning_ablation_20260913/smoke/original_parity.json",
+      "bytes": 3234,
+      "sha256": "7f6fb014f04f7e015eefc92dcbb134125b4aac93f0809681cdddb45ab78dde20"
+    },
+    {
+      "path": "runs/q4_planning_ablation_20260913/smoke/samples.csv",
+      "bytes": 224183,
+      "sha256": "061f9f10c6d99eb51c10ea8a0e651ad923b8b7a70de2bb3bd65d0810f00750c4"
+    },
+    {
+      "path": "runs/q4_planning_ablation_20260913/smoke/samples.jsonl",
+      "bytes": 933105,
+      "sha256": "1786542b5978340002771d1ee86054363980854b3c93825d5c099383ad6edd92"
+    },
+    {
+      "path": "runs/q4_planning_ablation_20260913/smoke/source/experiments/q4_planning.py",
+      "bytes": 4014,
+      "sha256": "ea522526e456119a8837324278bb0d78f89dbfb5a1825981558840e583cc7c27"
+    },
+    {
+      "path": "runs/q4_planning_ablation_20260913/smoke/source/scripts/analyze_q4_absence_tail.py",
+      "bytes": 11933,
+      "sha256": "95c9c943d731b301ddcc6b00e3ffcc6c7d524cac8b5c504a5374ce43432048e0"
+    },
+    {
+      "path": "runs/q4_planning_ablation_20260913/smoke/source/scripts/evaluate_q4_planning_ablation.py",
+      "bytes": 9341,
+      "sha256": "2e675bcd1b13ec9258354a432eba467a2da0a77026691d736da1f0ce6b174b79"
+    },
+    {
+      "path": "runs/q4_planning_ablation_20260913/smoke/status.json",
+      "bytes": 130,
+      "sha256": "928d5cecae394c4df245ca5496114ad21a42fc9536a7c555c389d83e88c2b09e"
+    },
+    {
+      "path": "runs/q4_planning_ablation_20260913/test3000/comparison.pdf",
+      "bytes": 44024,
+      "sha256": "27a5b6d2a4e91ad7d8982f2391cf1f9b48015615febdd46faf9d7dc8a078b222"
+    },
+    {
+      "path": "runs/q4_planning_ablation_20260913/test3000/comparison.png",
+      "bytes": 270775,
+      "sha256": "607f4852e48307b7556edbc1363eaaf1c5f5ef344021e3c78f961faec085b335"
+    },
+    {
+      "path": "runs/q4_planning_ablation_20260913/test3000/last_clear_comparison/last_clear_interactive.html",
+      "bytes": 474251,
+      "sha256": "492c26b84e9834d678c9d52d2aa4f98ebae7028ae137db372fa9315dae9912ed"
+    },
+    {
+      "path": "runs/q4_planning_ablation_20260913/test3000/last_clear_comparison/last_clear_lines.pdf",
+      "bytes": 100469,
+      "sha256": "c9c6d7e119cd236450975a07d1e34a3784c8fb5e52688aaa56eb5a68b91472dd"
+    },
+    {
+      "path": "runs/q4_planning_ablation_20260913/test3000/last_clear_comparison/last_clear_lines.png",
+      "bytes": 1751131,
+      "sha256": "184938504e6e2c1cc3b852619f796e9299dbc90fb70c3e41cae46ef4f0dca16e"
+    },
+    {
+      "path": "runs/q4_planning_ablation_20260913/test3000/last_clear_comparison/last_clear_lines.svg",
+      "bytes": 250445,
+      "sha256": "362e9336361a2fe233fe4d883b1f1cf0d5f8b5b477d3712b3c45fc7200b964ca"
+    },
+    {
+      "path": "runs/q4_planning_ablation_20260913/test3000/last_clear_comparison/paired_last_clear.csv",
+      "bytes": 171151,
+      "sha256": "efd6130ea2a530b649b80be1b3b327c820fc0bbe094f11a07281fae3c9b66e9e"
+    },
+    {
+      "path": "runs/q4_planning_ablation_20260913/test3000/last_clear_comparison/report.md",
+      "bytes": 1005,
+      "sha256": "65e3e7a65e217eb69ea09a8e78ad8b16b91474394b23055007be9142c694fa9a"
+    },
+    {
+      "path": "runs/q4_planning_ablation_20260913/test3000/last_clear_comparison/summary.json",
+      "bytes": 865,
+      "sha256": "7d8642f8f96467c2b36de56177cf619cee36ce34d5d362b85288d9de2e1f379a"
+    },
+    {
+      "path": "runs/q4_planning_ablation_20260913/test3000/manifest.json",
+      "bytes": 5792,
+      "sha256": "2be5bd5f1d9bfd8f529fff74c9e67af1d625b4eb186c7687163eaea3ddbfe94c"
+    },
+    {
+      "path": "runs/q4_planning_ablation_20260913/test3000/report.md",
+      "bytes": 8224,
+      "sha256": "1bd9538a8ade95df0a37398c94c3bb8a675f28ed73b2f13e8fb0167827d76815"
+    },
+    {
+      "path": "runs/q4_planning_ablation_20260913/test3000/samples.csv",
+      "bytes": 5298779,
+      "sha256": "e193508988f2eb1e1b2a552ed0c6cc817942114f20b691557f1fe8718d1f68a8"
+    },
+    {
+      "path": "runs/q4_planning_ablation_20260913/test3000/samples.jsonl",
+      "bytes": 21932941,
+      "sha256": "53f6fcbbd5c31721fbc43fc5f9c5842a186d5be1b04c7b50b643d6ba6ed04d37"
+    },
+    {
+      "path": "runs/q4_planning_ablation_20260913/test3000/source/experiments/q4_planning.py",
+      "bytes": 4014,
+      "sha256": "ea522526e456119a8837324278bb0d78f89dbfb5a1825981558840e583cc7c27"
+    },
+    {
+      "path": "runs/q4_planning_ablation_20260913/test3000/source/scripts/analyze_q4_absence_tail.py",
+      "bytes": 11933,
+      "sha256": "95c9c943d731b301ddcc6b00e3ffcc6c7d524cac8b5c504a5374ce43432048e0"
+    },
+    {
+      "path": "runs/q4_planning_ablation_20260913/test3000/source/scripts/evaluate_q4_planning_ablation.py",
+      "bytes": 9341,
+      "sha256": "2e675bcd1b13ec9258354a432eba467a2da0a77026691d736da1f0ce6b174b79"
+    },
+    {
+      "path": "runs/q4_planning_ablation_20260913/test3000/status.json",
+      "bytes": 132,
+      "sha256": "affaf27bca168a2f2b27f8266c6b901e999c91d0915836a2a5e0a462e0188f2d"
+    },
+    {
+      "path": "runs/q4_planning_ablation_20260913/test3000/summary.json",
+      "bytes": 50680,
+      "sha256": "36a9a67d74350a1b4d141895224a42939f1bf74d22c0435eb2ddee9f80880358"
+    }
+  ],
+  "note": "Concatenate parts in order to obtain tar.gz. Paths preserve the original workspace. Original files retained in local cache."
+}
