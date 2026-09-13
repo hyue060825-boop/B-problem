@@ -151,17 +151,17 @@
   },
   {
     "path": "runs/q4_31_station_certificate_20260913/coverage_certificate.pdf",
-    "sha256": "c682989341aac48ae54828878ec30303ae1128b974122395de8b1bfc8c1eade5",
+    "sha256": "2483f3479a2668b84f2c85ca254b25aa6900130b05b61010d8f06a986c1e4fff",
     "attribution": "附录：最终Q4固定31站连续覆盖与无源确认；有理数证书复核，非抽样图"
   },
   {
     "path": "runs/q4_31_station_certificate_20260913/coverage_certificate.png",
-    "sha256": "c8ea5ae94c4fac7ad959019fc4c5afd59705091cbc48b7f5328912e56278ab0b",
+    "sha256": "c86fc7bb5275d7ea90c7a84b42bd5aed34e6f9294cd7f21469b8e2cdf47fe3e1",
     "attribution": "附录：最终Q4固定31站连续覆盖与无源确认；有理数证书复核，非抽样图"
   },
   {
     "path": "runs/q4_31_station_certificate_20260913/coverage_certificate.svg",
-    "sha256": "ad75551b4ef0ea33d43b42ac42887e84453690ba04040fd0351e584df11036b4",
+    "sha256": "56be14a34c5879adfe6cb68f80bbfded0de00e26eb5929f01e010cfd18445446",
     "attribution": "附录：最终Q4固定31站连续覆盖与无源确认；有理数证书复核，非抽样图"
   },
   {
@@ -558,5 +558,20 @@
     "path": "paper/history/runs/q4_repaired_20260912/readable/training_curve.png",
     "sha256": "79db7d540530e50966d23199a58acb53bc8c6ef4ce4c08eb04ba619d9619cf23",
     "attribution": "历史图表；以原报告和权重哈希为准"
+  },
+  {
+    "path": "runs/q4_31_station_certificate_20260913/coverage_cells.pdf",
+    "sha256": "0e5ff47a4225e651f5de6360918274a3add3d84906d6244198d0a38c3652b6e7",
+    "attribution": "附录：最终Q4固定31站连续覆盖与无源确认；有理数证书复核，非抽样图"
+  },
+  {
+    "path": "runs/q4_31_station_certificate_20260913/coverage_cells.png",
+    "sha256": "6c611b4e309e25c81360daddf7c72c222929e254e90d7f63bcf9919f996b4c33",
+    "attribution": "附录：最终Q4固定31站连续覆盖与无源确认；有理数证书复核，非抽样图"
+  },
+  {
+    "path": "runs/q4_31_station_certificate_20260913/coverage_cells.svg",
+    "sha256": "c82281c29834a18d571fe8f88afb220ef3514b78820e7c1edbcb5a7e2814076c",
+    "attribution": "附录：最终Q4固定31站连续覆盖与无源确认；有理数证书复核，非抽样图"
   }
 ]

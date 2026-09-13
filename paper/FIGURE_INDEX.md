@@ -116,3 +116,6 @@
 | [paper/history/runs/q4_repaired_20260912/readable/per_source_distribution.pdf](history/runs/q4_repaired_20260912/readable/per_source_distribution.pdf) | 历史图表；以原报告和权重哈希为准 |
 | [paper/history/runs/q4_repaired_20260912/readable/per_source_distribution.png](history/runs/q4_repaired_20260912/readable/per_source_distribution.png) | 历史图表；以原报告和权重哈希为准 |
 | [paper/history/runs/q4_repaired_20260912/readable/training_curve.png](history/runs/q4_repaired_20260912/readable/training_curve.png) | 历史图表；以原报告和权重哈希为准 |
+| [runs/q4_31_station_certificate_20260913/coverage_cells.pdf](../runs/q4_31_station_certificate_20260913/coverage_cells.pdf) | 附录：最终Q4固定31站连续覆盖与无源确认；有理数证书复核，非抽样图 |
+| [runs/q4_31_station_certificate_20260913/coverage_cells.png](../runs/q4_31_station_certificate_20260913/coverage_cells.png) | 附录：最终Q4固定31站连续覆盖与无源确认；有理数证书复核，非抽样图 |
+| [runs/q4_31_station_certificate_20260913/coverage_cells.svg](../runs/q4_31_station_certificate_20260913/coverage_cells.svg) | 附录：最终Q4固定31站连续覆盖与无源确认；有理数证书复核，非抽样图 |
