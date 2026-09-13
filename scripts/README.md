@@ -10,3 +10,5 @@
 - `organize_paper_branch.py` 是本次一次性迁移记录，已有cache时会拒绝重跑；不要用它整理新克隆。
 
 斜线合写的 `analyze/report_...` 表示两份独立脚本的名称前缀。各脚本以 `--help` 或源码参数为准。其他早期训练入口与所有原脚本在 `paper/history/workspace/scripts/` 压缩包中；部分兼容版本单列于 `paper/history/legacy_entrypoints/`。
+
+- 31站证书图解：`plot_q4_31_station_certificate.py`，核对实际站点坐标、重新验证有理数证书并生成PNG/PDF/SVG。

@@ -149,6 +149,7 @@ def main():
     write_json('paper/tables/official_log_timing.json',dict(model='q4_parent',checkpoint_sha256=log[0]['checkpoint_sha256'],log_sha256=sha(logpath),enter_timestamp_ms=enter['real_timestamp_ms'],exit_timestamp_ms=leave['real_timestamp_ms'],real_enter_to_exit_s=(leave['real_timestamp_ms']-enter['real_timestamp_ms'])/1000,virtual_total_s=log[-1]['virtual_time_s'],requests=log[-1]['requests'],limitation='Single official session, previous parent checkpoint; excludes Python startup/model loading. Not the final Q4 or an official multi-scenario evaluation.'))
     # Exhaustive inventory of historical attempts, not just successful experiments.
     categories={
+      'q4_31_station_certificate_20260913':'附录：最终Q4固定31站连续覆盖与无源确认；有理数证书复核，非抽样图',
       'q4_final_best_counts_20260913':'附录：最终Q4 c8812ced，10–16源每组1000局，共7000局',
       'q34_deadline_test3000_20260913':'正文：最终Q3；该目录Q4行是父基线',
       'q3_legacy_deadline_20260913':'最终Q3训练谱系',
@@ -172,6 +173,7 @@ def main():
       '| 材料 | 模型/用途 |','|---|---|']
     quick=[(ROOT/q3dir/'report.md','最终Q3；Q4行属于父基线'),(ROOT/q4dir/'evaluation/report.md','最终Q4与父模型配对'),(PAPER/'tables/final_main_results.csv','两份最终权重主表'),(PAPER/'tables/training_data_accounting.csv','整段训练和入选best之前的数据量'),(ROOT/'runs/q3_layout_extremes_20260913_v2/report.md','最终Q3构造极端布局'),(ROOT/'runs/q4_absence_tail_analysis_20260913_v2/tail_analysis.png','Q4父基线尾段图'),(ROOT/'runs/q4_planning_ablation_20260913','Q4父基线四组对照及3000局A/C曲线'),(ROOT/'runs/q4_empty_arena_20260913','Q4父基线空场景'),(ROOT/'runs/q4_layout_extremes_20260913','Q4父基线极端布局'),(PAPER/'official_logs/logQ4.jsonl','Q4父基线官方单例；非批量官方测试'),(PAPER/'protocols','所有用户提供的原方案与优化提示词'),(PAPER/'history/original_reports','原始报告（标题和结论保留写作时语境）'),(PAPER/'history/original_docs','原始设计/运行说明'),(ROOT/'artifacts','Q1/Q2输入、结果、图形与来源')]
     quick.append((ROOT/count_run/'report.md','新增：最终Q4 c8812ced，10–16源各1000局；六张分布图'))
+    quick.append((ROOT/'runs/q4_31_station_certificate_20260913/report.md','新增：31站布局、任意朝向几何解释和精确全域证书'))
     for p,note in quick:
         if p.exists():lines.append(f'| {link(p)} | {note} |')
     lines+=['','## 所有历史实验目录','', '| 原目录 | 证据归属 | 原始证据文件数 | 可浏览报告和图 | 完整压缩档案 |','|---|---|---:|---|---|']

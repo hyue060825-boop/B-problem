@@ -34,6 +34,9 @@
 | [runs/q3_layout_extremes_20260913_v2/layouts.png](../runs/q3_layout_extremes_20260913_v2/layouts.png) | 附录：最终Q3主动搜索极端布局 |
 | [runs/q3_layout_extremes_20260913_v2/time_extremes.pdf](../runs/q3_layout_extremes_20260913_v2/time_extremes.pdf) | 附录：最终Q3主动搜索极端布局 |
 | [runs/q3_layout_extremes_20260913_v2/time_extremes.png](../runs/q3_layout_extremes_20260913_v2/time_extremes.png) | 附录：最终Q3主动搜索极端布局 |
+| [runs/q4_31_station_certificate_20260913/coverage_certificate.pdf](../runs/q4_31_station_certificate_20260913/coverage_certificate.pdf) | 附录：最终Q4固定31站连续覆盖与无源确认；有理数证书复核，非抽样图 |
+| [runs/q4_31_station_certificate_20260913/coverage_certificate.png](../runs/q4_31_station_certificate_20260913/coverage_certificate.png) | 附录：最终Q4固定31站连续覆盖与无源确认；有理数证书复核，非抽样图 |
+| [runs/q4_31_station_certificate_20260913/coverage_certificate.svg](../runs/q4_31_station_certificate_20260913/coverage_certificate.svg) | 附录：最终Q4固定31站连续覆盖与无源确认；有理数证书复核，非抽样图 |
 | [runs/q4_absence_tail_analysis_20260913_v2/tail_analysis.pdf](../runs/q4_absence_tail_analysis_20260913_v2/tail_analysis.pdf) | 附录：Q4父基线3000局无源尾段复放 |
 | [runs/q4_absence_tail_analysis_20260913_v2/tail_analysis.png](../runs/q4_absence_tail_analysis_20260913_v2/tail_analysis.png) | 附录：Q4父基线3000局无源尾段复放 |
 | [runs/q4_baseline_8gpu_1h_20260913/evaluation/comparison.pdf](../runs/q4_baseline_8gpu_1h_20260913/evaluation/comparison.pdf) | 最终Q4训练与3000局配对主结果 |

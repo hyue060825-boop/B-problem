@@ -1,0 +1,21 @@
+{
+  "status": "PROVED_MATH",
+  "station_count": 31,
+  "leaf_count": 2224,
+  "witness_cells": 2152,
+  "outside_cells": 72,
+  "overlap_guards": 13,
+  "source_domain_radius": "1800",
+  "radius_cert": "999",
+  "artifact_sha256": "7d83d0ad068b852281897368c35d34f2bae6142b8ca8208e62d8786e3b29e32a",
+  "arithmetic": "fractions.Fraction; no float predicates",
+  "station_coordinates_equal_runtime_json_exactly": true,
+  "final_checkpoint": "runs/q4_baseline_8gpu_1h_20260913/train/best.pt",
+  "final_checkpoint_sha256": "c8812cedc2a755997dbd431873b3c4229d8411d827937225e34f1b8ac6949ffb",
+  "runtime_hashes_match": true,
+  "triangle_count": 42,
+  "unknown_after_30_negatives": true,
+  "absent_after_31_negatives": true,
+  "all_20_channels_absent_then_exit_allowed": true,
+  "scope": "Continuous source disk, reception radius >=1000m, closed directional half-plane; per-channel accepted observations. No minimum-station claim."
+}

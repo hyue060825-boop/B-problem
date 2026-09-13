@@ -150,6 +150,21 @@
     "attribution": "附录：最终Q3主动搜索极端布局"
   },
   {
+    "path": "runs/q4_31_station_certificate_20260913/coverage_certificate.pdf",
+    "sha256": "c682989341aac48ae54828878ec30303ae1128b974122395de8b1bfc8c1eade5",
+    "attribution": "附录：最终Q4固定31站连续覆盖与无源确认；有理数证书复核，非抽样图"
+  },
+  {
+    "path": "runs/q4_31_station_certificate_20260913/coverage_certificate.png",
+    "sha256": "c8ea5ae94c4fac7ad959019fc4c5afd59705091cbc48b7f5328912e56278ab0b",
+    "attribution": "附录：最终Q4固定31站连续覆盖与无源确认；有理数证书复核，非抽样图"
+  },
+  {
+    "path": "runs/q4_31_station_certificate_20260913/coverage_certificate.svg",
+    "sha256": "ad75551b4ef0ea33d43b42ac42887e84453690ba04040fd0351e584df11036b4",
+    "attribution": "附录：最终Q4固定31站连续覆盖与无源确认；有理数证书复核，非抽样图"
+  },
+  {
     "path": "runs/q4_absence_tail_analysis_20260913_v2/tail_analysis.pdf",
     "sha256": "da64ab2ae454a07d1869a215cc5677b865b4f857b3ec7b6530528b5caaed816b",
     "attribution": "附录：Q4父基线3000局无源尾段复放"

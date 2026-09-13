@@ -94,6 +94,14 @@ def main():
         require(len(set(seeds))==7000,'Q4 count repeated seeds')
         require(read(countdir+'/verification.json')['checkpoint_and_runtime_unchanged'],'Q4 count runtime changed')
         checks['q4_final_7000_counts_verified']=True
+    certdir='runs/q4_31_station_certificate_20260913'
+    if (ROOT/certdir/'manifest.json').exists():
+        cm=read(certdir+'/manifest.json');cv=read(certdir+'/verification.json')
+        require(digest(ROOT/cm['proof'])==cm['proof_sha256'],'31 station proof hash')
+        require(digest(ROOT/cm['plot_script'])==cm['plot_script_sha256'],'31 station renderer hash')
+        for path,h in cm['files'].items():require(digest(ROOT/certdir/path)==h,'31 station figure file '+path)
+        require(cv['status']=='PROVED_MATH' and cv['station_coordinates_equal_runtime_json_exactly'],'31 station binding or proof status')
+        checks['q4_31_station_certificate_figure_verified']=True
     checks['main_means_recomputed_from_raw']=True
     git=subprocess.run(['git','ls-files','-z'],cwd=ROOT,capture_output=True,check=True).stdout.decode().split('\0')
     require(not any(s.startswith(('cache/','.venv/')) for s in git),'cache or venv tracked')

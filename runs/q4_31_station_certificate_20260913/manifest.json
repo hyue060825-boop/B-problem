@@ -1,0 +1,15 @@
+{
+  "checkpoint_sha256": "c8812cedc2a755997dbd431873b3c4229d8411d827937225e34f1b8ac6949ffb",
+  "proof": "runs/q4_optimization_20260912/layout31_proof.json",
+  "proof_sha256": "7d83d0ad068b852281897368c35d34f2bae6142b8ca8208e62d8786e3b29e32a",
+  "plot_script": "scripts/plot_q4_31_station_certificate.py",
+  "plot_script_sha256": "f41be7bbb6a8eaa7d0b94a15c38f83ddd3ca47425d91d5554099babb18eb963b",
+  "files": {
+    "coverage_certificate.png": "c8ea5ae94c4fac7ad959019fc4c5afd59705091cbc48b7f5328912e56278ab0b",
+    "coverage_certificate.pdf": "c682989341aac48ae54828878ec30303ae1128b974122395de8b1bfc8c1eade5",
+    "stations.csv": "3bd64de4dcd3d7c2189fc10a36a5b993ec31f8094073421e781fd45aa85d3c52",
+    "verification.json": "08b6fe5c1c1fae895aa8449e8bb9537e62dfdaec3461beb185dbb8eba0be1957",
+    "coverage_certificate.svg": "ad75551b4ef0ea33d43b42ac42887e84453690ba04040fd0351e584df11036b4"
+  },
+  "caveat": "Exact proof under model rules, not a statistical plot or a claim of minimum station count."
+}
