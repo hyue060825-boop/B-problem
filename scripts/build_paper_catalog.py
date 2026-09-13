@@ -109,6 +109,19 @@ def main():
     plt.close(fig)
     table('training_data_accounting.csv',training);table('validation_curves.csv',validation)
     write_json('paper/provenance/table_inputs.json', {p:sha(ROOT/p) for p in [q3dir+'/q3_candidate_samples.json',q3dir+'/q3_baseline_samples.json',q4dir+'/train/final_test.json','runs/q3_legacy_deadline_20260913/metrics.jsonl',q4dir+'/train/metrics.jsonl']})
+    count_run='runs/q4_final_best_counts_20260913/evaluation'
+    if (ROOT/count_run/'status.json').exists() and read(count_run+'/status.json')['status']=='COMPLETE':
+        count_manifest=read(count_run+'/manifest.json')
+        assert count_manifest['sha256']==next(m['sha256'] for m in models if m['id']=='q4_final')
+        count_rows=[]
+        for n in range(10,17):
+            rs=read(count_run+f'/N{n}_samples.json')
+            assert len(rs)==1000 and all(r['N']==n for r in rs)
+            count_rows.append(dict(model='q4_final',N=n,**stats(rs),evidence=count_run+f'/N{n}_samples.json'))
+        table('q4_final_counts_1000.csv',count_rows)
+        inputs=read('paper/provenance/table_inputs.json')
+        inputs.update({count_run+f'/N{n}_samples.json':sha(ROOT/count_run/f'N{n}_samples.json') for n in range(10,17)})
+        write_json('paper/provenance/table_inputs.json',inputs)
     # Appendix tables retain each experiment's actual model identity.
     import shutil
     for q,folder,mid in [(3,'q3_layout_extremes_20260913_v2','q3_final'),(4,'q4_layout_extremes_20260913','q4_parent')]:
@@ -136,6 +149,7 @@ def main():
     write_json('paper/tables/official_log_timing.json',dict(model='q4_parent',checkpoint_sha256=log[0]['checkpoint_sha256'],log_sha256=sha(logpath),enter_timestamp_ms=enter['real_timestamp_ms'],exit_timestamp_ms=leave['real_timestamp_ms'],real_enter_to_exit_s=(leave['real_timestamp_ms']-enter['real_timestamp_ms'])/1000,virtual_total_s=log[-1]['virtual_time_s'],requests=log[-1]['requests'],limitation='Single official session, previous parent checkpoint; excludes Python startup/model loading. Not the final Q4 or an official multi-scenario evaluation.'))
     # Exhaustive inventory of historical attempts, not just successful experiments.
     categories={
+      'q4_final_best_counts_20260913':'附录：最终Q4 c8812ced，10–16源每组1000局，共7000局',
       'q34_deadline_test3000_20260913':'正文：最终Q3；该目录Q4行是父基线',
       'q3_legacy_deadline_20260913':'最终Q3训练谱系',
       'q4_baseline_8gpu_1h_20260913':'最终Q4训练与3000局配对主结果',
@@ -157,6 +171,7 @@ def main():
     lines=['# 实验与证据索引','','入口：[论文写作指导说明书](论文写作指导说明书.md) · [模型身份](model_registry.json) · [图表索引](FIGURE_INDEX.md) · [统计表](tables/)','','正文数据见下表前四项。旧版、失败、中断与阴性结果也全部归档；名称中的 best/final 不代表本分支最终选型。计划材料本身不证明实验完成。','','## 正文与附录快速入口','',
       '| 材料 | 模型/用途 |','|---|---|']
     quick=[(ROOT/q3dir/'report.md','最终Q3；Q4行属于父基线'),(ROOT/q4dir/'evaluation/report.md','最终Q4与父模型配对'),(PAPER/'tables/final_main_results.csv','两份最终权重主表'),(PAPER/'tables/training_data_accounting.csv','整段训练和入选best之前的数据量'),(ROOT/'runs/q3_layout_extremes_20260913_v2/report.md','最终Q3构造极端布局'),(ROOT/'runs/q4_absence_tail_analysis_20260913_v2/tail_analysis.png','Q4父基线尾段图'),(ROOT/'runs/q4_planning_ablation_20260913','Q4父基线四组对照及3000局A/C曲线'),(ROOT/'runs/q4_empty_arena_20260913','Q4父基线空场景'),(ROOT/'runs/q4_layout_extremes_20260913','Q4父基线极端布局'),(PAPER/'official_logs/logQ4.jsonl','Q4父基线官方单例；非批量官方测试'),(PAPER/'protocols','所有用户提供的原方案与优化提示词'),(PAPER/'history/original_reports','原始报告（标题和结论保留写作时语境）'),(PAPER/'history/original_docs','原始设计/运行说明'),(ROOT/'artifacts','Q1/Q2输入、结果、图形与来源')]
+    quick.append((ROOT/count_run/'report.md','新增：最终Q4 c8812ced，10–16源各1000局；六张分布图'))
     for p,note in quick:
         if p.exists():lines.append(f'| {link(p)} | {note} |')
     lines+=['','## 所有历史实验目录','', '| 原目录 | 证据归属 | 原始证据文件数 | 可浏览报告和图 | 完整压缩档案 |','|---|---|---:|---|---|']
@@ -181,6 +196,7 @@ def main():
     table('claim_evidence.csv',[
       dict(claim='最终Q3 3000局均值与配对改善',model='q3_final',source=q3dir+'/summary.json',field='q3_candidate; vs_baseline.paired_tn',limitation='自建研究分布；不代表官方隐藏分布'),
       dict(claim='最终Q4微小改善、区间跨零',model='q4_final',source=q4dir+'/evaluation/summary.json',field='candidate; paired',limitation='不能宣称显著提升'),
+      dict(claim='最终Q4源数分层7000局',model='q4_final',source=count_run+'/summary.json',field='10–16各1000局；N*_samples.json',limitation='独立分层研究分布；与Q3不是逐局配对'),
       dict(claim='Q4收尾确认长尾',model='q4_parent',source='runs/q4_absence_tail_analysis_20260913_v2',field='逐局数据、report及tail_analysis图',limitation='不是最终Q4的直接复放'),
       dict(claim='Q4四组规划对照',model='q4_parent',source='runs/q4_planning_ablation_20260913/test3000',field='逐局数据与summary',limitation='含无显著改善及退化'),
       dict(claim='搜索到的极端布局',model='q3_final / q4_parent',source='runs/q3_layout_extremes_20260913_v2 ; runs/q4_layout_extremes_20260913',field='selected layouts and repeated replay',limitation='经验极值；不是理论全局界')])

@@ -38,6 +38,18 @@
 | [runs/q4_absence_tail_analysis_20260913_v2/tail_analysis.png](../runs/q4_absence_tail_analysis_20260913_v2/tail_analysis.png) | 附录：Q4父基线3000局无源尾段复放 |
 | [runs/q4_baseline_8gpu_1h_20260913/evaluation/comparison.pdf](../runs/q4_baseline_8gpu_1h_20260913/evaluation/comparison.pdf) | 最终Q4训练与3000局配对主结果 |
 | [runs/q4_baseline_8gpu_1h_20260913/evaluation/comparison.png](../runs/q4_baseline_8gpu_1h_20260913/evaluation/comparison.png) | 最终Q4训练与3000局配对主结果 |
+| [runs/q4_final_best_counts_20260913/evaluation/N10_distribution.pdf](../runs/q4_final_best_counts_20260913/evaluation/N10_distribution.pdf) | 附录：最终Q4 c8812ced，10–16源每组1000局，共7000局 |
+| [runs/q4_final_best_counts_20260913/evaluation/N10_distribution.png](../runs/q4_final_best_counts_20260913/evaluation/N10_distribution.png) | 附录：最终Q4 c8812ced，10–16源每组1000局，共7000局 |
+| [runs/q4_final_best_counts_20260913/evaluation/N11_distribution.pdf](../runs/q4_final_best_counts_20260913/evaluation/N11_distribution.pdf) | 附录：最终Q4 c8812ced，10–16源每组1000局，共7000局 |
+| [runs/q4_final_best_counts_20260913/evaluation/N11_distribution.png](../runs/q4_final_best_counts_20260913/evaluation/N11_distribution.png) | 附录：最终Q4 c8812ced，10–16源每组1000局，共7000局 |
+| [runs/q4_final_best_counts_20260913/evaluation/N12_distribution.pdf](../runs/q4_final_best_counts_20260913/evaluation/N12_distribution.pdf) | 附录：最终Q4 c8812ced，10–16源每组1000局，共7000局 |
+| [runs/q4_final_best_counts_20260913/evaluation/N12_distribution.png](../runs/q4_final_best_counts_20260913/evaluation/N12_distribution.png) | 附录：最终Q4 c8812ced，10–16源每组1000局，共7000局 |
+| [runs/q4_final_best_counts_20260913/evaluation/N13_distribution.pdf](../runs/q4_final_best_counts_20260913/evaluation/N13_distribution.pdf) | 附录：最终Q4 c8812ced，10–16源每组1000局，共7000局 |
+| [runs/q4_final_best_counts_20260913/evaluation/N13_distribution.png](../runs/q4_final_best_counts_20260913/evaluation/N13_distribution.png) | 附录：最终Q4 c8812ced，10–16源每组1000局，共7000局 |
+| [runs/q4_final_best_counts_20260913/evaluation/N14_distribution.pdf](../runs/q4_final_best_counts_20260913/evaluation/N14_distribution.pdf) | 附录：最终Q4 c8812ced，10–16源每组1000局，共7000局 |
+| [runs/q4_final_best_counts_20260913/evaluation/N14_distribution.png](../runs/q4_final_best_counts_20260913/evaluation/N14_distribution.png) | 附录：最终Q4 c8812ced，10–16源每组1000局，共7000局 |
+| [runs/q4_final_best_counts_20260913/evaluation/N15_16_distribution.pdf](../runs/q4_final_best_counts_20260913/evaluation/N15_16_distribution.pdf) | 附录：最终Q4 c8812ced，10–16源每组1000局，共7000局 |
+| [runs/q4_final_best_counts_20260913/evaluation/N15_16_distribution.png](../runs/q4_final_best_counts_20260913/evaluation/N15_16_distribution.png) | 附录：最终Q4 c8812ced，10–16源每组1000局，共7000局 |
 | [runs/q4_layout_extremes_20260913/layouts.pdf](../runs/q4_layout_extremes_20260913/layouts.pdf) | 附录：Q4父基线主动搜索极端布局 |
 | [runs/q4_layout_extremes_20260913/layouts.png](../runs/q4_layout_extremes_20260913/layouts.png) | 附录：Q4父基线主动搜索极端布局 |
 | [runs/q4_layout_extremes_20260913/time_extremes.pdf](../runs/q4_layout_extremes_20260913/time_extremes.pdf) | 附录：Q4父基线主动搜索极端布局 |

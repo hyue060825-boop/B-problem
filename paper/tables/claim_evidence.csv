@@ -1,6 +1,7 @@
 ﻿claim,model,source,field,limitation
 最终Q3 3000局均值与配对改善,q3_final,runs/q34_deadline_test3000_20260913/summary.json,q3_candidate; vs_baseline.paired_tn,自建研究分布；不代表官方隐藏分布
 最终Q4微小改善、区间跨零,q4_final,runs/q4_baseline_8gpu_1h_20260913/evaluation/summary.json,candidate; paired,不能宣称显著提升
+最终Q4源数分层7000局,q4_final,runs/q4_final_best_counts_20260913/evaluation/summary.json,10–16各1000局；N*_samples.json,独立分层研究分布；与Q3不是逐局配对
 Q4收尾确认长尾,q4_parent,runs/q4_absence_tail_analysis_20260913_v2,逐局数据、report及tail_analysis图,不是最终Q4的直接复放
 Q4四组规划对照,q4_parent,runs/q4_planning_ablation_20260913/test3000,逐局数据与summary,含无显著改善及退化
 搜索到的极端布局,q3_final / q4_parent,runs/q3_layout_extremes_20260913_v2 ; runs/q4_layout_extremes_20260913,selected layouts and repeated replay,经验极值；不是理论全局界

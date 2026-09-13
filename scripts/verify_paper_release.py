@@ -78,6 +78,22 @@ def main():
         require(len(data)==int(row['episodes'])==3000,'final sample count: '+name)
         require(abs(sum(r['virtual_time_s'] for r in data)/len(data)-float(row['mean_T_s']))<1e-8,'T mean: '+name)
         require(abs(sum(r['virtual_time_s']/r['N'] for r in data)/len(data)-float(row['mean_T_per_N_s']))<1e-8,'T/N mean: '+name)
+    countdir='runs/q4_final_best_counts_20260913/evaluation'
+    if (ROOT/countdir/'status.json').exists() and read(countdir+'/status.json')['status']=='COMPLETE':
+        manifest=read(countdir+'/manifest.json');summary=read(countdir+'/summary.json');seeds=[]
+        require(manifest['sha256']==next(m['sha256'] for m in registry if m['id']=='q4_final'),'Q4 count model identity')
+        require(digest(ROOT/'scripts/evaluate_q4_source_counts.py')==manifest['evaluator_sha256'],'Q4 count evaluator changed')
+        for n in range(10,17):
+            data=read(countdir+f'/N{n}_samples.json');expected=summary[str(n)]
+            require(len(data)==1000 and all(r['N']==n for r in data),'Q4 count stratum '+str(n))
+            require([r['seed'] for r in data]==manifest['seeds'][str(n)],'Q4 declared seeds '+str(n))
+            require(sum(r['completion'] for r in data)==expected['completed'],'Q4 completion count '+str(n))
+            require(all(0<r['directional_sources']<n for r in data),'Q4 mixed source types '+str(n))
+            require(abs(sum(r['virtual_time_s']/n for r in data)/len(data)-expected['mean_per_source_s'])<1e-8,'Q4 per-source mean '+str(n))
+            seeds.extend(r['seed'] for r in data)
+        require(len(set(seeds))==7000,'Q4 count repeated seeds')
+        require(read(countdir+'/verification.json')['checkpoint_and_runtime_unchanged'],'Q4 count runtime changed')
+        checks['q4_final_7000_counts_verified']=True
     checks['main_means_recomputed_from_raw']=True
     git=subprocess.run(['git','ls-files','-z'],cwd=ROOT,capture_output=True,check=True).stdout.decode().split('\0')
     require(not any(s.startswith(('cache/','.venv/')) for s in git),'cache or venv tracked')

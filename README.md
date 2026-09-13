@@ -43,3 +43,5 @@ python -m pytest -q
 原工作区25984个文件全部原样移至服务器 `cache/original_workspace_20260913/` 并核对SHA256。所有历史实验的非模型数据也以可校验分卷纳入本分支；旧模型及冗余源码大包仍留本地cache。[原始清单](paper/provenance/original_inventory.json) 可用于逐文件找回。解包仅写入新目录，不覆盖当前代码。
 
 整理后验证：195项测试、15个子测试通过；模型/源码、分卷和全部原件校验通过。详见 [验证结果](paper/provenance/release_verification.json) 与 [检查记录](paper/provenance/checks/README.md)。
+
+新增补充实验：[最终Q4的10–16源各1000局评测](runs/q4_final_best_counts_20260913/evaluation/report.md)，7000/7000完成，六张分布图（PNG/PDF）及逐局数据已归档。

@@ -1,0 +1,10 @@
+{
+  "checkpoint_and_runtime_unchanged": true,
+  "unique_seed_count": 7000,
+  "scene_count": 7000,
+  "counts_match": true,
+  "finite_metrics": true,
+  "all_completed": true,
+  "independently_regenerated_scenario_hashes": 7000,
+  "all_T_per_C_equal_T_per_N": true
+}

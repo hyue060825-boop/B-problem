@@ -44,3 +44,11 @@ python scripts/extract_experiment_archive.py paper/history/runs/q3_gpu8_extended
 ```
 
 所有分卷按清单顺序拼接并校验；原相对路径在解包目录内保留。旧模型权重不随历史证据重复上传，必要对照权重在 `runs/`，其余原权重在服务器cache。历史文档里的链接/绝对路径保留原样，跨机器阅读从新实验索引进入。
+
+## 最终Q4源数分层补充实验
+
+```bash
+python scripts/evaluate_q4_source_counts.py --output cache/new_q4_counts --episodes-per-count 1000 --workers 24 --seed-base 2100000000
+```
+
+10–16源共7000局，固定用户指定的c8812ced最终权重。每组种子为seed-base+N×100000起连续1000个；七组按原Q3样式生成六张分布图（15、16源双子图）。改变seed-base是新实验；同种子重跑仍保留实时特征，不能承诺逐位一致。只评测，不训练或选模。原始结果见 `runs/q4_final_best_counts_20260913/evaluation/`。

@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "episodes": 28,
+  "counts": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "per_count": 4,
+  "checks": {
+    "checkpoint_and_runtime_unchanged": true,
+    "unique_seed_count": 28,
+    "scene_count": 28,
+    "counts_match": true,
+    "finite_metrics": true,
+    "all_completed": true
+  },
+  "note": "Separate smoke seeds; excluded from formal 7000 samples."
+}

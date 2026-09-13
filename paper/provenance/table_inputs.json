@@ -3,5 +3,12 @@
   "runs/q34_deadline_test3000_20260913/q3_baseline_samples.json": "2d7043401654270917c772802eb85d43de1b9b92713a7c3e5e609c25ad83fd8c",
   "runs/q4_baseline_8gpu_1h_20260913/train/final_test.json": "958ba42af418f9d163ba4813ef6685d7fbd770a36479a63734364c44ef014165",
   "runs/q3_legacy_deadline_20260913/metrics.jsonl": "6c6d8d5aaf0718209e29c65f70d37ef0e3b1bc8225eab3aa89cf1ce484ba8718",
-  "runs/q4_baseline_8gpu_1h_20260913/train/metrics.jsonl": "2c3e855615462035cef3c72fe6237c167dff469fd2d039b207f4be9e90ed9265"
+  "runs/q4_baseline_8gpu_1h_20260913/train/metrics.jsonl": "2c3e855615462035cef3c72fe6237c167dff469fd2d039b207f4be9e90ed9265",
+  "runs/q4_final_best_counts_20260913/evaluation/N10_samples.json": "3a0b011b846fcc9a3c1e6d1fabb2891548b6717fe9357bc8a37f3ddb141fa91c",
+  "runs/q4_final_best_counts_20260913/evaluation/N11_samples.json": "ae3660f43f156975980e72d255f0aa7c68eac075dec3c13c6bd22d6610b2b6c9",
+  "runs/q4_final_best_counts_20260913/evaluation/N12_samples.json": "e2b586ef8d28e455eaab88c79f8c2d630ea53f51e1ec40509a95b23babd30776",
+  "runs/q4_final_best_counts_20260913/evaluation/N13_samples.json": "fc7fd4d184a14cc8c55d394bbdd37f5f2bc4755294653a7a1c9e290cf20b14a0",
+  "runs/q4_final_best_counts_20260913/evaluation/N14_samples.json": "e257dbf159fc30db4a045a29088a24e94260657d5610ce5b7a6d500f6bcd7c03",
+  "runs/q4_final_best_counts_20260913/evaluation/N15_samples.json": "1a729ee59e7099d75001da323805a9a7b7dc06d82ae506cf69ff0ceebcaca5a2",
+  "runs/q4_final_best_counts_20260913/evaluation/N16_samples.json": "a5a8005abe022c4ac2508a67bddccd9f581922a5472521827ef38bb50c8f7486"
 }

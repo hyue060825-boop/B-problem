@@ -22,6 +22,7 @@
 | [original_reports](history/original_reports) | 原始报告（标题和结论保留写作时语境） |
 | [original_docs](history/original_docs) | 原始设计/运行说明 |
 | [artifacts](../artifacts) | Q1/Q2输入、结果、图形与来源 |
+| [report.md](../runs/q4_final_best_counts_20260913/evaluation/report.md) | 新增：最终Q4 c8812ced，10–16源各1000局；六张分布图 |
 
 ## 所有历史实验目录
 

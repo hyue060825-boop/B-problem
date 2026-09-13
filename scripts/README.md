@@ -2,6 +2,7 @@
 
 - 论文图表与审计：`build_paper_catalog.py`、`verify_paper_release.py`、`extract_experiment_archive.py`。
 - 最终推理与打包：`run_policy.py`、`build_windows_policy_bundle.py`、`check_q3_local_http.py`。
+- 最终Q4固定源数评测：`evaluate_q4_source_counts.py`，10–16源各1000局、六张分布图。
 - 最终模型新配对评测：`evaluate_final_pair.py`。`evaluate_deadline_pair.py`用于历史凌晨模型组合。
 - 同架构补充分析：`analyze/report_q4_absence_tail.py`、`evaluate/report_q4_planning_ablation.py`、`plot_q4_last_clear_comparison.py`、`evaluate_q4_empty_arena.py`、`search/report_q3_layout_extremes.py`、`search/report_q4_layout_extremes.py`。
 - 覆盖证明：`verify_q4_certificate_exact.py`、`build_q4_witness_certificate.py`、`validate_coverage.py`。

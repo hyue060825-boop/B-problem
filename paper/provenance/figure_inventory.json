@@ -170,6 +170,66 @@
     "attribution": "最终Q4训练与3000局配对主结果"
   },
   {
+    "path": "runs/q4_final_best_counts_20260913/evaluation/N10_distribution.pdf",
+    "sha256": "3c766f7e9aa0faec79a8e97cc9940801680f1db1f5a17f0ba44670de01d5817d",
+    "attribution": "附录：最终Q4 c8812ced，10–16源每组1000局，共7000局"
+  },
+  {
+    "path": "runs/q4_final_best_counts_20260913/evaluation/N10_distribution.png",
+    "sha256": "b84f90da2aa66d166b06ba611a51f00597d404d2b4e65f01cf8c828199c1fe96",
+    "attribution": "附录：最终Q4 c8812ced，10–16源每组1000局，共7000局"
+  },
+  {
+    "path": "runs/q4_final_best_counts_20260913/evaluation/N11_distribution.pdf",
+    "sha256": "7b12e320d5f84ef64e70d01d500fea421732ab7d7ab9a344735a4c3e4e4fc441",
+    "attribution": "附录：最终Q4 c8812ced，10–16源每组1000局，共7000局"
+  },
+  {
+    "path": "runs/q4_final_best_counts_20260913/evaluation/N11_distribution.png",
+    "sha256": "88f72ddda605503b8ea8a20fe5a225bcb48cae7a82c70a7f7126009a7f865325",
+    "attribution": "附录：最终Q4 c8812ced，10–16源每组1000局，共7000局"
+  },
+  {
+    "path": "runs/q4_final_best_counts_20260913/evaluation/N12_distribution.pdf",
+    "sha256": "6eb40cfa85a2f37d3add8eaf51a67ead49be3505502214f239deb8d2dae5ea31",
+    "attribution": "附录：最终Q4 c8812ced，10–16源每组1000局，共7000局"
+  },
+  {
+    "path": "runs/q4_final_best_counts_20260913/evaluation/N12_distribution.png",
+    "sha256": "8af77b4f0bd501b298078aa4dc5732ed77c5f8e8f9cdb526bd69a3d61454e02e",
+    "attribution": "附录：最终Q4 c8812ced，10–16源每组1000局，共7000局"
+  },
+  {
+    "path": "runs/q4_final_best_counts_20260913/evaluation/N13_distribution.pdf",
+    "sha256": "c52bd722ba23160ebded790108de1ba84da26a153404676af284c80e2aefecf5",
+    "attribution": "附录：最终Q4 c8812ced，10–16源每组1000局，共7000局"
+  },
+  {
+    "path": "runs/q4_final_best_counts_20260913/evaluation/N13_distribution.png",
+    "sha256": "93c23cfd0d80bbbaafec0cff0da73c6f239029c0b1731251e07a6f585269d3ce",
+    "attribution": "附录：最终Q4 c8812ced，10–16源每组1000局，共7000局"
+  },
+  {
+    "path": "runs/q4_final_best_counts_20260913/evaluation/N14_distribution.pdf",
+    "sha256": "8d5e83b217db4a3a6105bf92af6c09a42ef0853de5f98d3cef31e127aae859fb",
+    "attribution": "附录：最终Q4 c8812ced，10–16源每组1000局，共7000局"
+  },
+  {
+    "path": "runs/q4_final_best_counts_20260913/evaluation/N14_distribution.png",
+    "sha256": "644f7606089173a0f9ff74b8e346510439c59f0894994312dee5254daba26fba",
+    "attribution": "附录：最终Q4 c8812ced，10–16源每组1000局，共7000局"
+  },
+  {
+    "path": "runs/q4_final_best_counts_20260913/evaluation/N15_16_distribution.pdf",
+    "sha256": "9c67439aa2d4c39f411336299588182495e1adeceb44c6f41a40558cec5b58f0",
+    "attribution": "附录：最终Q4 c8812ced，10–16源每组1000局，共7000局"
+  },
+  {
+    "path": "runs/q4_final_best_counts_20260913/evaluation/N15_16_distribution.png",
+    "sha256": "b3b7fbd9e74a986e9f4971999f5775be70ceeb42d860c51bfac50867ca063608",
+    "attribution": "附录：最终Q4 c8812ced，10–16源每组1000局，共7000局"
+  },
+  {
     "path": "runs/q4_layout_extremes_20260913/layouts.pdf",
     "sha256": "2a565032c90df9e40194fcb963aee8e8a158b1e5e3ffe90e6b6c7f9ea86d8233",
     "attribution": "附录：Q4父基线主动搜索极端布局"
