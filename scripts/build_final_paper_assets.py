@@ -41,14 +41,17 @@ fig,axs=plt.subplots(1,2,figsize=(10.3,4.2),constrained_layout=True)
 means=rows('final_by_source_count.csv')
 for i,ax in enumerate(axs):
  k=f'q{i+3}'; alln=np.arange(10,17)
- for suffix,color,marker,label in [('final','#17648b','o','最终模型：随机场景均值'),('parent','#92a8b0','s','父模型：随机场景均值')]:
-  rr=[r for r in means if r['model']==k+'_'+suffix];ax.plot([int(r['N']) for r in rr],[float(r['mean_T_s']) for r in rr],color=color,marker=marker,lw=1.7,ms=4,label=label)
- ext=[r for r in rows(k+'_layout_extremes.csv') if r['case']=='best']
- ax.plot([int(r['N']) for r in ext],[float(r['total_s']) for r in ext],color='#bc742d',marker='D',ms=4,lw=1.7,ls='--',label='有利布局：最短已检验完整耗时')
- ax.plot([int(r['N']) for r in ext],[float(r['last_clear_s']) for r in ext],color='#847192',marker='x',ms=4,lw=1.3,ls=':',label='同一有利布局：最后清除时刻')
- ax.set(xlabel='实际源数 N',ylabel='总虚拟时间 / s',xticks=alln,title=f'({chr(97+i)}) 问题{i+3}：全部清除并完成无遗漏确认')
+ rr=[r for r in means if r['model']==k+'_final']
+ ax.plot([int(r['N']) for r in rr],[float(r['mean_T_s']) for r in rr],color='#17648b',marker='o',lw=1.7,ms=4,label='最终策略：研究场景均值')
+ if i==0:
+  ext=[r for r in rows('q3_layout_extremes.csv') if r['case']=='best']
+  ax.plot([int(r['N']) for r in ext],[float(r['total_s']) for r in ext],color='#bc742d',marker='D',ms=4,lw=1.7,ls='--',label='有利布局：最短已检验完整耗时')
+  ax.plot([int(r['N']) for r in ext],[float(r['last_clear_s']) for r in ext],color='#847192',marker='x',ms=4,lw=1.3,ls=':',label='同一有利布局：最后清除时刻')
+ else:
+  ax.plot([int(r['N']) for r in rr],[float(r['p95_T_s']) for r in rr],color='#bc742d',marker='s',lw=1.5,ms=4,ls='--',label='最终策略：研究场景95%分位数')
+ ax.set(xlabel='实际源数 N',ylabel='总虚拟时间 / s',xticks=alln,title=f'({chr(97+i)}) 问题{i+3}：完整任务耗时')
  ax.axvspan(15.65,16.25,color='#deece5',alpha=.7);ax.set_xlim(9.7,16.3);ax.grid(alpha=.16);ax.set_ylim(bottom=0)
- ax.text(.98,.96,'16源可提前结束覆盖',ha='right',va='top',transform=ax.transAxes,fontsize=8,color='#32614b')
+ ax.text(.98,.14,'16源可提前结束覆盖',ha='right',va='top',transform=ax.transAxes,fontsize=8,color='#32614b')
  ax.legend(loc='center left',bbox_to_anchor=(0,.32 if i==0 else .5),fontsize=8,framealpha=.9)
 fig.savefig(O/'F013-complete-search-comparison.pdf');fig.savefig(O/'F013-complete-search-comparison.png',dpi=180)
 print(json.dumps(audit,ensure_ascii=False,indent=2))

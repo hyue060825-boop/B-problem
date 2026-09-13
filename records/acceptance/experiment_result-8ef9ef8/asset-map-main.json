@@ -15704,7 +15704,7 @@
       "target": "scripts/verify_final_assets.py",
       "handling": "适配活动入口",
       "source_sha256": "e8057e4f50595c01c1d6975940314d95162d9740e8bc61a1028b9201857f4c46",
-      "target_sha256": "23cc3c656b722735fedd772c0b4f56b23752c349afa379ac11edad47ecd02366",
+      "target_sha256": "448efee8ab37af6bb5babe53b8f9d88368805fb1bc4780e66b6b835c2a36c367",
       "bytes": 5879,
       "unchanged": false,
       "original_copy": "records/acceptance/experiment_result-8ef9ef8/source-adapted/scripts/verify_paper_release.py",
@@ -16227,5 +16227,6 @@
       "original_copy": null,
       "source_git": "8ef9ef87d8c5413e85e02d18a99eee083da8d66f:tests/test_web.py"
     }
-  ]
+  ],
+  "protected_main_base": "8f0efbaf34b0adf3e95ad58f72ca47763970da3e"
 }

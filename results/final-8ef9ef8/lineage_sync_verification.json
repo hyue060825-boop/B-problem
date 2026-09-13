@@ -1,0 +1,15 @@
+{
+  "overleaf_project": "6aa35e81fca7345a83057613",
+  "overleaf_build": "1a09951f66c-62ae88ecb9eb608b",
+  "pages": 28,
+  "errors": 0,
+  "warnings": 0,
+  "source_files_byte_identical": {
+    "sections/12_appendix.tex": true,
+    "sections/06_problem3.tex": true,
+    "sections/00_abstract.tex": true,
+    "sections/08_validation.tex": true,
+    "QUALITY_REVIEW.md": true
+  },
+  "pdf_sha256": "d441d25e6fe5e13c54933b1ab819f7b689cfeeed976c7ac34910aad72d4006cb"
+}

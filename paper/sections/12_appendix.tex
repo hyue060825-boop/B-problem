@@ -1,7 +1,7 @@
 \clearpage
 \begin{appendices}
 \section{支撑材料与版本对应}
-最终实现与结果固定于实验版本 \texttt{8ef9ef8}。运行包 \path{final-runtime.zip} 保存该版本的控制器、模拟器、评估脚本和两份最终权重；逐局结果、配置、表格与文件摘要单独保存，以避免工作分支更新影响复算。
+最终实现与结果固定于实验版本 \texttt{8ef9ef8}。运行包 \path{final-runtime.zip} 保存该版本的控制器、模拟器、评估脚本和两份最终权重；逐局结果、配置和表格另存，阶段继承证据见 \path{lineage/}。
 \begin{table}[H]
 \centering
 \caption{最终支撑材料及其作用}
@@ -11,9 +11,8 @@
 \midrule
 \path{final-runtime.zip} & 最终可运行源码、依赖说明与 Q3/Q4 权重 \\
 \path{paper/model_registry.json} & 模型身份、完整 SHA-256 及结果对应关系 \\
-\path{paper/tables/} & 主结果、配对差、源数分层与补充实验数据 \\
+\path{paper/tables/} & 最终主结果、源数分层及构造布局数据 \\
 \path{runs/} & 最终逐局样本、配置与补充实验汇总 \\
-\path{paper/official_logs/} & 已获得的 Q4 父模型公开协议日志 \\
 \path{sha256.json} & 导入材料的完整性校验清单 \\
 \path{paper_recalculation.json} & 主结果逐局复算及权重核验输出 \\
 \bottomrule
@@ -32,16 +31,16 @@
 \path{solution/geometry/core.py} & 角域求交、凸包与最小包围圆 \\
 \path{solution/coverage/certificates.py} & 七站与三角网格覆盖证书 \\
 \path{solution/control/controller.py} & 频道状态、候选、清除与合法退出 \\
-\path{solution/rl/model.py} & 集合式候选策略网络 \\
+\path{solution/rl/} & 候选网络、SFT/DAgger 监督更新 \\
 \path{scripts/train_legacy_deadline_ddp.py} & 最终离线整局策略优化 \\
-\path{scripts/evaluate_deadline_pair.py} & Q3 最终与父模型配对评估 \\
-\path{scripts/report_q4_hour_pair.py} & Q4 最终配对结果整理 \\
+\path{scripts/evaluate_deadline_pair.py} & Q3 逐局评估与结果导出 \\
+\path{scripts/report_q4_hour_pair.py} & Q4 最终逐局结果整理 \\
 \path{scripts/verify_q4_certificate_exact.py} & 定向覆盖证书的有理数核验 \\
 \path{scripts/run_policy.py} & 冻结策略公开协议运行入口 \\
 \bottomrule
 \end{tabularx}
 \end{table}
-论文工作仓库中的 \path{scripts/build_final_paper_assets.py} 从固定归档重算完成率、均值、分位数及配对区间，并生成源数分层对照图。
+论文工作仓库中的 \path{scripts/build_final_paper_assets.py} 从固定归档核验全部清除与合法退出，复算均值和分位数，并生成源数分层对照图。
 
-最后续优化阶段分别使用 Q3 四张、Q4 八张 RTX 4090。离线参数构造成本与部署虚拟时间分列；官方日志保留其原始模型身份。
+最后续优化阶段分别使用 Q3 四张、Q4 八张 RTX 4090。离线参数构造成本与部署虚拟时间分列。
 \end{appendices}

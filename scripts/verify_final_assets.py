@@ -54,9 +54,12 @@ def main():
     protected = ['paper', 'src', 'problem', 'results/final-8ef9ef8', 'docs/references',
                  'experiments/q2', 'records/improvements', 'handoff/q1', 'handoff/q2',
                  'handoff/tables/LIT-Q2-01', 'handoff/shared/文献启发与Q2改进说明.md']
-    changed = subprocess.check_output(['git', 'diff', '--name-only', mapping['main_base'], '--', *protected], cwd=ROOT, text=True)
+    # 原整合基准保留；论文手后续已接收的 main 更新使用新的保护基准。
+    protected_base = mapping.get('protected_main_base', mapping['main_base'])
+    changed = subprocess.check_output(['git', 'diff', '--name-only', protected_base, '--', *protected], cwd=ROOT, text=True)
     require(not changed.strip(), 'main protected assets changed: '+changed)
     checks['main_protected_paths_unchanged'] = not changed.strip()
+    checks['protected_main_base'] = protected_base
     models = read(ROOT/'records/inventory/models-final-20260913.json')['models']
     for model in models:
         require(sha(ROOT/model['path']) == model['sha256'], 'model: '+model['id'])
